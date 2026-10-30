@@ -1,0 +1,2736 @@
+{
+  "meta": {
+    "generatedDate": "2026-10-30",
+    "title": "Elden Ring Builds Tier List",
+    "game": "Elden Ring (incl. Shadow of the Erdtree DLC)",
+    "statOrder": [
+      "VIG",
+      "MND",
+      "END",
+      "STR",
+      "DEX",
+      "INT",
+      "FTH",
+      "ARC"
+    ],
+    "fieldLabels": {
+      "firearm": "Ash of War / Spells / Spirit Ash",
+      "runesGear": "Talismans / Armor / Physick",
+      "weapons": "Weapons / Catalysts"
+    },
+    "levelConventions": "Spreads are given at a reference Rune Level (RL150 by default; RL125 or other levels are labelled). Level = sum of the 8 stats − 79. Labels name the template source (Game8, Fextralife, Reddit). Spreads marked 'synthesized' are approximations from weapon requirements and community advice. Meta PvP levels are 125 and 150.",
+    "tierScale": {
+      "S": "Consensus top PvE picks, recommended across guides, Reddit and forums",
+      "A": "Very strong and popular, with some gating, DLC requirement or recent nerf",
+      "B": "Solid or niche-strong; style picks or late/specific",
+      "C": "Gimmick/meme builds"
+    },
+    "patchInfo": "Patch facts are only those stated by sources: Windows Central covers 1.12.3 (Jul 2024: thrusting shield, Bloodfiend's Arm, Swift Slash, perfume and Tiche fixes). Game8's July 2026 page mentions the 1.17 patch and the Tarnished Edition (Switch 2). PC Gamer notes the 1.03 nerfs (SoNaF, Eclipse Shotel).",
+    "notes": "Tiers are an editorial synthesis of community opinion (Reddit/GameFAQs threads, wiki templates, ranked guide articles), PvE-weighted. They are not an official ranking. DLC builds are flagged in name and ngNotes. Links with unverified:true could not be fetched (anti-bot) but are canonical.",
+    "verification": "Each source carries verifiedVia: curl HTTP 200, HTTP 200 via python requests (content read), or WebFetch content read."
+  },
+  "builds": [
+    {
+      "id": "str-faith-blasphemous-blade",
+      "name": "Blasphemous Blade Str/Faith (Taker's Flame)",
+      "archetype": "Strength/Faith",
+      "tier": "S",
+      "tierReason": "Rated SS for damage and S for ease of use on Game8's Best Builds page (top spot). Game Rant's OP list says it's 'still ridiculously OP', and a Reddit SotE thread calls it 'super duper overpowered'. Str/Faith also made the final of a 2026 r/Eldenring 'best build' poll. Taker's Flame heals on hit and covers range.",
+      "weapons": [
+        "Blasphemous Blade",
+        "Erdtree Seal / Clawmark Seal (Fextralife variant)",
+        "Gargoyle's Blackblade (alt)"
+      ],
+      "firearm": "Ash of War: Taker's Flame (unique). Incantations: Golden Vow, Flame Grant Me Strength, Black Flame, Lightning Spear. Spirit Ash: Mimic Tear or Black Knife Tiche.",
+      "stats": {
+        "spread": {
+          "VIG": 50,
+          "MND": 30,
+          "END": 30,
+          "STR": 15,
+          "DEX": 15,
+          "INT": 9,
+          "FTH": 70,
+          "ARC": 10
+        },
+        "label": "Game8 Blasphemous Blade template (RL150)",
+        "altSpreads": [
+          "Game8 DLC fire variant RL150: 60/20/28/50/15/9/40/7",
+          "Game8 Str/Faith page RL150: 50/20/28/60/15/9/40/7"
+        ],
+        "level": 150
+      },
+      "ngNotes": "Taker's Flame scales with Faith, so the build holds up on NG+. For Shadow of the Erdtree, put Scadutree Fragments into Blessing levels first. Fextralife's Blasphemous Herald page lists the same core at RL150.",
+      "playstyle": "Two-hand the blade. Buff with Golden Vow and FGMS, then fire Taker's Flame at bosses and crowds while its on-hit heal sustains you. Mix in jump attacks.",
+      "bestFor": [
+        "First playthrough",
+        "Boss killing",
+        "Sustain/healing",
+        "Safe ranged weapon art"
+      ],
+      "pros": [
+        "Self-heal on every weapon-art hit",
+        "Huge reach",
+        "Obtained mid-game (Rykard)",
+        "Good buff synergy"
+      ],
+      "cons": [
+        "Fire-resistant bosses",
+        "Slow greatsword moveset",
+        "Widely called 'easy mode' if you want a challenge"
+      ],
+      "runesGear": [
+        "Shard of Alexander",
+        "Great-Jar's Arsenal / Claw Talisman (jump)",
+        "Dragoncrest Greatshield Talisman",
+        "Fire Scorpion Charm",
+        "Raptor's Black Feathers (jump damage)",
+        "Physick: Flame-Shrouding + Spiked Cracked Tear"
+      ],
+      "sources": [
+        {
+          "title": "Fextralife – Blasphemous Blade",
+          "url": "https://eldenring.wiki.fextralife.com/Blasphemous+Blade",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200"
+        },
+        {
+          "title": "Fextralife – Blasphemous Herald (community build page)",
+          "url": "https://eldenring.wiki.fextralife.com/Blasphemous_Herald_Build",
+          "siteType": "wiki",
+          "verifiedVia": "HTTP 200 (python requests; build summary read)"
+        },
+        {
+          "title": "Fextralife – Golden Vow",
+          "url": "https://eldenring.wiki.fextralife.com/Golden+Vow",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200"
+        },
+        {
+          "title": "Fextralife – Flame, Grant Me Strength",
+          "url": "https://eldenring.wiki.fextralife.com/Flame+Grant+Me+Strength",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200"
+        },
+        {
+          "title": "Fextralife – Shard of Alexander",
+          "url": "https://eldenring.wiki.fextralife.com/Shard+of+Alexander",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200"
+        },
+        {
+          "title": "Fextralife – Great-Jar's Arsenal",
+          "url": "https://eldenring.wiki.fextralife.com/Great-Jar's+Arsenal",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200"
+        },
+        {
+          "title": "Fextralife – Fire Scorpion Charm",
+          "url": "https://eldenring.wiki.fextralife.com/Fire+Scorpion+Charm",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200"
+        },
+        {
+          "title": "Fextralife – Raptor's Black Feathers",
+          "url": "https://eldenring.wiki.fextralife.com/Raptor's+Black+Feathers",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200"
+        },
+        {
+          "title": "Fextralife – Erdtree Seal",
+          "url": "https://eldenring.wiki.fextralife.com/Erdtree+Seal",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200"
+        },
+        {
+          "title": "Game8 – Best Builds (tiered by Damage & Ease of Use; updated Jul 28 2026)",
+          "url": "https://game8.co/games/Elden-Ring/archives/377929",
+          "siteType": "guide",
+          "verifiedVia": "curl HTTP 200 (HTML parsed; WebFetch returns 403)"
+        },
+        {
+          "title": "Game8 – Best Strength/Faith Build",
+          "url": "https://game8.co/games/Elden-Ring/archives/457590",
+          "siteType": "guide",
+          "verifiedVia": "curl HTTP 200 (HTML parsed; WebFetch returns 403)"
+        },
+        {
+          "title": "Game8 – Best Shadow of the Erdtree DLC Builds",
+          "url": "https://game8.co/games/Elden-Ring/archives/459590",
+          "siteType": "guide",
+          "verifiedVia": "curl HTTP 200 (HTML parsed; WebFetch returns 403)"
+        },
+        {
+          "title": "Game Rant – Elden Ring: most overpowered builds (updated Apr 15 2026)",
+          "url": "https://gamerant.com/elden-ring-overpowered-builds/",
+          "siteType": "guide",
+          "verifiedVia": "curl HTTP 200 + WebFetch (title/content read)"
+        },
+        {
+          "title": "r/Eldenring – Tips for my build with the blasphemous blade",
+          "url": "https://www.reddit.com/r/Eldenring/comments/1u4uys2/tips_for_my_build_with_the_blasphemous_blade/",
+          "siteType": "reddit",
+          "verifiedVia": "WebFetch (title/content read)"
+        },
+        {
+          "title": "r/EldenRingBuilds – Build recommendations for first playthrough of the Shadow of the Erdtree DLC",
+          "url": "https://www.reddit.com/r/EldenRingBuilds/comments/1u0pa86/build_recommendations_for_first_playthrough_of/",
+          "siteType": "reddit",
+          "verifiedVia": "WebFetch (title/content read)",
+          "note": "OP calls Blasphemous Blade / Starfists 'super duper overpowered'"
+        },
+        {
+          "title": "r/Eldenring – The best Elden Ring build! Final (you vote!)",
+          "url": "https://www.reddit.com/r/Eldenring/comments/1sf1clc/the_best_elden_ring_build_final_you_vote/",
+          "siteType": "reddit",
+          "verifiedVia": "WebFetch (title/content read)",
+          "note": "Community poll final: Int/Dex vs Fai/Str (poll winners)"
+        },
+        {
+          "title": "r/Eldenring – Faith build",
+          "url": "https://www.reddit.com/r/Eldenring/comments/1lth9xh/faith_build/",
+          "siteType": "reddit",
+          "verifiedVia": "WebFetch (title/content read)"
+        }
+      ]
+    },
+    {
+      "id": "pure-strength-colossal",
+      "name": "Pure Strength Colossal (Giant-Crusher / Greatsword)",
+      "archetype": "Strength",
+      "tier": "S",
+      "tierReason": "Rated S/S for damage and ease on Game8. GamesRadar's strength pick is dual Giant-Crusher with Royal Knight's Resolve and jump attacks, and Game Rant lists the same combo. Fextralife has a dedicated 'Colossal Crusher' RL150 page. In Reddit 'every boss' and 'bonk' threads, Strength is the go-to answer because almost nothing resists physical.",
+      "weapons": [
+        "Giant-Crusher",
+        "Greatsword",
+        "Highland Axe (Fextralife alt)",
+        "Dual colossal powerstance"
+      ],
+      "firearm": "Ashes of War: Lion's Claw, Royal Knight's Resolve (heavy-infused powerstance), Cragblade (buff). Spirit Ash: Mimic Tear.",
+      "stats": {
+        "spread": {
+          "VIG": 50,
+          "MND": 10,
+          "END": 40,
+          "STR": 80,
+          "DEX": 18,
+          "INT": 9,
+          "FTH": 15,
+          "ARC": 7
+        },
+        "label": "Game8 Pure Strength template (RL150)",
+        "altSpreads": [
+          "Fextralife Colossal Crusher: 60 STR / 9 DEX minimum to use everything; rest to VIG/END"
+        ],
+        "level": 150
+      },
+      "ngNotes": "Heavy infusion scales into 80 STR, so the build just keeps working. Raise END to about 40 for heavy armor at medium load.",
+      "playstyle": "Heavy-infused colossal: jump attacks and Lion's Claw stance-break bosses, then crit. You trade hits with poise.",
+      "bestFor": [
+        "Every-boss runs",
+        "Poise trading",
+        "Simple to pilot",
+        "NG+"
+      ],
+      "pros": [
+        "Highest poise damage",
+        "Physical damage almost nothing resists",
+        "Easy to learn"
+      ],
+      "cons": [
+        "Slow recovery gets punished by fast bosses",
+        "Stamina hungry",
+        "Weak to Bayle/Messmer-style long combos"
+      ],
+      "runesGear": [
+        "Shard of Alexander",
+        "Claw Talisman / Raptor's Black Feathers (jump)",
+        "Two-Handed Sword Talisman (DLC)",
+        "Bull-Goat's Talisman",
+        "Great-Jar's Arsenal",
+        "Ritual Sword Talisman"
+      ],
+      "sources": [
+        {
+          "title": "Fextralife – Giant-Crusher",
+          "url": "https://eldenring.wiki.fextralife.com/Giant-Crusher",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200"
+        },
+        {
+          "title": "Fextralife – Greatsword",
+          "url": "https://eldenring.wiki.fextralife.com/Greatsword",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200"
+        },
+        {
+          "title": "Fextralife – Colossal Crusher (community build page)",
+          "url": "https://eldenring.wiki.fextralife.com/Colossal_Crusher_Build",
+          "siteType": "wiki",
+          "verifiedVia": "HTTP 200 (python requests; build summary read)"
+        },
+        {
+          "title": "Fextralife – Lion's Claw (Ash of War)",
+          "url": "https://eldenring.wiki.fextralife.com/Lion's+Claw",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200"
+        },
+        {
+          "title": "Fextralife – Royal Knight's Resolve (Ash of War)",
+          "url": "https://eldenring.wiki.fextralife.com/Royal+Knight's+Resolve",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200"
+        },
+        {
+          "title": "Fextralife – Cragblade (Ash of War)",
+          "url": "https://eldenring.wiki.fextralife.com/Cragblade",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200"
+        },
+        {
+          "title": "Fextralife – Claw Talisman",
+          "url": "https://eldenring.wiki.fextralife.com/Claw+Talisman",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200"
+        },
+        {
+          "title": "Fextralife – Two-Handed Sword Talisman",
+          "url": "https://eldenring.wiki.fextralife.com/Two-Handed+Sword+Talisman",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200"
+        },
+        {
+          "title": "Fextralife – Bull-Goat's Talisman",
+          "url": "https://eldenring.wiki.fextralife.com/Bull-Goat's+Talisman",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200"
+        },
+        {
+          "title": "Game8 – Best Builds (tiered by Damage & Ease of Use; updated Jul 28 2026)",
+          "url": "https://game8.co/games/Elden-Ring/archives/377929",
+          "siteType": "guide",
+          "verifiedVia": "curl HTTP 200 (HTML parsed; WebFetch returns 403)"
+        },
+        {
+          "title": "GamesRadar – Best Elden Ring builds",
+          "url": "https://www.gamesradar.com/best-elden-ring-builds/",
+          "siteType": "guide",
+          "verifiedVia": "curl HTTP 200 + WebFetch (title/content read)"
+        },
+        {
+          "title": "Game Rant – Elden Ring: most overpowered builds (updated Apr 15 2026)",
+          "url": "https://gamerant.com/elden-ring-overpowered-builds/",
+          "siteType": "guide",
+          "verifiedVia": "curl HTTP 200 + WebFetch (title/content read)"
+        },
+        {
+          "title": "TheGamer – Best Strength build guide",
+          "url": "https://www.thegamer.com/elden-ring-best-strength-build-guide-tips/",
+          "siteType": "guide",
+          "verifiedVia": "curl HTTP 200"
+        },
+        {
+          "title": "KeenGamer – Top 5 Strength weapons",
+          "url": "https://www.keengamer.com/articles/guides/top-5-strength-weapons-in-elden-ring/",
+          "siteType": "guide",
+          "verifiedVia": "curl HTTP 200"
+        },
+        {
+          "title": "r/EldenRingBuilds – Every boss build",
+          "url": "https://www.reddit.com/r/EldenRingBuilds/comments/1qi2pdk/every_boss_build/",
+          "siteType": "reddit",
+          "verifiedVia": "WebFetch (title/content read)",
+          "note": "OP leans Strength because 'everything is weak to bonk'"
+        },
+        {
+          "title": "r/EldenRingBuilds – Ideal bonk build for Shadow of the Erdtree DLC?",
+          "url": "https://www.reddit.com/r/EldenRingBuilds/comments/1rgq3ng/ideal_bonk_build_for_shadow_of_the_erdtree_dlc/",
+          "siteType": "reddit",
+          "verifiedVia": "WebFetch (title/content read)"
+        },
+        {
+          "title": "r/EldenRingBuilds – Strength (best strength weapons/talismans?)",
+          "url": "https://www.reddit.com/r/EldenRingBuilds/comments/1fs040n/strength/",
+          "siteType": "reddit",
+          "verifiedVia": "WebFetch (title/content read)"
+        },
+        {
+          "title": "r/EldenRingBuilds – Alright ya'll, pure vig/str with big weps",
+          "url": "https://www.reddit.com/r/EldenRingBuilds/comments/1ajpk91/alright_yall_pure_vigstr_with_big_weps/",
+          "siteType": "reddit",
+          "verifiedVia": "WebFetch (title/content read)"
+        },
+        {
+          "title": "r/Eldenring – Best build(s) to kill all bosses in the game",
+          "url": "https://www.reddit.com/r/Eldenring/comments/1cfoynm/best_builds_to_kill_all_bosses_in_the_game/",
+          "siteType": "reddit",
+          "verifiedVia": "WebFetch (title/content read)"
+        }
+      ]
+    },
+    {
+      "id": "arcane-bleed-katana",
+      "name": "Arcane Bleed Katana (Nagakiba / Uchigatana + Seppuku)",
+      "archetype": "Dexterity/Arcane (Bleed)",
+      "tier": "S",
+      "tierReason": "Rated S/A on Game8. In GameFAQs 'Best Class/Build', replies split between INT and 'dedicated Bleed'. GamesRadar and PC Gamer both run Dex/Arcane bleed. Bleed procs deal percentage HP damage to most bosses.",
+      "weapons": [
+        "Nagakiba (Blood/Occult)",
+        "Uchigatana (Blood)",
+        "Eleonora's Poleblade (alt)",
+        "Reduvia (early)"
+      ],
+      "firearm": "Ash of War: Seppuku (bleed buff). Incantation: Bloodflame Blade (needs some FTH). Spirit Ash: Mimic Tear (bleed procs aren't reduced).",
+      "stats": {
+        "spread": {
+          "VIG": 50,
+          "MND": 20,
+          "END": 22,
+          "STR": 18,
+          "DEX": 39,
+          "INT": 9,
+          "FTH": 11,
+          "ARC": 60
+        },
+        "label": "Game8 Arcane Bleed template (RL150)",
+        "altSpreads": [
+          "Fextralife Bloodblade beginner: dual Scimitar with Bloody Slash (Warrior start)"
+        ],
+        "level": 150
+      },
+      "ngNotes": "Bleed ignores much of the NG+ HP scaling and stays strong. The weak points are bleed-immune bosses (some golems, Elden Beast, Rennala, and others), so carry a backup.",
+      "playstyle": "Powerstance two katanas or two-hand the Nagakiba. Seppuku buff, then quick R1 strings to proc Hemorrhage repeatedly.",
+      "bestFor": [
+        "Boss melting",
+        "Fast weapons",
+        "Mid-game power spike"
+      ],
+      "pros": [
+        "Percentage damage",
+        "Fast moveset",
+        "Uchigatana/Nagakiba are early"
+      ],
+      "cons": [
+        "Useless on bleed-immune enemies",
+        "Seppuku costs HP",
+        "Several bleed nerfs since 1.03"
+      ],
+      "runesGear": [
+        "Lord of Blood's Exultation",
+        "Rotten Winged Sword Insignia",
+        "Millicent's Prosthesis",
+        "Shard of Alexander",
+        "White Mask (helm)",
+        "Physick: Spiked/Thorny Cracked Tear"
+      ],
+      "sources": [
+        {
+          "title": "Fextralife – Nagakiba",
+          "url": "https://eldenring.wiki.fextralife.com/Nagakiba",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200"
+        },
+        {
+          "title": "Fextralife – Uchigatana",
+          "url": "https://eldenring.wiki.fextralife.com/Uchigatana",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200"
+        },
+        {
+          "title": "Fextralife – Seppuku (Ash of War)",
+          "url": "https://eldenring.wiki.fextralife.com/Seppuku",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200"
+        },
+        {
+          "title": "Fextralife – Reduvia",
+          "url": "https://eldenring.wiki.fextralife.com/Reduvia",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200"
+        },
+        {
+          "title": "Fextralife – Eleonora's Poleblade",
+          "url": "https://eldenring.wiki.fextralife.com/Eleonora's+Poleblade",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200"
+        },
+        {
+          "title": "Fextralife – Lord of Blood's Exultation",
+          "url": "https://eldenring.wiki.fextralife.com/Lord+of+Blood's+Exultation",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200"
+        },
+        {
+          "title": "Fextralife – Rotten Winged Sword Insignia",
+          "url": "https://eldenring.wiki.fextralife.com/Rotten+Winged+Sword+Insignia",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200"
+        },
+        {
+          "title": "Fextralife – Millicent's Prosthesis",
+          "url": "https://eldenring.wiki.fextralife.com/Millicent's+Prosthesis",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200"
+        },
+        {
+          "title": "Fextralife – White Mask",
+          "url": "https://eldenring.wiki.fextralife.com/White+Mask",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200"
+        },
+        {
+          "title": "Fextralife – Bloodblade (community build page)",
+          "url": "https://eldenring.wiki.fextralife.com/Bloodblade_Build",
+          "siteType": "wiki",
+          "verifiedVia": "HTTP 200 (python requests; build summary read)"
+        },
+        {
+          "title": "Fextralife – Spiked Cracked Tear",
+          "url": "https://eldenring.wiki.fextralife.com/Spiked+Cracked+Tear",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200"
+        },
+        {
+          "title": "Game8 – Best Builds (tiered by Damage & Ease of Use; updated Jul 28 2026)",
+          "url": "https://game8.co/games/Elden-Ring/archives/377929",
+          "siteType": "guide",
+          "verifiedVia": "curl HTTP 200 (HTML parsed; WebFetch returns 403)"
+        },
+        {
+          "title": "GamesRadar – Best Elden Ring builds",
+          "url": "https://www.gamesradar.com/best-elden-ring-builds/",
+          "siteType": "guide",
+          "verifiedVia": "curl HTTP 200 + WebFetch (title/content read)"
+        },
+        {
+          "title": "PC Gamer – Best Elden Ring builds",
+          "url": "https://www.pcgamer.com/best-elden-ring-build/",
+          "siteType": "guide",
+          "verifiedVia": "curl HTTP 200 + WebFetch (title/content read)"
+        },
+        {
+          "title": "GameFAQs – Best Class/Build",
+          "url": "https://gamefaqs.gamespot.com/boards/323052-elden-ring/80073779",
+          "siteType": "forum",
+          "verifiedVia": "WebFetch (title/content read); curl returns 403",
+          "note": "Replies favour Intelligence (Comet Azur/Shard Spiral) or Dex/Arcane bleed; dual RoB"
+        },
+        {
+          "title": "r/Eldenring – Bleed/Frost Build",
+          "url": "https://www.reddit.com/r/Eldenring/comments/1iqitzt/bleedfrost_build/",
+          "siteType": "reddit",
+          "verifiedVia": "WebFetch (title/content read)"
+        }
+      ]
+    },
+    {
+      "id": "str-arc-bloodfiends-arm",
+      "name": "Bloodfiend's Arm Str/Arcane (DLC)",
+      "archetype": "Strength/Arcane",
+      "tier": "S",
+      "tierReason": "Game8 rates Str/Arc S/A built around Bloodfiend's Arm and also lists a dedicated DLC Bloodfiend's Arm bleed build. Game Rant has a dedicated Bloodfiend's Arm build article and puts it among the top SotE builds. Patch 1.12.3 toned down a bug that boosted its Arcane scaling with affinities, and it remains top-rated anyway.",
+      "weapons": [
+        "Bloodfiend's Arm",
+        "Ancient Meteoric Ore Greatsword (Game8 alt)"
+      ],
+      "firearm": "Ash of War: Feeding Frenzy (unique) or heavy jump attacks. Spirit Ash: Mimic Tear / Revered SotE ashes.",
+      "stats": {
+        "spread": {
+          "VIG": 50,
+          "MND": 14,
+          "END": 34,
+          "STR": 54,
+          "DEX": 12,
+          "INT": 7,
+          "FTH": 8,
+          "ARC": 50
+        },
+        "label": "Game8 Str/Arc template (RL150)",
+        "altSpreads": [
+          "Game8 DLC Bloodfiend's Arm Bleed: 60/12/25/34/11/7/7/50 (RL127)"
+        ],
+        "level": 150
+      },
+      "ngNotes": "DLC weapon from the Land of Shadow. Patch 1.12.3 fixed higher-than-intended Arcane scaling on affinities and cut its heavy-attack bleed buildup (Windows Central patch notes).",
+      "playstyle": "Great Hammer that deals bleed and physical. Charged heavies and jump attacks stance-break bosses while bleed procs.",
+      "bestFor": [
+        "Shadow of the Erdtree",
+        "Bonk + bleed",
+        "Poise breaking"
+      ],
+      "pros": [
+        "Bleed plus heavy poise damage",
+        "Strong with jump attacks"
+      ],
+      "cons": [
+        "DLC only",
+        "Was nerfed in 1.12.3",
+        "Slow"
+      ],
+      "runesGear": [
+        "Shard of Alexander",
+        "Lord of Blood's Exultation",
+        "Claw Talisman",
+        "Two-Handed Sword Talisman",
+        "Physick: Spiked Cracked Tear"
+      ],
+      "sources": [
+        {
+          "title": "Fextralife – Bloodfiend's Arm",
+          "url": "https://eldenring.wiki.fextralife.com/Bloodfiend's+Arm",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200"
+        },
+        {
+          "title": "Fextralife – Lord of Blood's Exultation",
+          "url": "https://eldenring.wiki.fextralife.com/Lord+of+Blood's+Exultation",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200"
+        },
+        {
+          "title": "Fextralife – Claw Talisman",
+          "url": "https://eldenring.wiki.fextralife.com/Claw+Talisman",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200"
+        },
+        {
+          "title": "Fextralife – Two-Handed Sword Talisman",
+          "url": "https://eldenring.wiki.fextralife.com/Two-Handed+Sword+Talisman",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200"
+        },
+        {
+          "title": "Fextralife – Scadutree Fragment",
+          "url": "https://eldenring.wiki.fextralife.com/Scadutree+Fragment",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200"
+        },
+        {
+          "title": "Game8 – Best Builds (tiered by Damage & Ease of Use; updated Jul 28 2026)",
+          "url": "https://game8.co/games/Elden-Ring/archives/377929",
+          "siteType": "guide",
+          "verifiedVia": "curl HTTP 200 (HTML parsed; WebFetch returns 403)"
+        },
+        {
+          "title": "Game8 – Best Shadow of the Erdtree DLC Builds",
+          "url": "https://game8.co/games/Elden-Ring/archives/459590",
+          "siteType": "guide",
+          "verifiedVia": "curl HTTP 200 (HTML parsed; WebFetch returns 403)"
+        },
+        {
+          "title": "Game Rant – Best Bloodfiend's Arm build",
+          "url": "https://gamerant.com/elden-ring-shadow-of-the-erdtree-sote-best-bloodfiends-arm-build/",
+          "siteType": "guide",
+          "verifiedVia": "curl HTTP 200"
+        },
+        {
+          "title": "Game Rant – Best Shadow of the Erdtree builds",
+          "url": "https://gamerant.com/shadow-of-the-erdtree-best-elden-ring-dlc-builds-sote/",
+          "siteType": "guide",
+          "verifiedVia": "curl HTTP 200 + WebFetch (title/content read)"
+        },
+        {
+          "title": "Windows Central – Elden Ring DLC 1.12.3 balance patch notes (Jul 4 2024)",
+          "url": "https://www.windowscentral.com/gaming/elden-ring-dlc-gets-1123-balance-patch-update-that-nerfs-broken-perfume-bottles-buffs-its-worst-weapon-and-makes-two-bosses-less-annoying",
+          "siteType": "guide",
+          "verifiedVia": "curl HTTP 200 + WebFetch (title/content read)"
+        },
+        {
+          "title": "r/EldenRingBuilds – Ideal bonk build for Shadow of the Erdtree DLC?",
+          "url": "https://www.reddit.com/r/EldenRingBuilds/comments/1rgq3ng/ideal_bonk_build_for_shadow_of_the_erdtree_dlc/",
+          "siteType": "reddit",
+          "verifiedVia": "WebFetch (title/content read)"
+        },
+        {
+          "title": "r/Eldenring – Best build for Shadow of the Erdtree?",
+          "url": "https://www.reddit.com/r/Eldenring/comments/1k1fkdn/best_build_for_shadow_of_the_erdtree/",
+          "siteType": "reddit",
+          "verifiedVia": "WebFetch (title/content read)"
+        }
+      ]
+    },
+    {
+      "id": "moonveil-int-dex",
+      "name": "Moonveil Int/Dex Spellblade",
+      "archetype": "Intelligence/Dexterity",
+      "tier": "A",
+      "tierReason": "One of the most-cited 'best' builds from launch. A popular r/Eldenring post calls the Moonveil Sorcerer the 'Strongest PvE Build', and replies in a GameFAQs 'best build' poll keep naming Moonveil. Game8 rates Dex/Int A/B. Game Rant notes its poise damage was nerfed and that it 'barely makes the cut' now, so it sits in A.",
+      "weapons": [
+        "Moonveil",
+        "Lusat's Glintstone Staff",
+        "Star-Lined Sword (DLC alt)"
+      ],
+      "firearm": "Ash of War: Transient Moonlight (unique). Sorceries: Comet Azur, Carian Greatsword, Loretta's Greatbow. Spirit Ash: Mimic Tear.",
+      "stats": {
+        "spread": {
+          "VIG": 50,
+          "MND": 20,
+          "END": 20,
+          "STR": 12,
+          "DEX": 60,
+          "INT": 33,
+          "FTH": 25,
+          "ARC": 9
+        },
+        "label": "Game8 Dex/Int template (RL150)",
+        "altSpreads": [
+          "Reddit t5ilyg (Astrologer start): INT 60 / VIG 40 / MND 30, Moonveil needs 12 STR / 18 DEX / 23 INT",
+          "Fextralife Moonveil Samurai: RL50, Prisoner or Samurai start"
+        ],
+        "level": 150
+      },
+      "ngNotes": "Transient Moonlight scales with INT. Raise VIG to around 50 or more before chasing INT past 60. The DLC alternative is the Star-Lined Sword (Fextralife Star-Lined Samurai).",
+      "playstyle": "Fast katana with a ranged magic weapon art that stance-breaks. Swap to the staff for burst sorceries.",
+      "bestFor": [
+        "Early power spike (Caelid)",
+        "Spellblade",
+        "PvP"
+      ],
+      "pros": [
+        "Available early (Gael Tunnel)",
+        "Fast, long-reach weapon art",
+        "Strong in PvP"
+      ],
+      "cons": [
+        "Poise-damage nerf on the weapon art",
+        "'Squishier' per Game8",
+        "INT investment means less VIG"
+      ],
+      "runesGear": [
+        "Shard of Alexander",
+        "Ritual Sword Talisman",
+        "Magic Scorpion Charm",
+        "Graven-Mass Talisman",
+        "Physick: Cerulean Hidden Tear (Comet Azur burst)"
+      ],
+      "sources": [
+        {
+          "title": "Fextralife – Moonveil",
+          "url": "https://eldenring.wiki.fextralife.com/Moonveil",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200"
+        },
+        {
+          "title": "Fextralife – Moonveil Samurai (community build page)",
+          "url": "https://eldenring.wiki.fextralife.com/Moonveil_Samurai_Build",
+          "siteType": "wiki",
+          "verifiedVia": "HTTP 200 (python requests; build summary read)"
+        },
+        {
+          "title": "Fextralife – Lusat's Glintstone Staff",
+          "url": "https://eldenring.wiki.fextralife.com/Lusat's+Glintstone+Staff",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200"
+        },
+        {
+          "title": "Fextralife – Star-Lined Sword",
+          "url": "https://eldenring.wiki.fextralife.com/Star-Lined+Sword",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200"
+        },
+        {
+          "title": "Fextralife – Star-Lined Samurai (community build page)",
+          "url": "https://eldenring.wiki.fextralife.com/Star-Lined_Samurai_Build",
+          "siteType": "wiki",
+          "verifiedVia": "HTTP 200 (python requests; build summary read)"
+        },
+        {
+          "title": "Fextralife – Comet Azur",
+          "url": "https://eldenring.wiki.fextralife.com/Comet+Azur",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200"
+        },
+        {
+          "title": "Fextralife – Mimic Tear Ashes",
+          "url": "https://eldenring.wiki.fextralife.com/Mimic+Tear+Ashes",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200"
+        },
+        {
+          "title": "Fextralife – Magic Scorpion Charm",
+          "url": "https://eldenring.wiki.fextralife.com/Magic+Scorpion+Charm",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200"
+        },
+        {
+          "title": "Fextralife – Ritual Sword Talisman",
+          "url": "https://eldenring.wiki.fextralife.com/Ritual+Sword+Talisman",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200"
+        },
+        {
+          "title": "r/Eldenring – Strongest PvE Build: Moonveil Sorcerer",
+          "url": "https://www.reddit.com/r/Eldenring/comments/t5ilyg/strongest_pve_build_moonveil_sorcerer/",
+          "siteType": "reddit",
+          "verifiedVia": "WebFetch (title/content read)",
+          "note": "Astrologer start, INT 60 / VIG 40 / MND 30, Lusat's, Mimic Tear; edit notes 1.03 changes"
+        },
+        {
+          "title": "GameFAQs – Best build right now?",
+          "url": "https://gamefaqs.gamespot.com/boards/323053-elden-ring/79942461",
+          "siteType": "forum",
+          "verifiedVia": "WebFetch (title/content read); curl returns 403",
+          "note": "Closed poll, 137 votes: Intelligence+other 35.77%, Intelligence 29.2%; replies cite Moonveil and Bloodhound's Fang"
+        },
+        {
+          "title": "r/Eldenring – The best Elden Ring build! Final (you vote!)",
+          "url": "https://www.reddit.com/r/Eldenring/comments/1sf1clc/the_best_elden_ring_build_final_you_vote/",
+          "siteType": "reddit",
+          "verifiedVia": "WebFetch (title/content read)",
+          "note": "Community poll final: Int/Dex vs Fai/Str (poll winners)"
+        },
+        {
+          "title": "Game8 – Best Builds (tiered by Damage & Ease of Use; updated Jul 28 2026)",
+          "url": "https://game8.co/games/Elden-Ring/archives/377929",
+          "siteType": "guide",
+          "verifiedVia": "curl HTTP 200 (HTML parsed; WebFetch returns 403)"
+        },
+        {
+          "title": "GamesRadar – Best Elden Ring builds",
+          "url": "https://www.gamesradar.com/best-elden-ring-builds/",
+          "siteType": "guide",
+          "verifiedVia": "curl HTTP 200 + WebFetch (title/content read)"
+        },
+        {
+          "title": "PC Gamer – Best Elden Ring builds",
+          "url": "https://www.pcgamer.com/best-elden-ring-build/",
+          "siteType": "guide",
+          "verifiedVia": "curl HTTP 200 + WebFetch (title/content read)"
+        },
+        {
+          "title": "Game Rant – Elden Ring: most overpowered builds (updated Apr 15 2026)",
+          "url": "https://gamerant.com/elden-ring-overpowered-builds/",
+          "siteType": "guide",
+          "verifiedVia": "curl HTTP 200 + WebFetch (title/content read)"
+        },
+        {
+          "title": "ErdtreeForge – Moonveil Mage build",
+          "url": "https://erdtreeforge.com/guides/moonveil-mage-build/",
+          "siteType": "guide",
+          "verifiedVia": "curl HTTP 200"
+        },
+        {
+          "title": "Elden Ring Wiki (Fandom) – Builds",
+          "url": "https://eldenring.fandom.com/wiki/Builds",
+          "siteType": "wiki",
+          "unverified": true,
+          "note": "Canonical Fandom page; returns 403 to automated fetch"
+        }
+      ]
+    },
+    {
+      "id": "pure-sorcery-comet-azur",
+      "name": "Pure Sorcery (Comet Azur / Stars of Ruin)",
+      "archetype": "Intelligence",
+      "tier": "A",
+      "tierReason": "GameFAQs replies call INT the top PvE damage option ('Can't really beat the dps of Comet Azur'), and Intelligence+other won a 137-vote GameFAQs poll. Game8 rates Sorcery A/B but notes the Terra Magica nerf and weaker DLC performance unless fully committed. Comet Azur with the Cerulean Hidden Tear is a well-known cheese; Twinfinite has a full walkthrough.",
+      "weapons": [
+        "Lusat's Glintstone Staff",
+        "Carian Regal Scepter",
+        "Staff of Loss (Game8)"
+      ],
+      "firearm": "Sorceries: Comet Azur, Stars of Ruin, Rennala's Full Moon, Terra Magica, Rock Sling. DLC: Glintstone Nails / Collapsing Stars. Spirit Ash: Black Knife Tiche or Mimic Tear.",
+      "stats": {
+        "spread": {
+          "VIG": 50,
+          "MND": 38,
+          "END": 23,
+          "STR": 10,
+          "DEX": 12,
+          "INT": 80,
+          "FTH": 7,
+          "ARC": 9
+        },
+        "label": "Game8 Sorcery template (RL150)",
+        "altSpreads": [
+          "Fextralife Gravity Sorcerer (DLC, RL156): Carian Regal Scepter + Meteorite Staff, Collapsing Stars",
+          "Fextralife Maternal Mage (DLC, RL150+): Maternal Staff, Glintstone Nails"
+        ],
+        "level": 150
+      },
+      "ngNotes": "INT up to 80 with MND about 38. In the DLC, mage builds need the Scadutree level and VIG to survive; Game8 says it is weak in SotE unless fully committed.",
+      "playstyle": "Ranged glass cannon: Terra Magica plus a Cerulean Hidden Tear Comet Azur beam for burst, and Rock Sling or Stars of Ruin for poke.",
+      "bestFor": [
+        "Ranged play",
+        "Burst damage",
+        "Cheese strats"
+      ],
+      "pros": [
+        "Highest burst windows",
+        "Safe ranged play",
+        "Two staffs cover the different spell schools"
+      ],
+      "cons": [
+        "Fragile",
+        "FP management",
+        "Terra Magica nerf"
+      ],
+      "runesGear": [
+        "Graven-Mass Talisman",
+        "Magic Scorpion Charm",
+        "Radagon Icon",
+        "Godfrey Icon",
+        "Physick: Cerulean Hidden Tear + Magic-Shrouding Cracked Tear"
+      ],
+      "sources": [
+        {
+          "title": "Fextralife – Comet Azur",
+          "url": "https://eldenring.wiki.fextralife.com/Comet+Azur",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200"
+        },
+        {
+          "title": "Fextralife – Lusat's Glintstone Staff",
+          "url": "https://eldenring.wiki.fextralife.com/Lusat's+Glintstone+Staff",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200"
+        },
+        {
+          "title": "Fextralife – Carian Regal Scepter",
+          "url": "https://eldenring.wiki.fextralife.com/Carian+Regal+Scepter",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200"
+        },
+        {
+          "title": "Fextralife – Stars of Ruin",
+          "url": "https://eldenring.wiki.fextralife.com/Stars+of+Ruin",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200"
+        },
+        {
+          "title": "Fextralife – Rennala's Full Moon",
+          "url": "https://eldenring.wiki.fextralife.com/Rennala's+Full+Moon",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200"
+        },
+        {
+          "title": "Fextralife – Terra Magica",
+          "url": "https://eldenring.wiki.fextralife.com/Terra+Magica",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200"
+        },
+        {
+          "title": "Fextralife – Cerulean Hidden Tear",
+          "url": "https://eldenring.wiki.fextralife.com/Cerulean+Hidden+Tear",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200"
+        },
+        {
+          "title": "Fextralife – Graven-Mass Talisman",
+          "url": "https://eldenring.wiki.fextralife.com/Graven-Mass+Talisman",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200"
+        },
+        {
+          "title": "Fextralife – Magic Scorpion Charm",
+          "url": "https://eldenring.wiki.fextralife.com/Magic+Scorpion+Charm",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200"
+        },
+        {
+          "title": "Fextralife – Radagon Icon",
+          "url": "https://eldenring.wiki.fextralife.com/Radagon+Icon",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200"
+        },
+        {
+          "title": "Fextralife – Gravity Sorcerer (community build page)",
+          "url": "https://eldenring.wiki.fextralife.com/Gravity_Sorcerer_Build",
+          "siteType": "wiki",
+          "verifiedVia": "HTTP 200 (python requests; build summary read)"
+        },
+        {
+          "title": "Fextralife – Maternal Mage (community build page)",
+          "url": "https://eldenring.wiki.fextralife.com/Maternal_Mage_Build",
+          "siteType": "wiki",
+          "verifiedVia": "HTTP 200 (python requests; build summary read)"
+        },
+        {
+          "title": "GameFAQs – Best Class/Build",
+          "url": "https://gamefaqs.gamespot.com/boards/323052-elden-ring/80073779",
+          "siteType": "forum",
+          "verifiedVia": "WebFetch (title/content read); curl returns 403",
+          "note": "Replies favour Intelligence (Comet Azur/Shard Spiral) or Dex/Arcane bleed; dual RoB"
+        },
+        {
+          "title": "GameFAQs – Best build right now?",
+          "url": "https://gamefaqs.gamespot.com/boards/323053-elden-ring/79942461",
+          "siteType": "forum",
+          "verifiedVia": "WebFetch (title/content read); curl returns 403",
+          "note": "Closed poll, 137 votes: Intelligence+other 35.77%, Intelligence 29.2%; replies cite Moonveil and Bloodhound's Fang"
+        },
+        {
+          "title": "Game8 – Best Builds (tiered by Damage & Ease of Use; updated Jul 28 2026)",
+          "url": "https://game8.co/games/Elden-Ring/archives/377929",
+          "siteType": "guide",
+          "verifiedVia": "curl HTTP 200 (HTML parsed; WebFetch returns 403)"
+        },
+        {
+          "title": "Twinfinite – Complete Comet Azur build walkthrough",
+          "url": "https://twinfinite.net/guides/complete-comet-azur-build-walkthrough-elden-ring/",
+          "siteType": "guide",
+          "verifiedVia": "curl HTTP 200"
+        },
+        {
+          "title": "PC Gamer – Best Elden Ring mage builds",
+          "url": "https://www.pcgamer.com/best-elden-ring-mage-builds/",
+          "siteType": "guide",
+          "verifiedVia": "curl HTTP 200"
+        },
+        {
+          "title": "Game Rant – Elden Ring: most overpowered builds (updated Apr 15 2026)",
+          "url": "https://gamerant.com/elden-ring-overpowered-builds/",
+          "siteType": "guide",
+          "verifiedVia": "curl HTTP 200 + WebFetch (title/content read)"
+        },
+        {
+          "title": "r/EldenRingBuilds – What stats should I aim from in my comet azure build",
+          "url": "https://www.reddit.com/r/EldenRingBuilds/comments/1i70m5a/what_stats_should_i_aim_from_in_my_comet_azure/",
+          "siteType": "reddit",
+          "verifiedVia": "WebFetch (title/content read)"
+        }
+      ]
+    },
+    {
+      "id": "thrusting-shield-poke",
+      "name": "Shield Poke / Carian Thrusting Shield",
+      "archetype": "Strength/Quality (shield)",
+      "tier": "A",
+      "tierReason": "Game8's 'Shield Poke' build is rated SS for ease of use and B for damage. Game Rant's OP list includes a Fingerprint Stone Shield poke build, and its SotE list includes Thrusting Shields. Patch 1.12.3 fixed thrusting-shield guard attacks costing less stamina than intended, a real nerf, but the archetype is still recommended.",
+      "weapons": [
+        "Carian Thrusting Shield / Thrusting Shields (DLC)",
+        "Antspur Rapier or Cross-Naginata + Fingerprint Stone Shield"
+      ],
+      "firearm": "Ash of War: Cragblade or Shield Crash. Spells: Scholar's Shield. Spirit Ash: Mimic Tear.",
+      "stats": {
+        "spread": {
+          "VIG": 50,
+          "MND": 9,
+          "END": 50,
+          "STR": 48,
+          "DEX": 20,
+          "INT": 12,
+          "FTH": 15,
+          "ARC": 32
+        },
+        "label": "Game8 Shield Poke template (listed spread sums to RL157)",
+        "altSpreads": [
+          "Fextralife Carian Shield Knight (DLC): RL163, STR/VIG primary",
+          "Game8 DLC Spear & Shield: 60/7/26/48/14/7/7/27 (RL117)"
+        ],
+        "level": 157
+      },
+      "ngNotes": "Needs high END for guard stamina. The 1.12.3 fix makes blocking while poking cost normal stamina, so watch your stamina bar.",
+      "playstyle": "Turtle behind a greatshield and poke with guard-counters and thrusts. The Deflecting Hardtear rewards perfectly timed blocks.",
+      "bestFor": [
+        "Safe/defensive play",
+        "Learning bosses",
+        "Beginners"
+      ],
+      "pros": [
+        "Extremely safe",
+        "Low execution",
+        "Strong poise breaking"
+      ],
+      "cons": [
+        "Slow kills",
+        "Grabs ignore blocking",
+        "Nerfed in 1.12.3"
+      ],
+      "runesGear": [
+        "Dragoncrest Greatshield Talisman",
+        "Shard of Alexander",
+        "Rotten Winged Sword Insignia",
+        "Radahn's Great Rune",
+        "Physick: Deflecting Hardtear"
+      ],
+      "sources": [
+        {
+          "title": "Fextralife – Carian Thrusting Shield",
+          "url": "https://eldenring.wiki.fextralife.com/Carian+Thrusting+Shield",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200"
+        },
+        {
+          "title": "Fextralife – Carian Shield Knight (community build page)",
+          "url": "https://eldenring.wiki.fextralife.com/Carian_Shield_Knight_Build",
+          "siteType": "wiki",
+          "verifiedVia": "HTTP 200 (python requests; build summary read)"
+        },
+        {
+          "title": "Fextralife – Deflecting Hardtear",
+          "url": "https://eldenring.wiki.fextralife.com/Deflecting+Hardtear",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200"
+        },
+        {
+          "title": "Fextralife – Cragblade (Ash of War)",
+          "url": "https://eldenring.wiki.fextralife.com/Cragblade",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200"
+        },
+        {
+          "title": "Fextralife – Dragoncrest Greatshield Talisman",
+          "url": "https://eldenring.wiki.fextralife.com/Dragoncrest+Greatshield+Talisman",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200"
+        },
+        {
+          "title": "Fextralife – Radahn's Great Rune",
+          "url": "https://eldenring.wiki.fextralife.com/Radahn's+Great+Rune",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200"
+        },
+        {
+          "title": "Game8 – Best Builds (tiered by Damage & Ease of Use; updated Jul 28 2026)",
+          "url": "https://game8.co/games/Elden-Ring/archives/377929",
+          "siteType": "guide",
+          "verifiedVia": "curl HTTP 200 (HTML parsed; WebFetch returns 403)"
+        },
+        {
+          "title": "Game8 – Best Shadow of the Erdtree DLC Builds",
+          "url": "https://game8.co/games/Elden-Ring/archives/459590",
+          "siteType": "guide",
+          "verifiedVia": "curl HTTP 200 (HTML parsed; WebFetch returns 403)"
+        },
+        {
+          "title": "Game Rant – Elden Ring: most overpowered builds (updated Apr 15 2026)",
+          "url": "https://gamerant.com/elden-ring-overpowered-builds/",
+          "siteType": "guide",
+          "verifiedVia": "curl HTTP 200 + WebFetch (title/content read)"
+        },
+        {
+          "title": "Game Rant – Best Shadow of the Erdtree builds",
+          "url": "https://gamerant.com/shadow-of-the-erdtree-best-elden-ring-dlc-builds-sote/",
+          "siteType": "guide",
+          "verifiedVia": "curl HTTP 200 + WebFetch (title/content read)"
+        },
+        {
+          "title": "Windows Central – Elden Ring DLC 1.12.3 balance patch notes (Jul 4 2024)",
+          "url": "https://www.windowscentral.com/gaming/elden-ring-dlc-gets-1123-balance-patch-update-that-nerfs-broken-perfume-bottles-buffs-its-worst-weapon-and-makes-two-bosses-less-annoying",
+          "siteType": "guide",
+          "verifiedVia": "curl HTTP 200 + WebFetch (title/content read)"
+        },
+        {
+          "title": "r/Eldenring – Best way to build the carian thrusting shield with int?",
+          "url": "https://www.reddit.com/r/Eldenring/comments/1dzk7ox/best_way_to_build_the_carian_thrusting_shield/",
+          "siteType": "reddit",
+          "verifiedVia": "WebFetch (title/content read)"
+        }
+      ]
+    },
+    {
+      "id": "dragon-communion-faith-arc",
+      "name": "Dragon Lightning Priest (Dragon Communion / Ancient Dragon incants)",
+      "archetype": "Faith/Arcane",
+      "tier": "A",
+      "tierReason": "Game Rant's OP list includes a 'Dragon Lightning Priest' built on Ancient Dragons' Lightning Strike. Fextralife has a beginner 'Dragon Priest' (Prophet start). Reddit threads still ask whether Dragon Communion and Dragon Cult can combine, a common hybrid. The dragon-breath and lightning damage is huge, but play is cast-heavy.",
+      "weapons": [
+        "Dragon Communion Seal (FTH/ARC scaling)",
+        "Any light melee backup"
+      ],
+      "firearm": "Incantations: Ancient Dragons' Lightning Strike, Fortissax's Lightning Spear, Dragonclaw, Rotten Breath / Dragonfire (Communion). Spirit Ash: Black Knife Tiche.",
+      "stats": {
+        "spread": {
+          "VIG": 55,
+          "MND": 30,
+          "END": 15,
+          "STR": 12,
+          "DEX": 10,
+          "INT": 9,
+          "FTH": 60,
+          "ARC": 38
+        },
+        "label": "synthesized (RL150; FTH-led with ARC for Dragon Communion Seal)",
+        "altSpreads": [
+          "Fextralife Dragon Priest (beginner): Prophet start, Catch Flame + Dragonfire"
+        ],
+        "level": 150
+      },
+      "ngNotes": "Use Dragon Hearts to buy Communion spells, and invest in MND for FP.",
+      "playstyle": "Mid-range caster: breath AoEs for crowds and status, lightning for big single-target damage.",
+      "bestFor": [
+        "Spellcasting",
+        "Status (rot/frost breaths)",
+        "AoE"
+      ],
+      "pros": [
+        "Huge AoE and status",
+        "Lightning is strong versus many bosses",
+        "Flexible spell list"
+      ],
+      "cons": [
+        "Long cast animations",
+        "Breaths are weak against fast or flying bosses",
+        "Needs Dragon Hearts"
+      ],
+      "runesGear": [
+        "Flock's Canvas Talisman / Radagon Icon",
+        "Godfrey Icon",
+        "Physick: Lightning-Shrouding Cracked Tear",
+        "Dragoncrest Greatshield Talisman"
+      ],
+      "sources": [
+        {
+          "title": "Fextralife – Dragon Communion Seal",
+          "url": "https://eldenring.wiki.fextralife.com/Dragon+Communion+Seal",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200"
+        },
+        {
+          "title": "Fextralife – Ancient Dragons' Lightning Strike",
+          "url": "https://eldenring.wiki.fextralife.com/Ancient+Dragons'+Lightning+Strike",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200"
+        },
+        {
+          "title": "Fextralife – Fortissax's Lightning Spear",
+          "url": "https://eldenring.wiki.fextralife.com/Fortissax's+Lightning+Spear",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200"
+        },
+        {
+          "title": "Fextralife – Dragonclaw",
+          "url": "https://eldenring.wiki.fextralife.com/Dragonclaw",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200"
+        },
+        {
+          "title": "Fextralife – Rotten Breath",
+          "url": "https://eldenring.wiki.fextralife.com/Rotten+Breath",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200"
+        },
+        {
+          "title": "Fextralife – Dragon Communion",
+          "url": "https://eldenring.wiki.fextralife.com/Dragon+Communion",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200"
+        },
+        {
+          "title": "Fextralife – Dragon Priest (community build page)",
+          "url": "https://eldenring.wiki.fextralife.com/Dragon_Priest_Build",
+          "siteType": "wiki",
+          "verifiedVia": "HTTP 200 (python requests; build summary read)"
+        },
+        {
+          "title": "Fextralife – Radagon Icon",
+          "url": "https://eldenring.wiki.fextralife.com/Radagon+Icon",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200"
+        },
+        {
+          "title": "Game Rant – Elden Ring: most overpowered builds (updated Apr 15 2026)",
+          "url": "https://gamerant.com/elden-ring-overpowered-builds/",
+          "siteType": "guide",
+          "verifiedVia": "curl HTTP 200 + WebFetch (title/content read)"
+        },
+        {
+          "title": "r/Eldenring – Is a Dragon Communion and Dragon Cult build a good build?",
+          "url": "https://www.reddit.com/r/Eldenring/comments/1okpvae/is_a_dragon_communion_and_dragon_cult_build_a/",
+          "siteType": "reddit",
+          "verifiedVia": "WebFetch (title/content read)"
+        },
+        {
+          "title": "GameFAQs – Intelligence or Faith?",
+          "url": "https://gamefaqs.gamespot.com/boards/323053-elden-ring/79961723",
+          "siteType": "forum",
+          "verifiedVia": "WebFetch (title/content read); curl returns 403",
+          "note": "SoNaF / Prince of Death staff / Golden Order Seal recommended for hybrids"
+        }
+      ]
+    },
+    {
+      "id": "milady-wing-stance",
+      "name": "Milady Wing Stance Dex/Faith (DLC)",
+      "archetype": "Dexterity/Faith",
+      "tier": "A",
+      "tierReason": "Game8 lists a Wing Stance Milady DLC build. PC Gamer runs a Milady Wing Stance build and notes that the 'Knight of Ides' class in the Tarnished Edition starts with Milady. Game Rant names Milady Wing Stance an SotE honorable mention. GGRecon says it can be obtained early in the DLC.",
+      "weapons": [
+        "Milady (Keen)",
+        "Second Milady / light greatsword offhand"
+      ],
+      "firearm": "Ash of War: Wing Stance. Incantations: Golden Vow. Spirit Ash: Revered DLC ashes or Tiche.",
+      "stats": {
+        "spread": {
+          "VIG": 60,
+          "MND": 15,
+          "END": 30,
+          "STR": 14,
+          "DEX": 60,
+          "INT": 9,
+          "FTH": 25,
+          "ARC": 16
+        },
+        "label": "synthesized (RL150; Keen Milady with FTH 25 for Wing Stance/Golden Vow)",
+        "altSpreads": [
+          "Game8 DLC Wing Stance Milady: 60/25/30/54/60/9/25/8 (sums to RL192, NG+ template)"
+        ],
+        "level": 150
+      },
+      "ngNotes": "Wing Stance has an excellent combo follow-up. Spend Scadutree levels first.",
+      "playstyle": "Fast light greatsword with leaping Wing Stance follow-ups for mobile pressure.",
+      "bestFor": [
+        "Shadow of the Erdtree",
+        "Fast melee",
+        "PvP"
+      ],
+      "pros": [
+        "Early in DLC",
+        "Fast with high hit count",
+        "Fun moveset"
+      ],
+      "cons": [
+        "DLC only",
+        "Lower burst than colossals"
+      ],
+      "runesGear": [
+        "Shard of Alexander",
+        "Rotten Winged Sword Insignia",
+        "Millicent's Prosthesis",
+        "Two-Handed Sword Talisman"
+      ],
+      "sources": [
+        {
+          "title": "Fextralife – Milady",
+          "url": "https://eldenring.wiki.fextralife.com/Milady",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200"
+        },
+        {
+          "title": "Fextralife – Wing Stance (Ash of War)",
+          "url": "https://eldenring.wiki.fextralife.com/Wing+Stance",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200"
+        },
+        {
+          "title": "Fextralife – Golden Vow",
+          "url": "https://eldenring.wiki.fextralife.com/Golden+Vow",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200"
+        },
+        {
+          "title": "Fextralife – Rotten Winged Sword Insignia",
+          "url": "https://eldenring.wiki.fextralife.com/Rotten+Winged+Sword+Insignia",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200"
+        },
+        {
+          "title": "Game8 – Best Shadow of the Erdtree DLC Builds",
+          "url": "https://game8.co/games/Elden-Ring/archives/459590",
+          "siteType": "guide",
+          "verifiedVia": "curl HTTP 200 (HTML parsed; WebFetch returns 403)"
+        },
+        {
+          "title": "PC Gamer – Best Elden Ring builds",
+          "url": "https://www.pcgamer.com/best-elden-ring-build/",
+          "siteType": "guide",
+          "verifiedVia": "curl HTTP 200 + WebFetch (title/content read)"
+        },
+        {
+          "title": "Game Rant – Best Shadow of the Erdtree builds",
+          "url": "https://gamerant.com/shadow-of-the-erdtree-best-elden-ring-dlc-builds-sote/",
+          "siteType": "guide",
+          "verifiedVia": "curl HTTP 200 + WebFetch (title/content read)"
+        },
+        {
+          "title": "GGRecon – Shadow of the Erdtree best builds (PvE & PvP)",
+          "url": "https://www.ggrecon.com/guides/elden-ring-shadow-of-the-erdtree-best-builds-pve-pvp/",
+          "siteType": "guide",
+          "verifiedVia": "curl HTTP 200",
+          "note": "Milady/Wing Stance details seen in search snippet; page confirmed 200"
+        }
+      ]
+    },
+    {
+      "id": "backhand-blade-bleed",
+      "name": "Backhand Blade Dex/Arcane Bleed (DLC)",
+      "archetype": "Dexterity/Arcane",
+      "tier": "A",
+      "tierReason": "Game8's DLC page lists a Backhand Blade build. PC Gamer's SotE section runs Backhand Blade bleed (Blind Spot). Game Rant's SotE list puts Arcane bleed with Backhand Blades first, and its OP list includes Blood-infused Backhand Blades with 40+ ARC. Patch 1.12.3 nerfed Swift Slash in PvP.",
+      "weapons": [
+        "Backhand Blade ×2 (Blood infusion)"
+      ],
+      "firearm": "Ash of War: Blind Spot / Swift Slash (Swift Slash was PvP-nerfed in 1.12.3). Spirit Ash: Mimic Tear.",
+      "stats": {
+        "spread": {
+          "VIG": 50,
+          "MND": 14,
+          "END": 20,
+          "STR": 10,
+          "DEX": 55,
+          "INT": 10,
+          "FTH": 25,
+          "ARC": 45
+        },
+        "label": "Game8 DLC Backhand Blade template (RL150)",
+        "level": 150
+      },
+      "ngNotes": "Patch 1.12.3: Swift Slash damage was cut in PvP and roll-cancel recovery was fixed (Windows Central).",
+      "playstyle": "Powerstance backhand blades. Weave fast strings with dodges to build up bleed.",
+      "bestFor": [
+        "Shadow of the Erdtree",
+        "Aggressive dodge play",
+        "Bleed"
+      ],
+      "pros": [
+        "Very fast",
+        "Strong bleed buildup",
+        "Mobile"
+      ],
+      "cons": [
+        "Short reach",
+        "DLC only",
+        "Patched"
+      ],
+      "runesGear": [
+        "Rotten Winged Sword Insignia",
+        "Millicent's Prosthesis",
+        "Shard of Alexander",
+        "Lord of Blood's Exultation",
+        "Dragoncrest Greatshield Talisman"
+      ],
+      "sources": [
+        {
+          "title": "Fextralife – Backhand Blade",
+          "url": "https://eldenring.wiki.fextralife.com/Backhand+Blade",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200"
+        },
+        {
+          "title": "Fextralife – Rotten Winged Sword Insignia",
+          "url": "https://eldenring.wiki.fextralife.com/Rotten+Winged+Sword+Insignia",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200"
+        },
+        {
+          "title": "Fextralife – Millicent's Prosthesis",
+          "url": "https://eldenring.wiki.fextralife.com/Millicent's+Prosthesis",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200"
+        },
+        {
+          "title": "Fextralife – Lord of Blood's Exultation",
+          "url": "https://eldenring.wiki.fextralife.com/Lord+of+Blood's+Exultation",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200"
+        },
+        {
+          "title": "Game8 – Best Shadow of the Erdtree DLC Builds",
+          "url": "https://game8.co/games/Elden-Ring/archives/459590",
+          "siteType": "guide",
+          "verifiedVia": "curl HTTP 200 (HTML parsed; WebFetch returns 403)"
+        },
+        {
+          "title": "PC Gamer – Best Elden Ring builds",
+          "url": "https://www.pcgamer.com/best-elden-ring-build/",
+          "siteType": "guide",
+          "verifiedVia": "curl HTTP 200 + WebFetch (title/content read)"
+        },
+        {
+          "title": "Game Rant – Best Shadow of the Erdtree builds",
+          "url": "https://gamerant.com/shadow-of-the-erdtree-best-elden-ring-dlc-builds-sote/",
+          "siteType": "guide",
+          "verifiedVia": "curl HTTP 200 + WebFetch (title/content read)"
+        },
+        {
+          "title": "Game Rant – Elden Ring: most overpowered builds (updated Apr 15 2026)",
+          "url": "https://gamerant.com/elden-ring-overpowered-builds/",
+          "siteType": "guide",
+          "verifiedVia": "curl HTTP 200 + WebFetch (title/content read)"
+        },
+        {
+          "title": "Windows Central – Elden Ring DLC 1.12.3 balance patch notes (Jul 4 2024)",
+          "url": "https://www.windowscentral.com/gaming/elden-ring-dlc-gets-1123-balance-patch-update-that-nerfs-broken-perfume-bottles-buffs-its-worst-weapon-and-makes-two-bosses-less-annoying",
+          "siteType": "guide",
+          "verifiedVia": "curl HTTP 200 + WebFetch (title/content read)"
+        }
+      ]
+    },
+    {
+      "id": "dark-moon-greatsword-int",
+      "name": "Dark Moon Greatsword Int",
+      "archetype": "Intelligence (melee)",
+      "tier": "A",
+      "tierReason": "Game Rant has a dedicated 'best INT build' article on it, and its OP list includes a Dark Moon Frostmage. PC Gamer gives it a build (16 STR / 11 DEX / 38 INT minimums), and Fextralife has a Darkmoon Spellblade page. Reddit threads weigh it against SoNaF and ask about it on pure INT.",
+      "weapons": [
+        "Dark Moon Greatsword",
+        "Carian Glintblade Staff (Fextralife) / Lusat's"
+      ],
+      "firearm": "Ash of War: Moonlight Greatsword (unique) with frost. Sorceries: Glintblade Phalanx, Loretta's Greatbow, Comet Azur. Spirit Ash: Black Knife Tiche or Mimic Tear.",
+      "stats": {
+        "spread": {
+          "VIG": 55,
+          "MND": 20,
+          "END": 25,
+          "STR": 16,
+          "DEX": 14,
+          "INT": 80,
+          "FTH": 9,
+          "ARC": 10
+        },
+        "label": "synthesized (RL150; DMGS needs 16 STR / 11 DEX / 38 INT)",
+        "altSpreads": [
+          "Fextralife Darkmoon Spellblade: RL100, INT & MND primary"
+        ],
+        "level": 150
+      },
+      "ngNotes": "Requires Ranni's questline to finish. Frost procs add percentage damage.",
+      "playstyle": "Two-hand it, use the moonlight wave on charged heavies for ranged frost, and stance-break with jump heavies.",
+      "bestFor": [
+        "Melee mage",
+        "Frost buildup",
+        "Ranni questline"
+      ],
+      "pros": [
+        "Magic + frost",
+        "Ranged waves",
+        "Strong late-game"
+      ],
+      "cons": [
+        "Gated behind a long questline",
+        "Low physical scaling"
+      ],
+      "runesGear": [
+        "Shard of Alexander",
+        "Magic Scorpion Charm",
+        "Godfrey Icon",
+        "Radagon Icon",
+        "Graven-Mass Talisman"
+      ],
+      "sources": [
+        {
+          "title": "Fextralife – Dark Moon Greatsword",
+          "url": "https://eldenring.wiki.fextralife.com/Dark+Moon+Greatsword",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200"
+        },
+        {
+          "title": "Fextralife – Darkmoon Spellblade (community build page)",
+          "url": "https://eldenring.wiki.fextralife.com/Darkmoon_Spellblade_Build",
+          "siteType": "wiki",
+          "verifiedVia": "HTTP 200 (python requests; build summary read)"
+        },
+        {
+          "title": "Fextralife – Chilling Mist (Ash of War)",
+          "url": "https://eldenring.wiki.fextralife.com/Chilling+Mist",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200"
+        },
+        {
+          "title": "Fextralife – Magic Scorpion Charm",
+          "url": "https://eldenring.wiki.fextralife.com/Magic+Scorpion+Charm",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200"
+        },
+        {
+          "title": "Game Rant – Best INT build: Dark Moon Greatsword",
+          "url": "https://gamerant.com/elden-ring-best-int-build-dark-moon-greatsword/",
+          "siteType": "guide",
+          "verifiedVia": "curl HTTP 200"
+        },
+        {
+          "title": "Game Rant – Elden Ring: most overpowered builds (updated Apr 15 2026)",
+          "url": "https://gamerant.com/elden-ring-overpowered-builds/",
+          "siteType": "guide",
+          "verifiedVia": "curl HTTP 200 + WebFetch (title/content read)"
+        },
+        {
+          "title": "PC Gamer – Best Elden Ring builds",
+          "url": "https://www.pcgamer.com/best-elden-ring-build/",
+          "siteType": "guide",
+          "verifiedVia": "curl HTTP 200 + WebFetch (title/content read)"
+        },
+        {
+          "title": "r/Eldenring – Sword of Night and Flame or Dark Moon Greatsword?",
+          "url": "https://www.reddit.com/r/Eldenring/comments/1mmc2fm/sword_of_night_and_flame_or_dark_moon_greatsword/",
+          "siteType": "reddit",
+          "verifiedVia": "WebFetch (title/content read)"
+        },
+        {
+          "title": "r/Eldenring – Can I use the Dark Moon Greatsword with a strictly intelligence build?",
+          "url": "https://www.reddit.com/r/Eldenring/comments/12bzm1z/can_i_use_the_dark_moon_greatsword_with_a/",
+          "siteType": "reddit",
+          "verifiedVia": "WebFetch (title/content read)"
+        },
+        {
+          "title": "r/Eldenring – Tiche or Mimic Tear?",
+          "url": "https://www.reddit.com/r/Eldenring/comments/1ibfj3f/tiche_or_mimic_tear/",
+          "siteType": "reddit",
+          "verifiedVia": "WebFetch (title/content read)"
+        }
+      ]
+    },
+    {
+      "id": "impenetrable-thorns-arcane",
+      "name": "Impenetrable Thorns Bleed Sorcery (DLC)",
+      "archetype": "Arcane/Intelligence (bleed caster)",
+      "tier": "A",
+      "tierReason": "Windows Central's 1.12.3 analysis calls Impenetrable Thorns 'unquestionably overpowered in PvE' for deleting bosses with bleed in a few casts, and says it wasn't nerfed in that patch. Game8 lists a DLC Impenetrable Thorns build, Game Rant names it an SotE honorable mention, and Fextralife has a Knight of Thorns build.",
+      "weapons": [
+        "Maternal Staff / Albinauric Staff (Game8)"
+      ],
+      "firearm": "Sorcery: Impenetrable Thorns (bleed). Ash of War on melee backup: Wild Strikes (Fextralife). Spirit Ash: Mimic Tear.",
+      "stats": {
+        "spread": {
+          "VIG": 50,
+          "MND": 30,
+          "END": 9,
+          "STR": 7,
+          "DEX": 7,
+          "INT": 21,
+          "FTH": 24,
+          "ARC": 60
+        },
+        "label": "Game8 DLC Impenetrable Thorns template (RL129)",
+        "level": 129
+      },
+      "ngNotes": "Fextralife recommends at least 5 Cerulean flasks for consistent casting. Its PvE strength is noted as of patch 1.12.3; check current patch notes before relying on it.",
+      "playstyle": "Get close-ish and cast thorns under bosses to stack bleed procs.",
+      "bestFor": [
+        "Shadow of the Erdtree bosses",
+        "Bleed caster"
+      ],
+      "pros": [
+        "Huge bleed buildup",
+        "Low stat demand"
+      ],
+      "cons": [
+        "DLC only",
+        "Bleed-immune enemies",
+        "Could be patched"
+      ],
+      "runesGear": [
+        "Lord of Blood's Exultation",
+        "Graven-Mass Talisman",
+        "Godfrey Icon",
+        "Physick: Cerulean Hidden Tear"
+      ],
+      "sources": [
+        {
+          "title": "Fextralife – Impenetrable Thorns",
+          "url": "https://eldenring.wiki.fextralife.com/Impenetrable+Thorns",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200"
+        },
+        {
+          "title": "Fextralife – Knight of Thorns (community build page)",
+          "url": "https://eldenring.wiki.fextralife.com/Knight_of_Thorns_Build",
+          "siteType": "wiki",
+          "verifiedVia": "HTTP 200 (python requests; build summary read)"
+        },
+        {
+          "title": "Game8 – Best Shadow of the Erdtree DLC Builds",
+          "url": "https://game8.co/games/Elden-Ring/archives/459590",
+          "siteType": "guide",
+          "verifiedVia": "curl HTTP 200 (HTML parsed; WebFetch returns 403)"
+        },
+        {
+          "title": "Game Rant – Best Shadow of the Erdtree builds",
+          "url": "https://gamerant.com/shadow-of-the-erdtree-best-elden-ring-dlc-builds-sote/",
+          "siteType": "guide",
+          "verifiedVia": "curl HTTP 200 + WebFetch (title/content read)"
+        },
+        {
+          "title": "Windows Central – Elden Ring DLC 1.12.3 balance patch notes (Jul 4 2024)",
+          "url": "https://www.windowscentral.com/gaming/elden-ring-dlc-gets-1123-balance-patch-update-that-nerfs-broken-perfume-bottles-buffs-its-worst-weapon-and-makes-two-bosses-less-annoying",
+          "siteType": "guide",
+          "verifiedVia": "curl HTTP 200 + WebFetch (title/content read)"
+        }
+      ]
+    },
+    {
+      "id": "rivers-of-blood-arcane",
+      "name": "Rivers of Blood Arcane (Corpse Piler)",
+      "archetype": "Arcane/Dexterity",
+      "tier": "B",
+      "tierReason": "The launch-era 'broken' build. GameFAQs posters praised dual RoB, and GamesRadar and Fextralife (Sanguine Samurai) both have builds. After several nerfs, Game Rant says dual RoB is 'Fearsome in PvP... in PvE only OK', and Reddit asks if it's 'still worth building'. A 2025 r/EldenRingBuilds guide argues it's still strong if you treat it as an Arcane weapon to 80.",
+      "weapons": [
+        "Rivers of Blood",
+        "Dragon Communion Seal (Fextralife)",
+        "Uchigatana offhand (GamesRadar)"
+      ],
+      "firearm": "Ash of War: Corpse Piler (unique; fire + bleed, Arcane scaling). Incantations: Flame Grant Me Strength. Spirit Ash: Mimic Tear.",
+      "stats": {
+        "spread": {
+          "VIG": 60,
+          "MND": 15,
+          "END": 20,
+          "STR": 12,
+          "DEX": 18,
+          "INT": 9,
+          "FTH": 15,
+          "ARC": 80
+        },
+        "label": "synthesized (RL150; Arcane to 80 per Reddit RoB guide; 12 STR / 18 DEX / 20 ARC minimums per PC Gamer)",
+        "level": 150
+      },
+      "ngNotes": "The Corpse Piler fire damage still works on bleed-immune enemies that aren't fire-resistant.",
+      "playstyle": "Spam Corpse Piler with multi-hit talismans. In PvP it's a pressure tool.",
+      "bestFor": [
+        "PvP",
+        "Bleed",
+        "Boss melts"
+      ],
+      "pros": [
+        "Big multi-hit damage",
+        "Fire covers bleed-immune enemies"
+      ],
+      "cons": [
+        "Repeatedly nerfed",
+        "FP hungry",
+        "Late-game pickup (invader drop)"
+      ],
+      "runesGear": [
+        "Lord of Blood's Exultation",
+        "Rotten Winged Sword Insignia",
+        "Millicent's Prosthesis",
+        "Shard of Alexander",
+        "White Mask",
+        "Physick: Thorny Cracked Tear + Flame-Shrouding"
+      ],
+      "sources": [
+        {
+          "title": "Fextralife – Rivers of Blood",
+          "url": "https://eldenring.wiki.fextralife.com/Rivers+of+Blood",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200"
+        },
+        {
+          "title": "Fextralife – Sanguine Samurai (community build page)",
+          "url": "https://eldenring.wiki.fextralife.com/Sanguine_Samurai_Build",
+          "siteType": "wiki",
+          "verifiedVia": "HTTP 200 (python requests; build summary read)"
+        },
+        {
+          "title": "Fextralife – Dragon Communion Seal",
+          "url": "https://eldenring.wiki.fextralife.com/Dragon+Communion+Seal",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200"
+        },
+        {
+          "title": "Fextralife – Flame, Grant Me Strength",
+          "url": "https://eldenring.wiki.fextralife.com/Flame+Grant+Me+Strength",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200"
+        },
+        {
+          "title": "Fextralife – White Mask",
+          "url": "https://eldenring.wiki.fextralife.com/White+Mask",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200"
+        },
+        {
+          "title": "Fextralife – Lord of Blood's Exultation",
+          "url": "https://eldenring.wiki.fextralife.com/Lord+of+Blood's+Exultation",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200"
+        },
+        {
+          "title": "GameFAQs – Best Class/Build",
+          "url": "https://gamefaqs.gamespot.com/boards/323052-elden-ring/80073779",
+          "siteType": "forum",
+          "verifiedVia": "WebFetch (title/content read); curl returns 403",
+          "note": "Replies favour Intelligence (Comet Azur/Shard Spiral) or Dex/Arcane bleed; dual RoB"
+        },
+        {
+          "title": "GamesRadar – Best Elden Ring builds",
+          "url": "https://www.gamesradar.com/best-elden-ring-builds/",
+          "siteType": "guide",
+          "verifiedVia": "curl HTTP 200 + WebFetch (title/content read)"
+        },
+        {
+          "title": "PC Gamer – Best Elden Ring builds",
+          "url": "https://www.pcgamer.com/best-elden-ring-build/",
+          "siteType": "guide",
+          "verifiedVia": "curl HTTP 200 + WebFetch (title/content read)"
+        },
+        {
+          "title": "Game Rant – Elden Ring: most overpowered builds (updated Apr 15 2026)",
+          "url": "https://gamerant.com/elden-ring-overpowered-builds/",
+          "siteType": "guide",
+          "verifiedVia": "curl HTTP 200 + WebFetch (title/content read)"
+        },
+        {
+          "title": "r/Eldenring – Is the Rivers of Blood still worth building around or did the nerfs ruin it completely?",
+          "url": "https://www.reddit.com/r/Eldenring/comments/1vehkk7/is_the_rivers_of_blood_still_worth_building/",
+          "siteType": "reddit",
+          "verifiedVia": "WebFetch (title/content read)"
+        },
+        {
+          "title": "r/EldenRingBuilds – Rivers of Blood build guide",
+          "url": "https://www.reddit.com/r/EldenRingBuilds/comments/1ly6brk/rivers_of_blood_build_guide/",
+          "siteType": "reddit",
+          "verifiedVia": "WebFetch (title/content read)",
+          "note": "Argues Corpse Piler scales on Arcane up to 80; Shard of Alexander, Millicent's, Rotten Winged Sword Insignia, Lord of Blood's Exultation"
+        }
+      ]
+    },
+    {
+      "id": "black-flame-faith",
+      "name": "Black Flame Faith (Godslayer's Seal / Scythe)",
+      "archetype": "Faith/Dexterity",
+      "tier": "B",
+      "tierReason": "GamesRadar's faith pick uses Winged Scythe + Godslayer's Greatsword + Godslayer's Seal with Black Flame. Game Rant's OP list includes Black Flame Winged Scythe/Godslayer. Fextralife has both a wiki build page and a blog guide for a Black Flame Spellblade, and Game8 lists Dex/Faith at B/A.",
+      "weapons": [
+        "Winged Scythe / Halo Scythe",
+        "Godslayer's Greatsword",
+        "Godslayer's Seal",
+        "Cross-Naginata (Fextralife)"
+      ],
+      "firearm": "Incantations: Black Flame, Black Flame Blade, Scouring Black Flame, Bloodflame Blade, Golden Vow. Ash of War: Sacred Blade (Winged Scythe) / Repeating Thrust.",
+      "stats": {
+        "spread": {
+          "VIG": 60,
+          "MND": 30,
+          "END": 24,
+          "STR": 12,
+          "DEX": 20,
+          "INT": 9,
+          "FTH": 60,
+          "ARC": 14
+        },
+        "label": "synthesized (RL150; FTH-led Dex/Faith)",
+        "altSpreads": [
+          "Game8 Dex/Faith: 40/29/20/16/60/7/45/12",
+          "Fextralife Black Flame Spellblade: RL100, FTH & DEX primary"
+        ],
+        "level": 150
+      },
+      "ngNotes": "Black Flame deals percentage-HP damage over time, so it scales well into NG+.",
+      "playstyle": "Buff your weapon with black flame or bloodflame, then mix holy/fire melee with Black Flame casts.",
+      "bestFor": [
+        "Faith casters",
+        "Spellblade",
+        "Big-HP bosses"
+      ],
+      "pros": [
+        "% HP burn",
+        "Flexible incantations",
+        "Strong buffs"
+      ],
+      "cons": [
+        "Godslayer gear comes late",
+        "Holy-resistant late bosses"
+      ],
+      "runesGear": [
+        "Shard of Alexander",
+        "Fire Scorpion Charm",
+        "Flock's Canvas Talisman",
+        "Physick: Flame-Shrouding Cracked Tear"
+      ],
+      "sources": [
+        {
+          "title": "Fextralife – Black Flame",
+          "url": "https://eldenring.wiki.fextralife.com/Black+Flame",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200"
+        },
+        {
+          "title": "Fextralife – Godslayer's Seal",
+          "url": "https://eldenring.wiki.fextralife.com/Godslayer's+Seal",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200"
+        },
+        {
+          "title": "Fextralife – Black Flame Spellblade (community build page)",
+          "url": "https://eldenring.wiki.fextralife.com/Black_Flame_Spellblade_Build",
+          "siteType": "wiki",
+          "verifiedVia": "HTTP 200 (python requests; build summary read)"
+        },
+        {
+          "title": "Fextralife – Bloodflame Blade",
+          "url": "https://eldenring.wiki.fextralife.com/Bloodflame+Blade",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200"
+        },
+        {
+          "title": "Fextralife – Golden Vow",
+          "url": "https://eldenring.wiki.fextralife.com/Golden+Vow",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200"
+        },
+        {
+          "title": "Fextralife – Black Flame Faith Build Guide (Black Flame Spellblade)",
+          "url": "https://fextralife.com/elden-ring-black-flame-faith-build-guide-black-flame-spellblade/",
+          "siteType": "guide",
+          "verifiedVia": "curl HTTP 200"
+        },
+        {
+          "title": "GamesRadar – Best Elden Ring builds",
+          "url": "https://www.gamesradar.com/best-elden-ring-builds/",
+          "siteType": "guide",
+          "verifiedVia": "curl HTTP 200 + WebFetch (title/content read)"
+        },
+        {
+          "title": "Game Rant – Elden Ring: most overpowered builds (updated Apr 15 2026)",
+          "url": "https://gamerant.com/elden-ring-overpowered-builds/",
+          "siteType": "guide",
+          "verifiedVia": "curl HTTP 200 + WebFetch (title/content read)"
+        },
+        {
+          "title": "Game8 – Best Builds (tiered by Damage & Ease of Use; updated Jul 28 2026)",
+          "url": "https://game8.co/games/Elden-Ring/archives/377929",
+          "siteType": "guide",
+          "verifiedVia": "curl HTTP 200 (HTML parsed; WebFetch returns 403)"
+        },
+        {
+          "title": "TheGamer – Best Faith/Dexterity build guide",
+          "url": "https://www.thegamer.com/elden-ring-best-faith-dexterity-build-guide-walkthrough/",
+          "siteType": "guide",
+          "verifiedVia": "curl HTTP 200"
+        }
+      ]
+    },
+    {
+      "id": "spirit-summoner-mimic",
+      "name": "Spirit Ash Summoner (Mimic Tear / Black Knife Tiche)",
+      "archetype": "Any (summon-focused)",
+      "tier": "B",
+      "tierReason": "Reddit's Moonveil Sorcerer post calls Mimic Tear 'by far and large the strongest summon in the game', and 'Tiche or Mimic Tear?' is a recurring Reddit question. Eldenpedia notes the Mimic copies your full loadout, with direct damage reduced in 1.03 but status damage unaffected. Patch 1.12.3 fixed a Tiche bug where enemies healed when her HP-reduction wore off.",
+      "weapons": [
+        "Any build's weapon (Mimic copies your loadout)",
+        "Status weapons (bleed/frost) synergize best"
+      ],
+      "firearm": "Spirit Ash: Mimic Tear +10 or Black Knife Tiche +10. Incantations: Golden Vow (buffs you). DLC: Revered Spirit Ash upgrades.",
+      "stats": {
+        "spread": {
+          "VIG": 50,
+          "MND": 30,
+          "END": 25,
+          "STR": 18,
+          "DEX": 18,
+          "INT": 9,
+          "FTH": 40,
+          "ARC": 14
+        },
+        "label": "synthesized (RL125; generic support/hybrid around Golden Vow)",
+        "level": 125
+      },
+      "ngNotes": "Upgrade spirit ashes with Grave/Ghost Gloveworts. In the DLC, Revered Spirit Ash boosts summons.",
+      "playstyle": "Summon early in every boss fight, then let the boss split aggro between you and the summon.",
+      "bestFor": [
+        "Struggling players",
+        "Boss fights",
+        "Any build"
+      ],
+      "pros": [
+        "Doubles damage output",
+        "Takes aggro"
+      ],
+      "cons": [
+        "Considered 'easy mode' by purists",
+        "Mimic takes about 5s to activate (Eldenpedia)",
+        "Mimic is HP-costed"
+      ],
+      "runesGear": [
+        "Ancestral Spirit's Horn",
+        "Revered Spirit Ash (DLC)",
+        "Physick as per main build"
+      ],
+      "sources": [
+        {
+          "title": "Fextralife – Mimic Tear Ashes",
+          "url": "https://eldenring.wiki.fextralife.com/Mimic+Tear+Ashes",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200"
+        },
+        {
+          "title": "Eldenpedia (wiki.gg) – Mimic Tear Ashes",
+          "url": "https://eldenring.wiki.gg/wiki/Mimic_Tear_Ashes",
+          "siteType": "wiki",
+          "verifiedVia": "WebFetch (title/content read); curl returns 403"
+        },
+        {
+          "title": "Fextralife – Black Knife Tiche",
+          "url": "https://eldenring.wiki.fextralife.com/Black+Knife+Tiche",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200"
+        },
+        {
+          "title": "Fextralife – Spirit Ashes",
+          "url": "https://eldenring.wiki.fextralife.com/Spirit+Ashes",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200"
+        },
+        {
+          "title": "Fextralife – Revered Spirit Ash",
+          "url": "https://eldenring.wiki.fextralife.com/Revered+Spirit+Ash",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200"
+        },
+        {
+          "title": "r/Eldenring – Strongest PvE Build: Moonveil Sorcerer",
+          "url": "https://www.reddit.com/r/Eldenring/comments/t5ilyg/strongest_pve_build_moonveil_sorcerer/",
+          "siteType": "reddit",
+          "verifiedVia": "WebFetch (title/content read)",
+          "note": "Astrologer start, INT 60 / VIG 40 / MND 30, Lusat's, Mimic Tear; edit notes 1.03 changes"
+        },
+        {
+          "title": "r/Eldenring – Tiche or Mimic Tear?",
+          "url": "https://www.reddit.com/r/Eldenring/comments/1ibfj3f/tiche_or_mimic_tear/",
+          "siteType": "reddit",
+          "verifiedVia": "WebFetch (title/content read)"
+        },
+        {
+          "title": "Windows Central – Elden Ring DLC 1.12.3 balance patch notes (Jul 4 2024)",
+          "url": "https://www.windowscentral.com/gaming/elden-ring-dlc-gets-1123-balance-patch-update-that-nerfs-broken-perfume-bottles-buffs-its-worst-weapon-and-makes-two-bosses-less-annoying",
+          "siteType": "guide",
+          "verifiedVia": "curl HTTP 200 + WebFetch (title/content read)"
+        }
+      ]
+    },
+    {
+      "id": "sword-of-night-and-flame",
+      "name": "Sword of Night and Flame Int/Faith hybrid",
+      "archetype": "Intelligence/Faith",
+      "tier": "B",
+      "tierReason": "A launch-era favorite with damage reduced in 1.03 (PC Gamer). GameFAQs posters recommend it for INT/FTH hybrids alongside the Prince of Death's Staff and Golden Order Seal. Game8's DLC page still lists a SoNaF hybrid, and Fextralife's Death Knight build uses it.",
+      "weapons": [
+        "Sword of Night and Flame",
+        "Carian Regal Scepter",
+        "Frenzied Flame Seal / Golden Order Seal"
+      ],
+      "firearm": "Ash of War: Night-and-Flame Stance (unique; magic beam / fire sweep). Incantations: Golden Vow, Flame Grant Me Strength. Spirit Ash: Black Knife Tiche.",
+      "stats": {
+        "spread": {
+          "VIG": 60,
+          "MND": 26,
+          "END": 10,
+          "STR": 12,
+          "DEX": 12,
+          "INT": 40,
+          "FTH": 40,
+          "ARC": 7
+        },
+        "label": "Game8 DLC SoNaF hybrid template (RL128)",
+        "altSpreads": [
+          "PC Gamer minimums: 12 STR / 12 DEX / 24 INT / 24 FTH"
+        ],
+        "level": 128
+      },
+      "ngNotes": "The weapon art scales with both INT and FTH, so balance them. MND matters for FP.",
+      "playstyle": "Ranged beam and close fire sweep from a straight sword, plus casts.",
+      "bestFor": [
+        "Hybrid casters",
+        "Caria Manor early pickup"
+      ],
+      "pros": [
+        "Early",
+        "Two damage types",
+        "Ranged WA"
+      ],
+      "cons": [
+        "Nerfed in 1.03",
+        "Splits stats"
+      ],
+      "runesGear": [
+        "Shard of Alexander",
+        "Magic Scorpion Charm",
+        "Great-Jar's Arsenal",
+        "Physick: Cerulean Hidden Tear"
+      ],
+      "sources": [
+        {
+          "title": "Fextralife – Sword of Night and Flame",
+          "url": "https://eldenring.wiki.fextralife.com/Sword+of+Night+and+Flame",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200"
+        },
+        {
+          "title": "Fextralife – Death Knight (community build page)",
+          "url": "https://eldenring.wiki.fextralife.com/Death_Knight_Build",
+          "siteType": "wiki",
+          "verifiedVia": "HTTP 200 (python requests; build summary read)"
+        },
+        {
+          "title": "Game8 – Best Shadow of the Erdtree DLC Builds",
+          "url": "https://game8.co/games/Elden-Ring/archives/459590",
+          "siteType": "guide",
+          "verifiedVia": "curl HTTP 200 (HTML parsed; WebFetch returns 403)"
+        },
+        {
+          "title": "PC Gamer – Best Elden Ring builds",
+          "url": "https://www.pcgamer.com/best-elden-ring-build/",
+          "siteType": "guide",
+          "verifiedVia": "curl HTTP 200 + WebFetch (title/content read)"
+        },
+        {
+          "title": "GameFAQs – Intelligence or Faith?",
+          "url": "https://gamefaqs.gamespot.com/boards/323053-elden-ring/79961723",
+          "siteType": "forum",
+          "verifiedVia": "WebFetch (title/content read); curl returns 403",
+          "note": "SoNaF / Prince of Death staff / Golden Order Seal recommended for hybrids"
+        },
+        {
+          "title": "r/Eldenring – Sword of Night and Flame or Dark Moon Greatsword?",
+          "url": "https://www.reddit.com/r/Eldenring/comments/1mmc2fm/sword_of_night_and_flame_or_dark_moon_greatsword/",
+          "siteType": "reddit",
+          "verifiedVia": "WebFetch (title/content read)"
+        }
+      ]
+    },
+    {
+      "id": "mohgwyn-sacred-spear",
+      "name": "Mohgwyn's Sacred Spear Bleed (Bloodboon)",
+      "archetype": "Strength/Arcane",
+      "tier": "B",
+      "tierReason": "Game Rant's OP list includes a 'Lord of Blood' Mohgwyn's Spear build, and Game8's DLC Spear & Shield build uses Mohgwyn's Sacred Spear with a Fingerprint shield.",
+      "weapons": [
+        "Mohgwyn's Sacred Spear"
+      ],
+      "firearm": "Ash of War: Bloodboon Ritual (unique). Incantation: Bloodflame Blade. Spirit Ash: Mimic Tear.",
+      "stats": {
+        "spread": {
+          "VIG": 60,
+          "MND": 15,
+          "END": 25,
+          "STR": 24,
+          "DEX": 14,
+          "INT": 9,
+          "FTH": 15,
+          "ARC": 67
+        },
+        "label": "synthesized (RL150; Arcane-led; spear needs 24 STR / 14 DEX / 27 ARC)",
+        "level": 150
+      },
+      "ngNotes": "Obtained after Mohg, Lord of Blood, which is late-game.",
+      "playstyle": "Use the long-reach great spear and pop Bloodboon Ritual for huge AoE bleed.",
+      "bestFor": [
+        "Late-game bleed",
+        "AoE"
+      ],
+      "pros": [
+        "Massive AoE weapon art"
+      ],
+      "cons": [
+        "Late pickup",
+        "Slow WA"
+      ],
+      "runesGear": [
+        "Lord of Blood's Exultation",
+        "Shard of Alexander",
+        "Millicent's Prosthesis"
+      ],
+      "sources": [
+        {
+          "title": "Fextralife – Mohgwyn's Sacred Spear",
+          "url": "https://eldenring.wiki.fextralife.com/Mohgwyn's+Sacred+Spear",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200"
+        },
+        {
+          "title": "Fextralife – Bloodflame Blade",
+          "url": "https://eldenring.wiki.fextralife.com/Bloodflame+Blade",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200"
+        },
+        {
+          "title": "Fextralife – Lord of Blood's Exultation",
+          "url": "https://eldenring.wiki.fextralife.com/Lord+of+Blood's+Exultation",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200"
+        },
+        {
+          "title": "Game Rant – Elden Ring: most overpowered builds (updated Apr 15 2026)",
+          "url": "https://gamerant.com/elden-ring-overpowered-builds/",
+          "siteType": "guide",
+          "verifiedVia": "curl HTTP 200 + WebFetch (title/content read)"
+        },
+        {
+          "title": "Game8 – Best Shadow of the Erdtree DLC Builds",
+          "url": "https://game8.co/games/Elden-Ring/archives/459590",
+          "siteType": "guide",
+          "verifiedVia": "curl HTTP 200 (HTML parsed; WebFetch returns 403)"
+        }
+      ]
+    },
+    {
+      "id": "frost-bleed-dual-katana",
+      "name": "Frost + Bleed Dual Katana ('Let Me Solo Her')",
+      "archetype": "Dex/Int/Arcane (status)",
+      "tier": "B",
+      "tierReason": "PC Gamer documents the famous 'Let Me Solo Her' setup: Cold Uchigatana + RoB, Hoarfrost Stomp, and the Jar helm. Reddit threads ask how to combine bleed and frost. Double status procs are strong but split your stats.",
+      "weapons": [
+        "Uchigatana (Cold)",
+        "Rivers of Blood or Blood Nagakiba"
+      ],
+      "firearm": "Ash of War: Hoarfrost Stomp / Chilling Mist on the cold katana. Spirit Ash: Mimic Tear.",
+      "stats": {
+        "spread": {
+          "VIG": 60,
+          "MND": 15,
+          "END": 30,
+          "STR": 12,
+          "DEX": 45,
+          "INT": 30,
+          "FTH": 9,
+          "ARC": 28
+        },
+        "label": "synthesized (RL150; Cold infusion scales INT, bleed scales ARC)",
+        "level": 150
+      },
+      "ngNotes": "Frost lowers enemy defenses. It's fine for NG+ but less focused than a pure Arcane build.",
+      "playstyle": "Powerstance the katanas. Frost proc first, then bleed procs into the frost vulnerability.",
+      "bestFor": [
+        "Status stacking",
+        "Iconic meme-to-meta"
+      ],
+      "pros": [
+        "Two status types",
+        "Fast"
+      ],
+      "cons": [
+        "Spread-thin stats",
+        "Status-immune bosses"
+      ],
+      "runesGear": [
+        "Rotten Winged Sword Insignia",
+        "Lord of Blood's Exultation",
+        "Shard of Alexander",
+        "Jar helm (cosmetic)"
+      ],
+      "sources": [
+        {
+          "title": "Fextralife – Uchigatana",
+          "url": "https://eldenring.wiki.fextralife.com/Uchigatana",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200"
+        },
+        {
+          "title": "Fextralife – Rivers of Blood",
+          "url": "https://eldenring.wiki.fextralife.com/Rivers+of+Blood",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200"
+        },
+        {
+          "title": "Fextralife – Hoarfrost Stomp (Ash of War)",
+          "url": "https://eldenring.wiki.fextralife.com/Hoarfrost+Stomp",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200"
+        },
+        {
+          "title": "Fextralife – Chilling Mist (Ash of War)",
+          "url": "https://eldenring.wiki.fextralife.com/Chilling+Mist",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200"
+        },
+        {
+          "title": "PC Gamer – Best Elden Ring builds",
+          "url": "https://www.pcgamer.com/best-elden-ring-build/",
+          "siteType": "guide",
+          "verifiedVia": "curl HTTP 200 + WebFetch (title/content read)"
+        },
+        {
+          "title": "r/Eldenring – Bleed/Frost Build",
+          "url": "https://www.reddit.com/r/Eldenring/comments/1iqitzt/bleedfrost_build/",
+          "siteType": "reddit",
+          "verifiedVia": "WebFetch (title/content read)"
+        }
+      ]
+    },
+    {
+      "id": "bloodhounds-fang-quality",
+      "name": "Bloodhound's Fang Str/Dex (beginner)",
+      "archetype": "Strength/Dexterity (Quality)",
+      "tier": "B",
+      "tierReason": "The classic first-playthrough weapon. A Reddit thread asks why '9 times out of 10' new players use it, and GameFAQs posters cite it as the easy early bleed pick. Fextralife has a whole-game Bloodhound build. Game8's Str/Dex is B/B.",
+      "weapons": [
+        "Bloodhound's Fang",
+        "Zweihander / Ghiza's Wheel (Game8 Str/Dex alts)"
+      ],
+      "firearm": "Ash of War: Bloodhound's Finesse (unique). Spirit Ash: Jellyfish → Mimic Tear later.",
+      "stats": {
+        "spread": {
+          "VIG": 40,
+          "MND": 10,
+          "END": 24,
+          "STR": 55,
+          "DEX": 55,
+          "INT": 9,
+          "FTH": 15,
+          "ARC": 7
+        },
+        "label": "Game8 Str/Dex template (RL136 as listed)",
+        "altSpreads": [
+          "Fextralife Bloodhound: Bloodhound's Fang needs 18 STR / 17 DEX; Bull-Goat's to reach 51 poise"
+        ],
+        "level": 136
+      },
+      "ngNotes": "Easy to get early from the Bloodhound Knight in Forlorn Hound Evergaol. Later, respec into a stronger weapon.",
+      "playstyle": "Curved greatsword with bleed and a backstep-dash weapon art. Mid-weight melee.",
+      "bestFor": [
+        "First playthrough",
+        "Early game"
+      ],
+      "pros": [
+        "Available very early",
+        "Bleed on a heavy weapon"
+      ],
+      "cons": [
+        "Falls off late",
+        "Generic"
+      ],
+      "runesGear": [
+        "Bull-Goat's Talisman",
+        "Shard of Alexander",
+        "Claw Talisman",
+        "Dragoncrest Greatshield Talisman",
+        "Raptor's Black Feathers"
+      ],
+      "sources": [
+        {
+          "title": "Fextralife – Bloodhound's Fang",
+          "url": "https://eldenring.wiki.fextralife.com/Bloodhound's+Fang",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200"
+        },
+        {
+          "title": "Fextralife – Bloodhound (community build page)",
+          "url": "https://eldenring.wiki.fextralife.com/Bloodhound_Build",
+          "siteType": "wiki",
+          "verifiedVia": "HTTP 200 (python requests; build summary read)"
+        },
+        {
+          "title": "Fextralife – Bull-Goat's Talisman",
+          "url": "https://eldenring.wiki.fextralife.com/Bull-Goat's+Talisman",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200"
+        },
+        {
+          "title": "Fextralife – Beginner Builds",
+          "url": "https://eldenring.wiki.fextralife.com/Beginner_Builds",
+          "siteType": "wiki",
+          "verifiedVia": "HTTP 200 (python requests; build summary read)"
+        },
+        {
+          "title": "r/Eldenring – Genuine question. Why does almost every first time elden ring player use bloodhounds fang?",
+          "url": "https://www.reddit.com/r/Eldenring/comments/1mrkibu/genuine_question_why_does_almost_every_first_time/",
+          "siteType": "reddit",
+          "verifiedVia": "WebFetch (title/content read)"
+        },
+        {
+          "title": "GameFAQs – Best build right now?",
+          "url": "https://gamefaqs.gamespot.com/boards/323053-elden-ring/79942461",
+          "siteType": "forum",
+          "verifiedVia": "WebFetch (title/content read); curl returns 403",
+          "note": "Closed poll, 137 votes: Intelligence+other 35.77%, Intelligence 29.2%; replies cite Moonveil and Bloodhound's Fang"
+        },
+        {
+          "title": "Game8 – Best Builds (tiered by Damage & Ease of Use; updated Jul 28 2026)",
+          "url": "https://game8.co/games/Elden-Ring/archives/377929",
+          "siteType": "guide",
+          "verifiedVia": "curl HTTP 200 (HTML parsed; WebFetch returns 403)"
+        },
+        {
+          "title": "TheGamer – Best Dexterity build guide",
+          "url": "https://www.thegamer.com/elden-ring-best-dexterity-build-guide-walkthrough/",
+          "siteType": "guide",
+          "verifiedVia": "curl HTTP 200"
+        }
+      ]
+    },
+    {
+      "id": "dryleaf-arts-frost-monk",
+      "name": "Dryleaf Arts Frost Monk (DLC)",
+      "archetype": "Strength/Dexterity/Int (hand-to-hand)",
+      "tier": "B",
+      "tierReason": "DLC hand-to-hand arts. PC Gamer runs a Cold Dryleaf Arts monk, Fextralife has a 'Frost-Fu Monk' page, and Game Rant's SotE list mentions Dryleaf among its Arcane-bleed picks.",
+      "weapons": [
+        "Dryleaf Arts (Cold)",
+        "Dane's Footwork (alt)"
+      ],
+      "firearm": "Ash of War: Divine Beast Frost Stomp (Fextralife). Spirit Ash: Revered ashes.",
+      "stats": {
+        "spread": {
+          "VIG": 60,
+          "MND": 12,
+          "END": 30,
+          "STR": 30,
+          "DEX": 30,
+          "INT": 40,
+          "FTH": 9,
+          "ARC": 18
+        },
+        "label": "synthesized (RL150; Fextralife lists STR/DEX/INT/VIG primary)",
+        "level": 150
+      },
+      "ngNotes": "DLC only.",
+      "playstyle": "Martial-arts kicks with Dryleaf stance follow-ups and frost procs.",
+      "bestFor": [
+        "Shadow of the Erdtree",
+        "Stylish melee"
+      ],
+      "pros": [
+        "Fast combos",
+        "Frost"
+      ],
+      "cons": [
+        "Short reach",
+        "DLC only"
+      ],
+      "runesGear": [
+        "Blue Dancer Charm",
+        "Dragoncrest Greatshield Talisman",
+        "Bull-Goat's Talisman",
+        "Shard of Alexander"
+      ],
+      "sources": [
+        {
+          "title": "Fextralife – Dryleaf Arts",
+          "url": "https://eldenring.wiki.fextralife.com/Dryleaf+Arts",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200"
+        },
+        {
+          "title": "Fextralife – Frost-Fu Monk (community build page)",
+          "url": "https://eldenring.wiki.fextralife.com/Frost-Fu_Monk_Build",
+          "siteType": "wiki",
+          "verifiedVia": "HTTP 200 (python requests; build summary read)"
+        },
+        {
+          "title": "PC Gamer – Best Elden Ring builds",
+          "url": "https://www.pcgamer.com/best-elden-ring-build/",
+          "siteType": "guide",
+          "verifiedVia": "curl HTTP 200 + WebFetch (title/content read)"
+        },
+        {
+          "title": "Game Rant – Best Shadow of the Erdtree builds",
+          "url": "https://gamerant.com/shadow-of-the-erdtree-best-elden-ring-dlc-builds-sote/",
+          "siteType": "guide",
+          "verifiedVia": "curl HTTP 200 + WebFetch (title/content read)"
+        },
+        {
+          "title": "Fextralife – Shadow of the Erdtree Builds",
+          "url": "https://eldenring.wiki.fextralife.com/SOTE_Builds",
+          "siteType": "wiki",
+          "verifiedVia": "HTTP 200 (python requests; build summary read)"
+        }
+      ]
+    },
+    {
+      "id": "black-steel-greathammer-guard",
+      "name": "Black Steel Greathammer Guard Counter (DLC)",
+      "archetype": "Strength/Faith",
+      "tier": "B",
+      "tierReason": "Game8's DLC builds include a Black Steel Greathammer guard-counter build. Game Rant's SotE list includes Black Steel Greatshield poke. A defensive DLC alternative.",
+      "weapons": [
+        "Black Steel Greathammer",
+        "Greatshield"
+      ],
+      "firearm": "Ash of War: guard counter / Sacred Order (holy). Incantations: Golden Vow.",
+      "stats": {
+        "spread": {
+          "VIG": 60,
+          "MND": 10,
+          "END": 35,
+          "STR": 36,
+          "DEX": 11,
+          "INT": 7,
+          "FTH": 40,
+          "ARC": 7
+        },
+        "label": "Game8 DLC Black Steel Greathammer template (RL127)",
+        "level": 127
+      },
+      "ngNotes": "High END for guarding.",
+      "playstyle": "Block, then guard counter. Hammer stagger opens crits.",
+      "bestFor": [
+        "Shadow of the Erdtree",
+        "Defensive play"
+      ],
+      "pros": [
+        "Safe",
+        "Big stagger"
+      ],
+      "cons": [
+        "Slow",
+        "Grabs"
+      ],
+      "runesGear": [
+        "Dragoncrest Greatshield Talisman",
+        "Shard of Alexander",
+        "Physick: Deflecting Hardtear"
+      ],
+      "sources": [
+        {
+          "title": "Fextralife – Black Steel Greathammer",
+          "url": "https://eldenring.wiki.fextralife.com/Black+Steel+Greathammer",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200"
+        },
+        {
+          "title": "Fextralife – Sacred Order (Ash of War)",
+          "url": "https://eldenring.wiki.fextralife.com/Sacred+Order",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200"
+        },
+        {
+          "title": "Fextralife – Deflecting Hardtear",
+          "url": "https://eldenring.wiki.fextralife.com/Deflecting+Hardtear",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200"
+        },
+        {
+          "title": "Game8 – Best Shadow of the Erdtree DLC Builds",
+          "url": "https://game8.co/games/Elden-Ring/archives/459590",
+          "siteType": "guide",
+          "verifiedVia": "curl HTTP 200 (HTML parsed; WebFetch returns 403)"
+        },
+        {
+          "title": "Game Rant – Best Shadow of the Erdtree builds",
+          "url": "https://gamerant.com/shadow-of-the-erdtree-best-elden-ring-dlc-builds-sote/",
+          "siteType": "guide",
+          "verifiedVia": "curl HTTP 200 + WebFetch (title/content read)"
+        }
+      ]
+    },
+    {
+      "id": "frenzied-flame-madness",
+      "name": "Frenzied Flame Madness (gimmick)",
+      "archetype": "Intelligence/Faith (Frenzy)",
+      "tier": "C",
+      "tierReason": "A fun, novelty pick. Game Rant's SotE list gives 'Madness' builds an honorable mention. Frenzied Flame incantations (Madding Hand, Unendurable Frenzy) are powerful but self-damaging and situational.",
+      "weapons": [
+        "Frenzied Flame Seal"
+      ],
+      "firearm": "Incantations: Madding Hand, Unendurable Frenzy (DLC), Howl of Shabriri. Spirit Ash: Black Knife Tiche.",
+      "stats": {
+        "spread": {
+          "VIG": 60,
+          "MND": 35,
+          "END": 15,
+          "STR": 10,
+          "DEX": 10,
+          "INT": 40,
+          "FTH": 50,
+          "ARC": 8
+        },
+        "label": "synthesized (RL149; INT/FTH split for Frenzied Flame Seal)",
+        "level": 149
+      },
+      "ngNotes": "Madness builds up on you too. Many bosses resist madness.",
+      "playstyle": "Close-range frenzy blasts.",
+      "bestFor": [
+        "Memes",
+        "Roleplay"
+      ],
+      "pros": [
+        "Unique",
+        "High burst"
+      ],
+      "cons": [
+        "Self-damage",
+        "Madness-immune bosses"
+      ],
+      "runesGear": [
+        "Clarifying Horn Charm",
+        "Physick: Flame-Shrouding"
+      ],
+      "sources": [
+        {
+          "title": "Fextralife – Frenzied Flame Seal",
+          "url": "https://eldenring.wiki.fextralife.com/Frenzied+Flame+Seal",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200"
+        },
+        {
+          "title": "Fextralife – Madding Hand",
+          "url": "https://eldenring.wiki.fextralife.com/Madding+Hand",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200"
+        },
+        {
+          "title": "Fextralife – Unendurable Frenzy",
+          "url": "https://eldenring.wiki.fextralife.com/Unendurable+Frenzy",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200"
+        },
+        {
+          "title": "Game Rant – Best Shadow of the Erdtree builds",
+          "url": "https://gamerant.com/shadow-of-the-erdtree-best-elden-ring-dlc-builds-sote/",
+          "siteType": "guide",
+          "verifiedVia": "curl HTTP 200 + WebFetch (title/content read)"
+        }
+      ]
+    }
+  ],
+  "guides": [
+    {
+      "title": "Fextralife – Builds (index of 150+ community builds)",
+      "url": "https://eldenring.wiki.fextralife.com/Builds",
+      "site": "Fextralife",
+      "siteType": "wiki",
+      "description": "Index of 150+ community builds, by stat and DLC."
+    },
+    {
+      "title": "Fextralife – Shadow of the Erdtree Builds",
+      "url": "https://eldenring.wiki.fextralife.com/SOTE_Builds",
+      "site": "Fextralife",
+      "siteType": "wiki",
+      "description": "Shadow of the Erdtree build list."
+    },
+    {
+      "title": "Fextralife – PvP Builds",
+      "url": "https://eldenring.wiki.fextralife.com/PvP+Builds",
+      "site": "Fextralife",
+      "siteType": "wiki",
+      "description": "PvP builds."
+    },
+    {
+      "title": "Fextralife – Beginner Builds",
+      "url": "https://eldenring.wiki.fextralife.com/Beginner_Builds",
+      "site": "Fextralife",
+      "siteType": "wiki",
+      "description": "Beginner builds."
+    },
+    {
+      "title": "Fextralife – Stats (softcaps reference)",
+      "url": "https://eldenring.wiki.fextralife.com/Stats",
+      "site": "Fextralife",
+      "siteType": "wiki",
+      "description": "Stat softcaps reference."
+    },
+    {
+      "title": "Game8 – Best Builds (tiered by Damage & Ease of Use; updated Jul 28 2026)",
+      "url": "https://game8.co/games/Elden-Ring/archives/377929",
+      "site": "Game8",
+      "siteType": "guide",
+      "description": "Best builds tiered by Damage and Ease of Use, with RL150 spreads (updated Jul 28 2026)."
+    },
+    {
+      "title": "Game8 – Best Shadow of the Erdtree DLC Builds",
+      "url": "https://game8.co/games/Elden-Ring/archives/459590",
+      "site": "Game8",
+      "siteType": "guide",
+      "description": "Best Shadow of the Erdtree builds with spreads."
+    },
+    {
+      "title": "Game8 – Best Weapons Tier List",
+      "url": "https://game8.co/games/Elden-Ring/archives/369808",
+      "site": "Game8",
+      "siteType": "guide",
+      "description": "Weapons tier list."
+    },
+    {
+      "title": "Game Rant – Elden Ring: most overpowered builds (updated Apr 15 2026)",
+      "url": "https://gamerant.com/elden-ring-overpowered-builds/",
+      "site": "Game Rant",
+      "siteType": "guide",
+      "description": "Most overpowered builds (updated Apr 15 2026)."
+    },
+    {
+      "title": "Game Rant – Best Shadow of the Erdtree builds",
+      "url": "https://gamerant.com/shadow-of-the-erdtree-best-elden-ring-dlc-builds-sote/",
+      "site": "Game Rant",
+      "siteType": "guide",
+      "description": "Best Shadow of the Erdtree builds."
+    },
+    {
+      "title": "Game Rant – Best builds to dominate PvP",
+      "url": "https://gamerant.com/elden-ring-best-builds-dominate-pvp/",
+      "site": "Game Rant",
+      "siteType": "guide",
+      "description": "Best PvP builds."
+    },
+    {
+      "title": "GamesRadar – Best Elden Ring builds",
+      "url": "https://www.gamesradar.com/best-elden-ring-builds/",
+      "site": "GamesRadar",
+      "siteType": "guide",
+      "description": "Best builds: bleed, INT, faith, strength, Dex/Int."
+    },
+    {
+      "title": "PC Gamer – Best Elden Ring builds",
+      "url": "https://www.pcgamer.com/best-elden-ring-build/",
+      "site": "PC Gamer",
+      "siteType": "guide",
+      "description": "Best builds incl. SotE and Tarnished Edition notes."
+    },
+    {
+      "title": "PC Gamer – Best Elden Ring mage builds",
+      "url": "https://www.pcgamer.com/best-elden-ring-mage-builds/",
+      "site": "PC Gamer",
+      "siteType": "guide",
+      "description": "Best mage builds."
+    },
+    {
+      "title": "Windows Central – Best Elden Ring builds",
+      "url": "https://www.windowscentral.com/elden-ring-best-builds",
+      "site": "Windows Central",
+      "siteType": "guide",
+      "description": "Best builds roundup."
+    },
+    {
+      "title": "Windows Central – Elden Ring DLC 1.12.3 balance patch notes (Jul 4 2024)",
+      "url": "https://www.windowscentral.com/gaming/elden-ring-dlc-gets-1123-balance-patch-update-that-nerfs-broken-perfume-bottles-buffs-its-worst-weapon-and-makes-two-bosses-less-annoying",
+      "site": "Windows Central",
+      "siteType": "guide",
+      "description": "Patch 1.12.3 notes and analysis (DLC balance)."
+    },
+    {
+      "title": "Twinfinite – Complete Comet Azur build walkthrough",
+      "url": "https://twinfinite.net/guides/complete-comet-azur-build-walkthrough-elden-ring/",
+      "site": "Twinfinite",
+      "siteType": "guide",
+      "description": "Comet Azur build walkthrough."
+    },
+    {
+      "title": "GGRecon – Shadow of the Erdtree best builds (PvE & PvP)",
+      "url": "https://www.ggrecon.com/guides/elden-ring-shadow-of-the-erdtree-best-builds-pve-pvp/",
+      "site": "GGRecon",
+      "siteType": "guide",
+      "description": "SotE best builds, PvE & PvP."
+    },
+    {
+      "title": "TheGamer – Complete build guide",
+      "url": "https://www.thegamer.com/elden-ring-complete-build-guide-walkthrough/",
+      "site": "TheGamer",
+      "siteType": "guide",
+      "description": "Complete build-making guide."
+    },
+    {
+      "title": "TheGamer – Most fun builds",
+      "url": "https://www.thegamer.com/elden-ring-most-fun-builds/",
+      "site": "TheGamer",
+      "siteType": "guide",
+      "description": "Most fun builds."
+    },
+    {
+      "title": "Polygon – Best Elden Ring PvP matches / player builds",
+      "url": "https://www.polygon.com/22979551/best-elden-ring-pvp-matches-player-builds/",
+      "site": "Polygon",
+      "siteType": "guide",
+      "description": "PvP builds and matches."
+    },
+    {
+      "title": "MugenMonkey – Elden Ring Character Planner",
+      "url": "https://www.mugenmonkey.com/eldenring",
+      "site": "MugenMonkey",
+      "siteType": "guide",
+      "description": "Character planner to test spreads."
+    },
+    {
+      "title": "EldenRingWiki.cc – PvP Invasion Builds",
+      "url": "https://www.eldenringwiki.cc/builds/pvp-invasion-builds/",
+      "site": "EldenRingWiki.cc",
+      "siteType": "wiki",
+      "description": "PvP invasion builds."
+    },
+    {
+      "title": "r/Eldenring – Build checklist for meta level (125-150) pvp",
+      "url": "https://www.reddit.com/r/Eldenring/comments/11o3rwc/build_checklist_for_meta_level_125150_pvp/",
+      "site": "Reddit",
+      "siteType": "reddit",
+      "description": "Meta-level (125–150) PvP build checklist: VIG, poise breakpoints, stat focus."
+    },
+    {
+      "title": "Elden Ring Wiki (Fandom) – Builds",
+      "url": "https://eldenring.fandom.com/wiki/Builds",
+      "site": "Fandom",
+      "siteType": "wiki",
+      "description": "Fandom builds page (blocked to automated fetch).",
+      "unverified": true
+    }
+  ]
+}

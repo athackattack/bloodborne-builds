@@ -1,7 +1,7 @@
 {
-  "name": "Bloodborne Builds",
-  "short_name": "BB Builds",
-  "description": "A community-sourced tier list of Bloodborne character builds, with stat spreads and source links.",
+  "name": "Souls Builds",
+  "short_name": "Souls Builds",
+  "description": "Community-sourced tier lists of Bloodborne and Elden Ring character builds, with stat spreads and source links.",
   "id": "./",
   "start_url": "./",
   "scope": "./",
@@ -30,15 +30,15 @@
   ],
   "shortcuts": [
     {
-      "name": "Tier list",
-      "short_name": "Tiers",
-      "url": "./",
+      "name": "Bloodborne",
+      "short_name": "Bloodborne",
+      "url": "./#bloodborne",
       "icons": [{ "src": "icon-192.png", "sizes": "192x192", "type": "image/png" }]
     },
     {
-      "name": "Guides",
-      "short_name": "Guides",
-      "url": "./#guides",
+      "name": "Elden Ring",
+      "short_name": "Elden Ring",
+      "url": "./#elden-ring",
       "icons": [{ "src": "icon-192.png", "sizes": "192x192", "type": "image/png" }]
     }
   ]

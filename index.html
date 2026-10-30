@@ -3,14 +3,14 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <meta name="description" content="A community-sourced tier list of Bloodborne character builds, with stat spreads and source links.">
+  <meta name="description" content="Souls Builds — community-sourced tier lists for Bloodborne and Elden Ring, with stat spreads and source links.">
   <meta name="theme-color" content="#0c0b0a">
   <meta name="color-scheme" content="dark">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-  <meta name="apple-mobile-web-app-title" content="BB Builds">
-  <title>Bloodborne Builds</title>
+  <meta name="apple-mobile-web-app-title" content="Souls Builds">
+  <title>Souls Builds</title>
   <link rel="manifest" href="./manifest.json">
   <link rel="icon" href="./favicon-32.png" sizes="32x32" type="image/png">
   <link rel="apple-touch-icon" href="./apple-touch-icon.png">
@@ -28,7 +28,7 @@
       <div class="brand-row">
         <div class="brand">
           <img class="mark" src="./icon.svg" width="44" height="44" alt="">
-          <h1>Bloodborne Builds</h1>
+          <h1>Souls Builds</h1>
         </div>
         <nav class="tabs" aria-label="Sections">
           <button type="button" id="tab-tiers" role="tab" aria-selected="true" aria-controls="panel-tiers">Tiers</button>
@@ -36,7 +36,8 @@
           <button type="button" id="tab-about" aria-haspopup="dialog">About</button>
         </nav>
       </div>
-      <p class="lede" id="lede">Tiers are an editorial synthesis of community opinion, weighted toward PvE.</p>
+      <div class="game-row" id="game-row" role="group" aria-label="Games"></div>
+      <p class="lede" id="lede">Tiers are an editorial synthesis of community opinion.</p>
     </div>
   </header>
 
@@ -50,26 +51,11 @@
         <div class="filters">
           <div class="filter-group">
             <span class="filter-label" id="arch-label">Archetype</span>
-            <div class="chip-row" role="group" aria-labelledby="arch-label">
-              <button type="button" class="chip" data-arch="" aria-pressed="true">All</button>
-              <button type="button" class="chip" data-arch="Strength" aria-pressed="false">Strength</button>
-              <button type="button" class="chip" data-arch="Skill" aria-pressed="false">Skill</button>
-              <button type="button" class="chip" data-arch="Bloodtinge" aria-pressed="false">Bloodtinge</button>
-              <button type="button" class="chip" data-arch="Arcane" aria-pressed="false">Arcane</button>
-              <button type="button" class="chip" data-arch="Quality" aria-pressed="false">Quality</button>
-              <button type="button" class="chip" data-arch="Hybrid" aria-pressed="false">Hybrid</button>
-            </div>
+            <div class="chip-row" id="arch-row" role="group" aria-labelledby="arch-label"></div>
           </div>
           <div class="filter-group">
             <span class="filter-label" id="best-label">Best for</span>
-            <div class="chip-row" role="group" aria-labelledby="best-label">
-              <button type="button" class="chip" data-best="" aria-pressed="true">All</button>
-              <button type="button" class="chip" data-best="PvE" aria-pressed="false">PvE</button>
-              <button type="button" class="chip" data-best="PvP" aria-pressed="false">PvP</button>
-              <button type="button" class="chip" data-best="beginner" aria-pressed="false">Beginner</button>
-              <button type="button" class="chip" data-best="chalice" aria-pressed="false">Chalice</button>
-              <button type="button" class="chip" data-best="NG+" aria-pressed="false">NG+</button>
-            </div>
+            <div class="chip-row" id="best-row" role="group" aria-labelledby="best-label"></div>
           </div>
         </div>
         <div class="toolbar">
@@ -90,12 +76,7 @@
       <div class="controls">
         <div class="filter-group">
           <span class="filter-label" id="guide-label">Site</span>
-          <div class="chip-row" role="group" aria-labelledby="guide-label">
-            <button type="button" class="chip" data-guide="" aria-pressed="true">All</button>
-            <button type="button" class="chip" data-guide="wiki" aria-pressed="false">Wiki</button>
-            <button type="button" class="chip" data-guide="guide" aria-pressed="false">Guide</button>
-            <button type="button" class="chip" data-guide="video" aria-pressed="false">Video</button>
-          </div>
+          <div class="chip-row" id="guide-row" role="group" aria-labelledby="guide-label"></div>
         </div>
         <p id="guide-count" aria-live="polite"></p>
       </div>
@@ -115,7 +96,7 @@
   </dialog>
 
   <noscript>
-    <p class="lede wrap">JavaScript is required to read the build list. The research data is in data/builds.json.</p>
+    <p class="lede wrap">JavaScript is required to read the build lists. Game data lives under data/.</p>
   </noscript>
   <script src="./app.js" defer></script>
 </body>
