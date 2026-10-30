@@ -1,0 +1,65 @@
+{
+  "games": [
+    {
+      "id": "bloodborne",
+      "name": "Bloodborne",
+      "file": "data/bloodborne.json",
+      "accent": "#b05c54",
+      "accentDeep": "#8c3a36",
+      "levelPrefix": "BL",
+      "statLabels": ["VIT", "END", "STR", "SKL", "BLT", "ARC"],
+      "archetypeFilters": [
+        { "id": "Strength", "label": "Strength", "includes": ["strength"] },
+        { "id": "Skill", "label": "Skill", "includes": ["skill"] },
+        { "id": "Bloodtinge", "label": "Bloodtinge", "includes": ["bloodtinge"] },
+        { "id": "Arcane", "label": "Arcane", "includes": ["arcane"] },
+        { "id": "Quality", "label": "Quality", "includes": ["quality"], "alsoAll": ["strength", "skill"], "alsoNone": ["bloodtinge", "arcane"] },
+        {
+          "id": "Hybrid",
+          "label": "Hybrid",
+          "kind": "hybrid",
+          "groups": [["strength"], ["skill"], ["bloodtinge"], ["arcane"], ["quality"]],
+          "pure": ["quality", "strength", "skill"]
+        }
+      ],
+      "bestForFilters": [
+        { "id": "PvE", "label": "PvE", "kind": "pve" },
+        { "id": "PvP", "label": "PvP", "kind": "pvp" },
+        { "id": "beginner", "label": "Beginner", "kind": "pattern", "pattern": "beginner|first playthrough|brand-new|starter|first run", "fields": ["bestFor", "archetype", "name"] },
+        { "id": "chalice", "label": "Chalice", "kind": "pattern", "pattern": "chalice", "fields": ["all"] },
+        { "id": "NG+", "label": "NG+", "kind": "ngplus" }
+      ]
+    },
+    {
+      "id": "elden-ring",
+      "name": "Elden Ring",
+      "file": "data/elden-ring.json",
+      "accent": "#c6a15a",
+      "accentDeep": "#a86b3c",
+      "levelPrefix": "RL",
+      "statLabels": ["VIG", "MND", "END", "STR", "DEX", "INT", "FTH", "ARC"],
+      "archetypeFilters": [
+        { "id": "Strength", "label": "Strength", "includes": ["strength"] },
+        { "id": "Dexterity", "label": "Dexterity", "includes": ["dexterity"], "words": ["dex"] },
+        { "id": "Intelligence", "label": "Intelligence", "includes": ["intelligence"], "words": ["int"] },
+        { "id": "Faith", "label": "Faith", "includes": ["faith"] },
+        { "id": "Arcane", "label": "Arcane", "includes": ["arcane"] },
+        { "id": "Quality", "label": "Quality", "includes": ["quality"] },
+        {
+          "id": "Hybrid",
+          "label": "Hybrid",
+          "kind": "hybrid",
+          "groups": [["strength"], ["dexterity", "dex"], ["intelligence", "int"], ["faith"], ["arcane"]],
+          "pure": ["quality", "strength", "dexterity", "dex"]
+        }
+      ],
+      "bestForFilters": [
+        { "id": "PvE", "label": "PvE", "kind": "pve" },
+        { "id": "PvP", "label": "PvP", "kind": "pvp" },
+        { "id": "beginner", "label": "Beginner", "kind": "pattern", "pattern": "beginner|first playthrough|brand-new|starter|first run", "fields": ["bestFor", "archetype", "name"] },
+        { "id": "NG+", "label": "NG+", "kind": "ngplus" },
+        { "id": "dlc", "label": "DLC", "kind": "pattern", "pattern": "shadow of the erdtree|\\bdlc\\b", "fields": ["bestFor", "name", "ngNotes"] }
+      ]
+    }
+  ]
+}

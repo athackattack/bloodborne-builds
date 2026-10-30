@@ -1,6 +1,13 @@
 {
   "meta": {
     "generatedDate": "2026-10-30",
+    "buildCount": 35,
+    "tierCounts": {
+      "S": 4,
+      "A": 7,
+      "B": 15,
+      "C": 9
+    },
     "title": "Bloodborne Builds Tier List",
     "statOrder": [
       "VIT",
@@ -17,7 +24,7 @@
       "B": "Solid or niche-strong, often DLC/NG+ or style picks",
       "C": "Gimmick/meme builds"
     },
-    "notes": "Tiers are an editorial synthesis of community opinion (Reddit/GameFAQs threads, wiki templates, ranked guide articles), not an official ranking. Comment point counts were seen in search-index snippets of Reddit threads; Reddit blocks direct scraping. Links with unverified:true could not be fetched (anti-bot) but are canonical.",
+    "notes": "Tiers are an editorial synthesis of community opinion (Reddit/GameFAQs threads, wiki templates, ranked guide articles), not an official ranking. Comment point counts were seen in search-index snippets of Reddit threads; Reddit blocks direct scraping. Links with unverified:true could not be fetched (anti-bot) but are canonical. v2 (2026-10-30) cross-checked weapon tiers against Bloodborne.org's editorial tier list and CBR's weapon ranking.",
     "verification": "Each source carries verifiedVia: curl HTTP 200, WebFetch content read, or YouTube oEmbed."
   },
   "builds": [
@@ -1750,6 +1757,1374 @@
           "verifiedVia": "YouTube oEmbed (title/author confirmed)"
         }
       ]
+    },
+    {
+      "id": "str-hunter-axe-endgame",
+      "name": "Hunter Axe Endgame Strength (50 STR / 25 SKL)",
+      "archetype": "Strength",
+      "tier": "A",
+      "tierReason": "Bloodborne.org's 2026 tier list grades Hunter Axe S (first playthrough) / A (prepared). Reddit 'endgame weapon?' threads say it stays strong all game but is slower than the Cleaver/Spear in NG+. Game Rant also lists it among the best strength weapons.",
+      "weapons": [
+        "Hunter Axe",
+        "Kirkhammer / Boom Hammer (swap)"
+      ],
+      "firearm": "Hunter Pistol / Hunter Blunderbuss",
+      "stats": {
+        "level": 120,
+        "spread": {
+          "VIT": 50,
+          "END": 25,
+          "STR": 50,
+          "SKL": 25,
+          "BLT": 5,
+          "ARC": 15
+        },
+        "label": "BL120 template synthesized from community advice, not a single posted build (50 VIT / 50 STR / 25 SKL recurs in r/bloodborne Hunter Axe threads)",
+        "altSpreads": [
+          "'Powder Keg' 50/30/50/25/9/7 (reply in mbmuln)",
+          "Cruel Fate BL110 50/25/50/12/5/18 (reply in mbmuln)",
+          "STR/ARC BL150 50/20/50/25/5/50 for Boom Hammer/Logarius swaps (reply in mbmuln)"
+        ]
+      },
+      "ngNotes": "On NG+ the main limit is speed, not damage. Past BL120, push ARC for tools or put SKL toward 50 for viscerals.",
+      "playstyle": "Spin-to-win transformed R2 for crowd control, charged R2 for stagger, and one-handed R1 for chip damage. Its Hunter's Hymn L2 adds rally and poise.",
+      "bestFor": [
+        "First playthrough",
+        "Crowd control",
+        "Beginners who want reach"
+      ],
+      "pros": [
+        "Available from the start",
+        "Huge sweeping reach",
+        "The L2 buff gives poise"
+      ],
+      "cons": [
+        "Slower than the Saw Cleaver",
+        "Heavy stamina use on transformed R2s"
+      ],
+      "runesGear": [
+        "Physical/Blunt gems (Heavy Abyssal later)",
+        "Beast Blood Pellets",
+        "Clawmark for viscerals optional"
+      ],
+      "sources": [
+        {
+          "title": "Fextralife – Hunter Axe",
+          "url": "https://bloodborne.wiki.fextralife.com/Hunter+Axe",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200"
+        },
+        {
+          "title": "r/bloodborne – How do you build around the Hunter's Axe (for PvE)?",
+          "url": "https://www.reddit.com/r/bloodborne/comments/mbmuln/how_do_you_build_around_the_hunters_axe_for_pve/",
+          "siteType": "reddit",
+          "verifiedVia": "WebFetch (title/content read)"
+        },
+        {
+          "title": "r/bloodborne – Would you guys consider the hunter axe an endgame weapon?",
+          "url": "https://www.reddit.com/r/bloodborne/comments/k2rsxm/would_you_guys_consider_the_hunter_axe_an_endgame/",
+          "siteType": "reddit",
+          "verifiedVia": "WebFetch (title/content read)"
+        },
+        {
+          "title": "r/bloodborne – What stats should I spec for a BL 120 Hunter Axe Meta build?",
+          "url": "https://www.reddit.com/r/bloodborne/comments/1nlbzo0/what_stats_should_i_spec_for_a_bl_120_hunter_axe/",
+          "siteType": "reddit",
+          "unverified": true,
+          "note": "Reddit served WebFetch an empty shell or a 'blocked by network security' page; URL and title come from the search index, so it's marked unverified"
+        },
+        {
+          "title": "Bloodborne.org – Bloodborne Weapon Tier List (PvE, 'First / Prepared' grades)",
+          "url": "https://bloodborne.org/weapons/tier-list/",
+          "siteType": "guide",
+          "verifiedVia": "curl HTTP 200 + WebFetch (title/content read)",
+          "note": "Editorial and self-described as subjective; page dated 2026-10-24; uses AI-generated illustrations"
+        },
+        {
+          "title": "Game Rant – Best Strength Weapons In Bloodborne",
+          "url": "https://gamerant.com/bloodborne-best-strength-weapons/",
+          "siteType": "guide",
+          "verifiedVia": "curl HTTP 200"
+        },
+        {
+          "title": "Bloodborne-Wiki.com – Builds (PvE + PvP meta stat tables)",
+          "url": "https://www.bloodborne-wiki.com/p/builds.html",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200"
+        }
+      ]
+    },
+    {
+      "id": "reiter-skill-tinge",
+      "name": "Reiterpallasch Skill/Bloodtinge (Cainhurst Knight)",
+      "archetype": "Skill/Bloodtinge",
+      "tier": "B",
+      "tierReason": "Bloodborne.org grades it B / A. It's a popular parry and fashion weapon. Reddit threads converge on 50 SKL / 25 STR / ~25 BLT at BL120. It needs Cainhurst access, and a Repeating Pistol often outdamages its built-in shot.",
+      "weapons": [
+        "Reiterpallasch"
+      ],
+      "firearm": "Reiterpallasch built-in pistol / Evelyn / Repeating Pistol",
+      "stats": {
+        "level": 120,
+        "spread": {
+          "VIT": 47,
+          "END": 8,
+          "STR": 25,
+          "SKL": 50,
+          "BLT": 25,
+          "ARC": 15
+        },
+        "label": "Reply in r/bloodborne fq86qc (Noble Scion start)",
+        "altSpreads": [
+          "Commonly-answered variant 47/9/25/50/25/15 (reply in 1fmxfzv)",
+          "Gun-focused 50/15/x/50/37 BLT, Military Veteran start (reply in 1fmxfzv)"
+        ]
+      },
+      "ngNotes": "Scaling per Fextralife: STR E, SKL C, BLT E, ARC D. Extra levels go to VIT, then BLT for the shot.",
+      "playstyle": "Rapier thrust pokes in normal mode and gun parries in transformed mode. Fire Paper/Bolt Paper buff the blade.",
+      "bestFor": [
+        "Parry lovers",
+        "Fashion/RP",
+        "PvP duels"
+      ],
+      "pros": [
+        "Fast thrust R1s",
+        "Built-in gun means no off-hand is needed",
+        "Paperable"
+      ],
+      "cons": [
+        "Mid-game pickup (Cainhurst)",
+        "Low base damage",
+        "Split stat investment"
+      ],
+      "runesGear": [
+        "Thrust/Physical gems",
+        "Bloodtinge gems if gun-focused",
+        "Bone Marrow Ash for burst"
+      ],
+      "sources": [
+        {
+          "title": "Fextralife – Reiterpallasch",
+          "url": "https://bloodborne.wiki.fextralife.com/Reiterpallasch",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200"
+        },
+        {
+          "title": "r/bloodborne – Reiterpallasch Build",
+          "url": "https://www.reddit.com/r/bloodborne/comments/fq86qc/reiterpallasch_build/",
+          "siteType": "reddit",
+          "verifiedVia": "WebFetch (title/content read)"
+        },
+        {
+          "title": "r/bloodborne – Best stat spread/build for reiterpallasch?",
+          "url": "https://www.reddit.com/r/bloodborne/comments/1fmxfzv/best_stat_spreadbuild_for_reiterpallasch/",
+          "siteType": "reddit",
+          "verifiedVia": "WebFetch (title/content read)"
+        },
+        {
+          "title": "r/bloodborne – Reiterpallasch build?",
+          "url": "https://www.reddit.com/r/bloodborne/comments/ijwzkj/reiterpallasch_build/",
+          "siteType": "reddit",
+          "verifiedVia": "WebFetch (title/content read)"
+        },
+        {
+          "title": "r/bloodborne – Build Advice (reiterpallasch)",
+          "url": "https://www.reddit.com/r/bloodborne/comments/11v3lsq/build_advice_reiterpallasch/",
+          "siteType": "reddit",
+          "verifiedVia": "WebFetch (title/content read)"
+        },
+        {
+          "title": "Bloodborne.org – Bloodborne Weapon Tier List (PvE, 'First / Prepared' grades)",
+          "url": "https://bloodborne.org/weapons/tier-list/",
+          "siteType": "guide",
+          "verifiedVia": "curl HTTP 200 + WebFetch (title/content read)",
+          "note": "Editorial and self-described as subjective; page dated 2026-10-24; uses AI-generated illustrations"
+        },
+        {
+          "title": "YouTube – How to \"Gun Only\" Bloodborne (ymfah)",
+          "url": "https://www.youtube.com/watch?v=MD-ZX1Fv3N4",
+          "siteType": "video",
+          "verifiedVia": "YouTube oEmbed (title/author confirmed)"
+        }
+      ]
+    },
+    {
+      "id": "stake-driver-quality",
+      "name": "Stake Driver True Quality",
+      "archetype": "Quality (Strength/Skill)",
+      "tier": "B",
+      "tierReason": "Bloodborne.org grades it B / B; CBR ranks it in its top 25. On r/bloodborne it's called one of only two 'true quality' weapons (with LHB). Its charged transformed R2 is a famous burst move, but the rest of the moveset is short-ranged.",
+      "weapons": [
+        "Stake Driver"
+      ],
+      "firearm": "Hunter Pistol / Evelyn",
+      "stats": {
+        "level": 120,
+        "spread": {
+          "VIT": 45,
+          "END": 20,
+          "STR": 42,
+          "SKL": 40,
+          "BLT": 8,
+          "ARC": 15
+        },
+        "label": "BL120 template synthesized from community advice, not a single posted build: STR→25, SKL→25, then STR→50, SKL→50 (advice in q9qag6)",
+        "altSpreads": [
+          "Endgame 50/20/50/50/x/x on NG+ (q9qag6 progression)"
+        ]
+      },
+      "ngNotes": "bloodborne-wiki.com lists 18 STR / 9 SKL to wield. Dual scaling rewards going 50/50 on NG+.",
+      "playstyle": "Close-range jabs, then the transformed charged R2 stake for massive single hits. Pair it with gun parries.",
+      "bestFor": [
+        "Burst damage",
+        "Quality builds wanting something new"
+      ],
+      "pros": [
+        "Huge charged hit",
+        "Fast normal-mode R1s"
+      ],
+      "cons": [
+        "Very short reach",
+        "Transformed charge is slow and easy to punish"
+      ],
+      "runesGear": [
+        "Physical gems",
+        "Beast Blood Pellets",
+        "Charge-attack-up gems early"
+      ],
+      "sources": [
+        {
+          "title": "Fextralife – Stake Driver",
+          "url": "https://bloodborne.wiki.fextralife.com/Stake+Driver",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200"
+        },
+        {
+          "title": "Bloodborne-Wiki.com – Stake Driver",
+          "url": "https://www.bloodborne-wiki.com/2015/03/stake-driver.html",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200"
+        },
+        {
+          "title": "r/bloodborne – Quality build or focus on single stat",
+          "url": "https://www.reddit.com/r/bloodborne/comments/q9qag6/quality_build_or_focus_on_single_stat/",
+          "siteType": "reddit",
+          "verifiedVia": "WebFetch (title/content read)"
+        },
+        {
+          "title": "r/bloodborne – PVE Stake Driver Build",
+          "url": "https://www.reddit.com/r/bloodborne/comments/3wux5t/pve_stake_driver_build/",
+          "siteType": "reddit",
+          "verifiedVia": "WebFetch (title/content read)"
+        },
+        {
+          "title": "r/bloodborne – How much STR/SKL for Beast Cutter/Stake Driver Build?",
+          "url": "https://www.reddit.com/r/bloodborne/comments/7ksfj8/how_much_strskl_for_beast_cutterstake_driver_build/",
+          "siteType": "reddit",
+          "verifiedVia": "WebFetch (title/content read)"
+        },
+        {
+          "title": "Bloodborne.org – Bloodborne Weapon Tier List (PvE, 'First / Prepared' grades)",
+          "url": "https://bloodborne.org/weapons/tier-list/",
+          "siteType": "guide",
+          "verifiedVia": "curl HTTP 200 + WebFetch (title/content read)",
+          "note": "Editorial and self-described as subjective; page dated 2026-10-24; uses AI-generated illustrations"
+        },
+        {
+          "title": "CBR – 25 Best Bloodborne Weapons, Ranked",
+          "url": "https://www.cbr.com/bloodborne-best-weapons-ranked/",
+          "siteType": "guide",
+          "verifiedVia": "curl HTTP 200 + WebFetch (title/content read)",
+          "note": "Updated May 15, 2025"
+        }
+      ]
+    },
+    {
+      "id": "stake-driver-fire-arcane",
+      "name": "Fire Stake Driver (Arcane + Oil Urns)",
+      "archetype": "Arcane (elemental)",
+      "tier": "C",
+      "tierReason": "Niche. A Stake Driver help thread suggests a Lost Stake Driver at ~50 ARC with minimum STR. The Reddit arcane gem guide gives the 2× Cold Abyssal + fire % layout for converted weapons. Needs Chalice gem farming.",
+      "weapons": [
+        "Stake Driver (fire-converted, Normal/Uncanny preferred for 2× radial Cold Abyssals)"
+      ],
+      "firearm": "Hunter Pistol",
+      "stats": {
+        "level": 120,
+        "spread": {
+          "VIT": 45,
+          "END": 20,
+          "STR": 18,
+          "SKL": 12,
+          "BLT": 9,
+          "ARC": 66
+        },
+        "label": "BL120 template synthesized from community advice, not a single posted build (~50+ ARC, minimum STR per 5yve3v)",
+        "altSpreads": []
+      },
+      "ngNotes": "The gem guide's setups were tested at 50 ARC. Above 50, Cold Abyssal scaling gems pull ahead.",
+      "playstyle": "Throw Oil Urns, then charged fire stakes. Use Arcane tools (A Call Beyond) as a backup.",
+      "bestFor": [
+        "Arcane players who want a melee finisher",
+        "Beast-heavy areas"
+      ],
+      "pros": [
+        "Synergy with Oil Urns",
+        "Leaves room for Arcane tools"
+      ],
+      "cons": [
+        "Gem farming required",
+        "Same short reach as physical"
+      ],
+      "runesGear": [
+        "2× Cold Abyssal (+65 ARC scaling) + Fire 27.2% triangle",
+        "Oil Urns"
+      ],
+      "sources": [
+        {
+          "title": "Fextralife – Stake Driver",
+          "url": "https://bloodborne.wiki.fextralife.com/Stake+Driver",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200"
+        },
+        {
+          "title": "Bloodborne-Wiki.com – Stake Driver",
+          "url": "https://www.bloodborne-wiki.com/2015/03/stake-driver.html",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200"
+        },
+        {
+          "title": "r/bloodborne – Stake Driver Build. HELP.",
+          "url": "https://www.reddit.com/r/bloodborne/comments/5yve3v/stake_driver_build_help/",
+          "siteType": "reddit",
+          "verifiedVia": "WebFetch (title/content read)"
+        },
+        {
+          "title": "r/bloodborne – PVE Stake Driver Build",
+          "url": "https://www.reddit.com/r/bloodborne/comments/3wux5t/pve_stake_driver_build/",
+          "siteType": "reddit",
+          "verifiedVia": "WebFetch (title/content read)"
+        },
+        {
+          "title": "r/bloodborne – Guide to Arcane/Elemental weapon gem setups (including Kos Parasite)",
+          "url": "https://www.reddit.com/r/bloodborne/comments/41iocl/guide_to_arcaneelemental_weapon_gem_setups/",
+          "siteType": "reddit",
+          "verifiedVia": "WebFetch (title/content read)"
+        },
+        {
+          "title": "Bloodborne-Wiki.com – The Arcanist 2.0",
+          "url": "https://www.bloodborne-wiki.com/2017/04/the-arcanist-20.html",
+          "siteType": "guide",
+          "verifiedVia": "curl HTTP 200"
+        }
+      ]
+    },
+    {
+      "id": "rifle-spear-skill",
+      "name": "Rifle Spear Pure Skill (Thrust)",
+      "archetype": "Skill (thrust)",
+      "tier": "B",
+      "tierReason": "Bloodborne.org grades it B / B and CBR ranks it #20. Reddit and GameFAQs agree its shotgun blast doesn't justify Bloodtinge. Go pure Skill with Adept thrust gems.",
+      "weapons": [
+        "Rifle Spear"
+      ],
+      "firearm": "Built-in shotgun blast (any off-hand optional)",
+      "stats": {
+        "level": 98,
+        "spread": {
+          "VIT": 45,
+          "END": 25,
+          "STR": 11,
+          "SKL": 50,
+          "BLT": 10,
+          "ARC": 7
+        },
+        "label": "Lone Survivor BL98 (reply in r/bloodborne doin3l)",
+        "altSpreads": [
+          "BL120 50/35/10/50/10/15 (reply in doin3l)"
+        ]
+      },
+      "ngNotes": "bloodborne-wiki.com lists 10 STR / 11 SKL / 9 BLT to wield. On NG+, put spare levels into VIT/END instead of BLT.",
+      "playstyle": "One-handed R1 thrust spam, plus a long-range two-handed charged R2. Parry with the shotgun blast in either form.",
+      "bestFor": [
+        "Spear fans",
+        "Long-reach poke"
+      ],
+      "pros": [
+        "Very good reach",
+        "Can parry in either form"
+      ],
+      "cons": [
+        "Weak crowd control",
+        "Weak gun damage"
+      ],
+      "runesGear": [
+        "Adept thrust gems (Watchers/Sages)",
+        "Charge Attack Up early"
+      ],
+      "sources": [
+        {
+          "title": "Fextralife – Rifle Spear",
+          "url": "https://bloodborne.wiki.fextralife.com/Rifle+Spear",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200"
+        },
+        {
+          "title": "Bloodborne-Wiki.com – Rifle Spear",
+          "url": "https://www.bloodborne-wiki.com/2015/03/rifle-spear.html",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200"
+        },
+        {
+          "title": "r/bloodborne – Looking for a rifle spear build",
+          "url": "https://www.reddit.com/r/bloodborne/comments/doin3l/looking_for_a_rifle_spear_build/",
+          "siteType": "reddit",
+          "verifiedVia": "WebFetch (title/content read)"
+        },
+        {
+          "title": "r/bloodborne – If I want to use the rifle spear should I run a skill build or a skill/bloodtinge build?",
+          "url": "https://www.reddit.com/r/bloodborne/comments/ou5vnc/if_i_want_to_use_the_rifle_spear_should_i_run_a/",
+          "siteType": "reddit",
+          "verifiedVia": "WebFetch (title/content read)"
+        },
+        {
+          "title": "r/bloodborne – Rifle Spear Questions",
+          "url": "https://www.reddit.com/r/bloodborne/comments/7wd9tn/rifle_spear_questions/",
+          "siteType": "reddit",
+          "verifiedVia": "WebFetch (title/content read)"
+        },
+        {
+          "title": "GameFAQs – Curious on what a Rifle Spear build would look like",
+          "url": "https://gamefaqs.gamespot.com/boards/805577-bloodborne/71595137",
+          "siteType": "forum",
+          "verifiedVia": "WebFetch (title/content read); curl returns 403"
+        },
+        {
+          "title": "GameFAQs – Rifle Spear build",
+          "url": "https://gamefaqs.gamespot.com/boards/805577-bloodborne/74154707",
+          "siteType": "forum",
+          "verifiedVia": "WebFetch (title/content read); curl returns 403"
+        },
+        {
+          "title": "Bloodborne.org – Bloodborne Weapon Tier List (PvE, 'First / Prepared' grades)",
+          "url": "https://bloodborne.org/weapons/tier-list/",
+          "siteType": "guide",
+          "verifiedVia": "curl HTTP 200 + WebFetch (title/content read)",
+          "note": "Editorial and self-described as subjective; page dated 2026-10-24; uses AI-generated illustrations"
+        },
+        {
+          "title": "CBR – 25 Best Bloodborne Weapons, Ranked",
+          "url": "https://www.cbr.com/bloodborne-best-weapons-ranked/",
+          "siteType": "guide",
+          "verifiedVia": "curl HTTP 200 + WebFetch (title/content read)",
+          "note": "Updated May 15, 2025"
+        }
+      ]
+    },
+    {
+      "id": "boom-hammer-str-arc",
+      "name": "Boom Hammer Strength/Arcane (Lost fire)",
+      "archetype": "Strength/Arcane",
+      "tier": "B",
+      "tierReason": "Bloodborne.org grades it B / B and CBR lists it in its top 25. Reddit threads split between a 50 STR / 50 ARC Lost Boom Hammer and physical 50/25 with blunt gems. It's a fun DLC pick, not a meta one.",
+      "weapons": [
+        "Boom Hammer"
+      ],
+      "firearm": "Hunter Blunderbuss / Fist of Gratia",
+      "stats": {
+        "level": 120,
+        "spread": {
+          "VIT": 40,
+          "END": 20,
+          "STR": 50,
+          "SKL": 11,
+          "BLT": 9,
+          "ARC": 40
+        },
+        "label": "BL120 template synthesized from community advice, not a single posted build (50 STR + high ARC per replies in jooewp)",
+        "altSpreads": [
+          "Physical 50 STR / 25+ SKL with blunt Adept gems (reply in jooewp)",
+          "~50 STR / 25 ARC mostly-strength (8c3fol)",
+          "50/20/50/base/base/25 (reply in 96eyau)"
+        ]
+      },
+      "ngNotes": "bloodborne-wiki.com lists 14 STR / 8 SKL to wield. The arcane split pays off more on NG+ with Chalice gems.",
+      "playstyle": "Ignite the hammer (transform), then charged R2 explosions. Fist of Gratia punches set up R1s, per a user test in 3x31o0.",
+      "bestFor": [
+        "Hammer fans",
+        "Explosion damage"
+      ],
+      "pros": [
+        "Huge buffed hits (~700 on a buffed R2 per a user report)",
+        "Early DLC pickup"
+      ],
+      "cons": [
+        "Slow",
+        "Split damage needs gem planning"
+      ],
+      "runesGear": [
+        "Lost variant with fire/arcane gems, or blunt Adept"
+      ],
+      "sources": [
+        {
+          "title": "Fextralife – Boom Hammer",
+          "url": "https://bloodborne.wiki.fextralife.com/Boom+Hammer",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200"
+        },
+        {
+          "title": "Bloodborne-Wiki.com – Boom Hammer",
+          "url": "https://www.bloodborne-wiki.com/2015/11/boom-hammer.html",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200"
+        },
+        {
+          "title": "r/bloodborne – What's the best build for the boom hammer?",
+          "url": "https://www.reddit.com/r/bloodborne/comments/jooewp/whats_the_best_build_for_the_boom_hammer/",
+          "siteType": "reddit",
+          "verifiedVia": "WebFetch (title/content read)"
+        },
+        {
+          "title": "r/bloodborne – How much arcane do I want for a mainly strength build to use boom hammer?",
+          "url": "https://www.reddit.com/r/bloodborne/comments/8c3fol/how_much_arcane_do_i_want_for_a_mainly_strength/",
+          "siteType": "reddit",
+          "verifiedVia": "WebFetch (title/content read)"
+        },
+        {
+          "title": "r/bloodborne – Builds for the Boom Hammer?",
+          "url": "https://www.reddit.com/r/bloodborne/comments/96eyau/builds_for_the_boom_hammer/",
+          "siteType": "reddit",
+          "verifiedVia": "WebFetch (title/content read)"
+        },
+        {
+          "title": "r/bloodborne – True purpose of the Fist of Gratia",
+          "url": "https://www.reddit.com/r/bloodborne/comments/3x31o0/true_purpose_of_the_fist_of_gratia/",
+          "siteType": "reddit",
+          "verifiedVia": "WebFetch (title/content read)"
+        },
+        {
+          "title": "Bloodborne.org – Bloodborne Weapon Tier List (PvE, 'First / Prepared' grades)",
+          "url": "https://bloodborne.org/weapons/tier-list/",
+          "siteType": "guide",
+          "verifiedVia": "curl HTTP 200 + WebFetch (title/content read)",
+          "note": "Editorial and self-described as subjective; page dated 2026-10-24; uses AI-generated illustrations"
+        },
+        {
+          "title": "CBR – 25 Best Bloodborne Weapons, Ranked",
+          "url": "https://www.cbr.com/bloodborne-best-weapons-ranked/",
+          "siteType": "guide",
+          "verifiedVia": "curl HTTP 200 + WebFetch (title/content read)",
+          "note": "Updated May 15, 2025"
+        }
+      ]
+    },
+    {
+      "id": "beast-cutter-str",
+      "name": "Beast Cutter Strength (Heavy Whip)",
+      "archetype": "Strength (25 SKL)",
+      "tier": "B",
+      "tierReason": "Bloodborne.org grades it B / A and CBR lists it. A GameFAQs thread caps it at mid-600s AR (Heavy Abyssal + 2× 32.6% Blunt) but praises its range, serrated damage in both forms, and wall-piercing hits.",
+      "weapons": [
+        "Beast Cutter"
+      ],
+      "firearm": "Hunter Pistol / Fist of Gratia",
+      "stats": {
+        "level": 120,
+        "spread": {
+          "VIT": 50,
+          "END": 20,
+          "STR": 50,
+          "SKL": 25,
+          "BLT": 10,
+          "ARC": 15
+        },
+        "label": "BL120 template synthesized from community advice, not a single posted build (50 STR / 25 SKL per GameFAQs 76483899 and r/bloodborne threads)",
+        "altSpreads": []
+      },
+      "ngNotes": "bloodborne-wiki.com lists 11 STR / 9 SKL to wield; damage is all Blunt. Paper buffs work because the damage isn't split.",
+      "playstyle": "Transformed whip for huge range and interrupts. The untricked form is fast enough for general fighting and stays one-handed for parries.",
+      "bestFor": [
+        "Mobs",
+        "Range-focused strength players"
+      ],
+      "pros": [
+        "Massive reach",
+        "Serrated in both forms",
+        "Can be papered"
+      ],
+      "cons": [
+        "Lower raw AR than other STR weapons",
+        "Middling visceral damage"
+      ],
+      "runesGear": [
+        "Heavy Abyssal + 2× 32.6% Blunt Adept"
+      ],
+      "sources": [
+        {
+          "title": "Fextralife – Beast Cutter",
+          "url": "https://bloodborne.wiki.fextralife.com/Beast+Cutter",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200"
+        },
+        {
+          "title": "Bloodborne-Wiki.com – Beast Cutter",
+          "url": "https://www.bloodborne-wiki.com/2015/11/beast-cutter.html",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200"
+        },
+        {
+          "title": "GameFAQs – Beast Cutter Thread",
+          "url": "https://gamefaqs.gamespot.com/boards/805577-bloodborne/76483899",
+          "siteType": "forum",
+          "verifiedVia": "WebFetch (title/content read); curl returns 403"
+        },
+        {
+          "title": "r/bloodborne – Best Beast Cutter Build?",
+          "url": "https://www.reddit.com/r/bloodborne/comments/1r7nq1m/best_beast_cutter_build/",
+          "siteType": "reddit",
+          "verifiedVia": "WebFetch (title/content read)"
+        },
+        {
+          "title": "r/bloodborne – Beast Cutter Build",
+          "url": "https://www.reddit.com/r/bloodborne/comments/ij5i3j/beast_cutter_build/",
+          "siteType": "reddit",
+          "verifiedVia": "WebFetch (title/content read)"
+        },
+        {
+          "title": "r/bloodborne – How much AR will heavy abyssal gems add to a weapon like Saw Cleaver or Beast Cutter…?",
+          "url": "https://www.reddit.com/r/bloodborne/comments/4yfbx7/how_much_ar_will_heavy_abyssal_gems_add_to_a/",
+          "siteType": "reddit",
+          "verifiedVia": "WebFetch (title/content read)"
+        },
+        {
+          "title": "r/bloodborne – How much STR/SKL for Beast Cutter/Stake Driver Build?",
+          "url": "https://www.reddit.com/r/bloodborne/comments/7ksfj8/how_much_strskl_for_beast_cutterstake_driver_build/",
+          "siteType": "reddit",
+          "verifiedVia": "WebFetch (title/content read)"
+        },
+        {
+          "title": "Bloodborne.org – Bloodborne Weapon Tier List (PvE, 'First / Prepared' grades)",
+          "url": "https://bloodborne.org/weapons/tier-list/",
+          "siteType": "guide",
+          "verifiedVia": "curl HTTP 200 + WebFetch (title/content read)",
+          "note": "Editorial and self-described as subjective; page dated 2026-10-24; uses AI-generated illustrations"
+        },
+        {
+          "title": "CBR – 25 Best Bloodborne Weapons, Ranked",
+          "url": "https://www.cbr.com/bloodborne-best-weapons-ranked/",
+          "siteType": "guide",
+          "verifiedVia": "curl HTTP 200 + WebFetch (title/content read)",
+          "note": "Updated May 15, 2025"
+        }
+      ]
+    },
+    {
+      "id": "fist-of-gratia-stagger",
+      "name": "Fist of Gratia Stagger Tank",
+      "archetype": "Strength (off-hand utility)",
+      "tier": "C",
+      "tierReason": "Off-hand novelty. Both wikis say its job is stripping super armor rather than doing damage, and Reddit threads ('Is it viable?', 'Tank build') treat it as a niche partner for slow weapons.",
+      "weapons": [
+        "Boom Hammer / Kirkhammer / Beast Cutter"
+      ],
+      "firearm": "Fist of Gratia (left hand; no gun parry)",
+      "stats": {
+        "level": 120,
+        "spread": {
+          "VIT": 50,
+          "END": 25,
+          "STR": 50,
+          "SKL": 15,
+          "BLT": 10,
+          "ARC": 20
+        },
+        "label": "BL120 template synthesized from community advice, not a single posted build (STR-heavy tank)",
+        "altSpreads": []
+      },
+      "ngNotes": "It takes no blood gems (Fextralife), so its damage doesn't grow with gem farming. Its value is the same on NG and NG+.",
+      "playstyle": "Punch twice to break poise, then land a slow main-hand hit. Trades gun parries for stagger.",
+      "bestFor": [
+        "Challenge/RP runs",
+        "Slow-weapon users"
+      ],
+      "pros": [
+        "Very high stagger",
+        "Fast punches"
+      ],
+      "cons": [
+        "Low damage",
+        "No parries",
+        "Stamina hungry"
+      ],
+      "runesGear": [
+        "Physical/Blunt gems on main hand",
+        "Heavy armor"
+      ],
+      "sources": [
+        {
+          "title": "Fextralife – Fist of Gratia",
+          "url": "https://bloodborne.wiki.fextralife.com/Fist+of+Gratia",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200"
+        },
+        {
+          "title": "Bloodborne-Wiki.com – Fist of Gratia",
+          "url": "https://www.bloodborne-wiki.com/2015/11/fist-of-gratia.html",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200"
+        },
+        {
+          "title": "r/bloodborne – Fist of Gratia/Tank build",
+          "url": "https://www.reddit.com/r/bloodborne/comments/zsmpcj/fist_of_gratiatank_build/",
+          "siteType": "reddit",
+          "verifiedVia": "WebFetch (title/content read)"
+        },
+        {
+          "title": "r/bloodborne – Is the Fist of Gratia viable?",
+          "url": "https://www.reddit.com/r/bloodborne/comments/6pwxfe/is_the_fist_of_gratia_viable/",
+          "siteType": "reddit",
+          "verifiedVia": "WebFetch (title/content read)"
+        },
+        {
+          "title": "r/bloodborne – True purpose of the Fist of Gratia",
+          "url": "https://www.reddit.com/r/bloodborne/comments/3x31o0/true_purpose_of_the_fist_of_gratia/",
+          "siteType": "reddit",
+          "verifiedVia": "WebFetch (title/content read)"
+        },
+        {
+          "title": "r/bloodborne – First time making a strength build, what's the best way to use the Fist of Gratia?",
+          "url": "https://www.reddit.com/r/bloodborne/comments/1i2osat/first_time_making_a_strength_build_whats_the_best/",
+          "siteType": "reddit",
+          "verifiedVia": "WebFetch (title/content read)"
+        }
+      ]
+    },
+    {
+      "id": "amygdalan-arm-str",
+      "name": "Amygdalan Arm Strength",
+      "archetype": "Strength (light Arcane)",
+      "tier": "B",
+      "tierReason": "Bloodborne.org grades it B / A, and CBR lists it in its top 25. Reddit says its arcane split is small enough to treat it as a strength weapon.",
+      "weapons": [
+        "Amygdalan Arm"
+      ],
+      "firearm": "Hunter Blunderbuss / Cannon",
+      "stats": {
+        "level": 120,
+        "spread": {
+          "VIT": 50,
+          "END": 20,
+          "STR": 50,
+          "SKL": 20,
+          "BLT": 5,
+          "ARC": 25
+        },
+        "label": "BL120 option posted in r/bloodborne psec3f",
+        "altSpreads": [
+          "45/20/50/25/5/25 (psec3f)",
+          "45/20/50/20/5/30 (psec3f)"
+        ]
+      },
+      "ngNotes": "bloodborne-wiki.com lists 17 STR to wield; scaling is STR C / ARC D. Prioritize STR on NG+.",
+      "playstyle": "Single-target heavy club in normal mode, extended sweeps in transformed mode for groups.",
+      "bestFor": [
+        "Strength players wanting reach",
+        "Fashion/horror vibe"
+      ],
+      "pros": [
+        "Long reach",
+        "Strong stagger"
+      ],
+      "cons": [
+        "Slow",
+        "Arcane split dilutes gems"
+      ],
+      "runesGear": [
+        "Physical/Blunt gems",
+        "Beast Blood Pellets"
+      ],
+      "sources": [
+        {
+          "title": "Fextralife – Amygdalan Arm",
+          "url": "https://bloodborne.wiki.fextralife.com/Amygdalan+Arm",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200"
+        },
+        {
+          "title": "Bloodborne-Wiki.com – Amygdalan Arm",
+          "url": "https://www.bloodborne-wiki.com/2015/11/amygdalan-arm.html",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200"
+        },
+        {
+          "title": "r/bloodborne – Good build suggestions for Amygdalan Arm?",
+          "url": "https://www.reddit.com/r/bloodborne/comments/psec3f/good_build_suggestions_for_amygdalan_arm/",
+          "siteType": "reddit",
+          "verifiedVia": "WebFetch (title/content read)"
+        },
+        {
+          "title": "r/bloodborne – Amygdalan Arm – looking for tips",
+          "url": "https://www.reddit.com/r/bloodborne/comments/78m15r/amygdalan_arm_looking_for_tips/",
+          "siteType": "reddit",
+          "unverified": true,
+          "note": "Reddit served WebFetch an empty shell or a 'blocked by network security' page; URL and title come from the search index, so it's marked unverified"
+        },
+        {
+          "title": "Bloodborne.org – Bloodborne Weapon Tier List (PvE, 'First / Prepared' grades)",
+          "url": "https://bloodborne.org/weapons/tier-list/",
+          "siteType": "guide",
+          "verifiedVia": "curl HTTP 200 + WebFetch (title/content read)",
+          "note": "Editorial and self-described as subjective; page dated 2026-10-24; uses AI-generated illustrations"
+        },
+        {
+          "title": "CBR – 25 Best Bloodborne Weapons, Ranked",
+          "url": "https://www.cbr.com/bloodborne-best-weapons-ranked/",
+          "siteType": "guide",
+          "verifiedVia": "curl HTTP 200 + WebFetch (title/content read)",
+          "note": "Updated May 15, 2025"
+        }
+      ]
+    },
+    {
+      "id": "logarius-pure-arcane",
+      "name": "Logarius' Wheel Pure Arcane (flat Arcane gems)",
+      "archetype": "Arcane (20 STR)",
+      "tier": "C",
+      "tierReason": "Long-running forum trick. GameFAQs replies call it 'amazing' at 20 STR / 50 ARC with flat Arcane gems, and say multi-hit attacks benefit unusually from flat damage. Gem farming is heavy and one-handed use is weak.",
+      "weapons": [
+        "Logarius' Wheel (two-handed/transformed)"
+      ],
+      "firearm": "Hunter Blunderbuss",
+      "stats": {
+        "level": 120,
+        "spread": {
+          "VIT": 40,
+          "END": 20,
+          "STR": 20,
+          "SKL": 12,
+          "BLT": 9,
+          "ARC": 69
+        },
+        "label": "BL120 template synthesized from community advice, not a single posted build (20 STR + high ARC per GameFAQs 71984900)",
+        "altSpreads": [
+          "25 STR variant (GameFAQs replies)",
+          "70 ARC / 20 STR (OP of efmmsm)"
+        ]
+      },
+      "ngNotes": "bloodborne-wiki.com lists 20 STR / 12 SKL / 10 ARC to wield. Some replies argue for 25 STR; others say it isn't needed.",
+      "playstyle": "Transform and spin. Keep a fire-converted backup and Arcane tools.",
+      "bestFor": [
+        "Arcane players wanting melee",
+        "Chalice gem farmers"
+      ],
+      "pros": [
+        "Abnormally good with flat gems",
+        "Leaves room for tools"
+      ],
+      "cons": [
+        "Needs specific Chalice gems",
+        "Weak one-handed"
+      ],
+      "runesGear": [
+        "3× flat Arcane gems (Brainsucker drops)"
+      ],
+      "sources": [
+        {
+          "title": "GameFAQs – Can a Logarius Wheel be viable with a pure Arcane build?",
+          "url": "https://gamefaqs.gamespot.com/boards/805577-bloodborne/71984900",
+          "siteType": "forum",
+          "verifiedVia": "WebFetch (title/content read); curl returns 403"
+        },
+        {
+          "title": "r/bloodborne – Logarius Wheel Pure Arcane?",
+          "url": "https://www.reddit.com/r/bloodborne/comments/efmmsm/logarius_wheel_pure_arcane/",
+          "siteType": "reddit",
+          "verifiedVia": "WebFetch (title/content read)"
+        },
+        {
+          "title": "Fextralife – Logarius' Wheel",
+          "url": "https://bloodborne.wiki.fextralife.com/Logarius'+Wheel",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200"
+        },
+        {
+          "title": "Bloodborne-Wiki.com – Logarius' Wheel",
+          "url": "https://www.bloodborne-wiki.com/2015/03/logarius-wheel.html",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200"
+        },
+        {
+          "title": "Bloodborne-Wiki.com – The Arcanist 2.0",
+          "url": "https://www.bloodborne-wiki.com/2017/04/the-arcanist-20.html",
+          "siteType": "guide",
+          "verifiedVia": "curl HTTP 200"
+        }
+      ]
+    },
+    {
+      "id": "gun-only-repeating-pistol",
+      "name": "Gun-Only Bloodtinge (Repeating Pistol + Bone Marrow Ash)",
+      "archetype": "Bloodtinge (gun-focused)",
+      "tier": "C",
+      "tierReason": "Popular challenge/meme playstyle, shown in ymfah's 'Gun Only' video. A Reddit thread calls BMA + Repeating Pistol 'massive damage' early, but gun-only is not a mainstream PvE build.",
+      "weapons": [
+        "Any light trick weapon as backup"
+      ],
+      "firearm": "Repeating Pistol / Evelyn / Ludwig's Rifle",
+      "stats": {
+        "level": 120,
+        "spread": {
+          "VIT": 40,
+          "END": 25,
+          "STR": 10,
+          "SKL": 15,
+          "BLT": 72,
+          "ARC": 8
+        },
+        "label": "BL120 template synthesized from community advice, not a single posted build (BLT dumped high)",
+        "altSpreads": []
+      },
+      "ngNotes": "Ammo is the bottleneck. Per bloodborne-wiki.com, the Repeating Pistol always outdamages the Hunter Pistol and Evelyn but uses two bullets per shot.",
+      "playstyle": "Bone Marrow Ash, then point-blank double shots; Blood Bullets/Blood Rapture for sustain.",
+      "bestFor": [
+        "Challenge runs",
+        "Bloodtinge fans"
+      ],
+      "pros": [
+        "Huge burst per shot",
+        "Different playstyle"
+      ],
+      "cons": [
+        "Burns Quicksilver",
+        "Weak without BLT and blood gems"
+      ],
+      "runesGear": [
+        "Bloodtinge blood gems on gun",
+        "Bone Marrow Ash",
+        "Formless Oedon"
+      ],
+      "sources": [
+        {
+          "title": "YouTube – How to \"Gun Only\" Bloodborne (ymfah)",
+          "url": "https://www.youtube.com/watch?v=MD-ZX1Fv3N4",
+          "siteType": "video",
+          "verifiedVia": "YouTube oEmbed (title/author confirmed)"
+        },
+        {
+          "title": "Fextralife – Repeating Pistol",
+          "url": "https://bloodborne.wiki.fextralife.com/Repeating+Pistol",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200"
+        },
+        {
+          "title": "Bloodborne-Wiki.com – Repeating Pistol",
+          "url": "https://www.bloodborne-wiki.com/2015/03/repeating-pistol.html",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200"
+        },
+        {
+          "title": "Fextralife – Bone Marrow Ash",
+          "url": "https://bloodborne.wiki.fextralife.com/Bone+Marrow+Ash",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200"
+        },
+        {
+          "title": "Bloodborne-Wiki.com – Bone Marrow Ash",
+          "url": "https://www.bloodborne-wiki.com/2015/03/bone-marrow-ash.html",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200"
+        },
+        {
+          "title": "r/bloodborne – bone marrow ash + repeating pistol = massive damage",
+          "url": "https://www.reddit.com/r/bloodborne/comments/11w32n3/bone_marrow_ash_repeating_pistol_massive_damage/",
+          "siteType": "reddit",
+          "verifiedVia": "WebFetch (title/content read)"
+        },
+        {
+          "title": "r/bloodborne – Do I really need bloodtinge to be 99 for guns to do any sort of real damage?",
+          "url": "https://www.reddit.com/r/bloodborne/comments/1p0tzu8/do_i_really_need_bloodtinge_to_be_99_for_guns_to/",
+          "siteType": "reddit",
+          "verifiedVia": "WebFetch (title/content read)"
+        }
+      ]
+    },
+    {
+      "id": "bl4-challenge",
+      "name": "BL4 Challenge Run (Waste of Skin, Saw Cleaver)",
+      "archetype": "Challenge (no leveling)",
+      "tier": "C",
+      "tierReason": "A classic challenge run, not a power build. bloodborne-wiki.com hosts Arti's Definitive Guide to BL4 Runs, and several r/bloodborne threads ask about BL4 rules and tips; the Saw Cleaver is the usual pick.",
+      "weapons": [
+        "Saw Cleaver (+10 via an early Blood Rock is the usual route)"
+      ],
+      "firearm": "Hunter Pistol / Blunderbuss",
+      "stats": {
+        "level": 4,
+        "spread": {
+          "VIT": 10,
+          "END": 9,
+          "STR": 10,
+          "SKL": 9,
+          "BLT": 7,
+          "ARC": 9
+        },
+        "label": "Waste of Skin starting stats (Fextralife); never level",
+        "altSpreads": []
+      },
+      "ngNotes": "NG only by definition. Upgrades, gems and runes are allowed; leveling isn't.",
+      "playstyle": "Perfect dodges, gun parries, Beast Blood Pellets and Fire/Bolt Paper on bosses.",
+      "bestFor": [
+        "Veterans",
+        "Challenge runners"
+      ],
+      "pros": [
+        "Ultimate skill test"
+      ],
+      "cons": [
+        "One-shot territory",
+        "Long grind for upgrades"
+      ],
+      "runesGear": [
+        "Physical gems from early Chalices",
+        "Fire/Bolt Paper",
+        "Beast Blood Pellets"
+      ],
+      "sources": [
+        {
+          "title": "Bloodborne-Wiki.com – Challenge Runs (incl. Arti's Definitive Guide to BL4 Runs)",
+          "url": "https://www.bloodborne-wiki.com/p/challenge-runs.html",
+          "siteType": "guide",
+          "verifiedVia": "curl HTTP 200 + text read"
+        },
+        {
+          "title": "Fextralife – Waste of Skin (origin)",
+          "url": "https://bloodborne.wiki.fextralife.com/Waste+of+Skin",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200"
+        },
+        {
+          "title": "r/bloodborne – \"Rules\" for BL4 run?",
+          "url": "https://www.reddit.com/r/bloodborne/comments/1fuw8kp/rules_for_bl4_run/",
+          "siteType": "reddit",
+          "verifiedVia": "WebFetch (title/content read)"
+        },
+        {
+          "title": "r/bloodborne – BL4 Run",
+          "url": "https://www.reddit.com/r/bloodborne/comments/7mnqn3/bl4_run/",
+          "siteType": "reddit",
+          "verifiedVia": "WebFetch (title/content read)"
+        },
+        {
+          "title": "r/bloodborne – BL4 Run Tips",
+          "url": "https://www.reddit.com/r/bloodborne/comments/8ekfrk/bl4_run_tips/",
+          "siteType": "reddit",
+          "verifiedVia": "WebFetch (title/content read)"
+        },
+        {
+          "title": "Fextralife – Saw Cleaver",
+          "url": "https://bloodborne.wiki.fextralife.com/Saw+Cleaver",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200"
+        },
+        {
+          "title": "Fextralife – Beast Blood Pellet",
+          "url": "https://bloodborne.wiki.fextralife.com/Beast+Blood+Pellet",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200"
+        }
+      ]
+    },
+    {
+      "id": "threaded-cane-arcane",
+      "name": "Elemental Threaded Cane (Arcane)",
+      "archetype": "Arcane (elemental)",
+      "tier": "C",
+      "tierReason": "Asked about on r/bloodborne ('good on an arcane build?'). The wiki lists D Arcane scaling, and the Reddit gem guide's 2× Cold Abyssal + element setup applies. Works, but the physical Skill version is the standard.",
+      "weapons": [
+        "Threaded Cane (Normal/Uncanny, fire- or bolt-converted)"
+      ],
+      "firearm": "Hunter Pistol",
+      "stats": {
+        "level": 120,
+        "spread": {
+          "VIT": 40,
+          "END": 20,
+          "STR": 10,
+          "SKL": 15,
+          "BLT": 9,
+          "ARC": 76
+        },
+        "label": "BL120 template synthesized from community advice, not a single posted build",
+        "altSpreads": []
+      },
+      "ngNotes": "The righteous (normal) and serrated (whip) bonuses still apply.",
+      "playstyle": "Whip spacing with elemental damage, plus Arcane tools.",
+      "bestFor": [
+        "Arcane players wanting a starter weapon"
+      ],
+      "pros": [
+        "Available at the start",
+        "Range"
+      ],
+      "cons": [
+        "Needs Chalice gems to shine"
+      ],
+      "runesGear": [
+        "2× Cold Abyssal + Bolt/Fire gem"
+      ],
+      "sources": [
+        {
+          "title": "r/bloodborne – Is threaded cane good on an arcane build?",
+          "url": "https://www.reddit.com/r/bloodborne/comments/69pph7/is_threaded_cane_good_on_an_arcane_build/",
+          "siteType": "reddit",
+          "verifiedVia": "WebFetch (title/content read)"
+        },
+        {
+          "title": "Fextralife – Threaded Cane",
+          "url": "https://bloodborne.wiki.fextralife.com/Threaded+Cane",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200"
+        },
+        {
+          "title": "Bloodborne-Wiki.com – Threaded Cane",
+          "url": "https://www.bloodborne-wiki.com/2015/03/threaded-cane.html",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200"
+        },
+        {
+          "title": "r/bloodborne – Guide to Arcane/Elemental weapon gem setups (including Kos Parasite)",
+          "url": "https://www.reddit.com/r/bloodborne/comments/41iocl/guide_to_arcaneelemental_weapon_gem_setups/",
+          "siteType": "reddit",
+          "verifiedVia": "WebFetch (title/content read)"
+        },
+        {
+          "title": "Bloodborne-Wiki.com – The Arcanist 2.0",
+          "url": "https://www.bloodborne-wiki.com/2017/04/the-arcanist-20.html",
+          "siteType": "guide",
+          "verifiedVia": "curl HTTP 200"
+        }
+      ]
+    },
+    {
+      "id": "hunters-torch-meme",
+      "name": "99 Arcane Hunter's Torch (meme)",
+      "archetype": "Arcane (meme)",
+      "tier": "C",
+      "tierReason": "Meme build. The torch does Fire damage with B Arcane scaling (bloodborne-wiki.com); Reddit threads ask 'Is the Hunter's Torch viable?' and one is titled '99 Arc Hunter Tourch Run'.",
+      "weapons": [
+        "Any arcane trick weapon"
+      ],
+      "firearm": "Hunter's Torch (left hand)",
+      "stats": {
+        "level": 120,
+        "spread": {
+          "VIT": 40,
+          "END": 20,
+          "STR": 10,
+          "SKL": 9,
+          "BLT": 9,
+          "ARC": 82
+        },
+        "label": "BL120 template synthesized from community advice, not a single posted build",
+        "altSpreads": []
+      },
+      "ngNotes": "Fire damage vs beasts; very weak against Kin.",
+      "playstyle": "Light dark areas and burn beasts; no gun parry.",
+      "bestFor": [
+        "Memes",
+        "Old Yharnam beasts"
+      ],
+      "pros": [
+        "Light source",
+        "Fire vs beasts"
+      ],
+      "cons": [
+        "No parry",
+        "Low damage"
+      ],
+      "runesGear": [
+        "Arcane tools as real damage"
+      ],
+      "sources": [
+        {
+          "title": "Fextralife – Hunter's Torch",
+          "url": "https://bloodborne.wiki.fextralife.com/Hunter's+Torch",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200"
+        },
+        {
+          "title": "Bloodborne-Wiki.com – Hunter's Torch",
+          "url": "https://www.bloodborne-wiki.com/2015/03/hunters-torch.html",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200"
+        },
+        {
+          "title": "r/bloodborne – Is the Hunter's Torch viable?",
+          "url": "https://www.reddit.com/r/bloodborne/comments/3il6qu/is_the_hunters_torch_viable/",
+          "siteType": "reddit",
+          "verifiedVia": "WebFetch (title/content read)",
+          "note": "Only the title was readable"
+        },
+        {
+          "title": "r/bloodborne – 99 Arc Hunter Tourch Run",
+          "url": "https://www.reddit.com/r/bloodborne/comments/ov0n18/99_arc_hunter_tourch_run/",
+          "siteType": "reddit",
+          "verifiedVia": "WebFetch (title/content read)",
+          "note": "OP deleted; title only"
+        }
+      ]
+    },
+    {
+      "id": "elemental-saw-cleaver",
+      "name": "Elemental Saw Cleaver (Fire/Bolt Arcane)",
+      "archetype": "Arcane (elemental)",
+      "tier": "B",
+      "tierReason": "The Saw Cleaver's moveset with Arcane scaling. The r/bloodborne gem guide gives 2× Cold Abyssal + Fire/Bolt layouts, and bloodborne-wiki.com covers elemental setups. It's popular on arcane NG+ runs.",
+      "weapons": [
+        "Saw Cleaver (Normal/Uncanny, converted)"
+      ],
+      "firearm": "Hunter Pistol",
+      "stats": {
+        "level": 120,
+        "spread": {
+          "VIT": 45,
+          "END": 25,
+          "STR": 12,
+          "SKL": 14,
+          "BLT": 9,
+          "ARC": 65
+        },
+        "label": "BL120 template synthesized from community advice, not a single posted build",
+        "altSpreads": []
+      },
+      "ngNotes": "A 1ldrjmd question about Uncanny vs Lost before NG+. The gem guide prefers Normal/Uncanny (2× radial) for ATK-vs-open-foes Cold Abyssals.",
+      "playstyle": "Saw Cleaver combos with element matched to the enemy (fire vs beasts, bolt vs kin).",
+      "bestFor": [
+        "Arcane NG+",
+        "Chalice divers"
+      ],
+      "pros": [
+        "Familiar moveset",
+        "Element flexibility"
+      ],
+      "cons": [
+        "Gem farming",
+        "Loses serrated physical bonus"
+      ],
+      "runesGear": [
+        "2× Cold Abyssal + Fire 27.2% / Bolt Abyssal waning"
+      ],
+      "sources": [
+        {
+          "title": "r/bloodborne – elemental saw cleaver",
+          "url": "https://www.reddit.com/r/bloodborne/comments/1ldrjmd/elemental_saw_cleaver/",
+          "siteType": "reddit",
+          "verifiedVia": "WebFetch (title/content read)"
+        },
+        {
+          "title": "r/bloodborne – Guide to Arcane/Elemental weapon gem setups (including Kos Parasite)",
+          "url": "https://www.reddit.com/r/bloodborne/comments/41iocl/guide_to_arcaneelemental_weapon_gem_setups/",
+          "siteType": "reddit",
+          "verifiedVia": "WebFetch (title/content read)"
+        },
+        {
+          "title": "Bloodborne-Wiki.com – Best Blood Gems Setups",
+          "url": "https://www.bloodborne-wiki.com/2015/10/best-blood-gems-setups.html",
+          "siteType": "guide",
+          "verifiedVia": "curl HTTP 200"
+        },
+        {
+          "title": "Fextralife – Saw Cleaver",
+          "url": "https://bloodborne.wiki.fextralife.com/Saw+Cleaver",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200"
+        },
+        {
+          "title": "Bloodborne-Wiki.com – The Arcanist 2.0",
+          "url": "https://www.bloodborne-wiki.com/2017/04/the-arcanist-20.html",
+          "siteType": "guide",
+          "verifiedVia": "curl HTTP 200"
+        },
+        {
+          "title": "Fextralife – Bolt Paper",
+          "url": "https://bloodborne.wiki.fextralife.com/Bolt+Paper",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200"
+        }
+      ]
+    },
+    {
+      "id": "bl50-pvp-twink",
+      "name": "Low-Level BL50 PvP Twink",
+      "archetype": "PvP (low level)",
+      "tier": "C",
+      "tierReason": "Niche PvP bracket. r/bloodborne threads post BL50 spreads (e.g. 30/20/20/10/5/15 Logarius; 25/20/10/30/7/8 BoM/Church Pick), and twink-invader and Bloodletter-twink threads exist. Activity is lower than BL120.",
+      "weapons": [
+        "Logarius' Wheel / Blades of Mercy / Bloodletter"
+      ],
+      "firearm": "Evelyn / Hunter Pistol",
+      "stats": {
+        "level": 50,
+        "spread": {
+          "VIT": 30,
+          "END": 20,
+          "STR": 20,
+          "SKL": 10,
+          "BLT": 5,
+          "ARC": 15
+        },
+        "label": "BL50 spread posted in r/bloodborne 3gn1nw",
+        "altSpreads": [
+          "Skill BL50 25/20/10/30/7/8 (8rp2wa edit)",
+          "Bloodletter + Bowblade needs 14 STR / 15 SKL / 16 BT (glllkx)"
+        ]
+      },
+      "ngNotes": "Stay NG and keep upgrades at +10.",
+      "playstyle": "Invade early areas with fully upgraded weapons.",
+      "bestFor": [
+        "PvP veterans"
+      ],
+      "pros": [
+        "Fresh PvP meta"
+      ],
+      "cons": [
+        "Small player pool"
+      ],
+      "runesGear": [
+        "Frenzy resistance for Bloodletter (glllkx)"
+      ],
+      "sources": [
+        {
+          "title": "r/bloodborne – Is there Any level 50 pvp builds?",
+          "url": "https://www.reddit.com/r/bloodborne/comments/3gn1nw/is_there_any_level_50_pvp_builds/",
+          "siteType": "reddit",
+          "verifiedVia": "WebFetch (title/content read)"
+        },
+        {
+          "title": "r/bloodborne – BL50 Build Help",
+          "url": "https://www.reddit.com/r/bloodborne/comments/8rp2wa/bl50_build_help/",
+          "siteType": "reddit",
+          "verifiedVia": "WebFetch (title/content read)"
+        },
+        {
+          "title": "r/bloodborne – Low-level Twink Invaders. Let's talk.",
+          "url": "https://www.reddit.com/r/bloodborne/comments/65x9iw/lowlevel_twink_invaders_lets_talk/",
+          "siteType": "reddit",
+          "verifiedVia": "WebFetch (title/content read)"
+        },
+        {
+          "title": "r/bloodborne – Bloodletter Twink Build",
+          "url": "https://www.reddit.com/r/bloodborne/comments/glllkx/bloodletter_twink_build/",
+          "siteType": "reddit",
+          "verifiedVia": "WebFetch (title/content read)"
+        },
+        {
+          "title": "Fextralife – PvP Builds",
+          "url": "https://bloodborne.wiki.fextralife.com/PvP_Builds",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200"
+        }
+      ]
     }
   ],
   "guides": [
@@ -1906,6 +3281,41 @@
       "site": "Fextralife",
       "siteType": "wiki",
       "description": "New-player help."
+    },
+    {
+      "title": "Bloodborne.org – Bloodborne Weapon Tier List (PvE, 'First / Prepared' grades)",
+      "url": "https://bloodborne.org/weapons/tier-list/",
+      "site": "Bloodborne.org",
+      "siteType": "guide",
+      "description": "Editorial PvE weapon tier list with first-run vs prepared grades (2026)."
+    },
+    {
+      "title": "CBR – 25 Best Bloodborne Weapons, Ranked",
+      "url": "https://www.cbr.com/bloodborne-best-weapons-ranked/",
+      "site": "CBR",
+      "siteType": "guide",
+      "description": "25 best weapons, ranked (May 2025)."
+    },
+    {
+      "title": "Bloodborne-Wiki.com – Challenge Runs (incl. Arti's Definitive Guide to BL4 Runs)",
+      "url": "https://www.bloodborne-wiki.com/p/challenge-runs.html",
+      "site": "Bloodborne-Wiki.com",
+      "siteType": "guide",
+      "description": "Challenge runs incl. a full BL4 guide."
+    },
+    {
+      "title": "Bloodborne-Wiki.com – Weapons",
+      "url": "https://www.bloodborne-wiki.com/p/weapons.html",
+      "site": "Bloodborne-Wiki.com",
+      "siteType": "wiki",
+      "description": "Weapon index with stats/requirements."
+    },
+    {
+      "title": "Fextralife – Weapon Moveset Damage Comparison",
+      "url": "https://bloodborne.wiki.fextralife.com/Weapon_Moveset_Damage_Comparison",
+      "site": "Fextralife",
+      "siteType": "wiki",
+      "description": "Moveset damage comparison across weapons."
     },
     {
       "title": "YouTube – The Best Bloodborne Build OP NG+ ALL BOSSES RUN (Onime)",
