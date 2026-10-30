@@ -15,6 +15,7 @@ const FIELD_DEFAULTS = {
   runesGear: "Runes and gear"
 };
 const STORAGE_KEY = "souls-builds-game";
+const DENSITY_KEY = "souls-builds-density";
 
 const sheet = document.getElementById("sheet");
 const sheetBody = document.getElementById("sheet-body");
@@ -85,6 +86,24 @@ function rememberGame(id) {
   } catch (error) {
     /* private mode */
   }
+}
+
+function cardsExpanded() {
+  try {
+    return localStorage.getItem(DENSITY_KEY) === "full";
+  } catch (error) {
+    return false;
+  }
+}
+
+function applyDensity() {
+  const expanded = cardsExpanded();
+  const list = document.getElementById("tier-list");
+  if (list) list.classList.toggle("is-compact", !expanded);
+  const button = document.getElementById("density");
+  if (!button) return;
+  button.setAttribute("aria-pressed", expanded ? "true" : "false");
+  button.setAttribute("aria-label", expanded ? "Hide playstyles on cards" : "Show playstyles on cards");
 }
 
 function fieldLabel(meta, key) {
@@ -359,7 +378,11 @@ function renderList() {
   const count = document.getElementById("count");
   if (!state.data || !state.game) return;
   const builds = visibleBuilds();
-  count.textContent = `${builds.length} ${builds.length === 1 ? "build" : "builds"}`;
+  const total = state.data.builds.length;
+  const shown = builds.length;
+  count.textContent = shown === total
+    ? `${total} ${total === 1 ? "build" : "builds"}`
+    : `${shown} of ${total} ${total === 1 ? "build" : "builds"}`;
   host.replaceChildren();
   if (!builds.length) {
     host.append(
@@ -387,7 +410,7 @@ function renderList() {
     heading.setAttribute("aria-label", `Tier ${tier}, ${items.length} ${items.length === 1 ? "build" : "builds"}`);
     heading.append(
       el("span", { "aria-hidden": "true", text: tier }),
-      el("small", { "aria-hidden": "true", text: String(items.length) })
+      el("small", { class: "tier-count", "aria-hidden": "true", text: String(items.length) })
     );
     const cards = el("div", { class: "tier-cards" }, items.map(renderCard));
     cards.querySelectorAll(".card").forEach((card) => {
@@ -549,9 +572,18 @@ function renderAbout() {
     defs.append(el("div", {}, [el("dt", { class: tier, text: tier }), el("dd", { text: meta.tierScale[tier] })]));
   }
   const kicker = meta.game || state.game.name;
+  const tierBits = TIERS.map((tier) => {
+    const n = state.data.builds.filter((build) => build.tier === tier).length;
+    return n ? `${tier} ${n}` : null;
+  }).filter(Boolean);
+  const guideCount = (state.data.guides || []).length;
   return el("article", {}, [
     el("p", { class: "sheet-kicker", text: kicker }),
     el("h2", { id: "sheet-title", text: meta.title || state.game.name }),
+    el("p", {
+      class: "snapshot",
+      text: `${state.data.builds.length} builds (${tierBits.join(", ")}) and ${guideCount} ${guideCount === 1 ? "guide" : "guides"} in this snapshot.`
+    }),
     el("section", { class: "block" }, [el("h3", { text: "Tier definitions" }), defs]),
     el("section", { class: "block" }, [el("h3", { text: "Caveats" }), el("p", { text: meta.notes })]),
     meta.patchInfo
@@ -618,6 +650,8 @@ async function render() {
   rememberGame(game.id);
   applyAccent(game);
   document.getElementById("lede").textContent = firstSentence(data.meta.notes);
+  document.getElementById("catalog").textContent = `${data.builds.length} builds`;
+  applyDensity();
 
   const onGuides = route.view === "guides";
   document.getElementById("panel-tiers").hidden = onGuides;
@@ -643,6 +677,14 @@ async function render() {
 }
 
 function bind() {
+  document.getElementById("density").addEventListener("click", () => {
+    try {
+      localStorage.setItem(DENSITY_KEY, cardsExpanded() ? "compact" : "full");
+    } catch (error) {
+      /* private mode */
+    }
+    applyDensity();
+  });
   document.getElementById("q").addEventListener("input", (event) => {
     currentUi().query = event.target.value;
     renderList();

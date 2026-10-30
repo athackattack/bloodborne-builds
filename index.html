@@ -36,7 +36,10 @@
           <button type="button" id="tab-about" aria-haspopup="dialog">About</button>
         </nav>
       </div>
-      <div class="game-row" id="game-row" role="group" aria-label="Games"></div>
+      <div class="switch-row">
+        <div class="game-row" id="game-row" role="group" aria-label="Games"></div>
+        <p class="catalog" id="catalog"></p>
+      </div>
       <p class="lede" id="lede">Tiers are an editorial synthesis of community opinion.</p>
     </div>
   </header>
@@ -60,16 +63,19 @@
         </div>
         <div class="toolbar">
           <p id="count" aria-live="polite"></p>
-          <label class="sort">Sort
+          <div class="toolbar-actions">
+            <button type="button" id="density" class="density" aria-pressed="false">Playstyles</button>
+            <label class="sort">Sort
             <select id="sort">
               <option value="listed">Listed order</option>
               <option value="name">Name</option>
               <option value="weapon">Main weapon</option>
             </select>
           </label>
+          </div>
         </div>
       </div>
-      <div id="tier-list"></div>
+      <div id="tier-list" class="is-compact"></div>
     </section>
 
     <section id="panel-guides" role="tabpanel" aria-labelledby="tab-guides" hidden>
