@@ -1,0 +1,1933 @@
+{
+  "meta": {
+    "generatedDate": "2026-10-30",
+    "title": "Bloodborne Builds Tier List",
+    "statOrder": [
+      "VIT",
+      "END",
+      "STR",
+      "SKL",
+      "BLT",
+      "ARC"
+    ],
+    "levelConventions": "Spreads are approximate and given at a reference Blood Echo level (BL ~100–120; BL120 is the common PvP meta). Weapon stat requirements and softcaps (25 and 50 for damage stats; ARC to 99 for tools; END rarely past 40) come from Fextralife/GameFAQs.",
+    "tierScale": {
+      "S": "Consensus top PvE picks, recommended repeatedly across Reddit, forums and guides",
+      "A": "Very strong and popular, with some gating or tradeoffs",
+      "B": "Solid or niche-strong, often DLC/NG+ or style picks",
+      "C": "Gimmick/meme builds"
+    },
+    "notes": "Tiers are an editorial synthesis of community opinion (Reddit/GameFAQs threads, wiki templates, ranked guide articles), not an official ranking. Comment point counts were seen in search-index snippets of Reddit threads; Reddit blocks direct scraping. Links with unverified:true could not be fetched (anti-bot) but are canonical.",
+    "verification": "Each source carries verifiedVia: curl HTTP 200, WebFetch content read, or YouTube oEmbed."
+  },
+  "builds": [
+    {
+      "id": "quality-saw-cleaver",
+      "name": "Saw Cleaver Quality + Beast Blood Pellets",
+      "archetype": "Quality (Strength/Skill)",
+      "tier": "S",
+      "tierReason": "Most-cited 'best weapon' in Reddit weapon-ranking threads (e.g. a 43-point comment in 'Strongest weapon in the game'; a 39-point comment in 'Best Weapon (objectively)?' calls it the best boss killer). Starter weapon, serrated, fast, and pellet-buffed; it's what speedrunners use. Listed by TheGamer (#13) and Game Rant (OP builds).",
+      "weapons": [
+        "Saw Cleaver"
+      ],
+      "firearm": "Hunter Pistol (or Hunter Blunderbuss early)",
+      "stats": {
+        "level": 108,
+        "spread": {
+          "VIT": 50,
+          "END": 20,
+          "STR": 50,
+          "SKL": 25,
+          "BLT": 6,
+          "ARC": 7
+        },
+        "label": "Old Yharnam Hunter template (Fextralife community build, BL108)",
+        "altSpreads": [
+          "Early game: VIT 30 → END 20 → STR/SKL 25/25 (GameFAQs beginner advice)"
+        ]
+      },
+      "ngNotes": "Same spread works on NG and NG+. Extra levels past 120 go to SKL, since the transformed form likes it. Beast Blood Pellets matter more on NG+ bosses.",
+      "playstyle": "Fast R1 strings, short stamina cost, trick-transform R1 for reach, visceral after gun parries. Pop Beast Blood Pellets for bosses (physical + visceral buff).",
+      "bestFor": [
+        "First playthrough",
+        "Boss killing",
+        "Speedruns",
+        "Beast-type enemies (serrated)"
+      ],
+      "pros": [
+        "Available at the very start",
+        "Huge rally and stagger chains",
+        "Serrated bonus vs. beasts",
+        "Pellets stack with physical gems"
+      ],
+      "cons": [
+        "Short reach in its untransformed form",
+        "Unflashy, and lower base AR than the late-game weapons",
+        "Pellets reduce defense"
+      ],
+      "runesGear": [
+        "Physical gems (Radial/Triangle Tempering/Nourishing)",
+        "Beast Blood Pellets",
+        "Clawmark or Beast's Embrace runes optional",
+        "Oedon Writhe / Blood Rapture for sustain"
+      ],
+      "sources": [
+        {
+          "title": "Fextralife – Saw Cleaver",
+          "url": "https://bloodborne.wiki.fextralife.com/Saw+Cleaver",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200"
+        },
+        {
+          "title": "Bloodborne-Wiki.com – Saw Cleaver",
+          "url": "https://www.bloodborne-wiki.com/2015/03/saw-cleaver.html",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200"
+        },
+        {
+          "title": "Fextralife – Old Yharnam Hunter build",
+          "url": "https://bloodborne.wiki.fextralife.com/Old_Yharnam_Hunter",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200"
+        },
+        {
+          "title": "Fextralife – Beast Blood Pellet",
+          "url": "https://bloodborne.wiki.fextralife.com/Beast+Blood+Pellet",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200"
+        },
+        {
+          "title": "r/bloodborne – Strongest weapon in the game",
+          "url": "https://www.reddit.com/r/bloodborne/comments/1vxk9g0/strongest_weapon_in_the_game/",
+          "siteType": "reddit",
+          "verifiedVia": "WebFetch (title/content read)"
+        },
+        {
+          "title": "r/bloodborne – Best Weapon (objectively)?",
+          "url": "https://www.reddit.com/r/bloodborne/comments/1jtee2w/best_weapon_objectively/",
+          "siteType": "reddit",
+          "verifiedVia": "WebFetch (title/content read)"
+        },
+        {
+          "title": "r/bloodborne – What's the most OP build?",
+          "url": "https://www.reddit.com/r/bloodborne/comments/1wr6ek9/whats_the_most_op_build/",
+          "siteType": "reddit",
+          "verifiedVia": "WebFetch (title/content read)"
+        },
+        {
+          "title": "r/bloodborne – Speedrun/OP Pve Build?",
+          "url": "https://www.reddit.com/r/bloodborne/comments/5drduz/speedrunop_pve_build/",
+          "siteType": "reddit",
+          "verifiedVia": "WebFetch (title/content read)"
+        },
+        {
+          "title": "TheGamer – Bloodborne: Best Builds (ranked)",
+          "url": "https://www.thegamer.com/bloodborne-best-builds-overall/",
+          "siteType": "guide",
+          "verifiedVia": "curl HTTP 200 + WebFetch (title/content read)"
+        },
+        {
+          "title": "Game Rant – Bloodborne: most overpowered builds",
+          "url": "https://gamerant.com/bloodborne-best-overpowered-builds/",
+          "siteType": "guide",
+          "verifiedVia": "curl HTTP 200 + WebFetch (title/content read)"
+        },
+        {
+          "title": "YouTube – Bloodborne All Bosses Speedrun in 1:13:31 (Distortion2)",
+          "url": "https://www.youtube.com/watch?v=saNkbrE2OKU",
+          "siteType": "video",
+          "verifiedVia": "YouTube oEmbed (title/author confirmed)"
+        }
+      ]
+    },
+    {
+      "id": "quality-ludwigs-holy-blade",
+      "name": "Ludwig's Holy Blade True Quality",
+      "archetype": "Quality (Strength/Skill)",
+      "tier": "S",
+      "tierReason": "Default 'safe best' recommendation in beginner guides and forum threads. A 52-point Reddit comment in 'Best Weapon (objectively)?' answers 'LHB'. MugenMonkey's #2 all-time voted build ('Peeve's Ludwig 2.0', 76 votes) is LHB-based. Some Redditors say it's overrated next to the Saw Cleaver.",
+      "weapons": [
+        "Ludwig's Holy Blade"
+      ],
+      "firearm": "Ludwig's Rifle or Hunter Pistol / Evelyn",
+      "stats": {
+        "level": 120,
+        "spread": {
+          "VIT": 50,
+          "END": 15,
+          "STR": 46,
+          "SKL": 46,
+          "BLT": 7,
+          "ARC": 6
+        },
+        "label": "True Quality (bloodborne-wiki.com, BL120)",
+        "altSpreads": [
+          "Yharnam Hunter (Fextralife): 30+/30+/40+/40+/8/9",
+          "Easier target: 25 STR / 25 SKL first, then 50/50"
+        ]
+      },
+      "ngNotes": "Obtained early (Cathedral Ward). Both stats softcap at 25 and again at 50, so quality scaling holds up on NG+.",
+      "playstyle": "Big two-handed greatsword: long reach, trick-attack stagger, charged R2. Untransformed short sword for tight spaces.",
+      "bestFor": [
+        "First playthrough",
+        "Players who want reach and safety",
+        "PvE generalist"
+      ],
+      "pros": [
+        "Easy to get early",
+        "Great reach and stagger",
+        "Forgiving moveset"
+      ],
+      "cons": [
+        "Slow and stamina hungry when transformed",
+        "Not the very top DPS late game"
+      ],
+      "runesGear": [
+        "Physical gems",
+        "Beast's Embrace or Clawmark optional",
+        "Hunter Attire / Charred Hunter set"
+      ],
+      "sources": [
+        {
+          "title": "Fextralife – Ludwig's Holy Blade",
+          "url": "https://bloodborne.wiki.fextralife.com/Ludwig's+Holy+Blade",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200"
+        },
+        {
+          "title": "Fextralife – Yharnam Hunter build",
+          "url": "https://bloodborne.wiki.fextralife.com/Yharnam_Hunter",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200"
+        },
+        {
+          "title": "Bloodborne-Wiki.com – Builds (PvE + PvP meta stat tables)",
+          "url": "https://www.bloodborne-wiki.com/p/builds.html",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200"
+        },
+        {
+          "title": "r/bloodborne – Ideal stats for Ludwig's Holy Blade?",
+          "url": "https://www.reddit.com/r/bloodborne/comments/15vpawk/ideal_stats_for_ludwigs_holy_blade/",
+          "siteType": "reddit",
+          "verifiedVia": "WebFetch (title/content read)"
+        },
+        {
+          "title": "r/bloodborne – Best Weapon (objectively)?",
+          "url": "https://www.reddit.com/r/bloodborne/comments/1jtee2w/best_weapon_objectively/",
+          "siteType": "reddit",
+          "verifiedVia": "WebFetch (title/content read)"
+        },
+        {
+          "title": "r/bloodborne – Strongest weapon in the game",
+          "url": "https://www.reddit.com/r/bloodborne/comments/1vxk9g0/strongest_weapon_in_the_game/",
+          "siteType": "reddit",
+          "verifiedVia": "WebFetch (title/content read)"
+        },
+        {
+          "title": "GameFAQs – best starting class and weapons for a beginner",
+          "url": "https://gamefaqs.gamespot.com/boards/805577-bloodborne/71807637",
+          "siteType": "forum",
+          "verifiedVia": "WebFetch (title/content read); curl returns 403"
+        },
+        {
+          "title": "BloodborneGame.wiki – Best Bloodborne Quality Build Guide for Beginners & PvP",
+          "url": "https://bloodbornegame.wiki/builds/quality-build/",
+          "siteType": "guide",
+          "verifiedVia": "curl HTTP 200"
+        },
+        {
+          "title": "TheGamer – Bloodborne: Best Builds (ranked)",
+          "url": "https://www.thegamer.com/bloodborne-best-builds-overall/",
+          "siteType": "guide",
+          "verifiedVia": "curl HTTP 200 + WebFetch (title/content read)"
+        },
+        {
+          "title": "Game Rant – Bloodborne: Best Quality Build Weapons, Ranked",
+          "url": "https://gamerant.com/bloodborne-best-quality-build-weapons/",
+          "siteType": "guide",
+          "verifiedVia": "curl HTTP 200"
+        },
+        {
+          "title": "MugenMonkey – Bloodborne top 30 builds (all time, by votes)",
+          "url": "https://www.mugenmonkey.com/bloodborne/top",
+          "siteType": "guide",
+          "verifiedVia": "curl HTTP 200 (table read)"
+        }
+      ]
+    },
+    {
+      "id": "skill-saw-spear",
+      "name": "Saw Spear Skill/Quality",
+      "archetype": "Skill (with 25 STR)",
+      "tier": "S",
+      "tierReason": "Ranked #2 behind the Saw Cleaver in a Reddit tier comment ('Strongest weapon in the game'). Named in the 52-point 'LHB, possibly followed by Saw Spear' comment. Listed in Game Rant's OP builds. Serrated in both forms, with thrust moves when transformed.",
+      "weapons": [
+        "Saw Spear",
+        "Blades of Mercy / Rakuyo later"
+      ],
+      "firearm": "Hunter Pistol or Repeating Pistol",
+      "stats": {
+        "level": 120,
+        "spread": {
+          "VIT": 50,
+          "END": 20,
+          "STR": 25,
+          "SKL": 50,
+          "BLT": 7,
+          "ARC": 9
+        },
+        "label": "Community skill-quality split (synthesized)",
+        "altSpreads": [
+          "BL60 (GameFAQs): 30/20/16/30/8/6",
+          "BL100 Lone Survivor (GameFAQs): 50/25/11/50/7/7"
+        ]
+      },
+      "ngNotes": "Per GameFAQs scaling advice, 25 STR / 25 SKL beats base STR / 50 SKL early. Push SKL toward 50 later.",
+      "playstyle": "Mid-reach serrated pokes when transformed; Adept/thrust gems are optional. Fire Paper or fire gems make it a pure-arcane alternative.",
+      "bestFor": [
+        "Skill-leaning first run",
+        "Beasts and Cleric Beast–type bosses"
+      ],
+      "pros": [
+        "Early: buyable once you find the Saw Hunter Badge in Central Yharnam",
+        "Serrated in both forms",
+        "Flexible quality/skill scaling"
+      ],
+      "cons": [
+        "Lower base damage than late-game skill weapons"
+      ],
+      "runesGear": [
+        "Physical or Adept thrust gems",
+        "Beast Blood Pellets",
+        "Clawmark"
+      ],
+      "sources": [
+        {
+          "title": "Fextralife – Saw Spear",
+          "url": "https://bloodborne.wiki.fextralife.com/Saw+Spear",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200"
+        },
+        {
+          "title": "r/bloodborne – Strongest weapon in the game",
+          "url": "https://www.reddit.com/r/bloodborne/comments/1vxk9g0/strongest_weapon_in_the_game/",
+          "siteType": "reddit",
+          "verifiedVia": "WebFetch (title/content read)"
+        },
+        {
+          "title": "r/bloodborne – Best Weapon (objectively)?",
+          "url": "https://www.reddit.com/r/bloodborne/comments/1jtee2w/best_weapon_objectively/",
+          "siteType": "reddit",
+          "verifiedVia": "WebFetch (title/content read)"
+        },
+        {
+          "title": "r/bloodborne – Saw spear or Rakuyo",
+          "url": "https://www.reddit.com/r/bloodborne/comments/a1a9jh/saw_spear_or_rakuyo/",
+          "siteType": "reddit",
+          "verifiedVia": "WebFetch (title/content read)"
+        },
+        {
+          "title": "GameFAQs – Skill build",
+          "url": "https://gamefaqs.gamespot.com/boards/805577-bloodborne/75138250",
+          "siteType": "forum",
+          "verifiedVia": "WebFetch (title/content read); curl returns 403"
+        },
+        {
+          "title": "Game Rant – Bloodborne: most overpowered builds",
+          "url": "https://gamerant.com/bloodborne-best-overpowered-builds/",
+          "siteType": "guide",
+          "verifiedVia": "curl HTTP 200 + WebFetch (title/content read)"
+        }
+      ]
+    },
+    {
+      "id": "arcane-99-hunter-tools",
+      "name": "99 Arcane Hunter Tools (Augur / Executioner's Gloves / A Call Beyond)",
+      "archetype": "Pure Arcane",
+      "tier": "S",
+      "tierReason": "In PvE the strongest late-game / NG+ option according to Game Rant (99 Arcane, Executioner's Gloves) and TheGamer (Augur #9). GameFAQs posters note Arcane is the only stat worth taking past 50. Weak early, and it needs item hunting (Arcanist 2.0 cons).",
+      "weapons": [
+        "Fire-papered Saw Spear/Cleaver early",
+        "Tonitrus or Kos Parasite as melee"
+      ],
+      "firearm": "Hunter Pistol or none (Augur/Executioner's Gloves/A Call Beyond as 'casters')",
+      "stats": {
+        "level": 120,
+        "spread": {
+          "VIT": 50,
+          "END": 15,
+          "STR": 10,
+          "SKL": 9,
+          "BLT": 5,
+          "ARC": 81
+        },
+        "label": "Pure Arcane (bloodborne-wiki.com, BL120)",
+        "altSpreads": [
+          "Late NG+: 50/15/10/9/5/99",
+          "Early: VIT ~30 before ARC (Reddit 99-Arcane tips thread)"
+        ]
+      },
+      "ngNotes": "Becomes dominant around NG+ once ARC is 60–99, with Formless Oedon runes for bullets. On NG it's a slower start.",
+      "playstyle": "Ranged and burst caster: Augur of Ebrietas, Executioner's Gloves, A Call Beyond, and Blacksky Eye; quicksilver bullets come from Formless Oedon runes. Element-matched weaknesses do much of the damage.",
+      "bestFor": [
+        "NG+ / NG++ boss melting",
+        "Second playthrough",
+        "Players who like spellcaster-style play"
+      ],
+      "pros": [
+        "Massive burst and elemental flexibility",
+        "Bypasses physical-resistant bosses"
+      ],
+      "cons": [
+        "Weak early game",
+        "Bullet economy; needs Formless Oedon runes",
+        "Needs chalice or DLC items (Gloves from Chalice dungeons)"
+      ],
+      "runesGear": [
+        "Formless Oedon",
+        "Milkweed (with Kos Parasite)",
+        "Arcane-boosting gems / Blood Rapture"
+      ],
+      "sources": [
+        {
+          "title": "Fextralife – Augur of Ebrietas",
+          "url": "https://bloodborne.wiki.fextralife.com/Augur+of+Ebrietas",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200"
+        },
+        {
+          "title": "Fextralife – Executioner's Gloves",
+          "url": "https://bloodborne.wiki.fextralife.com/Executioner's+Gloves",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200"
+        },
+        {
+          "title": "Fextralife – A Call Beyond",
+          "url": "https://bloodborne.wiki.fextralife.com/A+Call+Beyond",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200"
+        },
+        {
+          "title": "Fextralife – Formless Oedon (rune)",
+          "url": "https://bloodborne.wiki.fextralife.com/Formless+Oedon",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200"
+        },
+        {
+          "title": "Bloodborne-Wiki.com – The Arcanist 2.0",
+          "url": "https://www.bloodborne-wiki.com/2017/04/the-arcanist-20.html",
+          "siteType": "guide",
+          "verifiedVia": "curl HTTP 200"
+        },
+        {
+          "title": "Bloodborne-Wiki.com – Builds (PvE + PvP meta stat tables)",
+          "url": "https://www.bloodborne-wiki.com/p/builds.html",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200"
+        },
+        {
+          "title": "r/bloodborne – Starting a 99 Arcane build tomorrow. Any tips?",
+          "url": "https://www.reddit.com/r/bloodborne/comments/f02cos/starting_a_99_arcane_build_tomorrow_any_tips/",
+          "siteType": "reddit",
+          "verifiedVia": "WebFetch (title/content read)"
+        },
+        {
+          "title": "r/bloodborne – Is an Arcane build worth attempting?",
+          "url": "https://www.reddit.com/r/bloodborne/comments/13wrdwx/is_an_arcane_build_worth_attempting/",
+          "siteType": "reddit",
+          "verifiedVia": "WebFetch (title/content read)",
+          "note": "OP post deleted; replies remain"
+        },
+        {
+          "title": "r/bloodborne – What's the most OP build?",
+          "url": "https://www.reddit.com/r/bloodborne/comments/1wr6ek9/whats_the_most_op_build/",
+          "siteType": "reddit",
+          "verifiedVia": "WebFetch (title/content read)"
+        },
+        {
+          "title": "r/bloodborne – Favorite builds?",
+          "url": "https://www.reddit.com/r/bloodborne/comments/4co98a/favorite_builds/",
+          "siteType": "reddit",
+          "verifiedVia": "WebFetch (title/content read)"
+        },
+        {
+          "title": "GameFAQs – Easy build for beginners",
+          "url": "https://gamefaqs.gamespot.com/boards/805577-bloodborne/75758488",
+          "siteType": "forum",
+          "verifiedVia": "WebFetch (title/content read); curl returns 403"
+        },
+        {
+          "title": "TheGamer – Bloodborne: Best Builds (ranked)",
+          "url": "https://www.thegamer.com/bloodborne-best-builds-overall/",
+          "siteType": "guide",
+          "verifiedVia": "curl HTTP 200 + WebFetch (title/content read)"
+        },
+        {
+          "title": "Game Rant – Bloodborne: most overpowered builds",
+          "url": "https://gamerant.com/bloodborne-best-overpowered-builds/",
+          "siteType": "guide",
+          "verifiedVia": "curl HTTP 200 + WebFetch (title/content read)"
+        }
+      ]
+    },
+    {
+      "id": "bloodtinge-chikage-evelyn",
+      "name": "Vileblood Bloodtinge (Chikage + Evelyn)",
+      "archetype": "Bloodtinge (Skill)",
+      "tier": "A",
+      "tierReason": "Iconic PvP/PvE build ranked in TheGamer (#6) and Game Rant's OP list, with a dedicated bloodborne-wiki.com handbook. It's strong but gated behind the Vileblood questline and gems, and the Chikage drains HP when transformed. bloodborne-wiki.com advises beginners to avoid it.",
+      "weapons": [
+        "Chikage",
+        "Simon's Bowblade alt"
+      ],
+      "firearm": "Evelyn (needs >21 BLT to beat the Hunter Pistol per the Vileblood Handbook)",
+      "stats": {
+        "level": 120,
+        "spread": {
+          "VIT": 50,
+          "END": 25,
+          "STR": 10,
+          "SKL": 25,
+          "BLT": 50,
+          "ARC": 10
+        },
+        "label": "Vileblood Handbook range (45–50 VIT, 25–30 END, 10 STR, 25 SKL, 50 BLT, 7–15 ARC)",
+        "altSpreads": [
+          "Bloodtinge Skill (bloodborne-wiki.com): 50/15/10/37/50/8",
+          "Assassin (Fextralife): 50/40/15/40/40/15"
+        ]
+      },
+      "ngNotes": "Chikage is found after Queen Annalise's questline / Cainhurst. Gun damage ramps strongly with Bone Marrow Ash.",
+      "playstyle": "Transformed Chikage does ×1.6 trick damage while draining ~0.85% HP/s (handbook); offset with rallies or Oedon Writhe. Evelyn plus Bone Marrow Ash for heavy gunshots.",
+      "bestFor": [
+        "PvP",
+        "Second playthrough",
+        "Gun-heavy players"
+      ],
+      "pros": [
+        "Extremely high blood damage",
+        "Strong gunshots and parry pressure"
+      ],
+      "cons": [
+        "HP drain",
+        "Weak early game",
+        "Grind for good gems"
+      ],
+      "runesGear": [
+        "Blood gems (tempering/Nourishing)",
+        "Bone Marrow Ash",
+        "Oedon Writhe / Blood Rapture"
+      ],
+      "sources": [
+        {
+          "title": "Bloodborne-Wiki.com – The Vileblood Handbook: Hunter's Guide to Bloodtinge",
+          "url": "https://www.bloodborne-wiki.com/2016/07/the-vileblood-handbook-hunters-guide-to.html",
+          "siteType": "guide",
+          "verifiedVia": "curl HTTP 200"
+        },
+        {
+          "title": "Wikidot – Level 100 Bloodtinge Build",
+          "url": "https://bloodborne.wikidot.com/characterbuild:level-100-bloodtinge-build",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200"
+        },
+        {
+          "title": "Fextralife – Chikage",
+          "url": "https://bloodborne.wiki.fextralife.com/Chikage",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200"
+        },
+        {
+          "title": "Fextralife – Evelyn",
+          "url": "https://bloodborne.wiki.fextralife.com/Evelyn",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200"
+        },
+        {
+          "title": "Fextralife – Bloodtinge and Skill Build",
+          "url": "https://bloodborne.wiki.fextralife.com/Bloodtinge_and_Skill_Build",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200"
+        },
+        {
+          "title": "Fextralife – Bone Marrow Ash",
+          "url": "https://bloodborne.wiki.fextralife.com/Bone+Marrow+Ash",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200"
+        },
+        {
+          "title": "r/bloodborne – Bloodtinge build for PvP",
+          "url": "https://www.reddit.com/r/bloodborne/comments/17wbygf/bloodtinge_build_for_pvp/",
+          "siteType": "reddit",
+          "verifiedVia": "WebFetch (title/content read)"
+        },
+        {
+          "title": "TheGamer – Bloodborne: Best Builds (ranked)",
+          "url": "https://www.thegamer.com/bloodborne-best-builds-overall/",
+          "siteType": "guide",
+          "verifiedVia": "curl HTTP 200 + WebFetch (title/content read)"
+        },
+        {
+          "title": "Game Rant – Bloodborne: most overpowered builds",
+          "url": "https://gamerant.com/bloodborne-best-overpowered-builds/",
+          "siteType": "guide",
+          "verifiedVia": "curl HTTP 200 + WebFetch (title/content read)"
+        },
+        {
+          "title": "MugenMonkey – Bloodborne top 30 builds (all time, by votes)",
+          "url": "https://www.mugenmonkey.com/bloodborne/top",
+          "siteType": "guide",
+          "verifiedVia": "curl HTTP 200 (table read)"
+        }
+      ]
+    },
+    {
+      "id": "pure-strength-whirligig-kirkhammer",
+      "name": "Pure Strength (Whirligig Saw / Kirkhammer)",
+      "archetype": "Strength",
+      "tier": "A",
+      "tierReason": "The standard 'pure STR' template on bloodborne-wiki.com, with the Whirligig a frequent answer in Reddit's best-STR-weapon thread and Game Rant's strength list. Slower, but huge stagger and posture.",
+      "weapons": [
+        "Whirligig Saw",
+        "Kirkhammer",
+        "Amygdalan Arm (DLC)"
+      ],
+      "firearm": "Hunter Pistol / Cannon",
+      "stats": {
+        "level": 103,
+        "spread": {
+          "VIT": 50,
+          "END": 15,
+          "STR": 50,
+          "SKL": 25,
+          "BLT": 7,
+          "ARC": 6
+        },
+        "label": "Pure Strength (bloodborne-wiki.com, BL103)",
+        "altSpreads": [
+          "Kirkhammer BL93 Violent Past (GameFAQs): 50/20/50/10/6/7",
+          "Cruel Fate BL100 (GameFAQs): 50/20/50/10/5/15"
+        ]
+      },
+      "ngNotes": "Whirligig is a Hunter's Dream purchase after Yahar'gul. For PvP at 120, the bloodborne-wiki PvP 'Strength' preset is 77/9/50/12/7/15 (Vitgouge-style).",
+      "playstyle": "Heavy trades, charged R2 stagger, hyper-armor style trading. Whirligig spin melts beasts (serrated).",
+      "bestFor": [
+        "Players who like greatswords/hammers",
+        "Stagger-heavy bosses"
+      ],
+      "pros": [
+        "Huge damage per hit",
+        "Kirkhammer is available early"
+      ],
+      "cons": [
+        "Slow recovery",
+        "Stamina hungry"
+      ],
+      "runesGear": [
+        "Physical gems",
+        "Beast Blood Pellets",
+        "Beast's Embrace"
+      ],
+      "sources": [
+        {
+          "title": "Bloodborne-Wiki.com – Builds (PvE + PvP meta stat tables)",
+          "url": "https://www.bloodborne-wiki.com/p/builds.html",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200"
+        },
+        {
+          "title": "Bloodborne-Wiki.com – Whirligig Saw",
+          "url": "https://www.bloodborne-wiki.com/2015/11/whirligig-saw.html",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200"
+        },
+        {
+          "title": "Fextralife – Whirligig Saw",
+          "url": "https://bloodborne.wiki.fextralife.com/Whirligig+Saw",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200"
+        },
+        {
+          "title": "Fextralife – Kirkhammer",
+          "url": "https://bloodborne.wiki.fextralife.com/Kirkhammer",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200"
+        },
+        {
+          "title": "Fextralife – Amygdalan Arm",
+          "url": "https://bloodborne.wiki.fextralife.com/Amygdalan+Arm",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200"
+        },
+        {
+          "title": "r/bloodborne – What is the best strength scaling weapon?",
+          "url": "https://www.reddit.com/r/bloodborne/comments/18wu5nd/what_is_the_best_strength_scaling_weapon/",
+          "siteType": "reddit",
+          "verifiedVia": "WebFetch (title/content read)"
+        },
+        {
+          "title": "r/bloodborne – Best Stats for Kirkhammer?",
+          "url": "https://www.reddit.com/r/bloodborne/comments/1fuwc02/best_stats_for_kirkhammer/",
+          "siteType": "reddit",
+          "verifiedVia": "WebFetch (title/content read)"
+        },
+        {
+          "title": "GameFAQs – Kirkhammer build advice",
+          "url": "https://gamefaqs.gamespot.com/boards/805577-bloodborne/76036834",
+          "siteType": "forum",
+          "verifiedVia": "WebFetch (title/content read); curl returns 403"
+        },
+        {
+          "title": "Game Rant – Best Strength Weapons In Bloodborne",
+          "url": "https://gamerant.com/bloodborne-best-strength-weapons/",
+          "siteType": "guide",
+          "verifiedVia": "curl HTTP 200"
+        }
+      ]
+    },
+    {
+      "id": "pure-skill-rakuyo-bom-burial",
+      "name": "Pure Skill (Rakuyo / Blades of Mercy / Burial Blade / Saif)",
+      "archetype": "Skill",
+      "tier": "A",
+      "tierReason": "Popular dex-style PvE/PvP set. The bloodborne-wiki PvP meta lists a 'Rakuyo build', and GameFAQs posters call the Saif among the best PvP weapons. It needs late-game/DLC items (Rakuyo, Burial Blade).",
+      "weapons": [
+        "Rakuyo",
+        "Blades of Mercy",
+        "Burial Blade",
+        "Beasthunter Saif"
+      ],
+      "firearm": "Repeating Pistol / Hunter Pistol",
+      "stats": {
+        "level": 103,
+        "spread": {
+          "VIT": 50,
+          "END": 15,
+          "STR": 25,
+          "SKL": 50,
+          "BLT": 7,
+          "ARC": 6
+        },
+        "label": "Pure Skill (bloodborne-wiki.com, BL103)",
+        "altSpreads": [
+          "Rakuyo PvP (bloodborne-wiki.com, BL120): 50/20/10/50/25/15",
+          "BL100 Lone Survivor (GameFAQs): 50/25/11/50/7/7"
+        ]
+      },
+      "ngNotes": "Blades of Mercy come from Eileen's quest; Rakuyo is DLC (Lady Maria/Astral Clocktower area). It's very stamina-hungry, so 20–25 END.",
+      "playstyle": "Rapid dual-blade strings, quick dodges, crit-heavy backstabs and visceral attacks.",
+      "bestFor": [
+        "PvP",
+        "Aggressive dodge-heavy play"
+      ],
+      "pros": [
+        "Fast attacks",
+        "High visceral damage"
+      ],
+      "cons": [
+        "Late availability",
+        "Low poise"
+      ],
+      "runesGear": [
+        "Physical or Adept thrust gems",
+        "Clawmark (visceral boost)",
+        "Old Hunter Bone (optional)"
+      ],
+      "sources": [
+        {
+          "title": "Bloodborne-Wiki.com – Builds (PvE + PvP meta stat tables)",
+          "url": "https://www.bloodborne-wiki.com/p/builds.html",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200"
+        },
+        {
+          "title": "Fextralife – Rakuyo",
+          "url": "https://bloodborne.wiki.fextralife.com/Rakuyo",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200"
+        },
+        {
+          "title": "Fextralife – Blade of Mercy",
+          "url": "https://bloodborne.wiki.fextralife.com/Blade+of+Mercy",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200"
+        },
+        {
+          "title": "Fextralife – Burial Blade",
+          "url": "https://bloodborne.wiki.fextralife.com/Burial+Blade",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200"
+        },
+        {
+          "title": "Fextralife – Beasthunter Saif",
+          "url": "https://bloodborne.wiki.fextralife.com/Beasthunter+Saif",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200"
+        },
+        {
+          "title": "r/bloodborne – rakuyo or blades of mercy for a pure Skill pvp and pve build",
+          "url": "https://www.reddit.com/r/bloodborne/comments/ujojma/rakuyo_or_blades_of_mercy_for_a_pure_skill_pvp/",
+          "siteType": "reddit",
+          "verifiedVia": "WebFetch (title/content read)"
+        },
+        {
+          "title": "r/bloodborne – Saw spear or Rakuyo",
+          "url": "https://www.reddit.com/r/bloodborne/comments/a1a9jh/saw_spear_or_rakuyo/",
+          "siteType": "reddit",
+          "verifiedVia": "WebFetch (title/content read)"
+        },
+        {
+          "title": "GameFAQs – Skill build",
+          "url": "https://gamefaqs.gamespot.com/boards/805577-bloodborne/75138250",
+          "siteType": "forum",
+          "verifiedVia": "WebFetch (title/content read); curl returns 403"
+        },
+        {
+          "title": "Fextralife – PvP Builds",
+          "url": "https://bloodborne.wiki.fextralife.com/PvP_Builds",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200"
+        }
+      ]
+    },
+    {
+      "id": "church-pick-thrust",
+      "name": "Church Pick Thrust Skill",
+      "archetype": "Skill (thrust/visceral)",
+      "tier": "A",
+      "tierReason": "Showcased by a Reddit clip (Church Pick, 50 Skill, 3 Clawmarks, Thrust gems, BL120 NG+3) and ranked #4 in a Reddit weapon tier comment. Has a known thrust-gem synergy; DLC-gated.",
+      "weapons": [
+        "Church Pick"
+      ],
+      "firearm": "Hunter Pistol / Repeating Pistol",
+      "stats": {
+        "level": 120,
+        "spread": {
+          "VIT": 50,
+          "END": 20,
+          "STR": 25,
+          "SKL": 50,
+          "BLT": 10,
+          "ARC": 15
+        },
+        "label": "Approximate (from Reddit 'Best stats for the church pick?' OP: 50 SKL / 25 STR) – synthesized",
+        "altSpreads": [
+          "50 STR / 35 SKL variant asked about in the same thread"
+        ]
+      },
+      "ngNotes": "DLC weapon (Hunter's Nightmare). Thrust gems (Adept) matter more than raw stats.",
+      "playstyle": "Long-reach thrust pokes in normal form, scythe sweeps when transformed; visceral spam with Clawmark.",
+      "bestFor": [
+        "DLC players",
+        "Visceral/parry-focused PvE"
+      ],
+      "pros": [
+        "Excellent reach",
+        "Strong thrust gem scaling"
+      ],
+      "cons": [
+        "DLC only",
+        "Needs specific gems"
+      ],
+      "runesGear": [
+        "Adept (thrust) gems",
+        "3× Clawmark",
+        "Blood Rapture"
+      ],
+      "sources": [
+        {
+          "title": "Fextralife – Church Pick",
+          "url": "https://bloodborne.wiki.fextralife.com/Church+Pick",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200"
+        },
+        {
+          "title": "Fextralife – Clawmark (rune)",
+          "url": "https://bloodborne.wiki.fextralife.com/Clawmark",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200"
+        },
+        {
+          "title": "r/bloodborne – Melting Marty Log's health bar in 45 seconds with the power of the Church Pick, 50 Skill, 3 Clawmarks and Thrust Gems (BL120, NG+3)",
+          "url": "https://www.reddit.com/r/bloodborne/comments/piy3gx/melting_marty_logs_health_bar_in_45_seconds_with/",
+          "siteType": "reddit",
+          "verifiedVia": "WebFetch (title/content read)"
+        },
+        {
+          "title": "r/bloodborne – Best stats for the church pick?",
+          "url": "https://www.reddit.com/r/bloodborne/comments/1k8dri2/best_stats_for_the_church_pick/",
+          "siteType": "reddit",
+          "verifiedVia": "WebFetch (title/content read)"
+        },
+        {
+          "title": "r/bloodborne – Strongest weapon in the game",
+          "url": "https://www.reddit.com/r/bloodborne/comments/1vxk9g0/strongest_weapon_in_the_game/",
+          "siteType": "reddit",
+          "verifiedVia": "WebFetch (title/content read)"
+        }
+      ]
+    },
+    {
+      "id": "arcane-quality-hms",
+      "name": "Holy Moonlight Sword Arcane Quality",
+      "archetype": "Quality/Arcane",
+      "tier": "A",
+      "tierReason": "Reddit's consensus HMS spread is 25 STR / 25 SKL / 50 ARC at 120 (7iwgm6). bloodborne-wiki.com has the matching 'Arcane Quality' template; TheGamer ranks HMS #4. Late-game, iconic, and fun, but not the top damage.",
+      "weapons": [
+        "Holy Moonlight Sword"
+      ],
+      "firearm": "Hunter Pistol / Rosmarinus",
+      "stats": {
+        "level": 120,
+        "spread": {
+          "VIT": 50,
+          "END": 15,
+          "STR": 25,
+          "SKL": 25,
+          "BLT": 5,
+          "ARC": 50
+        },
+        "label": "Arcane Quality (bloodborne-wiki.com, BL120)",
+        "altSpreads": [
+          "Reddit 7iwgm6 OP at 120: 50/15/25/25/5/50"
+        ]
+      },
+      "ngNotes": "DLC weapon (Ludwig). The arcane projectile (L2 / transformed R2) scales with ARC.",
+      "playstyle": "Greatsword with ranged arcane beam on charged attacks.",
+      "bestFor": [
+        "Late-game PvE",
+        "Fans of the lore"
+      ],
+      "pros": [
+        "Strong ranged charged attacks",
+        "Dual physical + arcane damage"
+      ],
+      "cons": [
+        "Late availability",
+        "Split damage needs balanced gems"
+      ],
+      "runesGear": [
+        "Arcane or Nourishing gems",
+        "Formless Oedon"
+      ],
+      "sources": [
+        {
+          "title": "Fextralife – Holy Moonlight Sword",
+          "url": "https://bloodborne.wiki.fextralife.com/Holy+Moonlight+Sword",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200"
+        },
+        {
+          "title": "Wikidot – Holy Moonlight Sword",
+          "url": "https://bloodborne.wikidot.com/holy-moonlight-sword",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200"
+        },
+        {
+          "title": "Bloodborne-Wiki.com – Builds (PvE + PvP meta stat tables)",
+          "url": "https://www.bloodborne-wiki.com/p/builds.html",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200"
+        },
+        {
+          "title": "r/bloodborne – Build Help - Holy Moonlight Sword",
+          "url": "https://www.reddit.com/r/bloodborne/comments/7iwgm6/build_help_holy_moonlight_sword/",
+          "siteType": "reddit",
+          "verifiedVia": "WebFetch (title/content read)"
+        },
+        {
+          "title": "TheGamer – Bloodborne: Best Builds (ranked)",
+          "url": "https://www.thegamer.com/bloodborne-best-builds-overall/",
+          "siteType": "guide",
+          "verifiedVia": "curl HTTP 200 + WebFetch (title/content read)"
+        },
+        {
+          "title": "Fextralife – Rosmarinus",
+          "url": "https://bloodborne.wiki.fextralife.com/Rosmarinus",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200"
+        }
+      ]
+    },
+    {
+      "id": "str-bloodtinge-bloodletter",
+      "name": "Bloodletter Strength/Bloodtinge",
+      "archetype": "Strength/Bloodtinge",
+      "tier": "A",
+      "tierReason": "Bloodtinge Strength template on bloodborne-wiki.com. A popular PvP/self-buff build; MugenMonkey's '*unzips bloodletter*' build has 13 votes. HP cost and DLC gating hold it back.",
+      "weapons": [
+        "Bloodletter"
+      ],
+      "firearm": "Evelyn / Cannon",
+      "stats": {
+        "level": 120,
+        "spread": {
+          "VIT": 50,
+          "END": 15,
+          "STR": 36,
+          "SKL": 13,
+          "BLT": 50,
+          "ARC": 6
+        },
+        "label": "Bloodtinge Strength (bloodborne-wiki.com, BL120)",
+        "altSpreads": [
+          "Late NG+: 50 STR / 50 BLT (Reddit 9po3m2 discussion)"
+        ]
+      },
+      "ngNotes": "DLC (Hunter's Nightmare). The transformed form uses blood damage and drains HP on activation.",
+      "playstyle": "Mace normal form; transform for a blood flail with a self-damaging activation that adds blood damage.",
+      "bestFor": [
+        "PvP",
+        "Bloodtinge fans who want heavy hits"
+      ],
+      "pros": [
+        "Huge blood AR",
+        "Strong charged R2"
+      ],
+      "cons": [
+        "HP drain",
+        "Gem-dependent"
+      ],
+      "runesGear": [
+        "Blood gems (Tempering)",
+        "Bone Marrow Ash"
+      ],
+      "sources": [
+        {
+          "title": "Fextralife – Bloodletter",
+          "url": "https://bloodborne.wiki.fextralife.com/Bloodletter",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200"
+        },
+        {
+          "title": "Bloodborne-Wiki.com – Bloodletter",
+          "url": "https://www.bloodborne-wiki.com/2015/11/bloodletter.html",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200"
+        },
+        {
+          "title": "Bloodborne-Wiki.com – Builds (PvE + PvP meta stat tables)",
+          "url": "https://www.bloodborne-wiki.com/p/builds.html",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200"
+        },
+        {
+          "title": "r/bloodborne – anyone done a Strength and Bloodtinge build for Bloodletter?",
+          "url": "https://www.reddit.com/r/bloodborne/comments/9po3m2/anyone_done_a_strength_and_bloodtinge_build_for/",
+          "siteType": "reddit",
+          "verifiedVia": "WebFetch (title/content read)"
+        },
+        {
+          "title": "r/bloodborne – Bloodtinge build for PvP",
+          "url": "https://www.reddit.com/r/bloodborne/comments/17wbygf/bloodtinge_build_for_pvp/",
+          "siteType": "reddit",
+          "verifiedVia": "WebFetch (title/content read)"
+        },
+        {
+          "title": "MugenMonkey – Bloodborne top 30 builds (all time, by votes)",
+          "url": "https://www.mugenmonkey.com/bloodborne/top",
+          "siteType": "guide",
+          "verifiedVia": "curl HTTP 200 (table read)"
+        }
+      ]
+    },
+    {
+      "id": "skill-arcane-burial-bom",
+      "name": "Skill/Arcane (Burial Blade + Blades of Mercy, Old Hunter Bone)",
+      "archetype": "Skill/Arcane",
+      "tier": "B",
+      "tierReason": "Strong PvP 'min-max' preset on Fextralife and bloodborne-wiki.com. In PvE it's mostly a style pick.",
+      "weapons": [
+        "Burial Blade",
+        "Blades of Mercy"
+      ],
+      "firearm": "Rosmarinus / Hunter Pistol",
+      "stats": {
+        "level": 120,
+        "spread": {
+          "VIT": 50,
+          "END": 15,
+          "STR": 25,
+          "SKL": 50,
+          "BLT": 5,
+          "ARC": 25
+        },
+        "label": "Skill Arcane / Cruel Fate (bloodborne-wiki.com, BL120)",
+        "altSpreads": [
+          "Min Max Skill/Arcane (Fextralife PvP): 30-50/20/10/25-50/5/15",
+          "Raven Knight (Fextralife): 50/40/40/50/8/25"
+        ]
+      },
+      "ngNotes": "Old Hunter Bone (Arcane) speeds up rolls; Empty Phantasm Shell adds arcane to the weapon.",
+      "playstyle": "Mobile scythe pressure with Old Hunter Bone quickstep; swap to Blades of Mercy for burst.",
+      "bestFor": [
+        "PvP",
+        "Mobility-focused play"
+      ],
+      "pros": [
+        "Arcane tools add utility",
+        "Excellent mobility"
+      ],
+      "cons": [
+        "Split stats lower raw damage"
+      ],
+      "runesGear": [
+        "Physical gems",
+        "Old Hunter Bone",
+        "Empty Phantasm Shell",
+        "Clawmark"
+      ],
+      "sources": [
+        {
+          "title": "Fextralife – PvP Builds",
+          "url": "https://bloodborne.wiki.fextralife.com/PvP_Builds",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200"
+        },
+        {
+          "title": "Bloodborne-Wiki.com – Builds (PvE + PvP meta stat tables)",
+          "url": "https://www.bloodborne-wiki.com/p/builds.html",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200"
+        },
+        {
+          "title": "Fextralife – Builds (community builds index)",
+          "url": "https://bloodborne.wiki.fextralife.com/Builds",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200"
+        },
+        {
+          "title": "Fextralife – Burial Blade",
+          "url": "https://bloodborne.wiki.fextralife.com/Burial+Blade",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200"
+        },
+        {
+          "title": "Fextralife – Blade of Mercy",
+          "url": "https://bloodborne.wiki.fextralife.com/Blade+of+Mercy",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200"
+        },
+        {
+          "title": "Fextralife – Old Hunter Bone",
+          "url": "https://bloodborne.wiki.fextralife.com/Old+Hunter+Bone",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200"
+        },
+        {
+          "title": "Fextralife – Empty Phantasm Shell",
+          "url": "https://bloodborne.wiki.fextralife.com/Empty+Phantasm+Shell",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200"
+        }
+      ]
+    },
+    {
+      "id": "beast-claw-beasthood",
+      "name": "Beast Claw Beasthood (Beast's Embrace)",
+      "archetype": "Strength/Skill",
+      "tier": "B",
+      "tierReason": "Listed in Game Rant's OP builds and TheGamer (#5). GameFAQs threads detail its Beasthood mechanics (low Insight, gems). Strong but niche, and it needs Beast's Embrace (DLC) to shine.",
+      "weapons": [
+        "Beast Claw"
+      ],
+      "firearm": "Hunter Pistol / Blunderbuss",
+      "stats": {
+        "level": 120,
+        "spread": {
+          "VIT": 50,
+          "END": 20,
+          "STR": 50,
+          "SKL": 25,
+          "BLT": 7,
+          "ARC": 6
+        },
+        "label": "Synthesized from GameFAQs/search guidance (STR/SKL 25/25 then 50/25; one poster suggests 50/50)",
+        "altSpreads": [
+          "MugenMonkey 'Lv40 Beast Claw Build' (16 votes)"
+        ]
+      },
+      "ngNotes": "Keep Insight low to max Beasthood (GameFAQs). Beast's Embrace (DLC rune) changes the transformed moveset.",
+      "playstyle": "Ferocious claw combos build a Beasthood gauge: +attack, −defense, up to +70% per GameFAQs.",
+      "bestFor": [
+        "Aggressive players",
+        "Second playthrough"
+      ],
+      "pros": [
+        "Very high DPS when the gauge is full",
+        "Fun animations"
+      ],
+      "cons": [
+        "Defense penalty",
+        "DLC rune and low Insight needed"
+      ],
+      "runesGear": [
+        "Beast's Embrace",
+        "Physical gems (Radial + Triangle)",
+        "Beast Blood Pellets"
+      ],
+      "sources": [
+        {
+          "title": "Fextralife – Beast Claw",
+          "url": "https://bloodborne.wiki.fextralife.com/Beast+Claw",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200"
+        },
+        {
+          "title": "Fextralife – Beast's Embrace (rune)",
+          "url": "https://bloodborne.wiki.fextralife.com/Beast's+Embrace",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200"
+        },
+        {
+          "title": "GameFAQs – Beast Claw (+Rune) Best Imprint & Gem Effects?",
+          "url": "https://gamefaqs.gamespot.com/boards/805577-bloodborne/75930821",
+          "siteType": "forum",
+          "verifiedVia": "WebFetch (title/content read); curl returns 403"
+        },
+        {
+          "title": "r/bloodborne – Beast Claw / Beast's Embrace thread",
+          "url": "https://www.reddit.com/r/bloodborne/comments/5xjl7m/",
+          "siteType": "reddit",
+          "unverified": true,
+          "note": "Found via search; Reddit served an empty shell to WebFetch so the title could not be confirmed"
+        },
+        {
+          "title": "TheGamer – Bloodborne: Best Builds (ranked)",
+          "url": "https://www.thegamer.com/bloodborne-best-builds-overall/",
+          "siteType": "guide",
+          "verifiedVia": "curl HTTP 200 + WebFetch (title/content read)"
+        },
+        {
+          "title": "Game Rant – Bloodborne: most overpowered builds",
+          "url": "https://gamerant.com/bloodborne-best-overpowered-builds/",
+          "siteType": "guide",
+          "verifiedVia": "curl HTTP 200 + WebFetch (title/content read)"
+        },
+        {
+          "title": "MugenMonkey – Bloodborne top 30 builds (all time, by votes)",
+          "url": "https://www.mugenmonkey.com/bloodborne/top",
+          "siteType": "guide",
+          "verifiedVia": "curl HTTP 200 (table read)"
+        }
+      ]
+    },
+    {
+      "id": "str-arcane-tonitrus-logarius",
+      "name": "Strength/Arcane (Tonitrus / Logarius' Wheel)",
+      "archetype": "Strength/Arcane",
+      "tier": "B",
+      "tierReason": "TheGamer ranks Tonitrus #7, and it's the Fextralife 'Corrupted Hunter' build. Bolt buffs are easy, but split scaling lags behind pure options.",
+      "weapons": [
+        "Tonitrus",
+        "Logarius' Wheel"
+      ],
+      "firearm": "Hunter Pistol",
+      "stats": {
+        "level": 120,
+        "spread": {
+          "VIT": 50,
+          "END": 15,
+          "STR": 44,
+          "SKL": 12,
+          "BLT": 5,
+          "ARC": 44
+        },
+        "label": "Arcane Strength (bloodborne-wiki.com, BL120: STR 50–38 / ARC 38–50 range)",
+        "altSpreads": [
+          "Corrupted Hunter (Fextralife): 30/30/25/12/5/45+"
+        ]
+      },
+      "ngNotes": "Tonitrus is from Old Yharnam, so it's very early. Logarius' Wheel is from Cainhurst.",
+      "playstyle": "Mace/wheel with bolt or arcane buff; trick attacks charge the element.",
+      "bestFor": [
+        "Early arcane experimenters",
+        "Kin-weak bosses (bolt)"
+      ],
+      "pros": [
+        "Early access (Tonitrus)",
+        "Elemental coverage"
+      ],
+      "cons": [
+        "Split damage",
+        "Short reach"
+      ],
+      "runesGear": [
+        "Bolt/arcane gems",
+        "Formless Oedon"
+      ],
+      "sources": [
+        {
+          "title": "Fextralife – Tonitrus",
+          "url": "https://bloodborne.wiki.fextralife.com/Tonitrus",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200"
+        },
+        {
+          "title": "Fextralife – Logarius' Wheel",
+          "url": "https://bloodborne.wiki.fextralife.com/Logarius'+Wheel",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200"
+        },
+        {
+          "title": "Fextralife – Corrupted Hunter build",
+          "url": "https://bloodborne.wiki.fextralife.com/Corrupted_Hunter",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200"
+        },
+        {
+          "title": "Bloodborne-Wiki.com – Builds (PvE + PvP meta stat tables)",
+          "url": "https://www.bloodborne-wiki.com/p/builds.html",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200"
+        },
+        {
+          "title": "TheGamer – Bloodborne: Best Builds (ranked)",
+          "url": "https://www.thegamer.com/bloodborne-best-builds-overall/",
+          "siteType": "guide",
+          "verifiedVia": "curl HTTP 200 + WebFetch (title/content read)"
+        }
+      ]
+    },
+    {
+      "id": "skill-bloodtinge-bowblade",
+      "name": "Simon's Bowblade Skill/Bloodtinge",
+      "archetype": "Skill/Bloodtinge",
+      "tier": "B",
+      "tierReason": "Popular 'archer' style. GameFAQs posters say to take 50 BLT first then 25 SKL; one GameFAQs poster suggested a BL160 Military Veteran spread of 50/40/14/50/50/6. Fun, but gem-dependent.",
+      "weapons": [
+        "Simon's Bowblade"
+      ],
+      "firearm": "Evelyn",
+      "stats": {
+        "level": 120,
+        "spread": {
+          "VIT": 50,
+          "END": 20,
+          "STR": 10,
+          "SKL": 25,
+          "BLT": 50,
+          "ARC": 10
+        },
+        "label": "Synthesized (GameFAQs: 50 BLT first, ≥25 SKL)",
+        "altSpreads": [
+          "BL160 Military Veteran (GameFAQs): 50/40/14/50/50/6"
+        ]
+      },
+      "ngNotes": "DLC (Simon). The charged bow is a stamina sink, so some posters push END to 40.",
+      "playstyle": "Charge bow shots from range; short-sword melee in close.",
+      "bestFor": [
+        "Ranged playstyle",
+        "Bloodtinge players"
+      ],
+      "pros": [
+        "Real ranged weapon",
+        "High blood AR with good gems"
+      ],
+      "cons": [
+        "Needs top-tier blood gems",
+        "DLC-gated"
+      ],
+      "runesGear": [
+        "Blood gems",
+        "Bone Marrow Ash (for Evelyn)"
+      ],
+      "sources": [
+        {
+          "title": "Fextralife – Simon's Bowblade",
+          "url": "https://bloodborne.wiki.fextralife.com/Simon's+Bowblade",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200"
+        },
+        {
+          "title": "Bloodborne-Wiki.com – Simon's Bowblade",
+          "url": "https://www.bloodborne-wiki.com/2015/11/simons-bowblade.html",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200"
+        },
+        {
+          "title": "GameFAQs – Optimal stat spread for simons bowblade?",
+          "url": "https://gamefaqs.gamespot.com/boards/805577-bloodborne/75632707",
+          "siteType": "forum",
+          "verifiedVia": "WebFetch (title/content read); curl returns 403"
+        },
+        {
+          "title": "r/bloodborne – Skill/Tinge Build",
+          "url": "https://www.reddit.com/r/bloodborne/comments/5x7ese/skilltinge_build/",
+          "siteType": "reddit",
+          "verifiedVia": "WebFetch (title/content read)"
+        }
+      ]
+    },
+    {
+      "id": "kos-parasite-arcane",
+      "name": "Kos Parasite Pure Arcane",
+      "archetype": "Pure Arcane",
+      "tier": "B",
+      "tierReason": "Game Rant's OP list (Kos + Milkweed). Fun and powerful on NG+, but you must beat Orphan of Kos and it only shines with Milkweed and high ARC. A Reddit tier comment ranks it last (26th) for general use.",
+      "weapons": [
+        "Kos Parasite"
+      ],
+      "firearm": "Augur of Ebrietas / Executioner's Gloves",
+      "stats": {
+        "level": 120,
+        "spread": {
+          "VIT": 50,
+          "END": 15,
+          "STR": 10,
+          "SKL": 9,
+          "BLT": 5,
+          "ARC": 81
+        },
+        "label": "Pure Arcane (bloodborne-wiki.com, BL120)",
+        "altSpreads": [
+          "MugenMonkey 'Kos Build' (20 votes, BL80)"
+        ]
+      },
+      "ngNotes": "Endgame DLC reward, realistically NG+.",
+      "playstyle": "Melee with an arcane-charged Kos Parasite, empowered by Milkweed rune.",
+      "bestFor": [
+        "NG+ arcane runs",
+        "Meme/fun"
+      ],
+      "pros": [
+        "Huge arcane damage with Milkweed"
+      ],
+      "cons": [
+        "Requires defeating Orphan of Kos",
+        "Awkward moveset"
+      ],
+      "runesGear": [
+        "Milkweed",
+        "Arcane gems"
+      ],
+      "sources": [
+        {
+          "title": "Fextralife – Kos Parasite",
+          "url": "https://bloodborne.wiki.fextralife.com/Kos+Parasite",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200"
+        },
+        {
+          "title": "Bloodborne-Wiki.com – Kos Parasite",
+          "url": "https://www.bloodborne-wiki.com/2015/11/kos-parasite.html",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200"
+        },
+        {
+          "title": "Fextralife – Milkweed (rune)",
+          "url": "https://bloodborne.wiki.fextralife.com/Milkweed",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200"
+        },
+        {
+          "title": "Game Rant – Bloodborne: most overpowered builds",
+          "url": "https://gamerant.com/bloodborne-best-overpowered-builds/",
+          "siteType": "guide",
+          "verifiedVia": "curl HTTP 200 + WebFetch (title/content read)"
+        },
+        {
+          "title": "r/bloodborne – Strongest weapon in the game",
+          "url": "https://www.reddit.com/r/bloodborne/comments/1vxk9g0/strongest_weapon_in_the_game/",
+          "siteType": "reddit",
+          "verifiedVia": "WebFetch (title/content read)"
+        },
+        {
+          "title": "MugenMonkey – Bloodborne top 30 builds (all time, by votes)",
+          "url": "https://www.mugenmonkey.com/bloodborne/top",
+          "siteType": "guide",
+          "verifiedVia": "curl HTTP 200 (table read)"
+        }
+      ]
+    },
+    {
+      "id": "threaded-cane-skill",
+      "name": "Threaded Cane Skill (Professor)",
+      "archetype": "Skill (light Arcane)",
+      "tier": "B",
+      "tierReason": "TheGamer ranks Threaded Cane #12, and it's ranked mid-list in a Reddit tier comment. It's the core of Fextralife's 'Professor' PvE build. Stylish whip, not top DPS.",
+      "weapons": [
+        "Threaded Cane"
+      ],
+      "firearm": "Hunter Pistol / Repeating Pistol",
+      "stats": {
+        "level": 120,
+        "spread": {
+          "VIT": 50,
+          "END": 20,
+          "STR": 15,
+          "SKL": 50,
+          "BLT": 7,
+          "ARC": 15
+        },
+        "label": "Synthesized pure-skill spread (approximate)",
+        "altSpreads": [
+          "See Fextralife Professor PvE Build page for its own spread"
+        ]
+      },
+      "ngNotes": "Starter weapon; serrated whip form. Works on NG with low investment.",
+      "playstyle": "Sword cane that becomes a long serrated whip.",
+      "bestFor": [
+        "Starter skill players",
+        "Crowd control"
+      ],
+      "pros": [
+        "Early",
+        "Long whip reach"
+      ],
+      "cons": [
+        "Lower damage than late skill weapons"
+      ],
+      "runesGear": [
+        "Physical gems",
+        "Clawmark"
+      ],
+      "sources": [
+        {
+          "title": "Fextralife – Threaded Cane",
+          "url": "https://bloodborne.wiki.fextralife.com/Threaded+Cane",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200"
+        },
+        {
+          "title": "Fextralife – Professor PvE Build",
+          "url": "https://bloodborne.wiki.fextralife.com/Professor_PvE_Build",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200"
+        },
+        {
+          "title": "TheGamer – Bloodborne: Best Builds (ranked)",
+          "url": "https://www.thegamer.com/bloodborne-best-builds-overall/",
+          "siteType": "guide",
+          "verifiedVia": "curl HTTP 200 + WebFetch (title/content read)"
+        },
+        {
+          "title": "r/bloodborne – Strongest weapon in the game",
+          "url": "https://www.reddit.com/r/bloodborne/comments/1vxk9g0/strongest_weapon_in_the_game/",
+          "siteType": "reddit",
+          "verifiedVia": "WebFetch (title/content read)"
+        }
+      ]
+    },
+    {
+      "id": "beginner-vit-hunter-axe",
+      "name": "Beginner Strength (Hunter Axe → LHB, VIT first)",
+      "archetype": "Strength (beginner)",
+      "tier": "B",
+      "tierReason": "Repeated beginner advice on GameFAQs: Violent Past + Hunter Axe, raise VIT/END/STR, and switch to Ludwig's later; another poster says VIT 30 first. It's a learning path rather than an endgame build.",
+      "weapons": [
+        "Hunter Axe",
+        "Ludwig's Holy Blade later"
+      ],
+      "firearm": "Hunter Pistol or Blunderbuss",
+      "stats": {
+        "level": 60,
+        "spread": {
+          "VIT": 30,
+          "END": 20,
+          "STR": 25,
+          "SKL": 12,
+          "BLT": 9,
+          "ARC": 8
+        },
+        "label": "Approximate early-game target (GameFAQs: VIT 30 → END 20 → STR/SKL 25)",
+        "altSpreads": [
+          "End-goal: transition to True Quality LHB"
+        ]
+      },
+      "ngNotes": "Not an endgame build. Redistribute into quality or strength by BL100.",
+      "playstyle": "Two-hand the axe and spin the charged R2 for crowd control.",
+      "bestFor": [
+        "Brand-new players"
+      ],
+      "pros": [
+        "Forgiving early",
+        "Great crowd control"
+      ],
+      "cons": [
+        "Outgrown by mid-game"
+      ],
+      "runesGear": [
+        "Physical gems as found"
+      ],
+      "sources": [
+        {
+          "title": "Fextralife – Hunter Axe",
+          "url": "https://bloodborne.wiki.fextralife.com/Hunter+Axe",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200"
+        },
+        {
+          "title": "GameFAQs – best starting class and weapons for a beginner",
+          "url": "https://gamefaqs.gamespot.com/boards/805577-bloodborne/71807637",
+          "siteType": "forum",
+          "verifiedVia": "WebFetch (title/content read); curl returns 403"
+        },
+        {
+          "title": "GameFAQs – Easy build for beginners",
+          "url": "https://gamefaqs.gamespot.com/boards/805577-bloodborne/75758488",
+          "siteType": "forum",
+          "verifiedVia": "WebFetch (title/content read); curl returns 403"
+        },
+        {
+          "title": "Fextralife – New Player Help",
+          "url": "https://bloodborne.wiki.fextralife.com/New_Player_Help",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200"
+        },
+        {
+          "title": "r/bloodborne – What type of build do you recommend someone for their first playthrough?",
+          "url": "https://www.reddit.com/r/bloodborne/comments/pu2q76/what_type_of_build_do_you_recommend_someone_for/",
+          "siteType": "reddit",
+          "verifiedVia": "WebFetch (title/content read)"
+        },
+        {
+          "title": "r/bloodborne – Very BEST 'loadout' for first playthrough with no DLC.",
+          "url": "https://www.reddit.com/r/bloodborne/comments/ad22on/very_best_loadout_for_first_playthrough_with_no/",
+          "siteType": "reddit",
+          "verifiedVia": "WebFetch (title/content read)"
+        },
+        {
+          "title": "GamesRadar – Bloodborne starting class guide",
+          "url": "https://www.gamesradar.com/bloodborne-starting-class-guide-which-right-you/",
+          "siteType": "guide",
+          "verifiedVia": "curl HTTP 200"
+        },
+        {
+          "title": "YouTube – How OP Can I Make Bloodborne's Vitality Class? (Thingfishy)",
+          "url": "https://www.youtube.com/watch?v=4cn_1v_R9Y8",
+          "siteType": "video",
+          "verifiedVia": "YouTube oEmbed (title/author confirmed)"
+        }
+      ]
+    },
+    {
+      "id": "pvp-meta-120-quality",
+      "name": "SL120 PvP Meta Quality hybrid",
+      "archetype": "Quality/PvP",
+      "tier": "B",
+      "tierReason": "Fextralife's PvP page lists 'Meta 120 Quality' (40/16/30/30/30/15) and 'Quality PVP' (37/25/25/25/12/6). bloodborne-wiki.com's PvP meta tables show similar BL120 presets. PvP-specific.",
+      "weapons": [
+        "Ludwig's Holy Blade",
+        "Burial Blade",
+        "Saw Spear"
+      ],
+      "firearm": "Evelyn / Hunter Pistol",
+      "stats": {
+        "level": 120,
+        "spread": {
+          "VIT": 40,
+          "END": 16,
+          "STR": 30,
+          "SKL": 30,
+          "BLT": 30,
+          "ARC": 15
+        },
+        "label": "Meta 120 Quality (Fextralife PvP Builds)",
+        "altSpreads": [
+          "Quality PVP (Fextralife): 37/25/25/25/12/6",
+          "Endgouged Quality (bloodborne-wiki.com): 50/25/50/25/5/15"
+        ]
+      },
+      "ngNotes": "BL120 is the common PvP meta level, with 100 and 150 as alternatives.",
+      "playstyle": "Weapon-swap pressure plus gun parries; flexible tools at 15 ARC (Beast Roar, Empty Phantasm Shell).",
+      "bestFor": [
+        "PvP invasions/duels"
+      ],
+      "pros": [
+        "Flexible",
+        "Meta-standard matchmaking"
+      ],
+      "cons": [
+        "Lower PvE DPS"
+      ],
+      "runesGear": [
+        "Physical gems",
+        "Blood gems for Evelyn"
+      ],
+      "sources": [
+        {
+          "title": "Fextralife – PvP Builds",
+          "url": "https://bloodborne.wiki.fextralife.com/PvP_Builds",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200"
+        },
+        {
+          "title": "Bloodborne-Wiki.com – Builds (PvE + PvP meta stat tables)",
+          "url": "https://www.bloodborne-wiki.com/p/builds.html",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200"
+        },
+        {
+          "title": "MugenMonkey – Bloodborne top 30 builds (all time, by votes)",
+          "url": "https://www.mugenmonkey.com/bloodborne/top",
+          "siteType": "guide",
+          "verifiedVia": "curl HTTP 200 (table read)"
+        }
+      ]
+    },
+    {
+      "id": "cannon-gunslinger",
+      "name": "Cannon Gunslinger (one-shot PvP)",
+      "archetype": "Strength/Bloodtinge (gimmick)",
+      "tier": "C",
+      "tierReason": "A meme/gimmick build. A Reddit post shows Lv43 30 STR / 24 BLT with Cannon +10, Formless Oedon ×3 and Bone Marrow Ash one-shotting invaders. Game Rant also mentions the 'infinite cannon glitch', and TheGamer ranks Cannon #10. Not a general PvE build.",
+      "weapons": [
+        "Any light melee"
+      ],
+      "firearm": "Cannon",
+      "stats": {
+        "level": 43,
+        "spread": {
+          "VIT": 10,
+          "END": 10,
+          "STR": 30,
+          "SKL": 13,
+          "BLT": 24,
+          "ARC": 6
+        },
+        "label": "Reddit 17t3220 low-level PvP spread"
+      },
+      "ngNotes": "Cannon needs 30 STR. Low-level PvP only; poor on NG+ PvE.",
+      "playstyle": "Bait, then one-shot with a Bone Marrow Ash–boosted Cannon.",
+      "bestFor": [
+        "Memes",
+        "Low-level PvP"
+      ],
+      "pros": [
+        "Huge single-shot damage"
+      ],
+      "cons": [
+        "Very few shots",
+        "Easily punished"
+      ],
+      "runesGear": [
+        "Formless Oedon ×3",
+        "Bone Marrow Ash"
+      ],
+      "sources": [
+        {
+          "title": "Fextralife – Cannon",
+          "url": "https://bloodborne.wiki.fextralife.com/Cannon",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200"
+        },
+        {
+          "title": "r/bloodborne – ONE SHOT PVP CANON",
+          "url": "https://www.reddit.com/r/bloodborne/comments/17t3220/one_shot_pvp_canon/",
+          "siteType": "reddit",
+          "verifiedVia": "WebFetch (title/content read)"
+        },
+        {
+          "title": "Fextralife – Formless Oedon (rune)",
+          "url": "https://bloodborne.wiki.fextralife.com/Formless+Oedon",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200"
+        },
+        {
+          "title": "Fextralife – Bone Marrow Ash",
+          "url": "https://bloodborne.wiki.fextralife.com/Bone+Marrow+Ash",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200"
+        },
+        {
+          "title": "TheGamer – Bloodborne: Best Builds (ranked)",
+          "url": "https://www.thegamer.com/bloodborne-best-builds-overall/",
+          "siteType": "guide",
+          "verifiedVia": "curl HTTP 200 + WebFetch (title/content read)"
+        },
+        {
+          "title": "Game Rant – Bloodborne: most overpowered builds",
+          "url": "https://gamerant.com/bloodborne-best-overpowered-builds/",
+          "siteType": "guide",
+          "verifiedVia": "curl HTTP 200 + WebFetch (title/content read)"
+        },
+        {
+          "title": "YouTube – How to \"Gun Only\" Bloodborne (ymfah)",
+          "url": "https://www.youtube.com/watch?v=MD-ZX1Fv3N4",
+          "siteType": "video",
+          "verifiedVia": "YouTube oEmbed (title/author confirmed)"
+        }
+      ]
+    }
+  ],
+  "guides": [
+    {
+      "title": "Fextralife – Builds (community builds index)",
+      "url": "https://bloodborne.wiki.fextralife.com/Builds",
+      "site": "Fextralife",
+      "siteType": "wiki",
+      "description": "Hub of community-submitted builds with stat spreads."
+    },
+    {
+      "title": "Fextralife – PvE Builds",
+      "url": "https://bloodborne.wiki.fextralife.com/PvE_Builds",
+      "site": "Fextralife",
+      "siteType": "wiki",
+      "description": "PvE-focused community builds."
+    },
+    {
+      "title": "Fextralife – PvP Builds",
+      "url": "https://bloodborne.wiki.fextralife.com/PvP_Builds",
+      "site": "Fextralife",
+      "siteType": "wiki",
+      "description": "PvP/meta builds, incl. Meta 120 Quality."
+    },
+    {
+      "title": "Bloodborne-Wiki.com – Builds (PvE + PvP meta stat tables)",
+      "url": "https://www.bloodborne-wiki.com/p/builds.html",
+      "site": "Bloodborne-Wiki.com",
+      "siteType": "wiki",
+      "description": "Concise stat templates for every archetype plus PvP meta presets."
+    },
+    {
+      "title": "Bloodborne-Wiki.com – The Vileblood Handbook: Hunter's Guide to Bloodtinge",
+      "url": "https://www.bloodborne-wiki.com/2016/07/the-vileblood-handbook-hunters-guide-to.html",
+      "site": "Bloodborne-Wiki.com",
+      "siteType": "guide",
+      "description": "Deep dive on Bloodtinge mechanics, Chikage and Evelyn."
+    },
+    {
+      "title": "Bloodborne-Wiki.com – The Arcanist 2.0",
+      "url": "https://www.bloodborne-wiki.com/2017/04/the-arcanist-20.html",
+      "site": "Bloodborne-Wiki.com",
+      "siteType": "guide",
+      "description": "Arcane build guide: tools, elements, pros/cons."
+    },
+    {
+      "title": "Bloodborne-Wiki.com – Best Blood Gems Setups",
+      "url": "https://www.bloodborne-wiki.com/2015/10/best-blood-gems-setups.html",
+      "site": "Bloodborne-Wiki.com",
+      "siteType": "guide",
+      "description": "Blood gem setups by weapon."
+    },
+    {
+      "title": "Wikidot – Level 100 Bloodtinge Build",
+      "url": "https://bloodborne.wikidot.com/characterbuild:level-100-bloodtinge-build",
+      "site": "Wikidot",
+      "siteType": "wiki",
+      "description": "Level 100 bloodtinge build write-up."
+    },
+    {
+      "title": "BloodborneGame.wiki – Best Bloodborne Quality Build Guide for Beginners & PvP",
+      "url": "https://bloodbornegame.wiki/builds/quality-build/",
+      "site": "BloodborneGame.wiki",
+      "siteType": "guide",
+      "description": "Beginner-friendly quality build guide."
+    },
+    {
+      "title": "TheGamer – Bloodborne: Best Builds (ranked)",
+      "url": "https://www.thegamer.com/bloodborne-best-builds-overall/",
+      "site": "TheGamer",
+      "siteType": "guide",
+      "description": "Ranked list of the best builds overall (updated Jan 2024)."
+    },
+    {
+      "title": "Game Rant – Bloodborne: most overpowered builds",
+      "url": "https://gamerant.com/bloodborne-best-overpowered-builds/",
+      "site": "Game Rant",
+      "siteType": "guide",
+      "description": "Most overpowered builds (updated Aug 2024)."
+    },
+    {
+      "title": "Game Rant – Best Strength Weapons In Bloodborne",
+      "url": "https://gamerant.com/bloodborne-best-strength-weapons/",
+      "site": "Game Rant",
+      "siteType": "guide",
+      "description": "Ranked strength weapons."
+    },
+    {
+      "title": "Game Rant – Bloodborne: Best Quality Build Weapons, Ranked",
+      "url": "https://gamerant.com/bloodborne-best-quality-build-weapons/",
+      "site": "Game Rant",
+      "siteType": "guide",
+      "description": "Ranked quality weapons."
+    },
+    {
+      "title": "GamesRadar – Bloodborne starting class guide",
+      "url": "https://www.gamesradar.com/bloodborne-starting-class-guide-which-right-you/",
+      "site": "GamesRadar",
+      "siteType": "guide",
+      "description": "Which starting class (origin) to pick."
+    },
+    {
+      "title": "Twinfinite – Bloodborne: What the Best Weapons & Guns Are",
+      "url": "https://twinfinite.net/guides/bloodborne-best-weapons-what/",
+      "site": "Twinfinite",
+      "siteType": "guide",
+      "description": "Best weapons and guns overview."
+    },
+    {
+      "title": "Gamers Decide – [Top 10] Bloodborne Best Builds That Are Fun",
+      "url": "https://www.gamersdecide.com/articles/bloodborne-best-builds-1",
+      "site": "Gamers Decide",
+      "siteType": "guide",
+      "description": "Top 10 fun builds."
+    },
+    {
+      "title": "MugenMonkey – Bloodborne top 30 builds (all time, by votes)",
+      "url": "https://www.mugenmonkey.com/bloodborne/top",
+      "site": "MugenMonkey",
+      "siteType": "guide",
+      "description": "Top-voted community builds (planner)."
+    },
+    {
+      "title": "MugenMonkey – Bloodborne Character Planner",
+      "url": "https://www.mugenmonkey.com/bloodborne",
+      "site": "MugenMonkey",
+      "siteType": "guide",
+      "description": "Character planner to test stat spreads."
+    },
+    {
+      "title": "Fextralife – Caryll Runes",
+      "url": "https://bloodborne.wiki.fextralife.com/Caryll+Runes",
+      "site": "Fextralife",
+      "siteType": "wiki",
+      "description": "Caryll Runes reference."
+    },
+    {
+      "title": "Fextralife – Blood Gems",
+      "url": "https://bloodborne.wiki.fextralife.com/Blood+Gems",
+      "site": "Fextralife",
+      "siteType": "wiki",
+      "description": "Blood Gems reference."
+    },
+    {
+      "title": "Fextralife – Stats",
+      "url": "https://bloodborne.wiki.fextralife.com/Stats",
+      "site": "Fextralife",
+      "siteType": "wiki",
+      "description": "Stats and softcap reference."
+    },
+    {
+      "title": "Fextralife – New Player Help",
+      "url": "https://bloodborne.wiki.fextralife.com/New_Player_Help",
+      "site": "Fextralife",
+      "siteType": "wiki",
+      "description": "New-player help."
+    },
+    {
+      "title": "YouTube – The Best Bloodborne Build OP NG+ ALL BOSSES RUN (Onime)",
+      "url": "https://www.youtube.com/watch?v=W8uQhaUNm_Q",
+      "site": "YouTube (Onime)",
+      "siteType": "video",
+      "description": "OP NG+ all-bosses build run."
+    },
+    {
+      "title": "YouTube – How OP Can I Make Bloodborne's Vitality Class? (Thingfishy)",
+      "url": "https://www.youtube.com/watch?v=4cn_1v_R9Y8",
+      "site": "YouTube (Thingfishy)",
+      "siteType": "video",
+      "description": "Vitality-class build challenge."
+    },
+    {
+      "title": "Bloodborne Wiki (Fandom) – Builds",
+      "url": "https://bloodborne.fandom.com/wiki/Builds",
+      "site": "Fandom",
+      "siteType": "wiki",
+      "description": "Fandom builds page (blocked to automated fetch).",
+      "unverified": true
+    }
+  ]
+}
