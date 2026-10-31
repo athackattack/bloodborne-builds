@@ -1,5 +1,5 @@
 // Network-first shell. CACHE is the version string: bump it when shipped assets change.
-const CACHE = "souls-builds-v7-20261031032000";
+const CACHE = "souls-builds-v8-20261031033000";
 const SHELL = [
   "./",
   "./index.html",
@@ -14,12 +14,6 @@ const SHELL = [
   "./data/bloodborne-map.json",
   "./data/elden-ring-map.json",
   "./data/demons-souls-map.json",
-  "./data/bloodborne-crafting.json",
-  "./data/bloodborne-equipment.json",
-  "./data/demons-souls-crafting.json",
-  "./data/demons-souls-equipment.json",
-  "./data/samples/elden-ring-crafting.json",
-  "./data/samples/elden-ring-equipment.json",
   "./manifest.json",
   "./icons/emblem.png",
   "./icons/favicon-32.png",
@@ -29,6 +23,22 @@ const SHELL = [
   "./icons/icon-512-maskable.png",
   "./noise.png"
 ];
+// Crafting and equipment files are large. Install does not download them.
+// The page fetches a file when that section opens, and the fetch handler stores it here for offline.
+const SECTION = [
+  "./data/bloodborne-crafting.json",
+  "./data/bloodborne-equipment.json",
+  "./data/elden-ring-crafting.json",
+  "./data/elden-ring-equipment.json",
+  "./data/demons-souls-crafting.json",
+  "./data/demons-souls-equipment.json"
+];
+const PRECACHE = SHELL.filter((item) => item !== "./").concat(SECTION);
+
+function listed(url) {
+  const path = decodeURIComponent(url.pathname);
+  return PRECACHE.some((item) => path.endsWith(item.replace(/^\.\//, "")));
+}
 
 self.addEventListener("install", (event) => {
   event.waitUntil(
@@ -55,7 +65,7 @@ self.addEventListener("fetch", (event) => {
   event.respondWith(
     fetch(request)
       .then((response) => {
-        if (response.ok && !url.search) {
+        if (response.ok && !url.search && (listed(url) || request.mode === "navigate")) {
           const copy = response.clone();
           caches.open(CACHE).then((cache) => cache.put(request, copy));
         }

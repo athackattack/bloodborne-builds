@@ -118,6 +118,11 @@ function ui() {
 }
 
 function onCraftClick(event) {
+  if (event.target.closest("[data-more]")) {
+    bumpPage(event.target.closest("[data-more]").dataset.more);
+    render({ section: "crafting", extra: state.extra });
+    return;
+  }
   if (event.target.closest("[data-section-about]")) {
     setHash(hashFor(state.game.id, "craft-about"));
     return;
@@ -125,6 +130,7 @@ function onCraftClick(event) {
   const cat = event.target.closest("[data-craft-cat]");
   if (cat) {
     ui().craftCat = cat.dataset.craftCat || "";
+    ui().craftLimit = PAGE_SIZE;
     render({ section: "crafting", extra: state.extra });
     return;
   }
@@ -140,6 +146,8 @@ function onCraftClick(event) {
 function onCraftInput(event) {
   if (event.target.id !== "craft-q") return;
   ui().craftQuery = event.target.value;
+  ui().craftLimit = PAGE_SIZE;
+  ui().matLimit = PAGE_SIZE;
   render({ section: "crafting", extra: state.extra });
   const box = document.getElementById("craft-q");
   if (box) {
@@ -150,6 +158,11 @@ function onCraftInput(event) {
 }
 
 function onEquipClick(event) {
+  if (event.target.closest("[data-more]")) {
+    bumpPage(event.target.closest("[data-more]").dataset.more);
+    render({ section: "equipment", extra: state.extra, route: parseHash() });
+    return;
+  }
   if (event.target.closest("[data-section-about]")) {
     setHash(hashFor(state.game.id, "equip-about"));
     return;
@@ -162,6 +175,7 @@ function onEquipClick(event) {
   const type = event.target.closest("[data-equip-type]");
   if (type) {
     ui().equipType = type.dataset.equipType || "";
+    ui().weaponLimit = PAGE_SIZE;
     render({ section: "equipment", extra: state.extra, route: parseHash() });
     return;
   }
@@ -177,6 +191,8 @@ function onEquipClick(event) {
 function onEquipInput(event) {
   if (event.target.id !== "equip-q") return;
   ui().equipQuery = event.target.value;
+  ui().weaponLimit = PAGE_SIZE;
+  ui().armorLimit = PAGE_SIZE;
   render({ section: "equipment", extra: state.extra, route: parseHash() });
   const box = document.getElementById("equip-q");
   if (box) {
@@ -276,6 +292,27 @@ const SECTION_CAVEATS = {
         "Monk's Head Wrappings is the wiki name. Builds that say Monk's Head Collar still link to that piece."
       ]
     }
+  },
+  "elden-ring": {
+    crafting: {
+      summary: "The categories are this list's own grouping, not a wiki label. A few recipes were completed from Eldenpedia where the wiki page was incomplete.",
+      points: [
+        "Item categories and material types are groupings for this list. The wiki labels items as consumables, pots, greases, and so on.",
+        "Fingerprint Nostrum and Charming Branch recipes come from Eldenpedia. Fire Pot, Roped Fire Pot, Bone Dart, Rowa Raisin, Rainbow Stone, and Furlcalling Finger Remedy come with the Crafting Kit and have no cookbook.",
+        "Upgrade materials list notable locations, bell bearings, and drops, not every spot. Golden Seed, Sacred Tear, Scadutree Fragment, and Revered Spirit Ash are summaries.",
+        "Some scraped lines are missing a space where a wiki link ran into the next word."
+      ]
+    },
+    equipment: {
+      summary: "Weapon stats are the wiki's base +0 values, and patches can change them. Some fields are blank where the wiki had nothing to record. Millicent's Set is unobtainable.",
+      points: [
+        "Attack, scaling, and requirements are the +0 infobox values. Attack at a given upgrade level is not included.",
+        "Meteorite Staff has no upgrade path because its page does not state one.",
+        "Malenia's Set and Night's Cavalry Set have no description. Raging Wolf, Carian Knight, Crucible Axe, Crucible Tree, Snow Witch, and Leyndell Knight have no full-set weight.",
+        "Millicent's Set is listed because the page exists, and the note says it is currently unobtainable.",
+        "The helm is named Jar. Builds that say Jar helm still link to it. White Mask links the builds that name it."
+      ]
+    }
   }
 };
 
@@ -369,6 +406,35 @@ function sourceLine(source) {
   return el("p", { class: "source-row" }, [link]);
 }
 
+const PAGE_SIZE = 24;
+let pendingPage = "";
+
+function bumpPage(key) {
+  const prefs = ui();
+  prefs[key] = Math.max(PAGE_SIZE, Number(prefs[key]) || PAGE_SIZE) + PAGE_SIZE;
+  pendingPage = key;
+}
+
+function pageOf(list, key) {
+  const limit = Math.max(PAGE_SIZE, Number(ui()[key]) || PAGE_SIZE);
+  return { rows: list.slice(0, limit), limit, total: list.length };
+}
+
+function moreButton(key, limit, total) {
+  if (limit >= total) return null;
+  return el("p", { class: "more-row" }, [
+    el("button", { type: "button", class: "text-btn", "data-more": key, text: `Show more (${total - limit} left)` })
+  ]);
+}
+
+function settlePage(panel, listId) {
+  if (!pendingPage) return;
+  const list = listId ? panel.querySelector(listId) : null;
+  const last = list && list.lastElementChild;
+  pendingPage = "";
+  if (last) last.scrollIntoView({ block: "nearest" });
+}
+
 function renderCrafting(panel, ctx) {
   const data = ctx.extra || {};
   const items = Array.isArray(data.items) ? data.items : [];
@@ -384,6 +450,13 @@ function renderCrafting(panel, ctx) {
       .filter(Boolean).join("\n").toLowerCase();
     return hay.includes(q);
   });
+  const matShown = materials.filter((mat) => {
+    if (!q) return true;
+    const hay = [mat.name, mat.type, mat.description, mat.whereToFind, mat.usedFor].filter(Boolean).join("\n").toLowerCase();
+    return hay.includes(q);
+  });
+  const recipePage = pageOf(shown, "craftLimit");
+  const matPage = pageOf(matShown, "matLimit");
   const chips = el("div", { class: "chip-row", id: "craft-cats" }, [
     chip("data-craft-cat", "", "All", !cat),
     ...categories.filter((c) => c && c.id).map((c) => chip("data-craft-cat", c.id, c.name || c.id, cat === c.id))
@@ -403,11 +476,15 @@ function renderCrafting(panel, ctx) {
       chips,
       el("p", { class: "section-count", text: `${shown.length} of ${items.length} recipes` })
     ]),
-    el("div", { class: "record-list" }, shown.length ? shown.map(recipeCard) : [el("p", { class: "empty", text: "No recipes match." })]),
+    el("div", { class: "record-list", id: "craft-recipes" }, recipePage.rows.length ? recipePage.rows.map(recipeCard) : [el("p", { class: "empty", text: "No recipes match." })]),
+    moreButton("craftLimit", recipePage.limit, recipePage.total),
     el("h2", { class: "section-title", text: "Materials" }),
-    el("div", { class: "record-list" }, materials.length ? materials.map(materialCard) : [el("p", { class: "empty", text: "No materials in this file." })]),
+    el("p", { class: "section-count", text: `${matShown.length} ${matShown.length === 1 ? "material" : "materials"}` }),
+    el("div", { class: "record-list", id: "craft-materials" }, matPage.rows.length ? matPage.rows.map(materialCard) : [el("p", { class: "empty", text: "No materials match." })]),
+    moreButton("matLimit", matPage.limit, matPage.total),
     guideList(data.guides)
   );
+  settlePage(panel, pendingPage === "matLimit" ? "#craft-materials" : "#craft-recipes");
 }
 
 function recipeCard(item) {
@@ -520,6 +597,7 @@ function renderEquipment(panel, ctx) {
   const sort = prefs.equipSort || "listed";
   if (sort === "name") rows.sort((a, b) => String(a.name || "").localeCompare(String(b.name || "")));
   else if (sort === "type" && !armorTab) rows.sort((a, b) => String(a.type || "").localeCompare(String(b.type || "")) || String(a.name || "").localeCompare(String(b.name || "")));
+  const equipPage = pageOf(rows, armorTab ? "armorLimit" : "weaponLimit");
   const chips = armorTab ? null : el("div", { class: "chip-row" }, [
     chip("data-equip-type", "", "All", !type),
     ...types.filter((t) => t && t.id).map((t) => chip("data-equip-type", t.id, t.name || t.id, type === t.id))
@@ -556,9 +634,11 @@ function renderEquipment(panel, ctx) {
         ])
       ])
     ]),
-    el("div", { class: "record-list" }, rows.length ? rows.map((row) => armorTab ? armorCard(row) : weaponCard(row, types)) : [el("p", { class: "empty", text: "Nothing matches." })]),
+    el("div", { class: "record-list", id: "equip-records" }, equipPage.rows.length ? equipPage.rows.map((row) => armorTab ? armorCard(row) : weaponCard(row, types)) : [el("p", { class: "empty", text: "Nothing matches." })]),
+    moreButton(armorTab ? "armorLimit" : "weaponLimit", equipPage.limit, equipPage.total),
     guideList(data.guides)
   );
+  settlePage(panel, "#equip-records");
 }
 
 function weaponCard(weapon, types) {
@@ -669,17 +749,26 @@ const NAME_ALIASES = {
   "blade of mercy": ["blades of mercy"],
   "blades of mercy": ["blade of mercy"],
   "monk's head wrappings": ["monk's head collar"],
-  "monk's head collar": ["monk's head wrappings"]
+  "monk's head collar": ["monk's head wrappings"],
+  "jar": ["jar helm"]
 };
 
 function nameNeedles(name) {
   const needle = String(name || "").trim().toLowerCase();
-  if (needle.length < 4) return [];
-  return [needle].concat(NAME_ALIASES[needle] || []);
+  const aliases = NAME_ALIASES[needle] || [];
+  const needles = [];
+  if (needle.length >= 4) needles.push(needle);
+  aliases.forEach((alias) => {
+    if (alias.length >= 4 && !needles.includes(alias)) needles.push(alias);
+  });
+  return needles;
 }
 
 function relatedBlock(names) {
-  const list = String(names || "").split("\n").map((name) => name.trim()).filter((name) => name.length >= 4);
+  const list = String(names || "").split("\n").map((name) => name.trim()).filter((name) => {
+    if (name.length >= 4) return true;
+    return (NAME_ALIASES[name.toLowerCase()] || []).some((alias) => alias.length >= 4);
+  });
   const seen = new Set();
   const builds = [];
   for (const name of list) {

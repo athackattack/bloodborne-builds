@@ -489,6 +489,7 @@ main.wrap { padding-top: 0.95rem; padding-bottom: calc(2.4rem + env(safe-area-in
   padding: 0.3rem 0.75rem;
   margin-top: 0.6rem;
 }
+.more-row { margin: 0.2rem 0 1rem; }
 
 .guide-list { display: grid; gap: 0.6rem; }
 .guide-card {

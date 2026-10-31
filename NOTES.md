@@ -22,7 +22,14 @@ Demon's Souls crafting and equipment are research snapshots from 2026-10-30, cop
 
 The crafting About note says there is no item-combination crafting: the list is upgrade paths, soul trades, Sparkly trades, and farming, and general-path recipes give stone ranges. The equipment About note covers wiki conflicts, remake versus PS3 differences, and four build names with no matching entry: Yellow Monk's Collar, Friend's Ring, Blessed Broadsword, and a crushing path for Bramd. Bramd itself still links. Monk's Head Wrappings also links builds that say Monk's Head Collar.
 
-Elden Ring crafting and equipment are still **sample layout data**. Those files set `meta.sample` and `source.unverified`. Replace the file, or point `crafting` / `equipment` in `data/games.json` at a new path, when the real list arrives. The app hides a section when that key is missing.
+Elden Ring crafting and equipment are research snapshots from 2026-10-30, copied in unchanged:
+
+- `data/elden-ring-crafting.json` — 9 categories, 187 items, 155 materials, 7 guides
+- `data/elden-ring-equipment.json` — 29 weapon types, 82 weapons, 60 armor entries (58 sets plus the White Mask and Jar helms), 4 guides
+
+The crafting About note says the categories are this list's grouping. The equipment About note says weapon stats are base +0 and patches can change them, some fields are blank where the wiki had no info, and Millicent's Set is unobtainable. White Mask links the builds that name it. Jar links builds that say Jar helm. Raptor's Black Feathers is named on builds and is not an armor entry in this file. The colossal weapon named Greatsword also matches build lines that merely end in “Greatsword”, because the link is a name substring.
+
+Crafting and equipment files are not downloaded with the app shell. Opening the section fetches that file, and the service worker keeps the response for offline. Lists longer than 24 entries page with Show more. The app hides a section when its registry key is missing.
 
 ## Maps
 
