@@ -92,6 +92,22 @@ header {
 }
 .card:active { transform: scale(0.985); }
 
+.about-note {
+  margin: 0 0 0.75rem;
+  padding: 0.65rem 0.75rem;
+  border: 1px solid var(--line);
+  background: rgba(0, 0, 0, 0.22);
+}
+.about-note p { margin: 0 0 0.55rem; color: var(--bone-dim); }
+.about-note strong { color: var(--bone); font-weight: 600; }
+.kv.nested { margin: 0; }
+.kv dd .kv { margin-top: 0.15rem; }
+.record > .muted {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
 .sample-banner {
   margin: 0 0 0.75rem;
   padding: 0.55rem 0.75rem;

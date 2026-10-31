@@ -86,6 +86,7 @@ function focusSheet(route, extra) {
   if (route.focus.kind === "material") return materialSheet(extra, route.focus.id);
   if (route.focus.kind === "weapon") return weaponSheet(extra, route.focus.id);
   if (route.focus.kind === "armor") return armorSheet(extra, route.focus.id);
+  if (route.focus.kind === "section-about") return sectionAboutSheet(extra, route.focus.id);
   return null;
 }
 
@@ -117,6 +118,10 @@ function ui() {
 }
 
 function onCraftClick(event) {
+  if (event.target.closest("[data-section-about]")) {
+    setHash(hashFor(state.game.id, "craft-about"));
+    return;
+  }
   const cat = event.target.closest("[data-craft-cat]");
   if (cat) {
     ui().craftCat = cat.dataset.craftCat || "";
@@ -145,6 +150,10 @@ function onCraftInput(event) {
 }
 
 function onEquipClick(event) {
+  if (event.target.closest("[data-section-about]")) {
+    setHash(hashFor(state.game.id, "equip-about"));
+    return;
+  }
   const tab = event.target.closest("[data-equip-tab]");
   if (tab) {
     setHash(hashFor(state.game.id, tab.dataset.equipTab === "armor" ? "armor" : "weapons"));
@@ -223,6 +232,66 @@ function onMapInput(event) {
   if (count) count.textContent = `${n} ${n === 1 ? "place" : "places"}`;
 }
 
+const SECTION_CAVEATS = {
+  bloodborne: {
+    crafting: {
+      summary: "This is gems, runes, fortification, and chalice rituals, not a cooking list. A blank quantity varies, and an optional rite offering is only for that rite.",
+      points: [
+        "Bloodborne has no recipe crafting. The list is Blood Gems and the Workshop, Caryll Runes and the Memory Altar, weapon fortification with blood stones, Arcane Haze extraction, and Chalice Rituals.",
+        "A material quantity left empty means the amount varies. Fortify steps list Blood Echoes that way because the echo cost depends on the weapon.",
+        "Offerings tagged optional are only needed for that Fetid, Rotted, Cursed, or Sinister Bell rite.",
+        "Shared chalice glyphs come from community pages and may depend on the NG cycle.",
+        "Blood gem effect text is a condensed effect-family list. Exact values vary from gem to gem."
+      ]
+    },
+    equipment: {
+      summary: "Some weapons have no +10 stats. Firearm damage is listed under the wiki's blood column. Attire has no weight.",
+      points: [
+        "Firearm base damage is kept in baseAttack.blood, the column Fextralife's Firearms table uses. In-game that number is the gun's physical bullet damage, and it scales with Bloodtinge.",
+        "Eleven weapons have +0 values and no parseable +10 row, so attackAt+10 is omitted: Beasthunter Saif, Bloodletter, Boom Hammer, Hunter Axe, Kos Parasite, Saw Spear, Hunter Pistol, Hunter's Torch, Piercing Rifle, Repeating Pistol, and Torch. Their scaling letters are the +0 letters only.",
+        "Attire has no weight stat, so weight is empty. Defense totals are in the notes.",
+        "Chikage's rapid poison of 30 is kept as Fextralife lists it.",
+        "A hunter tool's requirement is the single Arcane number from Fextralife's Hunter Tools table.",
+        "The build list says Blades of Mercy. This file uses the wiki's Blade of Mercy. Those sheets still link to the builds that name the weapon."
+      ]
+    }
+  }
+};
+
+function aboutNote(section) {
+  const pack = caveatsFor(section);
+  if (!pack) return null;
+  return el("div", { class: "about-note" }, [
+    el("p", {}, [el("strong", { text: "About this list. " }), pack.summary]),
+    el("button", { type: "button", class: "text-btn", "data-section-about": section, text: "Caveats" })
+  ]);
+}
+
+function caveatsFor(section) {
+  const gameId = state.game && state.game.id;
+  const pack = gameId && SECTION_CAVEATS[gameId] && SECTION_CAVEATS[gameId][section];
+  return pack || null;
+}
+
+function sectionAboutSheet(data, section) {
+  const pack = caveatsFor(section);
+  if (!pack) return null;
+  const title = section === "equipment" ? "Equipment caveats" : "Crafting caveats";
+  return el("article", {}, [
+    el("p", { class: "sheet-kicker", text: state.game.name }),
+    el("h2", { id: "sheet-title", text: title }),
+    el("p", { text: pack.summary }),
+    el("ul", { class: "clean" }, pack.points.map((point) => el("li", { text: point }))),
+    data && data.meta && data.meta.notes
+      ? el("section", { class: "block" }, [el("h3", { text: "Research note" }), el("p", { text: data.meta.notes })])
+      : null
+  ]);
+}
+
+function fill(parent, ...children) {
+  parent.replaceChildren(...children.filter((child) => child != null && child !== false));
+}
+
 function noteBlock(meta) {
   const notes = meta && meta.notes;
   if (!notes) return null;
@@ -250,13 +319,21 @@ function guideList(guides) {
     el("div", { class: "guide-list" }, list.map((guide) => {
       const link = externalLink(guide.url || "#", "guide-card");
       if (!guide.url) link.removeAttribute("href");
+      const sourceName = guideSourceName(guide.source);
       link.append(
-        guide.source ? el("span", { class: "site-name", text: String(guide.source) }) : null,
+        sourceName ? el("span", { class: "site-name", text: sourceName }) : null,
         el("span", { class: "guide-title", text: guide.title || guide.url || "Guide" })
       );
       return link;
     }))
   ]);
+}
+
+function guideSourceName(source) {
+  if (!source) return "";
+  if (typeof source === "string") return source;
+  if (typeof source === "object") return source.label || source.url || "";
+  return String(source);
 }
 
 function sourceLine(source) {
@@ -290,9 +367,9 @@ function renderCrafting(panel, ctx) {
     chip("data-craft-cat", "", "All", !cat),
     ...categories.filter((c) => c && c.id).map((c) => chip("data-craft-cat", c.id, c.name || c.id, cat === c.id))
   ]);
-  panel.replaceChildren(
+  fill(panel, 
     sampleBanner(data.meta),
-    noteBlock(data.meta),
+    aboutNote("crafting") || noteBlock(data.meta),
     el("div", { class: "controls" }, [
       el("div", { class: "search" }, [
         el("label", { class: "visually-hidden", for: "craft-q", text: "Search recipes" }),
@@ -426,9 +503,9 @@ function renderEquipment(panel, ctx) {
     chip("data-equip-type", "", "All", !type),
     ...types.filter((t) => t && t.id).map((t) => chip("data-equip-type", t.id, t.name || t.id, type === t.id))
   ]);
-  panel.replaceChildren(
+  fill(panel, 
     sampleBanner(data.meta),
-    noteBlock(data.meta),
+    aboutNote("equipment") || noteBlock(data.meta),
     el("div", { class: "chip-row", role: "tablist", "aria-label": "Equipment" }, [
       chip("data-equip-tab", "weapons", "Weapons", !armorTab),
       chip("data-equip-tab", "armor", "Armor", armorTab)
@@ -526,11 +603,40 @@ function fieldBlock(title, obj) {
   if (!rows.length) return null;
   return el("section", { class: "block" }, [
     el("h3", { text: title }),
-    el("dl", { class: "kv" }, rows.map(([key, value]) => el("div", {}, [
-      el("dt", { text: key }),
-      el("dd", { text: String(value) })
-    ])))
+    el("dl", { class: "kv" }, rows.map(([key, value]) => {
+      const inner = fieldValue(value);
+      if (!inner) return null;
+      return el("div", {}, [el("dt", { text: key }), el("dd", {}, [inner])]);
+    }))
   ]);
+}
+
+function fieldValue(value) {
+  if (Array.isArray(value)) {
+    const text = value.map((item) => (item && typeof item === "object" ? "" : String(item))).filter(Boolean).join(", ");
+    return text ? el("span", { text }) : null;
+  }
+  if (value && typeof value === "object") {
+    const rows = Object.entries(value).filter(([, inner]) => inner != null && inner !== "");
+    if (!rows.length) return null;
+    return el("dl", { class: "kv nested" }, rows.map(([key, inner]) => {
+      const node = fieldValue(inner);
+      if (!node) return null;
+      return el("div", {}, [el("dt", { text: key }), el("dd", {}, [node])]);
+    }));
+  }
+  return el("span", { text: String(value) });
+}
+
+const NAME_ALIASES = {
+  "blade of mercy": ["blades of mercy"],
+  "blades of mercy": ["blade of mercy"]
+};
+
+function nameNeedles(name) {
+  const needle = String(name || "").trim().toLowerCase();
+  if (needle.length < 4) return [];
+  return [needle].concat(NAME_ALIASES[needle] || []);
 }
 
 function relatedBlock(names) {
@@ -538,11 +644,12 @@ function relatedBlock(names) {
   const seen = new Set();
   const builds = [];
   for (const name of list) {
-    const needle = name.toLowerCase();
+    const needles = nameNeedles(name);
+    if (!needles.length) continue;
     for (const build of state.data.builds || []) {
       if (seen.has(build.id)) continue;
       const hay = [build.name, ...(build.weapons || []), build.firearm || "", ...(build.runesGear || [])].join("\n").toLowerCase();
-      if (hay.includes(needle)) {
+      if (needles.some((needle) => hay.includes(needle))) {
         seen.add(build.id);
         builds.push(build);
       }
@@ -639,7 +746,7 @@ function renderMap(panel, ctx) {
     return !q || hay.includes(q);
   }).length;
   const embed = state.game && state.game.mapEmbed;
-  panel.replaceChildren(
+  fill(panel, 
     noteBlock(data.meta),
     el("div", { class: "controls" }, [
       el("div", { class: "search" }, [

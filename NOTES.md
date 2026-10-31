@@ -8,7 +8,14 @@ The build lists are the research snapshots and should be treated as the source o
 - `data/elden-ring.json` — 40 builds, 33 guides
 - `data/demons-souls.json` — 33 builds, 34 guides
 
-Crafting and equipment are **sample layout data**, not a research pass. Each file sets `meta.sample` and `source.unverified`. Quantities, locations, and effects in `data/samples/` are placeholders so the screens have something to show. Replace the file, or point `crafting` / `equipment` in `data/games.json` at a new path, when the real lists arrive. The app hides a section when that key is missing.
+Bloodborne crafting and equipment are research snapshots from 2026-10-30, copied in unchanged:
+
+- `data/bloodborne-crafting.json` — 6 categories, 141 items, 21 materials, 14 guides
+- `data/bloodborne-equipment.json` — 5 weapon types, 54 weapons, 36 attire sets, 8 guides
+
+Each of those screens has an About note. The equipment note covers weapons with no +10 row, firearm damage stored in the wiki’s blood column, and attire with no weight. The crafting note covers variable quantities, optional chalice rites, and gem effect families. The build list says “Blades of Mercy”; the equipment file says “Blade of Mercy”. Those sheets still link.
+
+Elden Ring and Demon's Souls crafting and equipment are still **sample layout data**. Each of those files sets `meta.sample` and `source.unverified`. Replace the file, or point `crafting` / `equipment` in `data/games.json` at a new path, when the real lists arrive. The app hides a section when that key is missing.
 
 ## Maps
 

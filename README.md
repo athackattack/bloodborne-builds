@@ -15,7 +15,7 @@ The header switches games. Bloodborne, Elden Ring, and Demon's Souls each have t
 - **Guides** lists that game’s general pages, filterable by the site types present in the file.
 - **About** holds that game’s tier definitions, caveats, and how its stat spreads are labeled.
 - **Map** is an original schematic drawing (regions as shapes, labelled pins). Drag and pinch or scroll to move it. A pin opens a sheet. Elden Ring can also try the MapGenie Lands Between page in a frame; if that frame stays blank, the fallback link opens it in a new tab. Bloodborne and Demon's Souls have no embed, only the in-app drawing and outbound links.
-- **Crafting** and **Equipment** read the files named in the registry. The copies shipped now are samples (`meta.sample`) so the layout can be reviewed before the real lists replace them. A recipe material jumps to that material, and an equipment sheet lists builds whose weapon, firearm, or gear text includes the name.
+- **Crafting** and **Equipment** read the files named in the registry. Bloodborne’s lists are the 2026-10-30 research pass (`data/bloodborne-crafting.json`, `data/bloodborne-equipment.json`). Elden Ring and Demon's Souls still use samples (`meta.sample`) until their passes arrive. A recipe material jumps to that material. An equipment sheet lists builds whose weapon, firearm, or gear text includes the name. Bloodborne’s “Blade of Mercy” also matches builds that say “Blades of Mercy”. Each real list has an About note for the caveats in that pass.
 
 Source links open in a new tab. A link flagged `unverified` keeps a small marker.
 
@@ -31,7 +31,7 @@ Facts, numbers, and URLs come only from the JSON files. The app does not add sta
 
 [`data/games.json`](data/games.json) is the registry: `id`, `name`, data file path, optional `map`, `crafting`, `equipment`, and `mapEmbed`, accent colors, level prefix, stat labels, and the filter chips. Another game is a new data file plus one entry there.
 
-The three build files above are the research snapshots. Map files (`data/*-map.json`) are original drawings with common-knowledge pins; positions are not surveyed, and some pins are marked uncertain. Crafting and equipment live in `data/samples/` until a real pass replaces those paths. See [NOTES.md](NOTES.md).
+The three build files above are the research snapshots. Bloodborne crafting (6 categories, 141 items, 21 materials, 14 guides) and equipment (5 weapon types, 54 weapons, 36 attire sets, 8 guides) are the same kind of snapshot. Elden Ring and Demon's Souls crafting and equipment still live in `data/samples/` until a real pass replaces those paths. Map files (`data/*-map.json`) are original drawings with common-knowledge pins; positions are not surveyed, and some pins are marked uncertain. See [NOTES.md](NOTES.md).
 
 ## Install
 
