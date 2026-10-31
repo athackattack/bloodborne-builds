@@ -1,0 +1,3229 @@
+{
+  "meta": {
+    "generatedDate": "2026-10-30",
+    "title": "Demon's Souls Builds Tier List",
+    "game": "Demon's Souls (PS5 2020 remake primary; PS3 2009 noted where sources differ)",
+    "statOrder": [
+      "VIT",
+      "INT",
+      "END",
+      "STR",
+      "DEX",
+      "MAG",
+      "FTH",
+      "LCK"
+    ],
+    "fieldLabels": {
+      "firearm": "Spells / Miracles / Ranged",
+      "runesGear": "Rings / Armor / Gear",
+      "weapons": "Weapons / Catalysts"
+    },
+    "levelConventions": "Spreads are full 8-stat spreads in statOrder (VIT, INT, END, STR, DEX, MAG, FTH, LCK); stats a source leaves at default are filled from the named starting class's base. Soul Level = sum of the 8 stats − 80 (every class's base sums to 80 + its starting SL). Labels name the source and starting class. Where a source's stated SL differs from the computed sum, both are given. PvP meta level in the remake is SL125 (Reddit). Wikidot spreads are PS3 (2009) builds; PS3 'Will' = remake 'Intelligence'.",
+    "tierScale": {
+      "S": "Consensus top PvE picks, recommended across multiple remake guides (Game8, Fextralife, Samurai Gamers, Game Rant)",
+      "A": "Very strong and popular, with some gating (late weapon, World/Character Tendency, NG+ scaling) or PvP-leaning",
+      "B": "Solid or niche: style picks, PvP-only, low-level or PS3-era builds still valid",
+      "C": "Gimmick, challenge (SL1) or speedrun categories rather than power builds"
+    },
+    "patchInfo": "Remake (Bluepoint, PS5, Nov 2020) facts are limited to what sources state: the PS3 names Will, Moving Soul Arrow, One-Time Revival, Rage of God, Soul Light and Cursed Weapon became Intelligence, Homing Soul Arrow, Second Chance, God's Wrath, Soul Ray and Curse Weapon; chain backstabs are no longer possible and SL125 is the PvP meta (Reddit lj6qrv); Fractured Mode is remake-only (Fextralife). No balance patch notes were found from a fetchable source; the GameFAQs change list returned 403.",
+    "notes": "Tiers are an editorial, PvE-weighted synthesis of community consensus (remake guides from Game8, Fextralife, Samurai Gamers, Game Rant, GamesRadar+, Push Square, TheGamer; Reddit threads; Fextralife and Wikidot community builds). They are not an official ranking. PvP-only builds are rated on PvP strength and say so in tierReason. Fextralife Subcontent pages have tab names that do not match their content; they are titled by content. Reddit content comes from search-index excerpts because Reddit blocks fetching. Links with unverified:true are canonical but returned HTTP 403 to our fetchers.",
+    "verification": "Each source carries verifiedVia: curl HTTP 200 (HTML parsed), WebFetch content read, or curl 200 with search-index excerpt (Reddit). All URLs were re-checked on 2026-10-30."
+  },
+  "builds": [
+    {
+      "id": "royalty-soul-mage",
+      "name": "Royalty Soul Mage (Pure Sorcery)",
+      "archetype": "Pure Magic / Sorcery",
+      "tier": "S",
+      "tierReason": "Every remake guide checked (Fextralife, Game8, Samurai Gamers, Game Rant) names a Royalty/Magician sorcery build as a top or easiest pick; Soul Arrow/Homing Soul Arrow trivialise most PvE.",
+      "weapons": [
+        "Silver Catalyst → Insanity Catalyst (late; -50% MP, +20% spell damage, cannot be upgraded)",
+        "Kris Blade (main hand, spell-damage boost)",
+        "Crescent Estoc / Crescent weapon (Crescent path = Magic scaling + MP regen)"
+      ],
+      "firearm": "Soul Arrow → Homing Soul Arrow (Moving Soul Arrow on PS3) / Soul Ray; Firestorm; Warding; Poison Cloud",
+      "stats": {
+        "spread": {
+          "VIT": 30,
+          "INT": 40,
+          "END": 8,
+          "STR": 9,
+          "DEX": 12,
+          "MAG": 50,
+          "FTH": 12,
+          "LCK": 7
+        },
+        "label": "Fextralife Soul Mage end-goal (Royalty: MAG 50, INT 40, VIT 30; others at class base) — SL88 as stated",
+        "altSpreads": [
+          {
+            "name": "Game8 Pure Magic (Magician start)",
+            "spread": {
+              "VIT": 30,
+              "INT": 40,
+              "END": 10,
+              "STR": 9,
+              "DEX": 11,
+              "MAG": 50,
+              "FTH": 6,
+              "LCK": 11
+            },
+            "level": 87
+          },
+          {
+            "name": "Wikidot Official Pure Mage SL125 (PS3)",
+            "spread": {
+              "VIT": 40,
+              "INT": 40,
+              "END": 9,
+              "STR": 9,
+              "DEX": 12,
+              "MAG": 44,
+              "FTH": 44,
+              "LCK": 7
+            },
+            "level": 125
+          }
+        ],
+        "level": 88
+      },
+      "ngNotes": "Starting class: Royalty (SL1, Silver Coronet/Silver Catalyst/Fragrant Ring) per Fextralife and Game Rant; Game8 uses Magician. Fextralife says MAG drops off past 50 with the Insanity Catalyst. Samurai Gamers claims most bosses die in one or two casts even on NG+.",
+      "playstyle": "Off-hand catalyst, main-hand Kris Blade; kite and snipe with Soul Arrow, upgrade to Homing Soul Arrow, then Firestorm for close threats.",
+      "bestFor": [
+        "PvE",
+        "beginner",
+        "NG+"
+      ],
+      "pros": [
+        "Safest first playthrough per Game Rant/Push Square",
+        "Fragrant Ring MP regen from turn one",
+        "Huge ranged damage"
+      ],
+      "cons": [
+        "Glass cannon (Game8: no shield)",
+        "Insanity Catalyst halves MP",
+        "Less satisfying for melee players"
+      ],
+      "runesGear": [
+        "Fragrant Ring",
+        "Ring of Magical Sharpness",
+        "Silver Coronet / Yellow Monk's Collar",
+        "Ring of Magical Nature (Game8)"
+      ],
+      "sources": [
+        {
+          "title": "Fextralife – Soul Mage Build (beginner)",
+          "url": "https://fextralife.com/demons-souls-builds-soul-mage-beginner/",
+          "siteType": "guide",
+          "verifiedVia": "curl HTTP 200 (HTML parsed)"
+        },
+        {
+          "title": "Game8 – Pure Magic Build and Best Weapons",
+          "url": "https://game8.co/games/demons-souls/archives/307024",
+          "siteType": "guide",
+          "verifiedVia": "curl HTTP 200 (HTML parsed; WebFetch returns 403)"
+        },
+        {
+          "title": "Samurai Gamers – Demon's Souls Remake: Best Character Builds",
+          "url": "https://samurai-gamers.com/demons-souls-remake/best-character-builds/",
+          "siteType": "guide",
+          "verifiedVia": "curl HTTP 200 (HTML parsed)",
+          "note": "Pure Melee Warrior (Barbarian 40/18/40/40/9/11/8/11) and Pure Magic (Royalty 40/40/9/9/12/40/40/7); no SL stated."
+        },
+        {
+          "title": "Game Rant – Demon's Souls Remake: Why the Royalty Class is Considered 'Easy Mode'",
+          "url": "https://gamerant.com/demons-souls-remake-ps5-royalty-class-best-easy-soul-arrow/",
+          "siteType": "guide",
+          "verifiedVia": "curl HTTP 200 (HTML parsed)"
+        },
+        {
+          "title": "Push Square – Demon's Souls: Which Class Should You Pick?",
+          "url": "https://www.pushsquare.com/guides/demons-souls-which-class-should-you-pick",
+          "siteType": "guide",
+          "verifiedVia": "curl HTTP 200 (HTML parsed)"
+        },
+        {
+          "title": "Demon's Souls Wikidot – The Official Pure Mage (SL 125)",
+          "url": "https://demonssouls.wikidot.com/character-builds:112",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200 (HTML parsed)",
+          "note": "PS3 (2009) community build. Royalty 40/40/9/9/12/44/44/7; Kris Blade, Crescent Estoc, Talisman of Beasts."
+        },
+        {
+          "title": "Fextralife Wiki – Insanity Catalyst",
+          "url": "https://demonssouls.wiki.fextralife.com/Insanity+Catalyst",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200 (HTML parsed)",
+          "note": "-50% max MP, +20% spell damage, cannot be upgraded."
+        },
+        {
+          "title": "Fextralife Wiki – Kris Blade",
+          "url": "https://demonssouls.wiki.fextralife.com/Kris+Blade",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200 (HTML parsed)"
+        }
+      ]
+    },
+    {
+      "id": "pure-strength-crushing",
+      "name": "Pure Strength Crusher (Dragon Bone Smasher / Crushing Mirdan Hammer)",
+      "archetype": "Strength",
+      "tier": "S",
+      "tierReason": "Game8 calls Pure Strength the top recommendation for a first run; Samurai Gamers and the Fextralife Conan build converge on DBS/Crushing Mirdan at 40 STR.",
+      "weapons": [
+        "Battle Axe / Great Axe early (Crushing path)",
+        "Dragon Bone Smasher (unique; Colorless Demon Soul upgrades; 30 STR to one-hand)",
+        "Crushing Mirdan Hammer",
+        "Bramd (heavier alternative)"
+      ],
+      "firearm": "None (pure melee); optional Heavy Crossbow",
+      "stats": {
+        "spread": {
+          "VIT": 30,
+          "INT": 8,
+          "END": 40,
+          "STR": 50,
+          "DEX": 12,
+          "MAG": 6,
+          "FTH": 13,
+          "LCK": 7
+        },
+        "label": "Game8 Pure Strength (Temple Knight) — SL86",
+        "altSpreads": [
+          {
+            "name": "Samurai Gamers Pure Melee Warrior / Fextralife Conan (Barbarian)",
+            "spread": {
+              "VIT": 40,
+              "INT": 18,
+              "END": 40,
+              "STR": 40,
+              "DEX": 9,
+              "MAG": 11,
+              "FTH": 8,
+              "LCK": 11
+            },
+            "level": 97
+          },
+          {
+            "name": "Wikidot HAG's Strength SL125 (PS3)",
+            "spread": {
+              "VIT": 56,
+              "INT": 18,
+              "END": 40,
+              "STR": 50,
+              "DEX": 12,
+              "MAG": 6,
+              "FTH": 16,
+              "LCK": 7
+            },
+            "level": 125
+          }
+        ],
+        "level": 86
+      },
+      "ngNotes": "Starting class: Temple Knight (Game8) or Barbarian (Samurai Gamers/Conan). DBS requires Pure White World Tendency in 2-1/Flamelurker area (Game8 Best Weapons). Crushing path improves STR scaling (Game8 upgrades).",
+      "playstyle": "Two-hand a huge crushing weapon, trade with poise and armor, block with Adjudicator's Shield when one-handing.",
+      "bestFor": [
+        "PvE",
+        "beginner",
+        "NG+"
+      ],
+      "pros": [
+        "Simple stat plan",
+        "Massive single-hit damage",
+        "DBS raises Fire defense"
+      ],
+      "cons": [
+        "Slow swings, heavy stamina cost",
+        "DBS needs Pure White WT",
+        "Weight demands END 40"
+      ],
+      "runesGear": [
+        "Ring of Great Strength / Eternal Warrior's Ring",
+        "Cling Ring (Soul Form)",
+        "Ancient King's set (Samurai Gamers/Conan)",
+        "Adjudicator's Shield"
+      ],
+      "sources": [
+        {
+          "title": "Game8 – Pure Strength Build and Best Weapons",
+          "url": "https://game8.co/games/demons-souls/archives/307020",
+          "siteType": "guide",
+          "verifiedVia": "curl HTTP 200 (HTML parsed; WebFetch returns 403)"
+        },
+        {
+          "title": "Samurai Gamers – Demon's Souls Remake: Best Character Builds",
+          "url": "https://samurai-gamers.com/demons-souls-remake/best-character-builds/",
+          "siteType": "guide",
+          "verifiedVia": "curl HTTP 200 (HTML parsed)",
+          "note": "Pure Melee Warrior (Barbarian 40/18/40/40/9/11/8/11) and Pure Magic (Royalty 40/40/9/9/12/40/40/7); no SL stated."
+        },
+        {
+          "title": "Fextralife Wiki – Conan the Barbarian (PvE) community build",
+          "url": "https://demonssouls.wiki.fextralife.com/Subcontent:Builds_3_Conan_the_Barbarian_(PVE)",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200 (HTML parsed)",
+          "note": "Barbarian 40/18/40/40/9/11/8/11 (computed SL97); DBS or Crushing Mirdan Hammer, Ancient King's set."
+        },
+        {
+          "title": "Game8 – Best Builds and Stat Explanation",
+          "url": "https://game8.co/games/demons-souls/archives/306594",
+          "siteType": "guide",
+          "verifiedVia": "curl HTTP 200 (HTML parsed; WebFetch returns 403)",
+          "note": "Calls Pure Strength the top pick for a first run, Magic Warrior 'one of the most effective', Pure Magic 'particularly strong'."
+        },
+        {
+          "title": "Game8 – Best Weapons to Use",
+          "url": "https://game8.co/games/demons-souls/archives/309230",
+          "siteType": "guide",
+          "verifiedVia": "curl HTTP 200 (HTML parsed; WebFetch returns 403)"
+        },
+        {
+          "title": "Fextralife Wiki – Dragon Bone Smasher",
+          "url": "https://demonssouls.wiki.fextralife.com/Dragon+Bone+Smasher",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200 (HTML parsed)",
+          "note": "Req 30 STR; raises Fire defense; Colorless Demon Soul upgrade."
+        },
+        {
+          "title": "Demon's Souls Wikidot – HAG's Strength Build (SL 125)",
+          "url": "https://demonssouls.wikidot.com/character-builds:254",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200 (HTML parsed)",
+          "note": "PS3 (2009) community build. 56/18/40/50/12/6/16/7; DBS + Cursed Weapon."
+        }
+      ]
+    },
+    {
+      "id": "blessed-faith-knight",
+      "name": "Blessed Faith Knight / Holy Paladin",
+      "archetype": "Faith melee + miracles",
+      "tier": "S",
+      "tierReason": "Blessed weapons give HP regen and Faith scaling; Fextralife Holy Paladin, Game8 Faith Warrior and PS3 Ilkar's Faith all build around Blessed weapon + regen; Reddit PvP threads call Blessed Mirdan + Adjudicator's Shield the best PvP build.",
+      "weapons": [
+        "Istarelle (early, Faith spear)",
+        "Blessed Mirdan Hammer / Blessed Broadsword (Blessed path = Faith scaling + HP regen)",
+        "Large Sword of Moonlight (swap)",
+        "Talisman of God"
+      ],
+      "firearm": "Miracles: Second Chance, Heal, Regeneration, Anti-magic Field, God's Wrath (Rage of God on PS3)",
+      "stats": {
+        "spread": {
+          "VIT": 30,
+          "INT": 18,
+          "END": 20,
+          "STR": 14,
+          "DEX": 12,
+          "MAG": 6,
+          "FTH": 40,
+          "LCK": 7
+        },
+        "label": "Fextralife Holy Paladin first-playthrough target (Temple Knight; FTH 40/VIT 30/END 20/INT 18)",
+        "altSpreads": [
+          {
+            "name": "Game8 Faith Warrior (Temple Knight) — SL80",
+            "spread": {
+              "VIT": 30,
+              "INT": 15,
+              "END": 40,
+              "STR": 20,
+              "DEX": 12,
+              "MAG": 6,
+              "FTH": 30,
+              "LCK": 7
+            },
+            "level": 80
+          },
+          {
+            "name": "Wikidot Ilkar's Faith SL123 (PS3)",
+            "spread": {
+              "VIT": 50,
+              "INT": 18,
+              "END": 40,
+              "STR": 20,
+              "DEX": 12,
+              "MAG": 6,
+              "FTH": 50,
+              "LCK": 7
+            },
+            "level": 123
+          }
+        ],
+        "level": 67
+      },
+      "ngNotes": "Starting class: Temple Knight (Fextralife/Game8). Blessed path = Faith scaling + HP regen (Game8 upgrades).",
+      "playstyle": "Sword-and-board with a Blessed weapon and Adjudicator's Shield, stacking HP regen; miracles for heals and burst.",
+      "bestFor": [
+        "PvE",
+        "PvP",
+        "NG+"
+      ],
+      "pros": [
+        "Regen from weapon + shield + ring",
+        "Tanky, forgiving",
+        "Strong in PvP and PvE"
+      ],
+      "cons": [
+        "Pure Bladestone farming",
+        "Low Magic defense if INT ignored"
+      ],
+      "runesGear": [
+        "Regenerator's Ring",
+        "Ring of Great Strength",
+        "Adjudicator's Shield",
+        "Mirdan / Dull Gold armor"
+      ],
+      "sources": [
+        {
+          "title": "Fextralife – Holy Paladin Build (PvE Faith)",
+          "url": "https://fextralife.com/demons-souls-builds-holy-paladin-guide-pve-faith/",
+          "siteType": "guide",
+          "verifiedVia": "curl HTTP 200 (HTML parsed)"
+        },
+        {
+          "title": "Game8 – Magic Warrior Build and Best Weapons",
+          "url": "https://game8.co/games/demons-souls/archives/307026",
+          "siteType": "guide",
+          "verifiedVia": "curl HTTP 200 (HTML parsed; WebFetch returns 403)",
+          "note": "Page labels the build SL95; the listed spread sums to SL97. Also hosts the Faith Warrior template."
+        },
+        {
+          "title": "Demon's Souls Wikidot – Ilkar's Faith Build (SL 123)",
+          "url": "https://demonssouls.wikidot.com/character-builds:74",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200 (HTML parsed)",
+          "note": "PS3 (2009) community build. Temple Knight 50/18/40/20/12/6/50/7; Blessed Mirdan Hammer, Adjudicator's Shield."
+        },
+        {
+          "title": "r/demonssouls – Best weapons for PvP?",
+          "url": "https://www.reddit.com/r/demonssouls/comments/p2fvry/best_weapons_for_pvp/",
+          "siteType": "reddit",
+          "verifiedVia": "curl HTTP 200; content from search-index excerpt (Reddit blocks fetch)",
+          "note": "Excerpts: Blessed Mirdan + Adjudicator's Shield + Regenerator's Ring + Second Chance called 'the best pvp build'; double katana 'pretty OP'; Blueblood, Northern Regalia, Meat Cleaver; Firestorm builds popular."
+        },
+        {
+          "title": "r/demonssouls – Built a character solely for PvP and now I just…",
+          "url": "https://www.reddit.com/r/demonssouls/comments/kntn9q/built_a_character_solely_for_pvp_and_now_i_just/",
+          "siteType": "reddit",
+          "verifiedVia": "curl HTTP 200; content from search-index excerpt (Reddit blocks fetch)",
+          "note": "Faith 'Old Monk' build: Blessed Mirdan +5, Adjudicator's Shield, Anti-magic Field, Large Sword of Moonlight; Temple Knight start."
+        },
+        {
+          "title": "Fextralife Wiki – Adjudicator's Shield",
+          "url": "https://demonssouls.wiki.fextralife.com/Adjudicator%27s+Shield",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200 (HTML parsed)"
+        },
+        {
+          "title": "Fextralife Wiki – Regenerator's Ring",
+          "url": "https://demonssouls.wiki.fextralife.com/Regenerator%27s+Ring",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200 (HTML parsed)"
+        },
+        {
+          "title": "Game8 – How to Upgrade Weapons",
+          "url": "https://game8.co/games/demons-souls/archives/306585",
+          "siteType": "guide",
+          "verifiedVia": "curl HTTP 200 (HTML parsed; WebFetch returns 403)"
+        }
+      ]
+    },
+    {
+      "id": "moon-spellsword",
+      "name": "Spellsword / Magic Warrior (Homing Soul Samurai)",
+      "archetype": "Magic melee hybrid",
+      "tier": "S",
+      "tierReason": "Game8 calls Magic Warrior 'one of the most effective' builds; Fextralife's Homing Soul Samurai and PS3 Spellsword SL121 show the same Magic + Moon/Crescent melee + buff formula working in PvE and PvP.",
+      "weapons": [
+        "Crescent/Moon Uchigatana (Fextralife)",
+        "Kris Blade",
+        "Quality/Crushing weapon + Light Weapon buff (Game8: don't use Crescent weapons with Light Weapon)"
+      ],
+      "firearm": "Homing Soul Arrow (5 arrows at 31 MAG per Fextralife), Soul Ray, Light Weapon, Warding",
+      "stats": {
+        "spread": {
+          "VIT": 30,
+          "INT": 30,
+          "END": 8,
+          "STR": 12,
+          "DEX": 13,
+          "MAG": 40,
+          "FTH": 12,
+          "LCK": 7
+        },
+        "label": "Fextralife Homing Soul Samurai (Royalty: MAG 40, INT 30, VIT 30, STR 12, DEX 13)",
+        "altSpreads": [
+          {
+            "name": "Game8 Magic Warrior (Priest; page says SL95)",
+            "spread": {
+              "VIT": 30,
+              "INT": 15,
+              "END": 40,
+              "STR": 30,
+              "DEX": 8,
+              "MAG": 30,
+              "FTH": 16,
+              "LCK": 8
+            },
+            "level": 97
+          },
+          {
+            "name": "Wikidot Spellsword SL121 (PS3)",
+            "spread": {
+              "VIT": 45,
+              "INT": 30,
+              "END": 30,
+              "STR": 18,
+              "DEX": 13,
+              "MAG": 40,
+              "FTH": 18,
+              "LCK": 7
+            },
+            "level": 121
+          }
+        ],
+        "level": 72
+      },
+      "ngNotes": "Starting class: Royalty (Fextralife) or Priest (Game8). Game8's listed SL95 doesn't match its spread (sums to 97).",
+      "playstyle": "Melee with a Moon/Crescent katana or buffed physical weapon, swap to Homing Soul Arrow for range.",
+      "bestFor": [
+        "PvE",
+        "PvP"
+      ],
+      "pros": [
+        "Flexible ranged + melee",
+        "Homing Soul Arrow is top damage",
+        "Good invader"
+      ],
+      "cons": [
+        "Spread across many stats",
+        "Medium armor at best"
+      ],
+      "runesGear": [
+        "Fragrant Ring",
+        "Ring of Magical Sharpness",
+        "Cling Ring (Soul Form)"
+      ],
+      "sources": [
+        {
+          "title": "Fextralife – Homing Soul Samurai Build (PvP/PvE Battlemage)",
+          "url": "https://fextralife.com/demons-souls-builds-homing-soul-samurai-pvp-pve-battlemage/",
+          "siteType": "guide",
+          "verifiedVia": "curl HTTP 200 (HTML parsed)"
+        },
+        {
+          "title": "Game8 – Magic Warrior Build and Best Weapons",
+          "url": "https://game8.co/games/demons-souls/archives/307026",
+          "siteType": "guide",
+          "verifiedVia": "curl HTTP 200 (HTML parsed; WebFetch returns 403)",
+          "note": "Page labels the build SL95; the listed spread sums to SL97. Also hosts the Faith Warrior template."
+        },
+        {
+          "title": "Game8 – Best Builds and Stat Explanation",
+          "url": "https://game8.co/games/demons-souls/archives/306594",
+          "siteType": "guide",
+          "verifiedVia": "curl HTTP 200 (HTML parsed; WebFetch returns 403)",
+          "note": "Calls Pure Strength the top pick for a first run, Magic Warrior 'one of the most effective', Pure Magic 'particularly strong'."
+        },
+        {
+          "title": "Demon's Souls Wikidot – Spellsword - SL 121",
+          "url": "https://demonssouls.wikidot.com/character-builds:26",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200 (HTML parsed)",
+          "note": "PS3 (2009) community build. Royalty 45/30/30/18/13/40/18/7; Moon Uchigatana, Kris Blade."
+        },
+        {
+          "title": "Demon's Souls Wikidot – Warden",
+          "url": "https://demonssouls.wikidot.com/character-builds:299",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200 (HTML parsed)",
+          "note": "PS3 (2009) community build. Priest; Crushing Claymore + Light Weapon, 30 MAG."
+        },
+        {
+          "title": "Fextralife Wiki – Light Weapon",
+          "url": "https://demonssouls.wiki.fextralife.com/Light+Weapon",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200 (HTML parsed)"
+        },
+        {
+          "title": "Fextralife Wiki – Uchigatana",
+          "url": "https://demonssouls.wiki.fextralife.com/Uchigatana",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200 (HTML parsed)"
+        }
+      ]
+    },
+    {
+      "id": "blueblood-luck",
+      "name": "Blueblood Sword Luck Spellsword",
+      "archetype": "Luck / buffed quality",
+      "tier": "A",
+      "tierReason": "Game8, the Fextralife article and Fextralife/wikidot community builds all use it; Fextralife says it is not easy to put together and performs better in NG+.",
+      "weapons": [
+        "Blueblood Sword (req 18 STR/DEX/MAG/FTH, Luck scaling, buffable)",
+        "Talisman of Beasts / Insanity Catalyst"
+      ],
+      "firearm": "Light Weapon; Second Chance; Soul Arrow early",
+      "stats": {
+        "spread": {
+          "VIT": 30,
+          "INT": 15,
+          "END": 40,
+          "STR": 18,
+          "DEX": 18,
+          "MAG": 18,
+          "FTH": 18,
+          "LCK": 30
+        },
+        "label": "Game8 Blueblood — SL107",
+        "altSpreads": [
+          {
+            "name": "Fextralife Blueblood Spellsword (Royalty) first cycle",
+            "spread": {
+              "VIT": 20,
+              "INT": 14,
+              "END": 10,
+              "STR": 18,
+              "DEX": 18,
+              "MAG": 18,
+              "FTH": 18,
+              "LCK": 25
+            },
+            "level": 61
+          },
+          {
+            "name": "Fextralife 'Fear the Blueblood' (Knight)",
+            "spread": {
+              "VIT": 35,
+              "INT": 23,
+              "END": 35,
+              "STR": 19,
+              "DEX": 18,
+              "MAG": 18,
+              "FTH": 18,
+              "LCK": 40
+            },
+            "level": 126
+          },
+          {
+            "name": "Wikidot Blueblood Sword SL124 (PS3)",
+            "spread": {
+              "VIT": 50,
+              "INT": 15,
+              "END": 35,
+              "STR": 18,
+              "DEX": 18,
+              "MAG": 30,
+              "FTH": 18,
+              "LCK": 20
+            },
+            "level": 124
+          }
+        ],
+        "level": 107
+      },
+      "ngNotes": "Fextralife wiki: 18 STR/18 DEX/30 MAG/18 FTH/20 LCK gives 325 base + 243 Light Weapon (Insanity Catalyst). Fextralife article says it performs better in NG+.",
+      "playstyle": "Buff with Light Weapon, then fast slashes; catalyst off-hand.",
+      "bestFor": [
+        "PvE",
+        "PvP",
+        "NG+"
+      ],
+      "pros": [
+        "Luck finally matters",
+        "Huge buffed damage"
+      ],
+      "cons": [
+        "Hard to assemble (Fextralife)",
+        "Four stats at 18 before Luck pays off"
+      ],
+      "runesGear": [
+        "Ring of Magical Sharpness",
+        "Cling Ring",
+        "Dark Silver Shield"
+      ],
+      "sources": [
+        {
+          "title": "Game8 – Blueblood Build and Best Weapons",
+          "url": "https://game8.co/games/demons-souls/archives/307032",
+          "siteType": "guide",
+          "verifiedVia": "curl HTTP 200 (HTML parsed; WebFetch returns 403)"
+        },
+        {
+          "title": "Fextralife – Blueblood Spellsword Build (PvE)",
+          "url": "https://fextralife.com/demons-souls-builds-blueblood-spellsword-pve/",
+          "siteType": "guide",
+          "verifiedVia": "curl HTTP 200 (HTML parsed)"
+        },
+        {
+          "title": "Fextralife Wiki – Fear the Blueblood (PvE) community build",
+          "url": "https://demonssouls.wiki.fextralife.com/Subcontent:PvE_Builds_5_The_Witch",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200 (HTML parsed)",
+          "note": "Page titled 'PvE Builds 5 The Witch' but content is Fear the Blueblood: Knight 35/23/35/19/18/18/18/40, Light Weapon + Second Chance."
+        },
+        {
+          "title": "Demon's Souls Wikidot – Blueblood Sword Build SL 124",
+          "url": "https://demonssouls.wikidot.com/character-builds:153",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200 (HTML parsed)",
+          "note": "PS3 (2009) community build. 50/15/35/18/18/30/18/20."
+        },
+        {
+          "title": "Demon's Souls Wikidot – Blueblood Swordsman",
+          "url": "https://demonssouls.wikidot.com/character-builds:3",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200 (HTML parsed)",
+          "note": "PS3 (2009) community build. Wanderer start."
+        },
+        {
+          "title": "Fextralife Wiki – Blueblood Sword",
+          "url": "https://demonssouls.wiki.fextralife.com/Blueblood+Sword",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200 (HTML parsed)",
+          "note": "Req 18/18/18/18 STR/DEX/MAG/FTH; scales with Luck; buffable."
+        },
+        {
+          "title": "r/demonssouls – Best weapons for PvP?",
+          "url": "https://www.reddit.com/r/demonssouls/comments/p2fvry/best_weapons_for_pvp/",
+          "siteType": "reddit",
+          "verifiedVia": "curl HTTP 200; content from search-index excerpt (Reddit blocks fetch)",
+          "note": "Excerpts: Blessed Mirdan + Adjudicator's Shield + Regenerator's Ring + Second Chance called 'the best pvp build'; double katana 'pretty OP'; Blueblood, Northern Regalia, Meat Cleaver; Firestorm builds popular."
+        }
+      ]
+    },
+    {
+      "id": "dex-uchigatana",
+      "name": "Soul Samurai (Sharp/Fatal Uchigatana Dexterity)",
+      "archetype": "Dexterity",
+      "tier": "A",
+      "tierReason": "Fextralife and Game8 both publish a Dex katana build; TheGamer notes DEX soft-caps at 40 with the Uchigatana in 4-1.",
+      "weapons": [
+        "Uchigatana (4-1; Sharp path)",
+        "Estoc (Fatal; backstabs)",
+        "Falchion (Tear/bleed)",
+        "Bow (Fextralife: learn to use it early)"
+      ],
+      "firearm": "Bow and arrows (Fextralife Soul Samurai)",
+      "stats": {
+        "spread": {
+          "VIT": 30,
+          "INT": 13,
+          "END": 40,
+          "STR": 18,
+          "DEX": 40,
+          "MAG": 10,
+          "FTH": 8,
+          "LCK": 15
+        },
+        "label": "Fextralife Soul Samurai (Thief: DEX 40, STR 18, END 40, VIT 30)",
+        "altSpreads": [
+          {
+            "name": "Game8 Dexterity Warrior (Temple Knight) — SL82",
+            "spread": {
+              "VIT": 30,
+              "INT": 8,
+              "END": 40,
+              "STR": 18,
+              "DEX": 40,
+              "MAG": 6,
+              "FTH": 13,
+              "LCK": 7
+            },
+            "level": 82
+          }
+        ],
+        "level": 94
+      },
+      "ngNotes": "Starting class: Thief (Fextralife) or Temple Knight (Game8). Sharp improves DEX scaling (Game8 upgrades).",
+      "playstyle": "Fast katana combos and backstabs, light armor and rolling.",
+      "bestFor": [
+        "PvE",
+        "PvP"
+      ],
+      "pros": [
+        "Fast, fluid",
+        "Uchigatana available early-mid"
+      ],
+      "cons": [
+        "Low weapon durability (Game8)",
+        "Lower burst than STR"
+      ],
+      "runesGear": [
+        "Thief Ring",
+        "Ring of Great Strength",
+        "Rat's rings optional"
+      ],
+      "sources": [
+        {
+          "title": "Fextralife – Soul Samurai Build (PvE Uchigatana Dexterity)",
+          "url": "https://fextralife.com/demons-souls-builds-soul-samurai-pve-uchigatana-dexterity-guide/",
+          "siteType": "guide",
+          "verifiedVia": "curl HTTP 200 (HTML parsed)"
+        },
+        {
+          "title": "Game8 – Dexterity Warrior Build and Best Weapons",
+          "url": "https://game8.co/games/demons-souls/archives/307021",
+          "siteType": "guide",
+          "verifiedVia": "curl HTTP 200 (HTML parsed; WebFetch returns 403)"
+        },
+        {
+          "title": "TheGamer – Demon's Souls PS5: Every Stat In The Remake And What They Do, Ranked",
+          "url": "https://www.thegamer.com/demons-souls-ps5-remake-stats-ranked/",
+          "siteType": "guide",
+          "verifiedVia": "curl HTTP 200 (title read; claims from search-index excerpt)"
+        },
+        {
+          "title": "Fextralife Wiki – Uchigatana",
+          "url": "https://demonssouls.wiki.fextralife.com/Uchigatana",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200 (HTML parsed)"
+        },
+        {
+          "title": "Game8 – Best Weapons to Use",
+          "url": "https://game8.co/games/demons-souls/archives/309230",
+          "siteType": "guide",
+          "verifiedVia": "curl HTTP 200 (HTML parsed; WebFetch returns 403)"
+        }
+      ]
+    },
+    {
+      "id": "magic-faith-beasts",
+      "name": "Sorcerer-Priest (Magic + Faith, Talisman of Beasts)",
+      "archetype": "Magic/Faith caster",
+      "tier": "A",
+      "tierReason": "Game8's Magic and Faith template, Samurai Gamers' Pure Magic and the Sorceror's Fervor community build all pair spells and miracles on the Talisman of Beasts; heavy level cost keeps it below pure sorcery.",
+      "weapons": [
+        "Talisman of Beasts (spells + miracles)",
+        "Kris Blade",
+        "Crescent Estoc"
+      ],
+      "firearm": "Spells: Soul Arrow, Homing Soul Arrow, Fireball, Firestorm, Warding, Poison Cloud; Miracles: Second Chance, Anti-magic Field, Heal (Samurai Gamers)",
+      "stats": {
+        "spread": {
+          "VIT": 30,
+          "INT": 30,
+          "END": 8,
+          "STR": 9,
+          "DEX": 12,
+          "MAG": 36,
+          "FTH": 36,
+          "LCK": 7
+        },
+        "label": "Game8 Magic and Faith (Royalty; page labels SL86, spread sums to SL88)",
+        "altSpreads": [
+          {
+            "name": "Samurai Gamers Pure Magic / Fextralife Sorceror's Fervor (Royalty)",
+            "spread": {
+              "VIT": 40,
+              "INT": 40,
+              "END": 9,
+              "STR": 9,
+              "DEX": 12,
+              "MAG": 40,
+              "FTH": 40,
+              "LCK": 7
+            },
+            "level": 117
+          }
+        ],
+        "level": 88
+      },
+      "ngNotes": "Starting class: Royalty. TheGamer: FTH 36 for 4 miracle slots (excerpt).",
+      "playstyle": "Back-line caster with miracle self-sustain.",
+      "bestFor": [
+        "PvE",
+        "NG+"
+      ],
+      "pros": [
+        "Heals + Second Chance",
+        "Talisman scales with both MAG and FTH"
+      ],
+      "cons": [
+        "Many levels in two caster stats",
+        "Fragile"
+      ],
+      "runesGear": [
+        "Ring of Magical Sharpness",
+        "Ring of Magical Nature",
+        "Monk's Head Collar"
+      ],
+      "sources": [
+        {
+          "title": "Game8 – Magic and Faith Build and Best Weapons",
+          "url": "https://game8.co/games/demons-souls/archives/307025",
+          "siteType": "guide",
+          "verifiedVia": "curl HTTP 200 (HTML parsed; WebFetch returns 403)",
+          "note": "Page labels the build SL86; the listed spread sums to SL88."
+        },
+        {
+          "title": "Samurai Gamers – Demon's Souls Remake: Best Character Builds",
+          "url": "https://samurai-gamers.com/demons-souls-remake/best-character-builds/",
+          "siteType": "guide",
+          "verifiedVia": "curl HTTP 200 (HTML parsed)",
+          "note": "Pure Melee Warrior (Barbarian 40/18/40/40/9/11/8/11) and Pure Magic (Royalty 40/40/9/9/12/40/40/7); no SL stated."
+        },
+        {
+          "title": "Fextralife Wiki – Sorceror's Fervor (PvE) community build",
+          "url": "https://demonssouls.wiki.fextralife.com/Subcontent:Builds_2_Sorceror%27s_Fervor_(PVE)",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200 (HTML parsed)",
+          "note": "Royalty 40/40/9/9/12/40/40/7 (computed SL117); Kris Blade, Talisman of Beasts."
+        },
+        {
+          "title": "Fextralife Wiki – Talisman of Beasts",
+          "url": "https://demonssouls.wiki.fextralife.com/Talisman+of+Beasts",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200 (HTML parsed)"
+        },
+        {
+          "title": "Demon's Souls Wikidot – The Official Pure Mage (SL 125)",
+          "url": "https://demonssouls.wikidot.com/character-builds:112",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200 (HTML parsed)",
+          "note": "PS3 (2009) community build. Royalty 40/40/9/9/12/44/44/7; Kris Blade, Crescent Estoc, Talisman of Beasts."
+        }
+      ]
+    },
+    {
+      "id": "meat-cleaver",
+      "name": "Meat Cleaver Valkyrie (STR/DEX/Faith)",
+      "archetype": "Quality / Faith",
+      "tier": "A",
+      "tierReason": "Fextralife's DMCbr Valkyrie calls it 'the best weapon of the game'; the wiki notes two S-grade bonuses and 1% HP per hit; Reddit lists it among PvP picks — but a wikidot SL125 author advises against it in PvP.",
+      "weapons": [
+        "Meat Cleaver (Fool's Idol Demon Soul; req 26 STR/16 FTH; buffable)",
+        "Dark Silver Shield"
+      ],
+      "firearm": "Second Chance; NG+: Enchant Weapon, Protection (DMCbr)",
+      "stats": {
+        "spread": {
+          "VIT": 30,
+          "INT": 15,
+          "END": 33,
+          "STR": 28,
+          "DEX": 28,
+          "MAG": 6,
+          "FTH": 18,
+          "LCK": 7
+        },
+        "label": "Fextralife 'The Valkyrie' (DMCbr; Temple Knight) — SL85",
+        "altSpreads": [
+          {
+            "name": "DMCbr NG+ SL145",
+            "spread": {
+              "VIT": 46,
+              "INT": 15,
+              "END": 37,
+              "STR": 35,
+              "DEX": 34,
+              "MAG": 20,
+              "FTH": 31,
+              "LCK": 7
+            },
+            "level": 145
+          },
+          {
+            "name": "Wikidot Meat Cleaver Build (PS3)",
+            "spread": {
+              "VIT": 40,
+              "INT": 18,
+              "END": 40,
+              "STR": 30,
+              "DEX": 40,
+              "MAG": 10,
+              "FTH": 16,
+              "LCK": 7
+            },
+            "level": 121
+          },
+          {
+            "name": "Wikidot Light Weapon Meat Cleaver, phantom (PS3; page says SL127)",
+            "spread": {
+              "VIT": 45,
+              "INT": 15,
+              "END": 35,
+              "STR": 26,
+              "DEX": 30,
+              "MAG": 30,
+              "FTH": 20,
+              "LCK": 7
+            },
+            "level": 128
+          }
+        ],
+        "level": 85
+      },
+      "ngNotes": "Reddit (kqt9c8): level DEX; two-handing multiplies STR 1.5x. Wikidot SL125 Power and Versatility warns its split damage is reduced twice in PvP.",
+      "playstyle": "Two-hand sweeping cleaves that heal you per hit.",
+      "bestFor": [
+        "PvE",
+        "NG+"
+      ],
+      "pros": [
+        "Life gain on hit",
+        "Buffable",
+        "Wide arcs"
+      ],
+      "cons": [
+        "Lower base damage than DBS (Reddit)",
+        "Split damage weaker in PvP (wikidot)"
+      ],
+      "runesGear": [
+        "Cling Ring",
+        "Ring of Great Strength",
+        "Gloom set"
+      ],
+      "sources": [
+        {
+          "title": "Fextralife Wiki – The Valkyrie (Meat Cleaver) community build by DMCbr",
+          "url": "https://demonssouls.wiki.fextralife.com/Subcontent:PvE_Builds_7_The_Valkyrie",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200 (HTML parsed)",
+          "note": "Temple Knight SL85 30/15/33/28/28/6/18/7; NG+ SL145; calls the Meat Cleaver 'the best weapon of the game'."
+        },
+        {
+          "title": "Fextralife Wiki – Meat Cleaver",
+          "url": "https://demonssouls.wiki.fextralife.com/Meat+Cleaver",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200 (HTML parsed)",
+          "note": "Req 26 STR/16 FTH; S DEX/A FTH/B STR damage bonus; gain 1% HP per hit; buffable."
+        },
+        {
+          "title": "r/demonssouls – Suggestions for a Meat Cleaver build? (Remake)",
+          "url": "https://www.reddit.com/r/demonssouls/comments/kqt9c8/suggestions_for_a_meat_cleaver_build_remake/",
+          "siteType": "reddit",
+          "verifiedVia": "curl HTTP 200; content from search-index excerpt (Reddit blocks fetch)",
+          "note": "Excerpts: level DEX; two-handing gives 1.5x STR; lower base damage than DBS."
+        },
+        {
+          "title": "Demon's Souls Wikidot – Meat Cleaver Build",
+          "url": "https://demonssouls.wikidot.com/character-builds:11",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200 (HTML parsed)",
+          "note": "PS3 (2009) community build. 40/18/40/30/40/10/16/7."
+        },
+        {
+          "title": "Demon's Souls Wikidot – SL125 Power and Versatility",
+          "url": "https://demonssouls.wikidot.com/character-builds:166",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200 (HTML parsed)",
+          "note": "PS3 (2009) community build. Quality; author advises against the Meat Cleaver in PvP because its split damage goes through two reductions."
+        },
+        {
+          "title": "Demon's Souls Wikidot – Light Weapon Meat Cleaver Build",
+          "url": "https://demonssouls.wikidot.com/character-builds:514",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200 (HTML parsed)",
+          "note": "PS3 (2009) community page."
+        }
+      ]
+    },
+    {
+      "id": "moonlight-valkyrie",
+      "name": "Moonlight Valkyrie (Large Sword of Moonlight Faith)",
+      "archetype": "Faith melee",
+      "tier": "A",
+      "tierReason": "Fextralife article and the DMCbr community build both centre on the S-Faith Large Sword of Moonlight, which the wiki says can't be blocked by shields.",
+      "weapons": [
+        "Large Sword of Moonlight (4-1 early; req 24 FTH; S Faith; unblockable)",
+        "Adjudicator's Shield",
+        "Talisman of God"
+      ],
+      "firearm": "Second Chance (DMCbr); NG+: Cure + Lava Bow with Fire Arrows",
+      "stats": {
+        "spread": {
+          "VIT": 30,
+          "INT": 8,
+          "END": 40,
+          "STR": 14,
+          "DEX": 12,
+          "MAG": 6,
+          "FTH": 30,
+          "LCK": 7
+        },
+        "label": "Fextralife Moonlight Valkyrie (Temple Knight: FTH 30, END 40, VIT 30)",
+        "altSpreads": [
+          {
+            "name": "Fextralife DMCbr LSoML Valkyrie SL85",
+            "spread": {
+              "VIT": 32,
+              "INT": 16,
+              "END": 38,
+              "STR": 14,
+              "DEX": 12,
+              "MAG": 6,
+              "FTH": 40,
+              "LCK": 7
+            },
+            "level": 85
+          },
+          {
+            "name": "DMCbr NG+ SL145",
+            "spread": {
+              "VIT": 50,
+              "INT": 20,
+              "END": 43,
+              "STR": 20,
+              "DEX": 16,
+              "MAG": 6,
+              "FTH": 62,
+              "LCK": 8
+            },
+            "level": 145
+          }
+        ],
+        "level": 67
+      },
+      "ngNotes": "Fextralife: take Faith to 50 later. Starting class Priest or Temple Knight.",
+      "playstyle": "Two-hand the Large Sword of Moonlight behind high END stamina; Adjudicator's Shield when one-handing.",
+      "bestFor": [
+        "PvE",
+        "PvP",
+        "NG+"
+      ],
+      "pros": [
+        "Available in 4-1 (Game8)",
+        "Unblockable by shields"
+      ],
+      "cons": [
+        "Stamina-hungry: 2-3 swings early (Fextralife)",
+        "Faith-only scaling"
+      ],
+      "runesGear": [
+        "Cling Ring",
+        "Ring of Magical Dullness",
+        "Dull Gold set"
+      ],
+      "sources": [
+        {
+          "title": "Fextralife – Moonlight Valkyrie Build (PvP/PvE)",
+          "url": "https://fextralife.com/demons-souls-builds-moonlight-valkyrie-pvp-pve/",
+          "siteType": "guide",
+          "verifiedVia": "curl HTTP 200 (HTML parsed)"
+        },
+        {
+          "title": "Fextralife Wiki – Large Sword of Moonlight Valkyrie community build by DMCbr",
+          "url": "https://demonssouls.wiki.fextralife.com/Subcontent:PvE_Builds_8_Cursed_Samurai",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200 (HTML parsed)",
+          "note": "Page titled 'PvE Builds 8 Cursed Samurai' but content is a LSoML Valkyrie: Temple Knight SL85 32/16/38/14/12/6/40/7; NG+ SL145."
+        },
+        {
+          "title": "Fextralife Wiki – Large Sword of Moonlight",
+          "url": "https://demonssouls.wiki.fextralife.com/Large+Sword+of+Moonlight",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200 (HTML parsed)",
+          "note": "Req 24 FTH, S Faith scaling; cannot be blocked by shields."
+        },
+        {
+          "title": "r/demonssouls – Built a character solely for PvP and now I just…",
+          "url": "https://www.reddit.com/r/demonssouls/comments/kntn9q/built_a_character_solely_for_pvp_and_now_i_just/",
+          "siteType": "reddit",
+          "verifiedVia": "curl HTTP 200; content from search-index excerpt (Reddit blocks fetch)",
+          "note": "Faith 'Old Monk' build: Blessed Mirdan +5, Adjudicator's Shield, Anti-magic Field, Large Sword of Moonlight; Temple Knight start."
+        }
+      ]
+    },
+    {
+      "id": "witch-firestorm",
+      "name": "The Witch (Fire Spray → Firestorm Mage)",
+      "archetype": "Magic/Faith pyro-mage",
+      "tier": "A",
+      "tierReason": "DMCbr calls The Witch 'the easiest build for new players'; a Reddit PvP thread notes Firestorm builds are popular.",
+      "weapons": [
+        "Kris Blade +5",
+        "Crescent Falchion +5",
+        "Talisman of Beasts",
+        "Rune Shield (+5 in NG+)"
+      ],
+      "firearm": "Soul Arrow, Soul Ray, Fire Spray, Flame Toss; NG+ Firestorm; Second Chance",
+      "stats": {
+        "spread": {
+          "VIT": 30,
+          "INT": 30,
+          "END": 8,
+          "STR": 12,
+          "DEX": 12,
+          "MAG": 33,
+          "FTH": 33,
+          "LCK": 7
+        },
+        "label": "Fextralife 'The Witch' (DMCbr; Royalty) — SL85",
+        "altSpreads": [
+          {
+            "name": "DMCbr NG+ SL145",
+            "spread": {
+              "VIT": 46,
+              "INT": 40,
+              "END": 8,
+              "STR": 12,
+              "DEX": 12,
+              "MAG": 50,
+              "FTH": 50,
+              "LCK": 7
+            },
+            "level": 145
+          },
+          {
+            "name": "Wikidot Low SL Witch SL40 (PS3, Royalty)",
+            "spread": {
+              "VIT": 8,
+              "INT": 24,
+              "END": 8,
+              "STR": 10,
+              "DEX": 12,
+              "MAG": 35,
+              "FTH": 16,
+              "LCK": 7
+            },
+            "level": 40
+          }
+        ],
+        "level": 85
+      },
+      "ngNotes": "NG+ swaps Fire Spray for Firestorm. PS3: wikidot Low SL Witch is a low-level invader variant.",
+      "playstyle": "Close-range fire AoE and Soul Ray, Crescent Falchion melee.",
+      "bestFor": [
+        "PvE",
+        "PvP",
+        "beginner"
+      ],
+      "pros": [
+        "Strong AoE",
+        "Beginner-friendly per author"
+      ],
+      "cons": [
+        "Close range is risky",
+        "Thin armor"
+      ],
+      "runesGear": [
+        "Ring of Magical Sharpness",
+        "Fragrant Ring",
+        "Three Cornered Hat / Old Raggedy Robes"
+      ],
+      "sources": [
+        {
+          "title": "Fextralife Wiki – The Witch (PvE) community build by DMCbr",
+          "url": "https://demonssouls.wiki.fextralife.com/Subcontent:PvE_Builds_6_The_Berserker",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200 (HTML parsed)",
+          "note": "Page titled 'PvE Builds 6 The Berserker' but content is The Witch: Royalty SL85 30/30/8/12/12/33/33/7; NG+ SL145 swaps Fire Spray for Firestorm."
+        },
+        {
+          "title": "Fextralife Wiki – Firestorm",
+          "url": "https://demonssouls.wiki.fextralife.com/Firestorm",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200 (HTML parsed)"
+        },
+        {
+          "title": "r/demonssouls – Best weapons for PvP?",
+          "url": "https://www.reddit.com/r/demonssouls/comments/p2fvry/best_weapons_for_pvp/",
+          "siteType": "reddit",
+          "verifiedVia": "curl HTTP 200; content from search-index excerpt (Reddit blocks fetch)",
+          "note": "Excerpts: Blessed Mirdan + Adjudicator's Shield + Regenerator's Ring + Second Chance called 'the best pvp build'; double katana 'pretty OP'; Blueblood, Northern Regalia, Meat Cleaver; Firestorm builds popular."
+        },
+        {
+          "title": "Demon's Souls Wikidot – Low SL Witch Build",
+          "url": "https://demonssouls.wikidot.com/character-builds:547",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200 (HTML parsed)",
+          "note": "PS3 (2009) community page."
+        }
+      ]
+    },
+    {
+      "id": "cursed-dragon",
+      "name": "Cursed Dragon (DBS + Curse Weapon)",
+      "archetype": "Strength + buff",
+      "tier": "A",
+      "tierReason": "Fextralife's Cursed Dragon adds Curse Weapon (+50% physical) to the DBS core; Pure White World Tendency gating keeps it below pure STR.",
+      "weapons": [
+        "Dragon Bone Smasher",
+        "Talisman of Beasts (to cast Curse Weapon)"
+      ],
+      "firearm": "Curse Weapon (Cursed Weapon on PS3)",
+      "stats": {
+        "spread": {
+          "VIT": 30,
+          "INT": 18,
+          "END": 20,
+          "STR": 30,
+          "DEX": 9,
+          "MAG": 11,
+          "FTH": 8,
+          "LCK": 11
+        },
+        "label": "Fextralife Cursed Dragon (Barbarian: STR 30, END 20, VIT 30, INT 18)",
+        "level": 57
+      },
+      "ngNotes": "Fextralife: STR likely to 50 in NG+. Barbarian or Knight start.",
+      "playstyle": "Buff with Curse Weapon, then two-hand DBS.",
+      "bestFor": [
+        "PvE",
+        "NG+"
+      ],
+      "pros": [
+        "+50% physical damage buff",
+        "DBS Fire defense"
+      ],
+      "cons": [
+        "Curse Weapon drains HP",
+        "Pure White WT needed"
+      ],
+      "runesGear": [
+        "Kite Shield (Knight start alternative)"
+      ],
+      "sources": [
+        {
+          "title": "Fextralife – Cursed Dragon Build (PvE Strength)",
+          "url": "https://fextralife.com/demons-souls-builds-cursed-dragon-pve-strength/",
+          "siteType": "guide",
+          "verifiedVia": "curl HTTP 200 (HTML parsed)"
+        },
+        {
+          "title": "Fextralife Wiki – Curse Weapon",
+          "url": "https://demonssouls.wiki.fextralife.com/Curse+Weapon",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200 (HTML parsed)",
+          "note": "+50% physical weapon damage while slowly draining HP; PS3 name 'Cursed Weapon'."
+        },
+        {
+          "title": "Fextralife Wiki – Dragon Bone Smasher",
+          "url": "https://demonssouls.wiki.fextralife.com/Dragon+Bone+Smasher",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200 (HTML parsed)",
+          "note": "Req 30 STR; raises Fire defense; Colorless Demon Soul upgrade."
+        },
+        {
+          "title": "Fextralife Wiki – World Tendency",
+          "url": "https://demonssouls.wiki.fextralife.com/World+Tendency",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200 (HTML parsed)"
+        }
+      ]
+    },
+    {
+      "id": "northern-regalia-vit",
+      "name": "Vitality Northern Regalia (Pure White/Black Character Tendency)",
+      "archetype": "Vitality / Tendency",
+      "tier": "A",
+      "tierReason": "Fextralife wiki: 540 AR at Pure White or Pure Black Character Tendency and 'a great weapon for Vitality builds'; Game8's Vitality Warrior and two PS3 wikidot builds use it. NG+ weapon.",
+      "weapons": [
+        "Northern Regalia (False King Demon Soul + Demonbrandt + Soulbrandt; not buffable)",
+        "Morion Blade (backup, PS3 VIT build)"
+      ],
+      "firearm": "None",
+      "stats": {
+        "spread": {
+          "VIT": 50,
+          "INT": 15,
+          "END": 40,
+          "STR": 20,
+          "DEX": 12,
+          "MAG": 6,
+          "FTH": 16,
+          "LCK": 7
+        },
+        "label": "Game8 Vitality Warrior (Temple Knight) — SL86",
+        "altSpreads": [
+          {
+            "name": "Wikidot VIT North Regalia (PS3, Knight)",
+            "spread": {
+              "VIT": 87,
+              "INT": 14,
+              "END": 40,
+              "STR": 14,
+              "DEX": 14,
+              "MAG": 12,
+              "FTH": 12,
+              "LCK": 7
+            },
+            "level": 120
+          },
+          {
+            "name": "Wikidot Northern Regalia SL120 PvP (PS3, Knight)",
+            "spread": {
+              "VIT": 86,
+              "INT": 15,
+              "END": 30,
+              "STR": 20,
+              "DEX": 14,
+              "MAG": 12,
+              "FTH": 16,
+              "LCK": 7
+            },
+            "level": 120
+          }
+        ],
+        "level": 86
+      },
+      "ngNotes": "Requires Pure White or Pure Black Character Tendency for max AR. Practically NG+/late game since it needs Demonbrandt and Soulbrandt.",
+      "playstyle": "Dump points in VIT; tendency-driven damage.",
+      "bestFor": [
+        "PvE",
+        "PvP",
+        "NG+"
+      ],
+      "pros": [
+        "Very high AR with no scaling",
+        "Lets you pump VIT"
+      ],
+      "cons": [
+        "Needs both brandts",
+        "Tendency maintenance"
+      ],
+      "runesGear": [
+        "Clever Rat's Ring / Dull Rat's Ring (PS3)",
+        "Cling Ring"
+      ],
+      "sources": [
+        {
+          "title": "Fextralife Wiki – Northern Regalia",
+          "url": "https://demonssouls.wiki.fextralife.com/Northern+Regalia",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200 (HTML parsed)",
+          "note": "Req 20 STR/14 DEX/12 MAG/12 FTH; not buffable; 540 AR at Pure White or Pure Black Character Tendency; 'A great weapon for Vitality builds'."
+        },
+        {
+          "title": "Game8 – Vitality Warrior",
+          "url": "https://game8.co/games/demons-souls/archives/307706",
+          "siteType": "guide",
+          "verifiedVia": "curl HTTP 200 (HTML parsed; WebFetch returns 403)"
+        },
+        {
+          "title": "Demon's Souls Wikidot – VIT North Regalia",
+          "url": "https://demonssouls.wikidot.com/character-builds:31",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200 (HTML parsed)",
+          "note": "PS3 (2009) community build. Knight 87/14/40/14/14/12/12/7; Morion Blade, Clever/Dull Rat's Rings."
+        },
+        {
+          "title": "Demon's Souls Wikidot – Northern Regalia (SL 120, PVP)",
+          "url": "https://demonssouls.wikidot.com/character-builds:300",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200 (HTML parsed)",
+          "note": "PS3 (2009) community build. Knight 86/15/30/20/14/12/16/7."
+        },
+        {
+          "title": "Fextralife Wiki – Character Tendency",
+          "url": "https://demonssouls.wiki.fextralife.com/Character+Tendency",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200 (HTML parsed)"
+        },
+        {
+          "title": "r/demonssouls – Best weapons for PvP?",
+          "url": "https://www.reddit.com/r/demonssouls/comments/p2fvry/best_weapons_for_pvp/",
+          "siteType": "reddit",
+          "verifiedVia": "curl HTTP 200; content from search-index excerpt (Reddit blocks fetch)",
+          "note": "Excerpts: Blessed Mirdan + Adjudicator's Shield + Regenerator's Ring + Second Chance called 'the best pvp build'; double katana 'pretty OP'; Blueblood, Northern Regalia, Meat Cleaver; Firestorm builds popular."
+        }
+      ]
+    },
+    {
+      "id": "blessed-mirdan-pvp",
+      "name": "Blessed Mirdan Hammer + Adjudicator's Shield (SL125 PvP)",
+      "archetype": "Faith PvP",
+      "tier": "A",
+      "tierReason": "Reddit PvP threads call Blessed Mirdan + Adjudicator's Shield + Regenerator's Ring + Second Chance 'the best pvp build'; SL125 is the remake PvP meta level. PvP-only rating.",
+      "weapons": [
+        "Blessed Mirdan Hammer +5",
+        "Adjudicator's Shield",
+        "Large Sword of Moonlight (swap)"
+      ],
+      "firearm": "Second Chance, Anti-magic Field, Death Cloud (Reddit 'Old Monk')",
+      "stats": {
+        "spread": {
+          "VIT": 50,
+          "INT": 18,
+          "END": 40,
+          "STR": 20,
+          "DEX": 12,
+          "MAG": 6,
+          "FTH": 50,
+          "LCK": 7
+        },
+        "label": "Wikidot Ilkar's Faith SL123 (PS3) as reference spread; tune to SL125",
+        "level": 123
+      },
+      "ngNotes": "Reddit lj6qrv: SL125 is PvP meta; 4-1 and 1-1 most common. Temple Knight start.",
+      "playstyle": "Long-reach poke with constant regen; Anti-magic Field vs casters.",
+      "bestFor": [
+        "PvP"
+      ],
+      "pros": [
+        "Regen stacking",
+        "Long reach"
+      ],
+      "cons": [
+        "High stamina use (Game8)",
+        "Predictable"
+      ],
+      "runesGear": [
+        "Regenerator's Ring",
+        "Ring of Great Strength"
+      ],
+      "sources": [
+        {
+          "title": "r/demonssouls – Best weapons for PvP?",
+          "url": "https://www.reddit.com/r/demonssouls/comments/p2fvry/best_weapons_for_pvp/",
+          "siteType": "reddit",
+          "verifiedVia": "curl HTTP 200; content from search-index excerpt (Reddit blocks fetch)",
+          "note": "Excerpts: Blessed Mirdan + Adjudicator's Shield + Regenerator's Ring + Second Chance called 'the best pvp build'; double katana 'pretty OP'; Blueblood, Northern Regalia, Meat Cleaver; Firestorm builds popular."
+        },
+        {
+          "title": "r/demonssouls – Built a character solely for PvP and now I just…",
+          "url": "https://www.reddit.com/r/demonssouls/comments/kntn9q/built_a_character_solely_for_pvp_and_now_i_just/",
+          "siteType": "reddit",
+          "verifiedVia": "curl HTTP 200; content from search-index excerpt (Reddit blocks fetch)",
+          "note": "Faith 'Old Monk' build: Blessed Mirdan +5, Adjudicator's Shield, Anti-magic Field, Large Sword of Moonlight; Temple Knight start."
+        },
+        {
+          "title": "r/demonssouls – Questions about the remake meta (long)",
+          "url": "https://www.reddit.com/r/demonssouls/comments/lj6qrv/questions_about_the_remake_meta_long/",
+          "siteType": "reddit",
+          "verifiedVia": "curl HTTP 200; content from search-index excerpt (Reddit blocks fetch)",
+          "note": "Excerpt: 'Soul level 125 is pvp meta. 4-1 and 1-1 are most common'; chain backstabs no longer possible."
+        },
+        {
+          "title": "Demon's Souls Wikidot – Ilkar's Faith Build (SL 123)",
+          "url": "https://demonssouls.wikidot.com/character-builds:74",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200 (HTML parsed)",
+          "note": "PS3 (2009) community build. Temple Knight 50/18/40/20/12/6/50/7; Blessed Mirdan Hammer, Adjudicator's Shield."
+        },
+        {
+          "title": "Fextralife Wiki – Mirdan Hammer",
+          "url": "https://demonssouls.wiki.fextralife.com/Mirdan+Hammer",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200 (HTML parsed)"
+        },
+        {
+          "title": "Fextralife Wiki – Regenerator's Ring",
+          "url": "https://demonssouls.wiki.fextralife.com/Regenerator%27s+Ring",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200 (HTML parsed)"
+        },
+        {
+          "title": "Fextralife Wiki – Second Chance",
+          "url": "https://demonssouls.wiki.fextralife.com/Second+Chance",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200 (HTML parsed)",
+          "note": "Remake name of PS3 'One-Time Revival'."
+        }
+      ]
+    },
+    {
+      "id": "cursed-dbs-pvp",
+      "name": "Cursed DBS Bonker (SL125 PvP)",
+      "archetype": "Strength PvP",
+      "tier": "A",
+      "tierReason": "Fextralife 'Bonk' and wikidot HAG's Strength both run DBS at SL125 with Curse Weapon or blessed off-hand. PvP-only rating.",
+      "weapons": [
+        "Dragon Bone Smasher +5",
+        "Blessed Iron Knuckle +5 (Bonk)",
+        "Heavy Crossbow / Dragon Mirdan Hammer"
+      ],
+      "firearm": "Curse Weapon (HAG's Strength)",
+      "stats": {
+        "spread": {
+          "VIT": 50,
+          "INT": 18,
+          "END": 46,
+          "STR": 50,
+          "DEX": 12,
+          "MAG": 6,
+          "FTH": 16,
+          "LCK": 7
+        },
+        "label": "Fextralife 'Bonk' (SolNihilus; Temple Knight; defaults filled with TK base) — SL125",
+        "altSpreads": [
+          {
+            "name": "Wikidot HAG's Strength SL125 (PS3)",
+            "spread": {
+              "VIT": 56,
+              "INT": 18,
+              "END": 40,
+              "STR": 50,
+              "DEX": 12,
+              "MAG": 6,
+              "FTH": 16,
+              "LCK": 7
+            },
+            "level": 125
+          }
+        ],
+        "level": 125
+      },
+      "ngNotes": "SL125 meta per Reddit lj6qrv.",
+      "playstyle": "Bait, block, then one or two DBS hits.",
+      "bestFor": [
+        "PvP"
+      ],
+      "pros": [
+        "Huge burst",
+        "Simple"
+      ],
+      "cons": [
+        "Slow; rollable"
+      ],
+      "runesGear": [
+        "Ring of Great Strength",
+        "Regenerator's Ring / Eternal Warrior's Ring",
+        "Cling Ring when invading"
+      ],
+      "sources": [
+        {
+          "title": "Fextralife Wiki – Bonk Skeet Skeet Blam Clang POW (PvP) community build by SolNihilus",
+          "url": "https://demonssouls.wiki.fextralife.com/Subcontent:PvP_Builds_5_Bonk_Skeet_Skeet_Blam_Clang_POW",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200 (HTML parsed)",
+          "note": "Temple Knight SL125 50/18/46/50/default/default/16/default; DBS +5, Blessed Iron Knuckle."
+        },
+        {
+          "title": "Demon's Souls Wikidot – HAG's Strength Build (SL 125)",
+          "url": "https://demonssouls.wikidot.com/character-builds:254",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200 (HTML parsed)",
+          "note": "PS3 (2009) community build. 56/18/40/50/12/6/16/7; DBS + Cursed Weapon."
+        },
+        {
+          "title": "Demon's Souls Wikidot – Strength Build (Soul Level 120) PVP",
+          "url": "https://demonssouls.wikidot.com/character-builds:29",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200 (HTML parsed)",
+          "note": "PS3 (2009) community page."
+        },
+        {
+          "title": "Fextralife Wiki – Curse Weapon",
+          "url": "https://demonssouls.wiki.fextralife.com/Curse+Weapon",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200 (HTML parsed)",
+          "note": "+50% physical weapon damage while slowly draining HP; PS3 name 'Cursed Weapon'."
+        },
+        {
+          "title": "r/demonssouls – Questions about the remake meta (long)",
+          "url": "https://www.reddit.com/r/demonssouls/comments/lj6qrv/questions_about_the_remake_meta_long/",
+          "siteType": "reddit",
+          "verifiedVia": "curl HTTP 200; content from search-index excerpt (Reddit blocks fetch)",
+          "note": "Excerpt: 'Soul level 125 is pvp meta. 4-1 and 1-1 are most common'; chain backstabs no longer possible."
+        }
+      ]
+    },
+    {
+      "id": "quality-high-class",
+      "name": "High Class Warrior (Quality)",
+      "archetype": "Quality",
+      "tier": "B",
+      "tierReason": "Game8 template; flexible but Game8 notes quality weapons need +10, and it spends the most levels.",
+      "weapons": [
+        "Quality-path weapons (+10 for best results per Game8)",
+        "Black Pine Resin buff"
+      ],
+      "firearm": "Enchant Weapon (Game8)",
+      "stats": {
+        "spread": {
+          "VIT": 30,
+          "INT": 8,
+          "END": 40,
+          "STR": 30,
+          "DEX": 40,
+          "MAG": 6,
+          "FTH": 13,
+          "LCK": 7
+        },
+        "label": "Game8 High Class Warrior (Temple Knight) — SL94",
+        "altSpreads": [
+          {
+            "name": "Wikidot SL125 Power and Versatility (PS3)",
+            "spread": {
+              "VIT": 40,
+              "INT": 18,
+              "END": 40,
+              "STR": 34,
+              "DEX": 44,
+              "MAG": 6,
+              "FTH": 16,
+              "LCK": 7
+            },
+            "level": 125
+          }
+        ],
+        "level": 94
+      },
+      "ngNotes": "Quality path evens STR/DEX scaling (Game8 upgrades).",
+      "playstyle": "Use any weapon; buff with resins.",
+      "bestFor": [
+        "PvE",
+        "PvP"
+      ],
+      "pros": [
+        "Wide weapon pool"
+      ],
+      "cons": [
+        "Level-hungry",
+        "Upgrade grind"
+      ],
+      "runesGear": [
+        "Ring of Great Strength"
+      ],
+      "sources": [
+        {
+          "title": "Game8 – High Class Warrior Build and Best Weapons",
+          "url": "https://game8.co/games/demons-souls/archives/307022",
+          "siteType": "guide",
+          "verifiedVia": "curl HTTP 200 (HTML parsed; WebFetch returns 403)"
+        },
+        {
+          "title": "Game8 – How to Upgrade Weapons",
+          "url": "https://game8.co/games/demons-souls/archives/306585",
+          "siteType": "guide",
+          "verifiedVia": "curl HTTP 200 (HTML parsed; WebFetch returns 403)"
+        },
+        {
+          "title": "Demon's Souls Wikidot – SL125 Power and Versatility",
+          "url": "https://demonssouls.wikidot.com/character-builds:166",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200 (HTML parsed)",
+          "note": "PS3 (2009) community build. Quality; author advises against the Meat Cleaver in PvP because its split damage goes through two reductions."
+        }
+      ]
+    },
+    {
+      "id": "hyper-mode-morion",
+      "name": "Hyper Mode (Morion Blade + Clever Rat's Ring)",
+      "archetype": "Low-HP damage",
+      "tier": "B",
+      "tierReason": "Wiki: +60% damage under 30% HP, 140% with Clever Rat's Ring; Reddit threads praise the combo but it's high-risk.",
+      "weapons": [
+        "Morion Blade (works even without requirements)",
+        "Main weapon of choice"
+      ],
+      "firearm": "Fire Spray, Firestorm, Homing Soul Arrow, Second Chance (Berserker Mage, PS3 names converted)",
+      "stats": {
+        "spread": {
+          "VIT": 30,
+          "INT": 40,
+          "END": 20,
+          "STR": 9,
+          "DEX": 13,
+          "MAG": 40,
+          "FTH": 40,
+          "LCK": 7
+        },
+        "label": "Wikidot Berserker Mage (PS3, Royalty; page lists STR 8, below Royalty base 9, so 9 used)",
+        "level": 119
+      },
+      "ngNotes": "Hyper mode = under 30% HP with Morion Blade and/or Clever Rat's Ring (wikidot); Dex Hyper Mode SL126 variant uses a Sharp Kilij + Sticky Compound Long Bow.",
+      "playstyle": "Stay at low HP for huge multipliers.",
+      "bestFor": [
+        "PvE",
+        "PvP",
+        "challenge"
+      ],
+      "pros": [
+        "Big multiplier"
+      ],
+      "cons": [
+        "One mistake kills"
+      ],
+      "runesGear": [
+        "Clever Rat's Ring"
+      ],
+      "sources": [
+        {
+          "title": "Fextralife Wiki – Morion Blade",
+          "url": "https://demonssouls.wiki.fextralife.com/Morion+Blade",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200 (HTML parsed)",
+          "note": "+60% damage under 30% HP; 140% with Clever Rat's Ring; works even if requirements unmet."
+        },
+        {
+          "title": "Fextralife Wiki – Clever Rat's Ring",
+          "url": "https://demonssouls.wiki.fextralife.com/Clever+Rat%27s+Ring",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200 (HTML parsed)"
+        },
+        {
+          "title": "r/demonssouls – Morion Blade and Clever Rats ring combo.. Wow!",
+          "url": "https://www.reddit.com/r/demonssouls/comments/l4cceq/morion_blade_and_clever_rats_ring_combo_wow/",
+          "siteType": "reddit",
+          "verifiedVia": "curl HTTP 200; content from search-index excerpt (Reddit blocks fetch)"
+        },
+        {
+          "title": "r/demonssouls – I need some advice on the viability of a Morion blade build",
+          "url": "https://www.reddit.com/r/demonssouls/comments/j20sm8/i_need_some_advice_on_the_viability_of_a_morion/",
+          "siteType": "reddit",
+          "verifiedVia": "curl HTTP 200; content from search-index excerpt (Reddit blocks fetch)"
+        },
+        {
+          "title": "Demon's Souls Wikidot – Berserker Mage",
+          "url": "https://demonssouls.wikidot.com/character-builds:1",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200 (HTML parsed)",
+          "note": "PS3 (2009) community build. Royalty; 'hyper mode' with Morion Blade + Clever Rat's Ring + Fire Spray."
+        },
+        {
+          "title": "Demon's Souls Wikidot – Dex Hyper Mode Build (SL125+)",
+          "url": "https://demonssouls.wikidot.com/character-builds:568",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200 (HTML parsed)",
+          "note": "PS3 (2009) community page."
+        }
+      ]
+    },
+    {
+      "id": "arcane-archer",
+      "name": "Arcane Archer (Lava Bow)",
+      "archetype": "Ranged bow",
+      "tier": "B",
+      "tierReason": "Fextralife Arcane Archer and PS3 'Legendary archer'; bows are viable but slower than spells.",
+      "weapons": [
+        "Compound Long Bow → Lava Bow (+7 Compound and Armor Spider)",
+        "Morion Blade",
+        "Sticky Compound Long Bow (PS3 build)"
+      ],
+      "firearm": "Arrows (Holy Arrows recommended), Protection",
+      "stats": {
+        "spread": {
+          "VIT": 50,
+          "INT": 14,
+          "END": 11,
+          "STR": 15,
+          "DEX": 16,
+          "MAG": 10,
+          "FTH": 11,
+          "LCK": 7
+        },
+        "label": "Fextralife targets (STR 15, DEX 16, INT 14, VIT 50) on a Knight base — author says class isn't important",
+        "altSpreads": [
+          {
+            "name": "Wikidot Legendary archer minimums (PS3, Wanderer)",
+            "spread": {
+              "VIT": 30,
+              "INT": 10,
+              "END": 35,
+              "STR": 22,
+              "DEX": 50,
+              "MAG": 10,
+              "FTH": 16,
+              "LCK": 13
+            },
+            "level": 106
+          }
+        ],
+        "level": 54
+      },
+      "ngNotes": "Fextralife: VIT 20 for low-level/NG+ versions.",
+      "playstyle": "Shoot from range at low HP with Morion Blade bonus.",
+      "bestFor": [
+        "PvE",
+        "challenge"
+      ],
+      "pros": [
+        "Safe range"
+      ],
+      "cons": [
+        "Arrow farming",
+        "Slow"
+      ],
+      "runesGear": [
+        "Clever Rat's Ring"
+      ],
+      "sources": [
+        {
+          "title": "Fextralife – Arcane Archer Build (PvE Bow)",
+          "url": "https://fextralife.com/demons-souls-builds-arcane-archer-pve-bow-guide/",
+          "siteType": "guide",
+          "verifiedVia": "curl HTTP 200 (HTML parsed)"
+        },
+        {
+          "title": "Demon's Souls Wikidot – Legendary archer",
+          "url": "https://demonssouls.wikidot.com/character-builds:210",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200 (HTML parsed)",
+          "note": "PS3 (2009) community build. Wanderer; Sticky Compound Long Bow, Morion Blade."
+        },
+        {
+          "title": "Fextralife Wiki – Lava Bow",
+          "url": "https://demonssouls.wiki.fextralife.com/Lava+Bow",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200 (HTML parsed)"
+        }
+      ]
+    },
+    {
+      "id": "gloom-knight",
+      "name": "Gloom Knight (Tank)",
+      "archetype": "Heavy armor / shield",
+      "tier": "B",
+      "tierReason": "Fextralife calls it new-player friendly (spears block while attacking); low DPS.",
+      "weapons": [
+        "Spear-type weapon (Fextralife: spears can block while attacking)",
+        "Heavy shield; Phalanx variant uses Quality Winged Spear +5 + Tower Shield +5"
+      ],
+      "firearm": "None",
+      "stats": {
+        "spread": {
+          "VIT": 30,
+          "INT": 11,
+          "END": 40,
+          "STR": 18,
+          "DEX": 10,
+          "MAG": 10,
+          "FTH": 11,
+          "LCK": 7
+        },
+        "label": "Fextralife Gloom Knight (Knight: END 40, VIT 30, STR 18)",
+        "altSpreads": [
+          {
+            "name": "Wikidot Phalanx Build SL125 (PS3, Temple Knight)",
+            "spread": {
+              "VIT": 40,
+              "INT": 18,
+              "END": 48,
+              "STR": 30,
+              "DEX": 40,
+              "MAG": 6,
+              "FTH": 16,
+              "LCK": 7
+            },
+            "level": 125
+          }
+        ],
+        "level": 57
+      },
+      "ngNotes": "Knight or Temple Knight start.",
+      "playstyle": "Turtle behind a shield and poke.",
+      "bestFor": [
+        "PvE",
+        "beginner"
+      ],
+      "pros": [
+        "Very safe"
+      ],
+      "cons": [
+        "Low damage"
+      ],
+      "runesGear": [
+        "Gloom set"
+      ],
+      "sources": [
+        {
+          "title": "Fextralife – Gloom Knight Build (PvE)",
+          "url": "https://fextralife.com/demons-souls-builds-gloom-knight-pve/",
+          "siteType": "guide",
+          "verifiedVia": "curl HTTP 200 (HTML parsed)"
+        },
+        {
+          "title": "Demon's Souls Wikidot – Phalanx Build",
+          "url": "https://demonssouls.wikidot.com/character-builds:42",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200 (HTML parsed)",
+          "note": "PS3 (2009) community build. Tower Shield."
+        },
+        {
+          "title": "Fextralife Wiki – Scraping Spear",
+          "url": "https://demonssouls.wiki.fextralife.com/Scraping+Spear",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200 (HTML parsed)"
+        }
+      ]
+    },
+    {
+      "id": "blue-sentinel",
+      "name": "Blue Sentinel (Demonbrandt Co-op)",
+      "archetype": "Co-op / Tendency",
+      "tier": "B",
+      "tierReason": "Fextralife co-op build; Demonbrandt +50% vs demons, boosted at Pure White Character Tendency.",
+      "weapons": [
+        "Demonbrandt (no scaling, not buffable)"
+      ],
+      "firearm": "None",
+      "stats": {
+        "spread": {
+          "VIT": 30,
+          "INT": 8,
+          "END": 40,
+          "STR": 18,
+          "DEX": 14,
+          "MAG": 6,
+          "FTH": 13,
+          "LCK": 7
+        },
+        "label": "Fextralife Blue Sentinel (Temple Knight: STR 18, DEX 14, END 40, VIT 30; listed FTH 12 is below TK base 13)",
+        "level": 56
+      },
+      "ngNotes": "Pure White Character Tendency required; 0 AR at Pure Black.",
+      "playstyle": "Help others as a blue phantom.",
+      "bestFor": [
+        "PvE",
+        "NG+"
+      ],
+      "pros": [
+        "Big boss damage"
+      ],
+      "cons": [
+        "Needs Pure White CT"
+      ],
+      "runesGear": [
+        "Cling Ring"
+      ],
+      "sources": [
+        {
+          "title": "Fextralife – Blue Sentinel Build (PvE Co-op)",
+          "url": "https://fextralife.com/demons-souls-builds-blue-sentinel-pve-co-op/",
+          "siteType": "guide",
+          "verifiedVia": "curl HTTP 200 (HTML parsed)"
+        },
+        {
+          "title": "Fextralife Wiki – Demonbrandt",
+          "url": "https://demonssouls.wiki.fextralife.com/Demonbrandt",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200 (HTML parsed)",
+          "note": "+50% damage vs demons; boosted at Pure White Character Tendency, 0 AR at Pure Black."
+        },
+        {
+          "title": "Fextralife Wiki – Character Tendency",
+          "url": "https://demonssouls.wiki.fextralife.com/Character+Tendency",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200 (HTML parsed)"
+        }
+      ]
+    },
+    {
+      "id": "immortal-renewal",
+      "name": "Immortal Renewal Knight (Regen Tank)",
+      "archetype": "Faith regen tank",
+      "tier": "B",
+      "tierReason": "Fextralife wiki: stacked regeneration up to 37 HP/sec; very safe, but VIT 99 removes deleveling.",
+      "weapons": [
+        "+5 Blessed Weapon",
+        "Large Sword of Moonlight",
+        "Adjudicator's Shield +5",
+        "Talisman of God"
+      ],
+      "firearm": "Regeneration",
+      "stats": {
+        "spread": {
+          "VIT": 99,
+          "INT": 8,
+          "END": 27,
+          "STR": 14,
+          "DEX": 12,
+          "MAG": 6,
+          "FTH": 20,
+          "LCK": 7
+        },
+        "label": "Fextralife Immortal Renewal (Temple Knight; author lists SL '???')",
+        "level": 113
+      },
+      "ngNotes": "Author: high VIT means you won't be deleveling.",
+      "playstyle": "Out-heal everything.",
+      "bestFor": [
+        "PvE",
+        "NG+"
+      ],
+      "pros": [
+        "Huge regen"
+      ],
+      "cons": [
+        "Very high SL"
+      ],
+      "runesGear": [
+        "Regenerator's Ring",
+        "Ring of Great Strength",
+        "Mirdan set"
+      ],
+      "sources": [
+        {
+          "title": "Fextralife Wiki – Builds",
+          "url": "https://demonssouls.wiki.fextralife.com/Builds",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200 (HTML parsed)",
+          "note": "Hub of remake builds incl. Immortal Renewal Knight (Temple Knight, VIT 99/END 27/FTH 20, regen stacking up to 37 HP/sec)."
+        },
+        {
+          "title": "Fextralife Wiki – Regenerator's Ring",
+          "url": "https://demonssouls.wiki.fextralife.com/Regenerator%27s+Ring",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200 (HTML parsed)"
+        },
+        {
+          "title": "Fextralife Wiki – Adjudicator's Shield",
+          "url": "https://demonssouls.wiki.fextralife.com/Adjudicator%27s+Shield",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200 (HTML parsed)"
+        }
+      ]
+    },
+    {
+      "id": "death-cleaver",
+      "name": "Death Cleaver (Low-level Axe)",
+      "archetype": "Strength low-level",
+      "tier": "B",
+      "tierReason": "Fextralife beginner PvP build; strong at very low SL.",
+      "weapons": [
+        "Dozer Axe (20 STR to two-hand)",
+        "Crushing Great Axe +5"
+      ],
+      "firearm": "None",
+      "stats": {
+        "spread": {
+          "VIT": 15,
+          "INT": 7,
+          "END": 15,
+          "STR": 20,
+          "DEX": 9,
+          "MAG": 11,
+          "FTH": 8,
+          "LCK": 11
+        },
+        "label": "Fextralife Death Cleaver Dozer setup (Barbarian)",
+        "altSpreads": [
+          {
+            "name": "Fextralife Great Axe setup",
+            "spread": {
+              "VIT": 20,
+              "INT": 7,
+              "END": 15,
+              "STR": 30,
+              "DEX": 9,
+              "MAG": 11,
+              "FTH": 8,
+              "LCK": 11
+            },
+            "level": 31
+          }
+        ],
+        "level": 16
+      },
+      "ngNotes": "Keep SL as low as possible.",
+      "playstyle": "Low-level twinking.",
+      "bestFor": [
+        "PvP",
+        "beginner"
+      ],
+      "pros": [
+        "Simple"
+      ],
+      "cons": [
+        "Stone farming"
+      ],
+      "runesGear": [
+        "Cling Ring"
+      ],
+      "sources": [
+        {
+          "title": "Fextralife – Death Cleaver Build (beginner PvP)",
+          "url": "https://fextralife.com/demons-souls-builds-death-cleaver-guide-beginner-pvp/",
+          "siteType": "guide",
+          "verifiedVia": "curl HTTP 200 (HTML parsed)"
+        },
+        {
+          "title": "Game8 – Best Starter Builds",
+          "url": "https://game8.co/games/demons-souls/archives/309277",
+          "siteType": "guide",
+          "verifiedVia": "curl HTTP 200 (HTML parsed; WebFetch returns 403)"
+        }
+      ]
+    },
+    {
+      "id": "crescent-falchion-caster",
+      "name": "Mid-level Magic Abuser (Crescent Falchion)",
+      "archetype": "Magic melee",
+      "tier": "B",
+      "tierReason": "Fextralife community PvP build; Game8 starter builds call the Crescent Falchion 'a strong weapon not just for the early game' with great magic scaling (Shrine of Storms 4-1).",
+      "weapons": [
+        "Crescent Falchion +5",
+        "Scraping Spear",
+        "Silver Catalyst"
+      ],
+      "firearm": "Soul Ray, Fire Spray",
+      "stats": {
+        "spread": {
+          "VIT": 25,
+          "INT": 14,
+          "END": 10,
+          "STR": 9,
+          "DEX": 12,
+          "MAG": 40,
+          "FTH": 12,
+          "LCK": 7
+        },
+        "label": "Fextralife Mid lvl Magic Abuser (Royalty; listed SL50, defaults sum to SL49)",
+        "level": 49
+      },
+      "ngNotes": "Author ran 15 STR/15 DEX to swap in the Scraping Spear against shield users (optional). Crescent path gives MP regen (Game8).",
+      "playstyle": "Pressure with Fire Spray, then cut; Clever Rat's Ring under 30% HP plus Ring of Magical Sharpness.",
+      "bestFor": [
+        "PvP",
+        "beginner"
+      ],
+      "pros": [
+        "Crescent Falchion is easy to obtain early (Game8)",
+        "Usually kills in 2 hits per the author"
+      ],
+      "cons": [
+        "Low END/HP",
+        "PvP-tuned spread"
+      ],
+      "runesGear": [
+        "Clever Rat's Ring",
+        "Ring of Magical Sharpness",
+        "Silver Coronet"
+      ],
+      "sources": [
+        {
+          "title": "Fextralife Wiki – Mid lvl Magic Abuser (PvP) community build",
+          "url": "https://demonssouls.wiki.fextralife.com/Subcontent:PvP_Builds_3_Mid_lvl_Magic_Abuser",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200 (HTML parsed)",
+          "note": "Royalty SL50 (listed): VIT 25/INT 14/END 10/MAG 40; Crescent Falchion +5, Scraping Spear, Clever Rat's Ring, Soul Ray + Fire Spray."
+        },
+        {
+          "title": "Game8 – Best Starter Builds",
+          "url": "https://game8.co/games/demons-souls/archives/309277",
+          "siteType": "guide",
+          "verifiedVia": "curl HTTP 200 (HTML parsed; WebFetch returns 403)"
+        }
+      ]
+    },
+    {
+      "id": "phosphorescent-mage",
+      "name": "Phosphorescent Mage (MP-regen caster)",
+      "archetype": "Magic",
+      "tier": "B",
+      "tierReason": "PS3 wikidot build built around the Phosphorescent Pole's 'massive MP regen'; strong sustain but a single, older source plus the wiki item page.",
+      "weapons": [
+        "Phosphorescent Pole +5",
+        "Kris Blade +5",
+        "Talisman of Beasts",
+        "Insanity Catalyst"
+      ],
+      "firearm": "Second Chance (One-Time Revival on PS3), Ignite, Soul Ray (Soul Light on PS3), Death Cloud / Cloak + Poison Cloud for invading",
+      "stats": {
+        "spread": {
+          "VIT": 45,
+          "INT": 30,
+          "END": 25,
+          "STR": 20,
+          "DEX": 16,
+          "MAG": 45,
+          "FTH": 18,
+          "LCK": 7
+        },
+        "label": "Wikidot Phosphorescent Mage lower bounds (Royalty; VIT 45-50, END 25-28, MAG 45-50) — sums to SL126 vs SL120 in the page title",
+        "level": 126
+      },
+      "ngNotes": "PS3 (2009) build; spell names given in remake form.",
+      "playstyle": "Melee-range caster that keeps MP topped up through the pole.",
+      "bestFor": [
+        "PvE",
+        "PvP"
+      ],
+      "pros": [
+        "Near-endless casting",
+        "Talisman of Beasts lets it mix miracles"
+      ],
+      "cons": [
+        "PS3-era source only",
+        "Stat ranges rather than a fixed spread"
+      ],
+      "runesGear": [
+        "Eternal Warrior's Ring",
+        "Ring of Magical Sharpness",
+        "Cling Ring / Foe's Ring (invading)",
+        "Monk's Head Collar, Sage's set"
+      ],
+      "sources": [
+        {
+          "title": "Demon's Souls Wikidot – Phosphorescent Mage (SL 120)",
+          "url": "https://demonssouls.wikidot.com/character-builds:101",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200 (HTML parsed)",
+          "note": "PS3 (2009) community build. Royalty start."
+        },
+        {
+          "title": "Fextralife Wiki – Phosphorescent Pole",
+          "url": "https://demonssouls.wiki.fextralife.com/Phosphorescent+Pole",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200 (HTML parsed)"
+        }
+      ]
+    },
+    {
+      "id": "executioner-miralda",
+      "name": "The Executioner (Miralda Guillotine Axe)",
+      "archetype": "Low-level melee PvP",
+      "tier": "B",
+      "tierReason": "Fextralife remake community build and PS3 wikidot Low-level Miralda converge on the same Guillotine Axe + Master's Ring low-SL invader.",
+      "weapons": [
+        "Guillotine Axe (basic or Crushing upgrades per wikidot)"
+      ],
+      "firearm": "None ('that's not her style')",
+      "stats": {
+        "spread": {
+          "VIT": 19,
+          "INT": 8,
+          "END": 30,
+          "STR": 20,
+          "DEX": 14,
+          "MAG": 6,
+          "FTH": 13,
+          "LCK": 7
+        },
+        "label": "Fextralife 'The Executioner' (Temple Knight) — SL37",
+        "altSpreads": [
+          {
+            "name": "Wikidot Low-level Miralda (PS3, Temple Knight)",
+            "spread": {
+              "VIT": 19,
+              "INT": 8,
+              "END": 30,
+              "STR": 20,
+              "DEX": 12,
+              "MAG": 6,
+              "FTH": 13,
+              "LCK": 7
+            },
+            "level": 35
+          }
+        ],
+        "level": 37
+      },
+      "ngNotes": "Wikidot: Master's Ring at SL5, Foe's Ring at SL35.",
+      "playstyle": "Role-play the Miralda NPC; big two-handed axe swings against low-level hosts.",
+      "bestFor": [
+        "PvP",
+        "challenge"
+      ],
+      "pros": [
+        "Cheap to assemble",
+        "Good at low SL"
+      ],
+      "cons": [
+        "Fun/theme build, not optimal",
+        "Slow axe"
+      ],
+      "runesGear": [
+        "Master's Ring",
+        "Cling Ring",
+        "Foe's Ring",
+        "Binded set"
+      ],
+      "sources": [
+        {
+          "title": "Fextralife Wiki – The Executioner (Miralda-inspired) community build",
+          "url": "https://demonssouls.wiki.fextralife.com/Subcontent:Builds_7_The_Bone_Doctor",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200 (HTML parsed)",
+          "note": "Page titled 'Builds 7 The Bone Doctor' but content is the Executioner: Temple Knight 19/8/30/20/14/6/13/7, Guillotine Axe + Master's Ring."
+        },
+        {
+          "title": "Demon's Souls Wikidot – Low-level Miralda (SL5-35)",
+          "url": "https://demonssouls.wikidot.com/character-builds:367",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200 (HTML parsed)",
+          "note": "PS3 (2009) community page."
+        }
+      ]
+    },
+    {
+      "id": "arcane-ninja",
+      "name": "Arcane Ninja (Crescent Estoc + Fatal Dagger)",
+      "archetype": "Magic/DEX stealth PvP",
+      "tier": "B",
+      "tierReason": "Fextralife community PvP build; the PS3 Dark Ninja and Sucker builds show the same stealth-backstab idea. PvP-focused.",
+      "weapons": [
+        "Crescent Estoc +5 (or Large Sword of Searching / Magic Sword Makoto in hyper mode)",
+        "Fatal Secret Dagger +5",
+        "Crescent Parrying Dagger +5",
+        "Insanity Catalyst"
+      ],
+      "firearm": "Spells via Insanity Catalyst (see source)",
+      "stats": {
+        "spread": {
+          "VIT": 20,
+          "INT": 30,
+          "END": 10,
+          "STR": 16,
+          "DEX": 21,
+          "MAG": 21,
+          "FTH": 6,
+          "LCK": 11
+        },
+        "label": "Fextralife Arcane Ninja minimum (Magician) — SL55",
+        "altSpreads": [
+          {
+            "name": "Fextralife Arcane Ninja maximum — SL125",
+            "spread": {
+              "VIT": 40,
+              "INT": 30,
+              "END": 20,
+              "STR": 18,
+              "DEX": 40,
+              "MAG": 40,
+              "FTH": 6,
+              "LCK": 11
+            },
+            "level": 125
+          }
+        ],
+        "level": 55
+      },
+      "ngNotes": "Optional hyper-mode swap to Morion Blade + Clever Rat's Ring.",
+      "playstyle": "Sneak, backstab and burst with magic.",
+      "bestFor": [
+        "PvP"
+      ],
+      "pros": [
+        "Scales from SL55 to SL125",
+        "Fun stealth playstyle"
+      ],
+      "cons": [
+        "Fragile",
+        "Backstab chains removed in the remake (Reddit lj6qrv)"
+      ],
+      "runesGear": [
+        "Ring of Magical Sharpness / Foe's Ring",
+        "Thief Ring / Clever Rat's Ring"
+      ],
+      "sources": [
+        {
+          "title": "Fextralife Wiki – Arcane Ninja (PvP) community build by SolNihilus",
+          "url": "https://demonssouls.wiki.fextralife.com/Subcontent:PvP_Builds_6_Arcane_Ninja",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200 (HTML parsed)",
+          "note": "Magician SL55-125; Crescent Estoc, Fatal Secret Dagger, Insanity Catalyst."
+        },
+        {
+          "title": "Demon's Souls Wikidot – Dark Ninja",
+          "url": "https://demonssouls.wikidot.com/character-builds:6",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200 (HTML parsed)",
+          "note": "PS3 (2009) community page."
+        },
+        {
+          "title": "Fextralife Wiki – Insanity Catalyst",
+          "url": "https://demonssouls.wiki.fextralife.com/Insanity+Catalyst",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200 (HTML parsed)",
+          "note": "-50% max MP, +20% spell damage, cannot be upgraded."
+        },
+        {
+          "title": "r/demonssouls – Questions about the remake meta (long)",
+          "url": "https://www.reddit.com/r/demonssouls/comments/lj6qrv/questions_about_the_remake_meta_long/",
+          "siteType": "reddit",
+          "verifiedVia": "curl HTTP 200; content from search-index excerpt (Reddit blocks fetch)",
+          "note": "Excerpt: 'Soul level 125 is pvp meta. 4-1 and 1-1 are most common'; chain backstabs no longer possible."
+        }
+      ]
+    },
+    {
+      "id": "holy-spellsword-pvp",
+      "name": "Holy Spellsword (Blueblood + Light Weapon, PvP)",
+      "archetype": "Luck/Magic/Faith PvP",
+      "tier": "B",
+      "tierReason": "Fextralife community PvP build (SL125-150) for buffed Blueblood burst; overlaps the A-tier Blueblood build but tuned for duels.",
+      "weapons": [
+        "Blueblood Sword",
+        "Large Sword of Moonlight +5 / Istarelle +5 / Phosphorescent Pole +5",
+        "Talisman of Beasts",
+        "Dark Silver Shield +5"
+      ],
+      "firearm": "Light Weapon plus miracles",
+      "stats": {
+        "spread": {
+          "VIT": 40,
+          "INT": 24,
+          "END": 20,
+          "STR": 18,
+          "DEX": 18,
+          "MAG": 19,
+          "FTH": 36,
+          "LCK": 30
+        },
+        "label": "Fextralife Holy Spellsword lower bound (Royalty; MAG 19-30, FTH 36-50) — SL125",
+        "level": 125
+      },
+      "ngNotes": "Upper bound (MAG 30/FTH 50) lands at SL150.",
+      "playstyle": "Buff, close the gap, burst in melee.",
+      "bestFor": [
+        "PvP"
+      ],
+      "pros": [
+        "High burst",
+        "Miracle support"
+      ],
+      "cons": [
+        "Gear-heavy and late",
+        "Many stat thresholds"
+      ],
+      "runesGear": [
+        "Ring of Sincere Prayer",
+        "Ring of Magical Sharpness / Foe's Ring",
+        "Cling Ring when invading",
+        "Monk's Head Wrappings"
+      ],
+      "sources": [
+        {
+          "title": "Fextralife Wiki – Holy Spellsword (PvP) community build by SolNihilus",
+          "url": "https://demonssouls.wiki.fextralife.com/Subcontent:PvP_Builds_4_Holy_Spellsword",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200 (HTML parsed)",
+          "note": "Royalty SL125-150; Blueblood Sword + Light Weapon, Talisman of Beasts."
+        },
+        {
+          "title": "Fextralife Wiki – Blueblood Sword",
+          "url": "https://demonssouls.wiki.fextralife.com/Blueblood+Sword",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200 (HTML parsed)",
+          "note": "Req 18/18/18/18 STR/DEX/MAG/FTH; scales with Luck; buffable."
+        },
+        {
+          "title": "Fextralife Wiki – Light Weapon",
+          "url": "https://demonssouls.wiki.fextralife.com/Light+Weapon",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200 (HTML parsed)"
+        }
+      ]
+    },
+    {
+      "id": "moon-uchi-battlemage-pvp",
+      "name": "Moon Uchigatana Battlemage (SL121 PvP)",
+      "archetype": "Magic melee PvP",
+      "tier": "B",
+      "tierReason": "Fextralife's Battlemage and the PS3 wikidot Spellsword SL121 list an identical spread; Reddit calls double katanas 'pretty OP' in PvP.",
+      "weapons": [
+        "Moon Uchigatana +5 (both hands)",
+        "Kris Blade +5",
+        "Dark Silver Shield +5 / Steel Shield +10",
+        "Talisman of Beasts"
+      ],
+      "firearm": "Spells and miracles via Talisman of Beasts",
+      "stats": {
+        "spread": {
+          "VIT": 45,
+          "INT": 30,
+          "END": 30,
+          "STR": 18,
+          "DEX": 13,
+          "MAG": 40,
+          "FTH": 18,
+          "LCK": 7
+        },
+        "label": "Fextralife Battlemage / wikidot Spellsword (Royalty) — SL121",
+        "level": 121
+      },
+      "ngNotes": "PvP meta SL125 (Reddit lj6qrv) leaves 4 spare levels.",
+      "playstyle": "Dual Moon katanas with spell follow-ups.",
+      "bestFor": [
+        "PvP"
+      ],
+      "pros": [
+        "Fast magic-damage melee",
+        "Ranged options"
+      ],
+      "cons": [
+        "Moon path lowers STR/DEX scaling (Game8 upgrades)"
+      ],
+      "runesGear": [
+        "Foe's Ring",
+        "Cling Ring",
+        "Monk's Head Wrappings",
+        "Ancient King's set"
+      ],
+      "sources": [
+        {
+          "title": "Fextralife Wiki – Battlemage (PvP) community build",
+          "url": "https://demonssouls.wiki.fextralife.com/Subcontent:Builds_6_The_Executioner_(PVP)",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200 (HTML parsed)",
+          "note": "Page titled 'Builds 6 The Executioner' but content is the Battlemage: Royalty 45/30/30/18/13/40/18/7, Moon Uchigatana + Kris Blade."
+        },
+        {
+          "title": "Demon's Souls Wikidot – Spellsword - SL 121",
+          "url": "https://demonssouls.wikidot.com/character-builds:26",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200 (HTML parsed)",
+          "note": "PS3 (2009) community build. Royalty 45/30/30/18/13/40/18/7; Moon Uchigatana, Kris Blade."
+        },
+        {
+          "title": "r/demonssouls – Best weapons for PvP?",
+          "url": "https://www.reddit.com/r/demonssouls/comments/p2fvry/best_weapons_for_pvp/",
+          "siteType": "reddit",
+          "verifiedVia": "curl HTTP 200; content from search-index excerpt (Reddit blocks fetch)",
+          "note": "Excerpts: Blessed Mirdan + Adjudicator's Shield + Regenerator's Ring + Second Chance called 'the best pvp build'; double katana 'pretty OP'; Blueblood, Northern Regalia, Meat Cleaver; Firestorm builds popular."
+        },
+        {
+          "title": "Game8 – How to Upgrade Weapons",
+          "url": "https://game8.co/games/demons-souls/archives/306585",
+          "siteType": "guide",
+          "verifiedVia": "curl HTTP 200 (HTML parsed; WebFetch returns 403)"
+        }
+      ]
+    },
+    {
+      "id": "dex-pvp-sl125",
+      "name": "Default Dex Invader (Sharp Uchigatana + Hiltless, SL125)",
+      "archetype": "Dexterity PvP",
+      "tier": "B",
+      "tierReason": "Two PS3 wikidot SL125 Dex builds (one highly rated) share the spread; remake relevance via SL125 meta.",
+      "weapons": [
+        "Sharp Uchigatana +5",
+        "Hiltless +5 (off-hand)",
+        "Fatal Estoc +5 (backup)"
+      ],
+      "firearm": "None (Light Weapon variant exists on wikidot)",
+      "stats": {
+        "spread": {
+          "VIT": 50,
+          "INT": 18,
+          "END": 40,
+          "STR": 18,
+          "DEX": 50,
+          "MAG": 6,
+          "FTH": 16,
+          "LCK": 7
+        },
+        "label": "Wikidot HAG's Dexterity / Dexterity Build [PvP] 'Default Dex' (Temple Knight) — SL125",
+        "altSpreads": [
+          {
+            "name": "Wikidot 'Hawu's dex' variant",
+            "spread": {
+              "VIT": 50,
+              "INT": 18,
+              "END": 30,
+              "STR": 18,
+              "DEX": 60,
+              "MAG": 6,
+              "FTH": 16,
+              "LCK": 7
+            },
+            "level": 125
+          }
+        ],
+        "level": 125
+      },
+      "ngNotes": "PS3 (2009) source.",
+      "playstyle": "Fast katana pressure with a Hiltless off-hand.",
+      "bestFor": [
+        "PvP"
+      ],
+      "pros": [
+        "Fast",
+        "Proven SL125 spread"
+      ],
+      "cons": [
+        "PS3-era",
+        "Lower burst than STR"
+      ],
+      "runesGear": [
+        "Ancient King set",
+        "Cling Ring + Foe's/Friend's Ring (Soul Form)",
+        "Clever Rat's Ring + Eternal Warrior's Ring (Body Form)"
+      ],
+      "sources": [
+        {
+          "title": "Demon's Souls Wikidot – HAG's Dexterity Build (SL 125)",
+          "url": "https://demonssouls.wikidot.com/character-builds:255",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200 (HTML parsed)",
+          "note": "PS3 (2009) community build. Temple Knight 50/18/40/18/50/6/16/7."
+        },
+        {
+          "title": "Demon's Souls Wikidot – Dexterity Build [PvP]",
+          "url": "https://demonssouls.wikidot.com/character-builds:21",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200 (HTML parsed)",
+          "note": "PS3 (2009) community build. Sharp Uchigatana, Hiltless, Fatal Estoc."
+        },
+        {
+          "title": "Fextralife Wiki – Hiltless",
+          "url": "https://demonssouls.wiki.fextralife.com/Hiltless",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200 (HTML parsed)"
+        },
+        {
+          "title": "Fextralife Wiki – Uchigatana",
+          "url": "https://demonssouls.wiki.fextralife.com/Uchigatana",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200 (HTML parsed)"
+        }
+      ]
+    },
+    {
+      "id": "demon-mage",
+      "name": "Demon Mage (Moon Great Sword + Insanity Catalyst)",
+      "archetype": "Magic heavy melee",
+      "tier": "B",
+      "tierReason": "PS3 wikidot build for high-level PvE: Moon Great Sword melee plus Homing Soul Arrow; heavy MAG investment.",
+      "weapons": [
+        "Moon Great Sword",
+        "Kris Blade",
+        "Insanity Catalyst",
+        "Dark Silver Shield"
+      ],
+      "firearm": "Homing Soul Arrow, Warding, Soul Ray, Cloak",
+      "stats": {
+        "spread": {
+          "VIT": 35,
+          "INT": 40,
+          "END": 30,
+          "STR": 26,
+          "DEX": 14,
+          "MAG": 70,
+          "FTH": 8,
+          "LCK": 15
+        },
+        "label": "Wikidot Demon Mage (Thief start, which the author calls easiest) — SL158",
+        "level": 158
+      },
+      "ngNotes": "High-level / NG+ build ('MAG 70 or as high as possible').",
+      "playstyle": "Heavy armor magic-scaling greatsword plus spells.",
+      "bestFor": [
+        "PvE",
+        "NG+"
+      ],
+      "pros": [
+        "Strong melee and spells"
+      ],
+      "cons": [
+        "Very high SL",
+        "PS3-era source"
+      ],
+      "runesGear": [
+        "Ring of Great Strength",
+        "Ring of Magical Sharpness",
+        "Gloom set + Monk's Head Collar"
+      ],
+      "sources": [
+        {
+          "title": "Demon's Souls Wikidot – Demon Mage",
+          "url": "https://demonssouls.wikidot.com/character-builds:53",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200 (HTML parsed)",
+          "note": "PS3 (2009) community build. Moon Great Sword, Insanity Catalyst, Gloom set."
+        },
+        {
+          "title": "Fextralife Wiki – Insanity Catalyst",
+          "url": "https://demonssouls.wiki.fextralife.com/Insanity+Catalyst",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200 (HTML parsed)",
+          "note": "-50% max MP, +20% spell damage, cannot be upgraded."
+        }
+      ]
+    },
+    {
+      "id": "bramd",
+      "name": "Bramd Ultra-Heavy Strength",
+      "archetype": "Strength",
+      "tier": "C",
+      "tierReason": "PS3 wikidot build needs Ring of Great Strength just to wield it; a Reddit remake thread asks for Bramd buffs.",
+      "weapons": [
+        "Bramd (Crushing path)"
+      ],
+      "firearm": "None",
+      "stats": {
+        "spread": {
+          "VIT": 36,
+          "INT": 18,
+          "END": 40,
+          "STR": 36,
+          "DEX": 8,
+          "MAG": 8,
+          "FTH": 16,
+          "LCK": 8
+        },
+        "label": "Wikidot Ziz' Bramd (Priest) — SL90",
+        "level": 90
+      },
+      "ngNotes": "Ring of Great Strength required.",
+      "playstyle": "Huge, slow club hits.",
+      "bestFor": [
+        "PvE",
+        "challenge"
+      ],
+      "pros": [
+        "Massive hits"
+      ],
+      "cons": [
+        "Community asked for buffs (Reddit kdnw2n)",
+        "Ring slot locked"
+      ],
+      "runesGear": [
+        "Ring of Great Strength"
+      ],
+      "sources": [
+        {
+          "title": "Demon's Souls Wikidot – Ziz' Bramd Build (SL 90)",
+          "url": "https://demonssouls.wikidot.com/character-builds:486",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200 (HTML parsed)",
+          "note": "PS3 (2009) community build. Priest 36/18/40/36/8/8/16/8; Ring of Great Strength required."
+        },
+        {
+          "title": "Fextralife Wiki – Bramd",
+          "url": "https://demonssouls.wiki.fextralife.com/Bramd",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200 (HTML parsed)"
+        },
+        {
+          "title": "r/demonssouls – Weapons balancing in the remake",
+          "url": "https://www.reddit.com/r/demonssouls/comments/kdnw2n/weapons_balancing_in_the_remake/",
+          "siteType": "reddit",
+          "verifiedVia": "curl HTTP 200; content from search-index excerpt (Reddit blocks fetch)",
+          "note": "Original post asks for buffs to Blind, Istarelle and Bramd."
+        }
+      ]
+    },
+    {
+      "id": "sucker-invader",
+      "name": "Equipment-Breaker Invader (Scraping Spear / Fatal Estoc)",
+      "archetype": "PvP troll",
+      "tier": "C",
+      "tierReason": "Gimmick PvP: Scraping Spear wrecks gear durability; PS3 wikidot Sucker build plus Fextralife Magic Abuser (Scraping Spear swap).",
+      "weapons": [
+        "Fatal Estoc +5",
+        "Scraping Spear",
+        "Mercury Parrying Dagger +5",
+        "Baby's Nail +5"
+      ],
+      "firearm": "Cloak (optional)",
+      "stats": {
+        "spread": {
+          "VIT": 34,
+          "INT": 10,
+          "END": 25,
+          "STR": 11,
+          "DEX": 30,
+          "MAG": 10,
+          "FTH": 7,
+          "LCK": 13
+        },
+        "label": "Wikidot Sucker PvP Build 60lv (Wanderer) — SL60",
+        "level": 60
+      },
+      "ngNotes": "PS3 (2009) source.",
+      "playstyle": "Invisible invader that destroys hosts' weapons and armor.",
+      "bestFor": [
+        "PvP",
+        "challenge"
+      ],
+      "pros": [
+        "Frustrates turtles"
+      ],
+      "cons": [
+        "Gimmick"
+      ],
+      "runesGear": [
+        "Foe's Ring",
+        "Thief Ring"
+      ],
+      "sources": [
+        {
+          "title": "Demon's Souls Wikidot – Sucker PvP Build 60lv",
+          "url": "https://demonssouls.wikidot.com/character-builds:311",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200 (HTML parsed)",
+          "note": "PS3 (2009) community page."
+        },
+        {
+          "title": "Fextralife Wiki – Scraping Spear",
+          "url": "https://demonssouls.wiki.fextralife.com/Scraping+Spear",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200 (HTML parsed)"
+        },
+        {
+          "title": "Fextralife Wiki – Mid lvl Magic Abuser (PvP) community build",
+          "url": "https://demonssouls.wiki.fextralife.com/Subcontent:PvP_Builds_3_Mid_lvl_Magic_Abuser",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200 (HTML parsed)",
+          "note": "Royalty SL50 (listed): VIT 25/INT 14/END 10/MAG 40; Crescent Falchion +5, Scraping Spear, Clever Rat's Ring, Soul Ray + Fire Spray."
+        }
+      ]
+    },
+    {
+      "id": "sl1-royalty",
+      "name": "SL1 Royalty Challenge",
+      "archetype": "Challenge",
+      "tier": "C",
+      "tierReason": "Challenge category, not a power build. Royalty is the only class that starts at SL1 (SL1 Run Guidelines, Game8 class list).",
+      "weapons": [
+        "Any; the guidelines don't prescribe gear (Royalty starts with Rapier, Silver Catalyst, Buckler)"
+      ],
+      "firearm": "Soul Arrow (starting spell)",
+      "stats": {
+        "spread": {
+          "VIT": 8,
+          "INT": 12,
+          "END": 8,
+          "STR": 9,
+          "DEX": 12,
+          "MAG": 13,
+          "FTH": 12,
+          "LCK": 7
+        },
+        "label": "Royalty base — SL1",
+        "level": 1
+      },
+      "ngNotes": "All bosses must be killed; guidelines list banned exploits, including disabling AI through the boss fog on PS5.",
+      "playstyle": "No levelling; rely on upgrades, items and boss knowledge.",
+      "bestFor": [
+        "challenge"
+      ],
+      "pros": [
+        "Community-recognised ruleset"
+      ],
+      "cons": [
+        "Extremely hard"
+      ],
+      "runesGear": [
+        "Fragrant Ring (starting)",
+        "Silver Coronet (starting)"
+      ],
+      "sources": [
+        {
+          "title": "Demon's Souls Discord – SL1 Run Guidelines (Demon's Souls SL1 Repository)",
+          "url": "https://mikapall.github.io/Demon-s-Souls-SL1-Repository/",
+          "siteType": "guide",
+          "verifiedVia": "curl HTTP 200 (HTML parsed)",
+          "note": "Royalty is the only SL1 class; all bosses must be killed; lists banned exploits."
+        },
+        {
+          "title": "Game8 – Best Starting Class and Characteristics List",
+          "url": "https://game8.co/games/demons-souls/archives/306522",
+          "siteType": "guide",
+          "verifiedVia": "curl HTTP 200 (HTML parsed; WebFetch returns 403)"
+        },
+        {
+          "title": "r/demonssouls – All bosses in Demon's Souls Remake done at SL1…",
+          "url": "https://www.reddit.com/r/demonssouls/comments/ld8p12/all_bosses_in_demons_souls_remake_done_at_sl1/",
+          "siteType": "reddit",
+          "verifiedVia": "curl HTTP 200; content from search-index excerpt (Reddit blocks fetch)"
+        },
+        {
+          "title": "r/onebros – Finished my SL1 of the Demon's Souls remake",
+          "url": "https://www.reddit.com/r/onebros/comments/mc3h9h/finished_my_sl1_of_the_demons_souls_remake/",
+          "siteType": "reddit",
+          "verifiedVia": "curl HTTP 200; content from search-index excerpt (Reddit blocks fetch)"
+        }
+      ]
+    },
+    {
+      "id": "speedrun-any",
+      "name": "Any% Speedrun (remake)",
+      "archetype": "Speedrun",
+      "tier": "C",
+      "tierReason": "Speedrun category; route details sit on speedrun.com guides that return 403 to our fetchers, so only categories, rules and Bow Tech are verified.",
+      "weapons": [
+        "A bow (needed for Bow Tech fog-wall skips in unrestricted categories)"
+      ],
+      "firearm": "See speedrun.com route guide (unverified)",
+      "stats": {
+        "spread": {
+          "VIT": 9,
+          "INT": 15,
+          "END": 10,
+          "STR": 9,
+          "DEX": 11,
+          "MAG": 15,
+          "FTH": 6,
+          "LCK": 11
+        },
+        "label": "Magician base — SL6 (placeholder: class/levelling per unverified route guide)",
+        "level": 6
+      },
+      "ngNotes": "Any% ends at the credits/NG+. Pre-order and deluxe items are banned; runs must be offline.",
+      "playstyle": "Route through bosses with skips; Bow Tech enables OOB and AI freezes.",
+      "bestFor": [
+        "speedrun"
+      ],
+      "pros": [
+        "Clear community rules"
+      ],
+      "cons": [
+        "Route specifics unverified here"
+      ],
+      "runesGear": [],
+      "sources": [
+        {
+          "title": "SoulsSpeedruns Wiki – Demon's Souls (2020)",
+          "url": "https://soulsspeedruns.com/desremake",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200 (HTML parsed)",
+          "note": "Categories: Any%, Any% SL1, Any% Glitchless, Any% Force Quit, Offline Trophies."
+        },
+        {
+          "title": "SoulsSpeedruns Wiki – Demon's Souls (2020) Rules",
+          "url": "https://soulsspeedruns.com/desremake/rules",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200 (HTML parsed)"
+        },
+        {
+          "title": "SoulsSpeedruns Wiki – Bow Tech",
+          "url": "https://soulsspeedruns.com/desremake/bow-tech",
+          "siteType": "wiki",
+          "verifiedVia": "curl HTTP 200 (HTML parsed)",
+          "note": "Aiming a bow redirects the fog-wall walk animation for OOB skips/AI freezes; unrestricted categories only."
+        },
+        {
+          "title": "speedrun.com – Demon's Souls (2020) Any% current patch guide",
+          "url": "https://www.speedrun.com/demonssouls2020/guides/nqm8l",
+          "siteType": "guide",
+          "unverified": true,
+          "note": "Canonical guide; returns HTTP 403 to our fetchers, so contents were not read."
+        },
+        {
+          "title": "speedrun.com – Demon's Souls (2020) Bow Tech Route guide",
+          "url": "https://www.speedrun.com/demonssouls2020/guides/cjp0v",
+          "siteType": "guide",
+          "unverified": true,
+          "note": "Canonical guide; returns HTTP 403 to our fetchers, so contents were not read."
+        }
+      ]
+    }
+  ],
+  "guides": [
+    {
+      "title": "Fextralife Wiki – Builds",
+      "url": "https://demonssouls.wiki.fextralife.com/Builds",
+      "site": "Fextralife",
+      "siteType": "wiki",
+      "description": "Remake builds hub (PvE/PvP community builds, featured article builds)."
+    },
+    {
+      "title": "Fextralife Wiki – PvE Builds",
+      "url": "https://demonssouls.wiki.fextralife.com/PvE+Builds",
+      "site": "Fextralife",
+      "siteType": "wiki",
+      "description": "PvE community builds."
+    },
+    {
+      "title": "Fextralife Wiki – PvP Builds",
+      "url": "https://demonssouls.wiki.fextralife.com/PvP+Builds",
+      "site": "Fextralife",
+      "siteType": "wiki",
+      "description": "PvP community builds."
+    },
+    {
+      "title": "Fextralife Wiki – Classes",
+      "url": "https://demonssouls.wiki.fextralife.com/Classes",
+      "site": "Fextralife",
+      "siteType": "wiki",
+      "description": "All 10 starting classes and their base stats."
+    },
+    {
+      "title": "Fextralife Wiki – Stats",
+      "url": "https://demonssouls.wiki.fextralife.com/Stats",
+      "site": "Fextralife",
+      "siteType": "wiki",
+      "description": "What each stat does (Intelligence was 'Will' on PS3)."
+    },
+    {
+      "title": "Fextralife Wiki – Soul Level",
+      "url": "https://demonssouls.wiki.fextralife.com/Soul+Level",
+      "site": "Fextralife",
+      "siteType": "wiki",
+      "description": "Soul Level costs and level conventions."
+    },
+    {
+      "title": "Fextralife Wiki – Upgrades",
+      "url": "https://demonssouls.wiki.fextralife.com/Upgrades",
+      "site": "Fextralife",
+      "siteType": "wiki",
+      "description": "Weapon upgrade paths and ores."
+    },
+    {
+      "title": "Fextralife Wiki – World Tendency",
+      "url": "https://demonssouls.wiki.fextralife.com/World+Tendency",
+      "site": "Fextralife",
+      "siteType": "wiki",
+      "description": "World Tendency: what Pure White/Pure Black unlocks."
+    },
+    {
+      "title": "Fextralife Wiki – Character Tendency",
+      "url": "https://demonssouls.wiki.fextralife.com/Character+Tendency",
+      "site": "Fextralife",
+      "siteType": "wiki",
+      "description": "Character Tendency: affects Northern Regalia, Demonbrandt and others."
+    },
+    {
+      "title": "Fextralife Wiki – New Game Plus",
+      "url": "https://demonssouls.wiki.fextralife.com/New+Game+Plus",
+      "site": "Fextralife",
+      "siteType": "wiki",
+      "description": "New Game Plus changes."
+    },
+    {
+      "title": "Fextralife Wiki – Fractured Mode",
+      "url": "https://demonssouls.wiki.fextralife.com/Fractured+Mode",
+      "site": "Fextralife",
+      "siteType": "wiki",
+      "description": "Fractured Mode (remake-only mirrored world)."
+    },
+    {
+      "title": "Fextralife – Soul Mage Build (beginner)",
+      "url": "https://fextralife.com/demons-souls-builds-soul-mage-beginner/",
+      "site": "Fextralife",
+      "siteType": "guide",
+      "description": "Soul Mage beginner build walkthrough (Royalty)."
+    },
+    {
+      "title": "Fextralife – Homing Soul Samurai Build (PvP/PvE Battlemage)",
+      "url": "https://fextralife.com/demons-souls-builds-homing-soul-samurai-pvp-pve-battlemage/",
+      "site": "Fextralife",
+      "siteType": "guide",
+      "description": "Homing Soul Samurai battlemage build walkthrough."
+    },
+    {
+      "title": "Game8 – Best Builds and Stat Explanation",
+      "url": "https://game8.co/games/demons-souls/archives/306594",
+      "site": "Game8",
+      "siteType": "guide",
+      "description": "Best builds overview with stat templates (PS5 remake)."
+    },
+    {
+      "title": "Game8 – Best Starter Builds",
+      "url": "https://game8.co/games/demons-souls/archives/309277",
+      "site": "Game8",
+      "siteType": "guide",
+      "description": "Best starter builds for a first playthrough."
+    },
+    {
+      "title": "Game8 – Best Starting Class and Characteristics List",
+      "url": "https://game8.co/games/demons-souls/archives/306522",
+      "site": "Game8",
+      "siteType": "guide",
+      "description": "Best starting class and base stats for every class."
+    },
+    {
+      "title": "Game8 – Best Weapons to Use",
+      "url": "https://game8.co/games/demons-souls/archives/309230",
+      "site": "Game8",
+      "siteType": "guide",
+      "description": "Best weapons to use, with locations and requirements."
+    },
+    {
+      "title": "Game8 – How to Upgrade Weapons",
+      "url": "https://game8.co/games/demons-souls/archives/306585",
+      "site": "Game8",
+      "siteType": "guide",
+      "description": "How weapon upgrade paths (Sharp, Crushing, Moon, Blessed, etc.) work."
+    },
+    {
+      "title": "Game8 – Tips for Beginners",
+      "url": "https://game8.co/games/demons-souls/archives/306632",
+      "site": "Game8",
+      "siteType": "guide",
+      "description": "Tips for beginners."
+    },
+    {
+      "title": "Samurai Gamers – Demon's Souls Remake: Best Character Builds",
+      "url": "https://samurai-gamers.com/demons-souls-remake/best-character-builds/",
+      "site": "Samurai Gamers",
+      "siteType": "guide",
+      "description": "Best character builds: Pure Melee Warrior and Pure Magic."
+    },
+    {
+      "title": "Game Rant – Demon's Souls Remake: Why the Royalty Class is Considered 'Easy Mode'",
+      "url": "https://gamerant.com/demons-souls-remake-ps5-royalty-class-best-easy-soul-arrow/",
+      "site": "Game Rant",
+      "siteType": "guide",
+      "description": "Why Royalty is considered 'easy mode'."
+    },
+    {
+      "title": "GamesRadar+ – The best Demon's Souls PS5 class for beginners, as well as all the other options",
+      "url": "https://www.gamesradar.com/demons-souls-ps5-best-class/",
+      "site": "GamesRadar+",
+      "siteType": "guide",
+      "description": "Best beginner class and all class options."
+    },
+    {
+      "title": "Push Square – Demon's Souls: Which Class Should You Pick?",
+      "url": "https://www.pushsquare.com/guides/demons-souls-which-class-should-you-pick",
+      "site": "Push Square",
+      "siteType": "guide",
+      "description": "Which class to pick."
+    },
+    {
+      "title": "TheGamer – Demon's Souls PS5: Every Stat In The Remake And What They Do, Ranked",
+      "url": "https://www.thegamer.com/demons-souls-ps5-remake-stats-ranked/",
+      "site": "TheGamer",
+      "siteType": "guide",
+      "description": "Every remake stat explained and ranked."
+    },
+    {
+      "title": "Demon's Souls Wikidot – Character Builds (index)",
+      "url": "https://demonssouls.wikidot.com/character-builds",
+      "site": "Demon's Souls Wikidot",
+      "siteType": "wiki",
+      "description": "PS3-era community build index (many builds still apply to the remake)."
+    },
+    {
+      "title": "Demon's Souls Wikidot – Player vs Player",
+      "url": "https://demonssouls.wikidot.com/pvp",
+      "site": "Demon's Souls Wikidot",
+      "siteType": "wiki",
+      "description": "PS3-era PvP mechanics."
+    },
+    {
+      "title": "r/demonssouls – Questions about the remake meta (long)",
+      "url": "https://www.reddit.com/r/demonssouls/comments/lj6qrv/questions_about_the_remake_meta_long/",
+      "site": "Reddit",
+      "siteType": "reddit",
+      "description": "Remake meta discussion: SL125 PvP meta; chain backstabs removed."
+    },
+    {
+      "title": "r/demonssouls – Best weapons for PvP?",
+      "url": "https://www.reddit.com/r/demonssouls/comments/p2fvry/best_weapons_for_pvp/",
+      "site": "Reddit",
+      "siteType": "reddit",
+      "description": "Best PvP weapons thread (Blessed Mirdan + Adjudicator's Shield etc.)."
+    },
+    {
+      "title": "Demon's Souls Discord – SL1 Run Guidelines (Demon's Souls SL1 Repository)",
+      "url": "https://mikapall.github.io/Demon-s-Souls-SL1-Repository/",
+      "site": "Demon's Souls Discord",
+      "siteType": "guide",
+      "description": "SL1 run guidelines and banned exploits."
+    },
+    {
+      "title": "SoulsSpeedruns Wiki – Demon's Souls (2020)",
+      "url": "https://soulsspeedruns.com/desremake",
+      "site": "SoulsSpeedruns",
+      "siteType": "wiki",
+      "description": "Speedrun categories for the 2020 remake."
+    },
+    {
+      "title": "SoulsSpeedruns Wiki – Demon's Souls (2020) Rules",
+      "url": "https://soulsspeedruns.com/desremake/rules",
+      "site": "SoulsSpeedruns",
+      "siteType": "wiki",
+      "description": "Speedrun rules (offline, banned pre-order/deluxe items)."
+    },
+    {
+      "title": "SoulsSpeedruns Wiki – Bow Tech",
+      "url": "https://soulsspeedruns.com/desremake/bow-tech",
+      "site": "SoulsSpeedruns",
+      "siteType": "wiki",
+      "description": "Bow Tech fog-wall skips explained."
+    },
+    {
+      "title": "speedrun.com – Demon's Souls (2020) Any% current patch guide",
+      "url": "https://www.speedrun.com/demonssouls2020/guides/nqm8l",
+      "site": "speedrun.com",
+      "siteType": "guide",
+      "description": "Any% current-patch route guide (blocked to automated fetch).",
+      "unverified": true
+    },
+    {
+      "title": "GameFAQs Demon's Souls board – 'A list of changes' (remake)",
+      "url": "https://gamefaqs.gamespot.com/boards/292818-demons-souls/79114333",
+      "site": "GameFAQs",
+      "siteType": "forum",
+      "description": "Remake 'list of changes' board thread (blocked to automated fetch).",
+      "unverified": true
+    }
+  ]
+}

@@ -111,6 +111,31 @@ function fieldLabel(meta, key) {
   return labels[key] || FIELD_DEFAULTS[key] || key;
 }
 
+function platformLabel(build) {
+  const value = build && build.platform;
+  return typeof value === "string" && value.trim() ? value.trim() : "";
+}
+
+function platformBadge(build) {
+  const label = platformLabel(build);
+  return label ? el("span", { class: "platform", text: label }) : null;
+}
+
+function renderAlt(alt, order) {
+  if (typeof alt === "string" || typeof alt === "number") return el("li", { text: String(alt) });
+  if (!alt || typeof alt !== "object") return el("li", { text: alt == null ? "" : String(alt) });
+  const prefix = state.game && state.game.levelPrefix;
+  const level = alt.level == null || alt.level === "" ? "" : (prefix ? `${prefix} ${alt.level}` : `Level ${alt.level}`);
+  const spread = alt.spread && typeof alt.spread === "object"
+    ? order.filter((key) => alt.spread[key] != null).map((key) => `${key} ${alt.spread[key]}`).join(" · ")
+    : "";
+  return el("li", { class: "alt" }, [
+    alt.name ? el("span", { class: "alt-name", text: String(alt.name) }) : null,
+    level ? el("span", { class: "alt-level", text: level }) : null,
+    spread ? el("span", { class: "alt-spread", text: spread }) : null
+  ]);
+}
+
 function statOrder(meta, game) {
   if (meta && Array.isArray(meta.statOrder) && meta.statOrder.length) return meta.statOrder;
   if (game && Array.isArray(game.statLabels) && game.statLabels.length) return game.statLabels;
@@ -358,12 +383,21 @@ function renderGameTabs() {
       });
     })
   );
+  const selected = row.querySelector("[aria-pressed='true']");
+  if (!selected) return;
+  const pad = 2;
+  const leftEdge = selected.offsetLeft;
+  const rightEdge = leftEdge + selected.offsetWidth;
+  if (leftEdge < row.scrollLeft) row.scrollTo({ left: Math.max(0, leftEdge - pad) });
+  else if (rightEdge > row.scrollLeft + row.clientWidth) {
+    row.scrollTo({ left: rightEdge - row.clientWidth + pad });
+  }
 }
 
 function renderCard(build) {
   const extra = build.weapons.length > 1 ? build.weapons.length - 1 : 0;
   return el("button", { type: "button", class: "card", "data-tier": build.tier, "data-id": build.id }, [
-    el("span", { class: "card-kicker", text: build.archetype }),
+    el("span", { class: "card-kicker" }, [build.archetype, platformBadge(build)]),
     el("span", { class: "card-name", text: build.name }),
     el("span", { class: "card-weapon" }, [
       build.weapons[0] || "",
@@ -503,11 +537,12 @@ function sourceList(sources) {
 function renderBuild(build) {
   const meta = state.data.meta;
   const alts = build.stats.altSpreads || [];
+  const order = statOrder(meta, state.game);
   const prefix = state.game.levelPrefix;
   const level = prefix ? `${prefix} ${build.stats.level}` : `Level ${build.stats.level}`;
   const root = el("article", {}, [
     el("p", { class: "tier-pill", "data-tier": build.tier, text: `Tier ${build.tier}` }),
-    el("p", { class: "sheet-kicker", text: build.archetype }),
+    el("p", { class: "sheet-kicker" }, [build.archetype, platformBadge(build)]),
     el("h2", { id: "sheet-title", text: build.name }),
     el("p", { class: "play-full", text: build.playstyle }),
     el("hr", { class: "rule" }),
@@ -528,7 +563,7 @@ function renderBuild(build) {
       alts.length
         ? el("div", { class: "block" }, [
             el("h3", { text: "Alternatives" }),
-            el("ul", { class: "clean" }, alts.map((alt) => el("li", { text: alt })))
+            el("ul", { class: "clean" }, alts.map((alt) => renderAlt(alt, order)))
           ])
         : null
     ]),
