@@ -60,6 +60,37 @@
         { "id": "NG+", "label": "NG+", "kind": "ngplus" },
         { "id": "dlc", "label": "DLC", "kind": "pattern", "pattern": "shadow of the erdtree|\\bdlc\\b", "fields": ["bestFor", "name", "ngNotes"] }
       ]
+    },
+    {
+      "id": "demons-souls",
+      "name": "Demon's Souls",
+      "file": "data/demons-souls.json",
+      "accent": "#8ea4b8",
+      "accentDeep": "#5c7388",
+      "levelPrefix": "SL",
+      "statLabels": ["VIT", "INT", "END", "STR", "DEX", "MAG", "FTH", "LCK"],
+      "archetypeFilters": [
+        { "id": "Strength", "label": "Strength", "includes": ["strength"] },
+        { "id": "Dexterity", "label": "Dexterity", "includes": ["dexterity"], "words": ["dex"] },
+        { "id": "Magic", "label": "Magic", "includes": ["magic"] },
+        { "id": "Faith", "label": "Faith", "includes": ["faith"] },
+        { "id": "Luck", "label": "Luck", "includes": ["luck"] },
+        { "id": "Quality", "label": "Quality", "includes": ["quality"] },
+        {
+          "id": "Hybrid",
+          "label": "Hybrid",
+          "kind": "hybrid",
+          "groups": [["strength"], ["dexterity", "dex"], ["magic"], ["faith"], ["luck"], ["quality"]],
+          "pure": ["quality", "strength", "dexterity", "dex"]
+        }
+      ],
+      "bestForFilters": [
+        { "id": "PvE", "label": "PvE", "kind": "pve" },
+        { "id": "PvP", "label": "PvP", "kind": "pvp" },
+        { "id": "beginner", "label": "Beginner", "kind": "pattern", "pattern": "beginner|first playthrough|brand-new|starter|first run", "fields": ["bestFor", "archetype", "name"] },
+        { "id": "NG+", "label": "NG+", "kind": "ngplus" },
+        { "id": "challenge", "label": "Challenge", "kind": "pattern", "pattern": "challenge", "fields": ["bestFor", "archetype", "name"] }
+      ]
     }
   ]
 }

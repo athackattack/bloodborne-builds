@@ -1,5 +1,5 @@
 // Network-first shell. CACHE is the version string: bump it when shipped assets change.
-const CACHE = "souls-builds-v3-20261030231500";
+const CACHE = "souls-builds-v4-20261031014500";
 const SHELL = [
   "./",
   "./index.html",
@@ -8,6 +8,7 @@ const SHELL = [
   "./data/games.json",
   "./data/bloodborne.json",
   "./data/elden-ring.json",
+  "./data/demons-souls.json",
   "./manifest.json",
   "./icon.svg",
   "./favicon-32.png",
