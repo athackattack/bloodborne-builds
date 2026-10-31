@@ -1,0 +1,36 @@
+{
+  "mode": "embed",
+  "embeds": [
+    {
+      "id": "lands-between",
+      "label": "Lands Between",
+      "embedUrl": "https://mapgenie.io/elden-ring/maps/the-lands-between?embed=light",
+      "url": "https://mapgenie.io/elden-ring/maps/the-lands-between",
+      "credit": "Map by MapGenie"
+    },
+    {
+      "id": "shadow-realm",
+      "label": "Shadow of the Erdtree",
+      "embedUrl": "https://mapgenie.io/elden-ring/maps/the-shadow-realm?embed=light",
+      "url": "https://mapgenie.io/elden-ring/maps/the-shadow-realm",
+      "credit": "Map by MapGenie"
+    }
+  ],
+  "mapLinks": [
+    {
+      "label": "MapGenie — The Lands Between",
+      "url": "https://mapgenie.io/elden-ring/maps/the-lands-between",
+      "note": "The same map, opened in a new tab."
+    },
+    {
+      "label": "MapGenie — Shadow of the Erdtree",
+      "url": "https://mapgenie.io/elden-ring/maps/the-shadow-realm",
+      "note": "The Shadow Realm map, opened in a new tab."
+    },
+    {
+      "label": "Fextralife interactive map",
+      "url": "https://eldenring.wiki.fextralife.com/Interactive+Map",
+      "note": "Opens in a new tab. That site does not allow embedding."
+    }
+  ]
+}

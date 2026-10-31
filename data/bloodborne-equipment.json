@@ -1,0 +1,3395 @@
+{
+  "meta": {
+    "notes": "Generated 2026-10-30 from Fextralife's Bloodborne wiki (list tables plus each item's page; all pages curl-200). stats.baseAttack = +0 damage from Fextralife's Trick Weapons / Firearms list tables (firearm base damage appears in the 'blood' column as Fextralife publishes it); attackAt+10 from the page's +10 row. scaling '+0' letters come from the list table and '+10' from the page stats table. requirements = STR/SKL/BLT/ARC minimums. Hunter tools: Fextralife's table gives one requirement number; it is the Arcane requirement (explicit on several tool pages). Bloodborne attire has no weight stat, so armorSets.weight is empty; defense totals are in notes. Locations are per piece where the wiki lists them. See NOTES.md for caveats.",
+    "counts": {
+      "weapons": 54,
+      "byType": {
+        "trick-weapon-dlc": 11,
+        "trick-weapon": 15,
+        "firearm": 11,
+        "firearm-dlc": 5,
+        "hunter-tool": 12
+      },
+      "armorSets": 36
+    }
+  },
+  "weaponTypes": [
+    {
+      "id": "trick-weapon",
+      "name": "Trick Weapons"
+    },
+    {
+      "id": "trick-weapon-dlc",
+      "name": "Trick Weapons (The Old Hunters DLC)"
+    },
+    {
+      "id": "firearm",
+      "name": "Firearms & Off-hand"
+    },
+    {
+      "id": "firearm-dlc",
+      "name": "Firearms & Off-hand (The Old Hunters DLC)"
+    },
+    {
+      "id": "hunter-tool",
+      "name": "Hunter Tools (Arcane)"
+    }
+  ],
+  "weapons": [
+    {
+      "id": "amygdalan-arm",
+      "name": "Amygdalan Arm",
+      "type": "trick-weapon-dlc",
+      "description": "The arm of a small Amygdala Great One. Strictly speaking, the Amygdalan Arm is no trick weapon of any sort, but certain madmen wield them like clubs. Starts as a large, tough blunt weapon formed of bone, but when extended, the hand quivers as if it were still alive.",
+      "stats": {
+        "baseAttack": {
+          "physical": 80,
+          "arcane": 40
+        },
+        "attackAt+10": {
+          "physical": 160,
+          "arcane": 80
+        },
+        "vsKin": 100,
+        "vsBeasts": 100,
+        "durability": 200,
+        "gemImprints": {
+          "normal": "radial, radial, triangular",
+          "uncanny": "radial, radial, waning",
+          "lost": "radial, triangular, waning"
+        },
+        "forms": "Transforms from a club to a scythe-like arm with a deceptively long reach and a whip-like, fluid motion."
+      },
+      "scaling": {
+        "+0": {
+          "STR": "C",
+          "SKL": "E",
+          "ARC": "D"
+        },
+        "+10": {
+          "STR": "A",
+          "SKL": "E",
+          "ARC": "C"
+        }
+      },
+      "requirements": {
+        "STR": 17,
+        "SKL": 9
+      },
+      "upgradePath": "Fortify at the Workshop (Hunter's Dream or Abandoned Old Workshop) from +0 to +10: +1/+2/+3 cost 3/5/8 Blood Stone Shards; +4/+5/+6 cost 3/5/8 Twin Blood Stone Shards; +7/+8/+9 cost 3/5/8 Blood Stone Chunks; +10 costs 1 Blood Rock (16/16/16/1 total), plus Blood Echoes at each step.",
+      "location": "The Hunter's Nightmare, cave to the right after getting out of the building that used to be the shortcut to the Cleric Beast. (DLC Weapon)",
+      "source": {
+        "label": "Fextralife – Amygdalan Arm",
+        "url": "https://bloodborne.wiki.fextralife.com/Amygdalan_Arm",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "beast-claw",
+      "name": "Beast Claw",
+      "type": "trick-weapon",
+      "description": "Beastly weapon wielded by Irreverent Izzy. Crafted by chiseling the long bones of an undead darkbeast and fastening them to the weapon. The bones are still alive, and when unleashed, grant its wielder a spurt of beastly power. As flesh is flayed and blood is sprayed, the beast within awakens, and in time, the wielder of this weapon surges with both strength and feverish reverie.",
+      "stats": {
+        "baseAttack": {
+          "physical": 75
+        },
+        "attackAt+10": {
+          "physical": 150
+        },
+        "vsKin": 100,
+        "vsBeasts": 100,
+        "durability": 180,
+        "gemImprints": {
+          "normal": "radial, triangular, radial",
+          "uncanny": "radial, waning, radial",
+          "lost": "radial, triangular, waning"
+        },
+        "forms": "In its regular form, this weapon functions as a basic claw, resembling an extended fist."
+      },
+      "scaling": {
+        "+0": {
+          "STR": "D",
+          "SKL": "E",
+          "ARC": "D"
+        },
+        "+10": {
+          "STR": "C",
+          "SKL": "D",
+          "ARC": "D"
+        }
+      },
+      "requirements": {
+        "STR": 14,
+        "SKL": 12
+      },
+      "upgradePath": "Fortify at the Workshop (Hunter's Dream or Abandoned Old Workshop) from +0 to +10: +1/+2/+3 cost 3/5/8 Blood Stone Shards; +4/+5/+6 cost 3/5/8 Twin Blood Stone Shards; +7/+8/+9 cost 3/5/8 Blood Stone Chunks; +10 costs 1 Blood Rock (16/16/16/1 total), plus Blood Echoes at each step.",
+      "location": "Ailing Loran Chalice",
+      "source": {
+        "label": "Fextralife – Beast Claw",
+        "url": "https://bloodborne.wiki.fextralife.com/Beast_Claw",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "beasthunter-saif",
+      "name": "Beasthunter Saif",
+      "type": "trick-weapon-dlc",
+      "description": "A trick weapon used by the old hunters. A second blade is found inside the curve of the main one. In its initial form, the saif can be wielded like a long curved sword, but when transformed, its blade is contracted, allowing for quick, repeated stabs. Although this trick weapon allows for adaptive combat, it was later replaced by saws and similar weapons that were more effective at disposing of beasts.",
+      "stats": {
+        "baseAttack": {
+          "physical": 90
+        },
+        "vsKin": 100,
+        "vsBeasts": 100,
+        "durability": 200,
+        "gemImprints": {
+          "normal": "radial, radial, waning",
+          "uncanny": "radial, waning, radial",
+          "lost": "radial, triangular, waning"
+        },
+        "forms": "Transforms from a curved long sword to a short weapon like the Saw Cleaver"
+      },
+      "scaling": {
+        "+0": {
+          "STR": "E",
+          "SKL": "D",
+          "ARC": "D"
+        }
+      },
+      "requirements": {
+        "STR": 9,
+        "SKL": 11
+      },
+      "upgradePath": "Fortify at the Workshop (Hunter's Dream or Abandoned Old Workshop) from +0 to +10: +1/+2/+3 cost 3/5/8 Blood Stone Shards; +4/+5/+6 cost 3/5/8 Twin Blood Stone Shards; +7/+8/+9 cost 3/5/8 Blood Stone Chunks; +10 costs 1 Blood Rock (16/16/16/1 total), plus Blood Echoes at each step.",
+      "location": "The Hunter's Nightmare. Area to after passing the Nightmare Cathedral. (DLC Weapon)",
+      "source": {
+        "label": "Fextralife – Beasthunter Saif",
+        "url": "https://bloodborne.wiki.fextralife.com/Beasthunter_Saif",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "beast-cutter",
+      "name": "Beast Cutter",
+      "type": "trick-weapon-dlc",
+      "description": "A trick weapon used by Old Hunters. This thick iron cleaver slices through the toughest of beast hides, and when transformed the blade splits into sections, allowing one to lash it in the fashion of a heavy whip. This crude weapon relies on brute force and is regrettably inelegant, suggesting that the hunts of the earliest hunters made for horrific affairs, painted in sanguine black and reds.",
+      "stats": {
+        "baseAttack": {
+          "physical": 92
+        },
+        "attackAt+10": {
+          "physical": 184
+        },
+        "vsKin": 100,
+        "vsBeasts": 100,
+        "durability": 230,
+        "gemImprints": {
+          "normal": "radial, radial, triangular",
+          "uncanny": "radial, radial, waning",
+          "lost": "waning, triangular, waning"
+        },
+        "forms": "Transforms from one-handed cleaver-like sword to a slow, long-range and heavy whip."
+      },
+      "scaling": {
+        "+0": {
+          "STR": "D",
+          "SKL": "E",
+          "ARC": "E"
+        },
+        "+10": {
+          "STR": "C",
+          "SKL": "D",
+          "ARC": "D"
+        }
+      },
+      "requirements": {
+        "STR": 11,
+        "SKL": 9
+      },
+      "upgradePath": "Fortify at the Workshop (Hunter's Dream or Abandoned Old Workshop) from +0 to +10: +1/+2/+3 cost 3/5/8 Blood Stone Shards; +4/+5/+6 cost 3/5/8 Twin Blood Stone Shards; +7/+8/+9 cost 3/5/8 Blood Stone Chunks; +10 costs 1 Blood Rock (16/16/16/1 total), plus Blood Echoes at each step.",
+      "location": "Walking down the stairs from the Nightmare Cathedral Lamp in The Hunter's Nightmare, stick to the right and aim for the higher areas. (DLC Weapon)",
+      "source": {
+        "label": "Fextralife – Beast Cutter",
+        "url": "https://bloodborne.wiki.fextralife.com/Beast_Cutter",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "blade-of-mercy",
+      "name": "Blade of Mercy",
+      "type": "trick-weapon",
+      "description": "A special trick weapon passed down among hunters of hunters. One of the oldest weapons of the workshop. Splits into two when activated. The weapon's warped blades are forged with siderite, a rare mineral of the heavens. Most effective swift attacks,such as after a quick-stepping.",
+      "stats": {
+        "baseAttack": {
+          "physical": 60,
+          "arcane": 30
+        },
+        "attackAt+10": {
+          "physical": 120,
+          "arcane": 60
+        },
+        "vsKin": 100,
+        "vsBeasts": 100,
+        "durability": 200,
+        "rally": 30,
+        "gemImprints": {
+          "normal": "radial, triangular, radial",
+          "uncanny": "radial, waning, radial",
+          "lost": "radial, triangular, waning"
+        },
+        "forms": "Transforms from a single-handed short-sword to dual-blades wielded in both hands."
+      },
+      "scaling": {
+        "+0": {
+          "SKL": "C",
+          "ARC": "D"
+        },
+        "+10": {
+          "SKL": "S",
+          "ARC": "B"
+        }
+      },
+      "requirements": {
+        "STR": 7,
+        "SKL": 11
+      },
+      "upgradePath": "Fortify at the Workshop (Hunter's Dream or Abandoned Old Workshop) from +0 to +10: +1/+2/+3 cost 3/5/8 Blood Stone Shards; +4/+5/+6 cost 3/5/8 Twin Blood Stone Shards; +7/+8/+9 cost 3/5/8 Blood Stone Chunks; +10 costs 1 Blood Rock (16/16/16/1 total), plus Blood Echoes at each step.",
+      "location": "Can be purchased from the Messengers for 40,000 Blood Echoes after obtaining the Crow Hunter Badgefrom either finishing Eileen's quest or killing her.",
+      "source": {
+        "label": "Fextralife – Blade of Mercy",
+        "url": "https://bloodborne.wiki.fextralife.com/Blade_of_Mercy",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "bloodletter",
+      "name": "Bloodletter",
+      "type": "trick-weapon-dlc",
+      "description": "The demented hunter weapon brandished by Brador, the Healing Church assassin. The Bloodletter assumes its true and terrifying form after it draws upon blood from the inner reaches of one's body and soul. This is the only effective means of expelling tainted blood, or so Brador, isolated in his cell, continued to believe.",
+      "stats": {
+        "baseAttack": {
+          "physical": 90,
+          "blood": 90
+        },
+        "vsKin": 100,
+        "vsBeasts": 100,
+        "durability": 270,
+        "gemImprints": {
+          "normal": "radial, radial, triangular",
+          "uncanny": "radial, radial, waning",
+          "lost": "radial, triangular, waning"
+        },
+        "forms": "Transforms from a short one-handed mace to a large two-handed bloody morning star at a price of its user's health."
+      },
+      "scaling": {
+        "+0": {
+          "STR": "C",
+          "BLT": "B",
+          "ARC": "D"
+        }
+      },
+      "requirements": {
+        "STR": 14,
+        "SKL": 6,
+        "BLT": 16
+      },
+      "upgradePath": "Fortify at the Workshop (Hunter's Dream or Abandoned Old Workshop) from +0 to +10: +1/+2/+3 cost 3/5/8 Blood Stone Shards; +4/+5/+6 cost 3/5/8 Twin Blood Stone Shards; +7/+8/+9 cost 3/5/8 Blood Stone Chunks; +10 costs 1 Blood Rock (16/16/16/1 total), plus Blood Echoes at each step.",
+      "location": "The Hunter's Nightmare cells before Research Hall. Can be obtained after killing Brador. (DLC Weapon)",
+      "source": {
+        "label": "Fextralife – Bloodletter",
+        "url": "https://bloodborne.wiki.fextralife.com/Bloodletter",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "boom-hammer",
+      "name": "Boom Hammer",
+      "type": "trick-weapon-dlc",
+      "description": "A trick weapon used by the old hunters, and crafted by the workshop heretics, the Powder Kegs. A giant hammer equipped with a miniature furnace. When ignited and fired, it emits a volley of flame that explodes furiously upon impact. Crush the beasts, then burn them - the brute simplicity of the Boom Hammer was favored by hunters with an acute distaste for beasts.",
+      "stats": {
+        "baseAttack": {
+          "physical": 90,
+          "fire": 60
+        },
+        "vsKin": 100,
+        "vsBeasts": 100,
+        "durability": 100,
+        "gemImprints": {
+          "normal": "radial, waning, radial",
+          "uncanny": "radial, triangular, radial",
+          "lost": "radial, triangular, waning"
+        },
+        "forms": "Transforming the weapon makes the hunter ignite the hammer, giving bonus fire damage to the next attack."
+      },
+      "scaling": {
+        "+0": {
+          "STR": "C",
+          "SKL": "E",
+          "ARC": "D"
+        }
+      },
+      "requirements": {
+        "STR": 14,
+        "SKL": 8
+      },
+      "upgradePath": "Fortify at the Workshop (Hunter's Dream or Abandoned Old Workshop) from +0 to +10: +1/+2/+3 cost 3/5/8 Blood Stone Shards; +4/+5/+6 cost 3/5/8 Twin Blood Stone Shards; +7/+8/+9 cost 3/5/8 Blood Stone Chunks; +10 costs 1 Blood Rock (16/16/16/1 total), plus Blood Echoes at each step.",
+      "location": "The Hunter's Nightmare inside the house that used to be the location of the wheelchair gunner. (DLC Weapon)",
+      "source": {
+        "label": "Fextralife – Boom Hammer",
+        "url": "https://bloodborne.wiki.fextralife.com/Boom_Hammer",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "burial-blade",
+      "name": "Burial Blade",
+      "type": "trick-weapon",
+      "description": "Trick weapon wielded by Gehrman, the first hunter.\" A masterpiece that defined the entire array of weapons crafted at the workshop. Its blade is forged with siderite, said to have fallen from the heavens. Gehrman surely saw the hunt as a dirge of farewell, wishing only that his prey might rest in peace, never again to awaken to another harrowing nightmare.",
+      "stats": {
+        "baseAttack": {
+          "physical": 80,
+          "arcane": 30
+        },
+        "attackAt+10": {
+          "physical": 160,
+          "arcane": 60
+        },
+        "vsKin": 100,
+        "vsBeasts": 100,
+        "durability": 200,
+        "gemImprints": {
+          "normal": "radial, waning, radial",
+          "uncanny": "radial, triangular, radial",
+          "lost": "radial, triangular, waning"
+        },
+        "forms": "Transforms from a one-handed curved sword to a two-handed large scythe."
+      },
+      "scaling": {
+        "+0": {
+          "STR": "E",
+          "SKL": "C",
+          "ARC": "D"
+        },
+        "+10": {
+          "STR": "D",
+          "SKL": "B",
+          "ARC": "B"
+        }
+      },
+      "requirements": {
+        "STR": 10,
+        "SKL": 12
+      },
+      "upgradePath": "Fortify at the Workshop (Hunter's Dream or Abandoned Old Workshop) from +0 to +10: +1/+2/+3 cost 3/5/8 Blood Stone Shards; +4/+5/+6 cost 3/5/8 Twin Blood Stone Shards; +7/+8/+9 cost 3/5/8 Blood Stone Chunks; +10 costs 1 Blood Rock (16/16/16/1 total), plus Blood Echoes at each step.",
+      "location": "Can be purchased from the Messengers for 60,000 Blood Echoes after defeating Gehrman, The First Hunter",
+      "source": {
+        "label": "Fextralife – Burial Blade",
+        "url": "https://bloodborne.wiki.fextralife.com/Burial_Blade",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "chikage",
+      "name": "Chikage",
+      "type": "trick-weapon",
+      "description": "Foreign-made weapon wielded by the royal guards who protect Annalise, Queen of the Vilebloods at Cainhurst Castle. When the intricate, rippled engraving that spans the Chikage's blade is imbrued with blood, the sword sings in scarlet hues. However, the rite eats away at the wielder's very essence.",
+      "stats": {
+        "baseAttack": {
+          "physical": 92,
+          "blood": 92,
+          "rapidPoison": 30
+        },
+        "attackAt+10": {
+          "physical": 184,
+          "blood": 184,
+          "rapidPoison": 30
+        },
+        "vsKin": 100,
+        "vsBeasts": 100,
+        "durability": 120,
+        "rally": 40,
+        "gemImprints": {
+          "normal": "radial, radial, triangular",
+          "uncanny": "radial, radial, waning",
+          "lost": "radial, triangular, gun"
+        },
+        "forms": "The Chikage transforms from a one-handed sword into a two-handed, blood-imbued weapon."
+      },
+      "scaling": {
+        "+0": {
+          "STR": "E",
+          "SKL": "D",
+          "BLT": "C",
+          "ARC": "D"
+        },
+        "+10": {
+          "STR": "E",
+          "SKL": "B",
+          "BLT": "S",
+          "ARC": "D"
+        }
+      },
+      "requirements": {
+        "STR": 10,
+        "SKL": 14,
+        "BLT": 12
+      },
+      "upgradePath": "Fortify at the Workshop (Hunter's Dream or Abandoned Old Workshop) from +0 to +10: +1/+2/+3 cost 3/5/8 Blood Stone Shards; +4/+5/+6 cost 3/5/8 Twin Blood Stone Shards; +7/+8/+9 cost 3/5/8 Blood Stone Chunks; +10 costs 1 Blood Rock (16/16/16/1 total), plus Blood Echoes at each step.",
+      "location": "Can be purchased from the Messengers for 50,000 Blood Echoes after obtaining the Cainhurst Badge",
+      "source": {
+        "label": "Fextralife – Chikage",
+        "url": "https://bloodborne.wiki.fextralife.com/Chikage",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "church-pick",
+      "name": "Church Pick",
+      "type": "trick-weapon-dlc",
+      "description": "One of the old trick weapons of the Healing Church, a hunting weapon formed from one of the giant picks that appear in old beast tales. The Church Pick initially serves as a large sword, but when transformed functions as an extended war pick. In spite of its origins, it is a highly practical weapon.",
+      "stats": {
+        "baseAttack": {
+          "physical": 88
+        },
+        "attackAt+10": {
+          "physical": 176
+        },
+        "vsKin": 100,
+        "vsBeasts": 100,
+        "durability": 250,
+        "gemImprints": {
+          "normal": "radial, radial, triangular",
+          "uncanny": "radial, radial, waning",
+          "lost": "radial, triangular, waning"
+        },
+        "forms": "Transforms from a large sword to a war pick."
+      },
+      "scaling": {
+        "+0": {
+          "STR": "E",
+          "SKL": "D",
+          "ARC": "D"
+        },
+        "+10": {
+          "STR": "D",
+          "SKL": "B",
+          "ARC": "C"
+        }
+      },
+      "requirements": {
+        "STR": 9,
+        "SKL": 14
+      },
+      "upgradePath": "Fortify at the Workshop (Hunter's Dream or Abandoned Old Workshop) from +0 to +10: +1/+2/+3 cost 3/5/8 Blood Stone Shards; +4/+5/+6 cost 3/5/8 Twin Blood Stone Shards; +7/+8/+9 cost 3/5/8 Blood Stone Chunks; +10 costs 1 Blood Rock (16/16/16/1 total), plus Blood Echoes at each step.",
+      "location": "The Hunter's Nightmare dropped by a hunter wearing Yahar'Gul set in one of the cells that you open with the Underground Cell Key from the Research Hall. (DLC Weapon)",
+      "source": {
+        "label": "Fextralife – Church Pick",
+        "url": "https://bloodborne.wiki.fextralife.com/Church_Pick",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "holy-moonlight-sword",
+      "name": "Holy Moonlight Sword",
+      "type": "trick-weapon-dlc",
+      "description": "An arcane sword discovered long ago by Ludwig. When blue moonlight dances around the sword, and it channels the abyssal cosmos, its great blade will hurl a shadowy lightwave. The Holy Moonlight Sword is synonymous with Ludwig, the Holy Blade, but few have ever set eyes on the great blade, and whatever guidance it has to offer, it seems to be of a very private, elusive sort.",
+      "stats": {
+        "baseAttack": {
+          "physical": 90,
+          "arcane": 50
+        },
+        "attackAt+10": {
+          "physical": 180,
+          "arcane": 100
+        },
+        "vsKin": 100,
+        "vsBeasts": 100,
+        "durability": 250,
+        "gemImprints": {
+          "normal": "radial, triangular, radial",
+          "uncanny": "radial, waning, radial",
+          "lost": "radial, triangular, waning"
+        },
+        "forms": "Transforms from a one-handed Greatsword into the two-handed Moonlight Greatsword."
+      },
+      "scaling": {
+        "+0": {
+          "STR": "D",
+          "SKL": "D",
+          "ARC": "C"
+        },
+        "+10": {
+          "STR": "B",
+          "SKL": "C",
+          "ARC": "A"
+        }
+      },
+      "requirements": {
+        "STR": 16,
+        "SKL": 12,
+        "ARC": 14
+      },
+      "upgradePath": "Fortify at the Workshop (Hunter's Dream or Abandoned Old Workshop) from +0 to +10: +1/+2/+3 cost 3/5/8 Blood Stone Shards; +4/+5/+6 cost 3/5/8 Twin Blood Stone Shards; +7/+8/+9 cost 3/5/8 Blood Stone Chunks; +10 costs 1 Blood Rock (16/16/16/1 total), plus Blood Echoes at each step.",
+      "location": "The Hunter's Nightmare on the Underground Corpse Pile after the fight against Ludwig, The Holy Blade. (DLC Weapon)",
+      "source": {
+        "label": "Fextralife – Holy Moonlight Sword",
+        "url": "https://bloodborne.wiki.fextralife.com/Holy_Moonlight_Sword",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "hunter-axe",
+      "name": "Hunter Axe",
+      "type": "trick-weapon",
+      "description": "One of the trick weapons of the workshop, commonly used on the hunt. Retains the qualities of an axe, but offers a wider palette of attacks by transforming. Boasts a heavy blunt attack, leading to high rally potential. No matter their pasts, beasts are no more than beasts. Some choose this axe to play the part of executioner.",
+      "stats": {
+        "baseAttack": {
+          "physical": 98
+        },
+        "vsKin": 100,
+        "vsBeasts": 100,
+        "durability": 250,
+        "rally": 75,
+        "gemImprints": {
+          "normal": "radial, radial, triangular",
+          "uncanny": "radial, radial, waning",
+          "lost": "radial, triangular, waning"
+        },
+        "forms": "This particular trick weapon transforms between an axe and an extended axe. It's the only starter weapon whose transformed mode is wielded with two hands."
+      },
+      "scaling": {
+        "+0": {
+          "STR": "D",
+          "SKL": "E",
+          "ARC": "D"
+        }
+      },
+      "requirements": {
+        "STR": 9,
+        "SKL": 8
+      },
+      "upgradePath": "Fortify at the Workshop (Hunter's Dream or Abandoned Old Workshop) from +0 to +10: +1/+2/+3 cost 3/5/8 Blood Stone Shards; +4/+5/+6 cost 3/5/8 Twin Blood Stone Shards; +7/+8/+9 cost 3/5/8 Blood Stone Chunks; +10 costs 1 Blood Rock (16/16/16/1 total), plus Blood Echoes at each step.",
+      "location": "Acquired at the very beginning of the game from the Messengers or later purchased for 1100 Blood Echoes from them after acquiring the Saw Hunter Badge",
+      "source": {
+        "label": "Fextralife – Hunter Axe",
+        "url": "https://bloodborne.wiki.fextralife.com/Hunter_Axe",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "kirkhammer",
+      "name": "Kirkhammer",
+      "type": "trick-weapon",
+      "description": "A trick weapon typically used by Healing Church hunters. On the one side, an easily handled silver sword. On the other, a giant obtuse stone weapon, characterized by a blunt strike and extreme force of impact. The Church takes a heavy-handed, merciless stance toward the plague of beasts, an irony not lost upon the wielders of this most symbolic weapon. (NA) Trick hunter weapons forged in the Healing Church workshop, said to be hidden somewhere in the Grand Cathedral, were made to the tenets of a rival school of craftsmanship. (UK)",
+      "stats": {
+        "baseAttack": {
+          "physical": 105
+        },
+        "attackAt+10": {
+          "physical": 210
+        },
+        "vsKin": 100,
+        "vsBeasts": 100,
+        "durability": 250,
+        "rally": 60,
+        "gemImprints": {
+          "normal": "radial, triangular, radial",
+          "uncanny": "radial, waning, radial",
+          "lost": "radial, triangular, waning"
+        },
+        "forms": "The normal form is a regular silver sword. It's slightly shorter than Ludwig's Holy Blade's normal form but has slightly high base damage. In this form, it's considered a Righteous Weapon and will deal 50% increased damage against opponents vulnerable to this subgroup."
+      },
+      "scaling": {
+        "+0": {
+          "STR": "C",
+          "SKL": "E",
+          "ARC": "D"
+        },
+        "+10": {
+          "STR": "A",
+          "SKL": "E",
+          "ARC": "B"
+        }
+      },
+      "requirements": {
+        "STR": 16,
+        "SKL": 10
+      },
+      "upgradePath": "Fortify at the Workshop (Hunter's Dream or Abandoned Old Workshop) from +0 to +10: +1/+2/+3 cost 3/5/8 Blood Stone Shards; +4/+5/+6 cost 3/5/8 Twin Blood Stone Shards; +7/+8/+9 cost 3/5/8 Blood Stone Chunks; +10 costs 1 Blood Rock (16/16/16/1 total), plus Blood Echoes at each step.",
+      "location": "Can be purchased for 3000 Blood Echoes from the Messengers after obtaining the Sword Hunter Badge",
+      "source": {
+        "label": "Fextralife – Kirkhammer",
+        "url": "https://bloodborne.wiki.fextralife.com/Kirkhammer",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "kos-parasite",
+      "name": "Kos Parasite",
+      "type": "trick-weapon-dlc",
+      "description": "When the carcass of Kos washed up on the coast, its insides were teeming with tiny parasites, unlike any found in humans. This atypical weapon can only be clasped tight and swung, but a Kos Parasite is said to stimulate phantasms inhabiting a lumenwood",
+      "stats": {
+        "baseAttack": {
+          "arcane": 30
+        },
+        "vsKin": 100,
+        "vsBeasts": 100,
+        "durability": 600,
+        "bulletUse": "2",
+        "gemImprints": {
+          "normal": "radial, waning, radial",
+          "uncanny": "radial, triangular, radial",
+          "lost": "radial, triangular, waning"
+        },
+        "forms": "Transforms from right-hand tentacle to dual-wield tentacles."
+      },
+      "scaling": {
+        "+0": {
+          "ARC": "A"
+        }
+      },
+      "requirements": {
+        "ARC": 20
+      },
+      "upgradePath": "Fortify at the Workshop (Hunter's Dream or Abandoned Old Workshop) from +0 to +10: +1/+2/+3 cost 3/5/8 Blood Stone Shards; +4/+5/+6 cost 3/5/8 Twin Blood Stone Shards; +7/+8/+9 cost 3/5/8 Blood Stone Chunks; +10 costs 1 Blood Rock (16/16/16/1 total), plus Blood Echoes at each step.",
+      "location": "Dropped by Orphan of Kos. (DLC Weapon)",
+      "source": {
+        "label": "Fextralife – Kos Parasite",
+        "url": "https://bloodborne.wiki.fextralife.com/Kos_Parasite",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "logarius-wheel",
+      "name": "Logarius' Wheel",
+      "type": "trick-weapon",
+      "description": "Weapon wielded by martyr Logarius' band of executioners. Used to slaughter the Vilebloods in Cainhurst. Bathed in pools of their blood, and forever steeped in their ire. Transform to release the power of the wheel and manifest their lingering rage in a show of utter brilliance.",
+      "stats": {
+        "baseAttack": {
+          "physical": 100,
+          "arcane": 25
+        },
+        "attackAt+10": {
+          "physical": 200,
+          "arcane": 50
+        },
+        "vsKin": 100,
+        "vsBeasts": 100,
+        "durability": 300,
+        "rally": 30,
+        "gemImprints": {
+          "normal": "radial, radial, waning",
+          "uncanny": "radial, radial, triangular",
+          "lost": "radial, triangular, waning"
+        },
+        "forms": "When transformed, the Logarius Wheel gets -30% physical damage, +0.5 Arcane scaling, +200% arcane damage, and +20 flat arcane damage."
+      },
+      "scaling": {
+        "+0": {
+          "STR": "C",
+          "ARC": "D"
+        },
+        "+10": {
+          "STR": "S",
+          "ARC": "C"
+        }
+      },
+      "requirements": {
+        "STR": 20,
+        "SKL": 12,
+        "ARC": 10
+      },
+      "upgradePath": "Fortify at the Workshop (Hunter's Dream or Abandoned Old Workshop) from +0 to +10: +1/+2/+3 cost 3/5/8 Blood Stone Shards; +4/+5/+6 cost 3/5/8 Twin Blood Stone Shards; +7/+8/+9 cost 3/5/8 Blood Stone Chunks; +10 costs 1 Blood Rock (16/16/16/1 total), plus Blood Echoes at each step.",
+      "location": "Can be purchased for 13,000 Blood Echoes from the Messengers after obtaining the Wheel Hunter Badge",
+      "source": {
+        "label": "Fextralife – Logarius' Wheel",
+        "url": "https://bloodborne.wiki.fextralife.com/Logarius%27_Wheel",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "ludwigs-holy-blade",
+      "name": "Ludwig's Holy Blade",
+      "type": "trick-weapon",
+      "description": "A trick weapon typically used by Healing Church hunters. It is said that the silver sword was employed by Ludwig, the first hunter of the church. When transformed, it combines with its sheath to form a greatsword. It exhibits several departures from the workshop's design, suggesting that the Church anticipated much larger inhuman beasts.",
+      "stats": {
+        "baseAttack": {
+          "physical": 100
+        },
+        "attackAt+10": {
+          "physical": 200
+        },
+        "vsKin": 100,
+        "vsBeasts": 100,
+        "durability": 250,
+        "rally": 60,
+        "gemImprints": {
+          "normal": "radial, radial, waning",
+          "uncanny": "radial, radial, triangular",
+          "lost": "radial, triangular, waning"
+        },
+        "forms": "This Trick Weapon is a longsword that can be transformed into a greatsword (by combining the sheath, as mentioned above in the description). The normal form is wielded with one hand. When transformed, it's wielded with two hands instead. Both forms deal 50% extra damage against foes vulnerable to Righteous."
+      },
+      "scaling": {
+        "+0": {
+          "STR": "D",
+          "SKL": "D",
+          "ARC": "D"
+        },
+        "+10": {
+          "STR": "B",
+          "SKL": "B",
+          "ARC": "A"
+        }
+      },
+      "requirements": {
+        "STR": 16,
+        "SKL": 12
+      },
+      "upgradePath": "Fortify at the Workshop (Hunter's Dream or Abandoned Old Workshop) from +0 to +10: +1/+2/+3 cost 3/5/8 Blood Stone Shards; +4/+5/+6 cost 3/5/8 Twin Blood Stone Shards; +7/+8/+9 cost 3/5/8 Blood Stone Chunks; +10 costs 1 Blood Rock (16/16/16/1 total), plus Blood Echoes at each step.",
+      "location": "Can be purchased for 20,000 Blood Echoes from the Messengers after obtaining the Radiant Sword Hunter Badge.",
+      "source": {
+        "label": "Fextralife – Ludwig's Holy Blade",
+        "url": "https://bloodborne.wiki.fextralife.com/Ludwig%27s_Holy_Blade",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "rakuyo",
+      "name": "Rakuyo",
+      "type": "trick-weapon-dlc",
+      "description": "Hunter weapon wielded by Lady Maria of the Astral Clocktower. A trick sword originated in the same country as the Cainhurst Chikage, only this sword feeds not off blood, but instead demands great dexterity. Lady Maria was fond of this aspect of the Rakuyo, as she frowned upon blood blades, despite being a distant relative of the queen. But one day she abandoned her beloved Rakuyo, casting it into a dark well, when she could stomach its presence no longer.",
+      "stats": {
+        "baseAttack": {
+          "physical": 82
+        },
+        "attackAt+10": {
+          "physical": 164
+        },
+        "vsKin": 100,
+        "vsBeasts": 100,
+        "durability": 200,
+        "gemImprints": {
+          "normal": "radial, radial, triangular",
+          "uncanny": "radial, radial, waning",
+          "lost": "radial, triangular, waning"
+        },
+        "forms": "Transforms from a Twin-blade to dual wielded Saber and Dagger"
+      },
+      "scaling": {
+        "+0": {
+          "SKL": "C",
+          "ARC": "D"
+        },
+        "+10": {
+          "SKL": "A",
+          "ARC": "C"
+        }
+      },
+      "requirements": {
+        "STR": 10,
+        "SKL": 20
+      },
+      "upgradePath": "Fortify at the Workshop (Hunter's Dream or Abandoned Old Workshop) from +0 to +10: +1/+2/+3 cost 3/5/8 Blood Stone Shards; +4/+5/+6 cost 3/5/8 Twin Blood Stone Shards; +7/+8/+9 cost 3/5/8 Blood Stone Chunks; +10 costs 1 Blood Rock (16/16/16/1 total), plus Blood Echoes at each step.",
+      "location": "Fishing Hamlet at the bottom of the well. Can be reached from the underground tunnels at the end of the Area or via a ladder in the well right away. (DLC Weapon)",
+      "source": {
+        "label": "Fextralife – Rakuyo",
+        "url": "https://bloodborne.wiki.fextralife.com/Rakuyo",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "reiterpallasch",
+      "name": "Reiterpallasch",
+      "type": "trick-weapon",
+      "description": "Weapon wielded by the Knights of Cainhurst. Combines an elegant knight's sword with the peculiar firearm wielded by the Cainhurst order. The old nobles, long-time imbibers of blood, are no strangers to the sanguine plague, and the disposal of beasts was a discrete task left to their servants, or knights, as they were called for the sake of appearances.",
+      "stats": {
+        "baseAttack": {
+          "physical": 75,
+          "blood": 75
+        },
+        "attackAt+10": {
+          "physical": 150,
+          "blood": 150
+        },
+        "vsKin": 100,
+        "vsBeasts": 100,
+        "durability": 120,
+        "bulletUse": "1",
+        "rally": 40,
+        "gemImprints": {
+          "normal": "radial, triangular, radial",
+          "uncanny": "radial, waning, radial",
+          "lost": "radial, triangular, waning"
+        },
+        "forms": "This particular trick weapon transforms between a rapier and a gun with a bayonet attachment (which is technically the same blade as the rapier)."
+      },
+      "scaling": {
+        "+0": {
+          "STR": "E",
+          "SKL": "C",
+          "BLT": "E",
+          "ARC": "D"
+        },
+        "+10": {
+          "STR": "E",
+          "SKL": "A",
+          "BLT": "D",
+          "ARC": "B"
+        }
+      },
+      "requirements": {
+        "STR": 8,
+        "SKL": 12,
+        "BLT": 10
+      },
+      "upgradePath": "Fortify at the Workshop (Hunter's Dream or Abandoned Old Workshop) from +0 to +10: +1/+2/+3 cost 3/5/8 Blood Stone Shards; +4/+5/+6 cost 3/5/8 Twin Blood Stone Shards; +7/+8/+9 cost 3/5/8 Blood Stone Chunks; +10 costs 1 Blood Rock (16/16/16/1 total), plus Blood Echoes at each step.",
+      "location": "N - Obtained in a chest on the ground floor of Cainhurst Castle.",
+      "source": {
+        "label": "Fextralife – Reiterpallasch",
+        "url": "https://bloodborne.wiki.fextralife.com/Reiterpallasch",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "rifle-spear",
+      "name": "Rifle Spear",
+      "type": "trick-weapon",
+      "description": "A trick weapon crafted by the workshop heretics, the Powder Kegs. A prototype weapon serving as a simple firearm and spear, possibly created in imitation of a lost Cainhurst weapon. Lacks any notable functions, saving that it is the only trick weapon with an attached gun.",
+      "stats": {
+        "baseAttack": {
+          "physical": 85,
+          "blood": 85
+        },
+        "attackAt+10": {
+          "physical": 170,
+          "blood": 170
+        },
+        "vsKin": 100,
+        "vsBeasts": 100,
+        "durability": 180,
+        "bulletUse": "1",
+        "rally": 40,
+        "gemImprints": {
+          "normal": "radial, triangular, radial",
+          "uncanny": "radial, waning, radial",
+          "lost": "radial, triangular, waning"
+        },
+        "forms": "This trick weapon transforms between a spear and gun with a bayonet attachment. The spear tip folds downwards to create a modified halberd of sorts."
+      },
+      "scaling": {
+        "+0": {
+          "STR": "E",
+          "SKL": "D",
+          "BLT": "D",
+          "ARC": "D"
+        },
+        "+10": {
+          "STR": "D",
+          "SKL": "B",
+          "BLT": "B",
+          "ARC": "C"
+        }
+      },
+      "requirements": {
+        "STR": 10,
+        "SKL": 11,
+        "BLT": 9
+      },
+      "upgradePath": "Fortify at the Workshop (Hunter's Dream or Abandoned Old Workshop) from +0 to +10: +1/+2/+3 cost 3/5/8 Blood Stone Shards; +4/+5/+6 cost 3/5/8 Twin Blood Stone Shards; +7/+8/+9 cost 3/5/8 Blood Stone Chunks; +10 costs 1 Blood Rock (16/16/16/1 total), plus Blood Echoes at each step.",
+      "location": "Can be purchased for 4000 Blood Echoes from the Messengers after obtaining the Powder Keg Hunter Badgeor obtained from body in Old Yharnam.",
+      "source": {
+        "label": "Fextralife – Rifle Spear",
+        "url": "https://bloodborne.wiki.fextralife.com/Rifle_Spear",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "saw-cleaver",
+      "name": "Saw Cleaver",
+      "type": "trick-weapon",
+      "description": "One of the trick weapons of the workshop, commonly used in the hunting business. This saw, effective at drawing the blood of beasts, transforms into a long cleaver that makes use of centrifugal force. The saw, with its set of blood-letting teeth, has become a symbol of the hunt, and only grows in effectiveness the more grotesquely transformed the beast",
+      "stats": {
+        "baseAttack": {
+          "physical": 90
+        },
+        "attackAt+10": {
+          "physical": 180
+        },
+        "vsKin": 100,
+        "vsBeasts": 100,
+        "durability": 200,
+        "rally": 35,
+        "gemImprints": {
+          "normal": "radial, radial, waning",
+          "uncanny": "radial, radial, triangular",
+          "lost": "radial, triangular, waning"
+        },
+        "forms": "Transforms between a saw and an extended cleaver."
+      },
+      "scaling": {
+        "+0": {
+          "STR": "D",
+          "SKL": "E",
+          "ARC": "D"
+        },
+        "+10": {
+          "STR": "C",
+          "SKL": "D",
+          "ARC": "C"
+        }
+      },
+      "requirements": {
+        "STR": 8,
+        "SKL": 7
+      },
+      "upgradePath": "Fortify at the Workshop (Hunter's Dream or Abandoned Old Workshop) from +0 to +10: +1/+2/+3 cost 3/5/8 Blood Stone Shards; +4/+5/+6 cost 3/5/8 Twin Blood Stone Shards; +7/+8/+9 cost 3/5/8 Blood Stone Chunks; +10 costs 1 Blood Rock (16/16/16/1 total), plus Blood Echoes at each step.",
+      "location": "Acquired at the beginning of the game from the Messengers or later purchased for 1000 Blood Echoes from them after finding the Saw Hunter Badge",
+      "source": {
+        "label": "Fextralife – Saw Cleaver",
+        "url": "https://bloodborne.wiki.fextralife.com/Saw_Cleaver",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "saw-spear",
+      "name": "Saw Spear",
+      "type": "trick-weapon",
+      "description": "One of the trick weapons of the workshop, commonly used by those who dedicate themselves to the hunt. This saw, effective at drawing the blood of beasts, transforms into a medium-range spear. The saw, with its set of blood-letting teeth, has become a symbol of the hunt, and only grows in effectiveness the more grotesquely transformed the beast.",
+      "stats": {
+        "baseAttack": {
+          "physical": 85
+        },
+        "vsKin": 100,
+        "vsBeasts": 100,
+        "durability": 200,
+        "rally": 35,
+        "gemImprints": {
+          "normal": "radial, radial, waning",
+          "uncanny": "radial, radial, triangular",
+          "lost": "radial, triangular, waning"
+        },
+        "forms": "Transforms between a saw and a spear."
+      },
+      "scaling": {
+        "+0": {
+          "STR": "D",
+          "SKL": "D",
+          "ARC": "D"
+        }
+      },
+      "requirements": {
+        "STR": 7,
+        "SKL": 8
+      },
+      "upgradePath": "Fortify at the Workshop (Hunter's Dream or Abandoned Old Workshop) from +0 to +10: +1/+2/+3 cost 3/5/8 Blood Stone Shards; +4/+5/+6 cost 3/5/8 Twin Blood Stone Shards; +7/+8/+9 cost 3/5/8 Blood Stone Chunks; +10 costs 1 Blood Rock (16/16/16/1 total), plus Blood Echoes at each step.",
+      "location": "Found on body in Central Yharnam or can be purchased for 1000 Blood Echoes from the Messengers after finding the Saw Hunter Badge",
+      "source": {
+        "label": "Fextralife – Saw Spear",
+        "url": "https://bloodborne.wiki.fextralife.com/Saw_Spear",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "simons-bowblade",
+      "name": "Simon's Bowblade",
+      "type": "trick-weapon-dlc",
+      "description": "Choice weapon of Simon, one of the first Healing Church hunters. Simon despised firearms, and so the Church workshop had this specially fashioned to his liking. ' The large curved blade serves as a bow when transformed. But aside from a few close friends, Simon was scoffed at for his choice of arms, for who would dare face the beasts with a measly bow?",
+      "stats": {
+        "baseAttack": {
+          "physical": 80,
+          "blood": 80
+        },
+        "attackAt+10": {
+          "physical": 160,
+          "blood": 160
+        },
+        "vsKin": 100,
+        "vsBeasts": 100,
+        "durability": 140,
+        "bulletUse": "1",
+        "gemImprints": {
+          "normal": "radial, triangular, radial",
+          "uncanny": "radial, waning, radial",
+          "lost": "radial, triangular, gun"
+        },
+        "forms": "Transforms from a one-handed blade to a bow"
+      },
+      "scaling": {
+        "+0": {
+          "SKL": "C",
+          "BLT": "C",
+          "ARC": "D"
+        },
+        "+10": {
+          "SKL": "S",
+          "BLT": "S",
+          "ARC": "C"
+        }
+      },
+      "requirements": {
+        "STR": 8,
+        "SKL": 15,
+        "BLT": 9
+      },
+      "upgradePath": "Fortify at the Workshop (Hunter's Dream or Abandoned Old Workshop) from +0 to +10: +1/+2/+3 cost 3/5/8 Blood Stone Shards; +4/+5/+6 cost 3/5/8 Twin Blood Stone Shards; +7/+8/+9 cost 3/5/8 Blood Stone Chunks; +10 costs 1 Blood Rock (16/16/16/1 total), plus Blood Echoes at each step.",
+      "location": "Found on the body of the Harrowed Hunter next to the Lighthouse Hut lantern after answering the first option at the Hunter's Nightmare shortcut. (DLC Weapon)",
+      "source": {
+        "label": "Fextralife – Simon's Bowblade",
+        "url": "https://bloodborne.wiki.fextralife.com/Simon%27s_Bowblade",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "stake-driver",
+      "name": "Stake Driver",
+      "type": "trick-weapon",
+      "description": "A trick weapon fashioned by the workshop heretics, the Powder Kegs. Favored by the retired hunter Djura. The stake driver, with its queerly complex design, violently drives thick stakes into the flesh of foes. The stake driver allows for high-damage critical attacks, but is difficult to use and leaves its wielder wide open, but none of this should bother a mere Powder Keg.",
+      "stats": {
+        "baseAttack": {
+          "physical": 85
+        },
+        "attackAt+10": {
+          "physical": 170
+        },
+        "vsKin": 100,
+        "vsBeasts": 100,
+        "durability": 200,
+        "rally": 35,
+        "gemImprints": {
+          "normal": "radial, triangular, radial",
+          "uncanny": "radial, waning, radial",
+          "lost": "radial, triangular, waning"
+        },
+        "forms": "This trick weapon doesn't have a true transformation, but pressing L1 does open up a new move set nonetheless When you \"transform\" the Stake Driver, it primes the stake, albeit while shortening the weapon's reach in the process. In its transformed state, performing an R2 at any charge level will revert the weapon back to its normal form. The transformed R2 has the longest charge time of any attack in the game by far, but makes up for it with absolutely devastating power at full charge"
+      },
+      "scaling": {
+        "+0": {
+          "STR": "D",
+          "SKL": "D",
+          "ARC": "D"
+        },
+        "+10": {
+          "STR": "C",
+          "SKL": "C",
+          "ARC": "C"
+        }
+      },
+      "requirements": {
+        "STR": 18,
+        "SKL": 9
+      },
+      "upgradePath": "Fortify at the Workshop (Hunter's Dream or Abandoned Old Workshop) from +0 to +10: +1/+2/+3 cost 3/5/8 Blood Stone Shards; +4/+5/+6 cost 3/5/8 Twin Blood Stone Shards; +7/+8/+9 cost 3/5/8 Blood Stone Chunks; +10 costs 1 Blood Rock (16/16/16/1 total), plus Blood Echoes at each step.",
+      "location": "Can be purchased for 8000 Blood Echoes from the Messengers after obtaining the Powder Keg Hunter Badge",
+      "source": {
+        "label": "Fextralife – Stake Driver",
+        "url": "https://bloodborne.wiki.fextralife.com/Stake_Driver",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "threaded-cane",
+      "name": "Threaded Cane",
+      "type": "trick-weapon",
+      "description": "One of the trick weapons of the workshop, commonly used by hunters on their duties. Sufficiently deadly as a rigid bladed cane, but also serves as a whip when its blade is split into many. Concealing the weapon inside the cane and flogging the beasts with the whip is partly an act of ceremony, an attempt to demonstrate to oneself that the bloodlust of the hunt will never encroach upon the soul.",
+      "stats": {
+        "baseAttack": {
+          "physical": 78
+        },
+        "attackAt+10": {
+          "physical": 156
+        },
+        "vsKin": 100,
+        "vsBeasts": 100,
+        "durability": 200,
+        "rally": 35,
+        "gemImprints": {
+          "normal": "radial, radial, triangular",
+          "uncanny": "radial, radial, waning",
+          "lost": "radial, triangular, waning"
+        },
+        "forms": "This trick weapon transforms between a cane and a notched whip. The cane form is considered a Righteous Weapon and has increased damage (20%) to enemies vulnerable to this subgroup. The whip form is considered a Serrated Weapon and has increased damage (20%) to enemies vulnerable to this subgroup."
+      },
+      "scaling": {
+        "+0": {
+          "STR": "E",
+          "SKL": "C",
+          "ARC": "D"
+        },
+        "+10": {
+          "STR": "E",
+          "SKL": "A",
+          "ARC": "B"
+        }
+      },
+      "requirements": {
+        "STR": 7,
+        "SKL": 9
+      },
+      "upgradePath": "Fortify at the Workshop (Hunter's Dream or Abandoned Old Workshop) from +0 to +10: +1/+2/+3 cost 3/5/8 Blood Stone Shards; +4/+5/+6 cost 3/5/8 Twin Blood Stone Shards; +7/+8/+9 cost 3/5/8 Blood Stone Chunks; +10 costs 1 Blood Rock (16/16/16/1 total), plus Blood Echoes at each step.",
+      "location": "Acquired at the beginning of the game from the Messengers or later purchased for 1200 Blood Echoes from them after finding the Saw Hunter Badge",
+      "source": {
+        "label": "Fextralife – Threaded Cane",
+        "url": "https://bloodborne.wiki.fextralife.com/Threaded_Cane",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "tonitrus",
+      "name": "Tonitrus",
+      "type": "trick-weapon",
+      "description": "A unique trick weapon contrived by Archibald, the infamous eccentric of the Healing Church workshop. Striking this peculiar iron morning star flail like a match generates the same blue sparks that blanket a darkbeast. Unfortunately, for reasons untold, the hunters of Archibald's time did not fully take to the device.",
+      "stats": {
+        "baseAttack": {
+          "physical": 80,
+          "bolt": 40
+        },
+        "attackAt+10": {
+          "physical": 160,
+          "bolt": 80
+        },
+        "vsKin": 100,
+        "vsBeasts": 100,
+        "durability": 100,
+        "rally": 45,
+        "gemImprints": {
+          "normal": "radial, radial, waning",
+          "uncanny": "radial, radial, triangular",
+          "lost": "radial, triangular, waning"
+        },
+        "forms": "It lacks a \"true\" transformed mode; pressing L1 temporarily buffs it with Bolt damage."
+      },
+      "scaling": {
+        "+0": {
+          "STR": "D",
+          "SKL": "E",
+          "ARC": "D"
+        },
+        "+10": {
+          "STR": "B",
+          "SKL": "E",
+          "ARC": "D"
+        }
+      },
+      "requirements": {
+        "STR": 12,
+        "SKL": 8
+      },
+      "upgradePath": "Fortify at the Workshop (Hunter's Dream or Abandoned Old Workshop) from +0 to +10: +1/+2/+3 cost 3/5/8 Blood Stone Shards; +4/+5/+6 cost 3/5/8 Twin Blood Stone Shards; +7/+8/+9 cost 3/5/8 Blood Stone Chunks; +10 costs 1 Blood Rock (16/16/16/1 total), plus Blood Echoes at each step.",
+      "location": "Found on a body in Hypogean Gaol or can be purchased from Messengers for 26,000 Blood Echoes after obtaining Spark Hunter Badge",
+      "source": {
+        "label": "Fextralife – Tonitrus",
+        "url": "https://bloodborne.wiki.fextralife.com/Tonitrus",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "whirligig-saw",
+      "name": "Whirligig Saw",
+      "type": "trick-weapon-dlc",
+      "description": "A trick weapon crafted by the workshop heretics, the Powder Kegs, and weapon of choice of the Old Hunter Valtr, the Beast Eater. This weapon pummels beasts in its mace form, but its true strength lies in its attached mechanical saws. These discs, lined with serrated teeth, spin rapidly, thrashing the flesh of beasts into fine shreds.",
+      "stats": {
+        "baseAttack": {
+          "physical": 95
+        },
+        "attackAt+10": {
+          "physical": 190
+        },
+        "vsKin": 100,
+        "vsBeasts": 100,
+        "durability": 230,
+        "gemImprints": {
+          "normal": "radial, radial, triangular",
+          "uncanny": "radial, radial, waning",
+          "lost": "radial, triangular, waning"
+        },
+        "forms": "Transforms from a Long-handed Mace to a Buzzsaw-on-a-Stick."
+      },
+      "scaling": {
+        "+0": {
+          "STR": "B",
+          "SKL": "E",
+          "ARC": "D"
+        },
+        "+10": {
+          "STR": "S",
+          "SKL": "D",
+          "ARC": "B"
+        }
+      },
+      "requirements": {
+        "STR": 18,
+        "SKL": 12
+      },
+      "upgradePath": "Fortify at the Workshop (Hunter's Dream or Abandoned Old Workshop) from +0 to +10: +1/+2/+3 cost 3/5/8 Blood Stone Shards; +4/+5/+6 cost 3/5/8 Twin Blood Stone Shards; +7/+8/+9 cost 3/5/8 Blood Stone Chunks; +10 costs 1 Blood Rock (16/16/16/1 total), plus Blood Echoes at each step.",
+      "location": "From the Nightmare Church Lamp in The Hunter's Nightmare go down the stairs and follow the path. Drop down into the pools of blood and follow the path further to grab the weapon. (DLC Weapon)",
+      "source": {
+        "label": "Fextralife – Whirligig Saw",
+        "url": "https://bloodborne.wiki.fextralife.com/Whirligig_Saw",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "cannon",
+      "name": "Cannon",
+      "type": "firearm",
+      "description": "Large prototype firearms fashioned by the workshop heretics, the Powder Kegs. Use of this weapon is equivalent to toting a mounted cannon, complete with its ridiculous weight, staggering kick, and lavish use of Quicksilver Bullets, into battle. Such a monstrosity was doomed from the start, and indeed its development was cut short. Yet, against impossibly gigantic foes, it might be just the thing.",
+      "stats": {
+        "baseAttack": {
+          "blood": 200
+        },
+        "attackAt+10": {
+          "blood": 600
+        },
+        "vsKin": 100,
+        "vsBeasts": 100,
+        "durability": 200,
+        "bulletUse": "12 [1]",
+        "bloodGemSlot": "none"
+      },
+      "scaling": {
+        "+0": {
+          "BLT": "E"
+        },
+        "+10": {
+          "BLT": "D"
+        }
+      },
+      "requirements": {
+        "STR": 30,
+        "SKL": 13
+      },
+      "upgradePath": "Fortify at the Workshop (Hunter's Dream or Abandoned Old Workshop) from +0 to +10: +1/+2/+3 cost 3/5/8 Blood Stone Shards; +4/+5/+6 cost 3/5/8 Twin Blood Stone Shards; +7/+8/+9 cost 3/5/8 Blood Stone Chunks; +10 costs 1 Blood Rock (16/16/16/1 total), plus Blood Echoes at each step.",
+      "location": "Found in the rafters of a building inside the Forbidden Woods.",
+      "source": {
+        "label": "Fextralife – Cannon",
+        "url": "https://bloodborne.wiki.fextralife.com/Cannon",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "church-cannon",
+      "name": "Church Cannon",
+      "type": "firearm-dlc",
+      "description": "An oversized weapon used by the Healing Church. A type of cannon that fires with a curved trajectory and creates an explosion upon impact. Originally designed for use by brawny men with deteriorated brains, not for just any ordinary hunter. But the men lacked the wits to effectively operate firearms, and the weapon was quietly ushered into permanent storage.",
+      "stats": {
+        "baseAttack": {
+          "blood": 160
+        },
+        "attackAt+10": {
+          "blood": 480
+        },
+        "vsKin": 100,
+        "vsBeasts": 100,
+        "durability": 200,
+        "bulletUse": "10",
+        "bloodGemSlot": "none"
+      },
+      "scaling": {
+        "+0": {
+          "BLT": "E"
+        },
+        "+10": {
+          "BLT": "D"
+        }
+      },
+      "requirements": {
+        "STR": 27,
+        "BLT": 16
+      },
+      "upgradePath": "Fortify at the Workshop (Hunter's Dream or Abandoned Old Workshop) from +0 to +10: +1/+2/+3 cost 3/5/8 Blood Stone Shards; +4/+5/+6 cost 3/5/8 Twin Blood Stone Shards; +7/+8/+9 cost 3/5/8 Blood Stone Chunks; +10 costs 1 Blood Rock (16/16/16/1 total), plus Blood Echoes at each step.",
+      "location": "Found after activating the altar elevator to the Research Hall with the Eye Pendant activate the new elevator to go down. Cannon is in a chest down there.(DLC Item)",
+      "source": {
+        "label": "Fextralife – Church Cannon",
+        "url": "https://bloodborne.wiki.fextralife.com/Church_Cannon",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "evelyn",
+      "name": "Evelyn",
+      "type": "firearm",
+      "description": "Special pistol used by Cainhurst knights. The Evelyn uses Quicksilver Bullets, just as any workshop firearm, but the Cainhurst variant relies more on bloodtinge. Lovingly named after a woman and graced with an intricate design, Evelyns were adored by Cainhurst knights.",
+      "stats": {
+        "baseAttack": {
+          "blood": 60
+        },
+        "attackAt+10": {
+          "blood": 140
+        },
+        "vsKin": 100,
+        "vsBeasts": 100,
+        "durability": 100,
+        "bulletUse": "1",
+        "bloodGemSlot": "1 (gun)"
+      },
+      "scaling": {
+        "+0": {
+          "BLT": "B"
+        },
+        "+10": {
+          "BLT": "S"
+        }
+      },
+      "requirements": {
+        "STR": 9,
+        "SKL": 11,
+        "BLT": 18
+      },
+      "upgradePath": "Fortify at the Workshop (Hunter's Dream or Abandoned Old Workshop) from +0 to +10: +1/+2/+3 cost 3/5/8 Blood Stone Shards; +4/+5/+6 cost 3/5/8 Twin Blood Stone Shards; +7/+8/+9 cost 3/5/8 Blood Stone Chunks; +10 costs 1 Blood Rock (16/16/16/1 total), plus Blood Echoes at each step.",
+      "location": "Can be purchased from the Messengers for 16000 Blood Echoes after receiving the Cainhurst Badge from joining the Cainhurst Vilebloods. Can also be found in a chest in Cainhurst Castle.",
+      "source": {
+        "label": "Fextralife – Evelyn",
+        "url": "https://bloodborne.wiki.fextralife.com/Evelyn",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "fist-of-gratia",
+      "name": "Fist of Gratia",
+      "type": "firearm-dlc",
+      "description": "A chunk of iron fitted with finger holes The hulking hunter woman Simple Gratia, ever hopeless when handling hunter firearms, preferred to knock the lights out of beasts with this hunk of iron, which incidentally caused heavy stagger. Gratia was a fearsome hunter, and to onlookers, her unrelenting pummelling appeared oddly heroic. No wonder this weapon later assumed her name.",
+      "stats": {
+        "baseAttack": {
+          "physical": 60
+        },
+        "attackAt+10": {
+          "physical": 130
+        },
+        "vsKin": 100,
+        "vsBeasts": 100,
+        "durability": 200,
+        "bloodGemSlot": "none",
+        "forms": "A left-hand weapon with no transformation."
+      },
+      "scaling": {
+        "+0": {
+          "STR": "D"
+        },
+        "+10": {
+          "STR": "A"
+        }
+      },
+      "requirements": {
+        "STR": 7,
+        "SKL": 9,
+        "BLT": 5
+      },
+      "upgradePath": "Fortify at the Workshop (Hunter's Dream or Abandoned Old Workshop) from +0 to +10: +1/+2/+3 cost 3/5/8 Blood Stone Shards; +4/+5/+6 cost 3/5/8 Twin Blood Stone Shards; +7/+8/+9 cost 3/5/8 Blood Stone Chunks; +10 costs 1 Blood Rock (16/16/16/1 total), plus Blood Echoes at each step.",
+      "location": "In The Hunter's Nightmare, locked inside one of the cells after the Ludwig, The Holy Blade fight.(DLC Item)",
+      "source": {
+        "label": "Fextralife – Fist of Gratia",
+        "url": "https://bloodborne.wiki.fextralife.com/Fist_of_Gratia",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "flamesprayer",
+      "name": "Flamesprayer",
+      "type": "firearm",
+      "description": "A special weapon used by certain members of the Healing Church. Spits searing flames by using blood-imbued Quicksilver Bullets as a special medium. Not the most efficient weapon by any stretch, but sometimes a sea of flame is just what the doctor ordered. Besides, the beasts of Yharnam can always use a good cleansing.",
+      "stats": {
+        "baseAttack": {
+          "fire": 45
+        },
+        "attackAt+10": {
+          "fire": 95
+        },
+        "vsKin": 100,
+        "vsBeasts": 100,
+        "durability": 100,
+        "bulletUse": "1",
+        "bloodGemSlot": "none"
+      },
+      "scaling": {
+        "+0": {
+          "ARC": "D"
+        },
+        "+10": {
+          "ARC": "B"
+        }
+      },
+      "requirements": {
+        "SKL": 8,
+        "ARC": 8
+      },
+      "upgradePath": "Cannot be upgraded (per source page).",
+      "location": "Acquired from Gilbert after entering the Cathedral Ward or can be purchased from the Messengers for 8000 Blood Echoes after obtaining Radiant Sword Hunter Badge.",
+      "source": {
+        "label": "Fextralife – Flamesprayer",
+        "url": "https://bloodborne.wiki.fextralife.com/Flamesprayer",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "gatling-gun",
+      "name": "Gatling Gun",
+      "type": "firearm-dlc",
+      "description": "This is a highly-customised, portable version of the stationary gatling gun operated by the old hunter Djura in Old Yharnam. It was the weapon of choice of the youngest of Djura's three companions. The Gatling Gun boasts exceptional rapid-firing functionality, but is considered a cumbersome weapon, due to its excessive weight and insatiable consumption of Quicksilver Bullets.",
+      "stats": {
+        "baseAttack": {
+          "blood": 80
+        },
+        "attackAt+10": {
+          "blood": 180
+        },
+        "vsKin": 100,
+        "vsBeasts": 100,
+        "durability": 200,
+        "bulletUse": "1",
+        "bloodGemSlot": "1 (gun)"
+      },
+      "scaling": {
+        "+0": {
+          "BLT": "E"
+        },
+        "+10": {
+          "BLT": "D"
+        }
+      },
+      "requirements": {
+        "STR": 28,
+        "SKL": 12
+      },
+      "upgradePath": "Fortify at the Workshop (Hunter's Dream or Abandoned Old Workshop) from +0 to +10: +1/+2/+3 cost 3/5/8 Blood Stone Shards; +4/+5/+6 cost 3/5/8 Twin Blood Stone Shards; +7/+8/+9 cost 3/5/8 Blood Stone Chunks; +10 costs 1 Blood Rock (16/16/16/1 total), plus Blood Echoes at each step.",
+      "location": "The Hunter's Nightmare, cave to the right after getting out of the building that used to be the shortcut to the Cleric Beast in the main game. Gattling Gun Hunter drops the weapon. Amygdalan Arm and a Blood-Starved Beast can be also found here. (DLC weapon)",
+      "source": {
+        "label": "Fextralife – Gatling Gun",
+        "url": "https://bloodborne.wiki.fextralife.com/Gatling_Gun",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "hunter-blunderbuss",
+      "name": "Hunter Blunderbuss",
+      "type": "firearm",
+      "description": "A blunderbuss created at the workshop for the hunters' line of work. Hunter firearms are specially crafted to employ Quicksilver Bullets fused with the wielder's own blood, boosting damage against beasts. The impact of this highly-effective weapon counters beasts' swift movements, and its wide spread is nigh-on guaranteed to hit the mark.",
+      "stats": {
+        "baseAttack": {
+          "blood": 20
+        },
+        "attackAt+10": {
+          "blood": 45
+        },
+        "vsKin": 100,
+        "vsBeasts": 100,
+        "durability": 150,
+        "bulletUse": "1",
+        "bloodGemSlot": "1 (gun)"
+      },
+      "scaling": {
+        "+0": {
+          "BLT": "D"
+        },
+        "+10": {
+          "BLT": "A"
+        }
+      },
+      "requirements": {
+        "STR": 7,
+        "SKL": 9,
+        "BLT": 5
+      },
+      "upgradePath": "Fortify at the Workshop (Hunter's Dream or Abandoned Old Workshop) from +0 to +10: +1/+2/+3 cost 3/5/8 Blood Stone Shards; +4/+5/+6 cost 3/5/8 Twin Blood Stone Shards; +7/+8/+9 cost 3/5/8 Blood Stone Chunks; +10 costs 1 Blood Rock (16/16/16/1 total), plus Blood Echoes at each step.",
+      "location": "Acquired at the very beginning of the game from the Messengers or can be purchased later from them for 1700 Blood Echoes after obtaining the Saw Hunter Badge.",
+      "source": {
+        "label": "Fextralife – Hunter Blunderbuss",
+        "url": "https://bloodborne.wiki.fextralife.com/Hunter_Blunderbuss",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "hunter-pistol",
+      "name": "Hunter Pistol",
+      "type": "firearm",
+      "description": "Pistol made at the workshop, for hunters stalking beasts. Hunter firearms are specially crafted to employ Quicksilver Bullets fused with the wielder's own blood, boosting damage against beasts. The pistol is a quicker draw than the blunderbuss, allowing for speedier responses to attacks.",
+      "stats": {
+        "baseAttack": {
+          "blood": 70
+        },
+        "vsKin": 100,
+        "vsBeasts": 100,
+        "durability": 100,
+        "bulletUse": "1",
+        "bloodGemSlot": "1 (gun)"
+      },
+      "scaling": {
+        "+0": {
+          "BLT": "D"
+        }
+      },
+      "requirements": {
+        "STR": 7,
+        "SKL": 9,
+        "BLT": 5
+      },
+      "upgradePath": "Fortify at the Workshop (Hunter's Dream or Abandoned Old Workshop) from +0 to +10: +1/+2/+3 cost 3/5/8 Blood Stone Shards; +4/+5/+6 cost 3/5/8 Twin Blood Stone Shards; +7/+8/+9 cost 3/5/8 Blood Stone Chunks; +10 costs 1 Blood Rock (16/16/16/1 total), plus Blood Echoes at each step.",
+      "location": "Acquired at the very beginning of the game from the Messengers or can be purchased later from them for 1600 Blood Echoes after obtaining the Saw Hunter Badge.",
+      "source": {
+        "label": "Fextralife – Hunter Pistol",
+        "url": "https://bloodborne.wiki.fextralife.com/Hunter_Pistol",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "hunters-torch",
+      "name": "Hunter's Torch",
+      "type": "firearm",
+      "description": "A torch formed by the wrapping a pine resin cloth around the end of a long stick, once used in Old Yharnam. Designed to incinerate beasts and victims touched by the scourge. Its fire damage is highly effective against beasts.",
+      "stats": {
+        "baseAttack": {
+          "fire": 50
+        },
+        "vsKin": 100,
+        "vsBeasts": 100,
+        "durability": 150,
+        "bloodGemSlot": "none"
+      },
+      "scaling": {
+        "+0": {
+          "ARC": "B"
+        }
+      },
+      "requirements": {
+        "STR": 6
+      },
+      "upgradePath": "Fortify at the Workshop (Hunter's Dream or Abandoned Old Workshop) from +0 to +10: +1/+2/+3 cost 3/5/8 Blood Stone Shards; +4/+5/+6 cost 3/5/8 Twin Blood Stone Shards; +7/+8/+9 cost 3/5/8 Blood Stone Chunks; +10 costs 1 Blood Rock (16/16/16/1 total), plus Blood Echoes at each step.",
+      "location": "Found in Old Yharnam on a corpse.",
+      "source": {
+        "label": "Fextralife – Hunter's Torch",
+        "url": "https://bloodborne.wiki.fextralife.com/Hunter%27s_Torch",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "loch-shield",
+      "name": "Loch Shield",
+      "type": "firearm-dlc",
+      "description": "",
+      "stats": {
+        "baseAttack": {},
+        "vsKin": 100,
+        "vsBeasts": 100,
+        "durability": 160,
+        "bloodGemSlot": "none"
+      },
+      "scaling": {},
+      "requirements": {
+        "STR": 11,
+        "SKL": 8
+      },
+      "upgradePath": "Cannot be upgraded (per source page).",
+      "location": "Research Hall: Can be seen right when entering on a platform together with one of the crawling experiments. Obtained after activating the lever to raise the stairs, and then dropping down and following the path down.reached by dropping down.(DLC Item)",
+      "source": {
+        "label": "Fextralife – Loch Shield",
+        "url": "https://bloodborne.wiki.fextralife.com/Loch_Shield",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "ludwigs-rifle",
+      "name": "Ludwig's Rifle",
+      "type": "firearm",
+      "description": "A rifle typically used by Healing Church hunters. It is said that this rifle was employed by Ludwig, the first hunter of the Church. Its long, heavy barrel makes up in range for what it lacks in reload speed. Ludwig's Rifle exhibits several departures from the workshop's design, suggesting that the Church anticipated much larger inhuman beasts. (NA) The Healing Church workshop began with Ludwig, and departed from old Gehrman's techniques to provide hunters with the means to hunt more terrifying beasts, and perhaps thing still worse. (UK)",
+      "stats": {
+        "baseAttack": {
+          "blood": 20
+        },
+        "attackAt+10": {
+          "blood": 55
+        },
+        "vsKin": 100,
+        "vsBeasts": 100,
+        "durability": 150,
+        "bulletUse": "1",
+        "bloodGemSlot": "1 (gun)"
+      },
+      "scaling": {
+        "+0": {
+          "BLT": "E"
+        },
+        "+10": {
+          "BLT": "D"
+        }
+      },
+      "requirements": {
+        "STR": 9,
+        "SKL": 10,
+        "BLT": 9
+      },
+      "upgradePath": "Fortify at the Workshop (Hunter's Dream or Abandoned Old Workshop) from +0 to +10: +1/+2/+3 cost 3/5/8 Blood Stone Shards; +4/+5/+6 cost 3/5/8 Twin Blood Stone Shards; +7/+8/+9 cost 3/5/8 Blood Stone Chunks; +10 costs 1 Blood Rock (16/16/16/1 total), plus Blood Echoes at each step.",
+      "location": "Can be purchased for 10,000 Blood Echoes from the Messengers after acquiring the Radiant Sword Hunter Badge.",
+      "source": {
+        "label": "Fextralife – Ludwig's Rifle",
+        "url": "https://bloodborne.wiki.fextralife.com/Ludwig%27s_Rifle",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "piercing-rifle",
+      "name": "Piercing Rifle",
+      "type": "firearm-dlc",
+      "description": "A rifle engineered by the Oto Workshop, the precursor to the workshop of the heretical Powder Kegs. Designed for hunting on narrow streets, this weapon has been optimized to cause perforation wounds, but is unfit for reliably counter attacks.",
+      "stats": {
+        "baseAttack": {
+          "blood": 80
+        },
+        "vsKin": 100,
+        "vsBeasts": 100,
+        "durability": 140,
+        "bulletUse": "1",
+        "bloodGemSlot": "1 (gun)"
+      },
+      "scaling": {
+        "+0": {
+          "BLT": "D"
+        }
+      },
+      "requirements": {
+        "STR": 9,
+        "SKL": 10,
+        "BLT": 9
+      },
+      "upgradePath": "Fortify at the Workshop (Hunter's Dream or Abandoned Old Workshop) from +0 to +10: +1/+2/+3 cost 3/5/8 Blood Stone Shards; +4/+5/+6 cost 3/5/8 Twin Blood Stone Shards; +7/+8/+9 cost 3/5/8 Blood Stone Chunks; +10 costs 1 Blood Rock (16/16/16/1 total), plus Blood Echoes at each step.",
+      "location": "Purchasable at the messenger bath after acquiring the Firing Hammer Badge. (DLC weapon)",
+      "source": {
+        "label": "Fextralife – Piercing Rifle",
+        "url": "https://bloodborne.wiki.fextralife.com/Piercing_Rifle",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "repeating-pistol",
+      "name": "Repeating Pistol",
+      "type": "firearm",
+      "description": "Repeating pistol typically used by Healing Church hunters. Crafted with mostly metal parts and exhibiting a complex design, the repeating pistol fires two shots at once, making it a ravenous consumer of Quicksilver Bullets. Should be used sparingly compared to its workshop counterpart, as the trump card in one's arsenal.",
+      "stats": {
+        "baseAttack": {
+          "blood": 90
+        },
+        "vsKin": 100,
+        "vsBeasts": 100,
+        "durability": 80,
+        "bulletUse": "2",
+        "bloodGemSlot": "1 (gun)"
+      },
+      "scaling": {
+        "+0": {
+          "BLT": "D"
+        }
+      },
+      "requirements": {
+        "STR": 10,
+        "SKL": 11,
+        "BLT": 8
+      },
+      "upgradePath": "Fortify at the Workshop (Hunter's Dream or Abandoned Old Workshop) from +0 to +10: +1/+2/+3 cost 3/5/8 Blood Stone Shards; +4/+5/+6 cost 3/5/8 Twin Blood Stone Shards; +7/+8/+9 cost 3/5/8 Blood Stone Chunks; +10 costs 1 Blood Rock (16/16/16/1 total), plus Blood Echoes at each step.",
+      "location": "Can be purchased from the Messengers after obtaining Sword Hunter Badge.",
+      "source": {
+        "label": "Fextralife – Repeating Pistol",
+        "url": "https://bloodborne.wiki.fextralife.com/Repeating_Pistol",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "rosmarinus",
+      "name": "Rosmarinus",
+      "type": "firearm",
+      "description": "A special weapon used by the Choir, high-ranking members of the Healing Church. Sprays a cloud of sacred mist, created by using blood-imbued Quicksilver Bullets as a special medium. Arias are heard wherever sacred mist is seen, proving that the mist is a heavenly blessing. \"Oh, fair maiden, why is it that you weep?",
+      "stats": {
+        "baseAttack": {
+          "arcane": 30
+        },
+        "attackAt+10": {
+          "arcane": 80
+        },
+        "vsKin": 100,
+        "vsBeasts": 100,
+        "durability": 100,
+        "bulletUse": "1",
+        "bloodGemSlot": "none"
+      },
+      "scaling": {
+        "+0": {
+          "ARC": "B"
+        },
+        "+10": {
+          "ARC": "S"
+        }
+      },
+      "requirements": {
+        "SKL": 8,
+        "ARC": 8
+      },
+      "upgradePath": "Cannot be upgraded (per source page).",
+      "location": "Can be purchased from the Messengersafter obtaining the Cosmic Eye Watcher Badge.",
+      "source": {
+        "label": "Fextralife – Rosmarinus",
+        "url": "https://bloodborne.wiki.fextralife.com/Rosmarinus",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "torch",
+      "name": "Torch",
+      "type": "firearm",
+      "description": "A common torch formed by wrapping a pine resin-drenched cloth around the end of a long stick. Hunters choose torches not only because the hunt leads them to the darkest nooks, but also because certain creatures they encounter are possessed of a deathly fear of flame",
+      "stats": {
+        "baseAttack": {
+          "fire": 25
+        },
+        "vsKin": 100,
+        "vsBeasts": 100,
+        "durability": 100,
+        "bloodGemSlot": "none"
+      },
+      "scaling": {
+        "+0": {
+          "ARC": "D"
+        }
+      },
+      "requirements": {
+        "STR": 6
+      },
+      "upgradePath": "Cannot be upgraded (per source page).",
+      "location": "Found in Central Yharnam on a corpse.",
+      "source": {
+        "label": "Fextralife – Torch",
+        "url": "https://bloodborne.wiki.fextralife.com/Torch",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "wooden-shield",
+      "name": "Wooden Shield",
+      "type": "firearm",
+      "description": "A crude wooden shield used by the masses who have arisen to join the hunt. Hunters do not normally employ shields, ineffectual against the strength of the beasts as they tend to be. Shields are nice, but not if they engender passivity.",
+      "stats": {
+        "baseAttack": {},
+        "vsKin": 100,
+        "vsBeasts": 100,
+        "durability": 120,
+        "bloodGemSlot": "none",
+        "forms": "You can block attacks and reduce some damage by holding L2. However, keep in mind that you cannot parry with a shield in this game. One way to get around this is to use the transformed Reiterpallasch. Augur of Ebrietas can also be used if you meet the minimum arcane requirement."
+      },
+      "scaling": {},
+      "requirements": {
+        "STR": 8,
+        "SKL": 8
+      },
+      "upgradePath": "Cannot be upgraded (per source page).",
+      "location": "Found in Cathedral Ward on a corpse.",
+      "source": {
+        "label": "Fextralife – Wooden Shield",
+        "url": "https://bloodborne.wiki.fextralife.com/Wooden_Shield",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "accursed-brew",
+      "name": "Accursed Brew",
+      "type": "hunter-tool",
+      "description": "Throw a concoction of curses at foes. (The Old Hunters DLC.)",
+      "stats": {
+        "bulletUse": 2
+      },
+      "scaling": {
+        "+0": {
+          "ARC": "S"
+        }
+      },
+      "requirements": {
+        "ARC": 30
+      },
+      "upgradePath": "Hunter tools are not fortified; their damage scales with Arcane.",
+      "location": "after finishing the last boss or having the Milkweed Rune equipped, talk to the NPC at the Fishing Hamlet.",
+      "source": {
+        "label": "Fextralife – Accursed Brew",
+        "url": "https://bloodborne.wiki.fextralife.com/Accursed_Brew",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "beast-roar",
+      "name": "Beast Roar",
+      "type": "hunter-tool",
+      "description": "Loud roar that repels nearby foes and objects.",
+      "stats": {
+        "bulletUse": 2
+      },
+      "scaling": {},
+      "requirements": {
+        "ARC": 15
+      },
+      "upgradePath": "Hunter tools are not fortified; their damage scales with Arcane.",
+      "location": "In a house near the hound cages in the Forbidden Woods.",
+      "source": {
+        "label": "Fextralife – Beast Roar",
+        "url": "https://bloodborne.wiki.fextralife.com/Beast_Roar",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "blacksky-eye",
+      "name": "Blacksky Eye",
+      "type": "hunter-tool",
+      "description": "Fires a meteor-shaped arcane projectile. (The Old Hunters DLC.)",
+      "stats": {
+        "bulletUse": 1
+      },
+      "scaling": {
+        "+0": {
+          "ARC": "S"
+        }
+      },
+      "requirements": {
+        "ARC": 16
+      },
+      "upgradePath": "Hunter tools are not fortified; their damage scales with Arcane.",
+      "location": "In the garden outside of the Research Hall via Balcony Key.",
+      "source": {
+        "label": "Fextralife – Blacksky Eye",
+        "url": "https://bloodborne.wiki.fextralife.com/Blacksky_Eye",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "empty-phantasm-shell",
+      "name": "Empty Phantasm Shell",
+      "type": "hunter-tool",
+      "description": "Enhances weapon damage with arcane for a time.",
+      "stats": {
+        "bulletUse": 3
+      },
+      "scaling": {},
+      "requirements": {
+        "ARC": 15
+      },
+      "upgradePath": "Hunter tools are not fortified; their damage scales with Arcane.",
+      "location": "In a chest close to the entrance of the lunarium in Byrgenwerth.",
+      "source": {
+        "label": "Fextralife – Empty Phantasm Shell",
+        "url": "https://bloodborne.wiki.fextralife.com/Empty_Phantasm_Shell",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "executioners-gloves",
+      "name": "Executioner's Gloves",
+      "type": "hunter-tool",
+      "description": "Summons wrathful spirits that lock onto a target.",
+      "stats": {
+        "bulletUse": 3
+      },
+      "scaling": {
+        "+0": {
+          "ARC": "S"
+        }
+      },
+      "requirements": {
+        "ARC": 20
+      },
+      "upgradePath": "Hunter tools are not fortified; their damage scales with Arcane.",
+      "location": "Forsaken Castle Cainhurst Library.",
+      "source": {
+        "label": "Fextralife – Executioner's Gloves",
+        "url": "https://bloodborne.wiki.fextralife.com/Executioner%27s_Gloves",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "old-hunter-bone",
+      "name": "Old Hunter Bone",
+      "type": "hunter-tool",
+      "description": "The art of Quickening; speeds up rolls and quicksteps.",
+      "stats": {
+        "bulletUse": 4
+      },
+      "scaling": {},
+      "requirements": {
+        "ARC": 15
+      },
+      "upgradePath": "Hunter tools are not fortified; their damage scales with Arcane.",
+      "location": "Found near a tombstone in the Old Abandoned Workshop.",
+      "source": {
+        "label": "Fextralife – Old Hunter Bone",
+        "url": "https://bloodborne.wiki.fextralife.com/Old_Hunter_Bone",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "tiny-tonitrus",
+      "name": "Tiny Tonitrus",
+      "type": "hunter-tool",
+      "description": "Unleashes blue lightning strikes in front of the caster.",
+      "stats": {
+        "bulletUse": 6
+      },
+      "scaling": {
+        "+0": {
+          "ARC": "S"
+        }
+      },
+      "requirements": {
+        "ARC": 25
+      },
+      "upgradePath": "Hunter tools are not fortified; their damage scales with Arcane.",
+      "location": "Yahar'gul, Unseen Village, is found in a chest near the cell where the Upper Cathedral Key is found.",
+      "source": {
+        "label": "Fextralife – Tiny Tonitrus",
+        "url": "https://bloodborne.wiki.fextralife.com/Tiny_Tonitrus",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "choir-bell",
+      "name": "Choir Bell",
+      "type": "hunter-tool",
+      "description": "Heals/removes various status inflictions in area of effect.",
+      "stats": {
+        "bulletUse": 7
+      },
+      "scaling": {
+        "+0": {
+          "ARC": "S"
+        }
+      },
+      "requirements": {
+        "ARC": 15
+      },
+      "upgradePath": "Hunter tools are not fortified; their damage scales with Arcane.",
+      "location": "Mergo's Loft Middle.",
+      "source": {
+        "label": "Fextralife – Choir Bell",
+        "url": "https://bloodborne.wiki.fextralife.com/Choir_Bell",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "augur-of-ebrietas",
+      "name": "Augur of Ebrietas",
+      "type": "hunter-tool",
+      "description": "Fires multiple tentacles from hand; knocks back a foe. Can stagger enemies from behind or when timed as a parry.",
+      "stats": {
+        "bulletUse": 1
+      },
+      "scaling": {
+        "+0": {
+          "ARC": "S"
+        }
+      },
+      "requirements": {
+        "ARC": 18
+      },
+      "upgradePath": "Hunter tools are not fortified; their damage scales with Arcane.",
+      "location": "Lecture Building",
+      "source": {
+        "label": "Fextralife – Augur of Ebrietas",
+        "url": "https://bloodborne.wiki.fextralife.com/Augur_of_Ebrietas",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "madaras-whistle",
+      "name": "Madaras Whistle",
+      "type": "hunter-tool",
+      "description": "Summons a giant and very hungry snake.",
+      "stats": {
+        "bulletUse": 4
+      },
+      "scaling": {
+        "+0": {
+          "ARC": "S"
+        }
+      },
+      "requirements": {
+        "ARC": 18
+      },
+      "upgradePath": "Hunter tools are not fortified; their damage scales with Arcane.",
+      "location": "Forbidden Woods, after killing Valtr, kill the NPC that spawns next to the lamp. Forbidden Woods, crush 5 or more Vermin, exhaust Valtr's dialogue, and reload the same area. Afterward, kill the hostile NPC that spawns next to the lamp. (Note: this tool is not needed for the Hunter’s Craft Tophy.)",
+      "source": {
+        "label": "Fextralife – Madaras Whistle",
+        "url": "https://bloodborne.wiki.fextralife.com/Madaras_Whistle",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "messengers-gift",
+      "name": "Messenger's Gift",
+      "type": "hunter-tool",
+      "description": "Transforms you into a messenger.",
+      "stats": {
+        "bulletUse": 1
+      },
+      "scaling": {},
+      "requirements": {
+        "ARC": 10
+      },
+      "upgradePath": "Hunter tools are not fortified; their damage scales with Arcane.",
+      "location": "Nightmare Frontier.",
+      "source": {
+        "label": "Fextralife – Messenger's Gift",
+        "url": "https://bloodborne.wiki.fextralife.com/Messenger%27s_Gift",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "a-call-beyond",
+      "name": "A Call Beyond",
+      "type": "hunter-tool",
+      "description": "Summons a small nova with multiple arcane projectiles.",
+      "stats": {
+        "bulletUse": 7
+      },
+      "scaling": {
+        "+0": {
+          "ARC": "S"
+        }
+      },
+      "requirements": {
+        "ARC": 40
+      },
+      "upgradePath": "Hunter tools are not fortified; their damage scales with Arcane.",
+      "location": "Upper Cathedral Ward, after you defeat the Celestial Emissary.",
+      "source": {
+        "label": "Fextralife – A Call Beyond",
+        "url": "https://bloodborne.wiki.fextralife.com/A_Call_Beyond",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    }
+  ],
+  "armorSets": [
+    {
+      "id": "ashen-hunter-set",
+      "name": "Ashen Hunter Set",
+      "description": "One of the standard articles of hunter attire fashioned at the workshop. A fine piece of hunter attire that provides stable defense to anyone facing Yharnam's beastly threat.",
+      "pieces": [
+        {
+          "slot": "head",
+          "name": "Grey Wolf Cap",
+          "location": "Purchased from Insight Messengers for 1 Insight after obtaining the Powder Keg Hunter Badge."
+        },
+        {
+          "slot": "chest",
+          "name": "Ashen Hunter Garb",
+          "location": "Purchased from Insight Messengers for 3 Insight after you obtain the Powder Keg Hunter Badge."
+        },
+        {
+          "slot": "arms",
+          "name": "Ashen Hunter Gloves",
+          "location": "Purchased from Insight Messengers for 1 Insight after obtaining the Powder Keg Hunter Badge."
+        },
+        {
+          "slot": "legs",
+          "name": "Ashen Hunter Trousers",
+          "location": "Purchased from Insight Messengers for 1 Insight after obtaining the Powder Keg Hunter Badge."
+        }
+      ],
+      "weight": "",
+      "notes": "Set defense totals (Fextralife): physical 250, vsBlunt 260, vsThrust 220, blood 260, arcane 190, fire 190, bolt 210, slowPoisonRes 62, rapidPoisonRes 107, frenzyRes 137, beasthood 176 Has the 2nd highest Beasthood among all attires, with the Brador set beating it by 28 points. The garb piece on the other hand has the highest Beasthood, surpassing Beast Hide Garb. Has the highest Frenzy resist among all attires, minus the headpiece, which is surpassed by Beak Mask from the Crowfeather Set.",
+      "location": "Can be bought from the Insight Messenger shop for 6 total Insight after killing Djura. This is true whether or not you befriend him at first.",
+      "source": {
+        "label": "Fextralife – Ashen Hunter Set",
+        "url": "https://bloodborne.wiki.fextralife.com/Ashen_Hunter_Set",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "black-church-set",
+      "name": "Black Church Set",
+      "description": "Attire of Healing Church hunters. Most Healing Church hunters are elementary doctors who understand the importance of early prevention of the scourge, achieved by disposing of victims, and even potential victims, before signs of sickness manifest themselves. Their black attire is synonymous with fear, and that peculiar Yharnam madness. When a cancer is discovered, one must pinpoint its location, reach in, and wrench it from the host's bosom",
+      "pieces": [
+        {
+          "slot": "head",
+          "name": "Black Church Hat",
+          "location": "Cathedral Ward."
+        },
+        {
+          "slot": "chest",
+          "name": "Black Church Garb",
+          "location": "Cathedral Ward."
+        },
+        {
+          "slot": "arms",
+          "name": "Surgical Long Gloves",
+          "location": "Cathedral Ward or the Forbidden Forest."
+        },
+        {
+          "slot": "legs",
+          "name": "Black Church Trousers/Dress",
+          "location": ""
+        }
+      ],
+      "weight": "",
+      "notes": "Set defense totals (Fextralife): physical 220, vsBlunt 220, vsThrust 260, blood 300, arcane 280, fire 260, bolt 270, slowPoisonRes 146, rapidPoisonRes 141, frenzyRes 20, beasthood 98 Has very high elemental defense (blood, arcane, fire, bolt). Adella the Nun is inconsolable unless the Hunter speaks to her while wearing a chestpiece representing the Healing Church, such as the White or Black Church Set, Gascoigne's Set, Choir Setor the Executioner Garb. (More on source page.)",
+      "location": "Found in the round plaza in Cathedral Ward. From the Hunter Chief Emblem gate, go left, past the enemy with the Flamesprayer, and to an alley where several enemies will attack you as you talk to NPCs in doors. The Set is on a corpse.",
+      "source": {
+        "label": "Fextralife – Black Church Set",
+        "url": "https://bloodborne.wiki.fextralife.com/Black_Church_Set",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "bone-ash-set",
+      "name": "Bone Ash Set",
+      "description": "Armor made of bone ash,worn by the oldest keepers. The keepers, who mind the slumbering Great Ones, gained eternal life, preserved in ashen form in a ceremony of flame that cremated body and soul\" Gloves, Boots and Chest-piece \"Now, their frail armor is white and sinewy, a window into an arcane lost art.\" Hat \"The long, pointed hat is a symbol of the old keepers and is considered evidence of their companionship, forged in a certain sin.",
+      "pieces": [
+        {
+          "slot": "head",
+          "name": "Bone Ash Mask",
+          "location": "Purchased from Insight Messengers for 2 Insight after killing the Keeper of the Old Lords."
+        },
+        {
+          "slot": "chest",
+          "name": "Bone Ash Armor",
+          "location": "Purchased from Insight Messengers for 4 Insight after killing the Keeper of the Old Lords."
+        },
+        {
+          "slot": "arms",
+          "name": "Bone Ash Gauntlets",
+          "location": "Purchased from Insight Messengers for 2 Insight after killing the Keeper of the Old Lords."
+        },
+        {
+          "slot": "legs",
+          "name": "Bone Ash Leggings",
+          "location": "Purchased from Insight Messengers for 2 Insight after killing the Keeper of the Old Lords."
+        }
+      ],
+      "weight": "",
+      "notes": "Set defense totals (Fextralife): physical 290, vsBlunt 180, vsThrust 240, blood 140, arcane 140, fire 350, bolt 340, slowPoisonRes 80, rapidPoisonRes 70, frenzyRes 101, beasthood 61 Features excellent physical and fire/bolt defense, but has very low blood and arcane defense. It cost 10 insight to purchase the whole set at once. Worn by Keeper of the Old Lords.",
+      "location": "Insight Vendor, after defeating the second boss within the Central Pthumerian Labyrinth.",
+      "source": {
+        "label": "Fextralife – Bone Ash Set",
+        "url": "https://bloodborne.wiki.fextralife.com/Bone_Ash_Set",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "cainhurst-set",
+      "name": "Cainhurst Set",
+      "description": "Silver helmet/armor/gauntlets/leggings worn by the royal guards who protect Annalise, Queen of the Vilebloods at Cainhurst Castle. This paper-thin silver armor is said to deflect blood of ill-intent, and is what allows the royal guards to capture prey for their beloved Queen, so that one day, she may bear a Child of Blood.",
+      "pieces": [
+        {
+          "slot": "head",
+          "name": "Cainhurst Helmet",
+          "location": "Purchased from Messengers for 27,000 Blood Echoes after obtaining the Cainhurst Badge."
+        },
+        {
+          "slot": "chest",
+          "name": "Cainhurst Armor",
+          "location": "Purchased from Messengers for 44,000 Blood Echoes after obtaining the Cainhurst Badge."
+        },
+        {
+          "slot": "arms",
+          "name": "Cainhurst Gauntlets",
+          "location": "Purchased from Messengers for 21.000 Blood Echoes after obtaining the Cainhurst Badge."
+        },
+        {
+          "slot": "legs",
+          "name": "Cainhurst Leggings",
+          "location": "Cainhurst Castle."
+        }
+      ],
+      "weight": "",
+      "notes": "Set defense totals (Fextralife): physical 300, vsBlunt 180, vsThrust 260, blood 320, arcane 140, fire 200, bolt 110, slowPoisonRes 88, rapidPoisonRes 97, frenzyRes 62, beasthood 53 This armor set features very high Physical Defense but is poor against Blunt and Elemental/Status damage types. Relevant lore theories can be found under The Mysteries of Cainhurst Garb & Architecture. This could be considered the best PVP armor set since it offers the highest physical and one of the highest blood defenses in the game. (More on source page.)",
+      "location": "Purchased from the Messengers after you receive the Cainhurst Badge from joining the Cainhurst Vilebloods. The full set will total at 113,000 blood echoes.",
+      "source": {
+        "label": "Fextralife – Cainhurst Set",
+        "url": "https://bloodborne.wiki.fextralife.com/Cainhurst_Set",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "charred-hunter-set",
+      "name": "Charred Hunter Set",
+      "description": "One of the staple articles of hunter attire, fashioned at the workshop. A product of the scourge of the beast that once plagued Old Yharnam and culminated in the town's fiery cleansing. Designed to be highly resistant to fire. Wearers of this attire hunted down victims of the scourge who survived the raging flames and stench of singed blood",
+      "pieces": [
+        {
+          "slot": "chest",
+          "name": "Charred Hunter Garb",
+          "location": "Old Yharnam."
+        },
+        {
+          "slot": "arms",
+          "name": "Charred Hunter Gloves",
+          "location": "Old Yharnam."
+        },
+        {
+          "slot": "legs",
+          "name": "Charred Hunter Trousers",
+          "location": "Old Yharnam."
+        }
+      ],
+      "weight": "",
+      "notes": "Set defense totals (Fextralife): physical 230, vsBlunt 200, vsThrust 160, blood 210, arcane 120, fire 290, bolt 140, slowPoisonRes 61, rapidPoisonRes 78, frenzyRes 96, beasthood 121 The Charred set is the what the player character is wearing in the 'Project Beast' trailers. It is believed the set belongs to Powder Kegs members, as suggested by the note left by Djura. (More on source page.)",
+      "location": "On the top floor of a hidden building in Old Yharnam. From the area you fight the first NPC (not Djura), drop down where the railing is missing in a corner and land on the ledges below.",
+      "source": {
+        "label": "Fextralife – Charred Hunter Set",
+        "url": "https://bloodborne.wiki.fextralife.com/Charred_Hunter_Set",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "choir-set",
+      "name": "Choir Set",
+      "description": "Attire of the Choir, high-ranking members of the Healing Church. Members of the Choir are both the highest-ranking clerics of the Healing Church, and scholars who continue the work that began at Byrgenwerth. The eye covering indicates their debt to the teachings of Master Willem, even though their paths diverged.",
+      "pieces": [
+        {
+          "slot": "head",
+          "name": "Blindfold Cap",
+          "location": "Upper Cathedral Ward."
+        },
+        {
+          "slot": "chest",
+          "name": "Choir Garb",
+          "location": "Upper Cathedral Ward."
+        },
+        {
+          "slot": "arms",
+          "name": "Choir Gloves",
+          "location": "Upper Cathedral Ward."
+        },
+        {
+          "slot": "legs",
+          "name": "Choir Trousers",
+          "location": "Upper Cathedral Ward."
+        }
+      ],
+      "weight": "",
+      "notes": "Set defense totals (Fextralife): physical 200, vsBlunt 210, vsThrust 210, blood 220, arcane 370, fire 280, bolt 290, slowPoisonRes 111, rapidPoisonRes 93, frenzyRes 37, beasthood 93 It would seem that wearing parts of the Choir set, or the Church garb set, periodically prompts Yharnamite enemies to shout 'Death to the minister!' while attacking the player. (More on source page.)",
+      "location": "Upper Cathedral Ward, accessed from the Healing Church through a ladder.",
+      "source": {
+        "label": "Fextralife – Choir Set",
+        "url": "https://bloodborne.wiki.fextralife.com/Choir_Set",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "crowfeather-set",
+      "name": "Crowfeather Set",
+      "description": "Wood-carved mask/Attire of Eileen the Crow, Hunter of Hunters. The beak contains incense to mask scents of blood and beast. Hunters of Hunters dress as crows to suggest sky burial. The first Hunter of Hunters came from a foreign land, and gave the dead a virtuous native funeral ritual, rather than impose a blasphemous Yharnam burial service upon them. with the hope that former compatriots might be returned to the skies, and find rest in the Hunter's Dream",
+      "pieces": [
+        {
+          "slot": "head",
+          "name": "Beak Mask",
+          "location": "Purchased from Messengers for 10,000 Blood Echoes after obtaining the Crow Hunter Badge."
+        },
+        {
+          "slot": "chest",
+          "name": "Crowfeather Garb",
+          "location": "Purchased from Messengers for 18,000 Blood Echoes after obtaining the Crow Hunter Badge."
+        },
+        {
+          "slot": "arms",
+          "name": "Crowfeather Manchettes",
+          "location": "Purchased from Messengers for 8,000 Blood Echoes after obtaining the Crow Hunter Badge."
+        },
+        {
+          "slot": "legs",
+          "name": "Crowfeather Trousers",
+          "location": "Purchased from Messengers for 8,000 Blood Echoes after obtaining the Crow Hunter Badge."
+        }
+      ],
+      "weight": "",
+      "notes": "Set defense totals (Fextralife): physical 240, vsBlunt 280, vsThrust 220, blood 320, arcane 190, fire 220, bolt 200, slowPoisonRes 69, rapidPoisonRes 88, frenzyRes 138, beasthood 46 Has good physical defense and blood defense. This set's headpiece Beak Mask notably has the highest frenzy resistance, the rest are surpassed by Ashen Hunter Set. Prior to patch 1.04, the male version of the chest piece had a bug causing the right side of the cape to be abnormally stretchy. This bug was not present on the female set.",
+      "location": "Bought from Messengers after receiving the Crow Hunter Badge from Eileen the Crow by finishing her quests or killing her. Beak Mask: 10000 Blood Echoes Crowfeather Garb: 18000 Blood Echoes Crowfeather Manchettes: 8000 Blood Echoes Crowfeather Trousers: 8000 Blood Echoes.",
+      "source": {
+        "label": "Fextralife – Crowfeather Set",
+        "url": "https://bloodborne.wiki.fextralife.com/Crowfeather_Set",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "doll-set",
+      "name": "Doll Set",
+      "description": "Discarded doll clothing, likely a spare for dress-up.\" \"A deep love for the doll can be surmised by the fine craftsmanship of this article, and the care with which it was kept.\" \"It borderlines on mania, and exudes a slight warmth.",
+      "pieces": [
+        {
+          "slot": "head",
+          "name": "Doll Hat",
+          "location": "Old Abandoned Workshop."
+        },
+        {
+          "slot": "chest",
+          "name": "Doll Clothes",
+          "location": "Old Abandoned Workshop."
+        },
+        {
+          "slot": "arms",
+          "name": "Doll Gloves",
+          "location": "Old Abandoned Workshop."
+        },
+        {
+          "slot": "legs",
+          "name": "Doll Skirt",
+          "location": "Old Abandoned Workshop."
+        }
+      ],
+      "weight": "",
+      "notes": "Set defense totals (Fextralife): physical 110, vsBlunt 110, vsThrust 110, blood 150, arcane 150, fire 190, bolt 150, slowPoisonRes 102, rapidPoisonRes 65, frenzyRes 93, beasthood 85 Set can be sold for 35000 Blood Echoes. The set overall provides very little defense against any type of damage/status, and is the second worst attire in the game in terms of defense.",
+      "location": "Chest in Old Abandoned Workshop. Enter Healing Church Workshop, go right around the outside of the building and drop to the lower level. Enter the doorway, notice the rope hanging the plank at the left of the entrance, drop down left side twice and open the door, it will lead to the Old Abandoned Workshop.",
+      "source": {
+        "label": "Fextralife – Doll Set",
+        "url": "https://bloodborne.wiki.fextralife.com/Doll_set",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "executioner-set",
+      "name": "Executioner Set",
+      "description": "As the great Logarius once said, \"Acts of goodness are not always wise, and acts of evil are not always foolish, but regardless, we shall always strive to be good.",
+      "pieces": [
+        {
+          "slot": "head",
+          "name": "Gold Ardeo",
+          "location": "Purchased from Messengers for 60,000 Blood Echoes after obtaining the Wheel Hunter Badge."
+        },
+        {
+          "slot": "chest",
+          "name": "Executioner Garb",
+          "location": "Cainhurst Castle."
+        },
+        {
+          "slot": "arms",
+          "name": "Executioner Gauntlets",
+          "location": "Cainhurst Castle."
+        },
+        {
+          "slot": "legs",
+          "name": "Executioner Trousers",
+          "location": "Cainhurst Castle."
+        }
+      ],
+      "weight": "",
+      "notes": "Set defense totals (Fextralife): physical 230, vsBlunt 290, vsThrust 260, blood 250, arcane 270, fire 240, bolt 270, slowPoisonRes 121, rapidPoisonRes 110, frenzyRes 46, beasthood 111 Alfred will immediately go and kill Annalise if you give him the unaddressed Cainhurst summons found in the Cainhurst Castle throne room. Afterwards you can retrieve the Queenly Flesh from her throne. (More on source page.)",
+      "location": "Located on a dead body in Cainhurst Castle. The Gold Ardeo can be bought from the Messengers after acquiring the Wheel Hunter Badge key item, which is given by Alfred after completing his quest, or by killing him and looting his corpse. If you decide to kill him to get the Ardeo, do not kill him right away. Instead, wait until he's at his second location, and kill him there via whatever method you please.",
+      "source": {
+        "label": "Fextralife – Executioner Set",
+        "url": "https://bloodborne.wiki.fextralife.com/Executioner_Set",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "foreign-set",
+      "name": "Foreign Set",
+      "description": "Hood/Clothing/Bandage/Trousers worn upon awakening to the nightmare of blood and beasts. Perhaps its wearer had to stay out of sight, and travel by cover of darkness. Without memory, who will ever know?",
+      "pieces": [
+        {
+          "slot": "head",
+          "name": "Black Hood",
+          "location": "Starting Equipment."
+        },
+        {
+          "slot": "chest",
+          "name": "Foreign Garb",
+          "location": "Starting equipment."
+        },
+        {
+          "slot": "arms",
+          "name": "Sullied Bandage",
+          "location": "Starting equipment."
+        },
+        {
+          "slot": "legs",
+          "name": "Foreign Trousers",
+          "location": "Starting gear."
+        }
+      ],
+      "weight": "",
+      "notes": "Set defense totals (Fextralife): physical 150, vsBlunt 180, vsThrust 130, blood 150, arcane 150, fire 180, bolt 180, slowPoisonRes 65, rapidPoisonRes 46, frenzyRes 65, beasthood 37 Has the weakest stat among all attires. Should be replaced by the first substitute the player finds (the Hunter Set can quickly be found in the Central Yharnam sewers) The description suggests this attire came outside Yharnam. It is loosely based on Nikola Tesla's clothing, minus the hood and cape.",
+      "location": "Starting Equipment.",
+      "source": {
+        "label": "Fextralife – Foreign Set",
+        "url": "https://bloodborne.wiki.fextralife.com/Foreign_Set",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "gascoignes-set",
+      "name": "Gascoigne's Set",
+      "description": "Hunter attire worn by Father Gasoigne. Similar to hunter garb created at the workshop, only these are tainted by a pungent beastly stench that eats away at Gascoigne. \"Father\" is a title used for clerics in a foreign land, and there is no such rank in the Healing Church",
+      "pieces": [
+        {
+          "slot": "head",
+          "name": "Gascoigne's Cap",
+          "location": "Purchased from Insight Messengers for 1 Insight after defeating Father Gascoigne."
+        },
+        {
+          "slot": "chest",
+          "name": "Gascoigne's Garb",
+          "location": "Purchased from Insight Messengers for 3 Insight after defeating Father Gascoigne."
+        },
+        {
+          "slot": "arms",
+          "name": "Gascoigne's Gloves",
+          "location": "Purchased from Insight Messengers for 1 Insight after killing Father Gascoigne."
+        },
+        {
+          "slot": "legs",
+          "name": "Gascoigne's Trousers",
+          "location": "Purchased from Insight Messengers for 1 Insight after defeating Father Gascoigne."
+        }
+      ],
+      "weight": "",
+      "notes": "Set defense totals (Fextralife): physical 220, vsBlunt 270, vsThrust 250, blood 220, arcane 280, fire 280, bolt 240, slowPoisonRes 128, rapidPoisonRes 103, frenzyRes 56, beasthood 110 Has fantastic poison resistance. Great when fighting the Blood-Starved Beast and similar poison-using enemies.",
+      "location": "Can be bought from the Insight Messengers after defeating Father Gascoigne.",
+      "source": {
+        "label": "Fextralife – Gascoigne's Set",
+        "url": "https://bloodborne.wiki.fextralife.com/Gascoigne%27s_Set",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "gehrmans-hunter-set",
+      "name": "Gehrman's Hunter Set",
+      "description": "Hunter attire of Gehrman, the first hunter. Created before the workshop existed by making adjustments to everyday clothing, and later became the basis for all hunter's garb. The hunter's emphasis on engaging beasts with speed, and therefore of selecting lightweight attire, no doubt traces back to Gehrman's own combat style.",
+      "pieces": [
+        {
+          "slot": "head",
+          "name": "Gehrman's Hunter Cap",
+          "location": "Purchased from Messengers for? after defeating Gehrman."
+        },
+        {
+          "slot": "chest",
+          "name": "Gehrman's Hunter Garb",
+          "location": "Purchased from Messengers for? after defeating Gehrman."
+        },
+        {
+          "slot": "legs",
+          "name": "Gehrman's Hunter Trousers",
+          "location": "Purchased from Messengers for?? Blood Echoes after obtaining the Old Hunter Badge."
+        }
+      ],
+      "weight": "",
+      "notes": "Set defense totals (Fextralife): physical 190, vsBlunt 170, vsThrust 170, blood 210, arcane 130, fire 170, bolt 150, slowPoisonRes 63, rapidPoisonRes 70, frenzyRes 98, beasthood 88 This set is worn by Gehrman when he's on the wheelchair. He switches the hat into Top Hat and adds an unobtainable cape and gloves after standing up from his wheelchair.",
+      "location": "You can buy it from the messengers in The Hunter's Dream in NG+ after chosing the refuse option in the end and defeating Gehrman, The First Hunter. Can be bought in the first playthrough if the player triggers the Moon Presence without killing it after chosing the refuse option.",
+      "source": {
+        "label": "Fextralife – Gehrman's Hunter Set",
+        "url": "https://bloodborne.wiki.fextralife.com/Gehrman%27s_Hunter_Set",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "graveguard-set",
+      "name": "Graveguard Set",
+      "description": "Mask/Robe/Manchettes/Kilt of Dores, graveguard of the Forbidden Woods. His pale countenance mimics the labyrinth watchers. Willem kept two loyal servants back at Byrgenwerth. When they were sent into the labyrinth, they encountered the eldritch Truth, and went mad. One became the password gatekeeper, while Dores became a graveguard of the forest. Both remained loyal, even in madness.",
+      "pieces": [
+        {
+          "slot": "head",
+          "name": "Graveguard Mask",
+          "location": "Second half of the Forbidden Woods."
+        },
+        {
+          "slot": "chest",
+          "name": "Graveguard Robe",
+          "location": "Second half of the Forbidden Woods."
+        },
+        {
+          "slot": "arms",
+          "name": "Graveguard Manchettes",
+          "location": "Second half of the Forbidden Woods."
+        },
+        {
+          "slot": "legs",
+          "name": "Graveguard Kilt",
+          "location": "Second half of the Forbidden Woods."
+        }
+      ],
+      "weight": "",
+      "notes": "Set defense totals (Fextralife): physical 210, vsBlunt 220, vsThrust 250, blood 220, arcane 270, fire 230, bolt 280, slowPoisonRes 122, rapidPoisonRes 119, frenzyRes 135, beasthood 98 This set of armor is extremely similar to the Crimson Set of Dark Souls.",
+      "location": "Found on two dead bodies (the mask is seperate) in the second half of the Forbidden Woods, where you encounter the snake parasite mobs. Keeping searching areas on the left side of the path and you'll eventually see a gap you can jump across. Location Video.",
+      "source": {
+        "label": "Fextralife – Graveguard Set",
+        "url": "https://bloodborne.wiki.fextralife.com/Graveguard_Set",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "henryks-hunter-set",
+      "name": "Henryk's Hunter Set",
+      "description": "Hunter's hat/attire/trousers worn by Henryk, the old hunter. The taciturn old hunter Henryk was once partners with Father Gascoigne, and though they were a fierce and gallant duo, their partnership led to Henryk's tragically long life. Henryk's unique yellow garb is resistant to bolt and will be of great help to any hunter who has inherited the onus of the hunt.",
+      "pieces": [
+        {
+          "slot": "head",
+          "name": "Henryk's Hunter Cap",
+          "location": "Purchased from Insight Messengers for 1 Insight after defeating Henrykduring Eileen's sidequest."
+        },
+        {
+          "slot": "chest",
+          "name": "Henryk's Hunter Garb",
+          "location": "Purchased from Insight Messengers for 3 Insight after killing Henryk for Eileen's sidequest"
+        },
+        {
+          "slot": "arms",
+          "name": "Henryk's Hunter Gloves",
+          "location": "Purchased from Insight Messengers for 1 Insight after killing Henryk for Eileen's sidequest."
+        },
+        {
+          "slot": "legs",
+          "name": "Henryk's Hunter Trousers",
+          "location": "Purchased from Insight Messengers for 1 Insight after killing Henrykfor Eileen's sidequest."
+        }
+      ],
+      "weight": "",
+      "notes": "Set defense totals (Fextralife): physical 250, vsBlunt 250, vsThrust 230, blood 210, arcane 190, fire 250, bolt 360, slowPoisonRes 51, rapidPoisonRes 101, frenzyRes 108, beasthood 146 Henryk's armor has the highest total bolt resistance of any set in the game, surpassing the Bone Ash Set by a total of 20 points (and the Choir Set, the next highest, by a total of 70 points). (More on source page.)",
+      "location": "It can be purchased for 6 Insight from the Messengers in the Hunter's Dream after defeating Henryk in the Tomb of Oedon during Eileen the Crow's questline. In order for him to appear there, you must speak with Eileen outside and to left of the door in front of the Cathedral Ward lamp and fight him before defeating Vicar Amelia.",
+      "source": {
+        "label": "Fextralife – Henryk's Hunter Set",
+        "url": "https://bloodborne.wiki.fextralife.com/Henryk%27s_Hunter_Set",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "hunter-set",
+      "name": "Hunter Set",
+      "description": "One of the standard articles of hunter attire fashioned at the workshop. A fine piece of hunter attire that provides stable defense to anyone facing Yharnam's beastly threat. Allows one to stalk beasts unannounced, by cover of night.",
+      "pieces": [
+        {
+          "slot": "head",
+          "name": "Hunter Hat",
+          "location": "Central Yharnam."
+        },
+        {
+          "slot": "chest",
+          "name": "Hunter Garb",
+          "location": "Central Yharnam."
+        },
+        {
+          "slot": "arms",
+          "name": "Hunter Gloves",
+          "location": "Central Yharnam."
+        },
+        {
+          "slot": "legs",
+          "name": "Hunter Trousers",
+          "location": "Central Yharnam."
+        }
+      ],
+      "weight": "",
+      "notes": "Set defense totals (Fextralife): physical 270, vsBlunt 270, vsThrust 220, blood 270, arcane 150, fire 280, bolt 200, slowPoisonRes 41, rapidPoisonRes 80, frenzyRes 119, beasthood 112 Features good all-around defense. This set has two possible chests. See Hunter Garb for details. Set (B) has Top Hat as alternate headpiece.",
+      "location": "Set (A) can be found if you go to the Great Bridge, from the stairs you used to reach the bridge directly across are stairs leading down. At the bottom of the stairs go left breaking boxes that will bring you to a ladder leading to some sewers. Work your way to the bottom and at the end of the tunnel before the next drop off the set will be off to the left. Set (B) can be found directly left of the Cathedral Ward lamp. It's behind some gravestones on the right. (Do not linger when picking it up. There is a hidden enemy that will most likely one shot you if you do not move aside)",
+      "source": {
+        "label": "Fextralife – Hunter Set",
+        "url": "https://bloodborne.wiki.fextralife.com/Hunter_Set",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "knights-set",
+      "name": "Knight's Set",
+      "description": "Adornment prized by the knights of Cainhurst. Resembles a ponytail of silver hair. The Cainhurst way is a mix of nostalgia and bombast. They take great pride even in the blood-stained corpses of beasts that they leave behind. confident that they will stand as examples of decadent art.\" \"Attire/Gloves of the knights of Cainhurst. A regal piece graced by intricate goldwork. The Cainhurst way is a mix of nostalgia and bombast. They take great pride even in the blood-stained corpses of beasts that they leave behind. confident that they will stand as examples of decadent art.",
+      "pieces": [
+        {
+          "slot": "head",
+          "name": "Knight's Wig",
+          "location": "Cainhurst Castle."
+        },
+        {
+          "slot": "chest",
+          "name": "Knight's Garb",
+          "location": "Cainhurst Castle."
+        },
+        {
+          "slot": "arms",
+          "name": "Knight's Gloves",
+          "location": "Cainhurst Castle."
+        },
+        {
+          "slot": "legs",
+          "name": "Knight's Trousers/Dress",
+          "location": "Cainhurst Castle."
+        }
+      ],
+      "weight": "",
+      "notes": "Set defense totals (Fextralife): physical 210, vsBlunt 210, vsThrust 230, blood 340, arcane 170, fire 180, bolt 230, slowPoisonRes 62, rapidPoisonRes 103, frenzyRes 97, beasthood 88 When all armor pieces are equipped, its blood defence is second only to Maria's Hunter Set.",
+      "location": "Forsaken Cainhurst Castle - The Wig can be found on the roof before the boss. The rest of the set is in the hidden section of the library in a chest. To access this area you have to go to the second floor of the library and through the open window jump down the ledges until you find yourself on the balcony, from there enter a room which contains the chest with the remainder of the set.",
+      "source": {
+        "label": "Fextralife – Knight's Set",
+        "url": "https://bloodborne.wiki.fextralife.com/Knight%27s_Set",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "madman-set",
+      "name": "Madman Set",
+      "description": "Most tomb prospectors, members of the Healing Church chosen to explore the old labyrinth, are unable to withstand the weight of the old knowledge, and go mad. ' This attire is worn by those lost souls. ' Truth oft resembles madness, inaccessible to the dull of mind. Those who go mad are merely thoughtful souls who failed to reach any conclusions. ' The appendages draped across them are said to be a kind of protective charm, or at least, that is what these lost souls believe with all their hearts.",
+      "pieces": [
+        {
+          "slot": "head",
+          "name": "Madman Hood",
+          "location": "Purchased from Insight Messengers for 1 Insight after defeating the Forgotten Madman."
+        },
+        {
+          "slot": "chest",
+          "name": "Madman Garb",
+          "location": "Purchased from Insight Messengers for 3 Insight after defeating the Forgotten Madman."
+        },
+        {
+          "slot": "arms",
+          "name": "Madman Manchettes",
+          "location": "Purchased from Insight Messengers for 1 Insight after killing the Forgotten Madman."
+        },
+        {
+          "slot": "legs",
+          "name": "Madman Leggings",
+          "location": "Purchased from Insight Messengers for 1 Insight after killing the Forgotten Madman."
+        }
+      ],
+      "weight": "",
+      "notes": "Set defense totals (Fextralife): physical 210, vsBlunt 190, vsThrust 230, blood 210, arcane 310, fire 260, bolt 280, slowPoisonRes 139, rapidPoisonRes 125, frenzyRes 8, beasthood 70 Has the lowest Frenzy resistance in the game (8 in total), which make s ense from a lore perspective.",
+      "location": "Available after killing the Forgotten Madman in Lower Hintertomb Chalice.",
+      "source": {
+        "label": "Fextralife – Madman Set",
+        "url": "https://bloodborne.wiki.fextralife.com/Madman_Set",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "noble-dress",
+      "name": "Noble Dress",
+      "description": "A finely tailored bordeaux dress. Worn by the nobles of the old bloodline that traces back to the forsaken Castle Cainhurst.",
+      "pieces": [
+        {
+          "slot": "chest",
+          "name": "Noble Dress",
+          "location": "Cainhurst Castle."
+        }
+      ],
+      "weight": "",
+      "notes": "This is the dress worn by Arianna.",
+      "location": "Chest at cainhurst castle behind the first door up the stairs to the left next to the tables.",
+      "source": {
+        "label": "Fextralife – Noble Dress",
+        "url": "https://bloodborne.wiki.fextralife.com/Noble_Dress",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "shabby-set",
+      "name": "Shabby Set",
+      "description": "Common Yharnam cap. Well-worn and losing its shape.\" \" Common Yharnam clothing. Well-worn and damp with sweat.",
+      "pieces": [
+        {
+          "slot": "head",
+          "name": "Rumpled Yharnam Hat",
+          "location": "Lower Healing Church Workshop."
+        },
+        {
+          "slot": "chest",
+          "name": "Sweaty Clothes",
+          "location": "Lower Healing Church Workshop."
+        }
+      ],
+      "weight": "",
+      "notes": "Set defense totals (Fextralife): physical 80, vsBlunt 70, vsThrust 70, blood 50, arcane 60, fire 160, bolt 90, slowPoisonRes 35, rapidPoisonRes 46, frenzyRes 51, beasthood 35",
+      "location": "When first arriving at the Healing Church Workshop, before going up the stairs, make your way around the first walkway and drop down. Fall from down the platforms past where the entrance to the Abandoned Old Workshop is located, going all the way to the bottom and entering Old Yharnam. The Shabby Set can be found on a body on the street.",
+      "source": {
+        "label": "Fextralife – Shabby Set",
+        "url": "https://bloodborne.wiki.fextralife.com/Shabby_Set",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "student-set",
+      "name": "Student Set",
+      "description": "Uniform of the students of Byrgenwerth, a bygone institute of learning. (Features a thick cape.) The Healing Church has its roots in Byrgenwerth, and naturally borrows heavily from its uniform design. The focus not on knowledge. or thought. but on pure pretension would surely bring Master Willem to despair, if only he knew.",
+      "pieces": [
+        {
+          "slot": "chest",
+          "name": "Student Uniform (A)",
+          "location": ""
+        },
+        {
+          "slot": "chest",
+          "name": "Student Uniform Variant (B)",
+          "location": ""
+        },
+        {
+          "slot": "legs",
+          "name": "Student Trousers",
+          "location": "Byrgenwerth or Lecture Building."
+        }
+      ],
+      "weight": "",
+      "notes": "Set defense totals (Fextralife): physical Set A 120 Set B 120, vsBlunt Set A 120 Set B 110, vsThrust Set A 120 Set B 110, blood Set A 160 Set B 150, arcane Set A 210 Set B 210, fire Set A 110 Set B 110, bolt Set A 120 Set B 120, slowPoisonRes Set A 66 Set B 66, rapidPoisonRes Set A 49 Set B 49, frenzyRes Set A 54 Set B 54, beasthood Set A 54 Set B 64 The variant uniform has lower blunt and thrust defense. This may be to represent the lack of the added layer of the robe on the Student Uniform. Worn by Micolash, Host of the Nightmare.",
+      "location": "A variant of the chest piece can be found in Lecture building, require the key to theatre. Byrgenwerth in chest you can find trousers and chest piece.",
+      "source": {
+        "label": "Fextralife – Student Set",
+        "url": "https://bloodborne.wiki.fextralife.com/Student_Set",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "tomb-prospector-set",
+      "name": "Tomb Prospector Set",
+      "description": "Attire of tomb prospectors who explore the old labyrinth on behalf of the Healing Church. The Healing Church traces its roots to Byrgenwerth, and is therefore aware of the ruins' true importance. They contain much more than mere hunter trinkets, indeed, they hide the very secrets of the old Great Ones. sought after by those with the insight to imagine greatness.",
+      "pieces": [
+        {
+          "slot": "head",
+          "name": "Tomb Prospector Hood",
+          "location": "Purchased from Messengers for 6,000 Blood Echoes after obtaining the Radiant Sword Hunter Badge."
+        },
+        {
+          "slot": "chest",
+          "name": "Tomb Prospector Garb",
+          "location": "Purchased from Messengers for 18,000 Blood Echoes after obtaining the Radiant Sword Hunter Badge."
+        },
+        {
+          "slot": "arms",
+          "name": "Tomb Prospector Gloves",
+          "location": "Purchased from Messengers for 6,000 Blood Echoes after obtaining the Radiant Sword Hunter Badge."
+        },
+        {
+          "slot": "legs",
+          "name": "Tomb Prospector Trousers",
+          "location": "Purchased from Messengers for 6,000 Blood Echoes after obtaining the Radiant Sword Hunter Badge."
+        }
+      ],
+      "weight": "",
+      "notes": "Set defense totals (Fextralife): physical 220, vsBlunt 210, vsThrust 270, blood 250, arcane 310, fire 270, bolt 270, slowPoisonRes 133, rapidPoisonRes 129, frenzyRes 31, beasthood 110 The torso piece costs 18,000 Blood Echoes, while the rest of the pieces cost 6,000 Blood Echoes each. The total cost for the set is 36,000 Blood Echoes.",
+      "location": "Hunter's Dream, available upon obtaining the Radiant Sword Hunter Badge.",
+      "source": {
+        "label": "Fextralife – Tomb Prospector Set",
+        "url": "https://bloodborne.wiki.fextralife.com/Tomb_Prospector_Set",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "white-church-set",
+      "name": "White Church Set",
+      "description": "Attire of special Church doctors. These doctors are superiors to the black preventative hunters, and specialists in experimentally-backed blood ministration and the scourge of the beast. They believe that medicine is not a means of treatment but rather a method for research. and that some knowledge can only be obtained by exposing oneself to sickness.",
+      "pieces": [
+        {
+          "slot": "head",
+          "name": "White Church Hat",
+          "location": "Forbidden Woods."
+        },
+        {
+          "slot": "chest",
+          "name": "White Church Garb",
+          "location": "Forbidden Woods."
+        },
+        {
+          "slot": "arms",
+          "name": "Surgical Long Gloves",
+          "location": "Cathedral Ward or the Forbidden Forest."
+        },
+        {
+          "slot": "legs",
+          "name": "White Church Trousers/Dress",
+          "location": "Forbidden Woods."
+        }
+      ],
+      "weight": "",
+      "notes": "Set defense totals (Fextralife): physical 200, vsBlunt 200, vsThrust 250, blood 330, arcane 290, fire 290, bolt 280, slowPoisonRes 152, rapidPoisonRes 135, frenzyRes 25, beasthood 91 It would seem that wearing parts of the Choir set, or the Church garb set, periodically prompts Yharnamite enemies to shout 'Death to the minister!' while attacking the player. (Was wearing both a piece of the Church garb set and the Choir set when this happened; not sure which caused the dialogue) Worn by Iosefka. (More on source page.)",
+      "location": "Forbidden Woods, atop a roof in the village. Climb the ladder on the side of the house by all the dog cages. It will be guarded by a pair of crows.",
+      "source": {
+        "label": "Fextralife – White Church Set",
+        "url": "https://bloodborne.wiki.fextralife.com/White_Church_Set",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "yahargul-set",
+      "name": "Yahar'gul Set",
+      "description": "Iron helmet worn by hunters of the Unseen Village. Removing the hood reveals something reminiscent of a warrior of a previous age. This headwear is made of metal, a rarity for hunter garb, and has high defense, but only against physical attacks.\" \"Thick black pullover/gloves/trousers worn by hunters of the Unseen Village. The hunters of Yahar'gul answer to the village's founders, the School of Mensis. Hunters in name only, these kidnappers blend into the night wearing this attire. Designed primarily to defend from physical attacks, the binding of thick rope serves both to protect its wearer, and restrain his foes.",
+      "pieces": [
+        {
+          "slot": "head",
+          "name": "Black Hooded Iron Helm",
+          "location": "Yahar'gul, Unseen Village or Hypogean Gaol."
+        },
+        {
+          "slot": "head",
+          "name": "Iron Yahar'gul Helm",
+          "location": "Yahar'gul, Unseen Village."
+        },
+        {
+          "slot": "chest",
+          "name": "Yahar'gul Black Garb",
+          "location": "Yahar'gul, Unseen Village."
+        },
+        {
+          "slot": "arms",
+          "name": "Yahar'gul Black Gloves",
+          "location": "Yahar'gul, Unseen Village or Hypogean Gaol."
+        },
+        {
+          "slot": "legs",
+          "name": "Yahar'gul Black Trousers",
+          "location": "Yahar'gul, Unseen Village. Outside the cathedral above the Hypogean Gaol, down the stairs and on the corpse of a hunter on a carriage to your right."
+        }
+      ],
+      "weight": "",
+      "notes": "Set defense totals w/ Black Hooded Iron Helm (Fextralife): physical 280, vsBlunt 250, vsThrust 220, blood 210, arcane 160, fire 150, bolt 160, slowPoisonRes 108, rapidPoisonRes 90, frenzyRes 99, beasthood 86. Set defense totals w/ Iron Yahar'gul Helm (Fextralife): physical 280, vsBlunt 250, vsThrust 220, blood 210, arcane 160, fire 150, bolt 150, slowPoisonRes 100, rapidPoisonRes 85, frenzyRes 96, beasthood 90. Features excellent physical defense. Some of the executioners from the Huntsman's Copse in Dark Souls 2 wore the Iron Yahar'gul helm. It is possible to acquire the set (minus the secondary head gear) before killing Rom. (More on source page.)",
+      "location": "Leave the building with the Hypogean Gaol lamp, then go right and down the stairs. The set is on a body sitting on the front of a wagon on the right side of the path. Be warned that a Maneater boar guards this set. A secondary head piece is located within Yahar'gul, Unseen Village after defeating Rom the Vacuous Spider. From the dark cathedral (with the same Amygdala that takes you to the nightmare frontier) go down the stars and continue to the lamp. Proceed down the stairs and take a right, continue down the stairs. (More on source page.)",
+      "source": {
+        "label": "Fextralife – Yahar'gul Set",
+        "url": "https://bloodborne.wiki.fextralife.com/Yahar%27gul_Set",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "yharnam-hunter-set",
+      "name": "Yharnam Hunter Set",
+      "description": "Ludwig, the first hunter of the Healing Church, once recruited Yharnamites to serve as hunters. This hunter's attire was made for new recruits, and has excellent straightforward defense. But not nearly enough to allow an ordinary man to stand any real chance against the beasts.",
+      "pieces": [
+        {
+          "slot": "head",
+          "name": "Yharnam Hunter Cap",
+          "location": "Purchased from Messengers for 500 Blood Echoes."
+        },
+        {
+          "slot": "chest",
+          "name": "Yharnam Hunter Garb",
+          "location": "Purchased from Messengers for 1,000 Blood Echoes."
+        },
+        {
+          "slot": "arms",
+          "name": "Yharnam Hunter Gloves",
+          "location": "Purchased from Messengers for 500 Blood Echoes."
+        },
+        {
+          "slot": "legs",
+          "name": "Yharnam Hunter Trousers",
+          "location": "Purchased from Messengers for 500 Blood Echoes."
+        }
+      ],
+      "weight": "",
+      "notes": "Set defense totals (Fextralife): physical 250, vsBlunt 230, vsThrust 250, blood 220, arcane 230, fire 270, bolt 250, slowPoisonRes 116, rapidPoisonRes 98, frenzyRes 101, beasthood 116 This Attire looks different on male and female hunters.",
+      "location": "Purchase from the Messengers at Hunter's Dream from the start of the game. Each piece costs 500 Blood Echoes, except the chest piece, which is 1000.",
+      "source": {
+        "label": "Fextralife – Yharnam Hunter Set",
+        "url": "https://bloodborne.wiki.fextralife.com/Yharnam_Hunter_Set",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "ariannas-shoes",
+      "name": "Arianna's Shoes",
+      "description": "Shoes worn by Arianna. woman of the night in the Cathedral Ward. Innocent and cute. in contrast with its owner.",
+      "pieces": [
+        {
+          "slot": "legs",
+          "name": "Arianna's Shoes",
+          "location": "Drops from Arianna."
+        }
+      ],
+      "weight": "",
+      "notes": "",
+      "location": "Can be found on one of the Celestial Mobs if Arianna is sent to Iesofka's clinic. Killing her baby drops the shoes. Arianna herself goes into a shock-like state after you kill her baby.",
+      "source": {
+        "label": "Fextralife – Arianna's Shoes",
+        "url": "https://bloodborne.wiki.fextralife.com/Arianna%27s_Shoes",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "crown-of-illusions",
+      "name": "Crown of Illusions",
+      "description": "One of the precious secrets of Cainhurst. The old king's crown is said to reveal illusions, and expose a mirage that hides a secret. And so Logarius donned the crown of his own volition, determined to prevent a single soul from stumbling upon the vile secret. What visions did he see, sitting serenely upon his new throne?",
+      "pieces": [
+        {
+          "slot": "head",
+          "name": "Crown of Illusions",
+          "location": "Martyr Logarius drop."
+        }
+      ],
+      "weight": "",
+      "notes": "Can be sold for Blood Echoes after revealing the illusory wall.",
+      "location": "On the Ground after the Martyr Logarius boss fight.",
+      "source": {
+        "label": "Fextralife – Crown of Illusions",
+        "url": "https://bloodborne.wiki.fextralife.com/Crown_of_Illusions",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "mensis-cage",
+      "name": "Mensis Cage",
+      "description": "The School of Mensis controls the Unseen Village. This hexagonal iron cage suggests their strange ways. The cage is a device that restrains the will of the self, allowing one to see the profane world for what it is. It also serves as an antenna that facilitates contact with the Great Ones of the dream. But to an observer, the iron cage appears to be precisely what delivered them to their harrowing nightmare.",
+      "pieces": [
+        {
+          "slot": "head",
+          "name": "Mensis Cage",
+          "location": "Reward for killing Micolash, Host of the Nightmare."
+        }
+      ],
+      "weight": "",
+      "notes": "",
+      "location": "Reward for defeating Micolash, Host of the Nightmare.",
+      "source": {
+        "label": "Fextralife – Mensis Cage",
+        "url": "https://bloodborne.wiki.fextralife.com/Mensis_Cage",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "enlarged-head",
+      "name": "Enlarged Head",
+      "description": "An enlarged head of a patient of the Cathedral, with a cavity that just happens to fit a human head, although one would be mad to try it on. But if you do, listen carefully, for the sticky sound. Drip, drop. As water, seeping up from the depths, slowly, steadily.",
+      "pieces": [
+        {
+          "slot": "head",
+          "name": "Enlarged Head",
+          "location": "In the Research Hall"
+        }
+      ],
+      "weight": "",
+      "notes": "The Old Hunters DLC.",
+      "location": "Patient Room Floor 5 of the Research Hall surrounded by enlarged head creatures in the left-hand corner.",
+      "source": {
+        "label": "Fextralife – Enlarged Head",
+        "url": "https://bloodborne.wiki.fextralife.com/Enlarged_Head",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "butcher-set",
+      "name": "Butcher Set",
+      "description": "Mask/Garb/Gloves/Trousers of the Madaras twins, denizens of the Forbidden Woods, likely belonging to the elder of the two. Both the twins became hunters, and brought back and dissected their beast prey, in order to support the villagers in their forbidden research",
+      "pieces": [
+        {
+          "slot": "head",
+          "name": "Butcher Mask",
+          "location": "The Hunter's Nightmare"
+        },
+        {
+          "slot": "chest",
+          "name": "Butcher Garb",
+          "location": "The Hunter's Nightmare: From the Nightmare Church lamp run past the one Void giant with a cannon and to the right, following a path with another Axe Void Giant. The complete set is there."
+        },
+        {
+          "slot": "arms",
+          "name": "Butcher Gloves",
+          "location": "The Hunter's Nightmare: From the Nightmare Church lamp run past the one Void giant with a cannon and to the right, following a path with another Axe Void Giant. The complete set is there."
+        },
+        {
+          "slot": "legs",
+          "name": "Butcher Trousers",
+          "location": "The Hunter's Nightmare: From the Nightmare Church lamp run past the one Void giant with a cannon and to the right, following a path with another Axe Void Giant. The complete set is there."
+        }
+      ],
+      "weight": "",
+      "notes": "The Old Hunters DLC. Set defense totals (Fextralife): physical 270, vsBlunt 170, vsThrust 270, blood 180, arcane 230, fire 190, bolt 280, slowPoisonRes 132, rapidPoisonRes 143, frenzyRes 80, beasthood 70",
+      "location": "The Hunter's Nightmare: From the Nightmare Church Lamp run past the Nightmare Executioner with a cannon and go left. The path is between the two Nightmare Executioners. The complete set is there.",
+      "source": {
+        "label": "Fextralife – Butcher Set",
+        "url": "https://bloodborne.wiki.fextralife.com/Butcher_Set",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "bradors-set",
+      "name": "Brador's Set",
+      "description": "Brador donned a compatriot's beastly scalp and hide while still moist with blood. Most of the blood stains on this hide were from that day",
+      "pieces": [
+        {
+          "slot": "head",
+          "name": "Bradors Testimony",
+          "location": "Dropped by Brador"
+        },
+        {
+          "slot": "chest",
+          "name": "Beast Hide Garb",
+          "location": "Fishing Hamlet - defeat Brador between the beams under a house in the lower fishing village, near a Kin Coldblood (10)"
+        },
+        {
+          "slot": "arms",
+          "name": "Bloodied Arm Bands",
+          "location": "Fishing Hamlet: Defeat Brador as an invader in the bridge right before reaching the Lightouse Lamp"
+        },
+        {
+          "slot": "legs",
+          "name": "Bloodied Trousers",
+          "location": "Fishing Hamlet: Defeat Brador as an invader in the underground caverns."
+        }
+      ],
+      "weight": "",
+      "notes": "The Old Hunters DLC. Set defense totals (Fextralife): physical 240, vsBlunt 270, vsThrust 190, blood 220, arcane 170, fire 130, bolt 170, slowPoisonRes 77, rapidPoisonRes 70, frenzyRes 56, beasthood 204 Has the highest Beasthood total out of all attires, minus the Ashen Hunter Garb. The fire resistance in this set is weaker than most attire sets, most likely due to its beastly origins. Frenzy resistance is oddly low for a set which offers such a high beasthood stat. (More on source page.)",
+      "location": "This set is found one piece at a time after defeating each invasion of the NPC, Brador, triggered after you reach the Lighthouse Hut Lamp. 3 will attempt to prevent you from reaching the end of the Fishing Hamlet, and a 4th will guard Brador's cell. The sound of a ringing bell signals a nearby invasion spot. Even if you defeat one of the invaders, dying or resetting the map will cause them to respawn indefinitely. 1) In front of Brador's cell. This one drops Brador's Testimony. 2) At the end of the bridge right after lighting the Lighthouse Hut Lamp. This one drops the Blooded Arm Bands. (More on source page.)",
+      "source": {
+        "label": "Fextralife – Brador's Set",
+        "url": "https://bloodborne.wiki.fextralife.com/Brador%27s_Set",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "constable-set",
+      "name": "Constable Set",
+      "description": "Once upon a time a troupe of foreign constables chased a beast all the way to Yahrnam, and this is what they wore. The constables became victims of the beast, except for one survivor, who in turn devoured the creature whole, all by himself. The fable is a favorite among Yharnamites, who are partial to any stories of pompous, intolerant foreigners, who suffer for their ignorance. It makes the blood taste that much sweeter.",
+      "pieces": [
+        {
+          "slot": "head",
+          "name": "Master's Iron Helm",
+          "location": "Dropped by Valtr if he dies or after offering enough Vermin."
+        },
+        {
+          "slot": "chest",
+          "name": "Constable's Garb",
+          "location": "The Hunter's Nightmare"
+        },
+        {
+          "slot": "arms",
+          "name": "Constable Gloves",
+          "location": ""
+        },
+        {
+          "slot": "legs",
+          "name": "Constable Trousers",
+          "location": "The Hunter's Nightmare: From the shortcut from the first lamp. Walk straight down the stairs and to the right. On a dead body guarded by three Bloodlickers."
+        }
+      ],
+      "weight": "",
+      "notes": "The Old Hunters DLC. Set defense totals (Fextralife): physical 270, vsBlunt 240, vsThrust 220, blood 230, arcane 220, fire 250, bolt 250, slowPoisonRes 98, rapidPoisonRes 80, frenzyRes 62, beasthood 141",
+      "location": "Master's Iron Helm: First, speak to Valtr in the Forbidden Woods to join The League. Next, obtain and crush five Vermin before speaking to Valtr again. Finally, reset the area to find Valtr gone and the helm on the floor. Another option is to kill Valtr and retrieve his helmet which he drops after killed. The remaining three pieces are found separately within The Hunter's Nightmare, starting with the area after passing the Nightmare Cathedral. Constable's Gloves: Open the shortcut to the first lamp. From the lamp enter the shortcut and walk up the hill and to the right around the corner. (More on source page.)",
+      "source": {
+        "label": "Fextralife – Constable Set",
+        "url": "https://bloodborne.wiki.fextralife.com/Constable_Set",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "decorative-old-hunter-set",
+      "name": "Decorative Old Hunter Set",
+      "description": "Old Hunter Garb decorated with brass trinkets At the time, some hunters believed that certain metals would ward off beast blood. On a night of the hunt, it is no wonder that people would resort to superstition.",
+      "pieces": [
+        {
+          "slot": "chest",
+          "name": "Decorative Old Hunter Garb",
+          "location": "Research Hall"
+        },
+        {
+          "slot": "legs",
+          "name": "Decorative Old Hunter Trousers",
+          "location": "Research Hall"
+        }
+      ],
+      "weight": "",
+      "notes": "The Old Hunters DLC. Set defense totals (Fextralife): physical 180, vsBlunt 120, vsThrust 130, blood 180, arcane 100, fire 190, bolt 90, slowPoisonRes 55, rapidPoisonRes 36, frenzyRes 58, beasthood 77",
+      "location": "Can be found in one of the siderooms in the Research Hall.",
+      "source": {
+        "label": "Fextralife – Decorative Old Hunter Set",
+        "url": "https://bloodborne.wiki.fextralife.com/Decorative_Old_Hunter_Set",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "harrowed-set",
+      "name": "Harrowed Set",
+      "description": "Certain Church hunters obfuscate their identities and slip into the nooks and crannies of the city. This is the garb that allows these harrowed individuals to go unnoticed. These hunters are keen to early signs of the scourge, serving as a first line of defense against its outbreak. Or perhaps, when the time is right, they find signs of the scourge where there are none. It just goes to show, the corner beggar is not always who he seems.",
+      "pieces": [
+        {
+          "slot": "head",
+          "name": "Harrowed Hood",
+          "location": "Fishing Hamlet"
+        },
+        {
+          "slot": "chest",
+          "name": "Harrowed Garb",
+          "location": "Fishing Hamlet"
+        },
+        {
+          "slot": "arms",
+          "name": "Harrowed Gloves",
+          "location": "Fishing Hamlet: Fisrt lantern, take the shortcut ladder up and immediately to your right will be a second floor opening into a shanty shack. It is being guarded by two enemies and is at the end of the room."
+        },
+        {
+          "slot": "legs",
+          "name": "Harrowed Trousers",
+          "location": "Fishing Hamlet lantern, take the shortcut ladder up and immediately to your right will be a second floor opening into a shanty shack. It is being guarded by two enemies and is at the end of the room"
+        }
+      ],
+      "weight": "",
+      "notes": "The Old Hunters DLC. Set defense totals (Fextralife): physical 310, vsBlunt 210, vsThrust 230, blood 250, arcane 280, fire 250, bolt 270, slowPoisonRes 149, rapidPoisonRes 141, frenzyRes 20, beasthood 114 This set has surprisingly high stats overall. The Harrowed Hood is worn by The Suspicious Beggar NPC in the Forbidden Forest.",
+      "location": "From the Fishing Hamlet first lantern, take the shortcut ladder up and immediately to your right will be a second floor opening into a shanty shack. It is being guarded by two enemies and is at the end of the room. (Note: you will need to have kicked down the shortcut ladder which can be accessed by hugging the left wall of the well area)",
+      "source": {
+        "label": "Fextralife – Harrowed Set",
+        "url": "https://bloodborne.wiki.fextralife.com/Harrowed_Set",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "maria-hunter-set",
+      "name": "Maria Hunter Set",
+      "description": "Among the first hunters, all students of Gehrman, was the lady hunter Maria. This was her hunter's [cap/garb/gloves/trousers], crafted in Cainhurst. ' Maria is distantly related to the undead queen, but had great admiration for Gehrman, unaware of his curious mania",
+      "pieces": [
+        {
+          "slot": "head",
+          "name": "Maria Hunter Cap",
+          "location": "Purchase from Insight Messengers for?? Insight after defeating Lady Maria of the Astral Clocktower"
+        },
+        {
+          "slot": "chest",
+          "name": "Maria Hunter Garb",
+          "location": "Purchase from Insight Messengers after defeating Lady Maria of the Astral Clocktower"
+        },
+        {
+          "slot": "arms",
+          "name": "Maria Hunter Gloves",
+          "location": "Tab 1 Tab 2 Purchase from Insight Messengers for?? Insight after defeating Lady Maria of the Astral Clocktower Subcontent:Hand Armor (Attire) 2 Tab 2"
+        },
+        {
+          "slot": "legs",
+          "name": "Maria Hunter Trousers",
+          "location": "Tab 1 Tab 2 Purchase from Insight Messengers for?? Insight after defeating Lady Maria of the Astral Clocktower Subcontent:Leg Armor (Attire) 2 Tab 2"
+        }
+      ],
+      "weight": "",
+      "notes": "The Old Hunters DLC. Set defense totals (Fextralife): physical 220, vsBlunt 210, vsThrust 230, blood 370, arcane 200, fire 200, bolt 230, slowPoisonRes 47, rapidPoisonRes 125, frenzyRes 72, beasthood 37 Has the highest blood defense.",
+      "location": "Sold by the Insight Bath Messenger after defeating Lady Maria of the Astral Clocktower. Total cost is fourteen Insight (three for cap, five for garb, three for gloves and three for trousers.",
+      "source": {
+        "label": "Fextralife – Maria Hunter Set",
+        "url": "https://bloodborne.wiki.fextralife.com/Maria_Hunter_Set",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "old-hunter-set",
+      "name": "Old Hunter Set",
+      "description": "In the old days, when hunters were ten a penny, this was their standard garb.",
+      "pieces": [
+        {
+          "slot": "head",
+          "name": "Old Hunter Cap",
+          "location": "The Hunter's Nightmare"
+        },
+        {
+          "slot": "head",
+          "name": "Old Hunter Top Hat",
+          "location": "The Hunter's Nightmare"
+        },
+        {
+          "slot": "chest",
+          "name": "Old Hunter Garb",
+          "location": "The Hunter's Nightmare"
+        },
+        {
+          "slot": "arms",
+          "name": "Old Hunter Gloves",
+          "location": "The Hunter's Nightmare"
+        },
+        {
+          "slot": "legs",
+          "name": "Old Hunter Trousers",
+          "location": ""
+        }
+      ],
+      "weight": "",
+      "notes": "The Old Hunters DLC. Set defense totals (Fextralife): physical 270(Cap) 250(Top Hat), vsBlunt 200(Cap) 230(Top Hat), vsThrust 230(Cap) 230(Top Hat), blood 270(Cap) 250(Top Hat), arcane 200(Cap) 200(Top Hat), fire 320(Cap) 280(Top Hat), bolt 150(Cap) 170(Top Hat), slowPoisonRes 51(Cap) 48(Top Hat), rapidPoisonRes 45(Cap) 45(Top Hat), frenzyRes 105(Cap) 109(Top Hat), beasthood 129(Cap) 123(Top Hat)",
+      "location": "The Hunter's Nightmare, found piece by piece in the starting area. Old Hunter Top Hat: past the Nightmare Grand Cathedral and find a building that looks out of Central Yharnam. Go into the building that used to be the shortcut to the Cleric Beast in the main game. Dropping out of the window on the top floor to a ledge with a body holding the hat.",
+      "source": {
+        "label": "Fextralife – Old Hunter Set",
+        "url": "https://bloodborne.wiki.fextralife.com/Old_Hunter_Set",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "yamamura-set",
+      "name": "Yamamura Set",
+      "description": "Attire set obtained by defeating Old Hunter Yamamura in the Hunter's Nightmare (The Old Hunters DLC).",
+      "pieces": [
+        {
+          "slot": "head",
+          "name": "Yamamura Hunter Hat",
+          "location": "Dropped by Old Hunter Yamamura"
+        },
+        {
+          "slot": "chest",
+          "name": "Khaki Haori",
+          "location": "Can be obtained by killing Old Hunter Yamamura after opening his cell with the Underground Cell Key from the Research Hall. Other methods of obtaining it need testing."
+        },
+        {
+          "slot": "arms",
+          "name": "Old Hunter Arm Bands",
+          "location": ""
+        },
+        {
+          "slot": "legs",
+          "name": "Wine Hakama",
+          "location": "Dropped by Old Hunter Yamamura after opening his cell with the Underground Cell Key from the Research Hall. Other methods of obtaining it need testing."
+        }
+      ],
+      "weight": "",
+      "notes": "The Old Hunters DLC. Set defense totals (Fextralife): physical 210, vsBlunt 170, vsThrust 200, blood 240, arcane 230, fire 370, bolt 190, slowPoisonRes 82, rapidPoisonRes 81, frenzyRes 75, beasthood 57 Only the Charred Hunter chest and the Bone Ash Armor has higher fire defense than Khaki Haori, however the rest of the Yamamura set has significantly higher fire defense than the Charred Hunter set. (More on source page.)",
+      "location": "Kill Old Hunter Yamamura in The Hunter's Nightmare. In the jail hallway after killing Ludwig, Yamamura is in the lone cell to your left. You can use either the Underground Cell Key to enter his cell, or hit him through the cell door with the Beast Cutter in its trick mode. < Clarification of how it's properly done. Face AWAY from the door, backstep into it, then use the R2 attack, pointing your L3 stick TOWARDS the door. This will turn your character around during his attack, and give them enough reach to kill the NPC.",
+      "source": {
+        "label": "Fextralife – Yamamura Set",
+        "url": "https://bloodborne.wiki.fextralife.com/Yamamura_Set",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    }
+  ],
+  "guides": [
+    {
+      "title": "Fextralife – Weapons",
+      "url": "https://bloodborne.wiki.fextralife.com/Weapons",
+      "source": {
+        "label": "Fextralife – Weapons",
+        "url": "https://bloodborne.wiki.fextralife.com/Weapons",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "title": "Fextralife – Trick Weapons",
+      "url": "https://bloodborne.wiki.fextralife.com/Trick+Weapons",
+      "source": {
+        "label": "Fextralife – Trick Weapons",
+        "url": "https://bloodborne.wiki.fextralife.com/Trick+Weapons",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "title": "Fextralife – Firearms",
+      "url": "https://bloodborne.wiki.fextralife.com/Firearms",
+      "source": {
+        "label": "Fextralife – Firearms",
+        "url": "https://bloodborne.wiki.fextralife.com/Firearms",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "title": "Fextralife – Hunter Tools",
+      "url": "https://bloodborne.wiki.fextralife.com/Hunter+Tools",
+      "source": {
+        "label": "Fextralife – Hunter Tools",
+        "url": "https://bloodborne.wiki.fextralife.com/Hunter+Tools",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "title": "Fextralife – Armor",
+      "url": "https://bloodborne.wiki.fextralife.com/Armor",
+      "source": {
+        "label": "Fextralife – Armor",
+        "url": "https://bloodborne.wiki.fextralife.com/Armor",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "title": "IGN – Weapons",
+      "url": "https://www.ign.com/wikis/bloodborne/Weapons",
+      "source": {
+        "label": "IGN – Weapons",
+        "url": "https://www.ign.com/wikis/bloodborne/Weapons",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "title": "Bloodborne Wiki – Armor Sets",
+      "url": "https://www.bloodborne-wiki.com/p/armor-sets.html",
+      "source": {
+        "label": "Bloodborne Wiki – Armor Sets",
+        "url": "https://www.bloodborne-wiki.com/p/armor-sets.html",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "title": "Game Checklists – All Armor Checklist",
+      "url": "https://game-checklists.com/bloodborne/all-armor/",
+      "source": {
+        "label": "Game Checklists – All Armor Checklist",
+        "url": "https://game-checklists.com/bloodborne/all-armor/",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+# Notes
+
+## What is real, and what is a sample
+
+The build lists are the research snapshots and should be treated as the source of facts for tiers, spreads, and guide links:
+
+- `data/bloodborne.json` — 35 builds, 30 guides
+- `data/elden-ring.json` — 40 builds, 33 guides
+- `data/demons-souls.json` — 33 builds, 34 guides
+
+Bloodborne crafting and equipment are research snapshots from 2026-10-30, copied in unchanged:
+
+- `data/bloodborne-crafting.json` — 6 categories, 141 items, 21 materials, 14 guides
+- `data/bloodborne-equipment.json` — 5 weapon types, 54 weapons, 36 attire sets, 8 guides
+
+Each of those screens has an About note. The equipment note covers weapons with no +10 row, firearm damage stored in the wiki’s blood column, and attire with no weight. The crafting note covers variable quantities, optional chalice rites, and gem effect families. The build list says “Blades of Mercy”; the equipment file says “Blade of Mercy”. Those sheets still link.
+
+Demon's Souls crafting and equipment are research snapshots from 2026-10-30, copied in unchanged:
+
+- `data/demons-souls-crafting.json` — 19 categories, 129 items, 67 materials, 11 guides
+- `data/demons-souls-equipment.json` — 21 weapon types, 97 weapons, 30 armor entries (26 sets, 3 standalone pieces, and a Rings list), 11 guides
+
+The crafting About note says there is no item-combination crafting: the list is upgrade paths, soul trades, Sparkly trades, and farming, and general-path recipes give stone ranges. The equipment About note covers wiki conflicts, remake versus PS3 differences, and four build names with no matching entry: Yellow Monk's Collar, Friend's Ring, Blessed Broadsword, and a crushing path for Bramd. Bramd itself still links. Monk's Head Wrappings also links builds that say Monk's Head Collar.
+
+Elden Ring crafting and equipment are research snapshots from 2026-10-30, copied in unchanged:
+
+- `data/elden-ring-crafting.json` — 9 categories, 187 items, 155 materials, 7 guides
+- `data/elden-ring-equipment.json` — 29 weapon types, 82 weapons, 60 armor entries (58 sets plus the White Mask and Jar helms), 4 guides
+
+The crafting About note says the categories are this list's grouping. The equipment About note says weapon stats are base +0 and patches can change them, some fields are blank where the wiki had no info, and Millicent's Set is unobtainable. White Mask links the builds that name it. Jar links builds that say Jar helm. Raptor's Black Feathers is named on builds and is not an armor entry in this file. The colossal weapon named Greatsword also matches build lines that merely end in “Greatsword”, because the link is a name substring.
+
+Crafting and equipment files are not downloaded with the app shell. Opening the section fetches that file, and the service worker keeps the response for offline. Lists longer than 24 entries page with Show more. The app hides a section when its registry key is missing.
+
+## Maps
+
+Each game’s map file is one of two shapes. `mode` is `"embed"` or `"images"`. `mapLinks` are ordinary outbound links either way. Picture files under `maps/` are not in the service worker’s install list. A picture is fetched when it is selected, and that response is kept in the runtime cache afterwards.
+
+Elden Ring (`data/elden-ring-map.json`) is an embed. The Map section is a MapGenie frame, with a switch between the Lands Between (`?embed=light` on `the-lands-between`) and Shadow of the Erdtree (`?embed=light` on `the-shadow-realm`). The frame is created only while that section is open. On a phone the frame ignores touches until Tap to use the map, so the page can still scroll. Open full map goes to the same map without `embed=light`. The credit line is “Map by MapGenie”. If the frame errors, the page says so and keeps the full-map link. Fextralife stays a link only.
+
+Bloodborne (`data/bloodborne-map.json`, 27 pictures in `maps/bloodborne/`) opens on the Dibilowas world map, which includes The Old Hunters. The other world maps are the Hypn0tyk lantern map (base game only) and Ultima’s perspective map. Area sheets are grouped as Base game and Old Hunters. On the bloodborne-wiki.com sheets, the numbers refer to the item tables on https://www.bloodborne-wiki.com/2017/03/treasures.html, and each of those entries links there. There are no chalice dungeon maps. Hypogean Gaol and the Grand Cathedral are on the Yahar'gul and Cathedral Ward sheets. The wiki states CC BY-SA 3.0; the map art looks adapted from the official strategy guide, so the underlying rights are not fully clear. Other pictures have no license stated.
+
+Demon's Souls (`data/demons-souls-map.json`, 39 pictures in `maps/demons-souls/`) opens on Agabal’s archstone overview, then VGCartography’s illustrated map, then the Nexus, then levels 1-1 through 5-3. A level with more than one sheet gets Part tabs. Fextralife’s own map labels the Shrine of Storms levels as 3-x; they are 4-x here. The layouts match the original and the remake, and items added in the remake may be missing. There is no map of the tutorial or the final stage. Levels 2-3, 4-3, and 5-3 have one sheet each. VGCartography’s direct image link is token-signed, so that entry links to the DeviantArt page. Kouryakubo’s maps are not included.
+
+The old schematic SVG maps are gone. Do not hotlink or scrape tiles, and do not copy another map’s marker coordinates into these files.

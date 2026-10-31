@@ -1,23 +1,49 @@
 // Network-first shell. CACHE is the version string: bump it when shipped assets change.
-const CACHE = "souls-builds-v4-20261031014500";
+const CACHE = "souls-builds-v10-20261031130000";
 const SHELL = [
   "./",
   "./index.html",
   "./styles.css",
+  "./atmosphere.css",
   "./app.js",
+  "./sections.js",
   "./data/games.json",
   "./data/bloodborne.json",
   "./data/elden-ring.json",
   "./data/demons-souls.json",
+  "./data/bloodborne-map.json",
+  "./data/elden-ring-map.json",
+  "./data/demons-souls-map.json",
   "./manifest.json",
-  "./icon.svg",
-  "./favicon-32.png",
-  "./apple-touch-icon.png",
-  "./icon-192.png",
-  "./icon-512.png",
-  "./icon-512-maskable.png",
+  "./icons/emblem.png",
+  "./icons/favicon-32.png",
+  "./icons/apple-touch-icon.png",
+  "./icons/icon-192.png",
+  "./icons/icon-512.png",
+  "./icons/icon-512-maskable.png",
   "./noise.png"
 ];
+// Crafting and equipment files are large. Install does not download them.
+// The page fetches a file when that section opens, and the fetch handler stores it here for offline.
+const SECTION = [
+  "./data/bloodborne-crafting.json",
+  "./data/bloodborne-equipment.json",
+  "./data/elden-ring-crafting.json",
+  "./data/elden-ring-equipment.json",
+  "./data/demons-souls-crafting.json",
+  "./data/demons-souls-equipment.json"
+];
+const PRECACHE = SHELL.filter((item) => item !== "./").concat(SECTION);
+
+function listed(url) {
+  const path = decodeURIComponent(url.pathname);
+  return PRECACHE.some((item) => path.endsWith(item.replace(/^\.\//, "")));
+}
+
+function viewedMap(url) {
+  const path = decodeURIComponent(url.pathname);
+  return /\/maps\/[^/]+\/[^/]+$/.test(path);
+}
 
 self.addEventListener("install", (event) => {
   event.waitUntil(
@@ -44,7 +70,7 @@ self.addEventListener("fetch", (event) => {
   event.respondWith(
     fetch(request)
       .then((response) => {
-        if (response.ok && !url.search) {
+        if (response.ok && !url.search && (listed(url) || viewedMap(url) || request.mode === "navigate")) {
           const copy = response.clone();
           caches.open(CACHE).then((cache) => cache.put(request, copy));
         }

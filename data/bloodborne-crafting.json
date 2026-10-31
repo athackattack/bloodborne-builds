@@ -1,0 +1,3425 @@
+{
+  "meta": {
+    "notes": "Generated 2026-10-30. Bloodborne has no recipe crafting; the 'crafting' layer is Blood Gems + Workshop, Caryll Runes + Memory Altar, weapon fortification with bloodstones, Arcane Haze extraction, and Chalice Rituals (materials + Blood Echoes). Item/material data come from Fextralife (curl-200) tables and pages, farming methods from bloodborne-wiki.com/p/farming.html (curl-200). materials[].qty null = variable amount. Chalice offerings with note 'optional ... rite offering' are only needed for that rite. See NOTES.md.",
+    "counts": {
+      "items": 141,
+      "byCategory": {
+        "blood-gems": 32,
+        "consumables": 29,
+        "insight-echoes": 13,
+        "caryll-runes": 28,
+        "weapon-upgrades": 13,
+        "chalice-dungeons": 26
+      },
+      "materials": 21
+    }
+  },
+  "categories": [
+    {
+      "id": "blood-gems",
+      "name": "Blood Gems",
+      "description": "Socketable upgrades for weapon imprint slots (unlocked at +1, +3, +6; firearms have 1 or no slot). Installed and removed freely at a Workshop table once the Blood Gem Workshop Tool is obtained. Shapes: Radial/Triangular/Waning (right-hand), Circle (left-hand, plus Lost Chikage), Droplet (any slot). Rating 1-20; Fextralife's tables show Gemstone gems at ratings 1-10, Damp gems at 11-19 and Abyssal gems at 20."
+    },
+    {
+      "id": "caryll-runes",
+      "name": "Caryll Runes",
+      "description": "Runes carved into the hunter's mind at the Memory Altar in the Hunter's Dream, which requires the Rune Workshop Tool. Many runes have several tiers with stronger effects; covenant runes come from joining a covenant."
+    },
+    {
+      "id": "weapon-upgrades",
+      "name": "Weapon Upgrades (Fortify)",
+      "description": "Weapon fortification at the Workshop from +0 to +10 using bloodstones and Blood Echoes; plus the Workshop Haze Extractor, which turns ritual materials into Arcane Haze."
+    },
+    {
+      "id": "consumables",
+      "name": "Consumables & Projectiles",
+      "description": "Healing, buff, utility and throwable items, with where to find, farm or buy them (Bath Messenger shop items are unlocked by Hunter Badges)."
+    },
+    {
+      "id": "chalice-dungeons",
+      "name": "Chalice Rituals",
+      "description": "The closest thing Bloodborne has to crafting recipes: each Chalice is consecrated at a ritual altar in the Hunter's Dream with ritual materials and Blood Echoes to create a Chalice Dungeon. Root Chalices accept optional Fetid/Rotted/Cursed offerings (and Sinister Bell rites)."
+    },
+    {
+      "id": "insight-echoes",
+      "name": "Insight & Blood Echoes",
+      "description": "Items and methods for gaining Insight and Blood Echoes (the game's two currencies), including coldbloods and known farming routes."
+    }
+  ],
+  "items": [
+    {
+      "id": "blood-gems-radial-blood-gems",
+      "name": "Radial Blood Gems",
+      "category": "blood-gems",
+      "description": "Radial-shaped Blood Gem family.",
+      "effect": "Fits radial imprint slots on right-hand (trick) weapons.",
+      "materials": [],
+      "whereToFind": "Mostly Chalice Dungeon boss drops: Gemstone (1-10) versions from Lower Pthumeru Root Chalice bosses, Damp (11-19) versions from Pthumeru Ihyll Root Chalice bosses (Cursed versions with the Cursed rite, e.g. Watchers on glyph pwmf22gu). Full per-gem list on the source page.",
+      "source": {
+        "label": "Fextralife – Radial Blood Gems",
+        "url": "https://bloodborne.wiki.fextralife.com/Radial_Blood_Gems",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "blood-gems-triangular-blood-gems",
+      "name": "Triangular Blood Gems",
+      "category": "blood-gems",
+      "description": "Triangular-shaped Blood Gem family.",
+      "effect": "Fits triangular imprint slots on right-hand weapons.",
+      "materials": [],
+      "whereToFind": "Enemy and boss drops, e.g. Small Celestial Beings (per-gem drop list on the source page).",
+      "source": {
+        "label": "Fextralife – Triangular Blood Gems",
+        "url": "https://bloodborne.wiki.fextralife.com/Triangular_Blood_Gems",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "blood-gems-waning-blood-gems",
+      "name": "Waning Blood Gems",
+      "category": "blood-gems",
+      "description": "Waning-shaped Blood Gem family.",
+      "effect": "Fits waning imprint slots on right-hand weapons.",
+      "materials": [],
+      "whereToFind": "Enemy drops, e.g. Werewolves, Loran Silverbeasts, Eye Collectors, Big Cloaked Beasts and cowering Ritual Masters (per-gem list on the source page).",
+      "source": {
+        "label": "Fextralife – Waning Blood Gems",
+        "url": "https://bloodborne.wiki.fextralife.com/Waning_Blood_Gems",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "blood-gems-circle-blood-gems",
+      "name": "Circle Blood Gems",
+      "category": "blood-gems",
+      "description": "Circle-shaped Blood Gem family.",
+      "effect": "Fits left-hand weapons (firearms), plus the Lost Chikage, which has a circular socket.",
+      "materials": [],
+      "whereToFind": "Bloodsucking Beasts, Bloodstarved Beast, Shotgun Watchers, cowering and tall Ritual Masters (Chalice Dungeons).",
+      "source": {
+        "label": "Fextralife – Circle Blood Gems",
+        "url": "https://bloodborne.wiki.fextralife.com/Circle_Blood_Gems",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "blood-gems-droplet-blood-gems",
+      "name": "Droplet Blood Gems",
+      "category": "blood-gems",
+      "description": "Droplet-shaped Blood Gem family.",
+      "effect": "Fits into any socket regardless of its shape.",
+      "materials": [],
+      "whereToFind": "Winter Lanterns drop several; the Tear Stone is given by the Plain Doll after you give her the Small Hair Ornament.",
+      "source": {
+        "label": "Fextralife – Droplet Blood Gems",
+        "url": "https://bloodborne.wiki.fextralife.com/Droplet_Blood_Gems",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "blood-gems-tempering-gems-effect-family",
+      "name": "Tempering gems (effect family)",
+      "category": "blood-gems",
+      "description": "Blood Gems whose name carries the 'Tempering' prefix. A gem may hold up to 3 effects.",
+      "effect": "Increases physical damage (%); 'Odd Tempering' adds flat physical damage.",
+      "materials": [],
+      "whereToFind": "",
+      "source": {
+        "label": "Fextralife – Blood Gems",
+        "url": "https://bloodborne.wiki.fextralife.com/Blood_Gems",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "blood-gems-adept-gems-effect-family",
+      "name": "Adept gems (effect family)",
+      "category": "blood-gems",
+      "description": "Blood Gems whose name carries the 'Adept' prefix. A gem may hold up to 3 effects.",
+      "effect": "Increases blunt or thrust damage (%).",
+      "materials": [],
+      "whereToFind": "",
+      "source": {
+        "label": "Fextralife – Blood Gems",
+        "url": "https://bloodborne.wiki.fextralife.com/Blood_Gems",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "blood-gems-arcane-gems-effect-family",
+      "name": "Arcane gems (effect family)",
+      "category": "blood-gems",
+      "description": "Blood Gems whose name carries the 'Arcane' prefix. A gem may hold up to 3 effects.",
+      "effect": "Increases arcane damage (flat or %); 'Odd Arcane' adds flat arcane damage.",
+      "materials": [],
+      "whereToFind": "",
+      "source": {
+        "label": "Fextralife – Blood Gems",
+        "url": "https://bloodborne.wiki.fextralife.com/Blood_Gems",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "blood-gems-fire-gems-effect-family",
+      "name": "Fire gems (effect family)",
+      "category": "blood-gems",
+      "description": "Blood Gems whose name carries the 'Fire' prefix. A gem may hold up to 3 effects.",
+      "effect": "Increases fire damage (flat or %); 'Odd Fire' adds flat fire damage.",
+      "materials": [],
+      "whereToFind": "",
+      "source": {
+        "label": "Fextralife – Blood Gems",
+        "url": "https://bloodborne.wiki.fextralife.com/Blood_Gems",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "blood-gems-bolt-gems-effect-family",
+      "name": "Bolt gems (effect family)",
+      "category": "blood-gems",
+      "description": "Blood Gems whose name carries the 'Bolt' prefix. A gem may hold up to 3 effects.",
+      "effect": "Increases bolt damage (flat or %); 'Odd Bolt' adds flat bolt damage.",
+      "materials": [],
+      "whereToFind": "",
+      "source": {
+        "label": "Fextralife – Blood Gems",
+        "url": "https://bloodborne.wiki.fextralife.com/Blood_Gems",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "blood-gems-bloodtinge-gems-effect-family",
+      "name": "Bloodtinge gems (effect family)",
+      "category": "blood-gems",
+      "description": "Blood Gems whose name carries the 'Bloodtinge' prefix. A gem may hold up to 3 effects.",
+      "effect": "Increases blood damage (flat or %); 'Odd Bloodtinge' adds flat blood damage.",
+      "materials": [],
+      "whereToFind": "",
+      "source": {
+        "label": "Fextralife – Blood Gems",
+        "url": "https://bloodborne.wiki.fextralife.com/Blood_Gems",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "blood-gems-nourishing-gems-effect-family",
+      "name": "Nourishing gems (effect family)",
+      "category": "blood-gems",
+      "description": "Blood Gems whose name carries the 'Nourishing' prefix. A gem may hold up to 3 effects.",
+      "effect": "Increases all damage (%).",
+      "materials": [],
+      "whereToFind": "",
+      "source": {
+        "label": "Fextralife – Blood Gems",
+        "url": "https://bloodborne.wiki.fextralife.com/Blood_Gems",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "blood-gems-beasthunter-gems-effect-family",
+      "name": "Beasthunter gems (effect family)",
+      "category": "blood-gems",
+      "description": "Blood Gems whose name carries the 'Beasthunter' prefix. A gem may hold up to 3 effects.",
+      "effect": "Increases damage vs. beasts (%).",
+      "materials": [],
+      "whereToFind": "",
+      "source": {
+        "label": "Fextralife – Blood Gems",
+        "url": "https://bloodborne.wiki.fextralife.com/Blood_Gems",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "blood-gems-kinhunter-gems-effect-family",
+      "name": "Kinhunter gems (effect family)",
+      "category": "blood-gems",
+      "description": "Blood Gems whose name carries the 'Kinhunter' prefix. A gem may hold up to 3 effects.",
+      "effect": "Increases damage vs. the kin (%).",
+      "materials": [],
+      "whereToFind": "",
+      "source": {
+        "label": "Fextralife – Blood Gems",
+        "url": "https://bloodborne.wiki.fextralife.com/Blood_Gems",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "blood-gems-radiant-gems-effect-family",
+      "name": "Radiant gems (effect family)",
+      "category": "blood-gems",
+      "description": "Blood Gems whose name carries the 'Radiant' prefix. A gem may hold up to 3 effects.",
+      "effect": "Decreases stamina cost (%).",
+      "materials": [],
+      "whereToFind": "",
+      "source": {
+        "label": "Fextralife – Blood Gems",
+        "url": "https://bloodborne.wiki.fextralife.com/Blood_Gems",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "blood-gems-striking-gems-effect-family",
+      "name": "Striking gems (effect family)",
+      "category": "blood-gems",
+      "description": "Blood Gems whose name carries the 'Striking' prefix. A gem may hold up to 3 effects.",
+      "effect": "Increases charge attack damage (%).",
+      "materials": [],
+      "whereToFind": "",
+      "source": {
+        "label": "Fextralife – Blood Gems",
+        "url": "https://bloodborne.wiki.fextralife.com/Blood_Gems",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "blood-gems-murky-gems-effect-family",
+      "name": "Murky gems (effect family)",
+      "category": "blood-gems",
+      "description": "Blood Gems whose name carries the 'Murky' prefix. A gem may hold up to 3 effects.",
+      "effect": "Adds slow poison effect.",
+      "materials": [],
+      "whereToFind": "",
+      "source": {
+        "label": "Fextralife – Blood Gems",
+        "url": "https://bloodborne.wiki.fextralife.com/Blood_Gems",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "blood-gems-dirty-gems-effect-family",
+      "name": "Dirty gems (effect family)",
+      "category": "blood-gems",
+      "description": "Blood Gems whose name carries the 'Dirty' prefix. A gem may hold up to 3 effects.",
+      "effect": "Adds rapid poison effect.",
+      "materials": [],
+      "whereToFind": "",
+      "source": {
+        "label": "Fextralife – Blood Gems",
+        "url": "https://bloodborne.wiki.fextralife.com/Blood_Gems",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "blood-gems-lethal-gems-effect-family",
+      "name": "Lethal gems (effect family)",
+      "category": "blood-gems",
+      "description": "Blood Gems whose name carries the 'Lethal' prefix. A gem may hold up to 3 effects.",
+      "effect": "Boosts rally potential.",
+      "materials": [],
+      "whereToFind": "",
+      "source": {
+        "label": "Fextralife – Blood Gems",
+        "url": "https://bloodborne.wiki.fextralife.com/Blood_Gems",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "blood-gems-fools-gems-effect-family",
+      "name": "Fool's gems (effect family)",
+      "category": "blood-gems",
+      "description": "Blood Gems whose name carries the 'Fool's' prefix. A gem may hold up to 3 effects.",
+      "effect": "Increases physical damage at full HP (%).",
+      "materials": [],
+      "whereToFind": "",
+      "source": {
+        "label": "Fextralife – Blood Gems",
+        "url": "https://bloodborne.wiki.fextralife.com/Blood_Gems",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "blood-gems-poormans-gems-effect-family",
+      "name": "Poorman's gems (effect family)",
+      "category": "blood-gems",
+      "description": "Blood Gems whose name carries the 'Poorman's' prefix. A gem may hold up to 3 effects.",
+      "effect": "Increases physical damage when near death (%).",
+      "materials": [],
+      "whereToFind": "",
+      "source": {
+        "label": "Fextralife – Blood Gems",
+        "url": "https://bloodborne.wiki.fextralife.com/Blood_Gems",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "blood-gems-heavy-gems-effect-family",
+      "name": "Heavy gems (effect family)",
+      "category": "blood-gems",
+      "description": "Blood Gems whose name carries the 'Heavy' prefix. A gem may hold up to 3 effects.",
+      "effect": "Increases Strength scaling.",
+      "materials": [],
+      "whereToFind": "",
+      "source": {
+        "label": "Fextralife – Blood Gems",
+        "url": "https://bloodborne.wiki.fextralife.com/Blood_Gems",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "blood-gems-sharp-gems-effect-family",
+      "name": "Sharp gems (effect family)",
+      "category": "blood-gems",
+      "description": "Blood Gems whose name carries the 'Sharp' prefix. A gem may hold up to 3 effects.",
+      "effect": "Increases Skill scaling.",
+      "materials": [],
+      "whereToFind": "",
+      "source": {
+        "label": "Fextralife – Blood Gems",
+        "url": "https://bloodborne.wiki.fextralife.com/Blood_Gems",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "blood-gems-cold-gems-effect-family",
+      "name": "Cold gems (effect family)",
+      "category": "blood-gems",
+      "description": "Blood Gems whose name carries the 'Cold' prefix. A gem may hold up to 3 effects.",
+      "effect": "Increases Arcane scaling.",
+      "materials": [],
+      "whereToFind": "",
+      "source": {
+        "label": "Fextralife – Blood Gems",
+        "url": "https://bloodborne.wiki.fextralife.com/Blood_Gems",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "blood-gems-warm-gems-effect-family",
+      "name": "Warm gems (effect family)",
+      "category": "blood-gems",
+      "description": "Blood Gems whose name carries the 'Warm' prefix. A gem may hold up to 3 effects.",
+      "effect": "Increases Bloodtinge scaling.",
+      "materials": [],
+      "whereToFind": "",
+      "source": {
+        "label": "Fextralife – Blood Gems",
+        "url": "https://bloodborne.wiki.fextralife.com/Blood_Gems",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "blood-gems-pulsing-gems-effect-family",
+      "name": "Pulsing gems (effect family)",
+      "category": "blood-gems",
+      "description": "Blood Gems whose name carries the 'Pulsing' prefix. A gem may hold up to 3 effects.",
+      "effect": "HP gradually regenerates by a flat amount.",
+      "materials": [],
+      "whereToFind": "",
+      "source": {
+        "label": "Fextralife – Blood Gems",
+        "url": "https://bloodborne.wiki.fextralife.com/Blood_Gems",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "blood-gems-dense-gems-effect-family",
+      "name": "Dense gems (effect family)",
+      "category": "blood-gems",
+      "description": "Blood Gems whose name carries the 'Dense' prefix. A gem may hold up to 3 effects.",
+      "effect": "Increases weapon durability.",
+      "materials": [],
+      "whereToFind": "",
+      "source": {
+        "label": "Fextralife – Blood Gems",
+        "url": "https://bloodborne.wiki.fextralife.com/Blood_Gems",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "blood-gems-cursed-gems-effect-family",
+      "name": "Cursed gems (effect family)",
+      "category": "blood-gems",
+      "description": "Blood Gems whose name carries the 'Cursed' prefix. A gem may hold up to 3 effects.",
+      "effect": "Gem carries one or more random negative effects (e.g. all damage down, stamina cost up, HP slowly depletes, durability down); penalties other than durability can stack across gems.",
+      "materials": [],
+      "whereToFind": "",
+      "source": {
+        "label": "Fextralife – Blood Gems",
+        "url": "https://bloodborne.wiki.fextralife.com/Blood_Gems",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "blood-gems-blood-gem-workshop-tool",
+      "name": "Blood Gem Workshop Tool",
+      "category": "blood-gems",
+      "description": "Key item that lets you install and remove Blood Gems at the Workshop.",
+      "effect": "Unlocks blood gem fitting at the Workshop table.",
+      "materials": [],
+      "whereToFind": "Tomb of Oedon (Cathedral Ward side), available after defeating Father Gascoigne.",
+      "source": {
+        "label": "Fextralife – Blood Gem Workshop Tool",
+        "url": "https://bloodborne.wiki.fextralife.com/Blood_Gem_Workshop_Tool",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "consumables-antidote",
+      "name": "Antidote",
+      "category": "consumables",
+      "description": "Removes poison.",
+      "effect": "Removes poison.",
+      "materials": [],
+      "whereToFind": "Found on corpses throughout Yharnam and sold by Messengers. Drops from Crows.",
+      "source": {
+        "label": "Fextralife – Antidote",
+        "url": "https://bloodborne.wiki.fextralife.com/Antidote",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "consumables-beast-blood-pellet",
+      "name": "Beast Blood Pellet",
+      "category": "consumables",
+      "description": "Enables Beasthood, increasing the damage a hunter deals and receives with increasing intensity as they bathe in blood.",
+      "effect": "Enables Beasthood, increasing the damage a hunter deals and receives with increasing intensity as they bathe in blood.",
+      "materials": [],
+      "whereToFind": "Rare drop from Werewolf. Rare drop from crows in the DLC. Found on corpses throughout Yharnam. Can be purchased from the Bath Messengers after obtaining the Cosmic Eye Watcher Badge",
+      "source": {
+        "label": "Fextralife – Beast Blood Pellet",
+        "url": "https://bloodborne.wiki.fextralife.com/Beast_Blood_Pellet",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "insight-echoes-blood-dreg",
+      "name": "Blood Dreg",
+      "category": "insight-echoes",
+      "description": "Awful things that Vilebloods see in coldblood. Consume to gain 1 Insight.",
+      "effect": "Awful things that Vilebloods see in coldblood. Consume to gain 1 Insight.",
+      "materials": [],
+      "whereToFind": "Dropped by killing other hunters (NPCs or Players) once the Corruption Caryll Rune has been equipped.",
+      "source": {
+        "label": "Fextralife – Blood Dreg",
+        "url": "https://bloodborne.wiki.fextralife.com/Blood_Dreg",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "consumables-blood-of-adella",
+      "name": "Blood of Adella",
+      "category": "consumables",
+      "description": "Restores HP and gradually restores HP over time.",
+      "effect": "Restores HP and gradually restores HP over time.",
+      "materials": [],
+      "whereToFind": "Given by Adella at the Cathedral Ward.",
+      "source": {
+        "label": "Fextralife – Blood of Adella",
+        "url": "https://bloodborne.wiki.fextralife.com/Blood_of_Adella",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "consumables-blood-of-adeline",
+      "name": "Blood of Adeline",
+      "category": "consumables",
+      "description": "Restores HP for 50%, then gradually restores HP over time",
+      "effect": "Restores HP for 50%, then gradually restores HP over time",
+      "materials": [],
+      "whereToFind": "Given by Saint Adeline at the Research Hall once she is given Brain Fluid.",
+      "source": {
+        "label": "Fextralife – Blood of Adeline",
+        "url": "https://bloodborne.wiki.fextralife.com/Blood_of_Adeline",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "consumables-blood-of-arianna",
+      "name": "Blood of Arianna",
+      "category": "consumables",
+      "description": "Restores HP and temporarily boosts Stamina recovery speed.",
+      "effect": "Restores HP and temporarily boosts Stamina recovery speed.",
+      "materials": [],
+      "whereToFind": "Given by Arianna at the Cathedral Ward.",
+      "source": {
+        "label": "Fextralife – Blood of Arianna",
+        "url": "https://bloodborne.wiki.fextralife.com/Blood_of_Arianna",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "consumables-blood-vial",
+      "name": "Blood Vial",
+      "category": "consumables",
+      "description": "Restores HP when consumed.",
+      "effect": "Restores HP when consumed.",
+      "materials": [],
+      "whereToFind": "Found on corpses throughout Yarnham",
+      "source": {
+        "label": "Fextralife – Blood Vial",
+        "url": "https://bloodborne.wiki.fextralife.com/Blood_Vial",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "consumables-blue-elixir",
+      "name": "Blue Elixir",
+      "category": "consumables",
+      "description": "Makes the user nearly invisible while not moving.",
+      "effect": "Makes the user nearly invisible while not moving.",
+      "materials": [],
+      "whereToFind": "Sold by Bath Messengers after obtaining the Cosmic Eye Watcher Badge Also dropped by Scythe Priests with the Blue Flame Upgrade.",
+      "source": {
+        "label": "Fextralife – Blue Elixir",
+        "url": "https://bloodborne.wiki.fextralife.com/Blue_Elixir",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "consumables-bold-hunters-mark",
+      "name": "Bold Hunter's Mark",
+      "category": "consumables",
+      "description": "Allows you to reawaken at a lamp without losing your Blood Echoes.",
+      "effect": "Allows you to reawaken at a lamp without losing your Blood Echoes.",
+      "materials": [],
+      "whereToFind": "Given by Eileen the Crow in Central Yharnam.",
+      "source": {
+        "label": "Fextralife – Bold Hunter's Mark",
+        "url": "https://bloodborne.wiki.fextralife.com/Bold_Hunter%27s_Mark",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "consumables-bolt-paper",
+      "name": "Bolt Paper",
+      "category": "consumables",
+      "description": "Temporarily adds 80 bolt damage to right-hand weapon.",
+      "effect": "Temporarily adds 80 bolt damage to right-hand weapon.",
+      "materials": [],
+      "whereToFind": "Sold by Bath Messengers for 1 insight or 14,000 Blood Echoes each. Trigger: Receiving the Spark Hunter Badge from Darkbeast Paarl. Also found throughout the game.",
+      "source": {
+        "label": "Fextralife – Bolt Paper",
+        "url": "https://bloodborne.wiki.fextralife.com/Bolt_Paper",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "consumables-bone-marrow-ash",
+      "name": "Bone Marrow Ash",
+      "category": "consumables",
+      "description": "Increases your next QS Bullet damage when used on your firearm. Can be used on Flamesprayer or Rosmarinus.",
+      "effect": "Increases your next QS Bullet damage when used on your firearm. Can be used on Flamesprayer or Rosmarinus.",
+      "materials": [],
+      "whereToFind": "Found throughout the world. Sold by Bath Messengers. Unlocked by obtaining the Radiant Sword Hunter Badge.",
+      "source": {
+        "label": "Fextralife – Bone Marrow Ash",
+        "url": "https://bloodborne.wiki.fextralife.com/Bone_Marrow_Ash",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "insight-echoes-coldblood-dew",
+      "name": "Coldblood Dew",
+      "category": "insight-echoes",
+      "description": "Can be consumed to acquire Blood Echoes.",
+      "effect": "Can be consumed to acquire Blood Echoes.",
+      "materials": [],
+      "whereToFind": "Coldblood Dew (1) = 350 Blood Echoes. Coldblood Dew (2) = 500 Blood Echoes. Coldblood Dew (3) = 1,000 Blood Echoes.",
+      "source": {
+        "label": "Fextralife – Coldblood Dew",
+        "url": "https://bloodborne.wiki.fextralife.com/Coldblood_Dew",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "consumables-delayed-molotov",
+      "name": "Delayed Molotov",
+      "category": "consumables",
+      "description": "Molotov cocktail that explodes on a timed delay.",
+      "effect": "Molotov cocktail that explodes on a timed delay.",
+      "materials": [],
+      "whereToFind": "Sold by lower Bath Messengers after obtaining the Firing Hammer Badge by killing the Beasthood Hunter found near the Boom Hammer in the Hunters Nightmare. Drop from the Huntsman in the Hunters Nightmare.",
+      "source": {
+        "label": "Fextralife – Delayed Molotov",
+        "url": "https://bloodborne.wiki.fextralife.com/Delayed_Molotov",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "consumables-delayed-rope-molotov",
+      "name": "Delayed Rope Molotov",
+      "category": "consumables",
+      "description": "Molotov that is thrown backwards and explodes on delay",
+      "effect": "Molotov that is thrown backwards and explodes on delay",
+      "materials": [],
+      "whereToFind": "Sold by lower Bath Messengers after obtaining the Firing Hammer Badge by killing the Beasthood Hunter found near the Boom Hammer in the Hunters Nightmare.",
+      "source": {
+        "label": "Fextralife – Delayed Rope Molotov",
+        "url": "https://bloodborne.wiki.fextralife.com/Delayed_Rope_Molotov",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "consumables-fire-paper",
+      "name": "Fire Paper",
+      "category": "consumables",
+      "description": "Temporarily adds 80 fire damage to right-hand weapon.",
+      "effect": "Temporarily adds 80 fire damage to right-hand weapon.",
+      "materials": [],
+      "whereToFind": "Sold by Bath Messengers. Unlocked by obtaining the Radiant Sword Hunter Badge. Also found throughout the game.",
+      "source": {
+        "label": "Fextralife – Fire Paper",
+        "url": "https://bloodborne.wiki.fextralife.com/Fire_Paper",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "insight-echoes-frenzied-coldblood",
+      "name": "Frenzied Coldblood",
+      "category": "insight-echoes",
+      "description": "Use to gain frenzied Blood Echoes.",
+      "effect": "Use to gain frenzied Blood Echoes.",
+      "materials": [],
+      "whereToFind": "Frenzied ColdBlood (7) = 2,000 Blood Echoes. Frenzied ColdBlood (8) = 3,000 Blood Echoes. Frenzied ColdBlood (9) = 5,000 Blood Echoes.",
+      "source": {
+        "label": "Fextralife – Frenzied Coldblood",
+        "url": "https://bloodborne.wiki.fextralife.com/Frenzied_Coldblood",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "blood-gems-gold-pendant",
+      "name": "Gold Pendant",
+      "category": "blood-gems",
+      "description": "Consume to gain a Blood Gem.",
+      "effect": "Consume to gain a Blood Gem.",
+      "materials": [],
+      "whereToFind": "Dropped by Vicar Amelia.",
+      "source": {
+        "label": "Fextralife – Gold Pendant",
+        "url": "https://bloodborne.wiki.fextralife.com/Gold_Pendant",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "insight-echoes-great-ones-wisdom",
+      "name": "Great One's Wisdom",
+      "category": "insight-echoes",
+      "description": "Consume to gain 2 Insight.",
+      "effect": "Consume to gain 2 Insight.",
+      "materials": [],
+      "whereToFind": "One found in Byrgenwerth near giant centipede by entrance. Found in Nightmare of Mensis near the giant Frenzy-inducing enemy by dropping off onto a rooftop when traveling on one of the elevators. Note: Easier to obtain once the enemy is dropped into the pit.",
+      "source": {
+        "label": "Fextralife – Great One's Wisdom",
+        "url": "https://bloodborne.wiki.fextralife.com/Great_One%27s_Wisdom",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "insight-echoes-great-one-coldblood",
+      "name": "Great One Coldblood",
+      "category": "insight-echoes",
+      "description": "Can be consumed to acquire a huge amount of Blood Echoes (40,000)",
+      "effect": "Can be consumed to acquire a huge amount of Blood Echoes (40,000)",
+      "materials": [],
+      "whereToFind": "Found in some level 4 & 5 dungeons.",
+      "source": {
+        "label": "Fextralife – Great One Coldblood",
+        "url": "https://bloodborne.wiki.fextralife.com/Great_One_Coldblood",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "consumables-hand-lantern",
+      "name": "Hand Lantern",
+      "category": "consumables",
+      "description": "Use Weapons in both hands while illuminating the dark. No longer decreases stamina regeneration rate as of patch 1.03.",
+      "effect": "Use Weapons in both hands while illuminating the dark. No longer decreases stamina regeneration rate as of patch 1.03.",
+      "materials": [],
+      "whereToFind": "Sold by Bath Messengers. Unlocked by obtaining the Sword Hunter Badge.",
+      "source": {
+        "label": "Fextralife – Hand Lantern",
+        "url": "https://bloodborne.wiki.fextralife.com/Hand_Lantern",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "consumables-iosefkas-blood-vial",
+      "name": "Iosefka's Blood Vial",
+      "category": "consumables",
+      "description": "Consume to gain a larger amount of HP.",
+      "effect": "Consume to gain a larger amount of HP.",
+      "materials": [],
+      "whereToFind": "When returned to the 1st sickroom after your first visit to the Hunters Dream turn around and go up the stairs behind you to a locked door and talk to Iosefka, she'll gift the blood vial to you after you promise to stop begging to be let in! You get one in Iosefka 's Clinic from a celestial mob. Also in a chest outside Mergo's Wet Nurse boss elevator.",
+      "source": {
+        "label": "Fextralife – Iosefka's Blood Vial",
+        "url": "https://bloodborne.wiki.fextralife.com/Iosefka%27s_Blood_Vial",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "insight-echoes-kin-coldblood",
+      "name": "Kin Coldblood",
+      "category": "insight-echoes",
+      "description": "Use to gain unspeakable Blood Echoes.",
+      "effect": "Use to gain unspeakable Blood Echoes.",
+      "materials": [],
+      "whereToFind": "Kin Coldblood (10) = 8,000 Blood Echoes. Kin Coldblood (11) = 10,000 Blood Echoes. Kin Coldblood (12) = 20,000 Blood Echoes.",
+      "source": {
+        "label": "Fextralife – Kin Coldblood",
+        "url": "https://bloodborne.wiki.fextralife.com/Kin_Coldblood",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "consumables-lead-elixir",
+      "name": "Lead Elixir",
+      "category": "consumables",
+      "description": "Incoming blows bounce off, dealing reduced damage.",
+      "effect": "Incoming blows bounce off, dealing reduced damage.",
+      "materials": [],
+      "whereToFind": "Numerous locations within Nightmare Realms.",
+      "source": {
+        "label": "Fextralife – Lead Elixir",
+        "url": "https://bloodborne.wiki.fextralife.com/Lead_Elixir",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "insight-echoes-madmans-knowledge",
+      "name": "Madman's Knowledge",
+      "category": "insight-echoes",
+      "description": "Consume to gain 1 Insight.",
+      "effect": "Consume to gain 1 Insight.",
+      "materials": [],
+      "whereToFind": "Treasure in Sewer near Rats in Central Yharnam. Treasure x2 in Cathedral Ward, close to the lever that moves the tomb. Also found throughout the game in general.",
+      "source": {
+        "label": "Fextralife – Madman's Knowledge",
+        "url": "https://bloodborne.wiki.fextralife.com/Madman%27s_Knowledge",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "consumables-quicksilver-bullets",
+      "name": "Quicksilver Bullets",
+      "category": "consumables",
+      "description": "Consumed in the use of Firearms and Hunter Tools.",
+      "effect": "Consumed in the use of Firearms and Hunter Tools.",
+      "materials": [],
+      "whereToFind": "Sold by the Messengers. Drop from rifle-wielding Huntsmen. Random loot.",
+      "source": {
+        "label": "Fextralife – Quicksilver Bullets",
+        "url": "https://bloodborne.wiki.fextralife.com/Quicksilver_Bullets",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "blood-gems-red-jeweled-brooch",
+      "name": "Red Jeweled Brooch",
+      "category": "blood-gems",
+      "description": "Use to gain a droplet Blood Gem.",
+      "effect": "Use to gain a droplet Blood Gem.",
+      "materials": [],
+      "whereToFind": "Treasure on a ledge inside the Tomb of Oedon.",
+      "source": {
+        "label": "Fextralife – Red Jeweled Brooch",
+        "url": "https://bloodborne.wiki.fextralife.com/Red_Jeweled_Brooch",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "consumables-sedative",
+      "name": "Sedative",
+      "category": "consumables",
+      "description": "Removes Frenzy and Beasthood buildup.",
+      "effect": "Removes Frenzy and Beasthood buildup.",
+      "materials": [],
+      "whereToFind": "Drops from Nightmare enemies.",
+      "source": {
+        "label": "Fextralife – Sedative",
+        "url": "https://bloodborne.wiki.fextralife.com/Sedative",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "consumables-shaman-bone-blade",
+      "name": "Shaman Bone Blade",
+      "category": "consumables",
+      "description": "Bites deep, turning an enemy hostile to its fellows.",
+      "effect": "Bites deep, turning an enemy hostile to its fellows.",
+      "materials": [],
+      "whereToFind": "Found in the main hall of Upper Cathedral Ward. Also a rare drop from the Brainsucker found in Byrgenwerth.",
+      "source": {
+        "label": "Fextralife – Shaman Bone Blade",
+        "url": "https://bloodborne.wiki.fextralife.com/Shaman_Bone_Blade",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "consumables-shining-coins",
+      "name": "Shining Coins",
+      "category": "consumables",
+      "description": "Emits a bright glow when placed.",
+      "effect": "Emits a bright glow when placed.",
+      "materials": [],
+      "whereToFind": "Purchased in Hunter's Dream. Also found throughout the game.",
+      "source": {
+        "label": "Fextralife – Shining Coins",
+        "url": "https://bloodborne.wiki.fextralife.com/Shining_Coins",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "insight-echoes-thick-coldblood",
+      "name": "Thick Coldblood",
+      "category": "insight-echoes",
+      "description": "Can be consumed to acquire a large amount of Blood Echoes",
+      "effect": "Can be consumed to acquire a large amount of Blood Echoes",
+      "materials": [],
+      "whereToFind": "Thick Coldblood(4) = 1,200 Blood Echoes Thick Coldblood(5) = 1,500 Blood Echoes Thick Coldblood(6) = 1,800 Blood Echoes",
+      "source": {
+        "label": "Fextralife – Thick Coldblood",
+        "url": "https://bloodborne.wiki.fextralife.com/Thick_Coldblood",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "insight-echoes-one-third-of-umbilical-cord",
+      "name": "One Third of Umbilical Cord",
+      "category": "insight-echoes",
+      "description": "Consume to gain 3 Insight. Also has a special effect on the outcome of the game. Beware of spoilers when reading the main article for this item.",
+      "effect": "Consume to gain 3 Insight. Also has a special effect on the outcome of the game. Beware of spoilers when reading the main article for this item.",
+      "materials": [],
+      "whereToFind": "1. Drop from Mergo's Wet Nurse. 2. Located on the altar inside the building of the Abandoned Old Workshop. 3. After the Blood Moon has risen, the NPC Arianna will move to a certain location in the Cathedral Ward. At this point there is a creature beside her that resembles a fetus. Kill it and it will drop the umbilical cord. 4. Dropped by the defenseless Imposter Iosefka if visited (and killed) after slaughtering Rom.",
+      "source": {
+        "label": "Fextralife – One Third of Umbilical Cord",
+        "url": "https://bloodborne.wiki.fextralife.com/One_Third_of_Umbilical_Cord",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "blood-gems-tear-stone",
+      "name": "Tear Stone",
+      "category": "blood-gems",
+      "description": "Consume to gain a Tear Stone Blood Gem.",
+      "effect": "Consume to gain a Tear Stone Blood Gem.",
+      "materials": [],
+      "whereToFind": "Given by Plain Doll after giving her the Small hair ornament, which is found in the Abandoned Old Workshop.",
+      "source": {
+        "label": "Fextralife – Tear Stone",
+        "url": "https://bloodborne.wiki.fextralife.com/Tear_Stone",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "consumables-vermin",
+      "name": "Vermin",
+      "category": "consumables",
+      "description": "Crush to increase your rank in The League.",
+      "effect": "Crush to increase your rank in The League.",
+      "materials": [],
+      "whereToFind": "Obtained after successfully completing a co-op session whith the Impurity rune equipped. Also a guaranteed, one-time drop from certain enemy hunters in The Hunter's Nightmare.",
+      "source": {
+        "label": "Fextralife – Vermin",
+        "url": "https://bloodborne.wiki.fextralife.com/Vermin",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "consumables-molotov-cocktail",
+      "name": "Molotov Cocktail",
+      "category": "consumables",
+      "description": "Projectile. Molotov cocktail that explodes violently when thrown.",
+      "effect": "Molotov cocktail that explodes violently when thrown.",
+      "materials": [],
+      "whereToFind": "Found on corpses throughout Yharnam.",
+      "source": {
+        "label": "Fextralife – Molotov Cocktail",
+        "url": "https://bloodborne.wiki.fextralife.com/Molotov_Cocktail",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "consumables-numbing-mist",
+      "name": "Numbing Mist",
+      "category": "consumables",
+      "description": "Projectile. Targets hit cannot regain HP.",
+      "effect": "Targets hit cannot regain HP.",
+      "materials": [],
+      "whereToFind": "Sold by Messengers after obtaining Cainhurst Badge",
+      "source": {
+        "label": "Fextralife – Numbing Mist",
+        "url": "https://bloodborne.wiki.fextralife.com/Numbing_Mist",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "consumables-oil-urn",
+      "name": "Oil Urn",
+      "category": "consumables",
+      "description": "Projectile. Projectile that reduces the fire resistance of enemies in a small area.",
+      "effect": "Projectile that reduces the fire resistance of enemies in a small area.",
+      "materials": [],
+      "whereToFind": "Found on corpses throughout Yharnam. Sold by Messengers after obtaining Powder Keg Hunter Badge",
+      "source": {
+        "label": "Fextralife – Oil Urn",
+        "url": "https://bloodborne.wiki.fextralife.com/Oil_Urn",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "consumables-pebble",
+      "name": "Pebble",
+      "category": "consumables",
+      "description": "Projectile. Used to get the attention of a single enemy.",
+      "effect": "Used to get the attention of a single enemy.",
+      "materials": [],
+      "whereToFind": "Found on corpses throughout Yharnam.",
+      "source": {
+        "label": "Fextralife – Pebble",
+        "url": "https://bloodborne.wiki.fextralife.com/Pebble",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "consumables-poison-knife",
+      "name": "Poison Knife",
+      "category": "consumables",
+      "description": "Projectile. Knife slathered in poison.",
+      "effect": "Knife slathered in poison.",
+      "materials": [],
+      "whereToFind": "Sold by Messengers after obtaining Cosmic Eye Watcher Badge",
+      "source": {
+        "label": "Fextralife – Poison Knife",
+        "url": "https://bloodborne.wiki.fextralife.com/Poison_Knife",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "consumables-pungent-blood-cocktail",
+      "name": "Pungent Blood Cocktail",
+      "category": "consumables",
+      "description": "Projectile. A mature blood cocktail, thrown to attract beasts.",
+      "effect": "A mature blood cocktail, thrown to attract beasts.",
+      "materials": [],
+      "whereToFind": "Sold by Messengers after obtaining S aw Hunter Badge",
+      "source": {
+        "label": "Fextralife – Pungent Blood Cocktail",
+        "url": "https://bloodborne.wiki.fextralife.com/Pungent_Blood_Cocktail",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "consumables-rope-molotov-cocktail",
+      "name": "Rope Molotov Cocktail",
+      "category": "consumables",
+      "description": "Projectile. Exploding Molotov Cocktail that is thrown behind.",
+      "effect": "Exploding Molotov Cocktail that is thrown behind.",
+      "materials": [],
+      "whereToFind": "Sold by Messengers after obtaining Powder Keg Hunter Badge",
+      "source": {
+        "label": "Fextralife – Rope Molotov Cocktail",
+        "url": "https://bloodborne.wiki.fextralife.com/Rope_Molotov_Cocktail",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "consumables-throwing-knife",
+      "name": "Throwing Knife",
+      "category": "consumables",
+      "description": "Projectile. Finely serrated throwing knife. Scaling: D A",
+      "effect": "Finely serrated throwing knife. Scaling: D A",
+      "materials": [],
+      "whereToFind": "Found on corpses throughout Yharnam. Sold Messenger after obtaining Saw Hunter Badge",
+      "source": {
+        "label": "Fextralife – Throwing Knife",
+        "url": "https://bloodborne.wiki.fextralife.com/Throwing_Knife",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "caryll-runes-anti-clockwise-metamorphosis",
+      "name": "Anti-Clockwise Metamorphosis",
+      "category": "caryll-runes",
+      "description": "Caryll Rune 'Anti-Clockwise Metamorphosis' (3 versions).",
+      "effect": "Tier 1: Boosts Max Stamina +10% | Tier 2: Boosts Max Stamina +15% | Tier 3: Boosts Max Stamina +20%",
+      "materials": [],
+      "whereToFind": "Tier 1: Forbidden Woods on a corpse near the blue aliens. | Tier 2: Talk to Patches the Spider in Lecture Halls by using the ladder from the second floor. Either option will produce the Rune. | Tier 3: Lower Ailing Loran Root Chalice",
+      "source": {
+        "label": "Fextralife – Caryll Runes",
+        "url": "https://bloodborne.wiki.fextralife.com/Caryll+Runes",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "caryll-runes-arcane-lake",
+      "name": "Arcane Lake",
+      "category": "caryll-runes",
+      "description": "Caryll Rune 'Arcane Lake' (3 versions).",
+      "effect": "Tier 1: Arcane DMG Reduction +5% | Tier 2: Arcane DMG Reduction +7% | Tier 3: Arcane DMG Reduction +10%",
+      "materials": [],
+      "whereToFind": "Tier 1: Yahar'gul, Unseen Village - On a corpse near the skeleton slugs. | Tier 2: Byrgenwerth - right at beginning, to left of lamp, near the tree with the brainsucker. | Tier 3: Isz Root Chalice",
+      "source": {
+        "label": "Fextralife – Caryll Runes",
+        "url": "https://bloodborne.wiki.fextralife.com/Caryll+Runes",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "caryll-runes-beast",
+      "name": "Beast",
+      "category": "caryll-runes",
+      "description": "Caryll Rune 'Beast' (3 versions).",
+      "effect": "Tier 1: Temp. boost to transform +20 | Tier 2: Temp. boost to transform +50 | Tier 3: Temp. boost to transform +100",
+      "materials": [],
+      "whereToFind": "Tier 1: At the very bottom of the Healing Church Workshop Tower, dropped by the Beast-possessed Soul. | Tier 2: Kill the Suspicious Beggar you meet in the Forbidden Woods, at the back of the building with 2 shortcut elevators. Sending the bandaged npc to Iosefka will turn him into an alien that hangs out in the rear of Iosefka's clinic that also drops the rune. | Tier 3: Lower Ailing Loran Root Chalice",
+      "source": {
+        "label": "Fextralife – Caryll Runes",
+        "url": "https://bloodborne.wiki.fextralife.com/Caryll+Runes",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "caryll-runes-beasts-embrace",
+      "name": "Beast's Embrace",
+      "category": "caryll-runes",
+      "description": "Caryll Rune 'Beast's Embrace'.",
+      "effect": "Covenant Rune: Transforms character into a ghastly Beast type of creature",
+      "materials": [],
+      "whereToFind": "Defeat Laurence, the First Vicar",
+      "source": {
+        "label": "Fextralife – Caryll Runes",
+        "url": "https://bloodborne.wiki.fextralife.com/Caryll+Runes",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "caryll-runes-blood-rapture",
+      "name": "Blood Rapture",
+      "category": "caryll-runes",
+      "description": "Caryll Rune 'Blood Rapture' (3 versions).",
+      "effect": "Tier 1: V.ATKs restore HP +200 | Tier 2: V.ATKs restore HP +250 | Tier 3: V.ATKs restore HP +300",
+      "materials": [],
+      "whereToFind": "Tier 1: Dropped by the Shadow of Yharnam. | Tier 2: Cursed and Defiled Root Chalice | Tier 3: Dropped by the Bloody Crow of Cainhurst fought at the completion of Eileen the Crow's Quest.",
+      "source": {
+        "label": "Fextralife – Caryll Runes",
+        "url": "https://bloodborne.wiki.fextralife.com/Caryll+Runes",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "caryll-runes-clawmark",
+      "name": "Clawmark",
+      "category": "caryll-runes",
+      "description": "Caryll Rune 'Clawmark' (3 versions).",
+      "effect": "Tier 1: Ups visceral attack ATK +10% | Tier 2: Ups visceral attack ATK +20% | Tier 3: Ups visceral attack ATK +30%",
+      "materials": [],
+      "whereToFind": "Tier 1: Drops from a hunter in the Hypogean Gaol Lamp room in Yahar'gul, Unseen Village, after killing Rom and entering the nightmare version. | Tier 2: Dropped by the transformed Gilbert at Central Yharnamat the lamp after killing Rom and entering the nightmare version. | Tier 3: Lower Ailing Loran Root Chalice",
+      "source": {
+        "label": "Fextralife – Caryll Runes",
+        "url": "https://bloodborne.wiki.fextralife.com/Caryll+Runes",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "caryll-runes-clear-deep-sea",
+      "name": "Clear Deep Sea",
+      "category": "caryll-runes",
+      "description": "Caryll Rune 'Clear Deep Sea' (3 versions).",
+      "effect": "Tier 1: Add slow poison RES +100 | Tier 2: Add slow poison RES +200 | Tier 3: Add slow poison RES +300",
+      "materials": [],
+      "whereToFind": "Tier 1: Forbidden Woods behind a big gravestone. | Tier 2: Nightmare Frontier behind a rock thrower on top of a hill. | Tier 3: Lower Ailing Loran Root Chalice",
+      "source": {
+        "label": "Fextralife – Caryll Runes",
+        "url": "https://bloodborne.wiki.fextralife.com/Caryll+Runes",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "caryll-runes-clockwise-metamorphosis",
+      "name": "Clockwise Metamorphosis",
+      "category": "caryll-runes",
+      "description": "Caryll Rune 'Clockwise Metamorphosis' (3 versions).",
+      "effect": "Tier 1: Boosts Max HP +5% | Tier 2: Boosts Max HP +10% | Tier 3: Boosts Max HP +15%",
+      "materials": [],
+      "whereToFind": "Tier 1: Forbidden Woods, behind locked gate up the stairs from the boss. | Tier 2: Nightmare Frontier, in a cave across the stone bridge. | Tier 3: Pthumeru Ihyll Root Chalice",
+      "source": {
+        "label": "Fextralife – Caryll Runes",
+        "url": "https://bloodborne.wiki.fextralife.com/Caryll+Runes",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "caryll-runes-communion",
+      "name": "Communion",
+      "category": "caryll-runes",
+      "description": "Caryll Rune 'Communion' (5 versions).",
+      "effect": "Tier 1: Max vials held UP +1 | Tier 2: Max vials held UP +2 | Tier 3: Max vials held UP +3 | Tier 4: Max vials held UP +4 | Tier 5: Max vials held UP +5",
+      "materials": [],
+      "whereToFind": "Tier 1: Found above the Cathedral Ward Lamp, through the door that opens after defeating the Blood-Starved Beast. Take the elevator up and it's in a chest in the first room. | Tier 2: Lecture Building. | Tier 3: Iosefka's Clinic. | Tier 4: Dropped by the Celestial Emmisary. | Tier 5: Pthumeru Ihyll Root Chalice",
+      "source": {
+        "label": "Fextralife – Caryll Runes",
+        "url": "https://bloodborne.wiki.fextralife.com/Caryll+Runes",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "caryll-runes-corruption",
+      "name": "Corruption",
+      "category": "caryll-runes",
+      "description": "Caryll Rune 'Corruption'.",
+      "effect": "Covenant Rune: Cont. heal near death +1",
+      "materials": [],
+      "whereToFind": "Join the Cainhurst Vilebloods.",
+      "source": {
+        "label": "Fextralife – Corruption (Caryll Rune)",
+        "url": "https://bloodborne.wiki.fextralife.com/Corruption",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "caryll-runes-deep-sea",
+      "name": "Deep Sea",
+      "category": "caryll-runes",
+      "description": "Caryll Rune 'Deep Sea' (3 versions).",
+      "effect": "Tier 1: Add frenzy RES +100 | Tier 2: Add frenzy RES +200 | Tier 3: Add frenzy RES +300",
+      "materials": [],
+      "whereToFind": "Tier 1: Lower Hintertomb Root Chalice | Tier 2: Forbidden Woods - by 2 Viper Pits. | Tier 3: Isz Root Chalice",
+      "source": {
+        "label": "Fextralife – Caryll Runes",
+        "url": "https://bloodborne.wiki.fextralife.com/Caryll+Runes",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "caryll-runes-dissipating-lake",
+      "name": "Dissipating Lake",
+      "category": "caryll-runes",
+      "description": "Caryll Rune 'Dissipating Lake' (3 versions).",
+      "effect": "Tier 1: Bolt DMG Reduction +5% | Tier 2: Bolt DMG Reduction +7% | Tier 3: Bolt DMG Reduction +10%",
+      "materials": [],
+      "whereToFind": "Tier 1: Forbidden Woods under some huge entangled roots near a pig. | Tier 2: Ailing Loran Root Chalice | Tier 3: Lower Ailing Loran Root Chalice",
+      "source": {
+        "label": "Fextralife – Caryll Runes",
+        "url": "https://bloodborne.wiki.fextralife.com/Caryll+Runes",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "caryll-runes-eye",
+      "name": "Eye",
+      "category": "caryll-runes",
+      "description": "Caryll Rune 'Eye' (3 versions).",
+      "effect": "Tier 1: More items from fallen enemies (Item Discovery +50) | Tier 2: More items from fallen enemies (Item Discovery +70) | Tier 3: More items from fallen enemies (Item Discovery +100)",
+      "materials": [],
+      "whereToFind": "Tier 1: Obtained in Nightmare of Mensis, on a corpse next to the Mergo's Loft: Base Lamp. | Tier 2: Drop from master willem. | Tier 3: Isz Root Chalice",
+      "source": {
+        "label": "Fextralife – Caryll Runes",
+        "url": "https://bloodborne.wiki.fextralife.com/Caryll+Runes",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "caryll-runes-fading-lake",
+      "name": "Fading Lake",
+      "category": "caryll-runes",
+      "description": "Caryll Rune 'Fading Lake' (3 versions).",
+      "effect": "Tier 1: Fire DMG Reduction +5% | Tier 2: Fire DMG Reduction +7% | Tier 3: Fire DMG Reduction +10%",
+      "materials": [],
+      "whereToFind": "Tier 1: Nightmare Frontier. | Tier 2: Ailing Loran Root Chalice | Tier 3: Lower Ailing Loran Root Chalice",
+      "source": {
+        "label": "Fextralife – Caryll Runes",
+        "url": "https://bloodborne.wiki.fextralife.com/Caryll+Runes",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "caryll-runes-formless-oedon",
+      "name": "Formless Oedon",
+      "category": "caryll-runes",
+      "description": "Caryll Rune 'Formless Oedon' (5 versions).",
+      "effect": "Tier 1: Max QS bullets held UP +1 | Tier 2: Max QS bullets held UP +2 | Tier 3: Max QS bullets held UP +3 | Tier 4: Max QS bullets held UP +4 | Tier 5: Max QS bullets held UP +5",
+      "materials": [],
+      "whereToFind": "Tier 1: Send Gascoigne's daughter to Iosefka's Clinic | Tier 2: Lower Pthumeru Root Chalice | Tier 3: Dropped by the Oedon Chapel Dweller in Cathedral Ward. | Tier 4: A secret passage taking elevator leading to Healing Church Workshop in Cathedral Ward. Take the elevator up, turn around and roll to open rooftop. It's in a chest. | Tier 5: Pthumeru Ihyll Root Chalice",
+      "source": {
+        "label": "Fextralife – Caryll Runes",
+        "url": "https://bloodborne.wiki.fextralife.com/Caryll+Runes",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "caryll-runes-great-deep-sea",
+      "name": "Great Deep Sea",
+      "category": "caryll-runes",
+      "description": "Caryll Rune 'Great Deep Sea' (3 versions).",
+      "effect": "Tier 1: Add all types of RES +50 | Tier 2: Add all types of RES +100 | Tier 3: Add all types of RES +150",
+      "materials": [],
+      "whereToFind": "Tier 1: Lower Hintertomb Root Chalice | Tier 2: Nightmare Frontier - There is a small cave with a hole by the Brain Trust on the cliff, drop down (another Brain Trust right after the drop) in to the poison swamp and take a right. It's in one of the narrow passages guarded by few squids. | Tier 3: Isz Root Chalice",
+      "source": {
+        "label": "Fextralife – Caryll Runes",
+        "url": "https://bloodborne.wiki.fextralife.com/Caryll+Runes",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "caryll-runes-great-lake",
+      "name": "Great Lake",
+      "category": "caryll-runes",
+      "description": "Caryll Rune 'Great Lake' (3 versions).",
+      "effect": "Tier 1: All DMG reduction +3% | Tier 2: All DMG reduction +4% | Tier 3: All DMG reduction +5%",
+      "materials": [],
+      "whereToFind": "Tier 1: Lower Hintertomb Root Chalice | Tier 2: Upper Cathedral Ward, take a right turn at the top of the stairs above the Lamp. | Tier 3: Isz Root Chalice",
+      "source": {
+        "label": "Fextralife – Caryll Runes",
+        "url": "https://bloodborne.wiki.fextralife.com/Caryll+Runes",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "caryll-runes-guidance",
+      "name": "Guidance",
+      "category": "caryll-runes",
+      "description": "Caryll Rune 'Guidance' (3 versions).",
+      "effect": "Tier 1: Rally Potential +10% | Tier 2: Rally Potential +20% | Tier 3: Rally Potential +30%",
+      "materials": [],
+      "whereToFind": "Tier 1: Kill the Carrion Crow on the top floors of the Research Hall | Tier 2: Defeat Ludwig, The Holy Blade | Tier 3: Would have been located in depth 5 of an unknown Root Chalice. No drop tables exist for this rune and can only be obtained via save editing",
+      "source": {
+        "label": "Fextralife – Caryll Runes",
+        "url": "https://bloodborne.wiki.fextralife.com/Caryll+Runes",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "caryll-runes-heir",
+      "name": "Heir",
+      "category": "caryll-runes",
+      "description": "Caryll Rune 'Heir' (3 versions).",
+      "effect": "Tier 1: More Blood Echoes gained from V.ATKs (+20%) | Tier 2: More Blood Echoes gained from V.ATKs (+40%) | Tier 3: More Blood Echoes gained from V.ATKs (+60%)",
+      "materials": [],
+      "whereToFind": "Tier 1: Dropped from Henryk in Tomb of Oedon area. To fight him, follow Eileen the Crow 's quest line. | Tier 2: Obtained from a corpse in Yahar'gul, Unseen Village. Found in a room with bell ringer that summons a werewolf and a wheelchair enemy, near a brick troll. | Tier 3: Pthumeru Ihyll Root Chalice",
+      "source": {
+        "label": "Fextralife – Caryll Runes",
+        "url": "https://bloodborne.wiki.fextralife.com/Caryll+Runes",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "caryll-runes-hunter",
+      "name": "Hunter",
+      "category": "caryll-runes",
+      "description": "Caryll Rune 'Hunter'.",
+      "effect": "Covenant Rune: Increases stamina recovery speed",
+      "materials": [],
+      "whereToFind": "Complete Eileen the Crow's questline and she rewards you with this rune along with the Crow Hunter Badge.",
+      "source": {
+        "label": "Fextralife – Caryll Runes",
+        "url": "https://bloodborne.wiki.fextralife.com/Caryll+Runes",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "caryll-runes-impurity",
+      "name": "Impurity",
+      "category": "caryll-runes",
+      "description": "Caryll Rune 'Impurity'.",
+      "effect": "Covenant Rune: Increases max health by 2% while in co-op",
+      "materials": [],
+      "whereToFind": "Join The League via Valtr.",
+      "source": {
+        "label": "Fextralife – Impurity (Caryll Rune)",
+        "url": "https://bloodborne.wiki.fextralife.com/Impurity",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "caryll-runes-lake",
+      "name": "Lake",
+      "category": "caryll-runes",
+      "description": "Caryll Rune 'Lake' (3 versions).",
+      "effect": "Tier 1: Physical DMG reduction +3% | Tier 2: Physical DMG reduction +5% | Tier 3: Physical DMG reduction +7%",
+      "materials": [],
+      "whereToFind": "Tier 1: Obtained from a corpse at Hemwick Charnel Lane. See Lake rune description for the exact location. | Tier 2: Cursed and Defiled Root Chalice | Tier 3: Pthumeru Ihyll Root Chalice",
+      "source": {
+        "label": "Fextralife – Caryll Runes",
+        "url": "https://bloodborne.wiki.fextralife.com/Caryll+Runes",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "caryll-runes-milkweed",
+      "name": "Milkweed",
+      "category": "caryll-runes",
+      "description": "Caryll Rune 'Milkweed'.",
+      "effect": "Covenant Rune: - Slight increase to Item Discovery - Transforms character into a celestial Kin type of creature",
+      "materials": [],
+      "whereToFind": "Complete the questline for Saint Adeline.",
+      "source": {
+        "label": "Fextralife – Milkweed (Caryll Rune)",
+        "url": "https://bloodborne.wiki.fextralife.com/Milkweed",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "caryll-runes-moon",
+      "name": "Moon",
+      "category": "caryll-runes",
+      "description": "Caryll Rune 'Moon' (3 versions).",
+      "effect": "Tier 1: More echoes from slain enemies (+10%) | Tier 2: More echoes from slain enemies (+20%) | Tier 3: More echoes from slain enemies (+30%)",
+      "materials": [],
+      "whereToFind": "Tier 1: Obtained just downstairs of the Hypogean Gaol lamp post. Guarded by two Snatchers. | Tier 2: Obtained at the very bottom of the spiral staircase during the Micolash boss fight in Nightmare of Mensis. | Tier 3: Obtained in Nightmare of Mensis. Stand in front of Brain of Mensis ' eye (giant brain) in Mergo's Loft's \"abyss\" and use the \"Make Contact\" gesture (wait for your hunter to switch sides).",
+      "source": {
+        "label": "Fextralife – Caryll Runes",
+        "url": "https://bloodborne.wiki.fextralife.com/Caryll+Runes",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "caryll-runes-oedon-writhe",
+      "name": "Oedon Writhe",
+      "category": "caryll-runes",
+      "description": "Caryll Rune 'Oedon Writhe' (3 versions).",
+      "effect": "Tier 1: V.ATKs grant QS bullets +1 | Tier 2: V.ATKs grant QS bullets +2 | Tier 3: V.ATKs grant QS bullets +3",
+      "materials": [],
+      "whereToFind": "Tier 1: Obtained by killing Adella in Hypogean Gaol, Oedon Chapel or Iosefka's Clinic. | Tier 2: Found after killing Iosefka in Iosefka's Clinic. This must be done before killing Rom, the Vacuous Spider as she will no longer drop this rune after she is killed. | Tier 3: Pthumeru Ihyll Root Chalice",
+      "source": {
+        "label": "Fextralife – Caryll Runes",
+        "url": "https://bloodborne.wiki.fextralife.com/Caryll+Runes",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "caryll-runes-radiance",
+      "name": "Radiance",
+      "category": "caryll-runes",
+      "description": "Caryll Rune 'Radiance'.",
+      "effect": "Covenant Rune: Increases HP recovery from Blood Vials.",
+      "materials": [],
+      "whereToFind": "Received from completing Alfred's questline. You must return to the first place you met him at the altar and you will find his corpse there with the rune. Does not drop if Alfred is killed before he murders Annalise.",
+      "source": {
+        "label": "Fextralife – Caryll Runes",
+        "url": "https://bloodborne.wiki.fextralife.com/Caryll+Runes",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "caryll-runes-stunning-deep-sea",
+      "name": "Stunning Deep Sea",
+      "category": "caryll-runes",
+      "description": "Caryll Rune 'Stunning Deep Sea' (3 versions).",
+      "effect": "Tier 1: Add rapid poison RES +100 | Tier 2: Add rapid poison RES +200 | Tier 3: Add rapid poison RES +300",
+      "materials": [],
+      "whereToFind": "Tier 1: Lower Hintertomb Root Chalice. | Tier 2: Nightmare Frontier. | Tier 3: Lower Ailing Loran Root Chalice",
+      "source": {
+        "label": "Fextralife – Caryll Runes",
+        "url": "https://bloodborne.wiki.fextralife.com/Caryll+Runes",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "caryll-runes-rune-workshop-tool",
+      "name": "Rune Workshop Tool",
+      "category": "caryll-runes",
+      "description": "Key item that enables memorizing Caryll Runes.",
+      "effect": "Unlocks the Memory Altar in the Hunter's Dream so runes can be equipped and swapped.",
+      "materials": [],
+      "whereToFind": "Witch's Abode in Hemwick Charnel Lane, after defeating the Witch of Hemwick.",
+      "source": {
+        "label": "Fextralife – Rune Workshop Tool",
+        "url": "https://bloodborne.wiki.fextralife.com/Rune_Workshop_Tool",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "weapon-upgrades-fortify-weapon-to-1",
+      "name": "Fortify weapon to +1",
+      "category": "weapon-upgrades",
+      "description": "Workshop fortification step +0 → +1. Also costs Blood Echoes (amount varies by weapon).",
+      "effect": "Raises weapon to +1. Unlocks an additional Blood Gem imprint slot.",
+      "materials": [
+        {
+          "name": "Blood Stone Shard",
+          "qty": 3,
+          "note": ""
+        },
+        {
+          "name": "Blood Echoes",
+          "qty": null,
+          "note": "amount varies by weapon"
+        }
+      ],
+      "whereToFind": "Workshop in the Hunter's Dream (or the Abandoned Old Workshop).",
+      "source": {
+        "label": "Fextralife – Workshop",
+        "url": "https://bloodborne.wiki.fextralife.com/Workshop",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "weapon-upgrades-fortify-weapon-to-2",
+      "name": "Fortify weapon to +2",
+      "category": "weapon-upgrades",
+      "description": "Workshop fortification step +1 → +2. Also costs Blood Echoes (amount varies by weapon).",
+      "effect": "Raises weapon to +2.",
+      "materials": [
+        {
+          "name": "Blood Stone Shard",
+          "qty": 5,
+          "note": ""
+        },
+        {
+          "name": "Blood Echoes",
+          "qty": null,
+          "note": "amount varies by weapon"
+        }
+      ],
+      "whereToFind": "Workshop in the Hunter's Dream (or the Abandoned Old Workshop).",
+      "source": {
+        "label": "Fextralife – Workshop",
+        "url": "https://bloodborne.wiki.fextralife.com/Workshop",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "weapon-upgrades-fortify-weapon-to-3",
+      "name": "Fortify weapon to +3",
+      "category": "weapon-upgrades",
+      "description": "Workshop fortification step +2 → +3. Also costs Blood Echoes (amount varies by weapon).",
+      "effect": "Raises weapon to +3. Unlocks an additional Blood Gem imprint slot.",
+      "materials": [
+        {
+          "name": "Blood Stone Shard",
+          "qty": 8,
+          "note": ""
+        },
+        {
+          "name": "Blood Echoes",
+          "qty": null,
+          "note": "amount varies by weapon"
+        }
+      ],
+      "whereToFind": "Workshop in the Hunter's Dream (or the Abandoned Old Workshop).",
+      "source": {
+        "label": "Fextralife – Workshop",
+        "url": "https://bloodborne.wiki.fextralife.com/Workshop",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "weapon-upgrades-fortify-weapon-to-4",
+      "name": "Fortify weapon to +4",
+      "category": "weapon-upgrades",
+      "description": "Workshop fortification step +3 → +4. Also costs Blood Echoes (amount varies by weapon).",
+      "effect": "Raises weapon to +4.",
+      "materials": [
+        {
+          "name": "Twin Blood Stone Shards",
+          "qty": 3,
+          "note": ""
+        },
+        {
+          "name": "Blood Echoes",
+          "qty": null,
+          "note": "amount varies by weapon"
+        }
+      ],
+      "whereToFind": "Workshop in the Hunter's Dream (or the Abandoned Old Workshop).",
+      "source": {
+        "label": "Fextralife – Workshop",
+        "url": "https://bloodborne.wiki.fextralife.com/Workshop",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "weapon-upgrades-fortify-weapon-to-5",
+      "name": "Fortify weapon to +5",
+      "category": "weapon-upgrades",
+      "description": "Workshop fortification step +4 → +5. Also costs Blood Echoes (amount varies by weapon).",
+      "effect": "Raises weapon to +5.",
+      "materials": [
+        {
+          "name": "Twin Blood Stone Shards",
+          "qty": 5,
+          "note": ""
+        },
+        {
+          "name": "Blood Echoes",
+          "qty": null,
+          "note": "amount varies by weapon"
+        }
+      ],
+      "whereToFind": "Workshop in the Hunter's Dream (or the Abandoned Old Workshop).",
+      "source": {
+        "label": "Fextralife – Workshop",
+        "url": "https://bloodborne.wiki.fextralife.com/Workshop",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "weapon-upgrades-fortify-weapon-to-6",
+      "name": "Fortify weapon to +6",
+      "category": "weapon-upgrades",
+      "description": "Workshop fortification step +5 → +6. Also costs Blood Echoes (amount varies by weapon).",
+      "effect": "Raises weapon to +6. Unlocks an additional Blood Gem imprint slot.",
+      "materials": [
+        {
+          "name": "Twin Blood Stone Shards",
+          "qty": 8,
+          "note": ""
+        },
+        {
+          "name": "Blood Echoes",
+          "qty": null,
+          "note": "amount varies by weapon"
+        }
+      ],
+      "whereToFind": "Workshop in the Hunter's Dream (or the Abandoned Old Workshop).",
+      "source": {
+        "label": "Fextralife – Workshop",
+        "url": "https://bloodborne.wiki.fextralife.com/Workshop",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "weapon-upgrades-fortify-weapon-to-7",
+      "name": "Fortify weapon to +7",
+      "category": "weapon-upgrades",
+      "description": "Workshop fortification step +6 → +7. Also costs Blood Echoes (amount varies by weapon).",
+      "effect": "Raises weapon to +7.",
+      "materials": [
+        {
+          "name": "Blood Stone Chunk",
+          "qty": 3,
+          "note": ""
+        },
+        {
+          "name": "Blood Echoes",
+          "qty": null,
+          "note": "amount varies by weapon"
+        }
+      ],
+      "whereToFind": "Workshop in the Hunter's Dream (or the Abandoned Old Workshop).",
+      "source": {
+        "label": "Fextralife – Workshop",
+        "url": "https://bloodborne.wiki.fextralife.com/Workshop",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "weapon-upgrades-fortify-weapon-to-8",
+      "name": "Fortify weapon to +8",
+      "category": "weapon-upgrades",
+      "description": "Workshop fortification step +7 → +8. Also costs Blood Echoes (amount varies by weapon).",
+      "effect": "Raises weapon to +8.",
+      "materials": [
+        {
+          "name": "Blood Stone Chunk",
+          "qty": 5,
+          "note": ""
+        },
+        {
+          "name": "Blood Echoes",
+          "qty": null,
+          "note": "amount varies by weapon"
+        }
+      ],
+      "whereToFind": "Workshop in the Hunter's Dream (or the Abandoned Old Workshop).",
+      "source": {
+        "label": "Fextralife – Workshop",
+        "url": "https://bloodborne.wiki.fextralife.com/Workshop",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "weapon-upgrades-fortify-weapon-to-9",
+      "name": "Fortify weapon to +9",
+      "category": "weapon-upgrades",
+      "description": "Workshop fortification step +8 → +9. Also costs Blood Echoes (amount varies by weapon).",
+      "effect": "Raises weapon to +9.",
+      "materials": [
+        {
+          "name": "Blood Stone Chunk",
+          "qty": 8,
+          "note": ""
+        },
+        {
+          "name": "Blood Echoes",
+          "qty": null,
+          "note": "amount varies by weapon"
+        }
+      ],
+      "whereToFind": "Workshop in the Hunter's Dream (or the Abandoned Old Workshop).",
+      "source": {
+        "label": "Fextralife – Workshop",
+        "url": "https://bloodborne.wiki.fextralife.com/Workshop",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "weapon-upgrades-fortify-weapon-to-10",
+      "name": "Fortify weapon to +10",
+      "category": "weapon-upgrades",
+      "description": "Workshop fortification step +9 → +10. Also costs Blood Echoes (amount varies by weapon).",
+      "effect": "Raises weapon to +10.",
+      "materials": [
+        {
+          "name": "Blood Rock",
+          "qty": 1,
+          "note": ""
+        },
+        {
+          "name": "Blood Echoes",
+          "qty": null,
+          "note": "amount varies by weapon"
+        }
+      ],
+      "whereToFind": "Workshop in the Hunter's Dream (or the Abandoned Old Workshop).",
+      "source": {
+        "label": "Fextralife – Workshop",
+        "url": "https://bloodborne.wiki.fextralife.com/Workshop",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "weapon-upgrades-workshop-haze-extractor",
+      "name": "Workshop Haze Extractor",
+      "category": "weapon-upgrades",
+      "description": "Key item that lets you extract Arcane Haze from ritual materials at the Workshop.",
+      "effect": "Converts ritual materials into Arcane Haze.",
+      "materials": [],
+      "whereToFind": "Lower Pthumeru Chalice, Layer 2.",
+      "source": {
+        "label": "Fextralife – Workshop Haze Extractor",
+        "url": "https://bloodborne.wiki.fextralife.com/Workshop_Haze_Extractor",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "weapon-upgrades-arcane-haze-extracted",
+      "name": "Arcane Haze (extracted)",
+      "category": "weapon-upgrades",
+      "description": "Arcane Haze produced at the Workshop with the Workshop Haze Extractor; each material listed is consumed for the noted yield.",
+      "effect": "Produces Arcane Haze for chalice rituals.",
+      "materials": [
+        {
+          "name": "Ritual Blood (1)",
+          "qty": 1,
+          "note": "yields 2 Arcane Haze"
+        },
+        {
+          "name": "Ritual Blood (2)",
+          "qty": 1,
+          "note": "yields 5 Arcane Haze"
+        },
+        {
+          "name": "Ritual Blood (3)",
+          "qty": 1,
+          "note": "yields 7 Arcane Haze"
+        },
+        {
+          "name": "Ritual Blood (4)",
+          "qty": 1,
+          "note": "yields 10 Arcane Haze"
+        },
+        {
+          "name": "Ritual Blood (5)",
+          "qty": 1,
+          "note": "yields 12 Arcane Haze"
+        },
+        {
+          "name": "Tomb Mold (1)",
+          "qty": 1,
+          "note": "yields 2 Arcane Haze"
+        },
+        {
+          "name": "Tomb Mold (2)",
+          "qty": 1,
+          "note": "yields 5 Arcane Haze"
+        },
+        {
+          "name": "Tomb Mold (3)",
+          "qty": 1,
+          "note": "yields 7 Arcane Haze"
+        },
+        {
+          "name": "Tomb Mold (4)",
+          "qty": 1,
+          "note": "yields 10 Arcane Haze"
+        },
+        {
+          "name": "Tomb Mold (5)",
+          "qty": 1,
+          "note": "yields 12 Arcane Haze"
+        },
+        {
+          "name": "Coldblood Flowerbud",
+          "qty": 1,
+          "note": "yields 7 Arcane Haze"
+        },
+        {
+          "name": "Coldblood Flower Bulb",
+          "qty": 1,
+          "note": "yields 10 Arcane Haze"
+        },
+        {
+          "name": "Blooming Coldblood Flower",
+          "qty": 1,
+          "note": "yields 12 Arcane Haze"
+        },
+        {
+          "name": "Bloodshot Eyeball",
+          "qty": 1,
+          "note": "yields 5 Arcane Haze"
+        },
+        {
+          "name": "Living String",
+          "qty": 1,
+          "note": "yields 24 Arcane Haze"
+        },
+        {
+          "name": "Red Jelly",
+          "qty": 1,
+          "note": "yields 5 Arcane Haze"
+        },
+        {
+          "name": "Pearl Slug",
+          "qty": 1,
+          "note": "yields 5 Arcane Haze"
+        },
+        {
+          "name": "Sage's Wrist",
+          "qty": 1,
+          "note": "yields 5 Arcane Haze"
+        },
+        {
+          "name": "Sage's Hair",
+          "qty": 1,
+          "note": "yields 11 Arcane Haze"
+        },
+        {
+          "name": "Inflicted Organ",
+          "qty": 1,
+          "note": "yields 5 Arcane Haze"
+        },
+        {
+          "name": "Yellow Backbone",
+          "qty": 1,
+          "note": "yields 11 Arcane Haze"
+        },
+        {
+          "name": "Bastard of Loran",
+          "qty": 1,
+          "note": "yields 5 Arcane Haze"
+        }
+      ],
+      "whereToFind": "Workshop (requires Workshop Haze Extractor).",
+      "source": {
+        "label": "Fextralife – Arcane Haze",
+        "url": "https://bloodborne.wiki.fextralife.com/Arcane_Haze",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "chalice-dungeons-pthumeru-chalice",
+      "name": "Pthumeru Chalice",
+      "category": "chalice-dungeons",
+      "description": "Chalice ritual for a Depth 1 Pthumeru Chalice Dungeon.",
+      "effect": "Creates the Chalice Dungeon when consecrated at a ritual altar in the Hunter's Dream.",
+      "materials": [
+        {
+          "name": "Ritual Blood (1)",
+          "qty": 2,
+          "note": ""
+        },
+        {
+          "name": "Blood Echoes",
+          "qty": 1000,
+          "note": ""
+        }
+      ],
+      "whereToFind": "Kill the Blood-Starved Beast.",
+      "source": {
+        "label": "Fextralife – Pthumeru Chalice",
+        "url": "https://bloodborne.wiki.fextralife.com/Pthumeru_Chalice",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "chalice-dungeons-pthumeru-root-chalice",
+      "name": "Pthumeru Root Chalice",
+      "category": "chalice-dungeons",
+      "description": "Chalice ritual for a Depth 1 Pthumeru Chalice Dungeon.",
+      "effect": "Creates the Chalice Dungeon when consecrated at a ritual altar in the Hunter's Dream.",
+      "materials": [
+        {
+          "name": "Ritual Blood (1)",
+          "qty": 2,
+          "note": ""
+        },
+        {
+          "name": "Tomb Mold (1)",
+          "qty": 3,
+          "note": ""
+        },
+        {
+          "name": "Blood Echoes",
+          "qty": 1000,
+          "note": ""
+        }
+      ],
+      "whereToFind": "Kill the Merciless Watcher in Pthumeru Chalice. (Layer 2.)",
+      "source": {
+        "label": "Fextralife – Pthumeru Root Chalice",
+        "url": "https://bloodborne.wiki.fextralife.com/Pthumeru_Root_Chalice",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "chalice-dungeons-central-pthumeru-chalice",
+      "name": "Central Pthumeru Chalice",
+      "category": "chalice-dungeons",
+      "description": "Chalice ritual for a Depth 2 Pthumeru Chalice Dungeon.",
+      "effect": "Creates the Chalice Dungeon when consecrated at a ritual altar in the Hunter's Dream.",
+      "materials": [
+        {
+          "name": "Ritual Blood (2)",
+          "qty": 6,
+          "note": ""
+        },
+        {
+          "name": "Blood Echoes",
+          "qty": 1800,
+          "note": ""
+        }
+      ],
+      "whereToFind": "Kill the Watchdog of the Old Lords in Pthumeru Chalice. (Layer 3.)",
+      "source": {
+        "label": "Fextralife – Central Pthumeru Chalice",
+        "url": "https://bloodborne.wiki.fextralife.com/Central_Pthumeru_Chalice",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "chalice-dungeons-central-pthumeru-root-chalice",
+      "name": "Central Pthumeru Root Chalice",
+      "category": "chalice-dungeons",
+      "description": "Chalice ritual for a Depth 2 Pthumeru Chalice Dungeon.",
+      "effect": "Creates the Chalice Dungeon when consecrated at a ritual altar in the Hunter's Dream.",
+      "materials": [
+        {
+          "name": "Ritual Blood (2)",
+          "qty": 8,
+          "note": ""
+        },
+        {
+          "name": "Tomb Mold (2)",
+          "qty": 6,
+          "note": ""
+        },
+        {
+          "name": "Blood Echoes",
+          "qty": 1800,
+          "note": ""
+        },
+        {
+          "name": "Sage's Wrist",
+          "qty": 2,
+          "note": "optional Fetid rite offering"
+        }
+      ],
+      "whereToFind": "Kill the Keeper of the Old Lords in Central Pthumeru Chalice. (Layer 2.)",
+      "source": {
+        "label": "Fextralife – Central Pthumeru Root Chalice",
+        "url": "https://bloodborne.wiki.fextralife.com/Central_Pthumeru_Root_Chalice",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "chalice-dungeons-lower-pthumeru-chalice",
+      "name": "Lower Pthumeru Chalice",
+      "category": "chalice-dungeons",
+      "description": "Chalice ritual for a Depth 3 Pthumeru Chalice Dungeon.",
+      "effect": "Creates the Chalice Dungeon when consecrated at a ritual altar in the Hunter's Dream.",
+      "materials": [
+        {
+          "name": "Ritual Blood (3)",
+          "qty": 9,
+          "note": ""
+        },
+        {
+          "name": "Blood Echoes",
+          "qty": 3200,
+          "note": ""
+        }
+      ],
+      "whereToFind": "Kill the Pthumerian Descendant in Central Pthumeru Chalice. (Layer 3.)",
+      "source": {
+        "label": "Fextralife – Lower Pthumeru Chalice",
+        "url": "https://bloodborne.wiki.fextralife.com/Lower_Pthumeru_Chalice",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "chalice-dungeons-lower-pthumeru-root-chalice",
+      "name": "Lower Pthumeru Root Chalice",
+      "category": "chalice-dungeons",
+      "description": "Chalice ritual for a Depth 3 Pthumeru Chalice Dungeon.",
+      "effect": "Creates the Chalice Dungeon when consecrated at a ritual altar in the Hunter's Dream.",
+      "materials": [
+        {
+          "name": "Ritual Blood (3)",
+          "qty": 12,
+          "note": ""
+        },
+        {
+          "name": "Tomb Mold (3)",
+          "qty": 8,
+          "note": ""
+        },
+        {
+          "name": "Blood Echoes",
+          "qty": 3200,
+          "note": ""
+        },
+        {
+          "name": "Sage's Wrist",
+          "qty": 4,
+          "note": "optional Fetid rite offering"
+        },
+        {
+          "name": "Inflicted Organ",
+          "qty": 3,
+          "note": "optional Rotted rite offering"
+        }
+      ],
+      "whereToFind": "Kill Rom, the Vacuous Spider in Lower Pthumeru Chalice. (Layer 3.)",
+      "source": {
+        "label": "Fextralife – Lower Pthumeru Root Chalice",
+        "url": "https://bloodborne.wiki.fextralife.com/Lower_Pthumeru_Root_Chalice",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "chalice-dungeons-sinister-lower-pthumeru-root-chalice",
+      "name": "Sinister Lower Pthumeru Root Chalice",
+      "category": "chalice-dungeons",
+      "description": "Chalice ritual for a Depth 3 Pthumeru Chalice Dungeon.",
+      "effect": "Creates the Chalice Dungeon when consecrated at a ritual altar in the Hunter's Dream.",
+      "materials": [
+        {
+          "name": "Ritual Blood (3)",
+          "qty": 12,
+          "note": ""
+        },
+        {
+          "name": "Tomb Mold (3)",
+          "qty": 8,
+          "note": ""
+        },
+        {
+          "name": "Blood Echoes",
+          "qty": 3200,
+          "note": ""
+        },
+        {
+          "name": "Arcane Haze",
+          "qty": 19,
+          "note": "optional Sinister Bell rite offering"
+        }
+      ],
+      "whereToFind": "Sold by Messengers for 9,000 Blood Echoes inside Lower Pthumeru Chalice (Layer 4.) (Behind an illusory wall in the room with the pyromancer.)",
+      "source": {
+        "label": "Fextralife – Sinister Lower Pthumeru Root Chalice",
+        "url": "https://bloodborne.wiki.fextralife.com/Sinister_Lower_Pthumeru_Root_Chalice",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "chalice-dungeons-defiled-chalice",
+      "name": "Defiled Chalice",
+      "category": "chalice-dungeons",
+      "description": "Chalice ritual for a Depth 4 Pthumeru Chalice Dungeon.",
+      "effect": "Creates the Chalice Dungeon when consecrated at a ritual altar in the Hunter's Dream.",
+      "materials": [
+        {
+          "name": "Ritual Blood (4)",
+          "qty": 9,
+          "note": ""
+        },
+        {
+          "name": "Bastard of Loran",
+          "qty": 2,
+          "note": ""
+        },
+        {
+          "name": "Arcane Haze",
+          "qty": 22,
+          "note": ""
+        },
+        {
+          "name": "Blood Echoes",
+          "qty": 5500,
+          "note": ""
+        }
+      ],
+      "whereToFind": "Kill the Bloodletting Beast in Lower Pthumeru Chalice. (Layer 4.)",
+      "source": {
+        "label": "Fextralife – Defiled Chalice",
+        "url": "https://bloodborne.wiki.fextralife.com/Defiled_Chalice",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "chalice-dungeons-cursed-and-defiled-root-chalice",
+      "name": "Cursed and Defiled Root Chalice",
+      "category": "chalice-dungeons",
+      "description": "Chalice ritual for a Depth 4 Pthumeru Chalice Dungeon.",
+      "effect": "Creates the Chalice Dungeon when consecrated at a ritual altar in the Hunter's Dream.",
+      "materials": [
+        {
+          "name": "Ritual Blood (4)",
+          "qty": 10,
+          "note": ""
+        },
+        {
+          "name": "Tomb Mold (4)",
+          "qty": 6,
+          "note": ""
+        },
+        {
+          "name": "Blood Echoes",
+          "qty": 5500,
+          "note": ""
+        },
+        {
+          "name": "Sage's Hair",
+          "qty": 3,
+          "note": "optional Fetid rite offering"
+        },
+        {
+          "name": "Inflicted Organ",
+          "qty": 5,
+          "note": "optional Rotted rite offering"
+        },
+        {
+          "name": "Bastard of Loran",
+          "qty": 3,
+          "note": "optional Curse rite offering"
+        }
+      ],
+      "whereToFind": "Kill the Watchdog of The Old Lords in Defiled Chalice. (Layer 2.)",
+      "source": {
+        "label": "Fextralife – Cursed and Defiled Root Chalice",
+        "url": "https://bloodborne.wiki.fextralife.com/Cursed_and_Defiled_Root_Chalice",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "chalice-dungeons-great-pthumeru-ihyll-chalice",
+      "name": "Great Pthumeru Ihyll Chalice",
+      "category": "chalice-dungeons",
+      "description": "Chalice ritual for a Depth 5 Pthumeru Chalice Dungeon.",
+      "effect": "Creates the Chalice Dungeon when consecrated at a ritual altar in the Hunter's Dream.",
+      "materials": [
+        {
+          "name": "Ritual Blood (5)",
+          "qty": 9,
+          "note": ""
+        },
+        {
+          "name": "Red Jelly",
+          "qty": 4,
+          "note": ""
+        },
+        {
+          "name": "Arcane Haze",
+          "qty": 25,
+          "note": ""
+        },
+        {
+          "name": "Living String",
+          "qty": 1,
+          "note": ""
+        },
+        {
+          "name": "Blood Echoes",
+          "qty": 11500,
+          "note": ""
+        }
+      ],
+      "whereToFind": "Kill Amygdala in Defiled Chalice. (Layer 3.)",
+      "source": {
+        "label": "Fextralife – Great Pthumeru Ihyll Chalice",
+        "url": "https://bloodborne.wiki.fextralife.com/Great_Pthumeru_Ihyll_Chalice",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "chalice-dungeons-pthumeru-ihyll-root-chalice",
+      "name": "Pthumeru Ihyll Root Chalice",
+      "category": "chalice-dungeons",
+      "description": "Chalice ritual for a Depth 5 Pthumeru Chalice Dungeon.",
+      "effect": "Creates the Chalice Dungeon when consecrated at a ritual altar in the Hunter's Dream.",
+      "materials": [
+        {
+          "name": "Ritual Blood (5)",
+          "qty": 15,
+          "note": ""
+        },
+        {
+          "name": "Tomb Mold (5)",
+          "qty": 15,
+          "note": ""
+        },
+        {
+          "name": "Red Jelly",
+          "qty": 2,
+          "note": ""
+        },
+        {
+          "name": "Blood Echoes",
+          "qty": 11500,
+          "note": ""
+        },
+        {
+          "name": "Sage's Hair",
+          "qty": 6,
+          "note": "optional Fetid rite offering"
+        },
+        {
+          "name": "Yellow Backbone",
+          "qty": 6,
+          "note": "optional Rotted rite offering"
+        },
+        {
+          "name": "Bastard of Loran",
+          "qty": 3,
+          "note": "optional Curse rite offering"
+        }
+      ],
+      "whereToFind": "Kill the Headless Bloodletting Beast in Great Pthumeru Ihyll Chalice. (Layer 2.)",
+      "source": {
+        "label": "Fextralife – Pthumeru Ihyll Root Chalice",
+        "url": "https://bloodborne.wiki.fextralife.com/Pthumeru_Ihyll_Root_Chalice",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "chalice-dungeons-sinister-pthumeru-ihyll-root-chalice",
+      "name": "Sinister Pthumeru Ihyll Root Chalice",
+      "category": "chalice-dungeons",
+      "description": "Chalice ritual for a Depth 5 Pthumeru Chalice Dungeon.",
+      "effect": "Creates the Chalice Dungeon when consecrated at a ritual altar in the Hunter's Dream.",
+      "materials": [
+        {
+          "name": "Ritual Blood (5)",
+          "qty": 15,
+          "note": ""
+        },
+        {
+          "name": "Tomb Mold (5)",
+          "qty": 15,
+          "note": ""
+        },
+        {
+          "name": "Red Jelly",
+          "qty": 2,
+          "note": ""
+        },
+        {
+          "name": "Blood Echoes",
+          "qty": 11500,
+          "note": ""
+        },
+        {
+          "name": "Arcane Haze",
+          "qty": 32,
+          "note": "optional Sinister Bell rite offering"
+        }
+      ],
+      "whereToFind": "Sold by Messengers for 16,000 Blood Echoes inside Great Pthumeru Ihyll Chalice. (Layer 3 side area.)",
+      "source": {
+        "label": "Fextralife – Sinister Pthumeru Ihyll Root Chalice",
+        "url": "https://bloodborne.wiki.fextralife.com/Sinister_Pthumeru_Ihyll_Root_Chalice",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "chalice-dungeons-hintertomb-chalice",
+      "name": "Hintertomb Chalice",
+      "category": "chalice-dungeons",
+      "description": "Chalice ritual for a Depth 2 Hintertomb Chalice Dungeon.",
+      "effect": "Creates the Chalice Dungeon when consecrated at a ritual altar in the Hunter's Dream.",
+      "materials": [
+        {
+          "name": "Ritual Blood (2)",
+          "qty": 3,
+          "note": ""
+        },
+        {
+          "name": "Bloodshot Eyeball",
+          "qty": 3,
+          "note": ""
+        },
+        {
+          "name": "Blood Echoes",
+          "qty": 1800,
+          "note": ""
+        }
+      ],
+      "whereToFind": "In a chest in Central Pthumeru Chalice. (Layer 2 side area.)",
+      "source": {
+        "label": "Fextralife – Hintertomb Chalice",
+        "url": "https://bloodborne.wiki.fextralife.com/Hintertomb_Chalice",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "chalice-dungeons-hintertomb-root-chalice",
+      "name": "Hintertomb Root Chalice",
+      "category": "chalice-dungeons",
+      "description": "Chalice ritual for a Depth 2 Hintertomb Chalice Dungeon.",
+      "effect": "Creates the Chalice Dungeon when consecrated at a ritual altar in the Hunter's Dream.",
+      "materials": [
+        {
+          "name": "Ritual Blood (2)",
+          "qty": 8,
+          "note": ""
+        },
+        {
+          "name": "Tomb Mold (2)",
+          "qty": 10,
+          "note": ""
+        },
+        {
+          "name": "Bloodshot Eyeball",
+          "qty": 3,
+          "note": ""
+        },
+        {
+          "name": "Blood Echoes",
+          "qty": 1800,
+          "note": ""
+        },
+        {
+          "name": "Sage's Wrist",
+          "qty": 2,
+          "note": "optional Fetid rite offering"
+        }
+      ],
+      "whereToFind": "Kill the Undead Giant in Hintertomb Chalice. (Layer 2.)",
+      "source": {
+        "label": "Fextralife – Hintertomb Root Chalice",
+        "url": "https://bloodborne.wiki.fextralife.com/Hintertomb_Root_Chalice",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "chalice-dungeons-lower-hintertomb-chalice",
+      "name": "Lower Hintertomb Chalice",
+      "category": "chalice-dungeons",
+      "description": "Chalice ritual for a Depth 3 Hintertomb Chalice Dungeon.",
+      "effect": "Creates the Chalice Dungeon when consecrated at a ritual altar in the Hunter's Dream.",
+      "materials": [
+        {
+          "name": "Ritual Blood (3)",
+          "qty": 6,
+          "note": ""
+        },
+        {
+          "name": "Bloodshot Eyeball",
+          "qty": 6,
+          "note": ""
+        },
+        {
+          "name": "Blood Echoes",
+          "qty": 3200,
+          "note": ""
+        }
+      ],
+      "whereToFind": "Kill the Blood-Starved Beast in Hintertomb Chalice. (Layer 3.)",
+      "source": {
+        "label": "Fextralife – Lower Hintertomb Chalice",
+        "url": "https://bloodborne.wiki.fextralife.com/Lower_Hintertomb_Chalice",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "chalice-dungeons-lower-hintertomb-root-chalice",
+      "name": "Lower Hintertomb Root Chalice",
+      "category": "chalice-dungeons",
+      "description": "Chalice ritual for a Depth 3 Hintertomb Chalice Dungeon.",
+      "effect": "Creates the Chalice Dungeon when consecrated at a ritual altar in the Hunter's Dream.",
+      "materials": [
+        {
+          "name": "Ritual Blood (3)",
+          "qty": 12,
+          "note": ""
+        },
+        {
+          "name": "Tomb Mold (3)",
+          "qty": 3,
+          "note": ""
+        },
+        {
+          "name": "Bloodshot Eyeball",
+          "qty": 6,
+          "note": ""
+        },
+        {
+          "name": "Blood Echoes",
+          "qty": 3200,
+          "note": ""
+        },
+        {
+          "name": "Sage's Wrist",
+          "qty": 4,
+          "note": "optional Fetid rite offering"
+        },
+        {
+          "name": "Inflicted Organ",
+          "qty": 3,
+          "note": "optional Rotted rite offering"
+        }
+      ],
+      "whereToFind": "Kill the Forgotten Madman in Lower Hintertomb Chalice. (Layer 2.)",
+      "source": {
+        "label": "Fextralife – Lower Hintertomb Root Chalice",
+        "url": "https://bloodborne.wiki.fextralife.com/Lower_Hintertomb_Root_Chalice",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "chalice-dungeons-sinister-hintertomb-root-chalice",
+      "name": "Sinister Hintertomb Root Chalice",
+      "category": "chalice-dungeons",
+      "description": "Chalice ritual for a Depth 3 Hintertomb Chalice Dungeon.",
+      "effect": "Creates the Chalice Dungeon when consecrated at a ritual altar in the Hunter's Dream.",
+      "materials": [
+        {
+          "name": "Ritual Blood (3)",
+          "qty": 12,
+          "note": ""
+        },
+        {
+          "name": "Tomb Mold (3)",
+          "qty": 3,
+          "note": ""
+        },
+        {
+          "name": "Bloodshot Eyeball",
+          "qty": 6,
+          "note": ""
+        },
+        {
+          "name": "Blood Echoes",
+          "qty": 3200,
+          "note": ""
+        },
+        {
+          "name": "Arcane Haze",
+          "qty": 19,
+          "note": "optional Sinister Bell rite offering"
+        }
+      ],
+      "whereToFind": "Sold by Messengers for 10,000 Blood Echoes inside Lower Hintertomb Chalice (Layer 3.)",
+      "source": {
+        "label": "Fextralife – Sinister Hintertomb Root Chalice",
+        "url": "https://bloodborne.wiki.fextralife.com/Sinister_Hintertomb_Root_Chalice",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "chalice-dungeons-ailing-loran-chalice",
+      "name": "Ailing Loran Chalice",
+      "category": "chalice-dungeons",
+      "description": "Chalice ritual for a Depth 4 Loran Chalice Dungeon.",
+      "effect": "Creates the Chalice Dungeon when consecrated at a ritual altar in the Hunter's Dream.",
+      "materials": [
+        {
+          "name": "Ritual Blood (4)",
+          "qty": 9,
+          "note": ""
+        },
+        {
+          "name": "Coldblood Flowerbud",
+          "qty": 4,
+          "note": ""
+        },
+        {
+          "name": "Blood Echoes",
+          "qty": 5500,
+          "note": ""
+        }
+      ],
+      "whereToFind": "Kill Amygdala.",
+      "source": {
+        "label": "Fextralife – Ailing Loran Chalice",
+        "url": "https://bloodborne.wiki.fextralife.com/Ailing_Loran_Chalice",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "chalice-dungeons-ailing-loran-root-chalice",
+      "name": "Ailing Loran Root Chalice",
+      "category": "chalice-dungeons",
+      "description": "Chalice ritual for a Depth 4 Loran Chalice Dungeon.",
+      "effect": "Creates the Chalice Dungeon when consecrated at a ritual altar in the Hunter's Dream.",
+      "materials": [
+        {
+          "name": "Ritual Blood (4)",
+          "qty": 14,
+          "note": ""
+        },
+        {
+          "name": "Coldblood Flower Bulb",
+          "qty": 3,
+          "note": ""
+        },
+        {
+          "name": "Tomb Mold (4)",
+          "qty": 3,
+          "note": ""
+        },
+        {
+          "name": "Blood Echoes",
+          "qty": 5500,
+          "note": ""
+        },
+        {
+          "name": "Sage's Hair",
+          "qty": 3,
+          "note": "optional Fetid rite offering"
+        },
+        {
+          "name": "Inflicted Organ",
+          "qty": 5,
+          "note": "optional Rotted rite offering"
+        }
+      ],
+      "whereToFind": "Kill the Blood-Starved Beast in Ailing Loran Chalice. (Layer 2.)",
+      "source": {
+        "label": "Fextralife – Ailing Loran Root Chalice",
+        "url": "https://bloodborne.wiki.fextralife.com/Ailing_Loran_Root_Chalice",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "chalice-dungeons-lower-loran-chalice",
+      "name": "Lower Loran Chalice",
+      "category": "chalice-dungeons",
+      "description": "Chalice ritual for a Depth 5 Loran Chalice Dungeon.",
+      "effect": "Creates the Chalice Dungeon when consecrated at a ritual altar in the Hunter's Dream.",
+      "materials": [
+        {
+          "name": "Ritual Blood (5)",
+          "qty": 9,
+          "note": ""
+        },
+        {
+          "name": "Blooming Coldblood Flower",
+          "qty": 4,
+          "note": ""
+        },
+        {
+          "name": "Blood Echoes",
+          "qty": 11500,
+          "note": ""
+        }
+      ],
+      "whereToFind": "Kill the Abhorrent Beast in Ailing Loran Chalice. (Layer 3.)",
+      "source": {
+        "label": "Fextralife – Lower Loran Chalice",
+        "url": "https://bloodborne.wiki.fextralife.com/Lower_Loran_Chalice",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "chalice-dungeons-lower-ailing-loran-root-chalice",
+      "name": "Lower Ailing Loran Root Chalice",
+      "category": "chalice-dungeons",
+      "description": "Chalice ritual for a Depth 5 Loran Chalice Dungeon.",
+      "effect": "Creates the Chalice Dungeon when consecrated at a ritual altar in the Hunter's Dream.",
+      "materials": [
+        {
+          "name": "Ritual Blood (5)",
+          "qty": 13,
+          "note": ""
+        },
+        {
+          "name": "Blooming Coldblood Flower",
+          "qty": 4,
+          "note": ""
+        },
+        {
+          "name": "Tomb Mold (5)",
+          "qty": 5,
+          "note": ""
+        },
+        {
+          "name": "Red Jelly",
+          "qty": 1,
+          "note": ""
+        },
+        {
+          "name": "Blood Echoes",
+          "qty": 11500,
+          "note": ""
+        },
+        {
+          "name": "Sage's Hair",
+          "qty": 6,
+          "note": "optional Fetid rite offering"
+        },
+        {
+          "name": "Yellow Backbone",
+          "qty": 6,
+          "note": "optional Rotted rite offering"
+        },
+        {
+          "name": "Bastard of Loran",
+          "qty": 3,
+          "note": "optional Curse rite offering"
+        }
+      ],
+      "whereToFind": "Kill Loran Darkbeast in Lower Loran Chalice. (Layer 3.)",
+      "source": {
+        "label": "Fextralife – Lower Ailing Loran Root Chalice",
+        "url": "https://bloodborne.wiki.fextralife.com/Lower_Ailing_Loran_Root_Chalice",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "chalice-dungeons-sinister-lower-loran-root-chalice",
+      "name": "Sinister Lower Loran Root Chalice",
+      "category": "chalice-dungeons",
+      "description": "Chalice ritual for a Depth 5 Loran Chalice Dungeon.",
+      "effect": "Creates the Chalice Dungeon when consecrated at a ritual altar in the Hunter's Dream.",
+      "materials": [
+        {
+          "name": "Ritual Blood (5)",
+          "qty": 13,
+          "note": ""
+        },
+        {
+          "name": "Blooming Coldblood Flower",
+          "qty": 4,
+          "note": ""
+        },
+        {
+          "name": "Tomb Mold (5)",
+          "qty": 5,
+          "note": ""
+        },
+        {
+          "name": "Red Jelly",
+          "qty": 1,
+          "note": ""
+        },
+        {
+          "name": "Blood Echoes",
+          "qty": 11500,
+          "note": ""
+        },
+        {
+          "name": "Arcane Haze",
+          "qty": 32,
+          "note": "optional Sinister Bell rite offering"
+        }
+      ],
+      "whereToFind": "Sold by Messengers for 18,000 Blood Echoes inside Lower Loran Chalice. (Layer 3.)",
+      "source": {
+        "label": "Fextralife – Sinister Lower Loran Root Chalice",
+        "url": "https://bloodborne.wiki.fextralife.com/Sinister_Lower_Loran_Root_Chalice",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "chalice-dungeons-great-isz-chalice",
+      "name": "Great Isz Chalice",
+      "category": "chalice-dungeons",
+      "description": "Chalice ritual for a Depth 5 Isz Chalice Dungeon.",
+      "effect": "Creates the Chalice Dungeon when consecrated at a ritual altar in the Hunter's Dream.",
+      "materials": [
+        {
+          "name": "Ritual Blood (5)",
+          "qty": 9,
+          "note": ""
+        },
+        {
+          "name": "Pearl Slug",
+          "qty": 3,
+          "note": ""
+        },
+        {
+          "name": "Arcane Haze",
+          "qty": 25,
+          "note": ""
+        },
+        {
+          "name": "Blood Echoes",
+          "qty": 11500,
+          "note": ""
+        }
+      ],
+      "whereToFind": "Kill Ebrietas, Daughter of the Cosmos.",
+      "source": {
+        "label": "Fextralife – Great Isz Chalice",
+        "url": "https://bloodborne.wiki.fextralife.com/Great_Isz_Chalice",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "chalice-dungeons-isz-root-chalice",
+      "name": "Isz Root Chalice",
+      "category": "chalice-dungeons",
+      "description": "Chalice ritual for a Depth 5 Isz Chalice Dungeon.",
+      "effect": "Creates the Chalice Dungeon when consecrated at a ritual altar in the Hunter's Dream.",
+      "materials": [
+        {
+          "name": "Ritual Blood (5)",
+          "qty": 13,
+          "note": ""
+        },
+        {
+          "name": "Tomb Mold (5)",
+          "qty": 5,
+          "note": ""
+        },
+        {
+          "name": "Pearl Slug",
+          "qty": 3,
+          "note": ""
+        },
+        {
+          "name": "Red Jelly",
+          "qty": 1,
+          "note": ""
+        },
+        {
+          "name": "Blood Echoes",
+          "qty": 11500,
+          "note": ""
+        },
+        {
+          "name": "Sage's Hair",
+          "qty": 6,
+          "note": "optional Fetid rite offering"
+        },
+        {
+          "name": "Yellow Backbone",
+          "qty": 6,
+          "note": "optional Rotted rite offering"
+        },
+        {
+          "name": "Bastard of Loran",
+          "qty": 3,
+          "note": "optional Curse rite offering"
+        }
+      ],
+      "whereToFind": "Kill Ebrietas, Daughter of the Cosmos in Great Isz Chalice (Layer 3.)",
+      "source": {
+        "label": "Fextralife – Isz Root Chalice",
+        "url": "https://bloodborne.wiki.fextralife.com/Isz_Root_Chalice",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "chalice-dungeons-sinister-isz-root-chalice",
+      "name": "Sinister Isz Root Chalice",
+      "category": "chalice-dungeons",
+      "description": "Chalice ritual for a Depth 5 Isz Chalice Dungeon.",
+      "effect": "Creates the Chalice Dungeon when consecrated at a ritual altar in the Hunter's Dream.",
+      "materials": [
+        {
+          "name": "Ritual Blood (5)",
+          "qty": 13,
+          "note": ""
+        },
+        {
+          "name": "Tomb Mold (5)",
+          "qty": 5,
+          "note": ""
+        },
+        {
+          "name": "Pearl Slug",
+          "qty": 3,
+          "note": ""
+        },
+        {
+          "name": "Red Jelly",
+          "qty": 1,
+          "note": ""
+        },
+        {
+          "name": "Blood Echoes",
+          "qty": 11500,
+          "note": ""
+        },
+        {
+          "name": "Arcane Haze",
+          "qty": 32,
+          "note": "optional Sinister Bell rite offering"
+        }
+      ],
+      "whereToFind": "Sold by Messengers for 20,000 Blood Echoes inside Great Isz Chalice. (Layer 3.)",
+      "source": {
+        "label": "Fextralife – Sinister Isz Root Chalice",
+        "url": "https://bloodborne.wiki.fextralife.com/Sinister_Isz_Root_Chalice",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "chalice-dungeons-short-ritual-root-chalice",
+      "name": "Short Ritual Root Chalice",
+      "category": "chalice-dungeons",
+      "description": "Key item that needs no ritual materials; used to quickly search for Chalice Dungeons online as a guest, host or invader. Since patch 1.04 it is bought from the Insight Bath Messengers for 10 Insight after fully clearing the Pthumeru Chalice Dungeon.",
+      "effect": "",
+      "materials": [],
+      "whereToFind": "-Currently available through: Messenger insight shop for 10 Insight (it is stated in item main page that \"after defeating the third layer boss in Central Pthumeru \", however this needs to be confirmed). -Refer to key items for updated and old information. -After patch v1.04, this item is not longer considered a chalice item. It is now a key item and the Pthumerian Elder drops a gem as of the most current patch. More details can be obtained in the key items section for this item.",
+      "source": {
+        "label": "Fextralife – Short Ritual Root Chalice",
+        "url": "https://bloodborne.wiki.fextralife.com/Short_Ritual_Root_Chalice",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "insight-echoes-insight-sources-summary",
+      "name": "Insight sources (summary)",
+      "category": "insight-echoes",
+      "description": "Ways to gain Insight listed by Fextralife.",
+      "effect": "Insight is spent on the Insight Bath Messenger shop, the Beckoning Bell and Old Hunter Bell; Insight above 0 changes the world (e.g. the Plain Doll comes to life at 1 Insight).",
+      "materials": [],
+      "whereToFind": "Discovering and beating bosses; consuming Madman's Knowledge (+1), Great One's Wisdom (+2), One Third of Umbilical Cord (+3), Blood Dreg (+1); defeating bosses as a co-op guest (+1); being grabbed by the invisible Lesser Amygdala outside Oedon Chapel (+1); entering certain areas for the first time (e.g. Abandoned Old Workshop +2, Nightmare of Mensis +3).",
+      "source": {
+        "label": "Fextralife – Insight",
+        "url": "https://bloodborne.wiki.fextralife.com/Insight",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "insight-echoes-blood-echoes-sources-summary",
+      "name": "Blood Echoes sources (summary)",
+      "category": "insight-echoes",
+      "description": "How Blood Echoes are earned and spent, per Fextralife.",
+      "effect": "Used to level up, buy from Messengers, repair and fortify weapons, and perform Chalice Rituals.",
+      "materials": [],
+      "whereToFind": "Killing enemies; consuming Coldbloods; selling items to the Bath Messenger in the Hunter's Dream.",
+      "source": {
+        "label": "Fextralife – Blood Echoes",
+        "url": "https://bloodborne.wiki.fextralife.com/Blood_Echoes",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "insight-echoes-farm-blood-vials-quicksilver-bullets-central-yharnam",
+      "name": "Farm Blood Vials & Quicksilver Bullets – Central Yharnam",
+      "category": "insight-echoes",
+      "description": "Community farming route.",
+      "effect": "Restocks Blood Vials and Quicksilver Bullets.",
+      "materials": [],
+      "whereToFind": "Central Yharnam: Scourge Beasts, Large Huntsmen and Huntsman minions drop Blood Vials; rifle Huntsmen and wheelchair Huntsmen drop Quicksilver Bullets.",
+      "source": {
+        "label": "Bloodborne Wiki (bloodborne-wiki.com) – Farming",
+        "url": "https://www.bloodborne-wiki.com/p/farming.html",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "weapon-upgrades-farm-blood-stone-chunks-wandering-nightmares-dlc",
+      "name": "Farm Blood Stone Chunks – Wandering Nightmares (DLC)",
+      "category": "weapon-upgrades",
+      "description": "Community method (needs The Old Hunters; reported working on patch 1.09; once per playthrough).",
+      "effect": "Many Blood Stone Chunks (author reports ~140 in 75 minutes).",
+      "materials": [],
+      "whereToFind": "Research Hall / Nightmare Church lamps in the Hunter's Nightmare: kill the Wandering Nightmares without looting, rest and repeat, then loot each corpse repeatedly. Don't die during the process.",
+      "source": {
+        "label": "Bloodborne Wiki (bloodborne-wiki.com) – Farming",
+        "url": "https://www.bloodborne-wiki.com/p/farming.html",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "insight-echoes-farm-blood-echoes-visceral-attacks-in-pthumeru-ihyll-root-chalices",
+      "name": "Farm Blood Echoes – visceral attacks in Pthumeru Ihyll root chalices",
+      "category": "insight-echoes",
+      "description": "Community method using the Heir (tiers 2-3) and Moon (tier 3) runes to boost echoes from visceral kills.",
+      "effect": "Author reports ~407k echoes per ~42 s run (glyph w6qvjakg, Layer 1) and ~550k per ~50 s (glyph wm732fk9, Layer 2); numbers depend on NG cycle and runes.",
+      "materials": [],
+      "whereToFind": "Pthumeru Ihyll Root Chalice glyphs w6qvjakg / wm732fk9 (requires the root chalice and matching rites; shared glyphs can expire).",
+      "source": {
+        "label": "Bloodborne Wiki (bloodborne-wiki.com) – Farming",
+        "url": "https://www.bloodborne-wiki.com/p/farming.html",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    }
+  ],
+  "materials": [
+    {
+      "id": "blood-stone-shard",
+      "name": "Blood Stone Shard",
+      "type": "upgrade",
+      "description": "Bloodstone used to fortify weapons up to +3.",
+      "whereToFind": "Messenger shop for 2,000 Blood Echoes or the Insight Bath Messengers for 1 Insight (both after touching the misshapen skull in Vicar Amelia's boss room); also loot in Central Yharnam, Cathedral Ward and Old Yharnam, and enemy drops.",
+      "usedFor": "Fortify +0→+3 (3/5/8 per step).",
+      "source": {
+        "label": "Fextralife – Blood Stone Shard",
+        "url": "https://bloodborne.wiki.fextralife.com/Blood_Stone_Shard",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "twin-blood-stone-shards",
+      "name": "Twin Blood Stone Shards",
+      "type": "upgrade",
+      "description": "Bloodstone used to fortify +3 weapons up to +6.",
+      "whereToFind": "Messenger shop for 10,000 Blood Echoes after obtaining the Cosmic Eye Watcher Badge; Insight Bath Messengers for 2 Insight after defeating Rom (per Fextralife); loot in Cathedral Ward, Healing Church Workshop, Hemwick Charnel Lane, Forbidden Woods, Nightmare Frontier.",
+      "usedFor": "Fortify +3→+6 (3/5/8 per step).",
+      "source": {
+        "label": "Fextralife – Twin Blood Stone Shards",
+        "url": "https://bloodborne.wiki.fextralife.com/Twin_Blood_Stone_Shards",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "blood-stone-chunk",
+      "name": "Blood Stone Chunk",
+      "type": "upgrade",
+      "description": "Bloodstone used to fortify weapons up to +9.",
+      "whereToFind": "Insight Bath Messengers for 20 Insight after defeating The One Reborn; loot in Forbidden Woods, Cainhurst Castle, Yahar'gul, Lecture Building 2F, Nightmare of Mensis, Nightmare Frontier, Upper Cathedral Ward, Hunter's Nightmare, Research Hall, Fishing Hamlet; farmable from enemies.",
+      "usedFor": "Fortify +6→+9 (3/5/8 per step).",
+      "source": {
+        "label": "Fextralife – Blood Stone Chunk",
+        "url": "https://bloodborne.wiki.fextralife.com/Blood_Stone_Chunk",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "blood-rock",
+      "name": "Blood Rock",
+      "type": "upgrade",
+      "description": "Largest bloodstone; used for the final fortification to +10.",
+      "whereToFind": "Insight Bath Messengers for 60 Insight after defeating Mergo's Wet Nurse; one per NG cycle in the Nightmare of Mensis; also loot in Chalice Dungeons and the Fishing Hamlet.",
+      "usedFor": "Fortify +9→+10 (1 per weapon).",
+      "source": {
+        "label": "Fextralife – Blood Rock",
+        "url": "https://bloodborne.wiki.fextralife.com/Blood_Rock",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "arcane-haze",
+      "name": "Arcane Haze",
+      "type": "ritual",
+      "description": "Chalice ritual material.",
+      "whereToFind": "Workshop Haze Extractor Drop from Fluorescent Flower in Chalice Dungeons.",
+      "usedFor": "Defiled Chalice; Great Isz Chalice; Great Pthumeru Ihyll Chalice; Sinister Pthumeru Ihyll Root Chalice (optional); Sinister Hintertomb Root Chalice (optional); Sinister Lower Loran Root Chalice (optional); Sinister Isz Root Chalice (optional)",
+      "source": {
+        "label": "Fextralife – Arcane Haze",
+        "url": "https://bloodborne.wiki.fextralife.com/Arcane_Haze",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "bastard-of-loran",
+      "name": "Bastard of Loran",
+      "type": "ritual",
+      "description": "Chalice ritual material.",
+      "whereToFind": "Found in Loran Chalices. Chance scales with depth.",
+      "usedFor": "Defiled Chalice; Cursed and Defiled Root Chalice (optional); Pthumeru Ihyll Root Chalice (optional); Lower Ailing Loran Root Chalice (optional); Isz Root Chalice (optional) Can be extracted into Arcane Haze (Bastard of Loran: 5).",
+      "source": {
+        "label": "Fextralife – Bastard of Loran",
+        "url": "https://bloodborne.wiki.fextralife.com/Bastard_of_Loran",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "bloodshot-eyeball",
+      "name": "Bloodshot Eyeball",
+      "type": "ritual",
+      "description": "Chalice ritual material.",
+      "whereToFind": "Drops from Witch of Hemwick. Rare drop by Eye Collectors in Hypogean Gaol.",
+      "usedFor": "Hintertomb Chalice; Hintertomb Root Chalice; Lower Hintertomb Chalice; Lower Hintertomb Root Chalice; Sinister Hintertomb Root Chalice Can be extracted into Arcane Haze (Bloodshot Eyeball: 5).",
+      "source": {
+        "label": "Fextralife – Bloodshot Eyeball",
+        "url": "https://bloodborne.wiki.fextralife.com/Bloodshot_Eyeball",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "blooming-coldblood-flower",
+      "name": "Blooming Coldblood Flower",
+      "type": "ritual",
+      "description": "Chalice ritual material.",
+      "whereToFind": "Rare Drop from Loran Clerics in Loran Dungeons.",
+      "usedFor": "Lower Loran Chalice; Lower Ailing Loran Root Chalice; Sinister Lower Loran Root Chalice Can be extracted into Arcane Haze (Blooming Coldblood Flower: 12).",
+      "source": {
+        "label": "Fextralife – Blooming Coldblood Flower",
+        "url": "https://bloodborne.wiki.fextralife.com/Blooming_Coldblood_Flower",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "coldblood-flower-bulb",
+      "name": "Coldblood Flower Bulb",
+      "type": "ritual",
+      "description": "Chalice ritual material.",
+      "whereToFind": "Drops from Loran Clerics in Loran Dungeons. Drops from Loran Silverbeast",
+      "usedFor": "Ailing Loran Root Chalice Can be extracted into Arcane Haze (Coldblood Flower Bulb: 10).",
+      "source": {
+        "label": "Fextralife – Coldblood Flower Bulb",
+        "url": "https://bloodborne.wiki.fextralife.com/Coldblood_Flower_Bulb",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "coldblood-flowerbud",
+      "name": "Coldblood Flowerbud",
+      "type": "ritual",
+      "description": "Chalice ritual material.",
+      "whereToFind": "Loran Dungeon loot. Can be bought from Insight Messengers once found.",
+      "usedFor": "Ailing Loran Chalice Can be extracted into Arcane Haze (Coldblood Flowerbud: 7).",
+      "source": {
+        "label": "Fextralife – Coldblood Flowerbud",
+        "url": "https://bloodborne.wiki.fextralife.com/Coldblood_Flowerbud",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "inflicted-organ",
+      "name": "Inflicted Organ",
+      "type": "ritual",
+      "description": "Chalice ritual material.",
+      "whereToFind": "Lower Pthumerian Labyrinth Layer 3 side room enemy at treasure chest. Rare Drop from Labyrinth Warriors in Pthumerian Dungeons.",
+      "usedFor": "Lower Pthumeru Root Chalice (optional); Cursed and Defiled Root Chalice (optional); Lower Hintertomb Root Chalice (optional); Ailing Loran Root Chalice (optional) Can be extracted into Arcane Haze (Inflicted Organ: 5).",
+      "source": {
+        "label": "Fextralife – Inflicted Organ",
+        "url": "https://bloodborne.wiki.fextralife.com/Inflicted_Organ",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "living-string",
+      "name": "Living String",
+      "type": "ritual",
+      "description": "Chalice ritual material.",
+      "whereToFind": "Mother Brain. Can be bought from Insight Messengers once found.",
+      "usedFor": "Great Pthumeru Ihyll Chalice Can be extracted into Arcane Haze (Living String: 24).",
+      "source": {
+        "label": "Fextralife – Living String",
+        "url": "https://bloodborne.wiki.fextralife.com/Living_String",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "pearl-slug",
+      "name": "Pearl Slug",
+      "type": "ritual",
+      "description": "Chalice ritual material.",
+      "whereToFind": "Byrgenwerth Isz Dungeon loot Can be bought from Insight Messengers once found.",
+      "usedFor": "Great Isz Chalice; Isz Root Chalice; Sinister Isz Root Chalice Can be extracted into Arcane Haze (Pearl Slug: 5).",
+      "source": {
+        "label": "Fextralife – Pearl Slug",
+        "url": "https://bloodborne.wiki.fextralife.com/Pearl_Slug",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "red-jelly",
+      "name": "Red Jelly",
+      "type": "ritual",
+      "description": "Chalice ritual material.",
+      "whereToFind": "Lower Loran Chalice Sinister Chalice Dungeons Can be bought from Insight Messengers once found.",
+      "usedFor": "Great Pthumeru Ihyll Chalice; Pthumeru Ihyll Root Chalice; Sinister Pthumeru Ihyll Root Chalice; Lower Ailing Loran Root Chalice; Isz Root Chalice; Sinister Isz Root Chalice Can be extracted into Arcane Haze (Red Jelly: 5).",
+      "source": {
+        "label": "Fextralife – Red Jelly",
+        "url": "https://bloodborne.wiki.fextralife.com/Red_Jelly",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "ritual-blood",
+      "name": "Ritual Blood",
+      "type": "ritual",
+      "description": "Chalice ritual material.",
+      "whereToFind": "Random Chalice Dungeon Loot. Sold by Messengers.",
+      "usedFor": "All Chalices. Quality needed is the same as the depth of the Chalice you are trying to make. Can be extracted into Arcane Haze (Ritual Blood (1): 2; Ritual Blood (2): 5; Ritual Blood (3): 7; Ritual Blood (4): 10; Ritual Blood (5): 12).",
+      "source": {
+        "label": "Fextralife – Ritual Blood",
+        "url": "https://bloodborne.wiki.fextralife.com/Ritual_Blood",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "sages-hair",
+      "name": "Sage's Hair",
+      "type": "ritual",
+      "description": "Chalice ritual material.",
+      "whereToFind": "Rare Drop from Labyrinth Sage enemies in high level Chalice Dungeons.",
+      "usedFor": "Cursed and Defiled Root Chalice (optional); Pthumeru Ihyll Root Chalice (optional); Ailing Loran Root Chalice (optional); Lower Ailing Loran Root Chalice (optional); Isz Root Chalice (optional) Can be extracted into Arcane Haze (Sage's Hair: 11).",
+      "source": {
+        "label": "Fextralife – Sage's Hair",
+        "url": "https://bloodborne.wiki.fextralife.com/Sage%27s_Hair",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "sages-wrist",
+      "name": "Sage's Wrist",
+      "type": "ritual",
+      "description": "Chalice ritual material.",
+      "whereToFind": "Common drop from Labyrinth Sage enemies in low to medium level Chalice Dungeons.",
+      "usedFor": "Central Pthumeru Root Chalice (optional); Lower Pthumeru Root Chalice (optional); Hintertomb Root Chalice (optional); Lower Hintertomb Root Chalice (optional) Can be extracted into Arcane Haze (Sage's Wrist: 5).",
+      "source": {
+        "label": "Fextralife – Sage's Wrist",
+        "url": "https://bloodborne.wiki.fextralife.com/Sage%27s_Wrist",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "tomb-mold",
+      "name": "Tomb Mold",
+      "type": "ritual",
+      "description": "Chalice ritual material.",
+      "whereToFind": "Drops from Rats in all Chalice Dungeons. Drops from Gravediggers in Chalice Dungeons.",
+      "usedFor": "All Root Chalices. Quality needed is the same as the depth of the Chalice you are trying to make. Can be extracted into Arcane Haze (Tomb Mold (1): 2; Tomb Mold (2): 5; Tomb Mold (3): 7; Tomb Mold (4): 10; Tomb Mold (5): 12).",
+      "source": {
+        "label": "Fextralife – Tomb Mold",
+        "url": "https://bloodborne.wiki.fextralife.com/Tomb_Mold",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "yellow-backbone",
+      "name": "Yellow Backbone",
+      "type": "ritual",
+      "description": "Chalice ritual material.",
+      "whereToFind": "Drop from One Reborn (3) Rare drop from Labyrinth Warriors in high level Pthumeru Chalice Dungeons.",
+      "usedFor": "Pthumeru Ihyll Root Chalice (optional); Lower Ailing Loran Root Chalice (optional); Isz Root Chalice (optional) Can be extracted into Arcane Haze (Yellow Backbone: 11).",
+      "source": {
+        "label": "Fextralife – Yellow Backbone",
+        "url": "https://bloodborne.wiki.fextralife.com/Yellow_Backbone",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "blood-echoes",
+      "name": "Blood Echoes",
+      "type": "currency",
+      "description": "Main currency: the blood memories of those cursed by the beast plague.",
+      "whereToFind": "Killing enemies (amount depends on enemy level/type), consuming Coldbloods, selling items to the Bath Messenger in the Hunter's Dream. Carried echoes are dropped on death.",
+      "usedFor": "Levelling up, buying/selling with Messengers, repairing and fortifying weapons, performing Chalice Rituals.",
+      "source": {
+        "label": "Fextralife – Blood Echoes",
+        "url": "https://bloodborne.wiki.fextralife.com/Blood_Echoes",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "id": "insight",
+      "name": "Insight",
+      "type": "currency",
+      "description": "Second currency, representing eldritch knowledge; capped at 99. Higher Insight lowers frenzy resistance and changes the world (e.g. the Plain Doll comes to life at 1 Insight).",
+      "whereToFind": "Entering most boss arenas and beating bosses; beating bosses as a co-op guest; Madman's Knowledge (+1), Great One's Wisdom (+2), One Third of Umbilical Cord (+3), Blood Dreg (+1); discovering certain areas (e.g. Abandoned Old Workshop +2, Nightmare of Mensis +3).",
+      "usedFor": "Insight Bath Messenger shop, Beckoning Bell, Old Hunter Bell (patch 1.07+).",
+      "source": {
+        "label": "Fextralife – Insight",
+        "url": "https://bloodborne.wiki.fextralife.com/Insight",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    }
+  ],
+  "guides": [
+    {
+      "title": "Fextralife – Blood Gems",
+      "url": "https://bloodborne.wiki.fextralife.com/Blood+Gems",
+      "source": {
+        "label": "Fextralife – Blood Gems",
+        "url": "https://bloodborne.wiki.fextralife.com/Blood+Gems",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "title": "Fextralife – Caryll Runes",
+      "url": "https://bloodborne.wiki.fextralife.com/Caryll+Runes",
+      "source": {
+        "label": "Fextralife – Caryll Runes",
+        "url": "https://bloodborne.wiki.fextralife.com/Caryll+Runes",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "title": "Fextralife – Materials (upgrade & ritual)",
+      "url": "https://bloodborne.wiki.fextralife.com/Materials",
+      "source": {
+        "label": "Fextralife – Materials (upgrade & ritual)",
+        "url": "https://bloodborne.wiki.fextralife.com/Materials",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "title": "Fextralife – Ritual Materials",
+      "url": "https://bloodborne.wiki.fextralife.com/Ritual_Materials",
+      "source": {
+        "label": "Fextralife – Ritual Materials",
+        "url": "https://bloodborne.wiki.fextralife.com/Ritual_Materials",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "title": "Fextralife – Chalices",
+      "url": "https://bloodborne.wiki.fextralife.com/Chalices",
+      "source": {
+        "label": "Fextralife – Chalices",
+        "url": "https://bloodborne.wiki.fextralife.com/Chalices",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "title": "Fextralife – Consumables",
+      "url": "https://bloodborne.wiki.fextralife.com/Consumables",
+      "source": {
+        "label": "Fextralife – Consumables",
+        "url": "https://bloodborne.wiki.fextralife.com/Consumables",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "title": "Fextralife – Insight",
+      "url": "https://bloodborne.wiki.fextralife.com/Insight",
+      "source": {
+        "label": "Fextralife – Insight",
+        "url": "https://bloodborne.wiki.fextralife.com/Insight",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "title": "Fextralife – Blood Echoes",
+      "url": "https://bloodborne.wiki.fextralife.com/Blood_Echoes",
+      "source": {
+        "label": "Fextralife – Blood Echoes",
+        "url": "https://bloodborne.wiki.fextralife.com/Blood_Echoes",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "title": "Fextralife – Workshop",
+      "url": "https://bloodborne.wiki.fextralife.com/Workshop",
+      "source": {
+        "label": "Fextralife – Workshop",
+        "url": "https://bloodborne.wiki.fextralife.com/Workshop",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "title": "Bloodborne Wiki – Farming guide (vials, bullets, chunks, echoes, gems)",
+      "url": "https://www.bloodborne-wiki.com/p/farming.html",
+      "source": {
+        "label": "Bloodborne Wiki – Farming guide (vials, bullets, chunks, echoes, gems)",
+        "url": "https://www.bloodborne-wiki.com/p/farming.html",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "title": "Bloodborne Wiki – Top-tier Farmable Gem Chalices",
+      "url": "https://www.bloodborne-wiki.com/2015/09/bloodborne-top-tier-farmable-gem.html",
+      "source": {
+        "label": "Bloodborne Wiki – Top-tier Farmable Gem Chalices",
+        "url": "https://www.bloodborne-wiki.com/2015/09/bloodborne-top-tier-farmable-gem.html",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "title": "IGN – Blood Gems",
+      "url": "https://www.ign.com/wikis/bloodborne/Blood_Gems",
+      "source": {
+        "label": "IGN – Blood Gems",
+        "url": "https://www.ign.com/wikis/bloodborne/Blood_Gems",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "title": "FandomSpot – Blood Echoes Farming Guide (Best Methods)",
+      "url": "https://www.fandomspot.com/bloodborne-blood-echoes-farming/",
+      "source": {
+        "label": "FandomSpot – Blood Echoes Farming Guide (Best Methods)",
+        "url": "https://www.fandomspot.com/bloodborne-blood-echoes-farming/",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    },
+    {
+      "title": "Game Rant – How To Gain Insight Early",
+      "url": "https://gamerant.com/bloodborne-how-to-gain-insight-early-farming-areas-madmans-knowledge-bosses/",
+      "source": {
+        "label": "Game Rant – How To Gain Insight Early",
+        "url": "https://gamerant.com/bloodborne-how-to-gain-insight-early-farming-areas-madmans-knowledge-bosses/",
+        "verifiedVia": "curl-200",
+        "unverified": false
+      }
+    }
+  ]
+}

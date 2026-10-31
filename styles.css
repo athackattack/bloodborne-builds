@@ -489,6 +489,7 @@ main.wrap { padding-top: 0.95rem; padding-bottom: calc(2.4rem + env(safe-area-in
   padding: 0.3rem 0.75rem;
   margin-top: 0.6rem;
 }
+.more-row { margin: 0.2rem 0 1rem; }
 
 .guide-list { display: grid; gap: 0.6rem; }
 .guide-card {
@@ -558,7 +559,7 @@ main.wrap { padding-top: 0.95rem; padding-bottom: calc(2.4rem + env(safe-area-in
   font-family: var(--text);
   overflow: hidden;
 }
-#sheet::backdrop { background: rgba(5, 3, 3, 0.9); }
+#sheet::backdrop { background: rgba(5, 3, 3, 0.72); }
 .sheet-panel {
   position: absolute;
   left: 0;
@@ -569,7 +570,8 @@ main.wrap { padding-top: 0.95rem; padding-bottom: calc(2.4rem + env(safe-area-in
   overscroll-behavior: contain;
   -webkit-overflow-scrolling: touch;
   background:
-    linear-gradient(180deg, rgba(28, 22, 19, 0.98), rgba(16, 13, 12, 0.98));
+    linear-gradient(180deg, rgba(28, 22, 19, 0.98), rgba(16, 13, 12, 0.98)),
+    #120f0d;
   border-top: 1px solid var(--line-strong);
   padding: 0 max(1.05rem, env(safe-area-inset-right)) calc(1.2rem + env(safe-area-inset-bottom)) max(1.05rem, env(safe-area-inset-left));
   box-shadow: 0 -24px 60px rgba(0, 0, 0, 0.45);
@@ -801,6 +803,8 @@ main.wrap { padding-top: 0.95rem; padding-bottom: calc(2.4rem + env(safe-area-in
     align-items: end;
   }
   #panel-tiers .filters { grid-column: 1 / -1; grid-template-columns: 1.4fr 1fr; gap: 0.75rem 1.5rem; }
+  #panel-crafting .controls > .chip-row,
+  #panel-equipment .controls > .chip-row { grid-column: 1 / -1; }
   .chip-row { flex-wrap: wrap; }
   .sheet-panel {
     left: 50%;
