@@ -195,7 +195,7 @@ header {
   gap: 0.55rem 0.9rem;
 }
 .map-bar .chip-row { flex: 1 1 16rem; }
-.map-credit, .map-hint, .map-license, .map-desc { margin: 0; }
+.map-credit, .map-hint, .map-license, .map-desc { margin: 0; overflow-wrap: anywhere; }
 .map-credit { color: var(--bone-dim); }
 .map-hint, .map-license { color: var(--bone-faint); font-size: 0.85rem; }
 .map-open, .map-credit a, .map-source { color: var(--bone); }
@@ -255,6 +255,7 @@ header {
 .map-frame-wrap.is-failed .map-failed { display: flex; }
 .map-frame-wrap.is-failed .map-frame,
 .map-frame-wrap.is-failed .map-activate-layer { display: none; }
+.map-picker { display: flex; flex-direction: column; gap: 0.45rem; min-width: 0; }
 .map-viewer {
   position: relative;
   width: 100%;
@@ -265,6 +266,17 @@ header {
   border: 1px solid var(--line);
   background: #0c0b0a;
   cursor: grab;
+}
+.map-viewer.is-loading::after {
+  content: "Loading map";
+  position: absolute;
+  left: 0.8rem;
+  top: 0.7rem;
+  z-index: 2;
+  color: var(--bone-dim);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-size: 0.72rem;
 }
 .map-viewer img {
   position: absolute;

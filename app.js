@@ -296,7 +296,8 @@ function parseHash() {
   else if (head === "map") {
     route.section = "map";
     route.view = "map";
-    if (rest[1] && rest[1] !== "pin") route.focus = { kind: "map-view", id: rest.slice(1).join("/") };
+    if (rest[1] === "about") route.focus = { kind: "section-about", id: "map" };
+    else if (rest[1] && rest[1] !== "pin") route.focus = { kind: "map-view", id: rest.slice(1).join("/") };
   } else if (head === "crafting") {
     route.section = "crafting";
     route.view = "crafting";
@@ -322,6 +323,7 @@ function hashFor(gameId, view, id) {
   if (view === "about") return `${gameId}/about`;
   if ((view === "tiers" || view === "builds" || !view) && id) return `${gameId}/build/${encodeURIComponent(id)}`;
   if (view === "map") return id ? `${gameId}/map/${encodeURIComponent(id)}` : `${gameId}/map`;
+  if (view === "map-about") return `${gameId}/map/about`;
   if (view === "crafting") return `${gameId}/crafting`;
   if (view === "craft-item") return `${gameId}/crafting/item/${encodeURIComponent(id)}`;
   if (view === "craft-material") return `${gameId}/crafting/material/${encodeURIComponent(id)}`;
@@ -348,7 +350,10 @@ function scopedHash(gameId, route) {
     if (route.focus.kind === "material") return hashFor(gameId, "craft-material", route.focus.id);
     if (route.focus.kind === "weapon") return hashFor(gameId, "weapons", route.focus.id);
     if (route.focus.kind === "armor") return hashFor(gameId, "armor", route.focus.id);
-    if (route.focus.kind === "section-about") return hashFor(gameId, route.focus.id === "equipment" ? "equip-about" : "craft-about");
+    if (route.focus.kind === "section-about") {
+      const view = route.focus.id === "equipment" ? "equip-about" : route.focus.id === "map" ? "map-about" : "craft-about";
+      return hashFor(gameId, view);
+    }
   }
   if (route.section === "map") return hashFor(gameId, "map");
   if (route.section === "crafting") return hashFor(gameId, "crafting");

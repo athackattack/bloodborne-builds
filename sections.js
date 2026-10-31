@@ -205,6 +205,10 @@ function onEquipChange(event) {
 }
 
 function onMapClick(event) {
+  if (event.target.closest("[data-section-about]")) {
+    setHash(hashFor(state.game.id, "map-about"));
+    return;
+  }
   const choice = event.target.closest("[data-map-choice]");
   if (choice && choice.dataset.mapChoice) {
     setHash(hashFor(state.game.id, "map", choice.dataset.mapChoice));
@@ -240,6 +244,16 @@ const SECTION_CAVEATS = {
         "Blood gem effect text is a condensed effect-family list. Exact values vary from gem to gem."
       ]
     },
+    map: {
+      summary: "The first picture is the full world map, including The Old Hunters. Area maps are split into the base game and the Old Hunters. There are no chalice dungeon maps.",
+      points: [
+        "There are no chalice dungeon maps. Those dungeons are procedural.",
+        "There is no separate Hypogean Gaol or Grand Cathedral map. Those areas are on the Yahar'gul and Cathedral Ward sheets.",
+        "On the bloodborne-wiki.com area maps, the numbers refer to the item tables on that site's treasures page. Each of those sheets links there.",
+        "The world map includes The Old Hunters. The lantern map covers the base game only.",
+        "bloodborne-wiki.com states CC BY-SA 3.0. The map art looks adapted from the official strategy guide, so the underlying rights are not fully clear."
+      ]
+    },
     equipment: {
       summary: "Some weapons have no +10 stats. Firearm damage is listed under the wiki's blood column. Attire has no weight.",
       points: [
@@ -270,6 +284,16 @@ const SECTION_CAVEATS = {
         "Remake versus PS3: Barbarian, Blue-Eye Knight, Boletarian Royalty, Burrower's, Imperial Spy, Official's, Penetrator, and Red-Eye Knight are remake-only sets. Ring of Longevity, Providential Ring, and Ring of Uneven Scales come from remake-only Sparkly trades. PS3 Darkmoonstone, Pulpstone, and Rage of God are now Moonshadestone, Marrowstone, and God's Wrath.",
         "Build names with no equipment entry: Yellow Monk's Collar is not on the wiki. Friend's Ring is not on the Rings page, and Ally's Ring was not assumed to be the same. Blessed Broadsword has no Blessed path on the Broad Sword page. Bramd (Crushing path) is not a crushing weapon: Bramd is Colorless Demon Soul only, so the Bramd sheet still links and there is no crushing recipe.",
         "Monk's Head Wrappings is the wiki name. Builds that say Monk's Head Collar still link to that piece."
+      ]
+    },
+    map: {
+      summary: "The first picture is the archstone overview, then the illustrated world map, then the Nexus, then each level from 1-1 to 5-3. Fextralife's interactive map numbers the Shrine of Storms as 3-x; those levels are 4-x here.",
+      points: [
+        "Fextralife's own map labels the Shrine of Storms levels as 3-x, and so does the header on the source files. They are 4-x here.",
+        "The layouts are the same in the original and the remake. Items added in the remake may be missing.",
+        "There is no map of the tutorial or the final stage.",
+        "Levels 2-3, 4-3, and 5-3 have one sheet each.",
+        "VGCartography's direct image link is token-signed, so that entry links to the DeviantArt page."
       ]
     }
   },
@@ -314,7 +338,7 @@ function caveatsFor(section) {
 function sectionAboutSheet(data, section) {
   const pack = caveatsFor(section);
   if (!pack) return null;
-  const title = section === "equipment" ? "Equipment caveats" : "Crafting caveats";
+  const title = section === "equipment" ? "Equipment caveats" : section === "map" ? "Map caveats" : "Crafting caveats";
   return el("article", {}, [
     el("p", { class: "sheet-kicker", text: state.game.name }),
     el("h2", { id: "sheet-title", text: title }),
@@ -864,11 +888,68 @@ function renderEmbedMap(panel, data, route) {
   );
 }
 
+function imageBands(images) {
+  const bands = [];
+  images.forEach((item) => {
+    if (!item.group) return;
+    let band = bands.find((entry) => entry.key === item.group);
+    if (!band) {
+      band = { key: item.group, label: item.groupLabel || item.group, items: [] };
+      bands.push(band);
+    }
+    band.items.push(item);
+  });
+  return bands;
+}
+
+function imagePicker(images, current) {
+  const bands = imageBands(images);
+  if (!bands.length) {
+    return [{
+      label: "Map pictures",
+      chips: images.map((item) => ({ id: item.id, label: item.title || item.id || "Map", selected: item === current }))
+    }];
+  }
+  const band = bands.find((entry) => entry.items.includes(current)) || bands[0];
+  const rows = [{
+    label: "Maps",
+    chips: bands.map((entry) => ({ id: entry.items[0].id, label: entry.label, selected: entry === band }))
+  }];
+  const levels = [];
+  band.items.forEach((item) => {
+    if (!item.level) return;
+    let level = levels.find((entry) => entry.key === item.level);
+    if (!level) {
+      level = { key: item.level, label: item.levelLabel || item.level, items: [] };
+      levels.push(level);
+    }
+    level.items.push(item);
+  });
+  if (!levels.length) return rows;
+  const level = levels.find((entry) => entry.items.includes(current)) || levels[0];
+  rows.push({
+    label: "Areas",
+    chips: levels.map((entry) => ({ id: entry.items[0].id, label: entry.label, selected: entry === level }))
+  });
+  if (level.items.length > 1) {
+    rows.push({
+      label: "Sheets",
+      chips: level.items.map((item, index) => ({
+        id: item.id,
+        label: item.part || `Part ${index + 1}`,
+        selected: item === current
+      }))
+    });
+  }
+  return rows;
+}
+
 function renderImageMap(panel, data, route) {
   const images = mapEntries(data);
   if (!images.length) {
     fill(panel,
       el("div", { class: "map-shell" }, [
+        aboutNote("map"),
         el("p", { class: "map-placeholder", text: "Map pictures for this game are not in this build yet." })
       ]),
       mapLinkBlock(data.mapLinks)
@@ -876,8 +957,10 @@ function renderImageMap(panel, data, route) {
     return;
   }
   const current = selectedMapEntry(images, route);
-  const chips = el("div", { class: "chip-row", role: "tablist", "aria-label": "Map pictures" }, images.map((item) =>
-    chip("data-map-choice", item.id || "", item.title || item.label || item.id || "Map", item === current)
+  const picker = el("div", { class: "map-picker" }, imagePicker(images, current).map((row) =>
+    el("div", { class: "chip-row", role: "tablist", "aria-label": row.label }, row.chips.map((item) =>
+      chip("data-map-choice", item.id || "", item.label, item.selected)
+    ))
   ));
   const src = mapAsset(current && current.file);
   const viewer = el("div", {
@@ -895,20 +978,29 @@ function renderImageMap(panel, data, route) {
   if (!src) {
     viewer.append(el("p", { class: "map-placeholder", text: "This map has no image file yet." }));
   } else {
-    const img = el("img", { alt: (current && (current.title || current.description)) || "Map", draggable: "false" });
-    img.src = src;
+    const img = el("img", {
+      alt: (current && (current.title || current.description)) || "Map",
+      draggable: "false",
+      decoding: "async"
+    });
+    viewer.classList.add("is-loading");
     viewer.append(img, tools);
+    const settle = () => viewer.classList.remove("is-loading");
+    img.addEventListener("load", settle);
     img.addEventListener("error", () => {
+      settle();
       img.remove();
       tools.remove();
       viewer.classList.add("is-broken");
       viewer.append(el("p", { class: "map-placeholder", text: "This map image could not be loaded." }));
     });
+    img.src = src;
     attachImageViewer(viewer, img);
   }
   fill(panel,
     el("div", { class: "map-shell" }, [
-      chips,
+      aboutNote("map"),
+      picker,
       viewer,
       imageMeta(current)
     ]),
@@ -917,6 +1009,12 @@ function renderImageMap(panel, data, route) {
   requestAnimationFrame(() => {
     if (viewer._reset) viewer._reset();
   });
+}
+
+function licenseLine(license) {
+  const text = String(license || "").trim();
+  if (!text || (/no license stated/i.test(text) && !/CC BY/i.test(text))) return "No license stated";
+  return text;
 }
 
 function imageMeta(item) {
@@ -931,9 +1029,9 @@ function imageMeta(item) {
   }
   const parts = [];
   if (credit.length) parts.push(el("p", { class: "map-credit" }, credit));
-  if (item.license) parts.push(el("p", { class: "map-license", text: item.license }));
+  parts.push(el("p", { class: "map-license", text: licenseLine(item.license) }));
   if (item.description) parts.push(el("p", { class: "map-desc", text: item.description }));
-  return parts.length ? el("div", { class: "map-meta" }, parts) : null;
+  return el("div", { class: "map-meta" }, parts);
 }
 
 function mapLinkBlock(links) {
@@ -979,7 +1077,10 @@ function attachImageViewer(stage, img) {
   }
   function zoomAt(px, py, next) {
     if (!ready()) return;
-    const clamped = Math.min(view.fit * 8, Math.max(view.fit * 0.6, next));
+    const longest = Math.max(view.natW, view.natH, 1);
+    const cssCap = 4096 / Math.min(window.devicePixelRatio || 1, 3);
+    const ceiling = Math.max(view.fit, Math.min(8, cssCap / longest));
+    const clamped = Math.min(ceiling, Math.max(view.fit * 0.6, next));
     const wx = (px - view.x) / view.s;
     const wy = (py - view.y) / view.s;
     view.s = clamped;

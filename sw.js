@@ -1,5 +1,5 @@
 // Network-first shell. CACHE is the version string: bump it when shipped assets change.
-const CACHE = "souls-builds-v9-20261031044000";
+const CACHE = "souls-builds-v10-20261031130000";
 const SHELL = [
   "./",
   "./index.html",
@@ -40,6 +40,11 @@ function listed(url) {
   return PRECACHE.some((item) => path.endsWith(item.replace(/^\.\//, "")));
 }
 
+function viewedMap(url) {
+  const path = decodeURIComponent(url.pathname);
+  return /\/maps\/[^/]+\/[^/]+$/.test(path);
+}
+
 self.addEventListener("install", (event) => {
   event.waitUntil(
     caches.open(CACHE).then((cache) => cache.addAll(SHELL)).catch(() => {})
@@ -65,7 +70,7 @@ self.addEventListener("fetch", (event) => {
   event.respondWith(
     fetch(request)
       .then((response) => {
-        if (response.ok && !url.search && (listed(url) || request.mode === "navigate")) {
+        if (response.ok && !url.search && (listed(url) || viewedMap(url) || request.mode === "navigate")) {
           const copy = response.clone();
           caches.open(CACHE).then((cache) => cache.put(request, copy));
         }
