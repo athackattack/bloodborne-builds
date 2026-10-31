@@ -81,7 +81,6 @@ function render(ctx) {
 
 function focusSheet(route, extra) {
   if (!route.focus || !extra) return null;
-  if (route.focus.kind === "pin") return pinSheet(extra, route.focus.id);
   if (route.focus.kind === "item") return itemSheet(extra, route.focus.id);
   if (route.focus.kind === "material") return materialSheet(extra, route.focus.id);
   if (route.focus.kind === "weapon") return weaponSheet(extra, route.focus.id);
@@ -100,8 +99,6 @@ function bindOnce() {
   document.getElementById("panel-equipment").addEventListener("input", onEquipInput);
   document.getElementById("panel-equipment").addEventListener("change", onEquipChange);
   document.getElementById("panel-map").addEventListener("click", onMapClick);
-  document.getElementById("panel-map").addEventListener("input", onMapInput);
-  document.getElementById("map-embed-close").addEventListener("click", closeEmbed);
   document.getElementById("sheet").addEventListener("click", (event) => {
     const material = event.target.closest("[data-material]");
     if (material && material.dataset.material) {
@@ -208,44 +205,27 @@ function onEquipChange(event) {
 }
 
 function onMapClick(event) {
-  if (event.target.closest("#map-open")) {
-    if (state.game && state.game.mapEmbed) openEmbed(state.game.mapEmbed);
+  const choice = event.target.closest("[data-map-choice]");
+  if (choice && choice.dataset.mapChoice) {
+    setHash(hashFor(state.game.id, "map", choice.dataset.mapChoice));
     return;
   }
+  const wrap = document.querySelector("#panel-map .map-frame-wrap");
+  if (event.target.closest("[data-map-activate]") && wrap) {
+    wrap.classList.add("is-live");
+    return;
+  }
+  if (event.target.closest("[data-map-release]") && wrap) {
+    wrap.classList.remove("is-live");
+    return;
+  }
+  const stage = document.getElementById("map-viewer");
   const zoom = event.target.closest("[data-zoom]");
-  if (zoom) {
-    const stage = document.getElementById("map-stage");
-    if (stage && stage._zoom) stage._zoom(zoom.dataset.zoom);
+  if (zoom && stage && stage._zoom) {
+    stage._zoom(zoom.dataset.zoom);
     return;
   }
-  const layer = event.target.closest("[data-layer]");
-  if (layer) {
-    const id = layer.dataset.layer;
-    const flags = ui().mapLayers || {};
-    flags[id] = layer.getAttribute("aria-pressed") !== "true";
-    ui().mapLayers = flags;
-    render({ section: "map", extra: state.extra });
-    return;
-  }
-  const reset = event.target.closest("[data-map-reset]");
-  if (reset) {
-    const view = mapViews[state.game.id];
-    if (view) view.fitted = false;
-    render({ section: "map", extra: state.extra });
-  }
-}
-
-function onMapInput(event) {
-  if (event.target.id !== "map-q") return;
-  ui().mapQuery = event.target.value;
-  const q = event.target.value;
-  document.querySelectorAll(".pin").forEach((pin) => {
-    const hay = pin.dataset.hay || "";
-    pin.hidden = q.trim() && !hay.includes(q.trim().toLowerCase());
-  });
-  const n = [...document.querySelectorAll(".pin")].filter((pin) => !pin.hidden).length;
-  const count = document.getElementById("map-count");
-  if (count) count.textContent = `${n} ${n === 1 ? "place" : "places"}`;
+  if (event.target.closest("[data-map-reset]") && stage && stage._reset) stage._reset();
 }
 
 const SECTION_CAVEATS = {
@@ -792,142 +772,175 @@ function relatedBlock(names) {
   ]);
 }
 
-const mapViews = {};
+function mapMode(data) {
+  if (!data) return "images";
+  if (data.mode === "embed" || data.mode === "images") return data.mode;
+  if (Array.isArray(data.embeds) && data.embeds.length) return "embed";
+  return "images";
+}
+
+function mapEntries(data) {
+  const mode = mapMode(data);
+  const list = mode === "embed" ? data.embeds : data.images;
+  return (Array.isArray(list) ? list : []).filter((item) => item && (item.id || item.label || item.title || item.embedUrl || item.file));
+}
+
+function selectedMapEntry(list, route) {
+  const id = route && route.focus && route.focus.kind === "map-view" ? route.focus.id : "";
+  return list.find((item) => item.id === id) || list[0] || null;
+}
+
+function mapAsset(file) {
+  const value = String(file || "").trim();
+  if (!value) return "";
+  if (/^(https?:|data:)/.test(value)) return value;
+  return `./${value.replace(/^\.\//, "")}`;
+}
+
+function mapNeedsGate() {
+  return window.matchMedia("(pointer: coarse), (max-width: 800px)").matches;
+}
 
 function renderMap(panel, ctx) {
   const data = ctx.extra || {};
-  const regions = Array.isArray(data.regions) ? data.regions : [];
-  const layers = Array.isArray(data.layers) ? data.layers : [];
-  const pins = Array.isArray(data.pins) ? data.pins : [];
-  const prefs = ui();
-  if (!prefs.mapLayers) prefs.mapLayers = {};
-  layers.forEach((layer) => {
-    if (prefs.mapLayers[layer.id] == null) prefs.mapLayers[layer.id] = true;
-  });
-  const q = (prefs.mapQuery || "").trim().toLowerCase();
-  const viewBox = (data.meta && data.meta.viewBox) || "0 0 1000 1000";
-  const box = viewBox.split(/[\s,]+/).map(Number);
-  const width = box[2] || 1000;
-  const height = box[3] || 1000;
-  const visible = pins.filter((pin) => prefs.mapLayers[pin.layer] !== false);
-  const svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
-  svg.setAttribute("viewBox", viewBox);
-  svg.setAttribute("class", "map-svg");
-  regions.forEach((region) => {
-    if (!region || !region.path) return;
-    const path = document.createElementNS("http://www.w3.org/2000/svg", "path");
-    path.setAttribute("d", region.path);
-    path.setAttribute("class", "map-region");
-    const title = document.createElementNS("http://www.w3.org/2000/svg", "title");
-    title.textContent = region.name || "";
-    path.append(title);
-    svg.append(path);
-    if (region.labelPos && region.name) {
-      const text = document.createElementNS("http://www.w3.org/2000/svg", "text");
-      const rawX = Number(region.labelPos[0]) || 0;
-      const rawY = Number(region.labelPos[1]) || 0;
-      let anchor = "middle";
-      let x = rawX;
-      if (rawX < 160) {
-        anchor = "start";
-        x = Math.max(12, rawX - 36);
-      } else if (rawX > width - 160) {
-        anchor = "end";
-        x = Math.min(width - 12, rawX + 36);
-      }
-      text.setAttribute("x", x);
-      text.setAttribute("y", rawY);
-      text.setAttribute("text-anchor", anchor);
-      text.setAttribute("class", "map-label");
-      const lines = labelLines(region.name);
-      lines.forEach((line, index) => {
-        const tspan = document.createElementNS("http://www.w3.org/2000/svg", "tspan");
-        tspan.setAttribute("x", x);
-        tspan.setAttribute("dy", index === 0 ? (lines.length > 1 ? "-0.55em" : "0.3em") : "1.15em");
-        tspan.textContent = line;
-        text.append(tspan);
-      });
-      svg.append(text);
-    }
-  });
-  const world = el("div", { class: "map-world", id: "map-world" });
-  world.style.width = `${width}px`;
-  world.style.height = `${height}px`;
-  world.append(svg);
-  visible.forEach((pin) => {
-    const button = el("button", {
-      type: "button",
-      class: `pin pin-${pin.layer || "item"}`,
-      "data-pin": pin.id || "",
-      "aria-label": pin.name || "Place"
-    });
-    button.style.left = `${Number(pin.x) || 0}px`;
-    button.style.top = `${Number(pin.y) || 0}px`;
-    button.dataset.hay = [pin.name, pin.description, pin.region, ...(pin.finds || [])].filter(Boolean).join("\n").toLowerCase();
-    if (q && !button.dataset.hay.includes(q)) button.hidden = true;
-    world.append(button);
-  });
-  const stage = el("div", { class: "map-stage", id: "map-stage", tabindex: "0", role: "application", "aria-label": "Schematic map. Drag to pan, scroll or use the zoom buttons to zoom." });
-  stage.append(world);
-  const shown = visible.filter((pin) => {
-    const hay = [pin.name, pin.description, pin.region, ...(pin.finds || [])].filter(Boolean).join("\n").toLowerCase();
-    return !q || hay.includes(q);
-  }).length;
-  const embed = state.game && state.game.mapEmbed;
-  fill(panel, 
-    noteBlock(data.meta),
-    el("div", { class: "controls" }, [
-      el("div", { class: "search" }, [
-        el("label", { class: "visually-hidden", for: "map-q", text: "Search places" }),
-        (() => {
-          const input = el("input", { id: "map-q", type: "search", placeholder: "Search bosses, graces, merchants, items", autocomplete: "off" });
-          input.value = prefs.mapQuery || "";
-          return input;
-        })()
-      ]),
-      el("div", { class: "chip-row", role: "group", "aria-label": "Map layers" }, layers.map((layer) =>
-        chip("data-layer", layer.id, layer.name || layer.id, prefs.mapLayers[layer.id] !== false)
-      )),
-      el("div", { class: "toolbar" }, [
-        el("p", { id: "map-count", text: `${shown} ${shown === 1 ? "place" : "places"}` }),
-        el("div", { class: "toolbar-actions" }, [
-          el("button", { type: "button", class: "density", "data-zoom": "in", text: "Zoom in" }),
-          el("button", { type: "button", class: "density", "data-zoom": "out", text: "Zoom out" }),
-          el("button", { type: "button", class: "density", "data-map-reset": "1", text: "Fit" }),
-          embed ? el("button", { type: "button", class: "density", id: "map-open", text: "Open map" }) : null
-        ])
-      ])
-    ]),
-    stage,
-    regions.length ? el("section", { class: "block" }, [
-      el("h2", { class: "section-title", text: "Regions" }),
-      el("ul", { class: "region-legend" }, regions.filter((region) => region && region.name).map((region) => el("li", { text: region.name })))
-    ]) : null,
-    mapLinkBlock(data.mapLinks)
-  );
-  attachMap(stage, world, width, height);
+  const route = ctx.route || (typeof parseHash === "function" ? parseHash() : null);
+  if (mapMode(data) === "embed") renderEmbedMap(panel, data, route);
+  else renderImageMap(panel, data, route);
 }
 
-function labelLines(name) {
-  const words = String(name).split(/\s+/).filter(Boolean);
-  if (words.length < 2 || name.length <= 14) return [name];
-  let split = 1;
-  let best = Infinity;
-  for (let i = 1; i < words.length; i++) {
-    const score = Math.abs(words.slice(0, i).join(" ").length - words.slice(i).join(" ").length);
-    if (score < best) {
-      best = score;
-      split = i;
-    }
+function renderEmbedMap(panel, data, route) {
+  const entries = mapEntries(data);
+  const current = selectedMapEntry(entries, route);
+  if (!current || !current.embedUrl) {
+    fill(panel,
+      el("p", { class: "map-placeholder", text: "This game has no embedded map yet." }),
+      mapLinkBlock(data.mapLinks)
+    );
+    return;
   }
-  return [words.slice(0, split).join(" "), words.slice(split).join(" ")];
+  const gated = mapNeedsGate();
+  const chips = entries.length > 1
+    ? el("div", { class: "chip-row", role: "tablist", "aria-label": "Maps" }, entries.map((item) =>
+        chip("data-map-choice", item.id || "", item.label || item.title || item.id || "Map", item === current)
+      ))
+    : null;
+  const open = externalLink(current.url || current.embedUrl, "map-open");
+  open.textContent = "Open full map";
+  const frame = el("iframe", {
+    class: "map-frame",
+    title: `${current.label || "Map"} by MapGenie`,
+    src: current.embedUrl,
+    loading: "eager"
+  });
+  frame.setAttribute("referrerpolicy", "strict-origin-when-cross-origin");
+  const wrap = el("div", { class: gated ? "map-frame-wrap is-gated" : "map-frame-wrap" }, [
+    frame,
+    el("div", { class: "map-activate-layer" }, [
+      el("button", { type: "button", class: "text-btn map-activate", "data-map-activate": "1", text: "Tap to use the map" })
+    ]),
+    el("div", { class: "map-failed" }, [
+      el("p", { text: "The map did not load in the page." }),
+      (() => {
+        const link = externalLink(current.url || current.embedUrl);
+        link.textContent = "Open full map";
+        return link;
+      })()
+    ])
+  ]);
+  frame.addEventListener("error", () => wrap.classList.add("is-failed"));
+  const release = el("button", { type: "button", class: "text-btn map-release", "data-map-release": "1", text: "Done" });
+  fill(panel,
+    el("div", { class: "map-shell" }, [
+      el("div", { class: "map-bar" }, [
+        chips,
+        el("p", { class: "map-credit", text: current.credit || "Map by MapGenie" }),
+        open,
+        release
+      ]),
+      el("p", { class: "map-hint", text: "If the map stays blank, use Open full map." }),
+      wrap
+    ]),
+    mapLinkBlock(data.mapLinks)
+  );
+}
+
+function renderImageMap(panel, data, route) {
+  const images = mapEntries(data);
+  if (!images.length) {
+    fill(panel,
+      el("div", { class: "map-shell" }, [
+        el("p", { class: "map-placeholder", text: "Map pictures for this game are not in this build yet." })
+      ]),
+      mapLinkBlock(data.mapLinks)
+    );
+    return;
+  }
+  const current = selectedMapEntry(images, route);
+  const chips = el("div", { class: "chip-row", role: "tablist", "aria-label": "Map pictures" }, images.map((item) =>
+    chip("data-map-choice", item.id || "", item.title || item.label || item.id || "Map", item === current)
+  ));
+  const src = mapAsset(current && current.file);
+  const viewer = el("div", {
+    class: "map-viewer",
+    id: "map-viewer",
+    tabindex: "0",
+    role: "application",
+    "aria-label": current && current.title ? `${current.title}. Drag to pan, scroll or pinch to zoom.` : "Map picture. Drag to pan, scroll or pinch to zoom."
+  });
+  const tools = el("div", { class: "map-viewer-tools" }, [
+    el("button", { type: "button", class: "density", "data-zoom": "in", text: "Zoom in" }),
+    el("button", { type: "button", class: "density", "data-zoom": "out", text: "Zoom out" }),
+    el("button", { type: "button", class: "density", "data-map-reset": "1", text: "Reset" })
+  ]);
+  if (!src) {
+    viewer.append(el("p", { class: "map-placeholder", text: "This map has no image file yet." }));
+  } else {
+    const img = el("img", { alt: (current && (current.title || current.description)) || "Map", draggable: "false" });
+    img.src = src;
+    viewer.append(img, tools);
+    img.addEventListener("error", () => {
+      img.remove();
+      tools.remove();
+      viewer.classList.add("is-broken");
+      viewer.append(el("p", { class: "map-placeholder", text: "This map image could not be loaded." }));
+    });
+    attachImageViewer(viewer, img);
+  }
+  fill(panel,
+    el("div", { class: "map-shell" }, [
+      chips,
+      viewer,
+      imageMeta(current)
+    ]),
+    mapLinkBlock(data.mapLinks)
+  );
+  requestAnimationFrame(() => {
+    if (viewer._reset) viewer._reset();
+  });
+}
+
+function imageMeta(item) {
+  if (!item) return null;
+  const credit = [];
+  if (item.credit) credit.push(document.createTextNode(item.credit));
+  if (item.sourceUrl) {
+    if (credit.length) credit.push(document.createTextNode(" · "));
+    const link = externalLink(item.sourceUrl);
+    link.textContent = "Source";
+    credit.push(link);
+  }
+  const parts = [];
+  if (credit.length) parts.push(el("p", { class: "map-credit" }, credit));
+  if (item.license) parts.push(el("p", { class: "map-license", text: item.license }));
+  if (item.description) parts.push(el("p", { class: "map-desc", text: item.description }));
+  return parts.length ? el("div", { class: "map-meta" }, parts) : null;
 }
 
 function mapLinkBlock(links) {
   const list = Array.isArray(links) ? links.filter((link) => link && link.url) : [];
   if (!list.length) return null;
-  return el("section", { class: "block" }, [
-    el("h2", { class: "section-title", text: "Full maps" }),
+  return el("section", { class: "block map-links" }, [
+    el("h2", { class: "section-title", text: "Other maps" }),
     el("div", { class: "guide-list" }, list.map((item) => {
       const anchor = externalLink(item.url, "guide-card");
       anchor.append(
@@ -939,135 +952,137 @@ function mapLinkBlock(links) {
   ]);
 }
 
-function attachMap(stage, world, width, height) {
-  const key = state.game.id;
-  if (!mapViews[key]) mapViews[key] = { x: 0, y: 0, s: 1, fitted: false };
-  const view = mapViews[key];
+function attachImageViewer(stage, img) {
+  const view = { x: 0, y: 0, s: 1, natW: 0, natH: 0, fit: 1 };
   const pointers = new Map();
+  let pinch = null;
   let moved = false;
-  let downPin = null;
+  let lastTap = 0;
+  let ignoreDblClick = 0;
 
+  function ready() {
+    return view.natW > 0 && stage.clientWidth > 0;
+  }
   function apply() {
-    world.style.transform = `translate(${view.x}px, ${view.y}px) scale(${view.s})`;
-    world.style.setProperty("--map-s", String(view.s));
-    world.classList.toggle("labels-on", view.s >= 0.85);
+    img.style.width = `${view.natW * view.s}px`;
+    img.style.height = `${view.natH * view.s}px`;
+    img.style.transform = `translate(${view.x}px, ${view.y}px)`;
   }
   function fit() {
-    const pad = 12;
-    const s = Math.min((stage.clientWidth - pad) / width, (stage.clientHeight - pad) / height);
-    view.s = Math.max(0.15, s || 1);
-    view.x = (stage.clientWidth - width * view.s) / 2;
-    view.y = (stage.clientHeight - height * view.s) / 2;
-    view.fitted = true;
+    if (!ready()) return;
+    const pad = 16;
+    view.fit = Math.min((stage.clientWidth - pad) / view.natW, (stage.clientHeight - pad) / view.natH) || 1;
+    view.s = view.fit;
+    view.x = (stage.clientWidth - view.natW * view.s) / 2;
+    view.y = (stage.clientHeight - view.natH * view.s) / 2;
     apply();
   }
-  function zoomAt(px, py, factor) {
-    const next = Math.min(5, Math.max(0.2, view.s * factor));
+  function zoomAt(px, py, next) {
+    if (!ready()) return;
+    const clamped = Math.min(view.fit * 8, Math.max(view.fit * 0.6, next));
     const wx = (px - view.x) / view.s;
     const wy = (py - view.y) / view.s;
-    view.s = next;
+    view.s = clamped;
     view.x = px - wx * view.s;
     view.y = py - wy * view.s;
     apply();
   }
-  stage._zoom = (dir) => zoomAt(stage.clientWidth / 2, stage.clientHeight / 2, dir === "in" ? 1.2 : 0.83);
-  if (!view.fitted) requestAnimationFrame(fit);
-  else apply();
+  function localPoint(event) {
+    const rect = stage.getBoundingClientRect();
+    return { x: event.clientX - rect.left, y: event.clientY - rect.top };
+  }
+  stage._reset = fit;
+  stage._zoom = (dir) => zoomAt(stage.clientWidth / 2, stage.clientHeight / 2, view.s * (dir === "in" ? 1.25 : 0.8));
+
+  function onLoad() {
+    view.natW = img.naturalWidth;
+    view.natH = img.naturalHeight;
+    fit();
+  }
+  img.addEventListener("load", onLoad);
+  if (img.complete && img.naturalWidth) onLoad();
+  if (typeof ResizeObserver === "function") {
+    const observer = new ResizeObserver(() => {
+      if (!stage.isConnected) {
+        observer.disconnect();
+        return;
+      }
+      fit();
+    });
+    observer.observe(stage);
+  }
 
   stage.addEventListener("wheel", (event) => {
+    if (!ready()) return;
     event.preventDefault();
-    const rect = stage.getBoundingClientRect();
-    zoomAt(event.clientX - rect.left, event.clientY - rect.top, event.deltaY < 0 ? 1.1 : 0.9);
+    const point = localPoint(event);
+    zoomAt(point.x, point.y, view.s * (event.deltaY < 0 ? 1.12 : 1 / 1.12));
   }, { passive: false });
 
   stage.addEventListener("pointerdown", (event) => {
-    if (event.target.closest("[data-zoom], [data-map-reset], #map-open")) return;
+    if (event.target.closest("[data-zoom], [data-map-reset]")) return;
     stage.setPointerCapture(event.pointerId);
     pointers.set(event.pointerId, { x: event.clientX, y: event.clientY });
     moved = false;
-    downPin = event.target.closest ? event.target.closest("[data-pin]") : null;
-    stage.dataset.pan = "1";
+    if (pointers.size === 2) {
+      const pts = [...pointers.values()];
+      pinch = { dist: Math.hypot(pts[0].x - pts[1].x, pts[0].y - pts[1].y) || 1, s: view.s };
+    }
   });
   stage.addEventListener("pointermove", (event) => {
     if (!pointers.has(event.pointerId)) return;
     const prev = pointers.get(event.pointerId);
-    const dx = event.clientX - prev.x;
-    const dy = event.clientY - prev.y;
-    if (Math.hypot(dx, dy) > 10) moved = true;
     pointers.set(event.pointerId, { x: event.clientX, y: event.clientY });
-    if (pointers.size === 1) {
-      view.x += dx;
-      view.y += dy;
-      apply();
-    } else if (pointers.size === 2) {
+    if (pointers.size >= 2 && pinch) {
       const pts = [...pointers.values()];
       const dist = Math.hypot(pts[0].x - pts[1].x, pts[0].y - pts[1].y) || 1;
       const rect = stage.getBoundingClientRect();
       const midX = (pts[0].x + pts[1].x) / 2 - rect.left;
       const midY = (pts[0].y + pts[1].y) / 2 - rect.top;
-      const grew = Math.hypot(dx, dy);
-      if (grew > 0) zoomAt(midX, midY, dx + dy > 0 ? 1.02 : 0.98);
+      zoomAt(midX, midY, pinch.s * (dist / pinch.dist));
+      moved = true;
+      return;
     }
+    const dx = event.clientX - prev.x;
+    const dy = event.clientY - prev.y;
+    if (Math.hypot(dx, dy) > 6) moved = true;
+    view.x += dx;
+    view.y += dy;
+    apply();
   });
   function endPointer(event) {
+    const wasTouch = event.pointerType === "touch" || event.pointerType === "pen";
     pointers.delete(event.pointerId);
-    if (!pointers.size) stage.dataset.pan = "";
+    if (pointers.size < 2) pinch = null;
+    if (pointers.size) return;
+    if (wasTouch && !moved && ready()) {
+      const now = Date.now();
+      if (now - lastTap < 320) {
+        const point = localPoint(event);
+        if (view.s > view.fit * 1.2) fit();
+        else zoomAt(point.x, point.y, view.fit * 2.5);
+        lastTap = 0;
+        ignoreDblClick = now + 500;
+      } else lastTap = now;
+    }
   }
   stage.addEventListener("pointerup", endPointer);
   stage.addEventListener("pointercancel", endPointer);
-  stage.addEventListener("click", (event) => {
-    const zoom = event.target.closest("[data-zoom]");
-    if (zoom) {
-      const rect = stage.getBoundingClientRect();
-      zoomAt(rect.width / 2, rect.height / 2, zoom.dataset.zoom === "in" ? 1.2 : 0.83);
-      return;
-    }
-    const pin = (event.target.closest && event.target.closest("[data-pin]")) || downPin;
-    downPin = null;
-    if (moved || !pin) return;
-    setHash(hashFor(state.game.id, "map", pin.dataset.pin));
+  stage.addEventListener("dblclick", (event) => {
+    if (!ready() || Date.now() < ignoreDblClick) return;
+    if (event.sourceCapabilities && event.sourceCapabilities.firesTouchEvents) return;
+    event.preventDefault();
+    const point = localPoint(event);
+    if (view.s > view.fit * 1.2) fit();
+    else zoomAt(point.x, point.y, view.fit * 2.5);
   });
   stage.addEventListener("keydown", (event) => {
-    const step = 40;
-    if (event.key === "ArrowLeft") view.x += step;
-    else if (event.key === "ArrowRight") view.x -= step;
-    else if (event.key === "ArrowUp") view.y += step;
-    else if (event.key === "ArrowDown") view.y -= step;
-    else if (event.key === "+" || event.key === "=") zoomAt(stage.clientWidth / 2, stage.clientHeight / 2, 1.15);
-    else if (event.key === "-") zoomAt(stage.clientWidth / 2, stage.clientHeight / 2, 0.87);
+    if (event.key === "+" || event.key === "=") stage._zoom("in");
+    else if (event.key === "-" || event.key === "_") stage._zoom("out");
+    else if (event.key === "0") fit();
     else return;
     event.preventDefault();
-    apply();
   });
-}
-
-function pinSheet(data, id) {
-  const pin = (data.pins || []).find((entry) => entry.id === id);
-  if (!pin) return null;
-  const region = (data.regions || []).find((entry) => entry.id === pin.region);
-  const layer = (data.layers || []).find((entry) => entry.id === pin.layer);
-  const finds = (pin.finds || []).filter(Boolean);
-  const links = (pin.links || []).filter((item) => item && item.url);
-  return el("article", {}, [
-    el("p", { class: "sheet-kicker", text: [layer && layer.name, region && region.name].filter(Boolean).join(" · ") }),
-    el("h2", { id: "sheet-title", text: pin.name || "Place" }),
-    pin.uncertain ? el("p", { class: "flag", text: "Uncertain — check the linked page" }) : null,
-    pin.description ? el("p", { text: pin.description }) : null,
-    region && region.description ? el("p", { class: "muted", text: region.description }) : null,
-    finds.length ? el("section", { class: "block" }, [
-      el("h3", { text: "Found here" }),
-      el("ul", { class: "clean" }, finds.map((find) => el("li", { text: find })))
-    ]) : null,
-    links.length ? el("section", { class: "block" }, [
-      el("h3", { text: "Pages" }),
-      el("div", {}, links.map((item) => {
-        const anchor = externalLink(item.url, "source");
-        anchor.append(el("span", { class: "source-title", text: item.label || item.url }));
-        return anchor;
-      }))
-    ]) : null,
-    el("p", { class: "muted", text: "The pin's place on this drawing is schematic." })
-  ]);
 }
 
 function chip(attr, id, label, pressed) {
@@ -1080,24 +1095,8 @@ function chip(attr, id, label, pressed) {
   });
 }
 
-function openEmbed(embed) {
-  const box = document.getElementById("map-embed");
-  const frame = document.getElementById("map-embed-frame");
-  const link = document.getElementById("map-embed-fallback");
-  if (!box || !frame || !embed) return;
-  link.href = embed.url;
-  link.textContent = embed.label ? `Open ${embed.label} in a new tab` : "Open in a new tab";
-  frame.src = embed.url;
-  box.classList.add("is-open");
-  box.removeAttribute("hidden");
-}
-
 function closeEmbed() {
-  const box = document.getElementById("map-embed");
-  const frame = document.getElementById("map-embed-frame");
-  if (frame) frame.src = "about:blank";
-  if (box) {
-    box.classList.remove("is-open");
-    box.setAttribute("hidden", "");
-  }
+  document.querySelectorAll("#panel-map iframe").forEach((frame) => {
+    frame.src = "about:blank";
+  });
 }

@@ -296,7 +296,7 @@ function parseHash() {
   else if (head === "map") {
     route.section = "map";
     route.view = "map";
-    if (rest[1] === "pin" && rest[2]) route.focus = { kind: "pin", id: rest.slice(2).join("/") };
+    if (rest[1] && rest[1] !== "pin") route.focus = { kind: "map-view", id: rest.slice(1).join("/") };
   } else if (head === "crafting") {
     route.section = "crafting";
     route.view = "crafting";
@@ -321,7 +321,7 @@ function hashFor(gameId, view, id) {
   if (view === "guides") return `${gameId}/guides`;
   if (view === "about") return `${gameId}/about`;
   if ((view === "tiers" || view === "builds" || !view) && id) return `${gameId}/build/${encodeURIComponent(id)}`;
-  if (view === "map") return id ? `${gameId}/map/pin/${encodeURIComponent(id)}` : `${gameId}/map`;
+  if (view === "map") return id ? `${gameId}/map/${encodeURIComponent(id)}` : `${gameId}/map`;
   if (view === "crafting") return `${gameId}/crafting`;
   if (view === "craft-item") return `${gameId}/crafting/item/${encodeURIComponent(id)}`;
   if (view === "craft-material") return `${gameId}/crafting/material/${encodeURIComponent(id)}`;
@@ -343,7 +343,7 @@ function sectionFile(game, section) {
 
 function scopedHash(gameId, route) {
   if (route.focus) {
-    if (route.focus.kind === "pin") return hashFor(gameId, "map", route.focus.id);
+    if (route.focus.kind === "map-view") return hashFor(gameId, "map", route.focus.id);
     if (route.focus.kind === "item") return hashFor(gameId, "craft-item", route.focus.id);
     if (route.focus.kind === "material") return hashFor(gameId, "craft-material", route.focus.id);
     if (route.focus.kind === "weapon") return hashFor(gameId, "weapons", route.focus.id);
@@ -359,8 +359,9 @@ function scopedHash(gameId, route) {
 function sectionCount(section, extra) {
   if (!extra) return "";
   if (section === "map") {
-    const n = (extra.pins || []).length;
-    return `${n} ${n === 1 ? "place" : "places"}`;
+    const list = extra.mode === "embed" ? extra.embeds : extra.images;
+    const n = Array.isArray(list) ? list.length : 0;
+    return n ? `${n} ${n === 1 ? "map" : "maps"}` : "Map";
   }
   if (section === "crafting") {
     const n = (extra.items || []).length;

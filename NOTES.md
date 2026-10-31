@@ -33,16 +33,10 @@ Crafting and equipment files are not downloaded with the app shell. Opening the 
 
 ## Maps
 
-`data/bloodborne-map.json`, `data/elden-ring-map.json`, and `data/demons-souls-map.json` are original SVG region shapes drawn for this app. Pin coordinates are schematic. They are not copied from another site’s marker file, and the app does not request map tiles. A pin’s name and short description are common knowledge of that place; pins with `uncertain: true` say so on the sheet. Each pin can link out to a wiki page.
+Each game’s map file is one of two shapes. `mode` is `"embed"` or `"images"`. `mapLinks` are ordinary outbound links either way.
 
-Regions include the Elden Ring overworld and underground areas asked for (Limgrave through the Realm of Shadow), the Bloodborne districts plus the Hunter’s Dream as the hub, and the Demon's Souls Nexus with worlds 1–5. False King Allant’s archstone (1-4) is an extra region so that fight has a place; the map note says so.
+Elden Ring (`data/elden-ring-map.json`) is an embed. The Map section is a MapGenie frame, with a switch between the Lands Between (`?embed=light` on `the-lands-between`) and Shadow of the Erdtree (`?embed=light` on `the-shadow-realm`). The frame is created only while that section is open. On a phone the frame ignores touches until Tap to use the map, so the page can still scroll. Open full map goes to the same map without `embed=light`. The credit line is “Map by MapGenie”. If the frame errors, the page says so and keeps the full-map link. Fextralife stays a link only.
 
-## Embeds
+Bloodborne and Demon's Souls (`data/bloodborne-map.json`, `data/demons-souls-map.json`) are `mode: "images"` with an empty `images` list until the picture set arrives. The viewer then reads `id`, `title`, `file`, `description`, `sourceUrl`, `credit`, and `license`. `file` is a site-relative path such as `static-maps/bloodborne/overview.webp`. Until at least one entry is present, the section shows a placeholder plus the Fextralife link.
 
-Checked response headers, not page contents:
-
-- Fextralife interactive maps for Elden Ring, Bloodborne, and Demon's Souls send `X-Frame-Options: SAMEORIGIN`, so they cannot be framed. They stay ordinary links.
-- `https://mapgenie.io/elden-ring/maps/the-lands-between` responded without `X-Frame-Options`. The Elden Ring map has an **Open map** button that sets an iframe `src` only after a click, and a new-tab fallback if the frame is blank. The parent MapGenie pages do send `SAMEORIGIN`; only that map URL omitted the header when it was checked.
-- MapGenie has no Bloodborne or Demon's Souls map at the matching paths (those URLs 404). Those games do not get an embed.
-
-Do not hotlink or scrape tiles, and do not copy another map’s marker coordinates into these files.
+The old schematic SVG maps are gone. Do not hotlink or scrape tiles, and do not copy another map’s marker coordinates into these files.

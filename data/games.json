@@ -40,10 +40,6 @@
       "map": "data/elden-ring-map.json",
       "crafting": "data/elden-ring-crafting.json",
       "equipment": "data/elden-ring-equipment.json",
-      "mapEmbed": {
-        "label": "MapGenie — The Lands Between",
-        "url": "https://mapgenie.io/elden-ring/maps/the-lands-between"
-      },
       "accent": "#c6a15a",
       "accentDeep": "#a86b3c",
       "levelPrefix": "RL",

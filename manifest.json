@@ -1,7 +1,7 @@
 {
   "name": "Souls Builds",
   "short_name": "Souls Builds",
-  "description": "Community-sourced tier lists of Bloodborne, Elden Ring, and Demon's Souls character builds, with schematic maps, sample crafting and equipment notes, stat spreads, and source links.",
+  "description": "Community-sourced tier lists of Bloodborne, Elden Ring, and Demon's Souls character builds, with maps, crafting and equipment notes, stat spreads, and source links.",
   "id": "./",
   "start_url": "./",
   "scope": "./",
