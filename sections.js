@@ -255,6 +255,27 @@ const SECTION_CAVEATS = {
         "The build list says Blades of Mercy. This file uses the wiki's Blade of Mercy. Those sheets still link to the builds that name the weapon."
       ]
     }
+  },
+  "demons-souls": {
+    crafting: {
+      summary: "Demon's Souls has no item-combination crafting. This list is upgrade paths, soul trades, Sparkly trades, and farming. General-path recipes give stone ranges, not one exact quantity.",
+      points: [
+        "There is no recipe menu. The list covers blacksmith upgrade paths, Demon Soul and Colorless Demon Soul conversions, spell and miracle trades, Sparkly the Crow trades, and farming spots.",
+        "General-path recipes leave the quantity blank and put the min–max stone range in the note, because the total differs per weapon. Exact totals are on each weapon and on the build-variant recipes.",
+        "Some wiki pages disagree. The Large Sword of Searching base weapon is recorded from every source that names one. Silver and Wooden Catalyst item pages say MAG A; the Catalysts table says MAG C, and the table was used. Values shown as a dash, a question mark, or malformed text were left out.",
+        "The PS5 remake is the primary source. Some Sparkly trades and sets are remake-only. PS3 Darkmoonstone is Moonshadestone, Pulpstone is Marrowstone, and Rage of God is God's Wrath. The Wikidot farming routes are from the PS3 era and still apply in the remake."
+      ]
+    },
+    equipment: {
+      summary: "Some wiki values conflict, and remake-only gear is called out in the research note. Four build names have no matching entry: Yellow Monk's Collar, Friend's Ring, Blessed Broadsword, and a crushing path for Bramd.",
+      points: [
+        "Stats are the wiki's base values. A dash, a question mark, or a malformed number was left out rather than guessed.",
+        "Catalyst and talisman requirements use the list tables. Those tables say MAG C for the Silver and Wooden Catalysts where the item pages say MAG A.",
+        "Remake versus PS3: Barbarian, Blue-Eye Knight, Boletarian Royalty, Burrower's, Imperial Spy, Official's, Penetrator, and Red-Eye Knight are remake-only sets. Ring of Longevity, Providential Ring, and Ring of Uneven Scales come from remake-only Sparkly trades. PS3 Darkmoonstone, Pulpstone, and Rage of God are now Moonshadestone, Marrowstone, and God's Wrath.",
+        "Build names with no equipment entry: Yellow Monk's Collar is not on the wiki. Friend's Ring is not on the Rings page, and Ally's Ring was not assumed to be the same. Blessed Broadsword has no Blessed path on the Broad Sword page. Bramd (Crushing path) is not a crushing weapon: Bramd is Colorless Demon Soul only, so the Bramd sheet still links and there is no crushing recipe.",
+        "Monk's Head Wrappings is the wiki name. Builds that say Monk's Head Collar still link to that piece."
+      ]
+    }
   }
 };
 
@@ -488,7 +509,7 @@ function renderEquipment(panel, ctx) {
   const q = (prefs.equipQuery || "").trim().toLowerCase();
   const type = prefs.equipType || "";
   let rows = armorTab ? sets.slice() : weapons.slice();
-  if (!armorTab && type) rows = rows.filter((row) => row.type === type);
+  if (!armorTab && type) rows = rows.filter((row) => sameWeaponType(row.type, type, types));
   if (q) {
     rows = rows.filter((row) => {
       const hay = [row.name, row.description, row.location, row.upgradePath, row.notes, ...(row.pieces || []).map((p) => p && (p.name || p.slot))]
@@ -541,7 +562,7 @@ function renderEquipment(panel, ctx) {
 }
 
 function weaponCard(weapon, types) {
-  const type = types.find((entry) => entry.id === weapon.type);
+  const type = typeEntry(types, weapon.type);
   return el("article", { class: "record" }, [
     type ? el("p", { class: "card-kicker", text: type.name || weapon.type }) : null,
     el("button", { type: "button", class: "record-title", "data-weapon": weapon.id || "", text: weapon.name || "Weapon" }),
@@ -562,7 +583,7 @@ function armorCard(set) {
 function weaponSheet(data, id) {
   const weapon = (data.weapons || []).find((entry) => entry.id === id);
   if (!weapon) return null;
-  const type = (data.weaponTypes || []).find((entry) => entry.id === weapon.type);
+  const type = typeEntry(data.weaponTypes, weapon.type);
   return el("article", {}, [
     el("p", { class: "sheet-kicker", text: (type && type.name) || weapon.type || "Weapon" }),
     el("h2", { id: "sheet-title", text: weapon.name || "Weapon" }),
@@ -597,6 +618,22 @@ function armorSheet(data, id) {
   ]);
 }
 
+function typeEntry(types, value) {
+  const needle = String(value || "");
+  return (types || []).find((entry) => entry && (entry.id === needle || entry.name === needle)) || null;
+}
+
+function sameWeaponType(rowType, selected, types) {
+  if (!selected) return true;
+  if (rowType === selected) return true;
+  const entry = typeEntry(types, selected);
+  return !!(entry && rowType === entry.name);
+}
+
+function labelForKey(key) {
+  return String(key).replace(/([a-z0-9])([A-Z])/g, "$1 $2");
+}
+
 function fieldBlock(title, obj) {
   if (!obj || typeof obj !== "object") return null;
   const rows = Object.entries(obj).filter(([, value]) => value != null && value !== "");
@@ -606,7 +643,7 @@ function fieldBlock(title, obj) {
     el("dl", { class: "kv" }, rows.map(([key, value]) => {
       const inner = fieldValue(value);
       if (!inner) return null;
-      return el("div", {}, [el("dt", { text: key }), el("dd", {}, [inner])]);
+      return el("div", {}, [el("dt", { text: labelForKey(key) }), el("dd", {}, [inner])]);
     }))
   ]);
 }
@@ -622,7 +659,7 @@ function fieldValue(value) {
     return el("dl", { class: "kv nested" }, rows.map(([key, inner]) => {
       const node = fieldValue(inner);
       if (!node) return null;
-      return el("div", {}, [el("dt", { text: key }), el("dd", {}, [node])]);
+      return el("div", {}, [el("dt", { text: labelForKey(key) }), el("dd", {}, [node])]);
     }));
   }
   return el("span", { text: String(value) });
@@ -630,7 +667,9 @@ function fieldValue(value) {
 
 const NAME_ALIASES = {
   "blade of mercy": ["blades of mercy"],
-  "blades of mercy": ["blade of mercy"]
+  "blades of mercy": ["blade of mercy"],
+  "monk's head wrappings": ["monk's head collar"],
+  "monk's head collar": ["monk's head wrappings"]
 };
 
 function nameNeedles(name) {

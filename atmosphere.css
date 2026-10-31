@@ -177,11 +177,12 @@ header {
 .kv { margin: 0; }
 .kv div {
   display: grid;
-  grid-template-columns: minmax(6.5rem, 9rem) 1fr;
-  gap: 0.35rem 0.6rem;
+  grid-template-columns: minmax(6.5rem, 11rem) minmax(0, 1fr);
+  gap: 0.35rem 0.75rem;
   padding: 0.28rem 0;
   border-bottom: 1px solid rgba(196, 176, 148, 0.12);
 }
+.kv dt, .kv dd { min-width: 0; overflow-wrap: anywhere; }
 .kv dt { margin: 0; color: var(--bone-faint); }
 .kv dd { margin: 0; }
 .source-row { margin: 0.8rem 0 0; }

@@ -15,7 +15,14 @@ Bloodborne crafting and equipment are research snapshots from 2026-10-30, copied
 
 Each of those screens has an About note. The equipment note covers weapons with no +10 row, firearm damage stored in the wiki’s blood column, and attire with no weight. The crafting note covers variable quantities, optional chalice rites, and gem effect families. The build list says “Blades of Mercy”; the equipment file says “Blade of Mercy”. Those sheets still link.
 
-Elden Ring and Demon's Souls crafting and equipment are still **sample layout data**. Each of those files sets `meta.sample` and `source.unverified`. Replace the file, or point `crafting` / `equipment` in `data/games.json` at a new path, when the real lists arrive. The app hides a section when that key is missing.
+Demon's Souls crafting and equipment are research snapshots from 2026-10-30, copied in unchanged:
+
+- `data/demons-souls-crafting.json` — 19 categories, 129 items, 67 materials, 11 guides
+- `data/demons-souls-equipment.json` — 21 weapon types, 97 weapons, 30 armor entries (26 sets, 3 standalone pieces, and a Rings list), 11 guides
+
+The crafting About note says there is no item-combination crafting: the list is upgrade paths, soul trades, Sparkly trades, and farming, and general-path recipes give stone ranges. The equipment About note covers wiki conflicts, remake versus PS3 differences, and four build names with no matching entry: Yellow Monk's Collar, Friend's Ring, Blessed Broadsword, and a crushing path for Bramd. Bramd itself still links. Monk's Head Wrappings also links builds that say Monk's Head Collar.
+
+Elden Ring crafting and equipment are still **sample layout data**. Those files set `meta.sample` and `source.unverified`. Replace the file, or point `crafting` / `equipment` in `data/games.json` at a new path, when the real list arrives. The app hides a section when that key is missing.
 
 ## Maps
 

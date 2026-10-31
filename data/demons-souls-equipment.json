@@ -1,0 +1,4744 @@
+{
+ "meta": {
+  "notes": "Demon's Souls equipment data, PS5 remake (2020) first. Scraped from Fextralife wiki item pages (all HTTP 200 on 2026-10-30). Stats are base (+0) values as shown on each page; values the wiki shows as '-', '?' or malformed were left out, never guessed. Weapon 'type' is the wiki's Weapon Type (shields: Shield (Standard/Large/Small)). Catalyst/talisman requirements and scaling come from the Catalysts/Talismans list tables. upgradePath sums each weapon's wiki upgrade table: Regular +10 path, each special +5 path with the base level it starts from and the stone, total stone counts, plus any Demon Soul transformation. Variants used in builds (Crescent Estoc, Sharp Uchigatana, Fatal Secret Dagger, etc.) are the base weapon plus that path; exact recipes are in crafting.json. armorSets holds 26 full sets, 3 standalone pieces (Silver Coronet, Monk's Head Wrappings, Silver Bracelet) and 1 'Rings' pseudo-set with all 30 rings. Remake-only gear: Barbarian, Blue-Eye Knight, Burrower's, Imperial Spy, Official's (clothes/gloves/leggings), Penetrator; Boletarian Royalty and Red-Eye Knight are Digital Deluxe Edition. PS3 differences: these remake-only items do not exist on PS3; set gender locks are relaxed in the remake (wiki notes e.g. Binded Cross on Type B)."
+ },
+ "weaponTypes": [
+  {
+   "id": "axe",
+   "name": "Axe"
+  },
+  {
+   "id": "bow",
+   "name": "Bow"
+  },
+  {
+   "id": "catalyst",
+   "name": "Catalyst"
+  },
+  {
+   "id": "crossbow",
+   "name": "Crossbow"
+  },
+  {
+   "id": "curved-sword",
+   "name": "Curved Sword"
+  },
+  {
+   "id": "dagger",
+   "name": "Dagger"
+  },
+  {
+   "id": "fist-weapon",
+   "name": "Fist Weapon"
+  },
+  {
+   "id": "hammer",
+   "name": "Hammer"
+  },
+  {
+   "id": "katana",
+   "name": "Katana"
+  },
+  {
+   "id": "large-axe",
+   "name": "Large Axe"
+  },
+  {
+   "id": "large-hammer",
+   "name": "Large Hammer"
+  },
+  {
+   "id": "large-sword",
+   "name": "Large Sword"
+  },
+  {
+   "id": "polearm",
+   "name": "Polearm"
+  },
+  {
+   "id": "shield-large",
+   "name": "Shield (Large)"
+  },
+  {
+   "id": "shield-small",
+   "name": "Shield (Small)"
+  },
+  {
+   "id": "shield-standard",
+   "name": "Shield (Standard)"
+  },
+  {
+   "id": "spear",
+   "name": "Spear"
+  },
+  {
+   "id": "straight-sword",
+   "name": "Straight Sword"
+  },
+  {
+   "id": "talisman",
+   "name": "Talisman"
+  },
+  {
+   "id": "thrusting-sword",
+   "name": "Thrusting Sword"
+  },
+  {
+   "id": "very-large-sword",
+   "name": "Very Large Sword"
+  }
+ ],
+ "weapons": [
+  {
+   "id": "dagger",
+   "name": "Dagger",
+   "type": "Dagger",
+   "description": "A standard dagger. A slashing weapon that inflicts heavy damage on soft flesh but has a limited effect on metal armor and hard scales. Daggers are very effective after parrying, as well as in close-range stabs from behind.",
+   "stats": {
+    "phys": "65",
+    "critical": "0",
+    "magic": "0",
+    "durability": "200",
+    "fire": "0",
+    "weight": "0.5",
+    "bleed": "0",
+    "damageReduction": "40",
+    "poison": "0",
+    "magicFireReduction": "10/28",
+    "plague": "0",
+    "guardBreakReduction": "25",
+    "buffable": "Yes"
+   },
+   "scaling": {
+    "STR": "E",
+    "DEX": "D"
+   },
+   "requirements": {
+    "STR": "6"
+   },
+   "upgradePath": "Regular +10 (Sharpstone) — totals 35 Shard / 18 Large Shard / 9 Chunk / 1 Pure; Quality +5: from +3 with Clearstone — totals 15 Shard / 6 Chunk / 1 Pure; Mercury +5: from +3 with Mercurystone — totals 15 Shard / 6 Chunk / 1 Pure; Fatal +5: from +3 with Marrowstone — totals 15 Shard / 6 Chunk / 1 Pure; Crescent +5: from +6 with Moonshadestone — totals 15 Shard / 6 Chunk / 1 Pure; Needle of Eternal Agony: Dagger +7 + Mixed Demon Soul (Blacksmith Ed)",
+   "location": "Found: 4-2 before the second fog. | Vendor: Blacksmith Boldwin ( The Nexus); 700 Souls. Graverobber Blige ( Shrine of Storms); 1,000 Souls. | Starting Class: Thief & Wanderer.",
+   "source": {
+    "label": "Fextralife – Dagger",
+    "url": "https://demonssouls.wiki.fextralife.com/Dagger",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "parrying-dagger",
+   "name": "Parrying Dagger",
+   "type": "Dagger",
+   "description": "A dagger made for parrying. Normally equipped in the left hand. It is the weapon used by those of a masked society who meet in secret to discuss the harnessing of Souls. Women of this order have become adept in using this unique dagger in place of a heavier shield.",
+   "stats": {
+    "phys": "65",
+    "damageReduction": "40",
+    "magicReduction": "10",
+    "durability": "200",
+    "weight": "0.5",
+    "buffable": "Yes"
+   },
+   "scaling": {
+    "STR": "E",
+    "DEX": "D"
+   },
+   "requirements": {
+    "STR": "6",
+    "DEX": "16"
+   },
+   "upgradePath": "Regular +10 (Sharpstone) — totals 35 Shard / 18 Large Shard / 9 Chunk / 1 Pure; Quality +5: from +3 with Clearstone — totals 15 Shard / 6 Chunk / 1 Pure; Mercury +5: from +3 with Mercurystone — totals 15 Shard / 6 Chunk / 1 Pure; Fatal +5: from +3 with Marrowstone — totals 15 Shard / 6 Chunk / 1 Pure; Crescent +5: from +6 with Moonshadestone — totals 15 Shard / 6 Chunk / 1 Pure; Needle of Eternal Agony: Parrying Dagger +7 + Mixed Demon Soul (Blacksmith Ed)",
+   "location": "Found in: Prison of Hope. Can be located in Prison of Hope 2F East, need to free Lord Rydell to access it and let him live. (White World Tendency required) | Dropped by: Mephistopheles",
+   "source": {
+    "label": "Fextralife – Parrying Dagger",
+    "url": "https://demonssouls.wiki.fextralife.com/Parrying_Dagger",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "secret-dagger",
+   "name": "Secret Dagger",
+   "type": "Dagger",
+   "description": "This versatile single-edged dagger is standard issue for the King's spies. Slashing weapons inflict heavy damage on soft flesh but have a limited effect on metal armor and hard scales. Daggers deal the most damage after parrying, or better yet, stuck squarely in an enemy's back.",
+   "stats": {
+    "phys": "70",
+    "plague": "0",
+    "magic": "0",
+    "critical": "0",
+    "fire": "0",
+    "durability": "100",
+    "bleed": "0",
+    "weight": "0.5",
+    "poison": "0",
+    "damageReduction": "40/10",
+    "guardBreakReduction": "25",
+    "buffable": "Yes",
+    "damageType": "Slashing, Piercing"
+   },
+   "scaling": {
+    "STR": "E",
+    "DEX": "D"
+   },
+   "requirements": {
+    "STR": "6"
+   },
+   "upgradePath": "Regular +10 (Hardstone/Sharpstone) — totals 35 Shard / 18 Large Shard / 9 Chunk / 1 Pure; Quality +5: from +3 with Clearstone — totals 15 Shard / 6 Chunk / 1 Pure; Sharp +5: from +0 with Bladestone — totals 15 Shard / 6 Chunk / 1 Pure; Mercury +5: from +3 with Mercurystone — totals 15 Shard / 6 Chunk / 1 Pure; Fatal +5: from +3 with Marrowstone — totals 15 Shard / 6 Chunk / 1 Pure; Crescent +5: from +6 with Moonshadestone — totals 15 Shard / 6 Chunk / 1 Pure; Needle of Eternal Agony: Secret Dagger +7 + Mixed Demon Soul (Blacksmith Ed)",
+   "location": "Found in: Prison of Hope, located in a cell on the second floor. You have to use Prison of Hope 4F Cell Key to open it. | Dropped by: Imperial Spy, at Inner Ward.",
+   "source": {
+    "label": "Fextralife – Secret Dagger",
+    "url": "https://demonssouls.wiki.fextralife.com/Secret_Dagger",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "babys-nail",
+   "name": "Baby's Nail",
+   "type": "Dagger",
+   "description": "A dagger treated with plague. The blade is curved like a talon. A dagger often used by women and children for assassination. Among the various unique weapons, this is one of the especially sinister.",
+   "stats": {
+    "phys": "55",
+    "plague": "120",
+    "magic": "0",
+    "critical": "0",
+    "fire": "0",
+    "durability": "100",
+    "bleed": "0",
+    "weight": "0.7",
+    "poison": "0",
+    "damageReduction": "40/10",
+    "guardBreakReduction": "25",
+    "buffable": "No",
+    "damageType": "Slashing, Piercing"
+   },
+   "scaling": {
+    "STR": "E",
+    "DEX": "D"
+   },
+   "requirements": {
+    "STR": "7"
+   },
+   "upgradePath": "Unique weapon: upgraded with Colorless Demon Souls at Blacksmith Ed (after the Searing Demon Soul), max +5",
+   "location": "Found in: Prison of Hope, behind the ceremonial table in the room where you fight Fool's Idol. Be mindful that after the Fool Idol fight, approaching the altar from the front will result in the gargoyles taking you away, so you should approach from the right or left and hug the edges. | Dropped by: Sage Freke, the Visionary",
+   "source": {
+    "label": "Fextralife – Baby's Nail",
+    "url": "https://demonssouls.wiki.fextralife.com/Baby%27s_Nail",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "blueblood-sword",
+   "name": "Blueblood Sword",
+   "type": "Straight Sword",
+   "description": "A white iron straight sword born from the soul of the demon Maiden Astraea. The sword of true nobility, endowed with the essential power humans are born with, which increases its attack power.",
+   "stats": {
+    "phys": "100",
+    "plague": "0",
+    "magic": "100",
+    "critical": "100",
+    "fire": "0",
+    "durability": "400",
+    "bleed": "0",
+    "weight": "5.0",
+    "poison": "0",
+    "damageReduction": "50/10",
+    "guardBreakReduction": "35",
+    "buffable": "Yes",
+    "damageType": "Normal, Piercing"
+   },
+   "scaling": {
+    "STR": "D",
+    "MAG": "E",
+    "FTH": "E"
+   },
+   "requirements": {
+    "STR": "18",
+    "DEX": "18",
+    "MAG": "18",
+    "FTH": "18"
+   },
+   "upgradePath": "Blueblood Sword: Blueblood Sword +0 + Pureblood Demon Soul (Blacksmith Ed)",
+   "location": "Can be created at Blacksmith Ed, requires a Pureblood Demon's Soul. | It must be created from the following: Broken Sword +0",
+   "source": {
+    "label": "Fextralife – Blueblood Sword",
+    "url": "https://demonssouls.wiki.fextralife.com/Blueblood_Sword",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "broad-sword",
+   "name": "Broad Sword",
+   "type": "Straight Sword",
+   "description": "A straight sword with a broad blade designed for slashing. Slashing weapons inflict heavy damage on soft flesh but have a limited effect on metal armour and hard scales. Handily, this sword can also be used for thrusting attacks, which compensates for that particular weakness.",
+   "stats": {
+    "phys": "80",
+    "plague": "0",
+    "magic": "0",
+    "critical": "0",
+    "fire": "0",
+    "durability": "150",
+    "bleed": "100",
+    "weight": "2.0",
+    "poison": "0",
+    "damageReduction": "50/10",
+    "guardBreakReduction": "35",
+    "buffable": "Yes",
+    "damageType": "Slashing, Piercing"
+   },
+   "scaling": {
+    "STR": "D",
+    "DEX": "D",
+    "MAG": "E",
+    "FTH": "D"
+   },
+   "requirements": {
+    "STR": "10",
+    "DEX": "10"
+   },
+   "upgradePath": "Regular +10 (Hardstone/Sharpstone) — totals 55 Shard / 29 Large Shard / 14 Chunk / 1 Pure; Quality +5: from +3 with Clearstone — totals 25 Shard / 9 Chunk / 1 Pure; Sharp +5: from +0 with Bladestone — totals 25 Shard / 9 Chunk / 1 Pure; Tearing +5: from +3 with Suckerstone — totals 25 Shard / 9 Chunk / 1 Pure; Mercury +5: from +3 with Mercurystone — totals 23 Shard / 9 Chunk / 1 Pure; Moon +5: from +6 with Moonlightstone — totals 25 Shard / 9 Chunk / 1 Pure; Crescent +5: from +6 with Moonshadestone — totals 25 Shard / 9 Chunk / 1 Pure; Large Sword of Searching: Broad Sword +8 + Hero Demon Soul (Blacksmith Ed)",
+   "location": "Bought From: Dregling Merchant for 2000 souls. | Soldier starting equipment.",
+   "source": {
+    "label": "Fextralife – Broad Sword",
+    "url": "https://demonssouls.wiki.fextralife.com/Broad_Sword",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "broken-sword",
+   "name": "Broken Sword",
+   "type": "Straight Sword",
+   "description": "A small straight sword with a broken blade. Completely covered in rust with blood stuck to the blade, its sharpness is negligible.",
+   "stats": {
+    "phys": "20",
+    "plague": "0",
+    "magic": "0",
+    "critical": "0",
+    "fire": "0",
+    "durability": "11",
+    "bleed": "0",
+    "weight": "1.0",
+    "poison": "0",
+    "damageReduction": "50/10",
+    "guardBreakReduction": "35",
+    "buffable": "No",
+    "damageType": "Normal, Piercing"
+   },
+   "scaling": {
+    "STR": "D",
+    "DEX": "E",
+    "MAG": "E"
+   },
+   "requirements": {
+    "STR": "8"
+   },
+   "upgradePath": "",
+   "location": "Found in: Swamp of Sorrow, in one of the islands of the swamp. | Drop by Dregling",
+   "source": {
+    "label": "Fextralife – Broken Sword",
+    "url": "https://demonssouls.wiki.fextralife.com/Broken_Sword",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "long-sword",
+   "name": "Long Sword",
+   "type": "Straight Sword",
+   "description": "A standard straight sword. Straight swords are the most standard and most versatile weapons. In addition to a stable \"standard\" attack type against most targets, it also has a powerful thrusting attack.",
+   "stats": {
+    "phys": "80",
+    "plague": "0",
+    "magic": "0",
+    "critical": "0",
+    "fire": "0",
+    "durability": "200",
+    "bleed": "0",
+    "weight": "2.0",
+    "poison": "0",
+    "damageReduction": "50/10",
+    "guardBreakReduction": "35",
+    "buffable": "Yes",
+    "damageType": "Normal, Piercing"
+   },
+   "scaling": {
+    "STR": "E",
+    "DEX": "E"
+   },
+   "requirements": {
+    "STR": "10"
+   },
+   "upgradePath": "Regular +10 (Sharpstone / Hardstone); Quality +5: from +3 with Clearstone; Crushing +5: from +3 with Greystone; Dragon +5: from +3 with Dragonstone; Moon +5: from +6 with Moonlightstone; Blessed +5: from +6 with Faintstone; Morion Blade: Long Sword +8 + Storm Demon Soul (Blacksmith Ed)",
+   "location": "Bought From: Dregling Merchant for 1500 souls | A Dragon Long Sword +1 can be found in The Tunnel City. It's inside the tight tunnel. | One of the starting weapons for the Knight class",
+   "source": {
+    "label": "Fextralife – Long Sword",
+    "url": "https://demonssouls.wiki.fextralife.com/Long_Sword",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "knight-sword",
+   "name": "Knight Sword",
+   "type": "Straight Sword",
+   "description": "The straight sword of the Boletarian Knights. Proof of investiture by the King Using Stonefang's hard iron. It is heavier than the standard straight sword, and has higher attack power.",
+   "stats": {
+    "phys": "85",
+    "plague": "0",
+    "magic": "0",
+    "critical": "0",
+    "fire": "0",
+    "durability": "220",
+    "bleed": "0",
+    "weight": "3.0",
+    "poison": "0",
+    "damageReduction": "50/10",
+    "guardBreakReduction": "35",
+    "buffable": "Yes",
+    "damageType": "Normal, Piercing"
+   },
+   "scaling": {
+    "STR": "E",
+    "DEX": "E"
+   },
+   "requirements": {
+    "STR": "14"
+   },
+   "upgradePath": "Regular +10 (Sharpstone / Hardstone); Quality +5: from +3 with Clearstone; Crushing +5: from +3 with Greystone; Dragon +5: from +3 with Dragonstone; Moon +5: from +6 with Moonlightstone; Blessed +5: from +6 with Faintstone; Morion Blade: Knight Sword +8 + Storm Demon Soul (Blacksmith Ed)",
+   "location": "Dropped by: Red Eye Knight | Bought From: Dregling Merchant for 20000 souls. | Found in: The King's Tower, after the Blue Dragon changes position drop to the base of the long staircase to find alongside a Knight's Shield.",
+   "source": {
+    "label": "Fextralife – Knight Sword",
+    "url": "https://demonssouls.wiki.fextralife.com/Knight_Sword",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "kris-blade",
+   "name": "Kris Blade",
+   "type": "Straight Sword",
+   "description": "A small ceremonial straight sword. Etched with numerous ancient runes, this sword serves as a catalyst in occult rituals. Amplifies the damage dealt and received by magic.",
+   "stats": {
+    "phys": "20",
+    "plague": "0",
+    "magic": "62",
+    "critical": "0",
+    "fire": "0",
+    "durability": "120",
+    "bleed": "0",
+    "weight": "1.0",
+    "poison": "0",
+    "damageReduction": "50/10",
+    "guardBreakReduction": "35",
+    "buffable": "No",
+    "damageType": "Normal, Piercing"
+   },
+   "scaling": {
+    "STR": "D",
+    "DEX": "E",
+    "MAG": "E"
+   },
+   "requirements": {
+    "STR": "8",
+    "MAG": "16"
+   },
+   "upgradePath": "Unique weapon: upgraded with Colorless Demon Souls at Blacksmith Ed (after the Searing Demon Soul), max +5",
+   "location": "To get the Kris Blade, player must go to Smithing Grounds until the final elevator and take the ramp on the left. At the end will be the Kris Blade on a body.",
+   "source": {
+    "label": "Fextralife – Kris Blade",
+    "url": "https://demonssouls.wiki.fextralife.com/Kris_Blade",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "penetrating-sword",
+   "name": "Penetrating Sword",
+   "type": "Straight Sword",
+   "description": "A long straight sword used by the Penetrator, one of the heroes of Boletaria. As the name states, its thrusts are especially powerful. Because of its irregular size for a straight sword, it requires great strength and technique.",
+   "stats": {
+    "phys": "90",
+    "plague": "0",
+    "magic": "0",
+    "critical": "0",
+    "fire": "0",
+    "durability": "240",
+    "bleed": "0",
+    "weight": "6.0",
+    "poison": "0",
+    "damageReduction": "50/10",
+    "guardBreakReduction": "35",
+    "buffable": "Yes",
+    "damageType": "Normal, Piercing"
+   },
+   "scaling": {
+    "STR": "D",
+    "DEX": "C",
+    "MAG": "E",
+    "FTH": "C"
+   },
+   "requirements": {
+    "STR": "22",
+    "DEX": "16"
+   },
+   "upgradePath": "Unique weapon: upgraded with Colorless Demon Souls at Blacksmith Ed (after the Searing Demon Soul), 5, max +5",
+   "location": "Found in: Inner Ward, after fighting the Red Eye Knight patrolling the area, you can drop on a ledge on the right side of the bridge just before the 3 crossbow men | Dropped by: Metas, Knight of the Lance",
+   "source": {
+    "label": "Fextralife – Penetrating Sword",
+    "url": "https://demonssouls.wiki.fextralife.com/Penetrating_Sword",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "rune-sword",
+   "name": "Rune Sword",
+   "type": "Straight Sword",
+   "description": "A gilded sword crafted with exquisite design. It's physical attack power is close to non-existant, but is strongly magically enhanced and also protects its wielder from magical attacks. It is the weapon of the legendary hero, with it's paired rune shield.",
+   "stats": {
+    "phys": "30",
+    "plague": "0",
+    "magic": "140",
+    "critical": "0",
+    "fire": "0",
+    "durability": "80",
+    "bleed": "0",
+    "weight": "6.0",
+    "poison": "0",
+    "damageReduction": "50/10",
+    "guardBreakReduction": "35",
+    "buffable": "No",
+    "damageType": "Normal Piercing"
+   },
+   "scaling": {
+    "STR": "D",
+    "DEX": "E",
+    "MAG": "E"
+   },
+   "requirements": {
+    "STR": "10",
+    "MAG": "18"
+   },
+   "upgradePath": "Unique weapon: upgraded with Colorless Demon Souls at Blacksmith Ed (after the Searing Demon Soul), 5, max +5",
+   "location": "Found in: Upper Latria, Can be found on the large tower at the center of the level, the one with the beating heart. Take the stairs up, until you reach some pots on your left and you will notice there's no railing. Break the pots and walk to the edge, you will see a narrow ledge below. Drop carefully and you will find the Rune Sword alongside a Rune Shield. | Defeat Black Phantom Ostrava in The King's Tower (1 - 4). He drops the Rune Sword and the Rune Shield.",
+   "source": {
+    "label": "Fextralife – Rune Sword",
+    "url": "https://demonssouls.wiki.fextralife.com/Rune_Sword",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "short-sword",
+   "name": "Short Sword",
+   "type": "Straight Sword",
+   "description": "A small straight sword. Straight swords are the most standard and most versatile weapons. In addition to a stable \"standard\" attack type against most targets, it also has a high powered thrusting attack",
+   "stats": {
+    "phys": "75",
+    "plague": "0",
+    "magic": "0",
+    "critical": "0",
+    "fire": "0",
+    "durability": "200",
+    "bleed": "0",
+    "weight": "1.0",
+    "poison": "0",
+    "damageReduction": "50/10",
+    "guardBreakReduction": "35",
+    "buffable": "Yes",
+    "damageType": "Normal, Piercing"
+   },
+   "scaling": {
+    "STR": "E",
+    "DEX": "E"
+   },
+   "requirements": {
+    "STR": "9"
+   },
+   "upgradePath": "Regular +10 (Hardstone); Quality +5: from +3 with Clearstone; Crushing +5: from +3 with Greystone; Dragon +5: from +3 with Dragonstone; Moon +5: from +6 with Moonlightstone; Blessed +5: from +6 with Faintstone; Morion Blade: Short Sword +8 + Storm Demon Soul (Blacksmith Ed)",
+   "location": "Bought From: Blacksmith Boldwin for 1000 souls. | Found in: Upper Latria, you can find a Moon Short Sword +1 in the area where you find the Maneater, just on the right side of the stairs that lead to the next zone, go along the ledge to find it.",
+   "source": {
+    "label": "Fextralife – Short Sword",
+    "url": "https://demonssouls.wiki.fextralife.com/Short_Sword",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "bastard-sword",
+   "name": "Bastard Sword",
+   "type": "Large Sword",
+   "description": "This large sword, similar to a straight sword, is a versatile weapon, but its weight means it usually required the use of both hands. The smashing overhead attack greatly depletes a target's stamina, and easily breaks their guard.",
+   "stats": {
+    "phys": "95",
+    "plague": "0",
+    "magic": "0",
+    "critical": "100",
+    "fire": "0",
+    "durability": "220",
+    "bleed": "0",
+    "weight": "5.0",
+    "poison": "0",
+    "damageReduction": "60/10",
+    "guardBreakReduction": "45",
+    "buffable": "???",
+    "damageType": "Normal"
+   },
+   "scaling": {
+    "STR": "D",
+    "DEX": "E"
+   },
+   "requirements": {
+    "STR": "18"
+   },
+   "upgradePath": "Regular +10 (Hardstone); Quality +5: from +3 with Clearstone; Crushing +5: from +3 with Greystone; Dragon +5: from +3 with Dragonstone; Moon +5: from +6 with Moonlightstone; Blessed +5: from +6 with Faintstone; Morion Blade: Bastard Sword +8 + Storm Demon Soul (Blacksmith Ed)",
+   "location": "Found in: Gates of Boletaria. Before the stairs with the rolling boulder, there's an inaccessible treasure on the lower level. Once the rolling boulder comes crashing down, you can drop yourself there and grab it.. | Dropped by: Scale Miner",
+   "source": {
+    "label": "Fextralife – Bastard Sword",
+    "url": "https://demonssouls.wiki.fextralife.com/Bastard_Sword",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "claymore",
+   "name": "Claymore",
+   "type": "Large Sword",
+   "description": "This very large sword, similar to a straight sword, is a versatile weapon, but its weight means it usually requeres the use of both hands. The smashing overhead attack greatly depletes a target's stamina, and easily breaks their guard.",
+   "stats": {
+    "phys": "105",
+    "plague": "0",
+    "magic": "0",
+    "critical": "0",
+    "fire": "0",
+    "durability": "220",
+    "bleed": "0",
+    "weight": "6.0",
+    "poison": "0",
+    "damageReduction": "60/10",
+    "guardBreakReduction": "45",
+    "buffable": "Yes",
+    "damageType": "Normal"
+   },
+   "scaling": {
+    "STR": "D",
+    "DEX": "E"
+   },
+   "requirements": {
+    "STR": "20"
+   },
+   "upgradePath": "Regular +10 (Sharpstone / Hardstone); Quality +5: from +3 with Clearstone; Crushing +5: from +3 with Greystone; Dragon +5: from +3 with Dragonstone; Moon +5: from +6 with Moonlightstone; Blessed +5: from +6 with Faintstone; Morion Blade: Claymore +8 + Storm Demon Soul (Blacksmith Ed)",
+   "location": "Bought From: Dregling Merchant for 6000 souls. | Dropped by: Blue Eye Knight",
+   "source": {
+    "label": "Fextralife – Claymore",
+    "url": "https://demonssouls.wiki.fextralife.com/Claymore",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "demonbrandt",
+   "name": "Demonbrandt",
+   "type": "Large Sword",
+   "description": "A white blade made to be wielded against demons, held for generations by the Boletarian Royal Family. Paired with its counterpart, Soulbrandt, to form Northern Regalia. The less demonic the soul of the wielder, the more powerful this blade becomes. Hence Old King Allant's choice to wield Soulbrandt instead.",
+   "stats": {
+    "phys": "130",
+    "plague": "0",
+    "magic": "110",
+    "critical": "0",
+    "fire": "0",
+    "durability": "400",
+    "bleed": "0",
+    "weight": "5.5",
+    "poison": "0",
+    "damageReduction": "60/10",
+    "guardBreakReduction": "45",
+    "buffable": "No",
+    "damageType": "Normal"
+   },
+   "scaling": {
+    "STR": "D"
+   },
+   "requirements": {
+    "STR": "18",
+    "DEX": "14",
+    "FTH": "12"
+   },
+   "upgradePath": "",
+   "location": "The Demonbrandt can only be obtained once per play through. In order to obtain the Demonbrandt you must obtain the Mausoleum Key from Ostrava. | In order to do this you must either save Ostrava throughout World 1, or kill him. If choose to save him, he will show up in The King's Tower right before the boss and will die when talked to. He will then drop the Mausoleum Key. | The key will also be dropped at where he died. | After obtaining the Mausoleum Key, go to Gates of Boletaria. Head forwards from the archstone to the large castle gates (Phalanx boss arena) and before the gate turn left. Enter the door and go up the stairs to the top of the tower. Once you reach the top, cross the bridge past the trebuchets to the other side, and at the end turn left. | After killing the Red Eye Knight, open the locked gate and approach Old King Doran. He will tell you that if you can prove yourself to him he will give you the sword. Players only need to take out 25% of his health. Attacking him further will cause him to turn hostile.",
+   "source": {
+    "label": "Fextralife – Demonbrandt",
+    "url": "https://demonssouls.wiki.fextralife.com/Demonbrandt",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "flamberge",
+   "name": "Flamberge",
+   "type": "Large Sword",
+   "description": "A unique large sword with a rippled blade. So named because of it's [sic] shape resembling a flame, the blade is made for rending flesh and forces the letting large amounts of blood. It is known especially as a weapon that easily causes mortal wounds.",
+   "stats": {
+    "phys": "100",
+    "plague": "0",
+    "magic": "0",
+    "critical": "0",
+    "fire": "0",
+    "durability": "150",
+    "bleed": "120",
+    "weight": "5.0",
+    "poison": "0",
+    "damageReduction": "60/10",
+    "guardBreakReduction": "45",
+    "buffable": "Yes",
+    "damageType": "Slashing"
+   },
+   "scaling": {
+    "STR": "D",
+    "DEX": "D"
+   },
+   "requirements": {
+    "STR": "18",
+    "DEX": "14"
+   },
+   "upgradePath": "Regular +10 (Sharpstone / Hardstone) — totals 74 Shard / 36 Large Shard / 18 Chunk / 1 Pure; Quality +5: from +3 with Clearstone — totals 34 Shard / 12 Chunk / 1 Pure; Sharp +5: from +0 with Bladestone — totals 34 Shard / 12 Chunk / 1 Pure; Tearing +5: from +3 with Suckerstone — totals 34 Shard / 12 Chunk / 1 Pure; Mercury +5: from +3 with Mercurystone — totals 34 Shard / 12 Chunk / 1 Pure; Moon +5: from +6 with Moonlightstone — totals 34 Shard / 12 Chunk / 1 Pure; Crescent +5: from +6 with Moonshadestone — totals 34 Shard / 12 Chunk / 1 Pure; Large Sword of Searching: Flamberge +8 + Hero Demon Soul (Blacksmith Ed)",
+   "location": "Dropped by: Imperial Spies | Upper Latria: Encountered in a darkened hallway in which its platforms are not visible until lighted. You must step off the main path to this area to retrieve the item. Shown in our video here:",
+   "source": {
+    "label": "Fextralife – Flamberge",
+    "url": "https://demonssouls.wiki.fextralife.com/Flamberge",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "large-sword-of-moonlight",
+   "name": "Large Sword of Moonlight",
+   "type": "Large Sword",
+   "description": "The legendary large sword that reflects moonlight. Widely known in association with Moonlight Knight Vito. It's one of the few Revelations from God. The blue crystal blade is composed only of light, so it's impossible to block with a shield.",
+   "stats": {
+    "phys": "0",
+    "magic": "100",
+    "fire": "0",
+    "durability": "900",
+    "weight": "2.0",
+    "damageReduction": "40/80",
+    "guardBreakReduction": "45",
+    "buffable": "No",
+    "damageType": "Normal"
+   },
+   "scaling": {
+    "STR": "D",
+    "FTH": "S"
+   },
+   "requirements": {
+    "FTH": "24"
+   },
+   "upgradePath": "Unique weapon: upgraded with Colorless Demon Souls at Blacksmith Ed (after the Searing Demon Soul), 1 per level, max +5",
+   "location": "Found in: Swamp of Sorrow, where you find the nest of Phosphorescent Slugs. Once you hit it enough times, many slugs will drop to the ground. Now go to where they've fallen and you will find the sword, among all the hostile slugs.",
+   "source": {
+    "label": "Fextralife – Large Sword of Moonlight",
+    "url": "https://demonssouls.wiki.fextralife.com/Large_Sword_of_Moonlight",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "northern-regalia",
+   "name": "Northern Regalia",
+   "type": "Large Sword",
+   "description": "Old symbol of the King of Boletaria. The shape of this blade unites both Soulbrandt and Demonbrandt as one. Even Boletarian Royal Family legend scarcely mentions its origins, but it is believed that a malicious force left it behind in this world, along with the Old One.",
+   "stats": {
+    "phys": "135",
+    "plague": "0",
+    "magic": "135",
+    "critical": "0",
+    "fire": "0",
+    "durability": "400",
+    "bleed": "0",
+    "weight": "6.5",
+    "poison": "0",
+    "damageReduction": "60/10",
+    "guardBreakReduction": "45",
+    "buffable": "No",
+    "damageType": "Normal"
+   },
+   "scaling": {
+    "STR": "D"
+   },
+   "requirements": {
+    "STR": "20",
+    "DEX": "14",
+    "MAG": "12",
+    "FTH": "12"
+   },
+   "upgradePath": "Northern Regalia: Northern Regalia +0 + False King Demon Soul (Blacksmith Ed)",
+   "location": "Can be created at Blacksmith Ed requires a False King Demon Soul. | It must be created by having both of the following: | Soulbrandt +0 | Demonbrandt +0 | Note: as a boss weapon it requires the player to beat the Flamelurker and give the Searing Demon Soul to Blacksmith Ed in order to craft it.",
+   "source": {
+    "label": "Fextralife – Northern Regalia",
+    "url": "https://demonssouls.wiki.fextralife.com/Northern_Regalia",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "morion-blade",
+   "name": "Morion Blade",
+   "type": "Large Sword",
+   "description": "A gnarled, thorny large sword of black quartz. Forged from the soul of the Demon \"Storm King,\" it is actually the marrow of the storm beasts. These beasts take pleasure in the wielder's peril, and in these situations, the blade's attack power is greatly increased.",
+   "stats": {
+    "phys": "210",
+    "plague": "0",
+    "magic": "0",
+    "critical": "0",
+    "fire": "0",
+    "durability": "400",
+    "bleed": "0",
+    "weight": "3.0",
+    "poison": "0",
+    "damageReduction": "60/10",
+    "guardBreakReduction": "45",
+    "buffable": "No",
+    "damageType": "Normal"
+   },
+   "scaling": {
+    "STR": "D"
+   },
+   "requirements": {
+    "STR": "14",
+    "DEX": "14"
+   },
+   "upgradePath": "Morion Blade: Morion Blade +0 + Storm Demon Soul (Blacksmith Ed)",
+   "location": "Can be created at Blacksmith Ed requires a Storm Demon Soul. | Can be created using any of the following: | Short Sword +8 | Long Sword +8 | Knight Sword +8 | Bastard Sword +8 | Claymore +8 | Great Sword +8",
+   "source": {
+    "label": "Fextralife – Morion Blade",
+    "url": "https://demonssouls.wiki.fextralife.com/Morion_Blade",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "soulbrandt",
+   "name": "Soulbrandt",
+   "type": "Large Sword",
+   "description": "A blade that can cut the very soul, held for generations by the Boletarian Royal Family. Paired with its counterpart, Demonbrandt, to form Northern Regalia. Since his coronation, the sword has never left King Allant's side. The closer the soul of the wielder is to a demon, the more powerful this blade becomes. No wonder it was chosen by Old King Allant.",
+   "stats": {
+    "phys": "120",
+    "plague": "0",
+    "magic": "130",
+    "critical": "0",
+    "fire": "0",
+    "durability": "400",
+    "bleed": "0",
+    "weight": "5.5",
+    "poison": "0",
+    "damageReduction": "60/10",
+    "guardBreakReduction": "45",
+    "buffable": "No",
+    "damageType": "Normal"
+   },
+   "scaling": {
+    "STR": "D"
+   },
+   "requirements": {
+    "STR": "18",
+    "DEX": "14",
+    "MAG": "12"
+   },
+   "upgradePath": "",
+   "location": "There is only one chance to obtain this sword each playthrough. | At the very end of the game, enter The Old One and fight King Allant | After the battle, the Soulbrandt will be on the ground next to where he died.",
+   "source": {
+    "label": "Fextralife – Soulbrandt",
+    "url": "https://demonssouls.wiki.fextralife.com/Soulbrandt",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "storm-ruler",
+   "name": "Storm Ruler",
+   "type": "Large Sword",
+   "description": "A large sword with a thorny, spiraled blade. Now abandoned and most of its power lost, it seems that it once dominated foes, but in an area with ancestral spirits or a monolith forest, you may be able to see it's past sky-cutting power.",
+   "stats": {
+    "phys": "150",
+    "plague": "0",
+    "magic": "0",
+    "critical": "0",
+    "fire": "0",
+    "durability": "10",
+    "bleed": "0",
+    "weight": "6.0",
+    "poison": "0",
+    "damageReduction": "60/10",
+    "guardBreakReduction": "45",
+    "buffable": "No",
+    "damageType": "Normal"
+   },
+   "scaling": {
+    "STR": "D"
+   },
+   "requirements": {},
+   "upgradePath": "",
+   "location": "There is only one chance to obtain this sword per play through. | When you enter Altar of Storms to fight the Storm King, turn to your right and follow the path downhill towards where all the Storm Beast are flying. | If you bear left before you approach the ruined building you will enter a flat area with rubble of broken monuments. | Towards the center there are 2 Crystal Lizards, and to their left, you will see a weapon stuck into the earth. That is the Storm Ruler. If you wish to grab it to fight the boss and enemies here, you will have to evade their attacks as you run to collect it (the Thief's Ring will help), and you will probably startle and scare off the lizards.",
+   "source": {
+    "label": "Fextralife – Storm Ruler",
+    "url": "https://demonssouls.wiki.fextralife.com/Storm_Ruler",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "dragon-bone-smasher",
+   "name": "Dragon Bone Smasher",
+   "type": "Very Large Sword",
+   "description": "A bladeless, thick mass of iron used for smashing. According to the ancestors of Stonefang's excavators, it's said this weapon was created to face dragons, and is imbued with magic to protect the wielder from fire.",
+   "stats": {
+    "phys": "200",
+    "plague": "0",
+    "magic": "0",
+    "critical": "0",
+    "fire": "0",
+    "durability": "600",
+    "bleed": "0",
+    "weight": "20.0",
+    "poison": "0",
+    "damageReduction": "70/10",
+    "guardBreakReduction": "45",
+    "buffable": "Yes",
+    "damageType": "Normal"
+   },
+   "scaling": {
+    "STR": "B"
+   },
+   "requirements": {
+    "STR": "30"
+   },
+   "upgradePath": "Unique weapon: upgraded with Colorless Demon Souls at Blacksmith Ed (after the Searing Demon Soul), 5, max +5",
+   "location": "Found in: Underground Temple, Pure White World Tendency required. The debris on the left path will be cleared, beyond which you will find a unique Dragon Bone Smasher.",
+   "source": {
+    "label": "Fextralife – Dragon Bone Smasher",
+    "url": "https://demonssouls.wiki.fextralife.com/Dragon_Bone_Smasher",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "great-sword",
+   "name": "Great Sword",
+   "type": "Very Large Sword",
+   "description": "An extremely large straight sword. Similar to a large straight sword, but it's too heavy to wield with ordinary strength. Using that weight can blow enemies away. In recent times, Biorr of the Twin Fangs is known as the wielder of this weapon.",
+   "stats": {
+    "phys": "130",
+    "plague": "0",
+    "magic": "0",
+    "critical": "0",
+    "fire": "0",
+    "durability": "230",
+    "bleed": "0",
+    "weight": "10.0",
+    "poison": "0",
+    "damageReduction": "70/10",
+    "guardBreakReduction": "45",
+    "buffable": "???",
+    "damageType": "Normal"
+   },
+   "scaling": {
+    "STR": "D",
+    "DEX": "E"
+   },
+   "requirements": {
+    "STR": "26"
+   },
+   "upgradePath": "Regular +10 (Sharpstone / Hardstone); Quality +5: from +3 with Clearstone; Crushing +5: from +3 with Greystone; Dragon +5: from +3 with Dragonstone; Moon +5: from +6 with Moonlightstone; Blessed +5: from +6 with Faintstone; Morion Blade: Great Sword +8 + Storm Demon Soul (Blacksmith Ed)",
+   "location": "Dropped by: Red Eye Knight | Found in: Inner Ward, on the balcony next to the Dregling Merchant.",
+   "source": {
+    "label": "Fextralife – Great Sword",
+    "url": "https://demonssouls.wiki.fextralife.com/Great_Sword",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "blind",
+   "name": "Blind",
+   "type": "Curved Sword",
+   "description": "A curved sword with a perfectly transparent blade. Selen Vinland, the dull-gold knight, was famously dauntless, and this sword was equally well-known as a Vinland family treasure. The blade is illusory, and as light as a feather, allowing it to pass through any shield's defenses.",
+   "stats": {
+    "phys": "70",
+    "plague": "0",
+    "magic": "0",
+    "critical": "2.125",
+    "fire": "0",
+    "durability": "50",
+    "bleed": "120",
+    "weight": "0.1",
+    "poison": "0",
+    "damageReduction": "10/10",
+    "guardBreakReduction": "25",
+    "buffable": "No",
+    "damageType": "Slashing"
+   },
+   "scaling": {
+    "DEX": "S"
+   },
+   "requirements": {
+    "STR": "3",
+    "DEX": "24"
+   },
+   "upgradePath": "Unique weapon: upgraded with Colorless Demon Souls at Blacksmith Ed (after the Searing Demon Soul), 5, max +4",
+   "location": "Dropped by: Black Phantom Selen Vinland at Swamp of Sorrow.",
+   "source": {
+    "label": "Fextralife – Blind",
+    "url": "https://demonssouls.wiki.fextralife.com/Blind",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "falchion",
+   "name": "Falchion",
+   "type": "Curved Sword",
+   "description": "A standard curved sword. A slash-based weapon, whose main attack — by way of thrusting the blade — inflicts heavy damage upon soft flesh, but conversely has limited effect on metal armor, or hard scales. Also, it causes the target to bleed.",
+   "stats": {
+    "phys": "85",
+    "plague": "0",
+    "magic": "0",
+    "critical": "0",
+    "fire": "0",
+    "durability": "120",
+    "bleed": "120",
+    "weight": "1.5",
+    "poison": "0",
+    "damageReduction": "45/10",
+    "guardBreakReduction": "30",
+    "buffable": "???",
+    "damageType": "Slashing"
+   },
+   "scaling": {
+    "STR": "E",
+    "DEX": "D"
+   },
+   "requirements": {
+    "STR": "9",
+    "DEX": "10"
+   },
+   "upgradePath": "Regular +10 (Sharpstone / Hardstone) — totals 55 Shard / 29 Large Shard / 24 Chunk / 1 Pure; Quality +5: from +3 with Clearstone — totals 25 Shard / 9 Chunk / 1 Pure; Sharp +5: from +0 with Bladestone — totals 25 Shard / 9 Chunk / 1 Pure; Tearing +5: from +3 with Suckerstone — totals 25 Shard / 9 Chunk / 1 Pure; Mercury +5: from +3 with Mercurystone — totals 25 Shard / 9 Chunk / 1 Pure; Moon +5: from +6 with Moonlightstone — totals 25 Shard / 9 Chunk / 1 Pure; Crescent +5: from +6 with Moonshadestone — totals 25 Shard / 9 Chunk / 1 Pure; Large Sword of Searching: Falchion +8 + Hero Demon Soul (Blacksmith Ed)",
+   "location": "Bought From: Graverobber Blige for 1500-souls | Wanderer starting weapon | Crescent Falchion +1 found in Islands Edge (World 4-1)",
+   "source": {
+    "label": "Fextralife – Falchion",
+    "url": "https://demonssouls.wiki.fextralife.com/Falchion",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "kilij",
+   "name": "Kilij",
+   "type": "Curved Sword",
+   "description": "A large and heavy curved sword used mainly for severing. A slashing weapon that inflicts heavy damage upon soft flesh but has a limited effect on metal armor- and hard scales. In addition, it causes its target to bleed.",
+   "stats": {
+    "phys": "90",
+    "plague": "0",
+    "magic": "0",
+    "critical": "0",
+    "fire": "0",
+    "durability": "140",
+    "bleed": "120",
+    "weight": "3.0",
+    "poison": "0",
+    "damageReduction": "50/10",
+    "guardBreakReduction": "35",
+    "buffable": "Yes",
+    "damageType": "Slashing"
+   },
+   "scaling": {
+    "STR": "E",
+    "DEX": "D"
+   },
+   "requirements": {
+    "STR": "14",
+    "DEX": "10"
+   },
+   "upgradePath": "Regular +10 (Sharpstone) — totals 55 Shard / 29 Large Shard / 14 Chunk / 1 Pure; Quality +5: from +3 with Clearstone — totals 25 Shard / 9 Chunk / 1 Pure; Sharp +5: from +0 with Bladestone — totals 25 Shard / 9 Chunk / 1 Pure; Tearing +5: from +3 with Suckerstone — totals 25 Shard / 9 Chunk / 1 Pure; Mercury +5: from +3 with Mercurystone — totals 25 Shard / 9 Chunk / 1 Pure; Moon +5: from +6 with Moonlightstone — totals 25 Shard / 9 Chunk / 1 Pure; Crescent +5: from +6 with Moonshadestone — totals 25 Shard / 9 Chunk / 1 Pure; Large Sword of Searching: Kilij +8 + Hero Demon Soul (Blacksmith Ed)",
+   "location": "Found in: Island's Edge, the area where you fight the Vanguard, on a corpse near a well. | Dropped by: Gold Skeleton",
+   "source": {
+    "label": "Fextralife – Kilij",
+    "url": "https://demonssouls.wiki.fextralife.com/Kilij",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "large-sword-of-searching",
+   "name": "Large Sword of Searching",
+   "type": "Curved Sword",
+   "description": "A large, curved sword made of crystal, with an enormous crescent blade. It was forged from the Soul of the Demon \"Old Hero.\" The rickety blade has become severely weathered due to years of fighting. The Old Hero is also called the \"Searcher of Storms,\" and its Soul brings its wielder good fortune in obtaining more items.",
+   "stats": {
+    "phys": "170",
+    "plague": "0",
+    "magic": "0",
+    "critical": "0",
+    "fire": "0",
+    "durability": "400",
+    "bleed": "120",
+    "weight": "8.0",
+    "poison": "0",
+    "damageReduction": "70/10",
+    "guardBreakReduction": "45",
+    "buffable": "No",
+    "damageType": "Slashing"
+   },
+   "scaling": {
+    "STR": "D",
+    "DEX": "D"
+   },
+   "requirements": {
+    "STR": "24",
+    "DEX": "16"
+   },
+   "upgradePath": "",
+   "location": "This weapon is created at Blacksmith Ed using a Hero Demon Soul and one of the following items: | Claws +8 | Broad Sword +8 | Flamberge +8 | Shotel +8 | Scimitar +8 | Falchion +8 | Kilij +8 | Uchigatana +8 | War Scythe +8",
+   "source": {
+    "label": "Fextralife – Large Sword of Searching",
+    "url": "https://demonssouls.wiki.fextralife.com/Large_Sword_of_Searching",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "scimitar",
+   "name": "Scimitar",
+   "type": "Curved Sword",
+   "description": "A small curved sword weapon. This slashing weapon inflicts heavy damage upon soft flesh but has a limited effect on metal armor and hard scales. Causes targets to bleed.",
+   "stats": {
+    "phys": "80",
+    "plague": "0",
+    "magic": "0",
+    "critical": "0",
+    "fire": "0",
+    "durability": "120",
+    "bleed": "120",
+    "weight": "1.0",
+    "poison": "0",
+    "damageReduction": "45/10",
+    "guardBreakReduction": "30",
+    "buffable": "Yes",
+    "damageType": "Slashing"
+   },
+   "scaling": {
+    "STR": "E",
+    "DEX": "D"
+   },
+   "requirements": {
+    "STR": "8",
+    "DEX": "10"
+   },
+   "upgradePath": "Regular +10 (Sharpstone) — totals 45 Shard / 23 Large Shard / 11 Chunk / 1 Pure; Quality +5: from +3 with Clearstone — totals 20 Shard / 7 Chunk / 1 Pure; Sharp +5: from +0 with Bladestone — totals 20 Shard / 7 Chunk / 1 Pure; Tearing +5: from +3 with Suckerstone — totals 20 Shard / 7 Chunk / 1 Pure; Mercury +5: from +3 with Mercurystone — totals 20 Shard / 7 Chunk / 1 Pure; Moon +5: from +6 with Moonlightstone — totals 20 Shard / 7 Chunk / 1 Pure; Crescent +5: from +6 with Moonshadestone — totals 20 Shard / 7 Chunk / 1 Pure; Large Sword of Searching: Scimitar +8 + Hero Demon Soul (Blacksmith Ed)",
+   "location": "Bought From: Graverobber Blige for 1000 souls. | Found in: Gates of Boletaria, where you fight a Blue Eye Knight with Ostrava, on the left side there is a corpse that contains one Scimitar.",
+   "source": {
+    "label": "Fextralife – Scimitar",
+    "url": "https://demonssouls.wiki.fextralife.com/Scimitar",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "shotel",
+   "name": "Shotel",
+   "type": "Curved Sword",
+   "description": "A unique curved sword especially designed to counter shields. It can be awkward to use, but a wielder who can control it can greatly reduce the effectiveness of the enemy's guard. It has an ominous silhouette, and is said to be favored by a certain group of assassins.",
+   "stats": {
+    "phys": "70",
+    "plague": "0",
+    "magic": "0",
+    "critical": "0",
+    "fire": "0",
+    "durability": "100",
+    "bleed": "120",
+    "weight": "1.5",
+    "poison": "0",
+    "damageReduction": "45/10",
+    "guardBreakReduction": "30",
+    "buffable": "Yes",
+    "damageType": "Slashing"
+   },
+   "scaling": {
+    "STR": "E",
+    "DEX": "D"
+   },
+   "requirements": {
+    "STR": "10",
+    "DEX": "16"
+   },
+   "upgradePath": "Regular +10 (Sharpstone / Hardstone) — totals 55 Shard / 29 Large Shard / 14 Chunk / 1 Pure; Quality +5: from +3 with Clearstone — totals 25 Shard / 9 Chunk / 1 Pure; Sharp +5: from +0 with Bladestone — totals 6 Shard / 9 Chunk / 1 Pure; Tearing +5: from +3 with Suckerstone — totals 6 Shard / 9 Chunk / 1 Pure; Mercury +5: from +3 with Mercurystone — totals 6 Shard / 9 Chunk / 1 Pure; Moon +5: from +6 with Moonlightstone — totals 6 Shard / 9 Chunk / 1 Pure; Crescent +5: from +6 with Moonshadestone — totals 6 Shard / 9 Chunk / 1 Pure; Large Sword of Searching: Shotel +8 + Hero Demon Soul (Blacksmith Ed)",
+   "location": "Found in: Swamp of Sorrow, near the last fog door of the level, on the shanty town full of Depraved Ones. | Dropped by: Silver Skeleton",
+   "source": {
+    "label": "Fextralife – Shotel",
+    "url": "https://demonssouls.wiki.fextralife.com/Shotel",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "hiltless",
+   "name": "Hiltless",
+   "type": "Katana",
+   "description": "This uchigatana is named for its lack of a hilt. The blade appears somehow wet. A fine piece of work with an intricate design forged by a famous swordsmith in a distant land. Extremely difficult to handle owing to the fact that it must be held by the blade, inevitably injuring the wielder.",
+   "stats": {
+    "phys": "121",
+    "plague": "0",
+    "magic": "0",
+    "critical": "0",
+    "fire": "0",
+    "durability": "70",
+    "bleed": "180",
+    "weight": "4.5",
+    "poison": "0",
+    "damageReduction": "45/10",
+    "guardBreakReduction": "30",
+    "buffable": "Yes",
+    "damageType": "Slashing, Piercing"
+   },
+   "scaling": {
+    "STR": "E",
+    "DEX": "B"
+   },
+   "requirements": {
+    "STR": "18",
+    "DEX": "19"
+   },
+   "upgradePath": "Unique weapon: upgraded with Colorless Demon Souls at Blacksmith Ed (after the Searing Demon Soul), 5, max +5",
+   "location": "Found in: The Ritual Path, on a small room in the area full of Slugs. It is being protected by four Phosphorescent Slug. | Dropped by: Black Phantom Satsuki",
+   "source": {
+    "label": "Fextralife – Hiltless",
+    "url": "https://demonssouls.wiki.fextralife.com/Hiltless",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "magic-sword-makoto",
+   "name": "Magic Sword \"Makoto\"",
+   "type": "Katana",
+   "description": "A cursed katana that has appeared in folklore through the ages. Named for Makoto the giant, who lived in a distant land. Countless, unique teeth have been carved into its blade. These teeth ravage the flesh, never to heal again. Cursed weapons, like the Makoto, are said to devour the wielder's essence and rob their warmth. Innumerable warriors continue to be taken by the Makoto's allure nevertheless.",
+   "stats": {
+    "phys": "210",
+    "plague": "0",
+    "magic": "0",
+    "critical": "0",
+    "fire": "0",
+    "durability": "70",
+    "bleed": "327",
+    "weight": "5.5",
+    "poison": "0",
+    "damageReduction": "0",
+    "guardBreakReduction": "0",
+    "buffable": "No",
+    "damageType": "Slashing, Piercing"
+   },
+   "scaling": {
+    "STR": "E"
+   },
+   "requirements": {
+    "STR": "18",
+    "DEX": "13"
+   },
+   "upgradePath": "Unique weapon: upgraded with Colorless Demon Souls at Blacksmith Ed (after the Searing Demon Soul), 5, max +5",
+   "location": "Found in: Fort The Ritual Path, after the first reaper on a rock in the hole that Patches the Hyena kicks you in (Pure White World Tendency required)",
+   "source": {
+    "label": "Fextralife – Magic Sword \"Makoto\"",
+    "url": "https://demonssouls.wiki.fextralife.com/Magic_Sword_Makoto",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "uchigatana",
+   "name": "Uchigatana",
+   "type": "Katana",
+   "description": "A keen, thinly bladed katana forged in a distant country. The long black blade is heavier than it looks. It has very high attack power and causes enemies to bleed, but the fragile blade is easily nicked.",
+   "stats": {
+    "phys": "95",
+    "plague": "0",
+    "magic": "0",
+    "critical": "0",
+    "fire": "0",
+    "durability": "70",
+    "bleed": "180",
+    "weight": "5.0",
+    "poison": "0",
+    "damageReduction": "45/10",
+    "guardBreakReduction": "30",
+    "buffable": "Yes",
+    "damageType": "Slashing, Piercing"
+   },
+   "scaling": {
+    "STR": "E",
+    "DEX": "D"
+   },
+   "requirements": {
+    "STR": "18",
+    "DEX": "13"
+   },
+   "upgradePath": "Regular +10 (Sharpstone / Hardstone) — totals 74 Shard / 36 Large Shard / 18 Chunk / 1 Pure; Quality +5: from +3 with Clearstone — totals 34 Shard / 12 Chunk / 1 Pure; Sharp +5: from +0 with Bladestone — totals 34 Shard / 12 Chunk / 1 Pure; Tearing +5: from +0 with Suckerstone — totals 34 Shard / 12 Chunk / 1 Pure; Mercury +5: from +3 with Mercurystone — totals 34 Shard / 12 Chunk / 1 Pure; Moon +5: from +6 with Moonlightstone — totals 34 Shard / 12 Chunk / 1 Pure; Crescent +5: from +6 with Moonshadestone — totals 34 Shard / 12 Chunk / 1 Pure; Large Sword of Searching: Uchigatana +8 + Hero Demon Soul (Blacksmith Ed)",
+   "location": "Found in: Island's Edge Treasure, behind where the Vanguard is. Can be obtained without fighting it if you take the underground route through the illusory wall corridor. | Dropped by: Black Skeleton",
+   "source": {
+    "label": "Fextralife – Uchigatana",
+    "url": "https://demonssouls.wiki.fextralife.com/Uchigatana",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "epee-rapier",
+   "name": "Epee Rapier",
+   "type": "Thrusting Sword",
+   "description": "A ceremonial rapier with intricate golden designs. It is a weapon favored by those of a masked society who meet in secret to discuss the harnessing of Souls. It is imbued with a strong, magical flame, which is one reason why these vicious people are feared.",
+   "stats": {
+    "phys": "50",
+    "plague": "0",
+    "magic": "0",
+    "critical": "0",
+    "fire": "80",
+    "durability": "400",
+    "bleed": "0",
+    "weight": "1.5",
+    "poison": "0",
+    "damageReduction": "45/10",
+    "guardBreakReduction": "30",
+    "buffable": "No",
+    "damageType": "Piercing"
+   },
+   "scaling": {
+    "STR": "E",
+    "DEX": "C",
+    "MAG": "C"
+   },
+   "requirements": {
+    "STR": "9",
+    "DEX": "14",
+    "MAG": "24"
+   },
+   "upgradePath": "Unique weapon: upgraded with Colorless Demon Souls at Blacksmith Ed (after the Searing Demon Soul), 5, max +5",
+   "location": "Found in: Upper Latria. Can be found, where the heart used to be. | Dropped by: Mephistopheles",
+   "source": {
+    "label": "Fextralife – Epee Rapier",
+    "url": "https://demonssouls.wiki.fextralife.com/Epee_Rapier",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "estoc",
+   "name": "Estoc",
+   "type": "Thrusting Sword",
+   "description": "Large rapier. They are effective against metal armor etc, but hard to overpower shield holder, and easily parried. It also can attack while holding a shield. When used in the left hand, it is more effective with parrying than defending.",
+   "stats": {
+    "phys": "80",
+    "magic": "0",
+    "fire": "0",
+    "durability": "150",
+    "weight": "1.5",
+    "damageReduction": "45/10",
+    "guardBreakReduction": "30",
+    "buffable": "???",
+    "damageType": "Piercing"
+   },
+   "scaling": {
+    "STR": "E",
+    "DEX": "D",
+    "MAG": "C"
+   },
+   "requirements": {
+    "STR": "9",
+    "DEX": "12"
+   },
+   "upgradePath": "Regular +10 (Sharpstone / Hardstone) — totals 55 Shard / 29 Large Shard / 14 Chunk / 1 Pure; Quality +5: from +3 with Clearstone — totals 25 Shard / 9 Chunk / 1 Pure; Sharp +5: from +0 with Bladestone — totals 6 Shard / 5 Chunk / 1 Pure; Mercury +5: from +3 with Mercurystone — totals 6 Shard / 5 Chunk / 1 Pure; Fatal +5: from +3 with Marrowstone — totals 6 Shard / 5 Chunk / 1 Pure; Crescent +5: from +6 with Moonshadestone — totals 6 Shard / 5 Chunk / 1 Pure; Needle of Eternal Agony: Estoc +7 + Mixed Demon Soul (Blacksmith Ed)",
+   "location": "Dropped by: Prisoner | Found in: Prison of Hope treasure, on the first floor on the end of one balcony. It can be looted from a corpse that's by the rubble.",
+   "source": {
+    "label": "Fextralife – Estoc",
+    "url": "https://demonssouls.wiki.fextralife.com/Estoc",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "geris-stiletto",
+   "name": "Geri's Stiletto",
+   "type": "Thrusting Sword",
+   "description": "Though this exceedingly small rapier lacks a cutting edge, it is enchanted by a unique spell. Crafted by Geri, known for his magic handicrafts, and friend to Sage Freke the Visionary. Drains a small amount of MP from targets.",
+   "stats": {
+    "phys": "50",
+    "plague": "0",
+    "magic": "40",
+    "critical": "0",
+    "fire": "0",
+    "durability": "200",
+    "bleed": "0",
+    "weight": "0.7",
+    "poison": "0",
+    "damageReduction": "40/10",
+    "guardBreakReduction": "25",
+    "buffable": "Yes",
+    "damageType": "Piercing"
+   },
+   "scaling": {
+    "STR": "E",
+    "DEX": "D",
+    "MAG": "C"
+   },
+   "requirements": {
+    "STR": "7",
+    "MAG": "14"
+   },
+   "upgradePath": "Unique weapon: upgraded with Colorless Demon Souls at Blacksmith Ed (after the Searing Demon Soul), 5, max +5",
+   "location": "Prison of Hope reward - for rescuing Sage Freke, the Visionary..",
+   "source": {
+    "label": "Fextralife – Geri's Stiletto",
+    "url": "https://demonssouls.wiki.fextralife.com/Geri%27s_Stiletto",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "needle-of-eternal-agony",
+   "name": "Needle of Eternal Agony",
+   "type": "Thrusting Sword",
+   "description": "A large, curved needle with barbed stingers. This weapon was forged from the Soul of the Demon \"Maneater.\" It stabs its target, hooks into the flesh, and slowly grinds away at the Soul. Could it symbolize the relationship between the host and snake within the Maneater?",
+   "stats": {
+    "phys": "10",
+    "plague": "0",
+    "magic": "50",
+    "critical": "0",
+    "fire": "0",
+    "durability": "400",
+    "bleed": "0",
+    "weight": "0.5",
+    "poison": "0",
+    "damageReduction": "40/10",
+    "guardBreakReduction": "25",
+    "buffable": "No",
+    "damageType": "Piercing"
+   },
+   "scaling": {
+    "STR": "E",
+    "MAG": "C"
+   },
+   "requirements": {
+    "STR": "6",
+    "DEX": "20",
+    "MAG": "20"
+   },
+   "upgradePath": "",
+   "location": "Can be created at Blacksmith Ed, requires a using a Mixed Demon Soul and can be created from any of the following weapons: | Parrying Dagger +7 | Secret Dagger +7 | Mail Breaker +7 | Rapier +7 | Estoc +7 | Upgraded weapon - consumes Mixed Demon Soul.",
+   "source": {
+    "label": "Fextralife – Needle of Eternal Agony",
+    "url": "https://demonssouls.wiki.fextralife.com/Needle_of_Eternal_Agony",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "mail-breaker",
+   "name": "Mail Breaker",
+   "type": "Thrusting Sword",
+   "description": "An extremely small rapier. It can pierce even hard armors. Rapier weapons have a narrow range of attack but deal heavy damage. They are effective against metal armor, etc., but it's hard to overpower shield holders, and are easily parried.",
+   "stats": {
+    "phys": "70",
+    "magic": "0",
+    "fire": "0",
+    "durability": "200",
+    "weight": "0.5",
+    "damageReduction": "40/10",
+    "guardBreakReduction": "25",
+    "buffable": "Yes",
+    "damageType": "Piercing"
+   },
+   "scaling": {
+    "STR": "E",
+    "DEX": "D",
+    "MAG": "C"
+   },
+   "requirements": {
+    "STR": "6"
+   },
+   "upgradePath": "Regular +10 (Sharpstone / Hardstone) — totals 65 Shard / 18 Large Shard / 9 Chunk / 1 Pure; Quality +5: from +3 with Clearstone — totals 15 Shard / 6 Chunk / 1 Pure; Sharp +5: from +0 with Bladestone — totals 15 Shard / 6 Chunk / 1 Pure; Mercury +5: from +3 with Mercurystone — totals 15 Shard / 6 Chunk / 1 Pure; Fatal +5: from +3 with Marrowstone — totals 15 Shard / 6 Chunk / 1 Pure; Crescent +5: from +6 with Moonshadestone — totals 15 Shard / 6 Chunk / 1 Pure; Needle of Eternal Agony: Mail Breaker +7 + Mixed Demon Soul (Blacksmith Ed)",
+   "location": "Knight Class starting weapon | Found in: Gates of Boletaria, after the first fog door, turn right and go ahead until the end of the corridor. | Dropped by: Dregling",
+   "source": {
+    "label": "Fextralife – Mail Breaker",
+    "url": "https://demonssouls.wiki.fextralife.com/Mail_Breaker",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "rapier",
+   "name": "Rapier",
+   "type": "Thrusting Sword",
+   "description": "Small rapier. They are effect against metal armor etc, but hard to overpower shield holders, and easily parried. It's also can attack while holding a shield. When used in the left hand, it's more effective with parrying than defending.",
+   "stats": {
+    "phys": "75",
+    "plague": "0",
+    "magic": "0",
+    "critical": "0",
+    "fire": "0",
+    "durability": "150",
+    "bleed": "0",
+    "weight": "0.8",
+    "poison": "0",
+    "damageReduction": "45/10",
+    "guardBreakReduction": "30",
+    "buffable": "???",
+    "damageType": "Piercing"
+   },
+   "scaling": {
+    "STR": "E",
+    "DEX": "D",
+    "MAG": "C"
+   },
+   "requirements": {
+    "STR": "8",
+    "DEX": "12"
+   },
+   "upgradePath": "Regular +10 (Sharpstone) — totals 45 Shard / 27 Large Shard / 11 Chunk / 1 Pure; Quality +5: from +3 with Clearstone — totals 20 Shard / 7 Chunk / 1 Pure; Sharp +5: from +0 with Bladestone — totals 20 Shard / 7 Chunk / 1 Pure; Mercury +5: from +3 with Mercurystone — totals 20 Shard / 4 Chunk / 1 Pure; Fatal +5: from +3 with Marrowstone — totals 20 Shard / 4 Chunk / 1 Pure; Crescent +5: from +6 with Moonshadestone — totals 20 Shard / 4 Chunk / 1 Pure; Needle of Eternal Agony: Rapier +7 + Mixed Demon Soul (Blacksmith Ed)",
+   "location": "Bought From: Once Royal Mistress for 1500 souls, at Prison of Hope. | Found in: Prison of Hope, on the first floor on the edge of the balcony. You obtain a Mercury Rapier +1 | Royalty Class starting weapon",
+   "source": {
+    "label": "Fextralife – Rapier",
+    "url": "https://demonssouls.wiki.fextralife.com/Rapier",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "spiral-rapier",
+   "name": "Spiral Rapier",
+   "type": "Thrusting Sword",
+   "description": "A rare rapier with spiral grooves carved into the blade. It is the weapon of choice of the stone gargoyles in Latria. It is meant to inflict pain and cause bleeding rather than deal damage, which provides a glimpse into the insanity of the Old Monk.",
+   "stats": {
+    "phys": "70",
+    "plague": "0",
+    "magic": "0",
+    "critical": "0",
+    "fire": "0",
+    "durability": "100",
+    "bleed": "180",
+    "weight": "1.5",
+    "poison": "0",
+    "damageReduction": "45/10",
+    "guardBreakReduction": "30",
+    "buffable": "Yes",
+    "damageType": "Piercing"
+   },
+   "scaling": {
+    "STR": "E",
+    "DEX": "D",
+    "MAG": "C"
+   },
+   "requirements": {
+    "STR": "10",
+    "DEX": "16"
+   },
+   "upgradePath": "Regular +10 (Sharpstone / Hardstone) — totals 55 Shard / 34 Large Shard / 12 Chunk / 1 Pure; Quality +5: from +3 with Clearstone — totals 25 Shard / 9 Chunk / 1 Pure; Sharp +5: from +0 with Bladestone — totals 25 Shard / 9 Chunk / 1 Pure; Mercury +5: from +3 with Mercurystone — totals 25 Shard / 9 Chunk / 1 Pure; Fatal +5: from +3 with Marrowstone — totals 25 Shard / 9 Chunk / 1 Pure; Crescent +5: from +6 with Moonshadestone — totals 25 Shard / 9 Chunk / 1 Pure",
+   "location": "Dropped by: Gargoyle | An example of the drop is this",
+   "source": {
+    "label": "Fextralife – Spiral Rapier",
+    "url": "https://demonssouls.wiki.fextralife.com/Spiral_Rapier",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "battle-axe",
+   "name": "Battle Axe",
+   "type": "Axe",
+   "description": "A standard axe. A versatile weapon that provides a normal attack which is effective against a wide variety of targets. Following through with ones swing and connecting will deal an optimal hit, inflicting more damage than normal.",
+   "stats": {
+    "phys": "80",
+    "plague": "0",
+    "magic": "0",
+    "critical": "0",
+    "fire": "0",
+    "durability": "220",
+    "bleed": "0",
+    "weight": "2.5",
+    "poison": "0",
+    "damageReduction": "55.0/10.0",
+    "guardBreakReduction": "40",
+    "buffable": "???",
+    "damageType": "Normal"
+   },
+   "scaling": {
+    "STR": "D",
+    "DEX": "E"
+   },
+   "requirements": {
+    "STR": "11"
+   },
+   "upgradePath": "Regular +10 (Hardstone); Crushing +5: from +0 with Greystone; Quality +5: from +3 with Clearstone; Dragon +5: from +3 with Dragonstone; Moon +5: from +6 with Moonlightstone; Blessed +5: from +6 with Faintstone; Dozer Axe: Battle Axe +6 + Gray Demon Soul (Blacksmith Ed)",
+   "location": "Starting weapon of Hunter | Blacksmith Boldwin 1500 souls | Smithing Grounds treasure (Crushing +1), on a small balcony on the building from where you are being thrown stones at. | Boletaria Soldier drop | Benifits from sweet spot damage aka Master's Ring",
+   "source": {
+    "label": "Fextralife – Battle Axe",
+    "url": "https://demonssouls.wiki.fextralife.com/Battle_Axe",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "guillotine-axe",
+   "name": "Guillotine Axe",
+   "type": "Axe",
+   "description": "An axe which is used for beheadings which has seen a lot of wear and tear. It's fat-handled, short and heavy, but can sever the cervical vertebra in a single blow. It is disdained as a beheader's weapon especially in Boletaria.",
+   "stats": {
+    "phys": "87",
+    "plague": "0",
+    "magic": "0",
+    "critical": "0",
+    "fire": "0",
+    "durability": "250",
+    "bleed": "0",
+    "weight": "6.0",
+    "poison": "0",
+    "damageReduction": "55.0/10.0",
+    "guardBreakReduction": "40",
+    "buffable": "Yes",
+    "damageType": "Normal"
+   },
+   "scaling": {
+    "STR": "D",
+    "DEX": "E"
+   },
+   "requirements": {
+    "STR": "20"
+   },
+   "upgradePath": "Regular +10 (Hardstone); Crushing +5: from +0 with Greystone; Quality +5: from +3 with Clearstone; Dragon +5: from +3 with Dragonstone; Moon +5: from +6 with Moonlightstone; Blessed +5: from +6 with Faintstone; Dozer Axe: Guillotine Axe +6 + Gray Demon Soul (Blacksmith Ed)",
+   "location": "Dropped by Executioner Miralda Black Phantom in Gates of Boletaria, past the gate on the left side of the first bridge. Pure Black World Tendency required | Rare drop from the Axe wielding Boletaria Soldier | Benifits from sweet spot damage aka Master's Ring",
+   "source": {
+    "label": "Fextralife – Guillotine Axe",
+    "url": "https://demonssouls.wiki.fextralife.com/Guillotine_Axe",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "crescent-axe",
+   "name": "Crescent Axe",
+   "type": "Large Axe",
+   "description": "A long Handled large Axe with a crescent blade. The weapon of the fat ministers who show faint smiles. With quite a bit of weight, it shows the unbelievable power of the ministers who wield them.",
+   "stats": {
+    "phys": "115",
+    "critical": "0",
+    "magic": "0",
+    "durability": "200",
+    "fire": "0",
+    "weight": "7.0",
+    "bleed": "0",
+    "damageReduction": "55",
+    "poison": "0",
+    "magicFireReduction": "10",
+    "plague": "0",
+    "guardBreakReduction": "40",
+    "buffable": "Yes",
+    "damageType": "Normal"
+   },
+   "scaling": {
+    "STR": "D",
+    "DEX": "E"
+   },
+   "requirements": {
+    "STR": "16",
+    "DEX": "12"
+   },
+   "upgradePath": "Regular +10 (Hardstone); Crushing +5: from +0 with Greystone; Quality +5: from +3 with Clearstone; Dragon +5: from +3 with Dragonstone; Moon +5: from +6 with Moonlightstone; Blessed +5: from +6 with Faintstone; Dozer Axe: Crescent Axe +6 + Gray Demon Soul (Blacksmith Ed)",
+   "location": "Vendor: Dregling Merchant ( 1-3); Price = 10,000 Souls. | Drop: Fat Officials ( 1-3, 1-4, 2-1 and 2-2).",
+   "source": {
+    "label": "Fextralife – Crescent Axe",
+    "url": "https://demonssouls.wiki.fextralife.com/Crescent_Axe",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "dozer-axe",
+   "name": "Dozer Axe",
+   "type": "Large Axe",
+   "description": "A tremendously heavy, and bladeless axe. A weapon born from the soul of the demon \"Vanguard\". Humans are crushed in one fell swoop from this axe.",
+   "stats": {
+    "phys": "340",
+    "critical": "0",
+    "magic": "0",
+    "durability": "400",
+    "fire": "0",
+    "weight": "22",
+    "bleed": "0",
+    "damageReduction": "55",
+    "poison": "0",
+    "magicFireReduction": "10",
+    "plague": "0",
+    "guardBreakReduction": "40",
+    "buffable": "Yes",
+    "damageType": "Normal"
+   },
+   "scaling": {
+    "STR": "D"
+   },
+   "requirements": {
+    "STR": "30"
+   },
+   "upgradePath": "",
+   "location": "Can be crafted by Blacksmith Ed ( 2-1) after giving him the Searing Demon Soul. Requires: Gray Demon Soul & Battle Axe +6, Guillotine Axe +6, Crescent Axe +6, Great Axe +6 or Halberd +6.",
+   "source": {
+    "label": "Fextralife – Dozer Axe",
+    "url": "https://demonssouls.wiki.fextralife.com/Dozer_Axe",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "great-axe",
+   "name": "Great Axe",
+   "type": "Large Axe",
+   "description": "A large axe. A Cleaver. Similar to an axe, it is very versatile but it's too heavy to wield with ordinary strength. Using that weight, this weapon blows enemies away. The effect of a direct hit is also larger than that of a standard axe.",
+   "stats": {
+    "phys": "130",
+    "critical": "0",
+    "magic": "0",
+    "durability": "230",
+    "fire": "0",
+    "weight": "10",
+    "bleed": "0",
+    "damageReduction": "55",
+    "poison": "0",
+    "magicFireReduction": "10",
+    "plague": "0",
+    "guardBreakReduction": "40",
+    "buffable": "Yes",
+    "damageType": "Normal"
+   },
+   "scaling": {
+    "STR": "D",
+    "DEX": "E"
+   },
+   "requirements": {
+    "STR": "26"
+   },
+   "upgradePath": "Regular +10 (Hardstone); Crushing +5: from +0 with Greystone; Quality +5: from +3 with Clearstone; Dragon +5: from +3 with Dragonstone; Moon +5: from +6 with Moonlightstone; Blessed +5: from +6 with Faintstone; Dozer Axe: Great Axe +6 + Gray Demon Soul (Blacksmith Ed)",
+   "location": "Drop: Axe Soldier ( 1-1). | Found: 2-2 in the cavern where Patches, the Hyena and Filthy Man are. Head up the stairs to the right, after entering the cliffside. | Looted off a corpse at 2-2. Alternatively, if you take the left path from the Archstone, after the elevator room, keep going straight. Once you reach the open cavern, turn right and head towards the wooden platform. Walk up a bit and drop down to the third platform below.",
+   "source": {
+    "label": "Fextralife – Great Axe",
+    "url": "https://demonssouls.wiki.fextralife.com/Great_Axe",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "ritual-blade",
+   "name": "Ritual Blade",
+   "type": "Polearm",
+   "description": "A large ceremonial blade of an ancient tribe from an isolated island. An unorthodox weapon that uses its heavy weight to sever enemies. The effect of an optimal hit deals more damage than normal.",
+   "stats": {
+    "phys": "130",
+    "critical": "0",
+    "magic": "0",
+    "durability": "230",
+    "fire": "0",
+    "weight": "10",
+    "bleed": "0",
+    "damageReduction": "55",
+    "poison": "0",
+    "magicFireReduction": "10",
+    "plague": "0",
+    "guardBreakReduction": "40",
+    "buffable": "Yes",
+    "damageType": "Normal"
+   },
+   "scaling": {
+    "STR": "D",
+    "DEX": "E"
+   },
+   "requirements": {
+    "STR": "12"
+   },
+   "upgradePath": "",
+   "location": "Demon's Souls Remake Digital Deluxe Edition only. Can be retrieved from Stockpile Thomas ( The Nexus).",
+   "source": {
+    "label": "Fextralife – Ritual Blade",
+    "url": "https://demonssouls.wiki.fextralife.com/Ritual_Blade",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "club",
+   "name": "Club",
+   "type": "Hammer",
+   "description": "A coarse wooden club. Blunt weapons, which do not rely on blades, are effective against metal armor and hard sclaes, as well as draining a foe's stamina and breaking their shield defense. Following through with one's swing and connecting will land an optimal hit, inflicting more damage than normal.",
+   "stats": {
+    "phys": "75",
+    "plague": "0",
+    "magic": "0",
+    "critical": "0",
+    "fire": "0",
+    "durability": "120",
+    "bleed": "0",
+    "weight": "1.0",
+    "poison": "0",
+    "damageReduction": "45/10",
+    "guardBreakReduction": "30",
+    "buffable": "No",
+    "damageType": "Blunt"
+   },
+   "scaling": {
+    "STR": "C"
+   },
+   "requirements": {
+    "STR": "9"
+   },
+   "upgradePath": "Meat Cleaver: Club +0 + Swollen Demon Soul (Blacksmith Ed)",
+   "location": "Starting weapon of the Barbarian origin. | Bought From: Dregling Merchant for 500 souls | Found in: The Tunnel City. The treasure Patches, the Hyena offers you for free.",
+   "source": {
+    "label": "Fextralife – Club",
+    "url": "https://demonssouls.wiki.fextralife.com/Club",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "mace",
+   "name": "Mace",
+   "type": "Hammer",
+   "description": "A standard hammer. It's great effect against metal armor etc, as well as stealing the target's stamina and destroying shielded carriers. Also by carefully swinging and landing a direct hit it deals more damage than normal. (Critical Hit)",
+   "stats": {
+    "phys": "80",
+    "magic": "0",
+    "fire": "0",
+    "durability": "250",
+    "weight": "2.5",
+    "damageReduction": "50/10",
+    "guardBreakReduction": "35",
+    "buffable": "Yes",
+    "damageType": "Blunt"
+   },
+   "scaling": {
+    "STR": "C",
+    "DEX": "E"
+   },
+   "requirements": {
+    "STR": "11"
+   },
+   "upgradePath": "Regular +10 (Sharpstone / Hardstone); Quality +5: from +3 with Clearstone; Crushing +5: from +0 with Greystone; Dragon +5: from +3 with Dragonstone; Moon +5: from +6 with Moonlightstone; Blessed +5: from +6 with Faintstone; Meat Cleaver: Mace +6 + Swollen Demon Soul (Blacksmith Ed)",
+   "location": "Bought From: Filthy Woman for 3000 souls | Found in: Depraved Chasm, behind a lonely Giant Tick. | Priest Class starting weapon",
+   "source": {
+    "label": "Fextralife – Mace",
+    "url": "https://demonssouls.wiki.fextralife.com/Mace",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "morning-star",
+   "name": "Morning Star",
+   "type": "Hammer",
+   "description": "A hammer with multiple spines on a circular head. Especially used by the soldiers of the Gods. Succeeding the plusses of a blunt type weapon, the bleeding effect from the spines can be expected. A weapon with a high level of completion.",
+   "stats": {
+    "phys": "75",
+    "plague": "0",
+    "magic": "0",
+    "critical": "0",
+    "fire": "0",
+    "durability": "210",
+    "bleed": "100",
+    "weight": "2.5",
+    "poison": "0",
+    "damageReduction": "50/10",
+    "guardBreakReduction": "35",
+    "buffable": "Yes",
+    "damageType": "Blunt"
+   },
+   "scaling": {
+    "STR": "C",
+    "DEX": "E"
+   },
+   "requirements": {
+    "STR": "11"
+   },
+   "upgradePath": "Regular +10 (Sharpstone / Hardstone) — totals 55 Shard / 29 Large Shard / 14 Chunk / 1 Pure; Quality +5: from +3 with Clearstone — totals 25 Shard / 9 Chunk / 1 Pure; Crushing +5: from +0 with Greystone — totals 25 Shard / 9 Chunk / 1 Pure; Dragon +5: from +3 with Dragonstone — totals 25 Shard / 9 Chunk / 1 Pure; Moon +5: from +6 with Moonlightstone — totals 25 Shard / 9 Chunk / 1 Pure; Blessed +5: from +6 with Faintstone — totals 25 Shard / 9 Chunk / 1 Pure; Meat Cleaver: Morning Star +6 + Swollen Demon Soul (Blacksmith Ed)",
+   "location": "Found in: Depraved Chasm, on a platform near the beginning of the area. You have to push a vertical plank to reach it. | Dropped by: Giant Depraved One. | Benifits from sweet spot damage aka Master's Ring",
+   "source": {
+    "label": "Fextralife – Morning Star",
+    "url": "https://demonssouls.wiki.fextralife.com/Morning_Star",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "pickaxe",
+   "name": "Pickaxe",
+   "type": "Hammer",
+   "description": "A Pickaxe used by miners at work. Not intended for combat, but the hard protusion allows it to function as a thrusting weapon. The signature tool of the Stonefang mine.",
+   "stats": {
+    "phys": "80",
+    "plague": "0",
+    "magic": "0",
+    "critical": "0",
+    "fire": "0",
+    "durability": "300",
+    "bleed": "0",
+    "weight": "3.0",
+    "poison": "0",
+    "damageReduction": "45/10",
+    "guardBreakReduction": "30",
+    "buffable": "???",
+    "damageType": "Piercing"
+   },
+   "scaling": {
+    "STR": "C",
+    "DEX": "D"
+   },
+   "requirements": {
+    "STR": "13",
+    "DEX": "12"
+   },
+   "upgradePath": "Regular +10 (Sharpstone / Hardstone) — totals 55 Shard / 29 Large Shard / 14 Chunk / 1 Pure; Quality +5: from +3 with Clearstone — totals 25 Shard / 9 Chunk / 1 Pure; Sharp +5: from +0 with Bladestone — totals 25 Shard / 9 Chunk / 1 Pure; Tearing +5: from +3 with Suckerstone — totals 25 Shard / 9 Chunk / 1 Pure; Mercury +5: from +3 with Mercurystone — totals 25 Shard / 9 Chunk / 1 Pure; Moon +5: from +6 with Moonlightstone — totals 25 Shard / 9 Chunk / 1 Pure; Meat Cleaver: Pickaxe +6 + Swollen Demon Soul (Blacksmith Ed)",
+   "location": "Bought From: Filthy Man for 500 souls. | Found in: Smithing Grounds. Found in a room after 3 Scale Miners. | Dropped by: Scale Miner",
+   "source": {
+    "label": "Fextralife – Pickaxe",
+    "url": "https://demonssouls.wiki.fextralife.com/Pickaxe",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "war-pick",
+   "name": "War Pick",
+   "type": "Hammer",
+   "description": "A hammer that specializes in pierce attacks. A pickaxe modified for use in battle, this hammer has a hard, break-like protrusion that pierces even hard metal armor to deal damage. Following through with one's swing and landing the hit will deal a Direct Hit, which does more damage than normal.",
+   "stats": {
+    "phys": "80",
+    "plague": "0",
+    "magic": "0",
+    "critical": "0",
+    "fire": "0",
+    "durability": "170",
+    "bleed": "0",
+    "weight": "1.5",
+    "poison": "0",
+    "damageReduction": "45/10",
+    "guardBreakReduction": "30",
+    "buffable": "Yes",
+    "damageType": "Piercing"
+   },
+   "scaling": {
+    "STR": "C",
+    "DEX": "D"
+   },
+   "requirements": {
+    "STR": "10",
+    "DEX": "12"
+   },
+   "upgradePath": "Regular +10 (Sharpstone / Hardstone) — totals 55 Shard / 29 Large Shard / 14 Chunk / 1 Pure; Quality +5: from +3 with Clearstone — totals 25 Shard / 9 Chunk / 1 Pure; Sharp +5: from +0 with Bladestone — totals 25 Shard / 9 Chunk / 1 Pure; Tearing +5: from +3 with Suckerstone — totals 25 Shard / 9 Chunk / 1 Pure; Mercury +5: from +3 with Mercurystone — totals 25 Shard / 9 Chunk / 1 Pure; Moon +5: from +6 with Moonlightstone — totals 25 Shard / 9 Chunk / 1 Pure; Meat Cleaver: War Pick +6 + Swollen Demon Soul (Blacksmith Ed)",
+   "location": "Bought From: Filthy Woman for 4000 souls in Depraved Chasm or Swamp of Sorrow.",
+   "source": {
+    "label": "Fextralife – War Pick",
+    "url": "https://demonssouls.wiki.fextralife.com/War_Pick",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "bramd",
+   "name": "Bramd",
+   "type": "Large Hammer",
+   "description": "A dreadfully large, crude iron hammer. One of the Vinland family treasures. Said to have been bent into its shape by an old killer of giants. Increases resistance to plague and poison, but impossible to wield properly by anyone of ordinary strength, even when grasped with both hands.",
+   "stats": {
+    "phys": "210",
+    "plague": "0",
+    "magic": "0",
+    "critical": "0",
+    "fire": "0",
+    "durability": "900",
+    "bleed": "0",
+    "weight": "36.0",
+    "poison": "0",
+    "damageReduction": "70/10",
+    "guardBreakReduction": "45",
+    "buffable": "Yes",
+    "damageType": "Blunt"
+   },
+   "scaling": {
+    "STR": "B"
+   },
+   "requirements": {
+    "STR": "36"
+   },
+   "upgradePath": "Unique weapon: upgraded with Colorless Demon Souls at Blacksmith Ed (after the Searing Demon Soul), 5, max +5",
+   "location": "Dropped by: Black Phantom Garl Vinland.",
+   "source": {
+    "label": "Fextralife – Bramd",
+    "url": "https://demonssouls.wiki.fextralife.com/Bramd",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "great-club",
+   "name": "Great Club",
+   "type": "Large Hammer",
+   "description": "A large wooden club that is fortified with iron spikes. Among the larger weapons whick knock enemies back, this one is made of wood, making it relatively lightweight and easy to handle.",
+   "stats": {
+    "phys": "100",
+    "plague": "0",
+    "magic": "0",
+    "critical": "0",
+    "fire": "0",
+    "durability": "140",
+    "bleed": "0",
+    "weight": "5.0",
+    "poison": "0",
+    "damageReduction": "45/10",
+    "guardBreakReduction": "30",
+    "buffable": "No",
+    "damageType": "Blunt"
+   },
+   "scaling": {
+    "STR": "B"
+   },
+   "requirements": {
+    "STR": "20"
+   },
+   "upgradePath": "Meat Cleaver: Great Club +0 + Swollen Demon Soul (Blacksmith Ed)",
+   "location": "Found in: Smithing Grounds, can be found near the exploding barrel. Depraved Chasm Boss area | Dropped by: Giant Depraved One",
+   "source": {
+    "label": "Fextralife – Great Club",
+    "url": "https://demonssouls.wiki.fextralife.com/Great_Club",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "meat-cleaver",
+   "name": "Meat Cleaver",
+   "type": "Large Hammer",
+   "description": "A large cleaver forged from the soul of the Demon \"Adjudicator.\" It is the Adjudicator's own weapon, and transforms sinners into delicious-looking cuts of meat It also steals a small amount of HP from its target when attacking, reflecting the original Soul's avaricious nature.",
+   "stats": {
+    "phys": "90",
+    "plague": "0",
+    "magic": "90",
+    "critical": "0",
+    "fire": "0",
+    "durability": "400",
+    "bleed": "0",
+    "weight": "10.0",
+    "poison": "0",
+    "damageReduction": "70/10",
+    "guardBreakReduction": "45",
+    "buffable": "Yes",
+    "damageType": "Slashing"
+   },
+   "scaling": {
+    "STR": "B",
+    "DEX": "S",
+    "FTH": "A"
+   },
+   "requirements": {
+    "STR": "26",
+    "DEX": "0",
+    "FTH": "16"
+   },
+   "upgradePath": "",
+   "location": "Can be created at Blacksmith Ed requires a Swollen Demon Soul. | A Searing Demon Soul must be given to Blacksmith Ed before he will allow transformation of items into Unique Weapons. | It can be created from any of the following: | Club +0 | Great Club +0 | War Pick +6 | Mace +6 | Pickaxe +6 | Morning Star +6 | Iron Knuckles +6 | Mirdan Hammer +6",
+   "source": {
+    "label": "Fextralife – Meat Cleaver",
+    "url": "https://demonssouls.wiki.fextralife.com/Meat_Cleaver",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "claws",
+   "name": "Claws",
+   "type": "Fist Weapon",
+   "description": "A hand-to-hand weapon with protruding sharp claws. It has a slashing attack type. Not swaying from it's [sic] wicked appearance, it is the weapon of the King's covert operatives.",
+   "stats": {
+    "phys": "70",
+    "critical": "0",
+    "magic": "0",
+    "durability": "130",
+    "fire": "0",
+    "weight": "1.0",
+    "bleed": "120",
+    "poison": "0",
+    "plague": "0",
+    "buffable": "Yes"
+   },
+   "scaling": {
+    "STR": "E",
+    "DEX": "D"
+   },
+   "requirements": {
+    "STR": "8",
+    "DEX": "14"
+   },
+   "upgradePath": "Regular +10 (Sharpstone) — totals 35 Shard / 18 Large Shard / 9 Chunk / 1 Pure; Quality +5: from +3 with Clearstone — totals 15 Shard / 6 Chunk / 1 Pure; Sharp +5: from +0 with Bladestone — totals 15 Shard / 6 Chunk / 1 Pure; Tearing +5: from +3 with Suckerstone — totals 15 Shard / 6 Chunk / 1 Pure; Mercury +5: from +3 with Mercurystone — totals 15 Shard / 6 Chunk / 1 Pure; Moon +5: from +6 with Moonlightstone — totals 15 Shard / 6 Chunk / 1 Pure; Large Sword of Searching: Claws +8 + Hero Demon Soul (Blacksmith Ed)",
+   "location": "Found: 3-1, in a cell on the second floor you encounter (4F). You have to use Prison of Hope 4F Cell Key to open it. | Drop: Imperial Spy ( 1-3, 1-4).",
+   "source": {
+    "label": "Fextralife – Claws",
+    "url": "https://demonssouls.wiki.fextralife.com/Claws",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "hands-of-god",
+   "name": "Hands of God",
+   "type": "Fist Weapon",
+   "description": "A fist weapon bearing God's name. There was once a strong man who slaughtered dragons with his bare hands. His God-like fists earned him the title of the \"Legendary Big M.\"",
+   "stats": {
+    "phys": "50",
+    "critical": "0",
+    "magic": "70",
+    "durability": "200",
+    "fire": "0",
+    "weight": "3.5",
+    "bleed": "0",
+    "poison": "0",
+    "plague": "0",
+    "buffable": "No"
+   },
+   "scaling": {
+    "STR": "E"
+   },
+   "requirements": {
+    "STR": "19",
+    "FTH": "16"
+   },
+   "upgradePath": "Unique: upgraded only with Colorless Demon Souls at Blacksmith Ed after the Searing Demon Soul (Fextralife Colorless Demon Soul page)",
+   "location": "Dropped by: Blacksmith Boldwin ( The Nexus) and Blacksmith Ed ( 2-1). | Found in: 2-2, on a corpse guarded by 3 Rock Worms. To reach it, you can take the dangerous falling shortcut to Flamelurker 's arena, or start from 2-3. Head to the other end of the hallway preceding this arena.",
+   "source": {
+    "label": "Fextralife – Hands of God",
+    "url": "https://demonssouls.wiki.fextralife.com/Hands_of_God",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "iron-knuckles",
+   "name": "Iron Knuckles",
+   "type": "Fist Weapon",
+   "description": "A hand-to-hand weapon held in the fist. It's [sic] reach is the lowest of levels, but it hits fast. Stonefang's rough blacksmiths love this weapon and sometimes get drunk and slug it out.",
+   "stats": {
+    "phys": "65",
+    "critical": "0",
+    "magic": "0",
+    "durability": "300",
+    "fire": "0",
+    "weight": "1.0",
+    "bleed": "0",
+    "poison": "0",
+    "plague": "0",
+    "buffable": "Yes",
+    "damageType": "Blunt"
+   },
+   "scaling": {
+    "STR": "E",
+    "DEX": "E"
+   },
+   "requirements": {
+    "STR": "8"
+   },
+   "upgradePath": "Regular +10 (Hardstone); Quality +5: from +3 with Clearstone; Crushing +5: from +0 with Greystone; Dragon +5: from +3 with Dragonstone; Moon +5: from +6 with Moonlightstone; Blessed +5: from +6 with Faintstone; Meat Cleaver: Iron Knuckles +6 + Swollen Demon Soul (Blacksmith Ed)",
+   "location": "Dropped by: Scale Miner.",
+   "source": {
+    "label": "Fextralife – Iron Knuckles",
+    "url": "https://demonssouls.wiki.fextralife.com/Iron_Knuckles",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "istarelle",
+   "name": "Istarelle",
+   "type": "Spear",
+   "description": "A short spear of hard oak. It is covered with engravings and is one of the few Revelations from God.Once belonged to the Holy Knight Lizaia. Its holiness increases the wielder's resistance to plague and poison.",
+   "stats": {
+    "phys": "20",
+    "plague": "0",
+    "magic": "100",
+    "critical": "0",
+    "fire": "0",
+    "durability": "800",
+    "bleed": "0",
+    "weight": "1.0",
+    "poison": "0",
+    "damageReduction": "40/10",
+    "guardBreakReduction": "25",
+    "buffable": "No",
+    "damageType": "Piercing"
+   },
+   "scaling": {
+    "STR": "E",
+    "DEX": "D",
+    "FTH": "A"
+   },
+   "requirements": {
+    "STR": "9",
+    "DEX": "18",
+    "FTH": "24"
+   },
+   "upgradePath": "Unique weapon: upgraded with Colorless Demon Souls at Blacksmith Ed (after the Searing Demon Soul), 1 per level, max +5",
+   "location": "Found in: Depraved Chasm (Requires Pure White World Tendency). About halfway across the ledge connecting the 2 areas there will be a ladder to your left. Climb it and proceed across many ledges. You will have to kill Depraved Ones and a Giant Depraved One to cross the bridge. You will see three Giant Depraved Ones in a cave, Istarelle is right there.",
+   "source": {
+    "label": "Fextralife – Istarelle",
+    "url": "https://demonssouls.wiki.fextralife.com/Istarelle",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "scraping-spear",
+   "name": "Scraping Spear",
+   "type": "Spear",
+   "description": "A long spear with numerous barbs on the tip. Forged from the soul of the Phalanx Demon. Gradually corrodes the enemy's equipment, reducing durability.",
+   "stats": {
+    "phys": "100",
+    "plague": "0",
+    "magic": "0",
+    "critical": "0",
+    "fire": "0",
+    "durability": "400",
+    "bleed": "0",
+    "weight": "4.0",
+    "poison": "0",
+    "damageReduction": "40/10",
+    "guardBreakReduction": "25",
+    "buffable": "No",
+    "damageType": "Piercing"
+   },
+   "scaling": {
+    "STR": "E",
+    "DEX": "A"
+   },
+   "requirements": {
+    "STR": "15",
+    "DEX": "15"
+   },
+   "upgradePath": "",
+   "location": "Created by Blacksmith Ed, requires a Lead Demon Soul. Can be created using any one of the following items: | Short Spear +7 | Winged Spear + 7",
+   "source": {
+    "label": "Fextralife – Scraping Spear",
+    "url": "https://demonssouls.wiki.fextralife.com/Scraping_Spear",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "short-spear",
+   "name": "Short Spear",
+   "type": "Spear",
+   "description": "A standard spear. Spears function as rapiers with a longer reach. They have a narrow attack range but deal heavy damage. Spears perform well against metal armor and hard scales in particular. Howerver, they are easily parried and do little to break an enemy's guard, though they also allow one to attack with a shield raised.",
+   "stats": {
+    "phys": "80",
+    "plague": "0",
+    "magic": "0",
+    "critical": "0",
+    "fire": "0",
+    "durability": "180",
+    "bleed": "0",
+    "weight": "2.5",
+    "poison": "0",
+    "damageReduction": "40/10",
+    "guardBreakReduction": "25",
+    "buffable": "Yes",
+    "damageType": "Piercing"
+   },
+   "scaling": {
+    "STR": "E",
+    "DEX": "D"
+   },
+   "requirements": {
+    "STR": "11",
+    "DEX": "10"
+   },
+   "upgradePath": "Regular +10 (Sharpstone / Hardstone) — totals 45 Shard / 23 Large Shard / 11 Chunk / 1 Pure; Quality +5: from +3 with Clearstone — totals 18 Shard / 7 Chunk / 1 Pure; Sharp +5: from +0 with Bladestone — totals 18 Shard / 7 Chunk / 1 Pure; Mercury +5: from +3 with Mercurystone — totals 18 Shard / 7 Chunk / 1 Pure; Fatal +5: from +3 with Marrowstone — totals 18 Shard / 7 Chunk / 1 Pure; Moon +5: from +6 with Moonlightstone — totals 18 Shard / 7 Chunk / 1 Pure; Scraping Spear: Short Spear +7 + Lead Demon Soul (Blacksmith Ed)",
+   "location": "Bought From: Dregling Merchant for 1500 souls. | Starting weapon of the Soldier class.",
+   "source": {
+    "label": "Fextralife – Short Spear",
+    "url": "https://demonssouls.wiki.fextralife.com/Short_Spear",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "winged-spear",
+   "name": "Winged Spear",
+   "type": "Spear",
+   "description": "A long spear with winged lugs near the tip. Spears function as rapiers with a longer reach. They have a narrow attack range but deal heavy damage. Spears perform well against metal armor and hard scales in particular. However, they are easily parried and do little to break an enemy's guard, though they also allow one to attack with a shield raised.",
+   "stats": {
+    "phys": "85",
+    "plague": "0",
+    "magic": "0",
+    "critical": "0",
+    "fire": "0",
+    "durability": "160",
+    "bleed": "0",
+    "weight": "3.0",
+    "poison": "0",
+    "damageReduction": "40/10",
+    "guardBreakReduction": "25",
+    "buffable": "Yes",
+    "damageType": "Piercing"
+   },
+   "scaling": {
+    "STR": "E",
+    "DEX": "D"
+   },
+   "requirements": {
+    "STR": "13",
+    "DEX": "12"
+   },
+   "upgradePath": "Regular +10 (Sharpstone / Hardstone) — totals 55 Shard / 29 Large Shard / 14 Chunk / 1 Pure; Quality +5: from +3 with Clearstone — totals 25 Shard / 9 Chunk / 1 Pure; Sharp +5: from +0 with Bladestone — totals 25 Shard / 9 Chunk / 1 Pure; Mercury +5: from +3 with Mercurystone — totals 25 Shard / 9 Chunk / 1 Pure; Fatal +5: from +3 with Marrowstone — totals 25 Shard / 9 Chunk / 1 Pure; Moon +5: from +6 with Moonlightstone — totals 25 Shard / 9 Chunk / 1 Pure; Scraping Spear: Winged Spear +7 + Lead Demon Soul (Blacksmith Ed)",
+   "location": "Found in: The Lord's Path, on the first bridge where the Red Dragon does the bombing run. | Dropped by: Red Eye Knight",
+   "source": {
+    "label": "Fextralife – Winged Spear",
+    "url": "https://demonssouls.wiki.fextralife.com/Winged_Spear",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "halberd",
+   "name": "Halberd",
+   "type": "Polearm",
+   "description": "A standard pole weapon. It's nature is similar to that of an axe but with higher versatility. Pole weapons can mow down many targets in a single blow but are difficult to handle and require both strength and dexterity to use.",
+   "stats": {
+    "phys": "95",
+    "critical": "0",
+    "magic": "0",
+    "durability": "200",
+    "fire": "0",
+    "weight": "3.5",
+    "bleed": "0",
+    "damageReduction": "40",
+    "poison": "0",
+    "magicFireReduction": "10/28",
+    "plague": "0",
+    "guardBreakReduction": "25",
+    "buffable": "Yes",
+    "damageType": "Normal"
+   },
+   "scaling": {
+    "STR": "D",
+    "DEX": "E"
+   },
+   "requirements": {
+    "STR": "14",
+    "DEX": "12"
+   },
+   "upgradePath": "Regular +10 (Hardstone); Quality +5: from +3 with Clearstone; Crushing +5: from +3 with Greystone; Dragon +5: from +3 with Dragonstone; Moon +5: from +6 with Moonlightstone; Blessed +5: from +6 with Faintstone; Dozer Axe: Halberd +6 + Gray Demon Soul (Blacksmith Ed)",
+   "location": "Vendor: Filthy Woman ( Valley of Defilement). | Drop: Halberd Soldiers ( Boletarian Palace). | Temple Knight starting equipment.",
+   "source": {
+    "label": "Fextralife – Halberd",
+    "url": "https://demonssouls.wiki.fextralife.com/Halberd",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "mirdan-hammer",
+   "name": "Mirdan Hammer",
+   "type": "Polearm",
+   "description": "A pole weapon with a hard protrusion. Pole weapons can sweep multiple targets in a single swing, but are difficult to handle and require both strength and dexterity to wield properly. The first temple was built in Mird, a land that fell long ago. This weapon holds special significance for those of the faith.",
+   "stats": {
+    "phys": "95",
+    "critical": "0",
+    "magic": "0",
+    "durability": "200",
+    "fire": "0",
+    "weight": "3.5",
+    "bleed": "0",
+    "damageReduction": "40",
+    "poison": "0",
+    "magicFireReduction": "10/28",
+    "plague": "0",
+    "guardBreakReduction": "25",
+    "buffable": "Yes"
+   },
+   "scaling": {
+    "STR": "D",
+    "DEX": "E"
+   },
+   "requirements": {
+    "STR": "14",
+    "DEX": "12"
+   },
+   "upgradePath": "Regular +10 (Hardstone); Quality +5: from +3 with Clearstone; Crushing +5: from +3 with Greystone; Dragon +5: from +3 with Dragonstone; Moon +5: from +6 with Moonlightstone; Blessed +5: from +6 with Faintstone; Meat Cleaver: Mirdan Hammer +6 + Swollen Demon Soul (Blacksmith Ed)",
+   "location": "Drop: Scale Miner ( 2-1, 2-2). | Found: 5-2, where you drop the plank for the shortcut, drop to your left to find it.",
+   "source": {
+    "label": "Fextralife – Mirdan Hammer",
+    "url": "https://demonssouls.wiki.fextralife.com/Mirdan_Hammer",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "phosphorescent-pole",
+   "name": "Phosphorescent Pole",
+   "type": "Polearm",
+   "description": "A long rod inlaid with a blue jewel that emits phosphorescent light. Bladeless and lightweight, and due to a magical magical enhancement, it slowly regenerates the wielder's MP. One of Lord Rydell's most storied exploits is his theft of this weapon from the witch in the sky.",
+   "stats": {
+    "phys": "60",
+    "critical": "0",
+    "magic": "110",
+    "durability": "250",
+    "fire": "0",
+    "weight": "4.0",
+    "bleed": "0",
+    "damageReduction": "40",
+    "poison": "0",
+    "magicFireReduction": "10/28",
+    "plague": "0",
+    "guardBreakReduction": "25",
+    "buffable": "No"
+   },
+   "scaling": {
+    "STR": "D",
+    "DEX": "E",
+    "MAG": "D"
+   },
+   "requirements": {
+    "STR": "16",
+    "DEX": "16",
+    "MAG": "12"
+   },
+   "upgradePath": "Unique: upgraded only with Colorless Demon Souls at Blacksmith Ed after the Searing Demon Soul (Fextralife Colorless Demon Soul page)",
+   "location": "Drop: Lord Rydell Black Phantom ( 3-1).",
+   "source": {
+    "label": "Fextralife – Phosphorescent Pole",
+    "url": "https://demonssouls.wiki.fextralife.com/Phosphorescent_Pole",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "war-scythe",
+   "name": "War Scythe",
+   "type": "Polearm",
+   "description": "A pole weapon used for slash attacks. Pole weapons can mow down many targets in a single blow but are difficult to handle and require both strength and dexterity to use.",
+   "stats": {
+    "phys": "95",
+    "critical": "0",
+    "magic": "0",
+    "durability": "130",
+    "fire": "0",
+    "weight": "3.0",
+    "bleed": "180",
+    "damageReduction": "40",
+    "poison": "0",
+    "magicFireReduction": "10/28",
+    "plague": "0",
+    "guardBreakReduction": "25",
+    "buffable": "Yes"
+   },
+   "scaling": {
+    "STR": "D",
+    "DEX": "D"
+   },
+   "requirements": {
+    "STR": "13",
+    "DEX": "13"
+   },
+   "upgradePath": "Regular +10 (Sharpstone) — totals 55 Shard / 29 Large Shard / 14 Chunk / 1 Pure; Quality +5: from +3 with Clearstone — totals 25 Shard / 9 Chunk / 1 Pure; Sharp +5: from +0 with Bladestone — totals 25 Shard / 9 Chunk / 1 Pure; Tearing +5: from +3 with Suckerstone — totals 25 Shard / 9 Chunk / 1 Pure; Mercury +5: from +3 with Mercurystone — totals 25 Shard / 9 Chunk / 1 Pure; Moon +5: from +6 with Moonlightstone — totals 25 Shard / 9 Chunk / 1 Pure; Large Sword of Searching: War Scythe +8 + Hero Demon Soul (Blacksmith Ed)",
+   "location": "Found: 5-2, in the very first swamp section. Proceed forward as normal and you should find a side path, featuring a trail of many items on small islands. This side path should be to your left (or right in FM) and contains the War Scythe. | Drop: Reaper ( 4-2).",
+   "source": {
+    "label": "Fextralife – War Scythe",
+    "url": "https://demonssouls.wiki.fextralife.com/War_Scythe",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "reaper-scythe",
+   "name": "Reaper Scythe",
+   "type": "Polearm",
+   "description": "A pole weapon with a curved blade on one end used for slash attacks. Originally wielded by a sorcerer that commanded spirits of the dead. Pole weapons can mow down many targets in a single blow but are difficult to handle and require both strength and dexterity to use.",
+   "stats": {
+    "phys": "95",
+    "critical": "0",
+    "magic": "0",
+    "durability": "130",
+    "fire": "0",
+    "weight": "3.0",
+    "bleed": "180",
+    "damageReduction": "40",
+    "poison": "0",
+    "magicFireReduction": "10/28",
+    "plague": "0",
+    "guardBreakReduction": "25",
+    "buffable": "Yes"
+   },
+   "scaling": {
+    "STR": "D",
+    "DEX": "D"
+   },
+   "requirements": {
+    "STR": "13",
+    "DEX": "13"
+   },
+   "upgradePath": "",
+   "location": "Pre-order bonus for the Demon's Souls Remake. You can retrieve it from Stockpile Thomas ( The Nexus).",
+   "source": {
+    "label": "Fextralife – Reaper Scythe",
+    "url": "https://demonssouls.wiki.fextralife.com/Reaper_Scythe",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "compound-long-bow",
+   "name": "Compound Long Bow",
+   "type": "Bow",
+   "description": "A large composite bow. Its use requires strength but has higher power. Ranged weapons require the equipping of arrows as well as a bow. Also, from the position of readying an arrow, an aimed shot is possible with [L1].",
+   "stats": {
+    "phys": "45",
+    "plague": "0",
+    "magic": "0",
+    "critical": "0",
+    "fire": "0",
+    "durability": "100",
+    "bleed": "0",
+    "weight": "2.0",
+    "poison": "0",
+    "range": "60",
+    "buffable": "No",
+    "damageType": "Piercing"
+   },
+   "scaling": {
+    "STR": "D",
+    "DEX": "E"
+   },
+   "requirements": {
+    "STR": "22",
+    "DEX": "12"
+   },
+   "upgradePath": "Regular +10 (Sharpstone / Hardstone) — totals 55 Shard / 29 Large Shard / 14 Chunk / 1 Pure; Quality +5: from +3 with Clearstone — totals 25 Shard / 9 Chunk / 1 Pure; Sticky +5: from +3 with Spiderstone — totals 25 Shard / 9 Chunk / 1 Pure; Lava Bow: Compound Long Bow +7 + Hard Demon Soul (Blacksmith Ed)",
+   "location": "Found in: Island's Edge treasure. Past the first fog door, on the tower where a single Silver Skeleton archer is shooting at you. | Dropped by: Silver Skeleton",
+   "source": {
+    "label": "Fextralife – Compound Long Bow",
+    "url": "https://demonssouls.wiki.fextralife.com/Compound_Long_Bow",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "compound-short-bow",
+   "name": "Compound Short Bow",
+   "type": "Bow",
+   "description": "A small composite bow, fortified with materials other than wood, requiring additional strength to wield properly. To use a bow, arrows must also be equipped. When an arrow is readied, the user may aim carefully with L1.",
+   "stats": {
+    "phys": "40",
+    "plague": "0",
+    "magic": "0",
+    "critical": "0",
+    "fire": "0",
+    "durability": "100",
+    "bleed": "0",
+    "weight": "1.0",
+    "poison": "0",
+    "range": "50",
+    "buffable": "No",
+    "damageType": "Piercing"
+   },
+   "scaling": {
+    "STR": "D",
+    "DEX": "E"
+   },
+   "requirements": {
+    "STR": "18",
+    "DEX": "10"
+   },
+   "upgradePath": "Regular +10 (Sharpstone / Hardstone) — totals 45 Shard / 23 Large Shard / 11 Chunk / 1 Pure; Quality +5: from +3 with Clearstone — totals 20 Shard / 7 Chunk / 1 Pure; Sticky +5: from +3 with Spiderstone — totals 20 Shard / 7 Chunk / 1 Pure; Lava Bow: Compound Short Bow +7 + Hard Demon Soul (Blacksmith Ed)",
+   "location": "Found in: One can be found atop the second tower in The Lord's Path. | Dropped by: Silver Skeleton",
+   "source": {
+    "label": "Fextralife – Compound Short Bow",
+    "url": "https://demonssouls.wiki.fextralife.com/Compound_Short_Bow",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "lava-bow",
+   "name": "Lava Bow",
+   "type": "Bow",
+   "description": "A long bow with limbs like a spider's leg. It was forged from the Soul of the Demon \"Armor Spider.\" It imbues all arrows fired with fire attributes.",
+   "stats": {
+    "phys": "55",
+    "plague": "0",
+    "magic": "0",
+    "critical": "0",
+    "durability": "400",
+    "bleed": "0",
+    "weight": "2.0",
+    "poison": "0",
+    "range": "55",
+    "buffable": "No",
+    "damageType": "Piercing"
+   },
+   "scaling": {
+    "STR": "D",
+    "DEX": "D",
+    "MAG": "E"
+   },
+   "requirements": {
+    "STR": "21",
+    "DEX": "16"
+   },
+   "upgradePath": "",
+   "location": "Can be created at Blacksmith Ed requires a Hard Demon Soul. | It can be created from any of the following: Short Bow +7 Long Bow +7 Compound Short Bow +7 Compound Long Bow +7 | Short Bow +7 | Long Bow +7 | Compound Short Bow +7 | Compound Long Bow +7 | Must have given the Searing Demon Soul to Blacksmith Ed before upgrade is available. | Equipped any of the above weapon and then talk to Blacksmith Ed. Give him the soul of Flamelurker to upgrade.",
+   "source": {
+    "label": "Fextralife – Lava Bow",
+    "url": "https://demonssouls.wiki.fextralife.com/Lava_Bow",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "long-bow",
+   "name": "Long Bow",
+   "type": "Bow",
+   "description": "A large bow. It has a longer range of fire than a small bow. Ranged weapons require the equipping of arrows as well as a bow. Also, from the position of readying an arrow an aimed shot is possible with L1.",
+   "stats": {
+    "phys": "35",
+    "magic": "0",
+    "fire": "0",
+    "durability": "100",
+    "weight": "1.2",
+    "range": "60",
+    "buffable": "No",
+    "damageType": "Piercing"
+   },
+   "scaling": {
+    "STR": "D",
+    "DEX": "E"
+   },
+   "requirements": {
+    "STR": "15",
+    "DEX": "12"
+   },
+   "upgradePath": "Regular +10 (Sharpstone / Hardstone) — totals 55 Shard / 29 Large Shard / 14 Chunk / 1 Pure; Quality +5: from +3 with Clearstone — totals 25 Shard / 9 Chunk / 1 Pure; Sticky +5: from +3 with Spiderstone — totals 25 Shard / 9 Chunk / 1 Pure; Lava Bow: Long Bow +7 + Hard Demon Soul (Blacksmith Ed)",
+   "location": "Buy from Graverobber Blige for 3,000 souls | The starting bow of the Hunter class.",
+   "source": {
+    "label": "Fextralife – Long Bow",
+    "url": "https://demonssouls.wiki.fextralife.com/Long_Bow",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "short-bow",
+   "name": "Short Bow",
+   "type": "Bow",
+   "description": "A small bow. The most basic of ranged weapons. Ranged weapons require the equipping of arrows as well as a bow. Also, from the position of readying an arrow, an aimed shot is possible with [L1].",
+   "stats": {
+    "phys": "30",
+    "plague": "0",
+    "magic": "0",
+    "critical": "0",
+    "fire": "0",
+    "durability": "100",
+    "bleed": "0",
+    "weight": "0.6",
+    "poison": "0",
+    "range": "50",
+    "buffable": "???",
+    "damageType": "Piercing"
+   },
+   "scaling": {
+    "STR": "D",
+    "DEX": "E"
+   },
+   "requirements": {
+    "STR": "12",
+    "DEX": "10"
+   },
+   "upgradePath": "Regular +10 (Sharpstone / Hardstone) — totals 45 Shard / 23 Large Shard / 11 Chunk / 1 Pure; Quality +5: from +3 with Clearstone — totals 20 Shard / 7 Chunk / 1 Pure; Sticky +5: from +3 with Spiderstone — totals 20 Shard / 7 Chunk / 1 Pure; Lava Bow: Short Bow +7 + Hard Demon Soul (Blacksmith Ed)",
+   "location": "Thief starting weapon | Bought from Graverobber Blige for 1500 souls",
+   "source": {
+    "label": "Fextralife – Short Bow",
+    "url": "https://demonssouls.wiki.fextralife.com/Short_Bow",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "white-bow",
+   "name": "White Bow",
+   "type": "Bow",
+   "description": "A longbow made of gnarled wood. With its two intertwined strings, this legendary weapon is said to be impossible for a human to handle. Extremely long range.",
+   "stats": {
+    "phys": "100",
+    "plague": "0",
+    "magic": "0",
+    "critical": "0",
+    "fire": "0",
+    "durability": "300",
+    "bleed": "0",
+    "weight": "1.5",
+    "poison": "0",
+    "range": "75",
+    "buffable": "Yes",
+    "damageType": "Piercing"
+   },
+   "scaling": {
+    "STR": "D",
+    "DEX": "E"
+   },
+   "requirements": {
+    "STR": "30",
+    "DEX": "24",
+    "MAG": "0",
+    "FTH": "0"
+   },
+   "upgradePath": "Unique: upgraded only with Colorless Demon Souls at Blacksmith Ed after the Searing Demon Soul (Fextralife Colorless Demon Soul page)",
+   "location": "The White Bow can be obtained three times per game. | The Ritual Path: From the archstone, go down the stairs and enter the corridor where Graverobber Blige is. Enter the doorway and take care of the ghosts and reaper, then go down below to where the bottom of the platform where the reaper was. Enter the stairway to the left. Enter the hidden doorway at the 2nd flight of stairs, walk till seeing a Dual Katana Black Skeleton. Drop from the mountain that leads to a drop near the start of the map. After the first drop there will be a body with a White Bow and White Arrows. | The King's Tower: Kill the White Bow Black Phantom | Trade a Pure Moonlightstone with Sparkly the Crow, once per runthrough",
+   "source": {
+    "label": "Fextralife – White Bow",
+    "url": "https://demonssouls.wiki.fextralife.com/White_Bow",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "gargoyle-crossbow",
+   "name": "Gargoyle Crossbow",
+   "type": "Crossbow",
+   "description": "The crossbow favored by Latria's stone gargoyles. It is magically enhanced, and its attack power increases according to its wielder's magic strength.",
+   "stats": {
+    "phys": "10",
+    "plague": "0",
+    "magic": "40",
+    "critical": "0",
+    "fire": "0",
+    "durability": "150",
+    "bleed": "0",
+    "weight": "3.5",
+    "poison": "0",
+    "range": "60",
+    "buffable": "???",
+    "damageType": "Piercing"
+   },
+   "scaling": {
+    "MAG": "B"
+   },
+   "requirements": {
+    "STR": "12",
+    "MAG": "16"
+   },
+   "upgradePath": "",
+   "location": "There are three Gargoyles that drop the Crossbow in Upper Latria 3 - 2: | The midpoint of the walkway that leads to the first chain tower | To the right of the start of the walkway that leads to the second chain tower | The midpoint of the walkway joining the lower part of the fallen heart tower | A Dragon Halberd and a good Bow are ideal for farming the Gargoyles. Make sure that when you kill a Gargoyle, its corpse will be accessible when it falls.",
+   "source": {
+    "label": "Fextralife – Gargoyle Crossbow",
+    "url": "https://demonssouls.wiki.fextralife.com/Gargoyle_Crossbow",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "heavy-crossbow",
+   "name": "Heavy Crossbow",
+   "type": "Crossbow",
+   "description": "A large crossbow. An easy to handle, but powerful ranged weapon. With crossbows, the equipping of bolts is necessary. Also, aimed shots are not possible, and reloading takes time.",
+   "stats": {
+    "phys": "75",
+    "plague": "0",
+    "magic": "0",
+    "critical": "0",
+    "fire": "0",
+    "durability": "150",
+    "bleed": "0",
+    "weight": "5.0",
+    "poison": "0",
+    "range": "55",
+    "buffable": "No",
+    "damageType": "Piercing"
+   },
+   "scaling": {
+    "MAG": "B"
+   },
+   "requirements": {
+    "STR": "16"
+   },
+   "upgradePath": "",
+   "location": "Found in: Prison of Hope, near one of the fog doors.",
+   "source": {
+    "label": "Fextralife – Heavy Crossbow",
+    "url": "https://demonssouls.wiki.fextralife.com/Heavy_Crossbow",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "light-crossbow",
+   "name": "Light Crossbow",
+   "type": "Crossbow",
+   "description": "A small crossbow, easy to operate crossbow issued to Boletarian Soldiers. To fire a crossbow, bolts must also be equipped. Cannot be precision-fired, and reloading takes considerable time.",
+   "stats": {
+    "phys": "60",
+    "plague": "0",
+    "magic": "0",
+    "critical": "0",
+    "fire": "0",
+    "durability": "150",
+    "bleed": "0",
+    "weight": "2.5",
+    "poison": "0",
+    "range": "50",
+    "buffable": "???",
+    "damageType": "Piercing"
+   },
+   "scaling": {
+    "MAG": "B"
+   },
+   "requirements": {
+    "STR": "10"
+   },
+   "upgradePath": "",
+   "location": "Found in: Gates of Boletaria. Near the first Blue Eye Knight, there's a broken wall, drop there to find it. | Bought from Dregling Merchant for 2000 souls",
+   "source": {
+    "label": "Fextralife – Light Crossbow",
+    "url": "https://demonssouls.wiki.fextralife.com/Light_Crossbow",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "insanity-catalyst",
+   "name": "Insanity Catalyst",
+   "type": "Catalyst",
+   "description": "A catalyst wrapped in golden cloth. Forged from the Soul of the Old Monk Demon. Grants its wielder madness, drastically increasing the power of magic, but simultaneously halving one's maximum MP. If you have no future to lose, then who could blame you for placing your faith in the golden robes?",
+   "stats": {
+    "phys": "59",
+    "plague": "0",
+    "magic": "0",
+    "critical": "0",
+    "fire": "0",
+    "durability": "400",
+    "bleed": "0",
+    "weight": "0.5",
+    "poison": "0",
+    "damageReduction": "30/10",
+    "guardBreakReduction": "20",
+    "buffable": "No",
+    "magicSpellPower": "143"
+   },
+   "scaling": {
+    "STR": "E",
+    "MAG": "A"
+   },
+   "requirements": {
+    "STR": "6",
+    "MAG": "16"
+   },
+   "upgradePath": "",
+   "location": "Created at Blacksmith Ed from a Golden Demon Soul. | Can be created using any of the following: | Wooden Catalyst +0 | Silver Catalyst +0",
+   "source": {
+    "label": "Fextralife – Insanity Catalyst",
+    "url": "https://demonssouls.wiki.fextralife.com/Insanity_Catalyst",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "silver-catalyst",
+   "name": "Silver Catalyst",
+   "type": "Catalyst",
+   "description": "A silver catalyst for casting magic. Bestowed only to magicans of the distinguished Yormedaar School. A unique enchantment increases the wielder's maximum MP.",
+   "stats": {
+    "phys": "57",
+    "plague": "0",
+    "magic": "0",
+    "critical": "0",
+    "fire": "0",
+    "durability": "40",
+    "bleed": "0",
+    "weight": "0.5",
+    "poison": "0",
+    "damageReduction": "30/10",
+    "guardBreakReduction": "20",
+    "buffable": "Yes",
+    "magicSpellPower": "119"
+   },
+   "scaling": {
+    "STR": "E",
+    "MAG": "C"
+   },
+   "requirements": {
+    "STR": "6"
+   },
+   "upgradePath": "Insanity Catalyst: Silver Catalyst +0 + Golden Demon Soul (Blacksmith Ed)",
+   "location": "Starting equipment for Royalty class. | Found in: Prison of Hope, room opposite the \"liar\" and the Special Key.",
+   "source": {
+    "label": "Fextralife – Silver Catalyst",
+    "url": "https://demonssouls.wiki.fextralife.com/Silver_Catalyst",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "wooden-catalyst",
+   "name": "Wooden Catalyst",
+   "type": "Catalyst",
+   "description": "A wooden catalyst, and the most rudimentary tool for casting magic.",
+   "stats": {
+    "phys": "55",
+    "plague": "0",
+    "magic": "0",
+    "critical": "0",
+    "fire": "0",
+    "durability": "30",
+    "bleed": "0",
+    "weight": "0.3",
+    "poison": "0",
+    "damageReduction": "30/10",
+    "guardBreakReduction": "20",
+    "buffable": "Yes",
+    "magicSpellPower": "126"
+   },
+   "scaling": {
+    "MAG": "C"
+   },
+   "requirements": {
+    "STR": "5"
+   },
+   "upgradePath": "Insanity Catalyst: Wooden Catalyst +0 + Golden Demon Soul (Blacksmith Ed)",
+   "location": "In The Lord's Path (1 - 2) go ahead to the bridge above, then go through it. Turn right below the first tower, then go up the stairs. Loot the corpse at the right corner to get the Wooden Catalyst. | Found in Prison of Hope, 3F cell, along with Wizard's Clothes set. | Can be bought from Once Royal Mistress on the 4th floor of the Prison of Hope for 1,000 Souls | Starting equipment for Magician class.",
+   "source": {
+    "label": "Fextralife – Wooden Catalyst",
+    "url": "https://demonssouls.wiki.fextralife.com/Wooden_Catalyst",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "talisman-of-beasts",
+   "name": "Talisman of Beasts",
+   "type": "Talisman",
+   "description": "An old wooden amulet featuring a symbolic depiction of the Old One. Can be used to cast both miracles and magic. What was considered a depiction of God was in fact an image of the Old One, portrayed as a force of feral chaos.",
+   "stats": {
+    "phys": "50",
+    "miracleSpellPower": "121",
+    "damageReduction": "30",
+    "magicReduction": "10",
+    "durability": "150",
+    "weight": "0.2",
+    "buffable": "No",
+    "magicSpellPower": "121"
+   },
+   "scaling": {
+    "STR": "D",
+    "MAG": "C",
+    "FTH": "C"
+   },
+   "requirements": {
+    "STR": "4",
+    "MAG": "18",
+    "FTH": "18"
+   },
+   "upgradePath": "",
+   "location": "Reward: Mephistopheles quest line, when tasked to kill Ostrava, of Boletaria. Report back to receive it. | Drop: Scirvir, the Wanderer Black Phantom ( 2-2).",
+   "source": {
+    "label": "Fextralife – Talisman of Beasts",
+    "url": "https://demonssouls.wiki.fextralife.com/Talisman_of_Beasts",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "talisman-of-god",
+   "name": "Talisman of God",
+   "type": "Talisman",
+   "description": "A metal crafted amulet which resembles the symbol of God. Used to cast Miracles.",
+   "stats": {
+    "phys": "50",
+    "damageReduction": "30",
+    "magicReduction": "10",
+    "durability": "300",
+    "weight": "0.2",
+    "buffable": "No",
+    "miracleSpellPower": "131"
+   },
+   "scaling": {
+    "STR": "D",
+    "FTH": "B"
+   },
+   "requirements": {
+    "STR": "5"
+   },
+   "upgradePath": "",
+   "location": "Found: 4-1, looted from a corpse immediately before the first fog and to your right. | Found: 5-1, looted from a corpse after kicking down the first bridge. | Vendor: Filthy Woman ( Valley of Defilement); Price = 5,000 Souls. | Starting Equipment: Temple Knight and Priest classes.",
+   "source": {
+    "label": "Fextralife – Talisman of God",
+    "url": "https://demonssouls.wiki.fextralife.com/Talisman_of_God",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "buckler",
+   "name": "Buckler",
+   "type": "Shield (Small)",
+   "description": "A small shield that is especially conducive to parrying. Requires a fair amount of skill to use. Lightly-equipped soldiers often pair this with a rapier.",
+   "stats": {
+    "phys": "60",
+    "physReduction": "90",
+    "magic": "0",
+    "magicReduction": "30",
+    "fire": "0",
+    "fireReduction": "60",
+    "durability": "200",
+    "guardBreakReduction": "45",
+    "critical": "0",
+    "weight": "2.5",
+    "damageType": "Blunt"
+   },
+   "scaling": {
+    "STR": "D"
+   },
+   "requirements": {
+    "STR": "9",
+    "DEX": "12"
+   },
+   "upgradePath": "Regular +10 (Hardstone/Sharpstone)",
+   "location": "Royalty and Thief classes start with this shield | Can be bought from Once Royal Mistress for 1500 souls | Like the Parry dagger, it has a slightly larger parry window than all other shields. | All shields along with all other in-game parry tools has 7 parry frames while Thrusting Swords has 8 parry frames",
+   "source": {
+    "label": "Fextralife – Buckler",
+    "url": "https://demonssouls.wiki.fextralife.com/Buckler",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "leather-shield",
+   "name": "Leather Shield",
+   "type": "Shield (Small)",
+   "description": "A small, leatherbound shield. It is light, easy to handle, and has high defensive ability for its size. Hunters and the like regularly use this shield.",
+   "stats": {
+    "phys": "60",
+    "physReduction": "90",
+    "magic": "0",
+    "magicReduction": "30",
+    "fire": "0",
+    "fireReduction": "60",
+    "durability": "160",
+    "guardBreakReduction": "54",
+    "critical": "0",
+    "weight": "1.0",
+    "damageType": "Blunt"
+   },
+   "scaling": {
+    "STR": "D"
+   },
+   "requirements": {
+    "STR": "8"
+   },
+   "upgradePath": "",
+   "location": "Hunter and Magician starts with this shield | Can be bought from Graverobber Blige for 1000 souls",
+   "source": {
+    "label": "Fextralife – Leather Shield",
+    "url": "https://demonssouls.wiki.fextralife.com/Leather_Shield",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "rune-shield",
+   "name": "Rune Shield",
+   "type": "Shield (Small)",
+   "description": "A golden shield graced with an exquisite design. Fortified with an arcane force, protecting its wielder from magic attacks. The weapon of a great hero of legend, who also wielded the matching Rune Sword.",
+   "stats": {
+    "phys": "65",
+    "physReduction": "100",
+    "magic": "0",
+    "magicReduction": "60",
+    "fire": "0",
+    "fireReduction": "70",
+    "durability": "80",
+    "guardBreakReduction": "50",
+    "critical": "0",
+    "weight": "3.0",
+    "damageType": "Blunt"
+   },
+   "scaling": {
+    "STR": "D"
+   },
+   "requirements": {
+    "STR": "12",
+    "MAG": "18"
+   },
+   "upgradePath": "Unique: upgraded only with Colorless Demon Souls at Blacksmith Ed after the Searing Demon Soul (Fextralife Colorless Demon Soul page); Upgrade table on wiki goes +0 to +5",
+   "location": "Rune Sword and Rune Shield are also found in Upper Latria (3 - 2). | Defeat Black Phantom Ostrava in The King's Tower (1 - 4). He drops the Rune Sword and the Rune Shield.",
+   "source": {
+    "label": "Fextralife – Rune Shield",
+    "url": "https://demonssouls.wiki.fextralife.com/Rune_Shield",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "dregling-shield",
+   "name": "Dregling Shield",
+   "type": "Shield (Small)",
+   "description": "A shoddy wooden shield used by dreglings. Little more than a patchwork of wood scraps, this attempt at imitation can hardly be called a shield.",
+   "stats": {
+    "phys": "55",
+    "physReduction": "70",
+    "magic": "0",
+    "magicReduction": "30",
+    "fire": "0",
+    "fireReduction": "10",
+    "durability": "33",
+    "guardBreakReduction": "35",
+    "critical": "0",
+    "weight": "0.5",
+    "damageType": "Blunt"
+   },
+   "scaling": {
+    "STR": "D"
+   },
+   "requirements": {
+    "STR": "5"
+   },
+   "upgradePath": "",
+   "location": "Treasure in Inner Ward. Can be found midway through the stairs after the plaza. | Inner Ward: Found in this street corner | At the Inner Ward, when you are going up the stairs that has little corridors at the side. Can be found on a corpse on the third corridor. | Dropped by Dreglings in the Boletarian Palace.",
+   "source": {
+    "label": "Fextralife – Dregling Shield",
+    "url": "https://demonssouls.wiki.fextralife.com/Dregling_Shield",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "soldiers-shield",
+   "name": "Soldier's Shield",
+   "type": "Shield (Small)",
+   "description": "A small wooden shield issued to soldiers. Has a higher durability than an ordinary wooden shield, owing to efficiently-placed metal reinforcements.",
+   "stats": {
+    "phys": "60",
+    "physReduction": "90",
+    "magic": "0",
+    "magicReduction": "30",
+    "fire": "0",
+    "fireReduction": "60",
+    "durability": "190",
+    "guardBreakReduction": "50",
+    "critical": "0",
+    "weight": "2.0",
+    "damageType": "Blunt"
+   },
+   "scaling": {
+    "STR": "D"
+   },
+   "requirements": {
+    "STR": "10"
+   },
+   "upgradePath": "Regular +10 (Hardstone/Sharpstone)",
+   "location": "The Soldier class starts with this shield | Can be bought from the Dregling Merchant for 1000 souls.",
+   "source": {
+    "label": "Fextralife – Soldier's Shield",
+    "url": "https://demonssouls.wiki.fextralife.com/Soldier%27s_Shield",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "wooden-shield",
+   "name": "Wooden Shield",
+   "type": "Shield (Small)",
+   "description": "A small wooden shield. It is lighter than a metal shield, but because it has low damage absorption rate and durability, it breaks easily.",
+   "stats": {
+    "phys": "60",
+    "physReduction": "80",
+    "magic": "0",
+    "magicReduction": "30",
+    "fire": "0",
+    "fireReduction": "10",
+    "durability": "110",
+    "guardBreakReduction": "50",
+    "critical": "0",
+    "weight": "0.7",
+    "damageType": "Blunt"
+   },
+   "scaling": {
+    "STR": "D"
+   },
+   "requirements": {
+    "STR": "6"
+   },
+   "upgradePath": "",
+   "location": "Barbarian and Wanderer starts with this shield. | Can be bought from the Dregling Merchant for 500 souls. | Dropped by Soldiers (Axe) in The Lord's Path 1 - 2.",
+   "source": {
+    "label": "Fextralife – Wooden Shield",
+    "url": "https://demonssouls.wiki.fextralife.com/Wooden_Shield",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "dark-silver-shield",
+   "name": "Dark Silver Shield",
+   "type": "Shield (Standard)",
+   "description": "The dark silver shield of the Vinland Legacy. Known as the oldest of metals, the dark silver is said to purify dark malice. It protects the user from all magics.",
+   "stats": {
+    "phys": "70",
+    "physReduction": "100",
+    "magic": "0",
+    "magicReduction": "100",
+    "fire": "0",
+    "fireReduction": "70",
+    "durability": "450",
+    "guardBreakReduction": "50",
+    "critical": "0",
+    "weight": "5.0",
+    "damageType": "Blunt"
+   },
+   "scaling": {
+    "STR": "D"
+   },
+   "requirements": {
+    "STR": "16"
+   },
+   "upgradePath": "Unique: upgraded only with Colorless Demon Souls at Blacksmith Ed after the Searing Demon Soul (Fextralife Colorless Demon Soul page); Upgrade table on wiki goes +0 to +5",
+   "location": "Kill Garl Vinland, at Sanctuary of the Lost 5 - 4.",
+   "source": {
+    "label": "Fextralife – Dark Silver Shield",
+    "url": "https://demonssouls.wiki.fextralife.com/Dark_Silver_Shield",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "heater-shield",
+   "name": "Heater Shield",
+   "type": "Shield (Standard)",
+   "description": "Medium sized metal shield. Easy to handle, especially equipped by warriors of the gods. Its use is widespread.",
+   "stats": {
+    "phys": "65",
+    "physReduction": "100",
+    "magic": "0",
+    "magicReduction": "30",
+    "fire": "0",
+    "fireReduction": "70",
+    "durability": "200",
+    "guardBreakReduction": "53",
+    "critical": "0",
+    "weight": "3.0",
+    "damageType": "Blunt"
+   },
+   "scaling": {
+    "STR": "D"
+   },
+   "requirements": {
+    "STR": "11"
+   },
+   "upgradePath": "Regular +10 (Hardstone/Sharpstone)",
+   "location": "Priest and Temple Knight starts with this shield | Can be bought from Blacksmith Boldwin for 2000 souls | In The Tunnel City 2 -2, A Shade Heater Shield+2 can be found near the Filthy Man.",
+   "source": {
+    "label": "Fextralife – Heater Shield",
+    "url": "https://demonssouls.wiki.fextralife.com/Heater_Shield",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "kite-shield",
+   "name": "Kite Shield",
+   "type": "Shield (Standard)",
+   "description": "A medium-sized metal shield, issued to knights of the relatively advanced region to Boletaria's south. The yellow dragon crest signifies knights of low rank.",
+   "stats": {
+    "phys": "65",
+    "physReduction": "100",
+    "magic": "0",
+    "magicReduction": "30",
+    "fire": "0",
+    "fireReduction": "70",
+    "durability": "220",
+    "guardBreakReduction": "55",
+    "critical": "0",
+    "weight": "3.5",
+    "damageType": "Blunt"
+   },
+   "scaling": {
+    "STR": "D"
+   },
+   "requirements": {
+    "STR": "12"
+   },
+   "upgradePath": "Regular +10 (Hardstone/Sharpstone)",
+   "location": "The Knight class starts with this shield. | Dropped by Red Eye Knight in The King's Tower 1 - 4. | Dropped by Boletaria Soldier (Spear) in Inner Ward 1 - 3. | Treasure in the Prison of Hope 3 - 1, on the first floor. After reaching the end of the corridor turn right to find.",
+   "source": {
+    "label": "Fextralife – Kite Shield",
+    "url": "https://demonssouls.wiki.fextralife.com/Kite_Shield",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "knights-shield",
+   "name": "Knight's Shield",
+   "type": "Shield (Standard)",
+   "description": "A shield of the Boletarian knights. Proof of duty to the king. Using Stonefang's hardened iron, it is heavier and also stronger than a regular metal shield.",
+   "stats": {
+    "phys": "70",
+    "physReduction": "100",
+    "magic": "0",
+    "magicReduction": "30",
+    "fire": "0",
+    "fireReduction": "70",
+    "durability": "300",
+    "guardBreakReduction": "57",
+    "critical": "0",
+    "weight": "5.0",
+    "damageType": "Blunt"
+   },
+   "scaling": {
+    "STR": "D"
+   },
+   "requirements": {
+    "STR": "16"
+   },
+   "upgradePath": "Regular +10 (Hardstone/Sharpstone)",
+   "location": "Dropped by Red Eye Knight in The King's Tower 1 - 4. | Can be bought from the Dregling Merchant for 20,000 souls. | Dropped by Blue Eye Knight in the Gates of Boletaria 1 - 1, and The Lord's Path 1 - 2. | Treasure in The King's Tower 1 - 4, after the Blue Dragon changes position, drop to the base of the long staircase to find the shield alongside the Knight Sword.",
+   "source": {
+    "label": "Fextralife – Knight's Shield",
+    "url": "https://demonssouls.wiki.fextralife.com/Knight%27s_Shield",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "spiked-shield",
+   "name": "Spiked Shield",
+   "type": "Shield (Standard)",
+   "description": "A shield with numerous spikes on the face. Intended for attacking, the spikes can pierce the enemy. A rare weapon that sees little use in actual combat.",
+   "stats": {
+    "phys": "80",
+    "physReduction": "100",
+    "magic": "0",
+    "magicReduction": "30",
+    "fire": "0",
+    "fireReduction": "70",
+    "durability": "120",
+    "guardBreakReduction": "45",
+    "critical": "0",
+    "weight": "3.0",
+    "damageType": "Pierce"
+   },
+   "scaling": {
+    "STR": "E",
+    "DEX": "D"
+   },
+   "requirements": {
+    "STR": "11",
+    "DEX": "14"
+   },
+   "upgradePath": "Regular +10 (Hardstone/Sharpstone)",
+   "location": "Treasure in The Lord's Path 1 - 2, on the second section of the bridge where the Red Dragon does its bombing run. | Dropped by Boletaria Soldiers in Gates of Boletaria and in Inner Ward",
+   "source": {
+    "label": "Fextralife – Spiked Shield",
+    "url": "https://demonssouls.wiki.fextralife.com/Spiked_Shield",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "adjudicators-shield",
+   "name": "Adjudicator's Shield",
+   "type": "Shield (Large)",
+   "description": "A large wooden shield that depicts a brightly colored scene of the deceased being judged. On the other side, an epigram is carved in old script: 'Cowardly acts and the eating of birds must not be the deeds of a Hero of Storms. If the one being judged displeases the Adjudicator's master, the Golden Crow, the deceased soul will be gnawed upon until nothing but their bones remain.' Its user will recover HP a little at a time.",
+   "stats": {
+    "phys": "60",
+    "physReduction": "90",
+    "magic": "0",
+    "magicReduction": "50",
+    "fire": "0",
+    "fireReduction": "10",
+    "durability": "150",
+    "guardBreakReduction": "50",
+    "critical": "0",
+    "weight": "3.5",
+    "damageType": "Blunt"
+   },
+   "scaling": {
+    "STR": "D"
+   },
+   "requirements": {
+    "STR": "14"
+   },
+   "upgradePath": "Unique: upgraded only with Colorless Demon Souls at Blacksmith Ed after the Searing Demon Soul (Fextralife Colorless Demon Soul page); Upgrade table on wiki goes +0 to +5",
+   "location": "Treasure in Island's Edge 4 - 1. Pass the second fog door, up the stairs and then turn left. It is protected by a Black Skeleton.",
+   "source": {
+    "label": "Fextralife – Adjudicator's Shield",
+    "url": "https://demonssouls.wiki.fextralife.com/Adjudicator%27s_Shield",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "large-brushwood-shield",
+   "name": "Large Brushwood Shield",
+   "type": "Shield (Large)",
+   "description": "An old large shield owned by the Boletaria Royal Family from long ago. Particularly good at fending off flame type attacks. In recent times, it is known as an item of Biorr of the Twin Fangs.",
+   "stats": {
+    "phys": "80",
+    "physReduction": "100",
+    "magic": "0",
+    "magicReduction": "30",
+    "fire": "0",
+    "fireReduction": "100",
+    "durability": "600",
+    "guardBreakReduction": "60",
+    "critical": "0",
+    "weight": "13.0",
+    "damageType": "Blunt"
+   },
+   "scaling": {
+    "STR": "D"
+   },
+   "requirements": {
+    "STR": "26"
+   },
+   "upgradePath": "Unique: upgraded only with Colorless Demon Souls at Blacksmith Ed after the Searing Demon Soul (Fextralife Colorless Demon Soul page); Upgrade table on wiki goes +0 to +5",
+   "location": "Treasure in Gates of Boletaria 1 - 1. Take the left stairs from the starting archstone. After the Black Phantom Dreglings you will find Executioner Miralda., in a small tower-like building. At the bottom of that building, you will find the Shield, along with the Brushwood Set. | Kill Biorr, of the Twin Fangs. | Can be bought from the Dregling Merchant in Inner Ward 1 - 3 for 80000 souls.",
+   "source": {
+    "label": "Fextralife – Large Brushwood Shield",
+    "url": "https://demonssouls.wiki.fextralife.com/Large_Brushwood_Shield",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "purple-flame-shield",
+   "name": "Purple Flame Shield",
+   "type": "Shield (Large)",
+   "description": "An old large shield painted in vivid purple. Extremely heavy and very effective against flame. The shield is shrouded in mystery, and the origins of its unique design are unknown.",
+   "stats": {
+    "phys": "80",
+    "physReduction": "100",
+    "magic": "0",
+    "magicReduction": "30",
+    "fire": "0",
+    "fireReduction": "90",
+    "durability": "170",
+    "guardBreakReduction": "60",
+    "critical": "0",
+    "weight": "8.0",
+    "damageType": "Blunt"
+   },
+   "scaling": {
+    "STR": "D"
+   },
+   "requirements": {
+    "STR": "22"
+   },
+   "upgradePath": "Regular +10 (Hardstone/Sharpstone)",
+   "location": "Can be found at Gates of Boletaria 1 - 1. At Gates of Boletaria, go up the main stairs and take your right just before the main gate. Then go up the stairs and follow up the stairs' path. Next, go through the bridge and turn right at the first corner. Afterwards, go ahead and take your left, next go down the stairs. You can loot the Purple Flame Shield next to the rocks at the right. In Pure White World Tendency, there will be no Dragons at this spot. | Dropped by Red Eye Knight (Spear) in the Gates of Boletaria 1 - 1. | Dropped by Red Eye Knight (Spear) in the Inner Ward 1 - 3.",
+   "source": {
+    "label": "Fextralife – Purple Flame Shield",
+    "url": "https://demonssouls.wiki.fextralife.com/Purple_Flame_Shield",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "steel-shield",
+   "name": "Steel Shield",
+   "type": "Shield (Large)",
+   "description": "A large-sized steel shield. It is simply made, but as a result, it has high defensive strength.",
+   "stats": {
+    "phys": "80",
+    "physReduction": "100",
+    "magic": "0",
+    "magicReduction": "30",
+    "fire": "0",
+    "fireReduction": "70",
+    "durability": "300",
+    "guardBreakReduction": "60",
+    "critical": "0",
+    "weight": "6.0",
+    "damageType": "Blunt"
+   },
+   "scaling": {
+    "STR": "D"
+   },
+   "requirements": {
+    "STR": "18"
+   },
+   "upgradePath": "Regular +10 (Hardstone/Sharpstone)",
+   "location": "Treasure in Smithing Grounds 2 - 1, behind some crates, after killing a large group of Scale Miners. | Dropped by Boletaria Soldier (Spear) in the Inner Ward 1 - 3.",
+   "source": {
+    "label": "Fextralife – Steel Shield",
+    "url": "https://demonssouls.wiki.fextralife.com/Steel_Shield",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "tower-shield",
+   "name": "Tower Shield",
+   "type": "Shield (Large)",
+   "description": "A gigantic shield used by one of the Boletarian heroes, the Tower Knight. It is said to repel all kinds of malice, but it is tremendously heavy and difficult to handle. It is considered the largest of the known types of shields.",
+   "stats": {
+    "phys": "100",
+    "physReduction": "100",
+    "magic": "0",
+    "magicReduction": "60",
+    "fire": "0",
+    "fireReduction": "90",
+    "durability": "600",
+    "guardBreakReduction": "70",
+    "critical": "0",
+    "weight": "30.0",
+    "damageType": "Blunt"
+   },
+   "scaling": {
+    "STR": "D"
+   },
+   "requirements": {
+    "STR": "30"
+   },
+   "upgradePath": "Unique: upgraded only with Colorless Demon Souls at Blacksmith Ed after the Searing Demon Soul (Fextralife Colorless Demon Soul page); Upgrade table on wiki goes +0 to +5",
+   "location": "It can be found in The Lord's Path. The Iron Key Ring is needed to unlock the door to the dungeon underneath the guard tower. | Dropped by Alfred, Knight of the Tower. He can be found using the same shield in The King's Tower.",
+   "source": {
+    "label": "Fextralife – Tower Shield",
+    "url": "https://demonssouls.wiki.fextralife.com/Tower_Shield",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "hoplite-shield",
+   "name": "Hoplite Shield",
+   "type": "Shield (Large)",
+   "description": "A medium-sized metal shield, specifically designed for Boletarian Legions. The reinforced center of the shield is ideal against direct attacks. The legions' protective formation was renowned across the kingdom.",
+   "stats": {
+    "phys": "88",
+    "physReduction": "100",
+    "magic": "30",
+    "fire": "0",
+    "fireReduction": "90",
+    "durability": "170",
+    "guardBreakReduction": "65",
+    "critical": "0",
+    "weight": "8.0",
+    "damageType": "Blunt"
+   },
+   "scaling": {
+    "STR": "D"
+   },
+   "requirements": {
+    "STR": "19"
+   },
+   "upgradePath": "",
+   "location": "Digital Deluxe Edition bonus | Rare Hoplite drop at Gates of Boletaria 1 - 1 in the stairs on the right before the boss fog and at The Lord's Path 1 - 2 before the bridge. | Trade Rune Shield to Sparkly the Crow to receive this item.",
+   "source": {
+    "label": "Fextralife – Hoplite Shield",
+    "url": "https://demonssouls.wiki.fextralife.com/Hoplite_Shield",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  }
+ ],
+ "armorSets": [
+  {
+   "id": "ancient-kings-set",
+   "name": "Ancient King's Set",
+   "description": "Medium Armor set (Male Only), 4 pieces, 20 total weight. Dropped by Old King Doran.",
+   "pieces": [
+    {
+     "slot": "Head",
+     "name": "Ancient King's Mask",
+     "location": "Dropped by Old King Doran, in the Boletarian Mausoleum at Gates of Boletaria."
+    },
+    {
+     "slot": "Chest",
+     "name": "Ancient King's Breastplate",
+     "location": "Dropped by Old King Doran, in the Boletarian Mausoleum at Gates of Boletaria."
+    },
+    {
+     "slot": "Hands",
+     "name": "Ancient King's Gauntlets",
+     "location": "Dropped by Old King Doran, in the Boletarian Mausoleum at Gates of Boletaria."
+    },
+    {
+     "slot": "Legs",
+     "name": "Ancient King's Greaves",
+     "location": "Dropped by Old King Doran"
+    }
+   ],
+   "weight": "20",
+   "notes": "Medium Armor; Male Only. Set totals (Fextralife): physical 81, pierce 81, blunt 81, magic 64, slash 97.8, fire 89, bleedRes 60, poisonRes 39, durability 800, plagueRes 0. Cannot be worn by female characters.",
+   "location": "Dropped by Old King Doran.",
+   "source": {
+    "label": "Fextralife – Ancient King's Set",
+    "url": "https://demonssouls.wiki.fextralife.com/Ancient_King%27s_Set",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "barbarian-set",
+   "name": "Barbarian Set",
+   "description": "Light Armor set (Unisex), 3 pieces, 0 total weight. Remake only. Sold by Patches, the Hyena in The Nexus after you meet him in The Tunnel City (Stonefang Tunnel 2-2)",
+   "pieces": [
+    {
+     "slot": "Chest",
+     "name": "Barbarian Clothes",
+     "location": "Sold by Patches, the Hyena in The Nexus after you meet him in The Tunnel City (Stonefang Tunnel 2-2)"
+    },
+    {
+     "slot": "Hands",
+     "name": "Barbarian Armbands",
+     "location": "Sold by Patches, the Hyena in The Nexus after you meet him in The Tunnel City (2-2)"
+    },
+    {
+     "slot": "Legs",
+     "name": "Barbarian Leggings",
+     "location": "Sold by Patches, the Hyena in The Nexus after you meet him in The Tunnel City (Stonefang Tunnel 2-2)"
+    }
+   ],
+   "weight": "0",
+   "notes": "Light Armor; Unisex. Set totals (Fextralife): physical 0, pierce 0, blunt 0, magic 0, slash 0, fire 0, bleedRes 0, poisonRes 0, durability 200, plagueRes 0. Only available in Demon's Souls Remake; This armor provides no protection. No head piece in this set.",
+   "location": "The Barbarian set is only available in the Demon's Souls Remake. It can be found as follows: | Sold by Patches, the Hyena in The Nexus after you meet him in The Tunnel City (Stonefang Tunnel 2-2) | Sold by Graverobber Blige after being freed in Island's Edge / The Ritual Path (Shrine of Storms 4-1 and 4-2)",
+   "source": {
+    "label": "Fextralife – Barbarian Set",
+    "url": "https://demonssouls.wiki.fextralife.com/Barbarian_Set",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "binded-cross-set",
+   "name": "Binded Cross Set",
+   "description": "Medium Armor set (Unisex), 4 pieces, 15.1 total weight. Dropped by Executioner Miralda, who can be found at Gates of Boletaria, at the top of the steps of the pit on the right-hand side, located behind the gate in front of the Boletarian Palace.",
+   "pieces": [
+    {
+     "slot": "Head",
+     "name": "Binded Hood",
+     "location": "Dropped by Executioner Miralda, at the Gates of Boletaria."
+    },
+    {
+     "slot": "Chest",
+     "name": "Binded Cross",
+     "location": "Dropped by Executioner Miralda"
+    },
+    {
+     "slot": "Hands",
+     "name": "Binded Gloves",
+     "location": "Dropped by Executioner Miralda, at the Gates of Boletaria."
+    },
+    {
+     "slot": "Legs",
+     "name": "Binded Boots",
+     "location": "Dropped by Executioner Miralda."
+    }
+   ],
+   "weight": "15.1",
+   "notes": "Medium Armor; Unisex. Set totals (Fextralife): physical 75, pierce 75, blunt 75, magic 51, slash 75, fire 67, bleedRes 39. Can be worn on Type B (Male) characters in the Demon's Souls Remake. Weight is the sum of the per-piece weights in the Fextralife Helms/Chest/Gauntlets/Leggings tables (set table blank).",
+   "location": "Dropped by Executioner Miralda, who can be found at Gates of Boletaria, at the top of the steps of the pit on the right-hand side, located behind the gate in front of the Boletarian Palace.",
+   "source": {
+    "label": "Fextralife – Binded Cross Set",
+    "url": "https://demonssouls.wiki.fextralife.com/Binded_Cross_Set",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "black-leather-set",
+   "name": "Black Leather Set",
+   "description": "Light Armor set (Unisex), 4 pieces, 3.1 total weight. Thief class starts with this Armor Set.",
+   "pieces": [
+    {
+     "slot": "Head",
+     "name": "Assassin's Mask",
+     "location": "Thief class starts with this Armor Set. In Prison of Hope, once you access the second floor, on the room where there are two iron maidens, you can obtain it from the one on the left."
+    },
+    {
+     "slot": "Chest",
+     "name": "Black Leather Garb",
+     "location": "The Thief class starts with this Armor Set. In Prison of Hope, once you access the second floor, on the room where there are two iron maidens, you can obtain it from the one on the left."
+    },
+    {
+     "slot": "Hands",
+     "name": "Black Gloves",
+     "location": "Thief class starts with this Armor Set. In Prison of Hope, once you access the second floor, on the room where there are two iron maidens, you can obtain it from the one on the left."
+    },
+    {
+     "slot": "Legs",
+     "name": "Black Boots",
+     "location": "Thief class starts with this Armor Set. In Tower of Latria, once you access the second floor, on the room where there are two iron maidens, you can obtain it from the one on the left."
+    }
+   ],
+   "weight": "3.1",
+   "notes": "Light Armor; Unisex. Set totals (Fextralife): physical 65, pierce 65, blunt 65, magic 51, slash 65, fire 44, bleedRes 39, poisonRes 160, durability 300, plagueRes 0. ??.",
+   "location": "Thief class starts with this Armor Set. | In Prison of Hope on the fourth floor; in the room where there are two iron maidens, you can obtain it from the one on the left.",
+   "source": {
+    "label": "Fextralife – Black Leather Set",
+    "url": "https://demonssouls.wiki.fextralife.com/Black_Leather_Set",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "blue-eye-knight-set",
+   "name": "Blue-Eye Knight Set",
+   "description": "Heavy Armor set (Unisex), 4 pieces, 27.4 total weight. Remake only. Helm: In Gates of Boletaria (1 - 1). If Pure White or Pure Black World Tendency are unlocked, a locked door opens to the left of the staircase leading to Phalanx. Take this path, and you will find the helm behind one of the executioner structures alongside the cliff edge.",
+   "pieces": [
+    {
+     "slot": "Head",
+     "name": "Blue-Eye Knight Helm",
+     "location": "In Gates of Boletaria. If Pure White or Pure Black World Tendency are unlocked, a locked door opens to the left of the staircase leading to Phalanx. Take this path, and you will find the helm behind one of the executioner structures alongside the cliff edge. Only available in Demon's Souls Remake"
+    },
+    {
+     "slot": "Chest",
+     "name": "Blue-Eye Knight Cuirass",
+     "location": "Available for the Digital Deluxe Edition of Demon's Souls Remake."
+    },
+    {
+     "slot": "Hands",
+     "name": "Blue-Eye Knight Gauntlets",
+     "location": "Available in Demon's Souls Remake."
+    },
+    {
+     "slot": "Legs",
+     "name": "Blue-Eye Knight Greaves",
+     "location": "Available in Demon's Souls Remake."
+    }
+   ],
+   "weight": "27.4",
+   "notes": "Heavy Armor; Unisex. Set totals (Fextralife): physical 77, pierce 60, blunt 60, magic 49, slash 67, fire 59, bleedRes 50, poisonRes 30, plagueRes 0. Only available in Demon's Souls Remake.",
+   "location": "The Blue-Eye Knight set is only available in the Demon's Souls Remake. It can be found as follows: | Helm: In Gates of Boletaria (1 - 1). If Pure White or Pure Black World Tendency are unlocked, a locked door opens to the left of the staircase leading to Phalanx. Take this path, and you will find the helm behind one of the executioner structures alongside the cliff edge. | Chest: In The Lord's Path (1 - 2). The piece is behind Ostrava, of Boletaria who can be accessed by running past the dragon fire toward the first tower then going to the underground area. | Hands: In Inner Ward (1 - 3). Immediately to the right after the Fat Official locks the gate continue through east alley item will be behind an assassin be careful two archers one above on a ledge and one above the item itself. | Legs: In The King's Tower (1 - 4). Found to left of the main stairs behind the Blue Dragon. You must flip a lever and follow the pathway.",
+   "source": {
+    "label": "Fextralife – Blue-Eye Knight Set",
+    "url": "https://demonssouls.wiki.fextralife.com/Blue-Eye_Knight_Set",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "boletarian-royalty-set",
+   "name": "Boletarian Royalty Set",
+   "description": "Armor set (Unisex), 3 pieces, 5.8 total weight. Digital Deluxe Edition Bonus",
+   "pieces": [
+    {
+     "slot": "Chest",
+     "name": "Boletarian Royalty Clothes",
+     "location": "Available for the Digital Deluxe Edition of Demon's Souls Remake."
+    },
+    {
+     "slot": "Hands",
+     "name": "Boletarian Royalty armbands",
+     "location": "Available for the Digital Deluxe Edition of Demon's Souls Remake."
+    },
+    {
+     "slot": "Legs",
+     "name": "Boletarian Royalty Leggings",
+     "location": "Available for the Digital Deluxe Edition of Demon's Souls Remake."
+    }
+   ],
+   "weight": "5.8",
+   "notes": "Armor type not stated; Unisex. Set totals (Fextralife): blunt 44, magic 32, slash 36, fire 43, bleedRes 24, poisonRes 24, plagueRes 0. Only available in Demon's Souls Remake. No head piece in this set.",
+   "location": "Digital Deluxe Edition Bonus | You WILL NEED to start a new character AND TURN ON the digital deluxe bundle at the starting gift section to optain this set if you have the game / started a character / save file before you purchase the Digital Deluxe Edition, other wise you WILL NOT BE ABLE to recieve this armor set. | Starting another game cycle on existing character pre/ deluxe bundle DOES NOT grant another set of armor, meaning its only 1 set per new character.",
+   "source": {
+    "label": "Fextralife – Boletarian Royalty Set",
+    "url": "https://demonssouls.wiki.fextralife.com/Boletarian_Royalty_Set",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "brushwood-set",
+   "name": "Brushwood Set",
+   "description": "Heavy Armor set (Unisex), 4 pieces, 45 total weight. In Gates of Boletaria, go through the area where you encounter Executioner Miralda and go down the stairs. At the end of the edge, climb down the ladder. At the bottom, loot the corpse to get the Brushwood Set. Pure White World Tendency is required.",
+   "pieces": [
+    {
+     "slot": "Head",
+     "name": "Brushwood Helm",
+     "location": "Can be found in a corpse in the Gates of Boletaria, Pure White World Tendency is required. Dropped by Biorr, of the Twin Fangs."
+    },
+    {
+     "slot": "Chest",
+     "name": "Brushwood Armor",
+     "location": "Corpse in the Gates of Boletaria, Pure White World Tendency is required. Dropped by Biorr, of the Twin Fangs."
+    },
+    {
+     "slot": "Hands",
+     "name": "Brushwood Gauntlets",
+     "location": "Can be found in a corpse in the Boletarian Palace, Pure White World Tendency is required. Dropped by Biorr, of the Twin Fangs."
+    },
+    {
+     "slot": "Legs",
+     "name": "Brushwood Greaves",
+     "location": "Can be found in a corpse at the Boletarian Palace, Pure White World Tendency is required. Dropped by Biorr, of the Twin Fangs"
+    }
+   ],
+   "weight": "45",
+   "notes": "Heavy Armor; Unisex. Set totals (Fextralife): physical 109, pierce 109, blunt 109, magic 51, slash 131.7, fire 83, bleedRes 60, poisonRes 39, durability 600, plagueRes 0. Heaviest Armor Set in the game; Offers the best physical defense in the game; Not ideal for traversing areas that afflict status effects.",
+   "location": "In Gates of Boletaria, go through the area where you encounter Executioner Miralda and go down the stairs. At the end of the edge, climb down the ladder. At the bottom, loot the corpse to get the Brushwood Set. Pure White World Tendency is required. | Dropped by Biorr, of the Twin Fangs. He is located in The Nexus: sitting near the Valley of Defilement archstone after his rescue (unlockable). Biorr doesn't appear in The Nexus until you've rescued him. To rescue Biorr, gain access to Inner Ward by defeating any of the archdemons in other worlds. In 1-3, there are two Fat Officials. The first one drops the Iron Key Ring, and the second one drops an Official's Cap. Near the Inner Ward Archstone, before the Tower Knight's area, you can unlock a door with the Iron Key Ring which leads into a dungeon. There you can unlock Biorr's cell to rescue him. You can also find a third Fat Official there who drops a Bloody Iron Key which is used to save Yuria, the Witch. | Can be Purchased from Dregling Merchant in 1-3 (Inner Ward) for 250,000 souls.",
+   "source": {
+    "label": "Fextralife – Brushwood Set",
+    "url": "https://demonssouls.wiki.fextralife.com/Brushwood_Set",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "burrowers-set",
+   "name": "Burrower's Set",
+   "description": "Armor set (Unisex), 3 pieces, 19.9 total weight. Can be found at The Tunnel City (2-2), along the coast of the lava river shortly before the Flamelurker.",
+   "pieces": [
+    {
+     "slot": "Chest",
+     "name": "Burrower Armor",
+     "location": "Can be found at The Tunnel City (2-2), along the coast of the lava river shortly before the Flamelurker."
+    },
+    {
+     "slot": "Hands",
+     "name": "Burrower Armbands",
+     "location": "Available in Demon's Souls Remake."
+    },
+    {
+     "slot": "Legs",
+     "name": "Burrower Boots",
+     "location": "Available in Demon's Souls Remake."
+    }
+   ],
+   "weight": "19.9",
+   "notes": "Armor type not stated; Unisex. Only available in Demon's Souls Remake. Weight is the sum of the per-piece weights in the Fextralife Helms/Chest/Gauntlets/Leggings tables (set table blank). No head piece in this set.",
+   "location": "Can be found at The Tunnel City (2-2), along the coast of the lava river shortly before the Flamelurker.",
+   "source": {
+    "label": "Fextralife – Burrower's Set",
+    "url": "https://demonssouls.wiki.fextralife.com/Burrower%27s_Set",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "chain-mail-set",
+   "name": "Chain Mail Set",
+   "description": "Medium Armor set (Unisex), 4 pieces, 25 total weight. Priest starts with this Armor set.",
+   "pieces": [
+    {
+     "slot": "Head",
+     "name": "Mail Coif",
+     "location": "The Priest class starts with this Armor set. Bought from the Filthy Woman in the Depraved Chasm for 2,000 Souls."
+    },
+    {
+     "slot": "Chest",
+     "name": "Chain Mail",
+     "location": "The Priest class starts with this Armor set. Bought from the Filthy Woman in the Depraved Chasm for 4,000 Souls."
+    },
+    {
+     "slot": "Hands",
+     "name": "Chain Gloves",
+     "location": "Priest starts with this Armor set. Bought from the Filthy Woman in the Depraved Chasm for 3,000 Souls."
+    },
+    {
+     "slot": "Legs",
+     "name": "Hard Leather Boots",
+     "location": "Priest and Wanderer starts with this Armor set. Bought from the Filthy Woman in the Valley of Defilement for 3,000 Souls."
+    }
+   ],
+   "weight": "25",
+   "notes": "Medium Armor; Unisex. Set totals (Fextralife): physical 85, pierce 74.4, blunt 85, magic 51, slash 107.3, fire 59, bleedRes 60, poisonRes 39, durability 300, plagueRes 0. ??.",
+   "location": "Priest starts with this Armor set. | Bought from the Filthy Woman in Depraved Chasm.",
+   "source": {
+    "label": "Fextralife – Chain Mail Set",
+    "url": "https://demonssouls.wiki.fextralife.com/Chain_Mail_Set",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "dark-silver-set",
+   "name": "Dark Silver Set",
+   "description": "Heavy Armor set (Male Only), 4 pieces, 35.1 total weight. Dropped by Garl Vinland",
+   "pieces": [
+    {
+     "slot": "Head",
+     "name": "Dark Silver Helmet",
+     "location": "Dropped by Garl Vinland, at the Rotting Haven."
+    },
+    {
+     "slot": "Chest",
+     "name": "Dark Silver Armor",
+     "location": "Dropped by Garl Vinland."
+    },
+    {
+     "slot": "Hands",
+     "name": "Dark Silver Gauntlets",
+     "location": "Dropped by Garl Vinland, at Rotting Haven."
+    },
+    {
+     "slot": "Legs",
+     "name": "Dark Silver Greaves",
+     "location": "Dropped by Garl Vinland"
+    }
+   ],
+   "weight": "35.1",
+   "notes": "Heavy Armor; Male Only. Set totals (Fextralife): physical 90, pierce 90, blunt 90, magic 70, slash 108.7, fire 63, bleedRes 60, poisonRes 39, durability 550, plagueRes 0. Dark Silver Set offers good Bleed, Magic, and Fire resistance.",
+   "location": "Dropped by Garl Vinland",
+   "source": {
+    "label": "Fextralife – Dark Silver Set",
+    "url": "https://demonssouls.wiki.fextralife.com/Dark_Silver_Set",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "dull-gold-set",
+   "name": "Dull Gold Set",
+   "description": "Medium Armor set (Female Only), 4 pieces, 25 total weight. Dropped by Selen Vinland.",
+   "pieces": [
+    {
+     "slot": "Head",
+     "name": "Dull Gold Helmet",
+     "location": "Dropped by Selen Vinland at the Swamp of Sorrow. Dropped by a Phosphorescent Slug"
+    },
+    {
+     "slot": "Chest",
+     "name": "Dull Gold Armor",
+     "location": "Dropped by Selen Vinland at the Swamp of Sorrow Dropped by a Phosphorescent Slug"
+    },
+    {
+     "slot": "Hands",
+     "name": "Dull Gold Gauntlets",
+     "location": "Dropped by Selen Vinland, at the Swamp of Sorrow. Dropped by a Phosphorescent Slug."
+    },
+    {
+     "slot": "Legs",
+     "name": "Dull Gold Leggings",
+     "location": "Dropped by Selen Vinland Dropped by a Phosphorescent Slug"
+    }
+   ],
+   "weight": "25",
+   "notes": "Medium Armor; Female Only. Set totals (Fextralife): physical 83, pierce 83, blunt 83, magic 70, slash 100.3, fire 57, bleedRes 60, poisonRes 39, durability 550, plagueRes 0. ??.",
+   "location": "Dropped by Selen Vinland. | Dropped by a Phosphorescent Slug. - This slug is located past the first fog wall in the Swamp of Sorrow. Opposite the island (the one filled with slugs) where you find the Large Sword of Moonlight, you'll find a smaller island with a lone slug. Kill it to gain the set.",
+   "source": {
+    "label": "Fextralife – Dull Gold Set",
+    "url": "https://demonssouls.wiki.fextralife.com/Dull_Gold_Set",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "fluted-set",
+   "name": "Fluted Set",
+   "description": "Heavy Armor set (Unisex), 4 pieces, 29.9 total weight. Knight starts with this Armor Set.",
+   "pieces": [
+    {
+     "slot": "Head",
+     "name": "Fluted Helm",
+     "location": "Knight starts with this Armor Set. Corpse in the Prison of Hope, on the first floor. Found alongside Silver Bracelet."
+    },
+    {
+     "slot": "Chest",
+     "name": "Fluted Armor",
+     "location": "The Knight class starts with this Armor Set. Treasure in the Prison of Hope, on the first floor. After reaching the end of the corridor turn right to find."
+    },
+    {
+     "slot": "Hands",
+     "name": "Fluted Gauntlets",
+     "location": "Knight starts with this Armor Set. Treasure in Prison of Hope, on the first floor. After reaching the end of the corridor turn right to find."
+    },
+    {
+     "slot": "Legs",
+     "name": "Fluted Greaves",
+     "location": "Knight starts with this Armor Set. Treasure in Tower of Latria, on the first floor. After reaching the end of the corridor turn right to find."
+    }
+   ],
+   "weight": "29.9",
+   "notes": "Heavy Armor; Unisex. Set totals (Fextralife): physical 90, pierce 90, blunt 90, magic 51, slash 108.7, fire 64, bleedRes 60, poisonRes 39, durability 250, plagueRes 0. Provides decent physical and magical defense.",
+   "location": "Knight starts with this Armor Set. | Treasure in the Prison of Hope, on the first floor. After reaching the end of the corridor turn right to find.",
+   "source": {
+    "label": "Fextralife – Fluted Set",
+    "url": "https://demonssouls.wiki.fextralife.com/Fluted_Set",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "gloom-set",
+   "name": "Gloom Set",
+   "description": "Gloom set worn by Yurt, the Silent Chief. The two horns on the headpiece are its chief characteristic.",
+   "pieces": [
+    {
+     "slot": "Head",
+     "name": "Gloom Helm",
+     "location": "Dropped by Yurt, the Silent Chief."
+    },
+    {
+     "slot": "Chest",
+     "name": "Gloom Armor",
+     "location": "Dropped by Yurt, the Silent Chief"
+    },
+    {
+     "slot": "Hands",
+     "name": "Gloom Gauntlets",
+     "location": "Dropped by Yurt, the Silent Chief."
+    },
+    {
+     "slot": "Legs",
+     "name": "Gloom Greaves",
+     "location": "Dropped by Yurt, the Silent Chief"
+    }
+   ],
+   "weight": "29.9",
+   "notes": "Heavy Armor; Unisex. Set totals (Fextralife): physical 87, pierce 87, blunt 87, magic 51, slash 105.1, fire 61, bleedRes 120, poisonRes 120, durability 450, plagueRes 120. This armor set offers more poison resistance than the Fluted Set; Also, unlike the Fluted Set, this Armor Set offers Plague resistance as well.",
+   "location": "Dropped by Yurt, the Silent Chief.",
+   "source": {
+    "label": "Fextralife – Gloom Set",
+    "url": "https://demonssouls.wiki.fextralife.com/Gloom_Set",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "imperial-spy-set",
+   "name": "Imperial Spy Set",
+   "description": "Light Armor set (Unisex), 4 pieces, 3.8 total weight. The full set can be found in Prison of Hope (3-1) in the top area where you fight Fool's Idol on the left side across from the prisoner who revives her.",
+   "pieces": [
+    {
+     "slot": "Head",
+     "name": "Imperial Spy Hood",
+     "location": "The full set can be found in Prison of Hope 3-1 in the top area where you fight Fool's Idol on the left side across from the prisoner who revives her"
+    },
+    {
+     "slot": "Chest",
+     "name": "Imperial Spy Clothes",
+     "location": "Can be looted off Imperial Spy at Inner Ward full set can be found in Prison of Hope 3-1 in the top area where you fight false idol on the left side"
+    },
+    {
+     "slot": "Hands",
+     "name": "Imperial Spy Gloves",
+     "location": "Can be looted in Smithing Grounds (2 - 1). The full set can be found in 3-1 in the top area where you fight Fool's Idol on the left side across from the prisoner who revives her."
+    },
+    {
+     "slot": "Legs",
+     "name": "Imperial Spy Leggings",
+     "location": "The full set can be found in 3-1 in the top area where you fight Fool's Idol on the left side across from the prisoner who revives her."
+    }
+   ],
+   "weight": "3.8",
+   "notes": "Light Armor; Unisex. Set totals (Fextralife): physical 68, pierce 68, blunt 68, magic 51, slash 68, fire 56, bleedRes 60, poisonRes 126, durability 350, plagueRes 0. Only available in Demon's Souls Remake.",
+   "location": "The full set can be found in Prison of Hope (3-1) in the top area where you fight Fool's Idol on the left side across from the prisoner who revives her.",
+   "source": {
+    "label": "Fextralife – Imperial Spy Set",
+    "url": "https://demonssouls.wiki.fextralife.com/Imperial_Spy_Set",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "leather-set",
+   "name": "Leather Set",
+   "description": "A leather set suitable for field activity. Widely used by hunters.",
+   "pieces": [
+    {
+     "slot": "Head",
+     "name": "Leather Cap",
+     "location": "The Hunter class starts with this Armor Set. Can be bought from Graverobber Blige."
+    },
+    {
+     "slot": "Chest",
+     "name": "Leather Armor",
+     "location": "The Hunter class starts with this Armor Set. Wanderer starts with Leather Armor. Can be bought from Graverobber Blige for 1,500 Souls."
+    },
+    {
+     "slot": "Hands",
+     "name": "Leather Gloves",
+     "location": "Hunter starts with this Armor Set. Can be bought from Graverobber Blige for 800 Souls."
+    },
+    {
+     "slot": "Legs",
+     "name": "Leather Boots",
+     "location": "Hunter starts with this Armor Set. Can be bought from Graverobber Blige for 800 Souls."
+    }
+   ],
+   "weight": "7.9",
+   "notes": "Light Armor; Unisex. Set totals (Fextralife): physical 73, pierce 73, blunt 73, magic 48, slash 73, fire 52, bleedRes 39, poisonRes 39, durability 400, plagueRes 0. ??.",
+   "location": "Hunter starts with this Armor Set. | Wanderer starts with Leather Armor | Can be bought from Graverobber Blige",
+   "source": {
+    "label": "Fextralife – Leather Set",
+    "url": "https://demonssouls.wiki.fextralife.com/Leather_Set",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "mirdan-set",
+   "name": "Mirdan Set",
+   "description": "Heavy Armor set (Unisex), 4 pieces, 35.1 total weight. Temple Knight starts with this Armor Set.",
+   "pieces": [
+    {
+     "slot": "Head",
+     "name": "Mirdan Helmet",
+     "location": "The Temple Knight class starts with this Armor Set. Can be bought from the Filthy Woman in Swamp of Sorrow for 5,000 Souls."
+    },
+    {
+     "slot": "Chest",
+     "name": "Mirdan Scale Armor",
+     "location": "The Temple Knight class starts with this Armor Set. Can be bought from the Filthy Woman in Leechmonger Archstone for 15,000 Souls."
+    },
+    {
+     "slot": "Hands",
+     "name": "Mirdan Gauntlets",
+     "location": "Temple Knight starts with this Armor Set. Can be bought from the Filthy Woman in Swamp of Sorrow for 10,000 Souls."
+    },
+    {
+     "slot": "Legs",
+     "name": "Mirdan Leggings",
+     "location": "Temple Knight starts with this Armor Set. Can be bought from the Filthy Woman in Leechmonger Archstone for 10,000 Souls."
+    }
+   ],
+   "weight": "35.1",
+   "notes": "Heavy Armor; Unisex. Set totals (Fextralife): physical 94, pierce 94, blunt 94, magic 56, slash 113.5, fire 84, bleedRes 60, poisonRes 39, durability 200, plagueRes 0. ??.",
+   "location": "Temple Knight starts with this Armor Set. | Can be bought from the Filthy Woman in Swamp of Sorrow.",
+   "source": {
+    "label": "Fextralife – Mirdan Set",
+    "url": "https://demonssouls.wiki.fextralife.com/Mirdan_Set",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "officials-set",
+   "name": "Official's Set",
+   "description": "Light Armor set (Unisex), 4 pieces, 4.8 total weight. Official's Cap can be found behind the portcullis in Tower Knight Archstone",
+   "pieces": [
+    {
+     "slot": "Head",
+     "name": "Official's Cap",
+     "location": "Can be found behind the portcullis in Inner Ward."
+    },
+    {
+     "slot": "Chest",
+     "name": "Official's Clothes",
+     "location": "Can be looted off the Fat Official in The Tunnel City (2 - 2) in Demon's Souls Remake."
+    },
+    {
+     "slot": "Hands",
+     "name": "Official's Gloves",
+     "location": "Available in Demon's Souls Remake."
+    },
+    {
+     "slot": "Legs",
+     "name": "Official's Leggings",
+     "location": "Available in Demon's Souls Remake. Can be looted off the Fat Official."
+    }
+   ],
+   "weight": "4.8",
+   "notes": "Light Armor; Unisex. Set totals (Fextralife): physical 49, pierce 38, blunt 49, magic 47, slash 58, fire 60, bleedRes 33, poisonRes 33, plagueRes 0. Only available in Demon's Souls Remake; The full set must be worn to rescue Yuria, the Witch; When wearing the full set, scale miners will no longer aggro (excluding pickaxe and flame-tipped sword).",
+   "location": "Official's Cap can be found behind the portcullis in Tower Knight Archstone | Official's Leggings and Official's Gloves can be looted off the Fat Official in Stonefang Tunnel (2 - 1) or \"Smithing Grounds\" in Demon's Souls Remake. | Official's Clothes can be looted off the Fat Official in Armor Spider Archstone (2 - 2) in Demon's Souls Remake.",
+   "source": {
+    "label": "Fextralife – Official's Set",
+    "url": "https://demonssouls.wiki.fextralife.com/Official%27s_Set",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "old-raggedy-set",
+   "name": "Old Raggedy Set",
+   "description": "Light Armor set (Female Only), 4 pieces, 9.1 total weight. Outside of the left tower after cutting a chain on the balcony in the tower in Gates of Boletaria.",
+   "pieces": [
+    {
+     "slot": "Head",
+     "name": "Three Cornered Hat",
+     "location": "The Three Cornered Hat is found on the second floor cell block in Prison of Hope. Pure White World Tendency is required. Dropped by Yuria, the Witch."
+    },
+    {
+     "slot": "Chest",
+     "name": "Old Raggedy Robes",
+     "location": "Dropped by Yuria, the Witch. Outside of the left tower after cutting a chain on the balcony in the tower in Gates of Boletaria."
+    },
+    {
+     "slot": "Hands",
+     "name": "Old Ragged Gloves",
+     "location": "Dropped by Yuria, the Witch. Outside of the left tower after cutting a chain on the balcony in the tower in the Boletarian Palace."
+    },
+    {
+     "slot": "Legs",
+     "name": "Old Ragged Boots",
+     "location": "Dropped by Yuria, the Witch Outside of the left tower after cutting a chain on the balcony in the tower in the Boletarian Palace."
+    }
+   ],
+   "weight": "9.1",
+   "notes": "Light Armor; Female Only. Set totals (Fextralife): physical 68, pierce 68, blunt 81.6, magic 60, slash 68, fire 34, bleedRes 39, poisonRes 39, durability 300, plagueRes 160. This Armor set offers high Plague Resistance.",
+   "location": "Outside of the left tower after cutting a chain on the balcony in the tower in Gates of Boletaria. | The Three Cornered Hat is found on the second floor cell block in Prison of Hope. Pure White World Tendency is required. | Dropped by Yuria, the Witch",
+   "source": {
+    "label": "Fextralife – Old Raggedy Set",
+    "url": "https://demonssouls.wiki.fextralife.com/Old_Raggedy_Set",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "plate-set",
+   "name": "Plate Set",
+   "description": "Iron armor set, commonly found on soldiers. It's simple, but reasonably tough. Its heaviness slightly impedes stamina regeneration.",
+   "pieces": [
+    {
+     "slot": "Head",
+     "name": "Plate Helmet",
+     "location": "The Soldier class starts with this Armor Set. Can be bought from the Dregling Merchant for 1,000 Souls."
+    },
+    {
+     "slot": "Chest",
+     "name": "Coat of Plates",
+     "location": "The Soldier class starts with this Armor Set. Can be bought from the Dregling Merchant for 1,500 Souls."
+    },
+    {
+     "slot": "Hands",
+     "name": "Plate Gauntlets",
+     "location": "Soldier starts with this Armor Set Can be bought from the Dregling Merchant for 1,200 Souls."
+    },
+    {
+     "slot": "Legs",
+     "name": "Plate Greaves",
+     "location": "Soldier starts with this Armor Set Can be bought from the Dregling Merchant for 1,200 Souls."
+    }
+   ],
+   "weight": "25",
+   "notes": "Light Armor; Unisex. Set totals (Fextralife): physical 85, pierce 85, blunt 85, magic 51, slash 102.7, fire 59, bleedRes 80, poisonRes 39, durability 300, plagueRes 0. ??.",
+   "location": "Soldier starts with this Armor Set | Can be bought from the Dregling Merchant",
+   "source": {
+    "label": "Fextralife – Plate Set",
+    "url": "https://demonssouls.wiki.fextralife.com/Plate_Set",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "penetrator-set",
+   "name": "Penetrator Set",
+   "description": "Heavy Armor set (Unisex), 4 pieces, 31.3 total weight. Trade 26x Ceramic Coin to Sparkly the Crow to obtain the Rusted Key.",
+   "pieces": [
+    {
+     "slot": "Head",
+     "name": "Penetrator's Helmet",
+     "location": "Only available in the Demon's Souls Remake. You must trade 26x Ceramic Coin with Sparkly the Crow to obtain the Rusted Key. Once you have the Rusted Key, go to Tower Knight Archstone (or Inner Ward) and find the locked door behind an illusory wall. You will find the full Penetrator Set here."
+    },
+    {
+     "slot": "Chest",
+     "name": "Penetrator's Cuirass",
+     "location": "Only available in the Demon's Souls Remake. You must trade 26x Ceramic Coin with Sparkly the Crow to obtain the Rusted Key. Once you have the Rusted Key, go to Tower Knight Archstone (or Inner Ward) and find the locked door behind an illusory wall. You will find the full Penetrator Set here."
+    },
+    {
+     "slot": "Hands",
+     "name": "Penetrator's Gauntlets",
+     "location": "Only available in the Demon's Souls Remake. You must trade 26x Ceramic Coin with Sparkly the Crow to obtain the Rusted Key. Once you have the Rusted Key, go to Tower Knight Archstone (or Inner Ward) and find the locked door behind an illusory wall. You will find the full Penetrator Set here."
+    },
+    {
+     "slot": "Legs",
+     "name": "Penetrator's Greaves",
+     "location": "Only available in the Demon's Souls Remake. You must trade 26x Ceramic Coin with Sparkly the Crow to obtain the Rusted Key. Once you have the Rusted Key, go to Tower Knight Archstone (or Inner Ward) and find the locked door behind an illusory wall. You will find the full Penetrator Set here."
+    }
+   ],
+   "weight": "31.3",
+   "notes": "Heavy Armor; Unisex. Set totals (Fextralife): physical 94, blunt 94, magic 49, slash 111, fire 60, bleedRes 76, poisonRes 37, durability 1950, plagueRes 0. This Armor is paired with the Penetrating Sword to complete the Penetrator boss look; This armor is only available in the Demon's Souls Remake.",
+   "location": "Trade 26x Ceramic Coin to Sparkly the Crow to obtain the Rusted Key. | Use the rusted key (Acquired from Sparkly the Crow) to open the door found behind a hidden wall in Tower Knight Archstone (Inner Ward or World 1-3) (Enter the passage from here) (Break the illusionary wall)",
+   "source": {
+    "label": "Fextralife – Penetrator Set",
+    "url": "https://demonssouls.wiki.fextralife.com/Penetrator_Set",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "red-eye-knight-set",
+   "name": "Red-Eye Knight Set",
+   "description": "Heavy Armor set (Unisex), 4 pieces, 27.4 total weight. Digital Deluxe Edition Bonus",
+   "pieces": [
+    {
+     "slot": "Head",
+     "name": "Red-Eye Knight Helmet",
+     "location": "Available for the Digital Deluxe Edition of Demon's Souls Remake."
+    },
+    {
+     "slot": "Chest",
+     "name": "Red-Eye Knight Cuirass",
+     "location": "Available for the Digital Deluxe Edition of Demon's Souls Remake."
+    },
+    {
+     "slot": "Hands",
+     "name": "Red-Eye Knight Gauntlets",
+     "location": "Available for the Digital Deluxe Edition of Demon's Souls Remake."
+    },
+    {
+     "slot": "Legs",
+     "name": "Red-Eye Knight Greaves",
+     "location": "Available for the Digital Deluxe Edition of Demon's Souls Remake."
+    }
+   ],
+   "weight": "27.4",
+   "notes": "Heavy Armor; Unisex. Set totals (Fextralife): physical 77, pierce 60, blunt 60, magic 49, slash 67, fire 59, bleedRes 50, poisonRes 30, plagueRes 0. Only available in Demon's Souls Remake.",
+   "location": "Digital Deluxe Edition Bonus | You WILL NEED to start a new character AND TURN ON the digital deluxe bundle at the starting gift section to optain this set if you have the game / started a character / save file before you purchase the Digital Deluxe Edition, other wise you WILL NOT BE ABLE to recieve this armor set. | Starting another game cycle on existing character pre/ deluxe bundle DOES NOT grant another set of armor, meaning its only 1 set per new character.",
+   "source": {
+    "label": "Fextralife – Red-Eye Knight Set",
+    "url": "https://demonssouls.wiki.fextralife.com/Red-Eye_Knight_Set",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "rogues-set",
+   "name": "Rogue's Set",
+   "description": "A gold mask inlaid with a delicate design. Even among the rogues that are confined in a sealed chamber who embrace the soul. industry, only those of a particularly high rank are allowed to wear it.",
+   "pieces": [
+    {
+     "slot": "Head",
+     "name": "Gold Mask",
+     "location": "Dropped by Mephistopheles. Found in Upper Latria, where the big heart used to be. Get down there to loot it."
+    },
+    {
+     "slot": "Chest",
+     "name": "Rogue's Clothes",
+     "location": "Found on a corpse in Upper Latria."
+    },
+    {
+     "slot": "Hands",
+     "name": "Rogue's Gloves",
+     "location": "Found on a corpse in Upper Latria."
+    },
+    {
+     "slot": "Legs",
+     "name": "Rogue's Boots",
+     "location": "Can be found on a corpse in Fool's Idol Archstone."
+    }
+   ],
+   "weight": "9.1",
+   "notes": "Light Armor; Female Only. Set totals (Fextralife): physical 68, pierce 68, blunt 81.6, magic 60, slash 68, fire 34, bleedRes 39, poisonRes 39, durability 300, plagueRes 16. ??.",
+   "location": "Gold Mask is dropped by Mephistopheles. The Mask can also be found in Upper Latria (along with the Epee Rapier) where the heart falls after breaking the second chain. (Remake and original.) | The Mask can also be found in Upper Latria (along with the Epee Rapier) where the heart falls after breaking the second chain. (Remake and original.) | The rest of the set is found in Upper Latria. In the Remake, the rest of the set is found in Prison of Hope 2F East on a body in a cell. Must free Lord Rydell before 2F East is accessible, which requires the Prison of Hope, 2F W Cell Key. Obtaining this key, found in Upper Latria, requires Pure White World Tendency. | In the Remake, the rest of the set is found in Prison of Hope 2F East on a body in a cell. Must free Lord Rydell before 2F East is accessible, which requires the Prison of Hope, 2F W Cell Key. Obtaining this key, found in Upper Latria, requires Pure White World Tendency.",
+   "source": {
+    "label": "Fextralife – Rogue's Set",
+    "url": "https://demonssouls.wiki.fextralife.com/Rogue%27s_Set",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "saints-set",
+   "name": "Saint's Set",
+   "description": "Medium Armor set (Unisex), 3 pieces, 10.2 total weight. Treasure in Depraved Chasm. All the way up from where you find the Filthy Woman, on your left fight a Depraved One, and keep going to loot it.",
+   "pieces": [
+    {
+     "slot": "Chest",
+     "name": "Saint's Robes",
+     "location": "Treasure in Depraved Chasm. All the way up from where you find the Filthy Woman, on your left fight a Depraved One, and keep going to loot it along the rest of the Saint's Set"
+    },
+    {
+     "slot": "Hands",
+     "name": "Saint's Gloves",
+     "location": "Treasure in Depraved Chasm. All the way up from where you find the Filthy Woman, on your left fight a Depraved One, and keep going to loot it along the rest of the Saint's Set"
+    },
+    {
+     "slot": "Legs",
+     "name": "Saint's Boots",
+     "location": "Treasure in Valley of Defilement. All the way up from where you find the Filthy Woman, on your left fight a Depraved One, and keep going to loot it along the rest of the Saint's Set"
+    }
+   ],
+   "weight": "10.2",
+   "notes": "Medium Armor; Unisex. Set totals (Fextralife): physical 59, pierce 59, blunt 70.8, magic 51, slash 59, fire 34, bleedRes 34. This armor set is also worn by Saint Urbain. Weight is the sum of the per-piece weights in the Fextralife Helms/Chest/Gauntlets/Leggings tables (set table blank). No head piece in this set.",
+   "location": "Treasure in Depraved Chasm. All the way up from where you find the Filthy Woman, on your left fight a Depraved One, and keep going to loot it.",
+   "source": {
+    "label": "Fextralife – Saint's Set",
+    "url": "https://demonssouls.wiki.fextralife.com/Saint%27s_Set",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "shamans-set",
+   "name": "Shaman's Set",
+   "description": "Light Armor set (Unisex), 3 pieces, 3.3 total weight. Found on a corpse atop a platform alongside a Depraved One Shaman in Swamp of Sorrow.",
+   "pieces": [
+    {
+     "slot": "Chest",
+     "name": "Shaman's Clothes",
+     "location": "Found in the Leechmonger arena in Depraved Chasm."
+    },
+    {
+     "slot": "Hands",
+     "name": "Shaman's Armband",
+     "location": "Found in the Leechmonger arena in Depraved Chasm."
+    },
+    {
+     "slot": "Legs",
+     "name": "Shaman's Tabi",
+     "location": "Can be found in the Leechmonger arena in Valley of Latria."
+    }
+   ],
+   "weight": "3.3",
+   "notes": "Light Armor; Unisex. Set totals (Fextralife): physical 55, pierce 55, blunt 55, magic 43, slash 55, fire 37, bleedRes 33. ??. Weight is the sum of the per-piece weights in the Fextralife Helms/Chest/Gauntlets/Leggings tables (set table blank). No head piece in this set.",
+   "location": "Found on a corpse atop a platform alongside a Depraved One Shaman in Swamp of Sorrow.",
+   "source": {
+    "label": "Fextralife – Shaman's Set",
+    "url": "https://demonssouls.wiki.fextralife.com/Shaman%27s_Set",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "venerable-sages-set",
+   "name": "Venerable Sage's Set",
+   "description": "Sage Freke the Visionary's equipment. A plain traveling suit which makes long marches possible, however it is the travel wear of a dirty sage. This shows Sage Freke's origins quite well.",
+   "pieces": [
+    {
+     "slot": "Head",
+     "name": "Venerable Sage's Hood",
+     "location": "Dropped by Sage Freke, the Visionary. Treasure in the Prison of Hope."
+    },
+    {
+     "slot": "Chest",
+     "name": "Venerable Sage's Robe",
+     "location": "Dropped by Sage Freke, the Visionary. Treasure in Prison of Hope."
+    },
+    {
+     "slot": "Hands",
+     "name": "Venerable Sage's Gloves",
+     "location": "Dropped by Sage Freke, the Visionary. Treasure in Prison of Hope."
+    },
+    {
+     "slot": "Legs",
+     "name": "Venerable Sage's Boots",
+     "location": "Dropped by Sage Freke, the Visionary. Treasure in Tower of Latria. Found in 2F West, path previously blocked by debris is accessible now. Pure White World Tendency required. Once unlocked, it stays that way, even if World Tendency changes later."
+    }
+   ],
+   "weight": "9.1",
+   "notes": "Light Armor; Male Only. Set totals (Fextralife): physical 68, pierce 68, blunt 81.6, magic 60, slash 68, fire 34, bleedRes 39, poisonRes 39, durability 300, plagueRes 160. This armor set is worn by Sage Freke, the Visionary.",
+   "location": "Dropped by Sage Freke, the Visionary | Treasure in the Prison of Hope. Found in 2F West, path previously blocked by debris is accessible now. Pure White World Tendency required. Once unlocked, it stays that way, even if World Tendency changes later.",
+   "source": {
+    "label": "Fextralife – Venerable Sage's Set",
+    "url": "https://demonssouls.wiki.fextralife.com/Venerable_Sage%27s_Set",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "wizards-set",
+   "name": "Wizard's Set",
+   "description": "Light Armor set (Unisex), 3 pieces, 10.2 total weight. Magician and Royalty classes starts with this Armor Set.",
+   "pieces": [
+    {
+     "slot": "Chest",
+     "name": "Wizard's Clothes",
+     "location": "The Magician and Royalty classes start with this Armor Set. Found in the Prison of Hope, in a cell where you kill a prisoner on the first area. You need Prison of Hope, 3F Cell Key to open the door."
+    },
+    {
+     "slot": "Hands",
+     "name": "Wizard's Gloves",
+     "location": "Magician and Royalty classes starts with this Armor Set. Found in the Prison of Hope, in a cell where you kill a prisoner on the first area. You need Prison of Hope, 3F Cell Key to open the door."
+    },
+    {
+     "slot": "Legs",
+     "name": "Wizard's Shoes",
+     "location": "Magician and Royalty classes starts with this Armor Set. Found in the Tower of Latria, in a cell where you kill a prisoner on the first area. You need Prison of Hope, 3F Cell Key to open the door."
+    }
+   ],
+   "weight": "10.2",
+   "notes": "Light Armor; Unisex. Set totals (Fextralife): physical 59, pierce 59, blunt 70.8, magic 51, slash 59, fire 34, bleedRes 34, poisonRes 34, durability 450, plagueRes 0. ??. No head piece in this set.",
+   "location": "Magician and Royalty classes starts with this Armor Set. | Found at Prison of Hope, Tower of Latria, (3-1). The Wizard's Set can be found inside the last cell on the left at the first corridor. You need Prison of Hope, 3F Cell Key to open the door. To get it, take your right at the first corner next to this cell and go ahead until the next corner, you will see the Prison of Hope, 3F Cell Key hanging of the second wall light from the left.",
+   "source": {
+    "label": "Fextralife – Wizard's Set",
+    "url": "https://demonssouls.wiki.fextralife.com/Wizard%27s_Set",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "silver-coronet",
+   "name": "Silver Coronet (standalone piece)",
+   "description": "Single head piece with no matching set on Fextralife; listed separately so builds that use it can link here.",
+   "pieces": [
+    {
+     "slot": "Head",
+     "name": "Silver Coronet",
+     "location": "The Royalty class starts with this gear. Treasure in the Prison of Hope, in a cell where you kill a Prisoner on the second area. You need Prison of Hope, 3F Cell Key to open the door."
+    }
+   ],
+   "weight": "0.9",
+   "notes": "Per-piece row from Fextralife Helms table: physical 2, magic 2, fire 2, durability 100.",
+   "location": "The Royalty class starts with this gear. Treasure in the Prison of Hope, in a cell where you kill a Prisoner on the second area. You need Prison of Hope, 3F Cell Key to open the door.",
+   "source": {
+    "label": "Fextralife – Silver Coronet",
+    "url": "https://demonssouls.wiki.fextralife.com/Silver_Coronet",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "monks-head-wrappings",
+   "name": "Monk's Head Wrappings (standalone piece)",
+   "description": "Single head piece with no matching set on Fextralife; listed separately so builds that use it can link here.",
+   "pieces": [
+    {
+     "slot": "Head",
+     "name": "Monk's Head Wrappings",
+     "location": "Obtained as a reward for killing the host when summoned as the boss for Throne Room of Yormedaar. To have a chance of being summoned as the boss, place a blue summon sign anywhere in Prison of Hope, Upper Latria, and The Ivory Tower."
+    }
+   ],
+   "weight": "0",
+   "notes": "Per-piece row from Fextralife Helms table: physical 2, magic 2, fire 2, durability 0. The Fextralife page's meta description calls this item \"Monk's Head Collar\" (the name used in builds.json).",
+   "location": "Obtained as a reward for killing the host when summoned as the boss for Throne Room of Yormedaar. To have a chance of being summoned as the boss, place a blue summon sign anywhere in Prison of Hope, Upper Latria, and The Ivory Tower.",
+   "source": {
+    "label": "Fextralife – Monk's Head Wrappings",
+    "url": "https://demonssouls.wiki.fextralife.com/Monk%27s_Head_Wrappings",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "silver-bracelet",
+   "name": "Silver Bracelet (standalone piece)",
+   "description": "Single hands piece with no matching set on Fextralife; listed separately so builds that use it can link here.",
+   "pieces": [
+    {
+     "slot": "Hands",
+     "name": "Silver Bracelet",
+     "location": "Treasure in Prison of Hope, on the first floor. After reaching the end of the corridor turn right to find."
+    }
+   ],
+   "weight": "0.5",
+   "notes": "Per-piece row from Fextralife Gauntlets table: physical 2, magic 2, fire 2, durability 100.",
+   "location": "Treasure in Prison of Hope, on the first floor. After reaching the end of the corridor turn right to find.",
+   "source": {
+    "label": "Fextralife – Silver Bracelet",
+    "url": "https://demonssouls.wiki.fextralife.com/Silver_Bracelet",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "rings",
+   "name": "Rings (all 30, accessory slot)",
+   "description": "Rings are not armor, but builds list them under gear, so they are kept here as a pseudo-set: each \"piece\" is one ring with its slot set to \"Ring\". Effects are in notes.",
+   "pieces": [
+    {
+     "slot": "Ring",
+     "name": "Cat Ring",
+     "location": "Can be found at Swamp of Sorrow 5 - 2, to the left of the first fog gate, patrolled by the Cleaver wielding Black Phantom. Can be bought from Patches, the Hyena in The Nexus for 40000 souls."
+    },
+    {
+     "slot": "Ring",
+     "name": "Clever Rat's Ring",
+     "location": "Can be found at the Prison of Hope 3 - 1, middle of ballista hallway."
+    },
+    {
+     "slot": "Ring",
+     "name": "Cling Ring",
+     "location": "Can be found at the Gates of Boletaria 1 - 1, in the middle of two portcullises at bottom of tower stairwell past the fog gate near the Blue Eye Knight at the top of the wall."
+    },
+    {
+     "slot": "Ring",
+     "name": "Dull Rat's Ring",
+     "location": "Can be acquired by rescuing Lord Rydell at the Prison of Hope 3 - 1."
+    },
+    {
+     "slot": "Ring",
+     "name": "Eternal Warrior's Ring",
+     "location": "Dropped by Old King Doran, at the Boletarian Mausoleum in Gates of Boletaria 1 -1"
+    },
+    {
+     "slot": "Ring",
+     "name": "Foe's Ring",
+     "location": "Can be acquired as a reward from Mephistopheles for killing Yuria, the Witch."
+    },
+    {
+     "slot": "Ring",
+     "name": "Fragrant Ring",
+     "location": "Can be found at the Upper Latria 3 - 2, swamp area Treasure Trade a Brass Telescope with Sparkly the Crow Can be bought from Patches, the Hyena for 60000 souls Royalty class starts with this item equipped."
+    },
+    {
+     "slot": "Ring",
+     "name": "Ally's Ring",
+     "location": "Can be acquired by speaking with the Monumental, when your Character Tendency is Pure White."
+    },
+    {
+     "slot": "Ring",
+     "name": "Graverobber's Ring",
+     "location": "Can be found at the Island's Edge 4 - 2, after going through the second fog gate, go up the stairs and follow the ledge around to the beam that leads into a small ledge on the opposite side. Dropped by Graverobber Blige."
+    },
+    {
+     "slot": "Ring",
+     "name": "Master's Ring",
+     "location": "Dropped by Body Form Executioner Miralda, at the Gates of Boletaria 1 - 1. In the room where you face Dragon God, behind the second ballista, the one on the left. You have to follow the narrow walkway on the right. At the end you will find it on a lootable corpse."
+    },
+    {
+     "slot": "Ring",
+     "name": "Regenerator's Ring",
+     "location": "Can be found at the Island's Edge 4 - 1, along the cliff path on the other side of the tower where you get Copper Key. Roll over the broken down tower walls above it should be, near where the two archers were. Can be found at the Swamp of Sorrow 5 - 2, hug the wall as you first enter the poison swamp, past the Mirdan Hammer, in the alcove Trade the Jade Hair Ornament with Sparkly the Crow at Island's Edge 4 - 1."
+    },
+    {
+     "slot": "Ring",
+     "name": "Ring of Avarice",
+     "location": "Can be bought from Once Royal Mistress in the Prison of Hope 3 - 1, for 50000 souls Can be found at the Upper Latria 3 - 2, Below the boss tower after the heart is dropped"
+    },
+    {
+     "slot": "Ring",
+     "name": "Ring of Devout Prayer",
+     "location": "Trade Large Sword of Moonlight with Sparkly the Crow, at Island's Edge 4 - 2. Trade Vinland Crest with Selen Vinland at the Swamp of Sorrow 5 - 2. Dropped by Saint Urbain."
+    },
+    {
+     "slot": "Ring",
+     "name": "Plague Resistance Ring",
+     "location": "Can be found at The Tunnel City 2 - 2. From the archstone. go right along the tunnel. Once you reach the end, turn right, go through the narrow passage. You will have to start dropping from scaffolding to scaffolding. On the third one, on your left side, you will find it on a lootable corpse. Can be found at the Upper Latria 3 - 2, in the swamp near the location of the Primeval Demon"
+    },
+    {
+     "slot": "Ring",
+     "name": "Flame Resistance Ring",
+     "location": "Can be found near the outdoor dragon nest at the Gates of Boletaria 1 - 1 Can be acquired as a gift from Patches, the Hyena if you manage to disable his trap in The Tunnel City 2 - 2."
+    },
+    {
+     "slot": "Ring",
+     "name": "Gash Resistance Ring",
+     "location": "Can be found on a corpse in the tunnel under the bridge at The Lord's Path 1 - 2. Can be found in The Ritual Path 4 - 2, speak with Patches, the Hyena after rescuing Saint Urbain."
+    },
+    {
+     "slot": "Ring",
+     "name": "Ring of Great Strength",
+     "location": "At the Gates of Boletaria 1 - 1, under the dragon tail in the dragon nest area. Dropped by Biorr, of the Twin Fangs."
+    },
+    {
+     "slot": "Ring",
+     "name": "Ring of Herculean Strength",
+     "location": "Can be acquired by giving Jade Hair Ornament to Stockpile Thomas Can be acquired by killing Stockpile Thomas."
+    },
+    {
+     "slot": "Ring",
+     "name": "Ring Of Magical Dullness",
+     "location": "Can be found at the Depraved Chasm 5 - 1, on one of the roofs near the first Fog Gate. Trade Phosphorescent Pole with Sparkly the Crow, at Island's Edge 4 - 1"
+    },
+    {
+     "slot": "Ring",
+     "name": "Ring Of Magical Nature",
+     "location": "Can be found at the Inner Ward 1 - 3, in the Tower where Yuria, the Witch is held."
+    },
+    {
+     "slot": "Ring",
+     "name": "Ring Of Magical Sharpness",
+     "location": "Can be found at the Prison of Hope 3 - 1, on the 4th floor, in the room with four iron maidens before you go down the stairs."
+    },
+    {
+     "slot": "Ring",
+     "name": "Ring of Poison Resistance",
+     "location": "Can be found at the Gates of Boletaria 1 - 1, in the area near Executioner Miralda, on the stairs. Can be found at the Smithing Grounds 2 - 1, hidden area in the lava pit that becomes water logged."
+    },
+    {
+     "slot": "Ring",
+     "name": "Ring of Sincere Prayer",
+     "location": "Can be acquired by killing Maiden Astraea at Sanctuary of the Lost 5 - 4."
+    },
+    {
+     "slot": "Ring",
+     "name": "Ring of the Accursed",
+     "location": "Can be found at the Inner Ward 1 - 3, the tower where a Yuria, the Witch is held Dropped by Mephistopheles"
+    },
+    {
+     "slot": "Ring",
+     "name": "Ronin's Ring",
+     "location": "Can be found at The Tunnel City, Dropped by Scirvir, the Wanderer Can be found in the Slug cave area at The Ritual Path 4 - 2."
+    },
+    {
+     "slot": "Ring",
+     "name": "Thief Ring",
+     "location": "Can be found in a platform behind Ostrava, of Boletaria at the Boletarian Palace."
+    },
+    {
+     "slot": "Ring",
+     "name": "Ring of Longevity",
+     "location": "Stockpile Thomas upon starting a new character in the Deluxe Edition. Trade Pure Bladestone with Sparkly the Crow, at Island's Edge 4 - 1."
+    },
+    {
+     "slot": "Ring",
+     "name": "Providential Ring",
+     "location": "Stockpile Thomas upon starting a new character in the Deluxe Edition. Starting gift for new characters. Trade Large Sword of Searching with Sparkly the Crow, at Island's Edge 4 - 1."
+    },
+    {
+     "slot": "Ring",
+     "name": "Sodden Ring",
+     "location": "Behind a pillar near Prisoner Horde in the depths of Upper Latria 3 - 2. Requires Pure Black World Tendency."
+    },
+    {
+     "slot": "Ring",
+     "name": "Ring of Uneven Scales",
+     "location": "Trade Gold Coin with Sparkly the Crow, at Island's Edge 4 - 1."
+    }
+   ],
+   "weight": "",
+   "notes": "Cat Ring: Nullifies falling damage. | Clever Rat's Ring: When HP is below 30%, increases attack power by 50%. | Cling Ring: Increases your Max HP in Soul Form by 40%. | Dull Rat's Ring: When HP is below 30%, increases defense by 50%. | Eternal Warrior's Ring: Increases stamina regeneration speed. | Foe's Ring: Increases all damage by 20% as Black Phantom. | Fragrant Ring: Recovers MP over time at 1mp/4secs. | Ally's Ring: Increases all damage by 20% as Blue Phantom. | Graverobber's Ring: Becomes harder for Black Phantoms to detect. | Master's Ring: Increases Sweet Spot damage by 15%, decreases damage for all other attacks. | Regenerator's Ring: Recovers HP over time at 4hp/sec. | Ring of Avarice: 20% More soul points from enemies. | Ring of Devout Prayer: +1 miracle slot. | Plague Resistance Ring: Multiplies base disease resistance by 4. | Flame Resistance Ring: Add 40 points to Fire Resistance. | Gash Resistance Ring: Multiplies base bleeding resistance by 4. | Ring of Great Strength: Increases equipment weight capacity by 50%. | Ring of Herculean Strength: Raises item carry capacity. | Ring Of Magical Dullness: Increases magic defense by 20%, while decreasing magic attack power by 40%. | Ring Of Magical Nature: Provides one more Magic slot. | Ring Of Magical Sharpness: Increases magic attack by 20%, while decreasing magic defence power by 40%. | Ring of Poison Resistance: Multiplies base poison resistance by 4. | Ring of Sincere Prayer: Increases miracle power by 50%. Increases miracle casting time by 10%. | Ring of the Accursed: Wielder becomes enemies' top attack priority. | Ronin's Ring: Reduces the rate of weapon attrition | Thief Ring: Becomes harder for enemies to detect | Ring of Longevity: Increases max HP by 5%. | Providential Ring: Raises item discovery. | Sodden Ring: Higher mobility in deep water. | Ring of Uneven Scales: Raises maximum item burden, but lowers maximum equip burden.",
+   "location": "See each ring.",
+   "source": {
+    "label": "Fextralife – Rings",
+    "url": "https://demonssouls.wiki.fextralife.com/Rings",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  }
+ ],
+ "guides": [
+  {
+   "title": "Fextralife – Weapons (all weapon classes)",
+   "url": "https://demonssouls.wiki.fextralife.com/Weapons",
+   "source": "Fextralife"
+  },
+  {
+   "title": "Fextralife – Shields",
+   "url": "https://demonssouls.wiki.fextralife.com/Shields",
+   "source": "Fextralife"
+  },
+  {
+   "title": "Fextralife – Catalysts",
+   "url": "https://demonssouls.wiki.fextralife.com/Catalysts",
+   "source": "Fextralife"
+  },
+  {
+   "title": "Fextralife – Talismans",
+   "url": "https://demonssouls.wiki.fextralife.com/Talismans",
+   "source": "Fextralife"
+  },
+  {
+   "title": "Fextralife – Armor (all sets)",
+   "url": "https://demonssouls.wiki.fextralife.com/Armor",
+   "source": "Fextralife"
+  },
+  {
+   "title": "Fextralife – Helms / Chest Armor / Gauntlets / Leggings piece tables",
+   "url": "https://demonssouls.wiki.fextralife.com/Helms",
+   "source": "Fextralife"
+  },
+  {
+   "title": "Fextralife – Rings",
+   "url": "https://demonssouls.wiki.fextralife.com/Rings",
+   "source": "Fextralife"
+  },
+  {
+   "title": "Fextralife – Boss Soul Weapons",
+   "url": "https://demonssouls.wiki.fextralife.com/Boss_Soul_Weapons",
+   "source": "Fextralife"
+  },
+  {
+   "title": "Game8 – List of Armor Sets (PS5 remake)",
+   "url": "https://game8.co/games/demons-souls/archives/306006",
+   "source": "Game8"
+  },
+  {
+   "title": "Samurai Gamers – Armor Sets List (remake)",
+   "url": "https://samurai-gamers.com/demons-souls-remake/armor-sets-list/",
+   "source": "Samurai Gamers"
+  },
+  {
+   "title": "IGN – Demon's Souls Weapons",
+   "url": "https://www.ign.com/wikis/demons-souls/Weapons",
+   "source": "IGN"
+  }
+ ]
+}
