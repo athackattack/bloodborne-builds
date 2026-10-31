@@ -1,0 +1,101 @@
+{
+  "meta": {
+    "sample": true,
+    "notes": "SAMPLE DATA, not a research snapshot. These entries exist so the screens work until the full lists arrive. Do not treat the quantities or locations here as verified."
+  },
+  "weaponTypes": [
+    {
+      "id": "trick",
+      "name": "Trick weapon"
+    },
+    {
+      "id": "firearm",
+      "name": "Firearm"
+    }
+  ],
+  "weapons": [
+    {
+      "id": "saw-cleaver",
+      "name": "Saw Cleaver",
+      "type": "trick",
+      "description": "Sample. The starting serrated cleaver. It transforms from a short cleaver into a longer blade.",
+      "stats": {
+        "damage": "Physical, serrated in the short form"
+      },
+      "scaling": {},
+      "requirements": {},
+      "upgradePath": "Workshop, using blood stones, then blood gems in the slots.",
+      "location": "Starting gift, or the messenger bath in the Hunter's Dream.",
+      "source": {
+        "label": "Fextralife \u2014 Saw Cleaver",
+        "url": "https://bloodborne.wiki.fextralife.com/Saw+Cleaver",
+        "verifiedVia": "sample file, not re-fetched for this pass",
+        "unverified": true
+      }
+    },
+    {
+      "id": "hunter-pistol",
+      "name": "Hunter Pistol",
+      "type": "firearm",
+      "description": "Sample. A quick sidearm used to interrupt an attack and open a visceral.",
+      "stats": {
+        "damage": "Blood"
+      },
+      "scaling": {},
+      "requirements": {},
+      "upgradePath": "Workshop blood stones.",
+      "location": "Chosen at the start, or bought from the messengers.",
+      "source": {
+        "label": "Fextralife \u2014 Hunter Pistol",
+        "url": "https://bloodborne.wiki.fextralife.com/Hunter+Pistol",
+        "verifiedVia": "sample file, not re-fetched for this pass",
+        "unverified": true
+      }
+    }
+  ],
+  "armorSets": [
+    {
+      "id": "hunter-set",
+      "name": "Hunter Set",
+      "description": "Sample. The ordinary Yharnam hunter clothes.",
+      "pieces": [
+        {
+          "slot": "Head",
+          "name": "Hunter Hat",
+          "location": "Starting clothes, or the messenger bath."
+        },
+        {
+          "slot": "Chest",
+          "name": "Hunter Garb",
+          "location": "Starting clothes, or the messenger bath."
+        },
+        {
+          "slot": "Hands",
+          "name": "Hunter Gloves",
+          "location": "Starting clothes, or the messenger bath."
+        },
+        {
+          "slot": "Legs",
+          "name": "Hunter Trousers",
+          "location": "Starting clothes, or the messenger bath."
+        }
+      ],
+      "weight": "",
+      "notes": "Sample set. Defense numbers are left off until the full list is in.",
+      "location": "Hunter's Dream messenger bath, and the starting wardrobe.",
+      "source": {
+        "label": "Fextralife \u2014 Hunter Set",
+        "url": "https://bloodborne.wiki.fextralife.com/Hunter+Set",
+        "verifiedVia": "sample file, not re-fetched for this pass",
+        "unverified": true
+      }
+    }
+  ],
+  "guides": [
+    {
+      "title": "Fextralife \u2014 Weapons",
+      "url": "https://bloodborne.wiki.fextralife.com/Weapons",
+      "source": "Fextralife"
+    }
+  ]
+}

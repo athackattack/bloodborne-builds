@@ -1,0 +1,999 @@
+{
+  "meta": {
+    "viewBox": "0 0 1000 1360",
+    "notes": "Region shapes and pin positions are schematic, not a surveyed map. What a pin names is common knowledge of that place; entries marked uncertain should be checked on the linked page before you rely on them. The underground rivers, Farum Azula, Mohgwyn, and the shadow lands are drawn as separate bands because they are not walked to across the overworld."
+  },
+  "regions": [
+    {
+      "id": "limgrave",
+      "name": "Limgrave",
+      "path": "M 349.0 774.4 L 392.7 706.3 L 476.5 650.3 L 588.2 681.7 L 636.1 747.1 L 634.2 827.2 L 520.0 853.4 L 414.7 835.8 Z",
+      "labelPos": [
+        500,
+        760
+      ],
+      "description": "The opening region, south of Stormhill and west of Caelid."
+    },
+    {
+      "id": "weeping",
+      "name": "Weeping Peninsula",
+      "path": "M 410.6 931.8 L 477.2 910.9 L 553.4 929.6 L 558.7 984.5 L 537.2 1034.4 L 462.1 1055.3 L 403.4 1020.3 L 364.0 974.6 Z",
+      "labelPos": [
+        470,
+        980
+      ],
+      "description": "The peninsula south of Limgrave, across the Bridge of Sacrifice."
+    },
+    {
+      "id": "liurnia",
+      "name": "Liurnia of the Lakes",
+      "path": "M 88.9 575.8 L 135.6 501.0 L 225.0 439.4 L 344.0 473.9 L 395.2 545.8 L 393.2 633.9 L 271.3 662.7 L 159.0 643.4 Z",
+      "labelPos": [
+        250,
+        560
+      ],
+      "description": "The flooded academy region west of the grand lift."
+    },
+    {
+      "id": "caelid",
+      "name": "Caelid",
+      "path": "M 891.4 801.9 L 794.6 806.7 L 728.4 753.9 L 689.1 673.9 L 758.0 611.5 L 843.9 599.4 L 933.1 633.4 L 928.3 721.6 Z",
+      "labelPos": [
+        820,
+        700
+      ],
+      "description": "The scarlet east, from Limgrave's border to Greyoll's dragonbarrow."
+    },
+    {
+      "id": "altus",
+      "name": "Altus Plateau",
+      "path": "M 338.9 392.9 L 385.6 331.7 L 475.0 281.3 L 594.0 309.5 L 645.2 368.4 L 643.2 440.4 L 521.3 464.0 L 409.0 448.2 Z",
+      "labelPos": [
+        500,
+        380
+      ],
+      "description": "The plateau north of the Grand Lift of Dectus."
+    },
+    {
+      "id": "leyndell",
+      "name": "Leyndell",
+      "path": "M 564.5 398.9 L 517.7 400.7 L 485.7 380.6 L 466.7 350.0 L 500.0 326.2 L 541.6 321.6 L 584.7 334.6 L 582.3 368.3 Z",
+      "labelPos": [
+        530,
+        360
+      ],
+      "description": "The royal capital on Altus, at the foot of the Erdtree."
+    },
+    {
+      "id": "gelmir",
+      "name": "Mt. Gelmir",
+      "path": "M 99.3 350.0 L 128.5 302.4 L 184.4 263.2 L 258.8 285.2 L 290.8 330.9 L 289.5 387.0 L 213.3 405.4 L 143.1 393.1 Z",
+      "labelPos": [
+        200,
+        340
+      ],
+      "description": "The volcanic west of Altus, above the Seethewater valley."
+    },
+    {
+      "id": "mountaintops",
+      "name": "Mountaintops of the Giants",
+      "path": "M 649.2 219.5 L 528.3 222.8 L 445.5 186.8 L 396.4 132.2 L 482.5 89.7 L 589.9 81.4 L 701.3 104.6 L 695.3 164.7 Z",
+      "labelPos": [
+        560,
+        150
+      ],
+      "description": "The frozen north beyond the Grand Lift of Rold."
+    },
+    {
+      "id": "snowfield",
+      "name": "Consecrated Snowfield",
+      "path": "M 306.5 221.0 L 229.9 223.4 L 177.5 197.0 L 146.4 156.9 L 200.9 125.8 L 268.9 119.7 L 339.5 136.7 L 335.7 180.8 Z",
+      "labelPos": [
+        250,
+        170
+      ],
+      "description": "The hidden snowfield west of the mountaintops."
+    },
+    {
+      "id": "haligtree",
+      "name": "Miquella's Haligtree",
+      "path": "M 57.7 138.4 L 31.3 105.0 L 25.5 69.7 L 63.4 41.0 L 115.7 51.5 L 158.9 72.4 L 157.4 111.1 L 111.5 129.6 Z",
+      "labelPos": [
+        90,
+        90
+      ],
+      "description": "The hidden tree at the end of the snowfield town."
+    },
+    {
+      "id": "farum",
+      "name": "Crumbling Farum Azula",
+      "path": "M 950.0 130.0 L 929.8 172.7 L 860.0 178.7 L 794.0 170.3 L 763.7 130.0 L 804.0 95.8 L 860.0 71.1 L 926.0 89.7 Z",
+      "labelPos": [
+        860,
+        130
+      ],
+      "description": "The storm-bound dragon city, reached late and not part of the overworld walk."
+    },
+    {
+      "id": "mohgwyn",
+      "name": "Mohgwyn Palace",
+      "path": "M 940.0 980.0 L 922.1 1018.8 L 860.0 1024.3 L 801.3 1016.7 L 774.4 980.0 L 810.2 948.9 L 860.0 926.4 L 918.6 943.4 Z",
+      "labelPos": [
+        860,
+        980
+      ],
+      "description": "Mohg's palace, reached by a sending gate or a quest, off the overworld."
+    },
+    {
+      "id": "siofra",
+      "name": "Siofra River",
+      "path": "M 204.6 1157.1 L 144.1 1158.8 L 102.7 1139.6 L 78.2 1110.5 L 121.3 1087.8 L 174.9 1083.4 L 230.7 1095.8 L 227.7 1127.9 Z",
+      "labelPos": [
+        160,
+        1120
+      ],
+      "description": "The underground river well under Limgrave."
+    },
+    {
+      "id": "nokron",
+      "name": "Nokron",
+      "path": "M 405.0 1120.0 L 388.2 1151.0 L 330.0 1155.4 L 275.0 1149.3 L 249.7 1120.0 L 283.3 1095.1 L 330.0 1077.2 L 385.0 1090.7 Z",
+      "labelPos": [
+        330,
+        1120
+      ],
+      "description": "The eternal city opened beneath Limgrave after a mid-game event."
+    },
+    {
+      "id": "ainsel",
+      "name": "Ainsel River",
+      "path": "M 465.4 1092.5 L 515.4 1080.5 L 572.6 1091.2 L 576.5 1122.6 L 560.4 1151.1 L 504.1 1163.0 L 460.0 1143.0 L 430.5 1116.9 Z",
+      "labelPos": [
+        510,
+        1120
+      ],
+      "description": "The underground river under Liurnia, leading toward the Lake of Rot."
+    },
+    {
+      "id": "deeproot",
+      "name": "Deeproot Depths",
+      "path": "M 655.4 1160.3 L 627.1 1132.5 L 620.8 1103.1 L 661.5 1079.2 L 717.5 1087.9 L 763.8 1105.3 L 762.2 1137.6 L 713.0 1153.0 Z",
+      "labelPos": [
+        690,
+        1120
+      ],
+      "description": "The root depths beneath Leyndell."
+    },
+    {
+      "id": "gravesite",
+      "name": "Gravesite Plain",
+      "path": "M 250.0 1280.0 L 229.8 1309.5 L 160.0 1313.7 L 94.0 1307.9 L 63.7 1280.0 L 104.0 1256.4 L 160.0 1239.3 L 226.0 1252.2 Z",
+      "labelPos": [
+        160,
+        1280
+      ],
+      "description": "Shadow of the Erdtree. The first DLC plain, west of the shadow keep road."
+    },
+    {
+      "id": "scadu",
+      "name": "Scadu Altus",
+      "path": "M 289.4 1285.5 L 315.6 1259.6 L 365.9 1238.3 L 432.9 1250.2 L 461.7 1275.1 L 460.5 1305.5 L 392.0 1315.5 L 328.8 1308.8 Z",
+      "labelPos": [
+        380,
+        1280
+      ],
+      "description": "Shadow of the Erdtree. The plateau and Shadow Keep."
+    },
+    {
+      "id": "rauh",
+      "name": "Rauh",
+      "path": "M 553.1 1318.3 L 522.9 1291.9 L 516.2 1264.0 L 559.6 1241.2 L 619.4 1249.5 L 668.8 1266.1 L 667.0 1296.7 L 614.6 1311.4 Z",
+      "labelPos": [
+        590,
+        1280
+      ],
+      "description": "Shadow of the Erdtree. The ancient ruins east of the keep."
+    },
+    {
+      "id": "abyss",
+      "name": "Abyssal Woods",
+      "path": "M 709.4 1285.5 L 735.6 1259.6 L 785.9 1238.3 L 852.9 1250.2 L 881.7 1275.1 L 880.5 1305.5 L 812.0 1315.5 L 748.8 1308.8 Z",
+      "labelPos": [
+        800,
+        1280
+      ],
+      "description": "Shadow of the Erdtree. The dark woods in the south of the shadow lands."
+    }
+  ],
+  "layers": [
+    {
+      "id": "bosses",
+      "name": "Bosses",
+      "icon": "sword"
+    },
+    {
+      "id": "graces",
+      "name": "Sites of Grace",
+      "icon": "grace"
+    },
+    {
+      "id": "merchants",
+      "name": "Merchants",
+      "icon": "merchant"
+    },
+    {
+      "id": "items",
+      "name": "Gear and materials",
+      "icon": "item"
+    }
+  ],
+  "pins": [
+    {
+      "id": "margit",
+      "name": "Margit, the Fell Omen",
+      "layer": "bosses",
+      "region": "limgrave",
+      "x": 480,
+      "y": 705,
+      "description": "The first great foe, at Stormhill, on the road up to Stormveil.",
+      "finds": [
+        "Stormveil approach"
+      ],
+      "links": [
+        {
+          "label": "Margit",
+          "url": "https://eldenring.wiki.fextralife.com/Margit+the+Fell+Omen"
+        }
+      ]
+    },
+    {
+      "id": "godrick",
+      "name": "Godrick the Grafted",
+      "layer": "bosses",
+      "region": "limgrave",
+      "x": 510,
+      "y": 740,
+      "description": "Lord of Stormveil Castle, at the end of the castle.",
+      "finds": [
+        "Godrick's Great Rune",
+        "Remembrance of the Grafted"
+      ],
+      "links": [
+        {
+          "label": "Godrick",
+          "url": "https://eldenring.wiki.fextralife.com/Godrick+the+Grafted"
+        }
+      ]
+    },
+    {
+      "id": "rennala",
+      "name": "Rennala, Queen of the Full Moon",
+      "layer": "bosses",
+      "region": "liurnia",
+      "x": 290,
+      "y": 550,
+      "description": "The academy's queen, at the top of Raya Lucaria.",
+      "finds": [
+        "Great Rune of the Unborn",
+        "rebirth"
+      ],
+      "links": [
+        {
+          "label": "Rennala",
+          "url": "https://eldenring.wiki.fextralife.com/Rennala+Queen+of+the+Full+Moon"
+        }
+      ]
+    },
+    {
+      "id": "radahn",
+      "name": "Starscourge Radahn",
+      "layer": "bosses",
+      "region": "caelid",
+      "x": 810,
+      "y": 730,
+      "description": "The festival boss in Redmane, southeastern Caelid.",
+      "finds": [
+        "Radahn's Great Rune",
+        "Remembrance of the Starscourge"
+      ],
+      "links": [
+        {
+          "label": "Radahn",
+          "url": "https://eldenring.wiki.fextralife.com/Starscourge+Radahn"
+        }
+      ]
+    },
+    {
+      "id": "rykard",
+      "name": "Rykard, Lord of Blasphemy",
+      "layer": "bosses",
+      "region": "gelmir",
+      "x": 215,
+      "y": 350,
+      "description": "The serpent lord under Volcano Manor.",
+      "finds": [
+        "Remembrance of the Blasphemous",
+        "Blasphemous Blade from the remembrance"
+      ],
+      "links": [
+        {
+          "label": "Rykard",
+          "url": "https://eldenring.wiki.fextralife.com/Rykard+Lord+of+Blasphemy"
+        }
+      ]
+    },
+    {
+      "id": "morgott",
+      "name": "Morgott, the Omen King",
+      "layer": "bosses",
+      "region": "leyndell",
+      "x": 530,
+      "y": 368,
+      "description": "The veiled king at the foot of the Erdtree in Leyndell.",
+      "finds": [
+        "Remembrance of the Omen King"
+      ],
+      "links": [
+        {
+          "label": "Morgott",
+          "url": "https://eldenring.wiki.fextralife.com/Morgott+the+Omen+King"
+        }
+      ]
+    },
+    {
+      "id": "fire-giant",
+      "name": "Fire Giant",
+      "layer": "bosses",
+      "region": "mountaintops",
+      "x": 590,
+      "y": 170,
+      "description": "The giant of the Flame Peak forge, at the east end of the mountaintops.",
+      "finds": [
+        "Remembrance of the Fire Giant"
+      ],
+      "links": [
+        {
+          "label": "Fire Giant",
+          "url": "https://eldenring.wiki.fextralife.com/Fire+Giant"
+        }
+      ]
+    },
+    {
+      "id": "malenia",
+      "name": "Malenia, Blade of Miquella",
+      "layer": "bosses",
+      "region": "haligtree",
+      "x": 98,
+      "y": 96,
+      "description": "At the roots of Elphael, at the end of the Haligtree.",
+      "finds": [
+        "Remembrance of the Rot Goddess",
+        "Malenia's Great Rune"
+      ],
+      "links": [
+        {
+          "label": "Malenia",
+          "url": "https://eldenring.wiki.fextralife.com/Malenia+Blade+of+Miquella"
+        }
+      ]
+    },
+    {
+      "id": "maliketh",
+      "name": "Maliketh, the Black Blade",
+      "layer": "bosses",
+      "region": "farum",
+      "x": 860,
+      "y": 138,
+      "description": "The beast clergyman's second form in Crumbling Farum Azula.",
+      "finds": [
+        "Remembrance of the Black Blade"
+      ],
+      "links": [
+        {
+          "label": "Maliketh",
+          "url": "https://eldenring.wiki.fextralife.com/Maliketh+the+Black+Blade"
+        }
+      ]
+    },
+    {
+      "id": "mohg",
+      "name": "Mohg, Lord of Blood",
+      "layer": "bosses",
+      "region": "mohgwyn",
+      "x": 860,
+      "y": 986,
+      "description": "In Mohgwyn Palace. The palace itself is off the overworld.",
+      "finds": [
+        "Remembrance of the Blood Lord"
+      ],
+      "links": [
+        {
+          "label": "Mohg",
+          "url": "https://eldenring.wiki.fextralife.com/Mohg+Lord+of+Blood"
+        }
+      ]
+    },
+    {
+      "id": "astel",
+      "name": "Astel, Naturalborn of the Void",
+      "layer": "bosses",
+      "region": "ainsel",
+      "x": 520,
+      "y": 1124,
+      "description": "Past the Lake of Rot, at the end of the Ainsel route. A second Astel exists elsewhere.",
+      "finds": [
+        "Remembrance of the Naturalborn"
+      ],
+      "links": [
+        {
+          "label": "Astel",
+          "url": "https://eldenring.wiki.fextralife.com/Astel+Naturalborn+of+the+Void"
+        }
+      ],
+      "uncertain": true
+    },
+    {
+      "id": "radagon",
+      "name": "Radagon and the Elden Beast",
+      "layer": "bosses",
+      "region": "leyndell",
+      "x": 548,
+      "y": 344,
+      "description": "The final encounter inside the Erdtree, after Leyndell changes.",
+      "finds": [
+        "Elden Remembrance"
+      ],
+      "links": [
+        {
+          "label": "Elden Beast",
+          "url": "https://eldenring.wiki.fextralife.com/Elden+Beast"
+        }
+      ]
+    },
+    {
+      "id": "godfrey",
+      "name": "Godfrey, First Elden Lord",
+      "layer": "bosses",
+      "region": "leyndell",
+      "x": 512,
+      "y": 372,
+      "description": "Hoarah Loux waits in ashen Leyndell, before the Erdtree.",
+      "finds": [
+        "Remembrance of Hoarah Loux"
+      ],
+      "links": [
+        {
+          "label": "Godfrey",
+          "url": "https://eldenring.wiki.fextralife.com/Godfrey+First+Elden+Lord"
+        }
+      ]
+    },
+    {
+      "id": "dancing-lion",
+      "name": "Divine Beast Dancing Lion",
+      "layer": "bosses",
+      "region": "gravesite",
+      "x": 150,
+      "y": 1280,
+      "description": "Shadow of the Erdtree. The lion dance at Belurat, on Gravesite Plain.",
+      "finds": [
+        "Belurat"
+      ],
+      "links": [
+        {
+          "label": "Divine Beast",
+          "url": "https://eldenring.wiki.fextralife.com/Divine+Beast+Dancing+Lion"
+        }
+      ]
+    },
+    {
+      "id": "rellana",
+      "name": "Rellana, Twin Moon Knight",
+      "layer": "bosses",
+      "region": "gravesite",
+      "x": 200,
+      "y": 1272,
+      "description": "Shadow of the Erdtree. Castle Ensis, on the road from Gravesite Plain toward Scadu Altus.",
+      "finds": [
+        "Castle Ensis"
+      ],
+      "links": [
+        {
+          "label": "Rellana",
+          "url": "https://eldenring.wiki.fextralife.com/Rellana+Twin+Moon+Knight"
+        }
+      ]
+    },
+    {
+      "id": "messmer",
+      "name": "Messmer the Impaler",
+      "layer": "bosses",
+      "region": "scadu",
+      "x": 388,
+      "y": 1280,
+      "description": "Shadow of the Erdtree. In the Shadow Keep on Scadu Altus.",
+      "finds": [
+        "Shadow Keep"
+      ],
+      "links": [
+        {
+          "label": "Messmer",
+          "url": "https://eldenring.wiki.fextralife.com/Messmer+the+Impaler"
+        }
+      ]
+    },
+    {
+      "id": "romina",
+      "name": "Romina, Saint of the Bud",
+      "layer": "bosses",
+      "region": "rauh",
+      "x": 590,
+      "y": 1284,
+      "description": "Shadow of the Erdtree. Church of the Bud in the Rauh ruins.",
+      "finds": [
+        "Church of the Bud"
+      ],
+      "links": [
+        {
+          "label": "Romina",
+          "url": "https://eldenring.wiki.fextralife.com/Romina+Saint+of+the+Bud"
+        }
+      ]
+    },
+    {
+      "id": "midra",
+      "name": "Midra, Lord of Frenzied Flame",
+      "layer": "bosses",
+      "region": "abyss",
+      "x": 806,
+      "y": 1280,
+      "description": "Shadow of the Erdtree. Midra's Manse in the Abyssal Woods.",
+      "finds": [
+        "Midra's Manse"
+      ],
+      "links": [
+        {
+          "label": "Midra",
+          "url": "https://eldenring.wiki.fextralife.com/Midra+Lord+of+Frenzied+Flame"
+        }
+      ]
+    },
+    {
+      "id": "bayle",
+      "name": "Bayle the Dread",
+      "layer": "bosses",
+      "region": "scadu",
+      "x": 428,
+      "y": 1266,
+      "description": "Shadow of the Erdtree. Jagged Peak, reached from Scadu Altus. The pin sits on Scadu only because the peak is not its own shape here.",
+      "finds": [
+        "Jagged Peak"
+      ],
+      "links": [
+        {
+          "label": "Bayle",
+          "url": "https://eldenring.wiki.fextralife.com/Bayle+the+Dread"
+        }
+      ],
+      "uncertain": true
+    },
+    {
+      "id": "grace-first",
+      "name": "The First Step",
+      "layer": "graces",
+      "region": "limgrave",
+      "x": 460,
+      "y": 790,
+      "description": "The site of grace where the game opens.",
+      "finds": [
+        "Site of Grace"
+      ],
+      "links": [
+        {
+          "label": "Sites of Grace",
+          "url": "https://eldenring.wiki.fextralife.com/Sites+of+Grace"
+        }
+      ]
+    },
+    {
+      "id": "grace-elleh",
+      "name": "Church of Elleh",
+      "layer": "graces",
+      "region": "limgrave",
+      "x": 430,
+      "y": 770,
+      "description": "The ruined church just north of the start. Kal\u00e9 sits here.",
+      "finds": [
+        "Site of Grace",
+        "Kal\u00e9"
+      ],
+      "links": [
+        {
+          "label": "Church of Elleh",
+          "url": "https://eldenring.wiki.fextralife.com/Church+of+Elleh"
+        }
+      ]
+    },
+    {
+      "id": "grace-gatefront",
+      "name": "Gatefront",
+      "layer": "graces",
+      "region": "limgrave",
+      "x": 520,
+      "y": 785,
+      "description": "The camp grace on the road toward Stormhill. The Limgrave map fragment is here.",
+      "finds": [
+        "Map: Limgrave, West",
+        "Whetstone Knife"
+      ],
+      "links": [
+        {
+          "label": "Gatefront",
+          "url": "https://eldenring.wiki.fextralife.com/Gatefront"
+        }
+      ]
+    },
+    {
+      "id": "grace-stormhill",
+      "name": "Stormhill Shack",
+      "layer": "graces",
+      "region": "limgrave",
+      "x": 495,
+      "y": 690,
+      "description": "The shack grace on Stormhill, where Roderika first sits.",
+      "finds": [
+        "Site of Grace"
+      ],
+      "links": [
+        {
+          "label": "Stormhill Shack",
+          "url": "https://eldenring.wiki.fextralife.com/Stormhill+Shack"
+        }
+      ]
+    },
+    {
+      "id": "grace-academy",
+      "name": "Academy Gate Town",
+      "layer": "graces",
+      "region": "liurnia",
+      "x": 270,
+      "y": 600,
+      "description": "A lakeside grace on the road toward Raya Lucaria.",
+      "finds": [
+        "Site of Grace"
+      ],
+      "links": [
+        {
+          "label": "Academy Gate Town",
+          "url": "https://eldenring.wiki.fextralife.com/Academy+Gate+Town"
+        }
+      ],
+      "uncertain": true
+    },
+    {
+      "id": "grace-caelid",
+      "name": "Smoldering Wall",
+      "layer": "graces",
+      "region": "caelid",
+      "x": 780,
+      "y": 680,
+      "description": "A grace at Caelid's western entrance, by the burning wall.",
+      "finds": [
+        "Site of Grace"
+      ],
+      "links": [
+        {
+          "label": "Smoldering Wall",
+          "url": "https://eldenring.wiki.fextralife.com/Smoldering+Wall"
+        }
+      ]
+    },
+    {
+      "id": "grace-altus",
+      "name": "Erdtree-Gazing Hill",
+      "layer": "graces",
+      "region": "altus",
+      "x": 470,
+      "y": 400,
+      "description": "A wide grace on Altus with a view of the Erdtree.",
+      "finds": [
+        "Site of Grace"
+      ],
+      "links": [
+        {
+          "label": "Erdtree-Gazing Hill",
+          "url": "https://eldenring.wiki.fextralife.com/Erdtree-Gazing+Hill"
+        }
+      ]
+    },
+    {
+      "id": "grace-capital",
+      "name": "East Capital Rampart",
+      "layer": "graces",
+      "region": "leyndell",
+      "x": 558,
+      "y": 366,
+      "description": "The usual entrance grace on Leyndell's outer wall.",
+      "finds": [
+        "Site of Grace"
+      ],
+      "links": [
+        {
+          "label": "East Capital Rampart",
+          "url": "https://eldenring.wiki.fextralife.com/East+Capital+Rampart"
+        }
+      ]
+    },
+    {
+      "id": "grace-flame",
+      "name": "Freezing Lake",
+      "layer": "graces",
+      "region": "mountaintops",
+      "x": 540,
+      "y": 175,
+      "description": "The frozen lake near the Fire Giant's forge.",
+      "finds": [
+        "Site of Grace"
+      ],
+      "links": [
+        {
+          "label": "Fire Giant",
+          "url": "https://eldenring.wiki.fextralife.com/Fire+Giant"
+        }
+      ],
+      "uncertain": true
+    },
+    {
+      "id": "grace-shadow",
+      "name": "Gravesite Plain grace",
+      "layer": "graces",
+      "region": "gravesite",
+      "x": 130,
+      "y": 1292,
+      "description": "The opening site of grace in the Shadow of the Erdtree.",
+      "finds": [
+        "Site of Grace"
+      ],
+      "links": [
+        {
+          "label": "Gravesite Plain",
+          "url": "https://eldenring.wiki.fextralife.com/Gravesite+Plain"
+        }
+      ],
+      "uncertain": true
+    },
+    {
+      "id": "kale",
+      "name": "Kal\u00e9",
+      "layer": "merchants",
+      "region": "limgrave",
+      "x": 422,
+      "y": 782,
+      "description": "The nomadic merchant at Church of Elleh. He sells the crafting kit and a spirit calling bell route.",
+      "finds": [
+        "Crafting Kit",
+        "Nomadic Merchant's set notes"
+      ],
+      "links": [
+        {
+          "label": "Merchant Kale",
+          "url": "https://eldenring.wiki.fextralife.com/Merchant+Kale"
+        }
+      ]
+    },
+    {
+      "id": "roderika",
+      "name": "Roderika",
+      "layer": "merchants",
+      "region": "limgrave",
+      "x": 512,
+      "y": 682,
+      "description": "At Stormhill Shack early on. She later moves to the Roundtable Hold and upgrades spirit ashes.",
+      "finds": [
+        "Spirit Jellyfish Ashes, as a gift"
+      ],
+      "links": [
+        {
+          "label": "Roderika",
+          "url": "https://eldenring.wiki.fextralife.com/Roderika"
+        }
+      ]
+    },
+    {
+      "id": "roundtable",
+      "name": "Roundtable Hold",
+      "layer": "merchants",
+      "region": "limgrave",
+      "x": 555,
+      "y": 720,
+      "description": "The hub is not on the overworld. This pin marks Stormhill, where Melina offers the invitation. The hold itself is a separate space.",
+      "finds": [
+        "Hewg",
+        "spirit tuning"
+      ],
+      "links": [
+        {
+          "label": "Roundtable Hold",
+          "url": "https://eldenring.wiki.fextralife.com/Roundtable+Hold"
+        }
+      ]
+    },
+    {
+      "id": "liurnia-merchant",
+      "name": "Liurnia lake merchant",
+      "layer": "merchants",
+      "region": "liurnia",
+      "x": 220,
+      "y": 610,
+      "description": "One of the nomadic merchants along the Liurnia lake roads. Several share this region; the pin is not a specific stall.",
+      "finds": [
+        "Nomadic merchant"
+      ],
+      "links": [
+        {
+          "label": "Nomadic Merchants",
+          "url": "https://eldenring.wiki.fextralife.com/Nomadic+Merchant"
+        }
+      ],
+      "uncertain": true
+    },
+    {
+      "id": "caelid-merchant",
+      "name": "Caelid isolated merchant",
+      "layer": "merchants",
+      "region": "caelid",
+      "x": 850,
+      "y": 660,
+      "description": "An isolated merchant in northern Caelid. The exact shack is easy to mix up with the others, so treat the spot as approximate.",
+      "finds": [
+        "Isolated merchant"
+      ],
+      "links": [
+        {
+          "label": "Isolated Merchant",
+          "url": "https://eldenring.wiki.fextralife.com/Isolated+Merchant"
+        }
+      ],
+      "uncertain": true
+    },
+    {
+      "id": "physick",
+      "name": "Flask of Wondrous Physick",
+      "layer": "items",
+      "region": "limgrave",
+      "x": 570,
+      "y": 775,
+      "description": "The physick flask is in the Third Church of Marika, east Limgrave.",
+      "finds": [
+        "Flask of Wondrous Physick"
+      ],
+      "links": [
+        {
+          "label": "Flask of Wondrous Physick",
+          "url": "https://eldenring.wiki.fextralife.com/Flask+of+Wondrous+Physick"
+        }
+      ]
+    },
+    {
+      "id": "bloodhound",
+      "name": "Bloodhound's Fang",
+      "layer": "items",
+      "region": "limgrave",
+      "x": 515,
+      "y": 815,
+      "description": "Forlorn Hound Evergaol, in southern Limgrave.",
+      "finds": [
+        "Bloodhound's Fang"
+      ],
+      "links": [
+        {
+          "label": "Bloodhound's Fang",
+          "url": "https://eldenring.wiki.fextralife.com/Bloodhound's+Fang"
+        }
+      ]
+    },
+    {
+      "id": "uchi",
+      "name": "Uchigatana",
+      "layer": "items",
+      "region": "limgrave",
+      "x": 560,
+      "y": 745,
+      "description": "Deathtouched Catacombs, Limgrave.",
+      "finds": [
+        "Uchigatana"
+      ],
+      "links": [
+        {
+          "label": "Uchigatana",
+          "url": "https://eldenring.wiki.fextralife.com/Uchigatana"
+        }
+      ]
+    },
+    {
+      "id": "tunnels",
+      "name": "Limgrave Tunnels",
+      "layer": "items",
+      "region": "limgrave",
+      "x": 480,
+      "y": 805,
+      "description": "A smithing-stone mine in Limgrave.",
+      "finds": [
+        "Smithing Stone"
+      ],
+      "links": [
+        {
+          "label": "Limgrave Tunnels",
+          "url": "https://eldenring.wiki.fextralife.com/Limgrave+Tunnels"
+        }
+      ]
+    },
+    {
+      "id": "moonveil",
+      "name": "Moonveil",
+      "layer": "items",
+      "region": "caelid",
+      "x": 765,
+      "y": 710,
+      "description": "Gael Tunnel, on the Limgrave\u2013Caelid border. The pin sits on the Caelid side of that border.",
+      "finds": [
+        "Moonveil"
+      ],
+      "links": [
+        {
+          "label": "Moonveil",
+          "url": "https://eldenring.wiki.fextralife.com/Moonveil"
+        }
+      ]
+    },
+    {
+      "id": "rivers",
+      "name": "Rivers of Blood",
+      "layer": "items",
+      "region": "mountaintops",
+      "x": 510,
+      "y": 140,
+      "description": "Church of Repose. Okina's invasion drops the katana.",
+      "finds": [
+        "Rivers of Blood"
+      ],
+      "links": [
+        {
+          "label": "Rivers of Blood",
+          "url": "https://eldenring.wiki.fextralife.com/Rivers+of+Blood"
+        }
+      ]
+    },
+    {
+      "id": "seed",
+      "name": "Minor Erdtree, east Limgrave",
+      "layer": "items",
+      "region": "limgrave",
+      "x": 590,
+      "y": 800,
+      "description": "A minor Erdtree in eastern Limgrave. The avatar fight there yields a Golden Seed.",
+      "finds": [
+        "Golden Seed"
+      ],
+      "links": [
+        {
+          "label": "Golden Seed",
+          "url": "https://eldenring.wiki.fextralife.com/Golden+Seed"
+        }
+      ],
+      "uncertain": true
+    }
+  ],
+  "mapLinks": [
+    {
+      "label": "MapGenie \u2014 The Lands Between",
+      "url": "https://mapgenie.io/elden-ring/maps/the-lands-between",
+      "note": "A full interactive map. This app can try to open it inside the page; if the frame stays blank, use this link."
+    },
+    {
+      "label": "Fextralife interactive map",
+      "url": "https://eldenring.wiki.fextralife.com/Interactive+Map",
+      "note": "Opens in a new tab. That site does not allow embedding."
+    }
+  ]
+}

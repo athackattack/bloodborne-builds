@@ -1,0 +1,117 @@
+{
+  "meta": {
+    "sample": true,
+    "notes": "SAMPLE DATA, not a research snapshot. These entries exist so the screens work until the full lists arrive. Do not treat the quantities or locations here as verified."
+  },
+  "categories": [
+    {
+      "id": "food",
+      "name": "Food",
+      "description": "Sample category for cookbook recipes."
+    },
+    {
+      "id": "stones",
+      "name": "Stones",
+      "description": "Sample category for upgrade materials, which are found rather than cooked."
+    }
+  ],
+  "items": [
+    {
+      "id": "gold-fowl",
+      "name": "Gold-Pickled Fowl Foot",
+      "category": "food",
+      "description": "Sample recipe. Raises rune gain for a short time. Confirm the cookbook and the amounts on the linked page before you rely on them.",
+      "effect": "More runes from defeated foes for a short while.",
+      "materials": [
+        {
+          "name": "Four-Toed Fowl Foot",
+          "qty": 1,
+          "note": "Sample amount."
+        },
+        {
+          "name": "Gold Firefly",
+          "qty": 1,
+          "note": "Sample amount."
+        },
+        {
+          "name": "Rowa Fruit",
+          "qty": 1,
+          "note": "Sample amount."
+        }
+      ],
+      "whereToFind": "Crafted after the matching cookbook. The ingredients are gathered in Limgrave and Liurnia.",
+      "source": {
+        "label": "Fextralife \u2014 Gold-Pickled Fowl Foot",
+        "url": "https://eldenring.wiki.fextralife.com/Gold-Pickled+Fowl+Foot",
+        "verifiedVia": "sample file, not re-fetched for this pass",
+        "unverified": true
+      }
+    },
+    {
+      "id": "smithing-1",
+      "name": "Smithing Stone [1]",
+      "category": "stones",
+      "description": "Sample. The basic smithing stone. It is mined and picked up, not cooked.",
+      "effect": "Used at a smith to reinforce an ordinary weapon.",
+      "materials": [],
+      "whereToFind": "Limgrave Tunnels and other early caves and soldiers.",
+      "source": {
+        "label": "Fextralife \u2014 Smithing Stone",
+        "url": "https://eldenring.wiki.fextralife.com/Smithing+Stone",
+        "verifiedVia": "sample file, not re-fetched for this pass",
+        "unverified": true
+      }
+    }
+  ],
+  "materials": [
+    {
+      "id": "fowl",
+      "name": "Four-Toed Fowl Foot",
+      "type": "Creature",
+      "description": "Sample. A crafting meat from birds and similar foes.",
+      "whereToFind": "Birds and demi-humans in Limgrave and Liurnia.",
+      "usedFor": "Pickled fowl feet and similar recipes.",
+      "source": {
+        "label": "Fextralife \u2014 Four-Toed Fowl Foot",
+        "url": "https://eldenring.wiki.fextralife.com/Four-Toed+Fowl+Foot",
+        "verifiedVia": "sample file, not re-fetched for this pass",
+        "unverified": true
+      }
+    },
+    {
+      "id": "firefly",
+      "name": "Gold Firefly",
+      "type": "Creature",
+      "description": "Sample. A glowing insect used in rune-gain recipes.",
+      "whereToFind": "Limgrave and Liurnia, often at night near the lakes and ruins.",
+      "usedFor": "Gold-Pickled Fowl Foot.",
+      "source": {
+        "label": "Fextralife \u2014 Gold Firefly",
+        "url": "https://eldenring.wiki.fextralife.com/Gold+Firefly",
+        "verifiedVia": "sample file, not re-fetched for this pass",
+        "unverified": true
+      }
+    },
+    {
+      "id": "rowa",
+      "name": "Rowa Fruit",
+      "type": "Plant",
+      "description": "Sample. The common red berry.",
+      "whereToFind": "Bushes all over Limgrave.",
+      "usedFor": "Early recipes and a few boluses.",
+      "source": {
+        "label": "Fextralife \u2014 Rowa Fruit",
+        "url": "https://eldenring.wiki.fextralife.com/Rowa+Fruit",
+        "verifiedVia": "sample file, not re-fetched for this pass",
+        "unverified": true
+      }
+    }
+  ],
+  "guides": [
+    {
+      "title": "Fextralife \u2014 Crafting",
+      "url": "https://eldenring.wiki.fextralife.com/Crafting",
+      "source": "Fextralife"
+    }
+  ]
+}

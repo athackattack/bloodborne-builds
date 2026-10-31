@@ -20,10 +20,11 @@ const DENSITY_KEY = "souls-builds-density";
 const sheet = document.getElementById("sheet");
 const sheetBody = document.getElementById("sheet-body");
 
-const state = {
+var state = {
   games: [],
   game: null,
   data: null,
+  extra: null,
   ui: {}
 };
 const loaded = new Map();
@@ -62,7 +63,22 @@ function gameById(id) {
 }
 
 function uiFor(id) {
-  if (!state.ui[id]) state.ui[id] = { arch: "", best: "", query: "", sort: "listed", guideType: "" };
+  if (!state.ui[id]) {
+    state.ui[id] = {
+      arch: "",
+      best: "",
+      query: "",
+      sort: "listed",
+      guideType: "",
+      craftQuery: "",
+      craftCat: "",
+      equipQuery: "",
+      equipType: "",
+      equipSort: "listed",
+      mapQuery: "",
+      mapLayers: {}
+    };
+  }
   return state.ui[id];
 }
 
@@ -264,20 +280,86 @@ function parseHash() {
   const known = parts.length > 0 && gameById(parts[0]);
   const gameId = known ? parts[0] : storedGameId();
   const rest = known ? parts.slice(1) : parts;
-  let view = "tiers";
-  let about = false;
-  let build = null;
-  if (rest[0] === "guides") view = "guides";
-  else if (rest[0] === "about") about = true;
-  else if (rest[0] === "build" && rest[1]) build = rest.slice(1).join("/");
-  return { gameId, view, about, build, unscoped: !known };
+  const route = {
+    gameId,
+    section: "builds",
+    view: "tiers",
+    about: false,
+    build: null,
+    focus: null,
+    unscoped: !known
+  };
+  const head = rest[0] || "";
+  if (head === "guides") route.view = "guides";
+  else if (head === "about") route.about = true;
+  else if (head === "build" && rest[1]) route.build = rest.slice(1).join("/");
+  else if (head === "map") {
+    route.section = "map";
+    route.view = "map";
+    if (rest[1] === "pin" && rest[2]) route.focus = { kind: "pin", id: rest.slice(2).join("/") };
+  } else if (head === "crafting") {
+    route.section = "crafting";
+    route.view = "crafting";
+    if (rest[1] === "item" && rest[2]) route.focus = { kind: "item", id: rest.slice(2).join("/") };
+    else if (rest[1] === "material" && rest[2]) route.focus = { kind: "material", id: rest.slice(2).join("/") };
+  } else if (head === "equipment") {
+    route.section = "equipment";
+    const tab = rest[1] === "armor" ? "armor" : "weapons";
+    route.view = tab;
+    if (rest[2]) route.focus = { kind: tab === "armor" ? "armor" : "weapon", id: rest.slice(2).join("/") };
+  }
+  return route;
 }
 
-function hashFor(gameId, view, buildId) {
-  if (buildId) return `${gameId}/build/${encodeURIComponent(buildId)}`;
+function hashFor(gameId, view, id) {
   if (view === "guides") return `${gameId}/guides`;
   if (view === "about") return `${gameId}/about`;
+  if ((view === "tiers" || view === "builds" || !view) && id) return `${gameId}/build/${encodeURIComponent(id)}`;
+  if (view === "map") return id ? `${gameId}/map/pin/${encodeURIComponent(id)}` : `${gameId}/map`;
+  if (view === "crafting") return `${gameId}/crafting`;
+  if (view === "craft-item") return `${gameId}/crafting/item/${encodeURIComponent(id)}`;
+  if (view === "craft-material") return `${gameId}/crafting/material/${encodeURIComponent(id)}`;
+  if (view === "weapons") return id ? `${gameId}/equipment/weapons/${encodeURIComponent(id)}` : `${gameId}/equipment/weapons`;
+  if (view === "armor") return id ? `${gameId}/equipment/armor/${encodeURIComponent(id)}` : `${gameId}/equipment/armor`;
+  if (view === "equipment") return `${gameId}/equipment/weapons`;
   return gameId;
+}
+
+function sectionFile(game, section) {
+  if (!game) return "";
+  if (section === "map") return game.map || "";
+  if (section === "crafting") return game.crafting || "";
+  if (section === "equipment") return game.equipment || "";
+  return "";
+}
+
+function scopedHash(gameId, route) {
+  if (route.focus) {
+    if (route.focus.kind === "pin") return hashFor(gameId, "map", route.focus.id);
+    if (route.focus.kind === "item") return hashFor(gameId, "craft-item", route.focus.id);
+    if (route.focus.kind === "material") return hashFor(gameId, "craft-material", route.focus.id);
+    if (route.focus.kind === "weapon") return hashFor(gameId, "weapons", route.focus.id);
+    if (route.focus.kind === "armor") return hashFor(gameId, "armor", route.focus.id);
+  }
+  if (route.section === "map") return hashFor(gameId, "map");
+  if (route.section === "crafting") return hashFor(gameId, "crafting");
+  if (route.section === "equipment") return hashFor(gameId, route.view === "armor" ? "armor" : "weapons");
+  return hashFor(gameId, route.about ? "about" : route.view, route.build);
+}
+
+function sectionCount(section, extra) {
+  if (!extra) return "";
+  if (section === "map") {
+    const n = (extra.pins || []).length;
+    return `${n} ${n === 1 ? "place" : "places"}`;
+  }
+  if (section === "crafting") {
+    const n = (extra.items || []).length;
+    return `${n} ${n === 1 ? "recipe" : "recipes"}`;
+  }
+  const weapons = (extra.weapons || []).length;
+  const sets = (extra.armorSets || []).length;
+  return `${weapons} weapons · ${sets} sets`;
 }
 
 function setHash(hash) {
@@ -293,7 +375,7 @@ function setHash(hash) {
 
 function leaveSheet() {
   const route = parseHash();
-  if (!route.about && !route.build) {
+  if (!route.about && !route.build && !route.focus) {
     if (sheet.open) sheet.close();
     return;
   }
@@ -301,7 +383,11 @@ function leaveSheet() {
     history.back();
     return;
   }
-  const next = hashFor(route.gameId, route.view === "guides" ? "guides" : "tiers");
+  let next;
+  if (route.section === "map") next = hashFor(route.gameId, "map");
+  else if (route.section === "crafting") next = hashFor(route.gameId, "crafting");
+  else if (route.section === "equipment") next = hashFor(route.gameId, route.view === "armor" ? "armor" : "weapons");
+  else next = hashFor(route.gameId, route.view === "guides" ? "guides" : "tiers");
   history.replaceState({ bb: true }, "", `${location.pathname}${location.search}#${next}`);
   render();
 }
@@ -366,6 +452,29 @@ function renderGuideChips() {
   document.getElementById("guide-row").replaceChildren(
     chipButton("data-guide", "", "All", !ui.guideType),
     ...types.map((type) => chipButton("data-guide", type, siteLabel(type), ui.guideType === type))
+  );
+}
+
+function renderSectionNav(route) {
+  const nav = document.getElementById("section-nav");
+  if (!nav || !state.game) return;
+  const game = state.game;
+  const items = [
+    ["builds", "Builds", true],
+    ["map", "Map", Boolean(game.map)],
+    ["crafting", "Crafting", Boolean(game.crafting)],
+    ["equipment", "Equipment", Boolean(game.equipment)]
+  ].filter((item) => item[2]);
+  nav.replaceChildren(
+    ...items.map(([id, label]) =>
+      el("button", {
+        type: "button",
+        class: "section-tab",
+        "data-section": id,
+        "aria-pressed": route.section === id ? "true" : "false",
+        text: label
+      })
+    )
   );
 }
 
@@ -659,6 +768,16 @@ async function loadGame(game) {
   return data;
 }
 
+const extras = new Map();
+async function loadExtra(path) {
+  if (extras.has(path)) return extras.get(path);
+  const response = await fetch(`./${path}`);
+  if (!response.ok) throw new Error(String(response.status));
+  const data = await response.json();
+  extras.set(path, data);
+  return data;
+}
+
 async function render() {
   const token = ++renderToken;
   if (!state.games.length) return;
@@ -674,38 +793,85 @@ async function render() {
   }
   if (token !== renderToken) return;
 
-  if (route.unscoped) {
-    const scoped = hashFor(game.id, route.about ? "about" : route.view, route.build);
-    const next = `#${scoped}`;
-    if (location.hash !== next) history.replaceState(history.state || { bb: true }, "", `${location.pathname}${location.search}${next}`);
+  let fellBack = false;
+  if (route.section !== "builds" && !sectionFile(game, route.section)) {
+    fellBack = true;
+    route.section = "builds";
+    route.view = "tiers";
+    route.focus = null;
+    route.about = false;
+    route.build = null;
+  }
+
+  const canonical = `#${scopedHash(game.id, route)}`;
+  if ((route.unscoped || fellBack) && location.hash !== canonical) {
+    history.replaceState(history.state || { bb: true }, "", `${location.pathname}${location.search}${canonical}`);
   }
 
   state.game = game;
   state.data = data;
   rememberGame(game.id);
   applyAccent(game);
-  document.getElementById("lede").textContent = firstSentence(data.meta.notes);
-  document.getElementById("catalog").textContent = `${data.builds.length} builds`;
   applyDensity();
 
-  const onGuides = route.view === "guides";
-  document.getElementById("panel-tiers").hidden = onGuides;
+  const onBuilds = route.section === "builds";
+  const onGuides = onBuilds && route.view === "guides";
+  document.getElementById("lede").hidden = !onBuilds;
+  document.querySelector(".tabs").hidden = !onBuilds;
+  document.getElementById("panel-tiers").hidden = !onBuilds || onGuides;
   document.getElementById("panel-guides").hidden = !onGuides;
+  document.getElementById("panel-map").hidden = route.section !== "map";
+  document.getElementById("panel-crafting").hidden = route.section !== "crafting";
+  document.getElementById("panel-equipment").hidden = route.section !== "equipment";
   document.getElementById("tab-tiers").setAttribute("aria-selected", onGuides ? "false" : "true");
   document.getElementById("tab-guides").setAttribute("aria-selected", onGuides ? "true" : "false");
   renderGameTabs();
-  renderFilterChips();
-  renderGuideChips();
-  renderList();
-  renderGuides();
-  document.getElementById("colophon").textContent = data.meta.generatedDate
-    ? `${game.name} · research snapshot ${data.meta.generatedDate}.`
-    : "";
+  renderSectionNav(route);
+
+  if (route.section !== "map" && typeof SoulsSections !== "undefined") SoulsSections.closeEmbed();
+
+  if (onBuilds) {
+    state.extra = null;
+    document.getElementById("lede").textContent = firstSentence(data.meta.notes);
+    document.getElementById("catalog").textContent = `${data.builds.length} builds`;
+    document.getElementById("colophon").textContent = data.meta.generatedDate
+      ? `${game.name} · research snapshot ${data.meta.generatedDate}.`
+      : "";
+    renderFilterChips();
+    renderGuideChips();
+    renderList();
+    renderGuides();
+  } else {
+    const path = sectionFile(game, route.section);
+    const panel = document.getElementById(`panel-${route.section}`);
+    try {
+      state.extra = await loadExtra(path);
+    } catch (error) {
+      if (token !== renderToken) return;
+      state.extra = null;
+      if (panel) panel.replaceChildren(el("p", { class: "empty", text: "This section could not be loaded." }));
+    }
+    if (token !== renderToken) return;
+    const notes = state.extra && state.extra.meta && state.extra.meta.notes;
+    document.getElementById("lede").textContent = notes ? firstSentence(notes) : `${game.name}`;
+    document.getElementById("catalog").textContent = sectionCount(route.section, state.extra);
+    const sample = state.extra && state.extra.meta && state.extra.meta.sample;
+    document.getElementById("colophon").textContent = sample
+      ? `${game.name} · sample ${route.section} entries.`
+      : `${game.name} · ${route.section}.`;
+    if (state.extra && typeof SoulsSections !== "undefined") {
+      SoulsSections.render({ section: route.section, extra: state.extra, route });
+    }
+  }
 
   if (route.about) showSheet(renderAbout());
   else if (route.build) {
     const build = data.builds.find((item) => item.id === route.build);
     if (build) showSheet(renderBuild(build));
+    else if (sheet.open) sheet.close();
+  } else if (route.focus && state.extra && typeof SoulsSections !== "undefined") {
+    const node = SoulsSections.sheet(route, state.extra);
+    if (node) showSheet(node);
     else if (sheet.open) sheet.close();
   } else if (sheet.open) sheet.close();
   syncHeaderHeight();
@@ -754,9 +920,24 @@ function bind() {
   document.getElementById("game-row").addEventListener("click", (event) => {
     const button = event.target.closest("[data-game]");
     if (!button || !state.game || button.dataset.game === state.game.id) return;
+    const next = gameById(button.dataset.game);
     const route = parseHash();
-    const view = route.about ? "about" : route.view === "guides" ? "guides" : "tiers";
+    let view = "tiers";
+    if (route.section === "map" && next && next.map) view = "map";
+    else if (route.section === "crafting" && next && next.crafting) view = "crafting";
+    else if (route.section === "equipment" && next && next.equipment) view = route.view === "armor" ? "armor" : "weapons";
+    else if (route.about) view = "about";
+    else if (route.view === "guides") view = "guides";
     setHash(hashFor(button.dataset.game, view));
+  });
+  document.getElementById("section-nav").addEventListener("click", (event) => {
+    const button = event.target.closest("[data-section]");
+    if (!button || !state.game) return;
+    const id = button.dataset.section;
+    if (id === "map") setHash(hashFor(state.game.id, "map"));
+    else if (id === "crafting") setHash(hashFor(state.game.id, "crafting"));
+    else if (id === "equipment") setHash(hashFor(state.game.id, "weapons"));
+    else setHash(hashFor(state.game.id, "tiers"));
   });
   document.getElementById("tab-tiers").addEventListener("click", () => {
     if (state.game) setHash(hashFor(state.game.id, "tiers"));
@@ -782,6 +963,7 @@ function bind() {
 }
 
 async function init() {
+  if (typeof SoulsSections !== "undefined") SoulsSections.startEmbers();
   const list = document.getElementById("tier-list");
   try {
     const response = await fetch("./data/games.json");

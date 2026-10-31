@@ -558,7 +558,7 @@ main.wrap { padding-top: 0.95rem; padding-bottom: calc(2.4rem + env(safe-area-in
   font-family: var(--text);
   overflow: hidden;
 }
-#sheet::backdrop { background: rgba(5, 3, 3, 0.9); }
+#sheet::backdrop { background: rgba(5, 3, 3, 0.72); }
 .sheet-panel {
   position: absolute;
   left: 0;

@@ -1,0 +1,1001 @@
+{
+  "meta": {
+    "viewBox": "0 0 1100 1200",
+    "notes": "Region shapes and pin positions are schematic, not a surveyed map. What a pin names is common knowledge of that place; entries marked uncertain should be checked on the linked page before you rely on them. The Nexus sits in the middle. The five archstone worlds radiate out from it: Boletaria, Stonefang, Latria, the Shrine of Storms, and the Valley of Defilement. Boletaria includes 1-4 because that is where False King Allant is."
+  },
+  "regions": [
+    {
+      "id": "nexus",
+      "name": "The Nexus",
+      "path": "M 628.0 600.0 L 610.5 654.3 L 550.0 662.0 L 492.8 651.3 L 466.5 600.0 L 501.5 556.4 L 550.0 525.0 L 607.2 548.7 Z",
+      "labelPos": [
+        550,
+        600
+      ],
+      "description": "The hub. Every archstone returns here."
+    },
+    {
+      "id": "boletaria-1",
+      "name": "Boletarian Palace 1-1",
+      "path": "M 580.9 449.1 L 539.0 450.8 L 510.3 431.6 L 493.3 402.5 L 523.1 379.8 L 560.4 375.4 L 599.0 387.8 L 596.9 419.9 Z",
+      "labelPos": [
+        550.0,
+        412.0
+      ],
+      "description": "Archstone level 1-1. The demon of this level is Phalanx."
+    },
+    {
+      "id": "boletaria-2",
+      "name": "Boletarian Palace 1-2",
+      "path": "M 519.1 272.5 L 553.8 260.5 L 593.4 271.2 L 596.1 302.6 L 584.9 331.1 L 545.9 343.0 L 515.4 323.0 L 494.9 296.9 Z",
+      "labelPos": [
+        550.0,
+        300.0
+      ],
+      "description": "Archstone level 1-2. The demon of this level is Tower Knight."
+    },
+    {
+      "id": "boletaria-3",
+      "name": "Boletarian Palace 1-3",
+      "path": "M 497.6 193.7 L 512.8 166.5 L 541.9 144.1 L 580.6 156.7 L 597.2 182.8 L 596.5 214.9 L 556.9 225.4 L 520.4 218.3 Z",
+      "labelPos": [
+        550.0,
+        188.0
+      ],
+      "description": "Archstone level 1-3. The demon of this level is Penetrator."
+    },
+    {
+      "id": "boletaria-4",
+      "name": "Boletarian Palace 1-4",
+      "path": "M 519.1 48.5 L 553.8 36.5 L 593.4 47.2 L 596.1 78.6 L 584.9 107.1 L 545.9 119.0 L 515.4 99.0 L 494.9 72.9 Z",
+      "labelPos": [
+        550.0,
+        76.0
+      ],
+      "description": "Archstone level 1-4. The demon of this level is False King Allant."
+    },
+    {
+      "id": "stonefang-1",
+      "name": "Stonefang Tunnel 2-1",
+      "path": "M 697.9 514.4 L 732.6 502.4 L 772.2 513.1 L 774.9 544.5 L 763.7 573.0 L 724.7 584.9 L 694.2 564.9 L 673.7 538.8 Z",
+      "labelPos": [
+        728.8,
+        541.9
+      ],
+      "description": "Archstone level 2-1. The demon of this level is Armor Spider."
+    },
+    {
+      "id": "stonefang-2",
+      "name": "Stonefang Tunnel 2-2",
+      "path": "M 783.0 513.0 L 798.1 485.8 L 827.2 463.4 L 865.9 476.0 L 882.5 502.1 L 881.9 534.2 L 842.2 544.6 L 805.7 537.6 Z",
+      "labelPos": [
+        835.3,
+        507.3
+      ],
+      "description": "Archstone level 2-2. The demon of this level is Flamelurker."
+    },
+    {
+      "id": "stonefang-3",
+      "name": "Stonefang Tunnel 2-3",
+      "path": "M 917.8 513.0 L 898.2 485.2 L 893.9 455.8 L 922.1 431.9 L 960.9 440.6 L 993.0 458.0 L 991.9 490.3 L 957.8 505.7 Z",
+      "labelPos": [
+        941.8,
+        472.7
+      ],
+      "description": "Archstone level 2-3. The demon of this level is Dragon God."
+    },
+    {
+      "id": "latria-1",
+      "name": "Tower of Latria 3-1",
+      "path": "M 712.5 752.1 L 700.8 783.1 L 660.5 787.5 L 622.4 781.4 L 604.9 752.1 L 628.1 727.2 L 660.5 709.3 L 698.6 722.8 Z",
+      "labelPos": [
+        660.5,
+        752.1
+      ],
+      "description": "Archstone level 3-1. The demon of this level is Fool's Idol."
+    },
+    {
+      "id": "latria-2",
+      "name": "Tower of Latria 3-2",
+      "path": "M 702.3 883.0 L 682.7 855.2 L 678.4 825.8 L 706.6 801.9 L 745.4 810.6 L 777.5 828.1 L 776.4 860.3 L 742.3 875.7 Z",
+      "labelPos": [
+        726.3,
+        842.7
+      ],
+      "description": "Archstone level 3-2. The demon of this level is Maneater."
+    },
+    {
+      "id": "latria-3",
+      "name": "Tower of Latria 3-3",
+      "path": "M 823.1 970.4 L 781.2 972.1 L 752.5 952.9 L 735.5 923.8 L 765.3 901.1 L 802.5 896.7 L 841.2 909.1 L 839.1 941.2 Z",
+      "labelPos": [
+        792.2,
+        933.3
+      ],
+      "description": "Archstone level 3-3. The demon of this level is Old Monk."
+    },
+    {
+      "id": "storms-1",
+      "name": "Shrine of Storms 4-1",
+      "path": "M 470.4 789.2 L 428.5 790.9 L 399.8 771.7 L 382.8 742.6 L 412.6 719.9 L 449.9 715.5 L 488.5 727.9 L 486.4 760.0 Z",
+      "labelPos": [
+        439.5,
+        752.1
+      ],
+      "description": "Archstone level 4-1. The demon of this level is Adjudicator."
+    },
+    {
+      "id": "storms-2",
+      "name": "Shrine of Storms 4-2",
+      "path": "M 342.8 815.2 L 377.4 803.2 L 417.1 813.9 L 419.8 845.3 L 408.6 873.8 L 369.6 885.7 L 339.0 865.7 L 318.5 839.6 Z",
+      "labelPos": [
+        373.7,
+        842.7
+      ],
+      "description": "Archstone level 4-2. The demon of this level is Old Hero."
+    },
+    {
+      "id": "storms-3",
+      "name": "Shrine of Storms 4-3",
+      "path": "M 359.8 933.3 L 348.2 964.3 L 307.8 968.7 L 269.7 962.7 L 252.2 933.3 L 275.5 908.4 L 307.8 890.5 L 345.9 904.0 Z",
+      "labelPos": [
+        307.8,
+        933.3
+      ],
+      "description": "Archstone level 4-3. The demon of this level is Storm King."
+    },
+    {
+      "id": "defilement-1",
+      "name": "Valley of Defilement 5-1",
+      "path": "M 423.2 541.9 L 411.5 572.9 L 371.2 577.3 L 333.1 571.2 L 315.6 541.9 L 338.8 517.0 L 371.2 499.1 L 409.3 512.6 Z",
+      "labelPos": [
+        371.2,
+        541.9
+      ],
+      "description": "Archstone level 5-1. The demon of this level is Leechmonger."
+    },
+    {
+      "id": "defilement-2",
+      "name": "Valley of Defilement 5-2",
+      "path": "M 212.3 513.0 L 227.5 485.8 L 256.6 463.4 L 295.2 476.0 L 311.9 502.1 L 311.2 534.2 L 271.6 544.6 L 235.1 537.6 Z",
+      "labelPos": [
+        264.7,
+        507.3
+      ],
+      "description": "Archstone level 5-2. The demon of this level is Dirty Colossus."
+    },
+    {
+      "id": "defilement-3",
+      "name": "Valley of Defilement 5-3",
+      "path": "M 189.1 509.7 L 147.2 511.5 L 118.5 492.3 L 101.5 463.2 L 131.3 440.5 L 168.5 436.1 L 207.2 448.5 L 205.1 480.6 Z",
+      "labelPos": [
+        158.2,
+        472.7
+      ],
+      "description": "Archstone level 5-3. The demon of this level is Maiden Astraea."
+    }
+  ],
+  "layers": [
+    {
+      "id": "bosses",
+      "name": "Demons",
+      "icon": "sword"
+    },
+    {
+      "id": "archstones",
+      "name": "Archstones",
+      "icon": "archstone"
+    },
+    {
+      "id": "merchants",
+      "name": "NPCs",
+      "icon": "merchant"
+    },
+    {
+      "id": "items",
+      "name": "Gear",
+      "icon": "item"
+    }
+  ],
+  "pins": [
+    {
+      "id": "boss-boletaria-1",
+      "name": "Phalanx",
+      "layer": "bosses",
+      "region": "boletaria-1",
+      "x": 558.0,
+      "y": 408.0,
+      "description": "The demon of Boletarian Palace 1-1.",
+      "finds": [
+        "Phalanx"
+      ],
+      "links": [
+        {
+          "label": "Phalanx",
+          "url": "https://demonssouls.wiki.fextralife.com/Phalanx"
+        }
+      ]
+    },
+    {
+      "id": "arch-boletaria-1",
+      "name": "1-1 Archstone",
+      "layer": "archstones",
+      "region": "boletaria-1",
+      "x": 538.0,
+      "y": 420.0,
+      "description": "The archstone that opens Boletarian Palace 1-1.",
+      "finds": [
+        "Archstone"
+      ],
+      "links": [
+        {
+          "label": "Archstones",
+          "url": "https://demonssouls.wiki.fextralife.com/Archstone"
+        }
+      ]
+    },
+    {
+      "id": "boss-boletaria-2",
+      "name": "Tower Knight",
+      "layer": "bosses",
+      "region": "boletaria-2",
+      "x": 558.0,
+      "y": 296.0,
+      "description": "The demon of Boletarian Palace 1-2.",
+      "finds": [
+        "Tower Knight"
+      ],
+      "links": [
+        {
+          "label": "Tower Knight",
+          "url": "https://demonssouls.wiki.fextralife.com/Tower+Knight"
+        }
+      ]
+    },
+    {
+      "id": "arch-boletaria-2",
+      "name": "1-2 Archstone",
+      "layer": "archstones",
+      "region": "boletaria-2",
+      "x": 538.0,
+      "y": 308.0,
+      "description": "The archstone that opens Boletarian Palace 1-2.",
+      "finds": [
+        "Archstone"
+      ],
+      "links": [
+        {
+          "label": "Archstones",
+          "url": "https://demonssouls.wiki.fextralife.com/Archstone"
+        }
+      ]
+    },
+    {
+      "id": "boss-boletaria-3",
+      "name": "Penetrator",
+      "layer": "bosses",
+      "region": "boletaria-3",
+      "x": 558.0,
+      "y": 184.0,
+      "description": "The demon of Boletarian Palace 1-3.",
+      "finds": [
+        "Penetrator"
+      ],
+      "links": [
+        {
+          "label": "Penetrator",
+          "url": "https://demonssouls.wiki.fextralife.com/Penetrator"
+        }
+      ]
+    },
+    {
+      "id": "arch-boletaria-3",
+      "name": "1-3 Archstone",
+      "layer": "archstones",
+      "region": "boletaria-3",
+      "x": 538.0,
+      "y": 196.0,
+      "description": "The archstone that opens Boletarian Palace 1-3.",
+      "finds": [
+        "Archstone"
+      ],
+      "links": [
+        {
+          "label": "Archstones",
+          "url": "https://demonssouls.wiki.fextralife.com/Archstone"
+        }
+      ]
+    },
+    {
+      "id": "boss-boletaria-4",
+      "name": "False King Allant",
+      "layer": "bosses",
+      "region": "boletaria-4",
+      "x": 558.0,
+      "y": 72.0,
+      "description": "The demon of Boletarian Palace 1-4.",
+      "finds": [
+        "False King Allant"
+      ],
+      "links": [
+        {
+          "label": "False King Allant",
+          "url": "https://demonssouls.wiki.fextralife.com/False+King+Allant"
+        }
+      ]
+    },
+    {
+      "id": "arch-boletaria-4",
+      "name": "1-4 Archstone",
+      "layer": "archstones",
+      "region": "boletaria-4",
+      "x": 538.0,
+      "y": 84.0,
+      "description": "The archstone that opens Boletarian Palace 1-4.",
+      "finds": [
+        "Archstone"
+      ],
+      "links": [
+        {
+          "label": "Archstones",
+          "url": "https://demonssouls.wiki.fextralife.com/Archstone"
+        }
+      ]
+    },
+    {
+      "id": "boss-stonefang-1",
+      "name": "Armor Spider",
+      "layer": "bosses",
+      "region": "stonefang-1",
+      "x": 736.8,
+      "y": 537.9,
+      "description": "The demon of Stonefang Tunnel 2-1.",
+      "finds": [
+        "Armor Spider"
+      ],
+      "links": [
+        {
+          "label": "Armor Spider",
+          "url": "https://demonssouls.wiki.fextralife.com/Armor+Spider"
+        }
+      ]
+    },
+    {
+      "id": "arch-stonefang-1",
+      "name": "2-1 Archstone",
+      "layer": "archstones",
+      "region": "stonefang-1",
+      "x": 716.8,
+      "y": 549.9,
+      "description": "The archstone that opens Stonefang Tunnel 2-1.",
+      "finds": [
+        "Archstone"
+      ],
+      "links": [
+        {
+          "label": "Archstones",
+          "url": "https://demonssouls.wiki.fextralife.com/Archstone"
+        }
+      ]
+    },
+    {
+      "id": "boss-stonefang-2",
+      "name": "Flamelurker",
+      "layer": "bosses",
+      "region": "stonefang-2",
+      "x": 843.3,
+      "y": 503.3,
+      "description": "The demon of Stonefang Tunnel 2-2.",
+      "finds": [
+        "Flamelurker"
+      ],
+      "links": [
+        {
+          "label": "Flamelurker",
+          "url": "https://demonssouls.wiki.fextralife.com/Flamelurker"
+        }
+      ]
+    },
+    {
+      "id": "arch-stonefang-2",
+      "name": "2-2 Archstone",
+      "layer": "archstones",
+      "region": "stonefang-2",
+      "x": 823.3,
+      "y": 515.3,
+      "description": "The archstone that opens Stonefang Tunnel 2-2.",
+      "finds": [
+        "Archstone"
+      ],
+      "links": [
+        {
+          "label": "Archstones",
+          "url": "https://demonssouls.wiki.fextralife.com/Archstone"
+        }
+      ]
+    },
+    {
+      "id": "boss-stonefang-3",
+      "name": "Dragon God",
+      "layer": "bosses",
+      "region": "stonefang-3",
+      "x": 949.8,
+      "y": 468.7,
+      "description": "The demon of Stonefang Tunnel 2-3.",
+      "finds": [
+        "Dragon God"
+      ],
+      "links": [
+        {
+          "label": "Dragon God",
+          "url": "https://demonssouls.wiki.fextralife.com/Dragon+God"
+        }
+      ]
+    },
+    {
+      "id": "arch-stonefang-3",
+      "name": "2-3 Archstone",
+      "layer": "archstones",
+      "region": "stonefang-3",
+      "x": 929.8,
+      "y": 480.7,
+      "description": "The archstone that opens Stonefang Tunnel 2-3.",
+      "finds": [
+        "Archstone"
+      ],
+      "links": [
+        {
+          "label": "Archstones",
+          "url": "https://demonssouls.wiki.fextralife.com/Archstone"
+        }
+      ]
+    },
+    {
+      "id": "boss-latria-1",
+      "name": "Fool's Idol",
+      "layer": "bosses",
+      "region": "latria-1",
+      "x": 668.5,
+      "y": 748.1,
+      "description": "The demon of Tower of Latria 3-1.",
+      "finds": [
+        "Fool's Idol"
+      ],
+      "links": [
+        {
+          "label": "Fool's Idol",
+          "url": "https://demonssouls.wiki.fextralife.com/Fool's+Idol"
+        }
+      ]
+    },
+    {
+      "id": "arch-latria-1",
+      "name": "3-1 Archstone",
+      "layer": "archstones",
+      "region": "latria-1",
+      "x": 648.5,
+      "y": 760.1,
+      "description": "The archstone that opens Tower of Latria 3-1.",
+      "finds": [
+        "Archstone"
+      ],
+      "links": [
+        {
+          "label": "Archstones",
+          "url": "https://demonssouls.wiki.fextralife.com/Archstone"
+        }
+      ]
+    },
+    {
+      "id": "boss-latria-2",
+      "name": "Maneater",
+      "layer": "bosses",
+      "region": "latria-2",
+      "x": 734.3,
+      "y": 838.7,
+      "description": "The demon of Tower of Latria 3-2.",
+      "finds": [
+        "Maneater"
+      ],
+      "links": [
+        {
+          "label": "Maneater",
+          "url": "https://demonssouls.wiki.fextralife.com/Maneater"
+        }
+      ]
+    },
+    {
+      "id": "arch-latria-2",
+      "name": "3-2 Archstone",
+      "layer": "archstones",
+      "region": "latria-2",
+      "x": 714.3,
+      "y": 850.7,
+      "description": "The archstone that opens Tower of Latria 3-2.",
+      "finds": [
+        "Archstone"
+      ],
+      "links": [
+        {
+          "label": "Archstones",
+          "url": "https://demonssouls.wiki.fextralife.com/Archstone"
+        }
+      ]
+    },
+    {
+      "id": "boss-latria-3",
+      "name": "Old Monk",
+      "layer": "bosses",
+      "region": "latria-3",
+      "x": 800.2,
+      "y": 929.3,
+      "description": "The demon of Tower of Latria 3-3.",
+      "finds": [
+        "Old Monk"
+      ],
+      "links": [
+        {
+          "label": "Old Monk",
+          "url": "https://demonssouls.wiki.fextralife.com/Old+Monk"
+        }
+      ]
+    },
+    {
+      "id": "arch-latria-3",
+      "name": "3-3 Archstone",
+      "layer": "archstones",
+      "region": "latria-3",
+      "x": 780.2,
+      "y": 941.3,
+      "description": "The archstone that opens Tower of Latria 3-3.",
+      "finds": [
+        "Archstone"
+      ],
+      "links": [
+        {
+          "label": "Archstones",
+          "url": "https://demonssouls.wiki.fextralife.com/Archstone"
+        }
+      ]
+    },
+    {
+      "id": "boss-storms-1",
+      "name": "Adjudicator",
+      "layer": "bosses",
+      "region": "storms-1",
+      "x": 447.5,
+      "y": 748.1,
+      "description": "The demon of Shrine of Storms 4-1.",
+      "finds": [
+        "Adjudicator"
+      ],
+      "links": [
+        {
+          "label": "Adjudicator",
+          "url": "https://demonssouls.wiki.fextralife.com/Adjudicator"
+        }
+      ]
+    },
+    {
+      "id": "arch-storms-1",
+      "name": "4-1 Archstone",
+      "layer": "archstones",
+      "region": "storms-1",
+      "x": 427.5,
+      "y": 760.1,
+      "description": "The archstone that opens Shrine of Storms 4-1.",
+      "finds": [
+        "Archstone"
+      ],
+      "links": [
+        {
+          "label": "Archstones",
+          "url": "https://demonssouls.wiki.fextralife.com/Archstone"
+        }
+      ]
+    },
+    {
+      "id": "boss-storms-2",
+      "name": "Old Hero",
+      "layer": "bosses",
+      "region": "storms-2",
+      "x": 381.7,
+      "y": 838.7,
+      "description": "The demon of Shrine of Storms 4-2.",
+      "finds": [
+        "Old Hero"
+      ],
+      "links": [
+        {
+          "label": "Old Hero",
+          "url": "https://demonssouls.wiki.fextralife.com/Old+Hero"
+        }
+      ]
+    },
+    {
+      "id": "arch-storms-2",
+      "name": "4-2 Archstone",
+      "layer": "archstones",
+      "region": "storms-2",
+      "x": 361.7,
+      "y": 850.7,
+      "description": "The archstone that opens Shrine of Storms 4-2.",
+      "finds": [
+        "Archstone"
+      ],
+      "links": [
+        {
+          "label": "Archstones",
+          "url": "https://demonssouls.wiki.fextralife.com/Archstone"
+        }
+      ]
+    },
+    {
+      "id": "boss-storms-3",
+      "name": "Storm King",
+      "layer": "bosses",
+      "region": "storms-3",
+      "x": 315.8,
+      "y": 929.3,
+      "description": "The demon of Shrine of Storms 4-3.",
+      "finds": [
+        "Storm King"
+      ],
+      "links": [
+        {
+          "label": "Storm King",
+          "url": "https://demonssouls.wiki.fextralife.com/Storm+King"
+        }
+      ]
+    },
+    {
+      "id": "arch-storms-3",
+      "name": "4-3 Archstone",
+      "layer": "archstones",
+      "region": "storms-3",
+      "x": 295.8,
+      "y": 941.3,
+      "description": "The archstone that opens Shrine of Storms 4-3.",
+      "finds": [
+        "Archstone"
+      ],
+      "links": [
+        {
+          "label": "Archstones",
+          "url": "https://demonssouls.wiki.fextralife.com/Archstone"
+        }
+      ]
+    },
+    {
+      "id": "boss-defilement-1",
+      "name": "Leechmonger",
+      "layer": "bosses",
+      "region": "defilement-1",
+      "x": 379.2,
+      "y": 537.9,
+      "description": "The demon of Valley of Defilement 5-1.",
+      "finds": [
+        "Leechmonger"
+      ],
+      "links": [
+        {
+          "label": "Leechmonger",
+          "url": "https://demonssouls.wiki.fextralife.com/Leechmonger"
+        }
+      ]
+    },
+    {
+      "id": "arch-defilement-1",
+      "name": "5-1 Archstone",
+      "layer": "archstones",
+      "region": "defilement-1",
+      "x": 359.2,
+      "y": 549.9,
+      "description": "The archstone that opens Valley of Defilement 5-1.",
+      "finds": [
+        "Archstone"
+      ],
+      "links": [
+        {
+          "label": "Archstones",
+          "url": "https://demonssouls.wiki.fextralife.com/Archstone"
+        }
+      ]
+    },
+    {
+      "id": "boss-defilement-2",
+      "name": "Dirty Colossus",
+      "layer": "bosses",
+      "region": "defilement-2",
+      "x": 272.7,
+      "y": 503.3,
+      "description": "The demon of Valley of Defilement 5-2.",
+      "finds": [
+        "Dirty Colossus"
+      ],
+      "links": [
+        {
+          "label": "Dirty Colossus",
+          "url": "https://demonssouls.wiki.fextralife.com/Dirty+Colossus"
+        }
+      ]
+    },
+    {
+      "id": "arch-defilement-2",
+      "name": "5-2 Archstone",
+      "layer": "archstones",
+      "region": "defilement-2",
+      "x": 252.7,
+      "y": 515.3,
+      "description": "The archstone that opens Valley of Defilement 5-2.",
+      "finds": [
+        "Archstone"
+      ],
+      "links": [
+        {
+          "label": "Archstones",
+          "url": "https://demonssouls.wiki.fextralife.com/Archstone"
+        }
+      ]
+    },
+    {
+      "id": "boss-defilement-3",
+      "name": "Maiden Astraea",
+      "layer": "bosses",
+      "region": "defilement-3",
+      "x": 166.2,
+      "y": 468.7,
+      "description": "The demon of Valley of Defilement 5-3.",
+      "finds": [
+        "Maiden Astraea"
+      ],
+      "links": [
+        {
+          "label": "Maiden Astraea",
+          "url": "https://demonssouls.wiki.fextralife.com/Maiden+Astraea"
+        }
+      ]
+    },
+    {
+      "id": "arch-defilement-3",
+      "name": "5-3 Archstone",
+      "layer": "archstones",
+      "region": "defilement-3",
+      "x": 146.2,
+      "y": 480.7,
+      "description": "The archstone that opens Valley of Defilement 5-3.",
+      "finds": [
+        "Archstone"
+      ],
+      "links": [
+        {
+          "label": "Archstones",
+          "url": "https://demonssouls.wiki.fextralife.com/Archstone"
+        }
+      ]
+    },
+    {
+      "id": "maiden",
+      "name": "The Maiden in Black",
+      "layer": "merchants",
+      "region": "nexus",
+      "x": 550,
+      "y": 582,
+      "description": "She levels you in the Nexus.",
+      "finds": [
+        "Soul level"
+      ],
+      "links": [
+        {
+          "label": "Maiden in Black",
+          "url": "https://demonssouls.wiki.fextralife.com/Maiden+in+Black"
+        }
+      ]
+    },
+    {
+      "id": "boldwin",
+      "name": "Blacksmith Boldwin",
+      "layer": "merchants",
+      "region": "nexus",
+      "x": 528,
+      "y": 610,
+      "description": "The Nexus blacksmith. He upgrades weapons once you bring him ore.",
+      "finds": [
+        "Upgrades"
+      ],
+      "links": [
+        {
+          "label": "Blacksmith Boldwin",
+          "url": "https://demonssouls.wiki.fextralife.com/Blacksmith+Boldwin"
+        }
+      ]
+    },
+    {
+      "id": "thomas",
+      "name": "Stockpile Thomas",
+      "layer": "merchants",
+      "region": "nexus",
+      "x": 572,
+      "y": 612,
+      "description": "Item storage in the Nexus.",
+      "finds": [
+        "Storage"
+      ],
+      "links": [
+        {
+          "label": "Stockpile Thomas",
+          "url": "https://demonssouls.wiki.fextralife.com/Stockpile+Thomas"
+        }
+      ]
+    },
+    {
+      "id": "ed",
+      "name": "Blacksmith Ed",
+      "layer": "merchants",
+      "region": "stonefang-1",
+      "x": 738.8,
+      "y": 551.9,
+      "description": "The better blacksmith, found in Stonefang Tunnel 2-1. He moves to the Nexus once freed.",
+      "finds": [
+        "Advanced upgrades"
+      ],
+      "links": [
+        {
+          "label": "Blacksmith Ed",
+          "url": "https://demonssouls.wiki.fextralife.com/Blacksmith+Ed"
+        }
+      ]
+    },
+    {
+      "id": "freke",
+      "name": "Sage Freke",
+      "layer": "merchants",
+      "region": "latria-1",
+      "x": 670.5,
+      "y": 760.1,
+      "description": "Imprisoned in the Tower of Latria. Freeing him sends him to the Nexus as a spell vendor.",
+      "finds": [
+        "Spells"
+      ],
+      "links": [
+        {
+          "label": "Sage Freke",
+          "url": "https://demonssouls.wiki.fextralife.com/Sage+Freke"
+        }
+      ]
+    },
+    {
+      "id": "yuria",
+      "name": "Yuria, the Witch",
+      "layer": "merchants",
+      "region": "boletaria-3",
+      "x": 562.0,
+      "y": 196.0,
+      "description": "Found in Boletarian Palace and taken back to the Nexus. Treat the exact cell as worth checking.",
+      "finds": [
+        "Spells"
+      ],
+      "links": [
+        {
+          "label": "Yuria",
+          "url": "https://demonssouls.wiki.fextralife.com/Yuria,+the+Witch"
+        }
+      ],
+      "uncertain": true
+    },
+    {
+      "id": "patches",
+      "name": "Patches",
+      "layer": "merchants",
+      "region": "stonefang-2",
+      "x": 825.3,
+      "y": 515.3,
+      "description": "Patches kicks hunters in Stonefang 2-2. He shows up again later in the Shrine of Storms.",
+      "finds": [],
+      "links": [
+        {
+          "label": "Patches",
+          "url": "https://demonssouls.wiki.fextralife.com/Patches,+the+Hyena"
+        }
+      ]
+    },
+    {
+      "id": "urbain",
+      "name": "Saint Urbain",
+      "layer": "merchants",
+      "region": "storms-2",
+      "x": 381.7,
+      "y": 850.7,
+      "description": "A miracle teacher rescued in the Shrine of Storms. The exact floor is marked uncertain.",
+      "finds": [
+        "Miracles"
+      ],
+      "links": [
+        {
+          "label": "Saint Urbain",
+          "url": "https://demonssouls.wiki.fextralife.com/Saint+Urbain"
+        }
+      ],
+      "uncertain": true
+    },
+    {
+      "id": "filthy",
+      "name": "The Filthy Woman",
+      "layer": "merchants",
+      "region": "defilement-2",
+      "x": 272.7,
+      "y": 513.3,
+      "description": "A vendor in the Valley of Defilement. The level is marked uncertain.",
+      "finds": [],
+      "links": [
+        {
+          "label": "Filthy Woman",
+          "url": "https://demonssouls.wiki.fextralife.com/Filthy+Woman"
+        }
+      ],
+      "uncertain": true
+    },
+    {
+      "id": "falchion",
+      "name": "Crescent Falchion",
+      "layer": "items",
+      "region": "storms-1",
+      "x": 431.5,
+      "y": 742.1,
+      "description": "A magic falchion on a ledge in Shrine of Storms 4-1, reachable early if you can get there.",
+      "finds": [
+        "Crescent Falchion"
+      ],
+      "links": [
+        {
+          "label": "Crescent Falchion",
+          "url": "https://demonssouls.wiki.fextralife.com/Crescent+Falchion"
+        }
+      ]
+    },
+    {
+      "id": "dbs",
+      "name": "Dragon Bone Smasher",
+      "layer": "items",
+      "region": "stonefang-3",
+      "x": 935.8,
+      "y": 482.7,
+      "description": "In 2-3 after Dragon God, in the rubble. World tendency changes whether you can take it; check the linked page.",
+      "finds": [
+        "Dragon Bone Smasher"
+      ],
+      "links": [
+        {
+          "label": "Dragon Bone Smasher",
+          "url": "https://demonssouls.wiki.fextralife.com/Dragon+Bone+Smasher"
+        }
+      ]
+    },
+    {
+      "id": "kris",
+      "name": "Kris Blade",
+      "layer": "items",
+      "region": "boletaria-1",
+      "x": 556.0,
+      "y": 424.0,
+      "description": "A spell-boosting blade in Boletarian Palace. The exact archstone is marked uncertain.",
+      "finds": [
+        "Kris Blade"
+      ],
+      "links": [
+        {
+          "label": "Kris Blade",
+          "url": "https://demonssouls.wiki.fextralife.com/Kris+Blade"
+        }
+      ],
+      "uncertain": true
+    }
+  ],
+  "mapLinks": [
+    {
+      "label": "Fextralife interactive map",
+      "url": "https://demonssouls.wiki.fextralife.com/Interactive+Map",
+      "note": "Opens in a new tab. That site does not allow embedding."
+    }
+  ]
+}

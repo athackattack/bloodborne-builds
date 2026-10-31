@@ -1,0 +1,93 @@
+{
+  "meta": {
+    "sample": true,
+    "notes": "SAMPLE DATA, not a research snapshot. These entries exist so the screens work until the full lists arrive. Do not treat the quantities or locations here as verified."
+  },
+  "categories": [
+    {
+      "id": "ore",
+      "name": "Ores",
+      "description": "Sample category. Demon's Souls upgrades weapons with ores at a blacksmith rather than a cooking menu."
+    },
+    {
+      "id": "items",
+      "name": "Items",
+      "description": "Sample category for consumables."
+    }
+  ],
+  "items": [
+    {
+      "id": "hardstone-path",
+      "name": "Hardstone upgrade",
+      "category": "ore",
+      "description": "Sample. The crushing and normal hardstone path is done at a blacksmith, not in a mix menu.",
+      "effect": "Reinforces a weapon along the hardstone path. Ed handles the later steps.",
+      "materials": [
+        {
+          "name": "Hardstone",
+          "qty": 1,
+          "note": "Sample. A real upgrade spends several shards and chunks."
+        }
+      ],
+      "whereToFind": "Stonefang miners drop hardstone. Ed is in 2-1.",
+      "source": {
+        "label": "Fextralife \u2014 Hardstone",
+        "url": "https://demonssouls.wiki.fextralife.com/Hardstone",
+        "verifiedVia": "sample file, not re-fetched for this pass",
+        "unverified": true
+      }
+    },
+    {
+      "id": "grass",
+      "name": "Half Moon Grass",
+      "category": "items",
+      "description": "Sample. A basic healing grass. It is picked up and bought, not crafted.",
+      "effect": "Restores a small amount of health.",
+      "materials": [],
+      "whereToFind": "Sold in the Nexus and found through Boletaria.",
+      "source": {
+        "label": "Fextralife \u2014 Half Moon Grass",
+        "url": "https://demonssouls.wiki.fextralife.com/Half+Moon+Grass",
+        "verifiedVia": "sample file, not re-fetched for this pass",
+        "unverified": true
+      }
+    }
+  ],
+  "materials": [
+    {
+      "id": "hardstone",
+      "name": "Hardstone",
+      "type": "Ore",
+      "description": "Sample. The common ore for the hardstone upgrade path.",
+      "whereToFind": "Stonefang Tunnel. Miners carry it.",
+      "usedFor": "Weapon upgrades at Boldwin and Ed.",
+      "source": {
+        "label": "Fextralife \u2014 Hardstone",
+        "url": "https://demonssouls.wiki.fextralife.com/Hardstone",
+        "verifiedVia": "sample file, not re-fetched for this pass",
+        "unverified": true
+      }
+    },
+    {
+      "id": "spiderstone",
+      "name": "Spiderstone",
+      "type": "Ore",
+      "description": "Sample. A rarer ore from the same tunnels.",
+      "whereToFind": "Deeper in Stonefang. Check the linked page for the chunks.",
+      "usedFor": "Later hardstone-path upgrades.",
+      "source": {
+        "label": "Fextralife \u2014 Spiderstone",
+        "url": "https://demonssouls.wiki.fextralife.com/Spiderstone",
+        "verifiedVia": "sample file, not re-fetched for this pass",
+        "unverified": true
+      }
+    }
+  ],
+  "guides": [
+    {
+      "title": "Fextralife \u2014 Upgrade Materials",
+      "url": "https://demonssouls.wiki.fextralife.com/Upgrade+Materials",
+      "source": "Fextralife"
+    }
+  ]
+}

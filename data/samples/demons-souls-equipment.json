@@ -1,0 +1,105 @@
+{
+  "meta": {
+    "sample": true,
+    "notes": "SAMPLE DATA, not a research snapshot. These entries exist so the screens work until the full lists arrive. Do not treat the quantities or locations here as verified."
+  },
+  "weaponTypes": [
+    {
+      "id": "greatsword",
+      "name": "Greatsword"
+    },
+    {
+      "id": "straight",
+      "name": "Straight sword"
+    }
+  ],
+  "weapons": [
+    {
+      "id": "dbs",
+      "name": "Dragon Bone Smasher",
+      "type": "greatsword",
+      "description": "Sample. A huge sword of dragon bone. World tendency can decide whether it can be taken.",
+      "stats": {
+        "damage": "Physical"
+      },
+      "scaling": {
+        "STR": "yes"
+      },
+      "requirements": {},
+      "upgradePath": "Colorless demon souls, not ordinary ore.",
+      "location": "Stonefang 2-3, in the rubble after Dragon God.",
+      "source": {
+        "label": "Fextralife \u2014 Dragon Bone Smasher",
+        "url": "https://demonssouls.wiki.fextralife.com/Dragon+Bone+Smasher",
+        "verifiedVia": "sample file, not re-fetched for this pass",
+        "unverified": true
+      }
+    },
+    {
+      "id": "falchion",
+      "name": "Crescent Falchion",
+      "type": "straight",
+      "description": "Sample. A magic falchion that regenerates MP. Useful early if you can reach the shrine.",
+      "stats": {
+        "damage": "Magic"
+      },
+      "scaling": {
+        "MAG": "yes"
+      },
+      "requirements": {},
+      "upgradePath": "Already on the crescent path.",
+      "location": "Shrine of Storms 4-1, on a ledge.",
+      "source": {
+        "label": "Fextralife \u2014 Crescent Falchion",
+        "url": "https://demonssouls.wiki.fextralife.com/Crescent+Falchion",
+        "verifiedVia": "sample file, not re-fetched for this pass",
+        "unverified": true
+      }
+    }
+  ],
+  "armorSets": [
+    {
+      "id": "fluted",
+      "name": "Fluted Set",
+      "description": "Sample. The classic fluted plate associated with Boletaria.",
+      "pieces": [
+        {
+          "slot": "Head",
+          "name": "Fluted Helm",
+          "location": "Boletarian Palace, and later the Nexus vendors."
+        },
+        {
+          "slot": "Chest",
+          "name": "Fluted Armor",
+          "location": "Boletarian Palace, and later the Nexus vendors."
+        },
+        {
+          "slot": "Hands",
+          "name": "Fluted Gauntlets",
+          "location": "Boletarian Palace, and later the Nexus vendors."
+        },
+        {
+          "slot": "Legs",
+          "name": "Fluted Boots",
+          "location": "Boletarian Palace, and later the Nexus vendors."
+        }
+      ],
+      "weight": "",
+      "notes": "Sample. Piece locations should be checked before a run.",
+      "location": "Boletarian Palace 1-1.",
+      "source": {
+        "label": "Fextralife \u2014 Fluted Armor",
+        "url": "https://demonssouls.wiki.fextralife.com/Fluted+Armor",
+        "verifiedVia": "sample file, not re-fetched for this pass",
+        "unverified": true
+      }
+    }
+  ],
+  "guides": [
+    {
+      "title": "Fextralife \u2014 Weapons",
+      "url": "https://demonssouls.wiki.fextralife.com/Weapons",
+      "source": "Fextralife"
+    }
+  ]
+}

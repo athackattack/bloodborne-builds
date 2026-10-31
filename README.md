@@ -8,12 +8,14 @@ Tiers are an editorial synthesis of community opinion, not an official ranking. 
 
 ## Browse
 
-The header switches games. Bloodborne, Elden Ring, and Demon's Souls each have their own tier list, guides, filters, search, and About text. The choice is kept in `localStorage` and can be linked with the hash (`#bloodborne`, `#elden-ring`, `#demons-souls`, `#demons-souls/build/…`).
+The header switches games. Bloodborne, Elden Ring, and Demon's Souls each have their own tier list, guides, filters, search, and About text, plus a map, a crafting list, and an equipment list when that game’s registry entry points at a file. The choice is kept in `localStorage` and can be linked with the hash (`#bloodborne`, `#elden-ring/map`, `#elden-ring/crafting`, `#elden-ring/equipment/weapons`, `#demons-souls/build/…`). A section is hidden when the registry has no file for it. Switching games keeps the current section when the other game has one, and drops the open card.
 
 - **Tiers** groups builds into S, A, B, and C. Each tier shows how many builds are in it. Cards start compact (name, archetype, main weapon); **Playstyles** expands the short description on every card. The header shows that game’s build total, and About repeats the total with the per-tier counts. Open a card for the tier reason, weapons, the reference stat spread, alternatives, gear, pros and cons, best-for tags, NG+ notes, and source links.
 - Stat labels come from each file’s `meta.statOrder`. Bloodborne is VIT / END / STR / SKL / BLT / ARC. Elden Ring is VIG / MND / END / STR / DEX / INT / FTH / ARC. Demon's Souls is VIT / INT / END / STR / DEX / MAG / FTH / LCK. A game’s `meta.fieldLabels` rename the shared fields (`firearm`, `runesGear`, `weapons`); Bloodborne keeps the default labels when that block is absent.
 - **Guides** lists that game’s general pages, filterable by the site types present in the file.
 - **About** holds that game’s tier definitions, caveats, and how its stat spreads are labeled.
+- **Map** is an original schematic drawing (regions as shapes, labelled pins). Drag and pinch or scroll to move it. A pin opens a sheet. Elden Ring can also try the MapGenie Lands Between page in a frame; if that frame stays blank, the fallback link opens it in a new tab. Bloodborne and Demon's Souls have no embed, only the in-app drawing and outbound links.
+- **Crafting** and **Equipment** read the files named in the registry. The copies shipped now are samples (`meta.sample`) so the layout can be reviewed before the real lists replace them. A recipe material jumps to that material, and an equipment sheet lists builds whose weapon, firearm, or gear text includes the name.
 
 Source links open in a new tab. A link flagged `unverified` keeps a small marker.
 
@@ -27,10 +29,12 @@ Facts, numbers, and URLs come only from the JSON files. The app does not add sta
 | Elden Ring | [`data/elden-ring.json`](data/elden-ring.json) — 40 builds, 33 guides, snapshot 2026-10-30 |
 | Demon's Souls | [`data/demons-souls.json`](data/demons-souls.json) — 33 builds, 34 guides, snapshot 2026-10-30 |
 
-[`data/games.json`](data/games.json) is the registry: `id`, `name`, data file path, accent colors, level prefix, stat labels, and the filter chips. Another game is a new data file plus one entry there.
+[`data/games.json`](data/games.json) is the registry: `id`, `name`, data file path, optional `map`, `crafting`, `equipment`, and `mapEmbed`, accent colors, level prefix, stat labels, and the filter chips. Another game is a new data file plus one entry there.
+
+The three build files above are the research snapshots. Map files (`data/*-map.json`) are original drawings with common-knowledge pins; positions are not surveyed, and some pins are marked uncertain. Crafting and equipment live in `data/samples/` until a real pass replaces those paths. See [NOTES.md](NOTES.md).
 
 ## Install
 
-`manifest.json`, the icons, and `sw.js` make the site installable. The service worker is network-first and names its cache with a version string (`CACHE` in `sw.js`). Icons are an original saw-and-crescent mark, not game artwork.
+`manifest.json`, the icons, and `sw.js` make the site installable. The service worker is network-first and names its cache with a version string (`CACHE` in `sw.js`). The header emblem and home-screen icons are original art in `icons/`, not a game publisher logo. `icons/icon-512-maskable.png` keeps the emblem inside the center safe zone.
 
 Serve the repository root with any static file server, or use GitHub Pages on `main` / root. Paths are relative, so the site works at a project-page URL as well as at the domain root.
