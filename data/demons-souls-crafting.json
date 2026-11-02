@@ -1,0 +1,4247 @@
+{
+ "meta": {
+  "notes": "Demon's Souls crafting and upgrade data, PS5 remake (2020) first. Demon's Souls has no item-combining crafting: 'crafting' here means blacksmith upgrade paths, Demon Soul transformations, Colorless Demon Soul upgrades, Demon Soul trades for spells and miracles, Sparkly the Crow trades, and farming spots. Path recipes list stone tiers; total counts differ per weapon (range given in each material note). Build variants (Crescent Estoc, Sharp Uchigatana, etc.) have exact totals from that weapon's Fextralife table. Remake-only: some Sparkly trades (marked), Penetrator set key, Ring of Longevity and Providential Ring trades. PS3 names: Moonshadestone = Darkmoonstone, Marrowstone = Pulpstone, God's Wrath = Rage of God. Fextralife pages disagree on the Large Sword of Searching base weapon; the item pages' list is given alongside the Boss Soul Weapons table."
+ },
+ "categories": [
+  {
+   "id": "regular",
+   "name": "Normal / Regular upgrades (+0 to +10)",
+   "description": "Hardstone (STR weapons, bows, most shields) or Sharpstone (DEX weapons, Spiked Shield). Shard → Large Shard → Chunk → Pure. Boldwin (Nexus) and Ed (Stonefang Tunnel) both do these."
+  },
+  {
+   "id": "quality",
+   "name": "Quality path (Clearstone)",
+   "description": "+1 to +5. For 35 melee weapons and 4 bows. Requires Clearstone. Yields equal STR and DEX bonuses. Boldwin can do Clearstone; all other special stones need Blacksmith Ed."
+  },
+  {
+   "id": "crushing",
+   "name": "Crushing path (Greystone)",
+   "description": "+1 to +5. For 15 melee weapons. Requires Greystone. Yields high STR bonus, but removes the DEX bonus. Needs Blacksmith Ed (Stonefang Tunnel)."
+  },
+  {
+   "id": "sharp",
+   "name": "Sharp path (Bladestone)",
+   "description": "+1 to +5. For 20 melee weapons and 1 shield. Requires Bladestone. Yields high DEX bonus, but lowers the STR bonus. Needs Blacksmith Ed (Stonefang Tunnel)."
+  },
+  {
+   "id": "dragon",
+   "name": "Dragon path (Dragonstone)",
+   "description": "+1 to +5. For 15 melee weapons. Requires Dragonstone. Yields high base damage and adds fire damage, but removes all stat bonuses. Needs Blacksmith Ed (Stonefang Tunnel)."
+  },
+  {
+   "id": "tearing",
+   "name": "Tearing path (Suckerstone)",
+   "description": "+1 to +5. For 11 melee weapons. Requires Suckerstone. Yields high DEX bonus, lowers the STR bonus, and adds Bleed damage. Needs Blacksmith Ed (Stonefang Tunnel)."
+  },
+  {
+   "id": "mercury",
+   "name": "Mercury path (Mercurystone)",
+   "description": "+1 to +5. For 20 melee weapons. Requires Mercurystone. Yields middling DEX bonus, lowers the STR bonus, and adds Poison damage. Needs Blacksmith Ed (Stonefang Tunnel)."
+  },
+  {
+   "id": "fatal",
+   "name": "Fatal path (Marrowstone)",
+   "description": "+1 to +5. For 9 melee weapons. Requires Marrowstone. Lowers the base damage and STR bonus, but yields high DEX bonus and adds Critical damage which is bonus damage applied to backstabs and ripostes. Needs Blacksmith Ed (Stonefang Tunnel)."
+  },
+  {
+   "id": "moon",
+   "name": "Moon path (Moonlightstone)",
+   "description": "+1 to +5. For 28 melee weapons. Requires Moonlightstone. Lowers the STR and DEX bonuses but adds magic damage with decent Magic bonus. Needs Blacksmith Ed (Stonefang Tunnel)."
+  },
+  {
+   "id": "crescent",
+   "name": "Crescent path (Moonshadestone)",
+   "description": "+1 to +5. For 14 melee weapons. Requires Moonshadestone. Removes the STR and DEX bonuses but adds magic damage with high Magic bonus. Also adds MP regen of +1 per 5~3 seconds. Needs Blacksmith Ed (Stonefang Tunnel)."
+  },
+  {
+   "id": "blessed",
+   "name": "Blessed path (Faintstone)",
+   "description": "+1 to +5. For 15 melee weapons. Requires Faintstone. Lowers the STR and DEX bonuses but adds magic damage with high Faith bonus. Also adds HP regen of +2~6 per second. Needs Blacksmith Ed (Stonefang Tunnel)."
+  },
+  {
+   "id": "sticky",
+   "name": "Sticky path (Spiderstone)",
+   "description": "+1 to +5. For 4 bows. Requires Spiderstone. Yields high DEX bonus but lowers the STR bonus, and increases the bow's Range by 5. Needs Blacksmith Ed (Stonefang Tunnel)."
+  },
+  {
+   "id": "dark",
+   "name": "Dark path (Cloudstone)",
+   "description": "+1 to +5. For 7 shields. Requires Cloudstone. Increases Magic damage reduction, but lowers Guard Break Reduction. Needs Blacksmith Ed (Stonefang Tunnel)."
+  },
+  {
+   "id": "colorless",
+   "name": "Colorless Demon Soul upgrades",
+   "description": "Unique weapons and shields (Kris Blade, Large Sword of Moonlight, Makoto, Dark Silver Shield, etc.) can only be upgraded with Colorless Demon Souls at Blacksmith Ed, after he has received the Searing Demon Soul."
+  },
+  {
+   "id": "boss-soul-weapons",
+   "name": "Boss soul weapons (Demon Soul transformations)",
+   "description": "Blacksmith Ed turns a base weapon at the required level plus a specific boss Demon Soul into a unique weapon. Needs the Searing Demon Soul (Flamelurker) given to Ed first."
+  },
+  {
+   "id": "demon-soul-trades",
+   "name": "Demon Soul trades (spells, miracles, souls)",
+   "description": "Every boss Demon Soul can be consumed for souls or traded to Sage Freke, Yuria, Saint Urbain or Blacksmith Ed."
+  },
+  {
+   "id": "sparkly-trades",
+   "name": "Sparkly the Crow trades",
+   "description": "Drop an item by the crow's nest in Island's Edge (Shrine of Storms 4-1); reload or leave the world to collect what she gives back. Each trade works once per playthrough. Demon's Souls has no item-combining or crafting of consumables; Sparkly trades are the closest thing."
+  },
+  {
+   "id": "blacksmith-services",
+   "name": "Blacksmith services",
+   "description": "Reverting upgrades, unlocking advanced upgrades, and buying stones."
+  },
+  {
+   "id": "farming",
+   "name": "Farming spots",
+   "description": "Where to farm stones. Pure Black World Tendency raises drop rates (Wikidot, Twinfinite). Wikidot methods were written for PS3 (2009), where Moonshadestone was \"Darkmoonstone\", Marrowstone was \"Pulpstone\" and God's Wrath was \"Rage of God\"."
+  }
+ ],
+ "items": [
+  {
+   "id": "regular",
+   "name": "Regular +10 (Hardstone or Sharpstone)",
+   "category": "regular",
+   "description": "+0 to +10. For 35 melee weapons, 4 bows and 8 shields. Requires Hardstone or Sharpstone. For weapons, yields high base damage but relatively poor scaling. For shields, increases Guard Break Reduction. Fextralife Upgrades page: Hardstone for STR weapons, bows and shields; Sharpstone for DEX weapons and the Spiked Shield. Many individual weapon pages just say \"Sharpstone / Hardstone\". Weapons whose Fextralife page lists this path: Bastard Sword, Battle Axe, Broad Sword, Buckler, Claws, Claymore, Compound Long Bow, Compound Short Bow, Crescent Axe, Dagger, Estoc, Falchion, Flamberge, Great Axe, Great Sword, Guillotine Axe, Halberd, Heater Shield, Iron Knuckles, Kilij, Kite Shield, Knight Sword, Knight's Shield, Long Bow, Long Sword, Mace, Mail Breaker, Mirdan Hammer, Morning Star, Parrying Dagger, Pickaxe, Purple Flame Shield, Rapier, Scimitar, Secret Dagger, Short Bow, Short Spear, Short Sword, Shotel, Soldier's Shield, Spiked Shield, Spiral Rapier, Steel Shield, Uchigatana, War Pick, War Scythe, Winged Spear.",
+   "effect": "High base damage but relatively poor stat scaling (Fextralife Upgrades). On shields, increases Guard Break Reduction.",
+   "materials": [
+    {
+     "name": "Hardstone Shard or Sharpstone Shard",
+     "qty": "",
+     "note": "Total for +0 to +10 is 35–74 depending on the weapon (per Fextralife weapon tables)"
+    },
+    {
+     "name": "Large Hardstone Shard or Large Sharpstone Shard",
+     "qty": "",
+     "note": "Total for +0 to +10 is 18–36 depending on the weapon (per Fextralife weapon tables)"
+    },
+    {
+     "name": "Hardstone Chunk or Sharpstone Chunk",
+     "qty": "",
+     "note": "Total for +0 to +10 is 9–24 depending on the weapon (per Fextralife weapon tables)"
+    },
+    {
+     "name": "Pure Hardstone or Pure Sharpstone",
+     "qty": "",
+     "note": "Total for +0 to +10: 1 (per Fextralife weapon tables)"
+    }
+   ],
+   "whereToFind": "Blacksmith Boldwin (The Nexus) or Blacksmith Ed (Stonefang Tunnel 2-1)",
+   "source": {
+    "label": "Fextralife – Upgrades",
+    "url": "https://demonssouls.wiki.fextralife.com/Upgrades",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "quality-path",
+   "name": "Quality +1 to +5 (Clearstone)",
+   "category": "quality",
+   "description": "+1 to +5. For 35 melee weapons and 4 bows. Requires Clearstone. Yields equal STR and DEX bonuses. Weapons whose Fextralife page lists this path: Bastard Sword, Battle Axe, Broad Sword, Claws, Claymore, Compound Long Bow, Compound Short Bow, Crescent Axe, Dagger, Estoc, Falchion, Flamberge, Great Axe, Great Sword, Guillotine Axe, Halberd, Iron Knuckles, Kilij, Knight Sword, Long Bow, Long Sword, Mace, Mail Breaker, Mirdan Hammer, Morning Star, Parrying Dagger, Pickaxe, Rapier, Scimitar, Secret Dagger, Short Bow, Short Spear, Short Sword, Shotel, Spiral Rapier, Uchigatana, War Pick, War Scythe, Winged Spear.; base weapon level needed: +3 (39 weapons)",
+   "effect": "Yields equal STR and DEX bonuses.",
+   "materials": [
+    {
+     "name": "Clearstone Shard",
+     "qty": "",
+     "note": "Total for the whole path is 15–34 depending on the weapon (per Fextralife weapon tables)"
+    },
+    {
+     "name": "Clearstone Chunk",
+     "qty": "",
+     "note": "Total for the whole path is 6–12 depending on the weapon (per Fextralife weapon tables)"
+    },
+    {
+     "name": "Pure Clearstone",
+     "qty": "",
+     "note": "Total for the whole path: 1 (per Fextralife weapon tables)"
+    }
+   ],
+   "whereToFind": "Blacksmith Ed (Stonefang Tunnel 2-1) or Blacksmith Boldwin (The Nexus)",
+   "source": {
+    "label": "Fextralife – Upgrades",
+    "url": "https://demonssouls.wiki.fextralife.com/Upgrades",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "crushing-path",
+   "name": "Crushing +1 to +5 (Greystone)",
+   "category": "crushing",
+   "description": "+1 to +5. For 15 melee weapons. Requires Greystone. Yields high STR bonus, but removes the DEX bonus. Weapons whose Fextralife page lists this path: Bastard Sword, Battle Axe, Claymore, Crescent Axe, Great Axe, Great Sword, Guillotine Axe, Halberd, Iron Knuckles, Knight Sword, Long Sword, Mace, Mirdan Hammer, Morning Star, Short Sword.; base weapon level needed: +0 (7 weapons), +3 (8 weapons)",
+   "effect": "Yields high STR bonus, but removes the DEX bonus.",
+   "materials": [
+    {
+     "name": "Greystone Shard",
+     "qty": "",
+     "note": "Total for the whole path: 25 (per Fextralife weapon tables)"
+    },
+    {
+     "name": "Greystone Chunk",
+     "qty": "",
+     "note": "Total for the whole path: 9 (per Fextralife weapon tables)"
+    },
+    {
+     "name": "Pure Greystone",
+     "qty": "",
+     "note": "Total for the whole path: 1 (per Fextralife weapon tables)"
+    }
+   ],
+   "whereToFind": "Blacksmith Ed (Stonefang Tunnel 2-1)",
+   "source": {
+    "label": "Fextralife – Upgrades",
+    "url": "https://demonssouls.wiki.fextralife.com/Upgrades",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "sharp-path",
+   "name": "Sharp +1 to +5 (Bladestone)",
+   "category": "sharp",
+   "description": "+1 to +5. For 20 melee weapons and 1 shield. Requires Bladestone. Yields high DEX bonus, but lowers the STR bonus. Weapons whose Fextralife page lists this path: Broad Sword, Claws, Estoc, Falchion, Flamberge, Kilij, Mail Breaker, Pickaxe, Rapier, Scimitar, Secret Dagger, Short Spear, Shotel, Spiral Rapier, Uchigatana, War Pick, War Scythe, Winged Spear.; base weapon level needed: +0 (18 weapons)",
+   "effect": "Yields high DEX bonus, but lowers the STR bonus.",
+   "materials": [
+    {
+     "name": "Bladestone Shard",
+     "qty": "",
+     "note": "Total for the whole path is 6–34 depending on the weapon (per Fextralife weapon tables)"
+    },
+    {
+     "name": "Bladestone Chunk",
+     "qty": "",
+     "note": "Total for the whole path is 5–12 depending on the weapon (per Fextralife weapon tables)"
+    },
+    {
+     "name": "Pure Bladestone",
+     "qty": "",
+     "note": "Total for the whole path: 1 (per Fextralife weapon tables)"
+    }
+   ],
+   "whereToFind": "Blacksmith Ed (Stonefang Tunnel 2-1)",
+   "source": {
+    "label": "Fextralife – Upgrades",
+    "url": "https://demonssouls.wiki.fextralife.com/Upgrades",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "dragon-path",
+   "name": "Dragon +1 to +5 (Dragonstone)",
+   "category": "dragon",
+   "description": "+1 to +5. For 15 melee weapons. Requires Dragonstone. Yields high base damage and adds fire damage, but removes all stat bonuses. Weapons whose Fextralife page lists this path: Bastard Sword, Battle Axe, Claymore, Crescent Axe, Great Axe, Great Sword, Guillotine Axe, Halberd, Iron Knuckles, Knight Sword, Long Sword, Mace, Mirdan Hammer, Morning Star, Short Sword.; base weapon level needed: +3 (15 weapons)",
+   "effect": "Yields high base damage and adds fire damage, but removes all stat bonuses.",
+   "materials": [
+    {
+     "name": "Dragonstone Shard",
+     "qty": "",
+     "note": "Total for the whole path: 25 (per Fextralife weapon tables)"
+    },
+    {
+     "name": "Dragonstone Chunk",
+     "qty": "",
+     "note": "Total for the whole path: 9 (per Fextralife weapon tables)"
+    },
+    {
+     "name": "Pure Dragonstone",
+     "qty": "",
+     "note": "Total for the whole path: 1 (per Fextralife weapon tables)"
+    }
+   ],
+   "whereToFind": "Blacksmith Ed (Stonefang Tunnel 2-1)",
+   "source": {
+    "label": "Fextralife – Upgrades",
+    "url": "https://demonssouls.wiki.fextralife.com/Upgrades",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "tearing-path",
+   "name": "Tearing +1 to +5 (Suckerstone)",
+   "category": "tearing",
+   "description": "+1 to +5. For 11 melee weapons. Requires Suckerstone. Yields high DEX bonus, lowers the STR bonus, and adds Bleed damage. Weapons whose Fextralife page lists this path: Broad Sword, Claws, Falchion, Flamberge, Kilij, Pickaxe, Scimitar, Shotel, Uchigatana, War Pick, War Scythe.; base weapon level needed: +0 (1 weapons), +3 (10 weapons)",
+   "effect": "Yields high DEX bonus, lowers the STR bonus, and adds Bleed damage.",
+   "materials": [
+    {
+     "name": "Suckerstone Shard",
+     "qty": "",
+     "note": "Total for the whole path is 6–34 depending on the weapon (per Fextralife weapon tables)"
+    },
+    {
+     "name": "Suckerstone Chunk",
+     "qty": "",
+     "note": "Total for the whole path is 6–12 depending on the weapon (per Fextralife weapon tables)"
+    },
+    {
+     "name": "Pure Suckerstone",
+     "qty": "",
+     "note": "Total for the whole path: 1 (per Fextralife weapon tables)"
+    }
+   ],
+   "whereToFind": "Blacksmith Ed (Stonefang Tunnel 2-1)",
+   "source": {
+    "label": "Fextralife – Upgrades",
+    "url": "https://demonssouls.wiki.fextralife.com/Upgrades",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "mercury-path",
+   "name": "Mercury +1 to +5 (Mercurystone)",
+   "category": "mercury",
+   "description": "+1 to +5. For 20 melee weapons. Requires Mercurystone. Yields middling DEX bonus, lowers the STR bonus, and adds Poison damage. Weapons whose Fextralife page lists this path: Broad Sword, Claws, Dagger, Estoc, Falchion, Flamberge, Kilij, Mail Breaker, Parrying Dagger, Pickaxe, Rapier, Scimitar, Secret Dagger, Short Spear, Shotel, Spiral Rapier, Uchigatana, War Pick, War Scythe, Winged Spear.; base weapon level needed: +3 (20 weapons)",
+   "effect": "Yields middling DEX bonus, lowers the STR bonus, and adds Poison damage.",
+   "materials": [
+    {
+     "name": "Mercurystone Shard",
+     "qty": "",
+     "note": "Total for the whole path is 6–34 depending on the weapon (per Fextralife weapon tables)"
+    },
+    {
+     "name": "Mercurystone Chunk",
+     "qty": "",
+     "note": "Total for the whole path is 4–12 depending on the weapon (per Fextralife weapon tables)"
+    },
+    {
+     "name": "Pure Mercurystone",
+     "qty": "",
+     "note": "Total for the whole path: 1 (per Fextralife weapon tables)"
+    }
+   ],
+   "whereToFind": "Blacksmith Ed (Stonefang Tunnel 2-1)",
+   "source": {
+    "label": "Fextralife – Upgrades",
+    "url": "https://demonssouls.wiki.fextralife.com/Upgrades",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "fatal-path",
+   "name": "Fatal +1 to +5 (Marrowstone)",
+   "category": "fatal",
+   "description": "+1 to +5. For 9 melee weapons. Requires Marrowstone. Lowers the base damage and STR bonus, but yields high DEX bonus and adds Critical damage which is bonus damage applied to backstabs and ripostes. Weapons whose Fextralife page lists this path: Dagger, Estoc, Mail Breaker, Parrying Dagger, Rapier, Secret Dagger, Short Spear, Spiral Rapier, Winged Spear.; base weapon level needed: +3 (9 weapons)",
+   "effect": "Lowers the base damage and STR bonus, but yields high DEX bonus and adds Critical damage which is bonus damage applied to backstabs and ripostes.",
+   "materials": [
+    {
+     "name": "Marrowstone Shard",
+     "qty": "",
+     "note": "Total for the whole path is 6–25 depending on the weapon (per Fextralife weapon tables)"
+    },
+    {
+     "name": "Marrowstone Chunk",
+     "qty": "",
+     "note": "Total for the whole path is 4–9 depending on the weapon (per Fextralife weapon tables)"
+    },
+    {
+     "name": "Pure Marrowstone",
+     "qty": "",
+     "note": "Total for the whole path: 1 (per Fextralife weapon tables)"
+    }
+   ],
+   "whereToFind": "Blacksmith Ed (Stonefang Tunnel 2-1)",
+   "source": {
+    "label": "Fextralife – Upgrades",
+    "url": "https://demonssouls.wiki.fextralife.com/Upgrades",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "moon-path",
+   "name": "Moon +1 to +5 (Moonlightstone)",
+   "category": "moon",
+   "description": "+1 to +5. For 28 melee weapons. Requires Moonlightstone. Lowers the STR and DEX bonuses but adds magic damage with decent Magic bonus. Weapons whose Fextralife page lists this path: Bastard Sword, Battle Axe, Broad Sword, Claws, Claymore, Crescent Axe, Falchion, Flamberge, Great Axe, Great Sword, Guillotine Axe, Halberd, Iron Knuckles, Kilij, Knight Sword, Long Sword, Mace, Mirdan Hammer, Morning Star, Pickaxe, Scimitar, Short Spear, Short Sword, Shotel, Uchigatana, War Pick, War Scythe, Winged Spear.; base weapon level needed: +6 (28 weapons)",
+   "effect": "Lowers the STR and DEX bonuses but adds magic damage with decent Magic bonus.",
+   "materials": [
+    {
+     "name": "Moonlightstone Shard",
+     "qty": "",
+     "note": "Total for the whole path is 6–34 depending on the weapon (per Fextralife weapon tables)"
+    },
+    {
+     "name": "Moonlightstone Chunk",
+     "qty": "",
+     "note": "Total for the whole path is 6–12 depending on the weapon (per Fextralife weapon tables)"
+    },
+    {
+     "name": "Pure Moonlightstone",
+     "qty": "",
+     "note": "Total for the whole path: 1 (per Fextralife weapon tables)"
+    }
+   ],
+   "whereToFind": "Blacksmith Ed (Stonefang Tunnel 2-1)",
+   "source": {
+    "label": "Fextralife – Upgrades",
+    "url": "https://demonssouls.wiki.fextralife.com/Upgrades",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "crescent-path",
+   "name": "Crescent +1 to +5 (Moonshadestone)",
+   "category": "crescent",
+   "description": "+1 to +5. For 14 melee weapons. Requires Moonshadestone. Removes the STR and DEX bonuses but adds magic damage with high Magic bonus. Also adds MP regen of +1 per 5~3 seconds. Weapons whose Fextralife page lists this path: Broad Sword, Dagger, Estoc, Falchion, Flamberge, Kilij, Mail Breaker, Parrying Dagger, Rapier, Scimitar, Secret Dagger, Shotel, Spiral Rapier, Uchigatana.; base weapon level needed: +6 (14 weapons)",
+   "effect": "Removes the STR and DEX bonuses but adds magic damage with high Magic bonus. Also adds MP regen of +1 per 5~3 seconds.",
+   "materials": [
+    {
+     "name": "Moonshadestone Shard",
+     "qty": "",
+     "note": "Total for the whole path is 6–34 depending on the weapon (per Fextralife weapon tables)"
+    },
+    {
+     "name": "Moonshadestone Chunk",
+     "qty": "",
+     "note": "Total for the whole path is 4–12 depending on the weapon (per Fextralife weapon tables)"
+    },
+    {
+     "name": "Pure Moonshadestone",
+     "qty": "",
+     "note": "Total for the whole path: 1 (per Fextralife weapon tables)"
+    }
+   ],
+   "whereToFind": "Blacksmith Ed (Stonefang Tunnel 2-1)",
+   "source": {
+    "label": "Fextralife – Upgrades",
+    "url": "https://demonssouls.wiki.fextralife.com/Upgrades",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "blessed-path",
+   "name": "Blessed +1 to +5 (Faintstone)",
+   "category": "blessed",
+   "description": "+1 to +5. For 15 melee weapons. Requires Faintstone. Lowers the STR and DEX bonuses but adds magic damage with high Faith bonus. Also adds HP regen of +2~6 per second. Weapons whose Fextralife page lists this path: Bastard Sword, Battle Axe, Claymore, Crescent Axe, Great Axe, Great Sword, Guillotine Axe, Halberd, Iron Knuckles, Knight Sword, Long Sword, Mace, Mirdan Hammer, Morning Star, Short Sword.; base weapon level needed: +6 (15 weapons)",
+   "effect": "Lowers the STR and DEX bonuses but adds magic damage with high Faith bonus. Also adds HP regen of +2~6 per second.",
+   "materials": [
+    {
+     "name": "Faintstone Shard",
+     "qty": "",
+     "note": "Total for the whole path: 25 (per Fextralife weapon tables)"
+    },
+    {
+     "name": "Faintstone Chunk",
+     "qty": "",
+     "note": "Total for the whole path: 9 (per Fextralife weapon tables)"
+    },
+    {
+     "name": "Pure Faintstone",
+     "qty": "",
+     "note": "Total for the whole path: 1 (per Fextralife weapon tables)"
+    }
+   ],
+   "whereToFind": "Blacksmith Ed (Stonefang Tunnel 2-1)",
+   "source": {
+    "label": "Fextralife – Upgrades",
+    "url": "https://demonssouls.wiki.fextralife.com/Upgrades",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "sticky-path",
+   "name": "Sticky +1 to +5 (Spiderstone)",
+   "category": "sticky",
+   "description": "+1 to +5. For 4 bows. Requires Spiderstone. Yields high DEX bonus but lowers the STR bonus, and increases the bow's Range by 5. Weapons whose Fextralife page lists this path: Compound Long Bow, Compound Short Bow, Long Bow, Short Bow.; base weapon level needed: +3 (4 weapons)",
+   "effect": "Yields high DEX bonus but lowers the STR bonus, and increases the bow's Range by 5.",
+   "materials": [
+    {
+     "name": "Spiderstone Shard",
+     "qty": "",
+     "note": "Total for the whole path is 20–25 depending on the weapon (per Fextralife weapon tables)"
+    },
+    {
+     "name": "Spiderstone Chunk",
+     "qty": "",
+     "note": "Total for the whole path is 7–9 depending on the weapon (per Fextralife weapon tables)"
+    },
+    {
+     "name": "Pure Spiderstone",
+     "qty": "",
+     "note": "Total for the whole path: 1 (per Fextralife weapon tables)"
+    }
+   ],
+   "whereToFind": "Blacksmith Ed (Stonefang Tunnel 2-1)",
+   "source": {
+    "label": "Fextralife – Upgrades",
+    "url": "https://demonssouls.wiki.fextralife.com/Upgrades",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "dark-path",
+   "name": "Dark +1 to +5 (Cloudstone)",
+   "category": "dark",
+   "description": "+1 to +5. For 7 shields. Requires Cloudstone. Increases Magic damage reduction, but lowers Guard Break Reduction.",
+   "effect": "Increases Magic damage reduction, but lowers Guard Break Reduction.",
+   "materials": [
+    {
+     "name": "Cloudstone Shard",
+     "qty": "",
+     "note": "Per-weapon totals not listed"
+    },
+    {
+     "name": "Cloudstone Chunk",
+     "qty": "",
+     "note": "Per-weapon totals not listed"
+    },
+    {
+     "name": "Pure Cloudstone",
+     "qty": "",
+     "note": "Per-weapon totals not listed"
+    }
+   ],
+   "whereToFind": "Blacksmith Ed (Stonefang Tunnel 2-1)",
+   "source": {
+    "label": "Fextralife – Upgrades",
+    "url": "https://demonssouls.wiki.fextralife.com/Upgrades",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "crescent-estoc-5",
+   "name": "Crescent Estoc +5",
+   "category": "crescent",
+   "description": "Recipe used by builds in builds.json. Start from Estoc +6 and take the Crescent path to +5 with Moonshadestone.",
+   "effect": "Crescent Estoc +5: physical 106, magic 112. Removes the STR and DEX bonuses but adds magic damage with high Magic bonus. Also adds MP regen of +1 per 5~3 seconds.",
+   "materials": [
+    {
+     "name": "Estoc +6",
+     "qty": 1,
+     "note": "Base weapon at this level (Regular path)"
+    },
+    {
+     "name": "Moonshadestone Shard",
+     "qty": 6,
+     "note": "Total for +1 to +5 per the Fextralife table"
+    },
+    {
+     "name": "Moonshadestone Chunk",
+     "qty": 5,
+     "note": "Total for +1 to +5 per the Fextralife table"
+    },
+    {
+     "name": "Pure Moonshadestone",
+     "qty": 1,
+     "note": "Total for +1 to +5 per the Fextralife table"
+    }
+   ],
+   "whereToFind": "Blacksmith Ed (Stonefang Tunnel 2-1)",
+   "source": {
+    "label": "Fextralife – Estoc",
+    "url": "https://demonssouls.wiki.fextralife.com/Estoc",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "fatal-estoc-5",
+   "name": "Fatal Estoc +5",
+   "category": "fatal",
+   "description": "Recipe used by builds in builds.json. Start from Estoc +3 and take the Fatal path to +5 with Marrowstone.",
+   "effect": "Fatal Estoc +5: physical 90. Lowers the base damage and STR bonus, but yields high DEX bonus and adds Critical damage which is bonus damage applied to backstabs and ripostes.",
+   "materials": [
+    {
+     "name": "Estoc +3",
+     "qty": 1,
+     "note": "Base weapon at this level (Regular path)"
+    },
+    {
+     "name": "Marrowstone Shard",
+     "qty": 6,
+     "note": "Total for +1 to +5 per the Fextralife table"
+    },
+    {
+     "name": "Marrowstone Chunk",
+     "qty": 5,
+     "note": "Total for +1 to +5 per the Fextralife table"
+    },
+    {
+     "name": "Pure Marrowstone",
+     "qty": 1,
+     "note": "Total for +1 to +5 per the Fextralife table"
+    }
+   ],
+   "whereToFind": "Blacksmith Ed (Stonefang Tunnel 2-1)",
+   "source": {
+    "label": "Fextralife – Estoc",
+    "url": "https://demonssouls.wiki.fextralife.com/Estoc",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "crescent-falchion-5",
+   "name": "Crescent Falchion +5",
+   "category": "crescent",
+   "description": "Recipe used by builds in builds.json. Start from Falchion +6 and take the Crescent path to +5 with Moonshadestone.",
+   "effect": "Crescent Falchion +5: physical 112, magic 119. Removes the STR and DEX bonuses but adds magic damage with high Magic bonus. Also adds MP regen of +1 per 5~3 seconds.",
+   "materials": [
+    {
+     "name": "Falchion +6",
+     "qty": 1,
+     "note": "Base weapon at this level (Regular path)"
+    },
+    {
+     "name": "Moonshadestone Shard",
+     "qty": 25,
+     "note": "Total for +1 to +5 per the Fextralife table"
+    },
+    {
+     "name": "Moonshadestone Chunk",
+     "qty": 9,
+     "note": "Total for +1 to +5 per the Fextralife table"
+    },
+    {
+     "name": "Pure Moonshadestone",
+     "qty": 1,
+     "note": "Total for +1 to +5 per the Fextralife table"
+    }
+   ],
+   "whereToFind": "Blacksmith Ed (Stonefang Tunnel 2-1)",
+   "source": {
+    "label": "Fextralife – Falchion",
+    "url": "https://demonssouls.wiki.fextralife.com/Falchion",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "crescent-parrying-dagger-5",
+   "name": "Crescent Parrying Dagger +5",
+   "category": "crescent",
+   "description": "Recipe used by builds in builds.json. Start from Parrying Dagger +6 and take the Crescent path to +5 with Moonshadestone.",
+   "effect": "Crescent Parrying Dagger +5: physical 91, magic 86. Removes the STR and DEX bonuses but adds magic damage with high Magic bonus. Also adds MP regen of +1 per 5~3 seconds.",
+   "materials": [
+    {
+     "name": "Parrying Dagger +6",
+     "qty": 1,
+     "note": "Base weapon at this level (Regular path)"
+    },
+    {
+     "name": "Moonshadestone Shard",
+     "qty": 15,
+     "note": "Total for +1 to +5 per the Fextralife table"
+    },
+    {
+     "name": "Moonshadestone Chunk",
+     "qty": 6,
+     "note": "Total for +1 to +5 per the Fextralife table"
+    },
+    {
+     "name": "Pure Moonshadestone",
+     "qty": 1,
+     "note": "Total for +1 to +5 per the Fextralife table"
+    }
+   ],
+   "whereToFind": "Blacksmith Ed (Stonefang Tunnel 2-1)",
+   "source": {
+    "label": "Fextralife – Parrying Dagger",
+    "url": "https://demonssouls.wiki.fextralife.com/Parrying_Dagger",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "mercury-parrying-dagger-5",
+   "name": "Mercury Parrying Dagger +5",
+   "category": "mercury",
+   "description": "Recipe used by builds in builds.json. Start from Parrying Dagger +3 and take the Mercury path to +5 with Mercurystone.",
+   "effect": "Mercury Parrying Dagger +5: physical 106. Yields middling DEX bonus, lowers the STR bonus, and adds Poison damage.",
+   "materials": [
+    {
+     "name": "Parrying Dagger +3",
+     "qty": 1,
+     "note": "Base weapon at this level (Regular path)"
+    },
+    {
+     "name": "Mercurystone Shard",
+     "qty": 15,
+     "note": "Total for +1 to +5 per the Fextralife table"
+    },
+    {
+     "name": "Mercurystone Chunk",
+     "qty": 6,
+     "note": "Total for +1 to +5 per the Fextralife table"
+    },
+    {
+     "name": "Pure Mercurystone",
+     "qty": 1,
+     "note": "Total for +1 to +5 per the Fextralife table"
+    }
+   ],
+   "whereToFind": "Blacksmith Ed (Stonefang Tunnel 2-1)",
+   "source": {
+    "label": "Fextralife – Parrying Dagger",
+    "url": "https://demonssouls.wiki.fextralife.com/Parrying_Dagger",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "fatal-secret-dagger-5",
+   "name": "Fatal Secret Dagger +5",
+   "category": "fatal",
+   "description": "Recipe used by builds in builds.json. Start from Secret Dagger +3 and take the Fatal path to +5 with Marrowstone.",
+   "effect": "Fatal Secret Dagger +5: physical 79. Lowers the base damage and STR bonus, but yields high DEX bonus and adds Critical damage which is bonus damage applied to backstabs and ripostes.",
+   "materials": [
+    {
+     "name": "Secret Dagger +3",
+     "qty": 1,
+     "note": "Base weapon at this level (Regular path)"
+    },
+    {
+     "name": "Marrowstone Shard",
+     "qty": 15,
+     "note": "Total for +1 to +5 per the Fextralife table"
+    },
+    {
+     "name": "Marrowstone Chunk",
+     "qty": 6,
+     "note": "Total for +1 to +5 per the Fextralife table"
+    },
+    {
+     "name": "Pure Marrowstone",
+     "qty": 1,
+     "note": "Total for +1 to +5 per the Fextralife table"
+    }
+   ],
+   "whereToFind": "Blacksmith Ed (Stonefang Tunnel 2-1)",
+   "source": {
+    "label": "Fextralife – Secret Dagger",
+    "url": "https://demonssouls.wiki.fextralife.com/Secret_Dagger",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "sharp-uchigatana-5",
+   "name": "Sharp Uchigatana +5",
+   "category": "sharp",
+   "description": "Recipe used by builds in builds.json. Start from Uchigatana +0 and take the Sharp path to +5 with Bladestone.",
+   "effect": "Sharp Uchigatana +5: physical 143. Yields high DEX bonus, but lowers the STR bonus.",
+   "materials": [
+    {
+     "name": "Uchigatana +0",
+     "qty": 1,
+     "note": "Base weapon at this level (Regular path)"
+    },
+    {
+     "name": "Bladestone Shard",
+     "qty": 34,
+     "note": "Total for +1 to +5 per the Fextralife table"
+    },
+    {
+     "name": "Bladestone Chunk",
+     "qty": 12,
+     "note": "Total for +1 to +5 per the Fextralife table"
+    },
+    {
+     "name": "Pure Bladestone",
+     "qty": 1,
+     "note": "Total for +1 to +5 per the Fextralife table"
+    }
+   ],
+   "whereToFind": "Blacksmith Ed (Stonefang Tunnel 2-1)",
+   "source": {
+    "label": "Fextralife – Uchigatana",
+    "url": "https://demonssouls.wiki.fextralife.com/Uchigatana",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "moon-uchigatana-5",
+   "name": "Moon Uchigatana +5",
+   "category": "moon",
+   "description": "Recipe used by builds in builds.json. Start from Uchigatana +6 and take the Moon path to +5 with Moonlightstone.",
+   "effect": "Moon Uchigatana +5: physical 143, magic 160. Lowers the STR and DEX bonuses but adds magic damage with decent Magic bonus.",
+   "materials": [
+    {
+     "name": "Uchigatana +6",
+     "qty": 1,
+     "note": "Base weapon at this level (Regular path)"
+    },
+    {
+     "name": "Moonlightstone Shard",
+     "qty": 34,
+     "note": "Total for +1 to +5 per the Fextralife table"
+    },
+    {
+     "name": "Moonlightstone Chunk",
+     "qty": 12,
+     "note": "Total for +1 to +5 per the Fextralife table"
+    },
+    {
+     "name": "Pure Moonlightstone",
+     "qty": 1,
+     "note": "Total for +1 to +5 per the Fextralife table"
+    }
+   ],
+   "whereToFind": "Blacksmith Ed (Stonefang Tunnel 2-1)",
+   "source": {
+    "label": "Fextralife – Uchigatana",
+    "url": "https://demonssouls.wiki.fextralife.com/Uchigatana",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "crescent-uchigatana-5",
+   "name": "Crescent Uchigatana +5",
+   "category": "crescent",
+   "description": "Recipe used by builds in builds.json. Start from Uchigatana +6 and take the Crescent path to +5 with Moonshadestone.",
+   "effect": "Crescent Uchigatana +5: physical 125, magic 133. Removes the STR and DEX bonuses but adds magic damage with high Magic bonus. Also adds MP regen of +1 per 5~3 seconds.",
+   "materials": [
+    {
+     "name": "Uchigatana +6",
+     "qty": 1,
+     "note": "Base weapon at this level (Regular path)"
+    },
+    {
+     "name": "Moonshadestone Shard",
+     "qty": 34,
+     "note": "Total for +1 to +5 per the Fextralife table"
+    },
+    {
+     "name": "Moonshadestone Chunk",
+     "qty": 12,
+     "note": "Total for +1 to +5 per the Fextralife table"
+    },
+    {
+     "name": "Pure Moonshadestone",
+     "qty": 1,
+     "note": "Total for +1 to +5 per the Fextralife table"
+    }
+   ],
+   "whereToFind": "Blacksmith Ed (Stonefang Tunnel 2-1)",
+   "source": {
+    "label": "Fextralife – Uchigatana",
+    "url": "https://demonssouls.wiki.fextralife.com/Uchigatana",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "tearing-uchigatana-5",
+   "name": "Tearing Uchigatana +5",
+   "category": "tearing",
+   "description": "Recipe used by builds in builds.json. Start from Uchigatana +0 and take the Tearing path to +5 with Suckerstone.",
+   "effect": "Tearing Uchigatana +5: physical 107. Yields high DEX bonus, lowers the STR bonus, and adds Bleed damage.",
+   "materials": [
+    {
+     "name": "Uchigatana +0",
+     "qty": 1,
+     "note": "Base weapon at this level (Regular path)"
+    },
+    {
+     "name": "Suckerstone Shard",
+     "qty": 34,
+     "note": "Total for +1 to +5 per the Fextralife table"
+    },
+    {
+     "name": "Suckerstone Chunk",
+     "qty": 12,
+     "note": "Total for +1 to +5 per the Fextralife table"
+    },
+    {
+     "name": "Pure Suckerstone",
+     "qty": 1,
+     "note": "Total for +1 to +5 per the Fextralife table"
+    }
+   ],
+   "whereToFind": "Blacksmith Ed (Stonefang Tunnel 2-1)",
+   "source": {
+    "label": "Fextralife – Uchigatana",
+    "url": "https://demonssouls.wiki.fextralife.com/Uchigatana",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "fatal-winged-spear-5",
+   "name": "Fatal Winged Spear +5",
+   "category": "fatal",
+   "description": "Recipe used by builds in builds.json. Start from Winged Spear +3 and take the Fatal path to +5 with Marrowstone.",
+   "effect": "Fatal Winged Spear +5: physical 96. Lowers the base damage and STR bonus, but yields high DEX bonus and adds Critical damage which is bonus damage applied to backstabs and ripostes.",
+   "materials": [
+    {
+     "name": "Winged Spear +3",
+     "qty": 1,
+     "note": "Base weapon at this level (Regular path)"
+    },
+    {
+     "name": "Marrowstone Shard",
+     "qty": 25,
+     "note": "Total for +1 to +5 per the Fextralife table"
+    },
+    {
+     "name": "Marrowstone Chunk",
+     "qty": 9,
+     "note": "Total for +1 to +5 per the Fextralife table"
+    },
+    {
+     "name": "Pure Marrowstone",
+     "qty": 1,
+     "note": "Total for +1 to +5 per the Fextralife table"
+    }
+   ],
+   "whereToFind": "Blacksmith Ed (Stonefang Tunnel 2-1)",
+   "source": {
+    "label": "Fextralife – Winged Spear",
+    "url": "https://demonssouls.wiki.fextralife.com/Winged_Spear",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "blessed-mirdan-hammer-5",
+   "name": "Blessed Mirdan Hammer +5",
+   "category": "blessed",
+   "description": "Recipe used by builds in builds.json. Start from Mirdan Hammer +6 and take the Blessed path to +5 with Faintstone.",
+   "effect": "Blessed Mirdan Hammer +5: physical 141, magic 135. Lowers the STR and DEX bonuses but adds magic damage with high Faith bonus. Also adds HP regen of +2~6 per second.",
+   "materials": [
+    {
+     "name": "Mirdan Hammer +6",
+     "qty": 1,
+     "note": "Base weapon at this level (Regular path)"
+    },
+    {
+     "name": "Faintstone Shard",
+     "qty": 25,
+     "note": "Total for +1 to +5 per the Fextralife table"
+    },
+    {
+     "name": "Faintstone Chunk",
+     "qty": 9,
+     "note": "Total for +1 to +5 per the Fextralife table"
+    },
+    {
+     "name": "Pure Faintstone",
+     "qty": 1,
+     "note": "Total for +1 to +5 per the Fextralife table"
+    }
+   ],
+   "whereToFind": "Blacksmith Ed (Stonefang Tunnel 2-1)",
+   "source": {
+    "label": "Fextralife – Mirdan Hammer",
+    "url": "https://demonssouls.wiki.fextralife.com/Mirdan_Hammer",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "sticky-compound-long-bow-5",
+   "name": "Sticky Compound Long Bow +5",
+   "category": "sticky",
+   "description": "Recipe used by builds in builds.json. Start from Compound Long Bow +3 and take the Sticky path to +5 with Spiderstone.",
+   "effect": "Sticky Compound Long Bow +5: physical 68, magic 0-. Yields high DEX bonus but lowers the STR bonus, and increases the bow's Range by 5.",
+   "materials": [
+    {
+     "name": "Compound Long Bow +3",
+     "qty": 1,
+     "note": "Base weapon at this level (Regular path)"
+    },
+    {
+     "name": "Spiderstone Shard",
+     "qty": 25,
+     "note": "Total for +1 to +5 per the Fextralife table"
+    },
+    {
+     "name": "Spiderstone Chunk",
+     "qty": 9,
+     "note": "Total for +1 to +5 per the Fextralife table"
+    },
+    {
+     "name": "Pure Spiderstone",
+     "qty": 1,
+     "note": "Total for +1 to +5 per the Fextralife table"
+    }
+   ],
+   "whereToFind": "Blacksmith Ed (Stonefang Tunnel 2-1)",
+   "source": {
+    "label": "Fextralife – Compound Long Bow",
+    "url": "https://demonssouls.wiki.fextralife.com/Compound_Long_Bow",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "crushing-mirdan-hammer-5",
+   "name": "Crushing Mirdan Hammer +5",
+   "category": "crushing",
+   "description": "Recipe used by builds in builds.json. Start from Mirdan Hammer +3 and take the Crushing path to +5 with Greystone.",
+   "effect": "Crushing Mirdan Hammer +5: physical 143. Yields high STR bonus, but removes the DEX bonus.",
+   "materials": [
+    {
+     "name": "Mirdan Hammer +3",
+     "qty": 1,
+     "note": "Base weapon at this level (Regular path)"
+    },
+    {
+     "name": "Greystone Shard",
+     "qty": 25,
+     "note": "Total for +1 to +5 per the Fextralife table"
+    },
+    {
+     "name": "Greystone Chunk",
+     "qty": 9,
+     "note": "Total for +1 to +5 per the Fextralife table"
+    },
+    {
+     "name": "Pure Greystone",
+     "qty": 1,
+     "note": "Total for +1 to +5 per the Fextralife table"
+    }
+   ],
+   "whereToFind": "Blacksmith Ed (Stonefang Tunnel 2-1)",
+   "source": {
+    "label": "Fextralife – Mirdan Hammer",
+    "url": "https://demonssouls.wiki.fextralife.com/Mirdan_Hammer",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "dragon-mirdan-hammer-5",
+   "name": "Dragon Mirdan Hammer +5",
+   "category": "dragon",
+   "description": "Recipe used by builds in builds.json. Start from Mirdan Hammer +3 and take the Dragon path to +5 with Dragonstone.",
+   "effect": "Dragon Mirdan Hammer +5: physical 170. Yields high base damage and adds fire damage, but removes all stat bonuses.",
+   "materials": [
+    {
+     "name": "Mirdan Hammer +3",
+     "qty": 1,
+     "note": "Base weapon at this level (Regular path)"
+    },
+    {
+     "name": "Dragonstone Shard",
+     "qty": 25,
+     "note": "Total for +1 to +5 per the Fextralife table"
+    },
+    {
+     "name": "Dragonstone Chunk",
+     "qty": 9,
+     "note": "Total for +1 to +5 per the Fextralife table"
+    },
+    {
+     "name": "Pure Dragonstone",
+     "qty": 1,
+     "note": "Total for +1 to +5 per the Fextralife table"
+    }
+   ],
+   "whereToFind": "Blacksmith Ed (Stonefang Tunnel 2-1)",
+   "source": {
+    "label": "Fextralife – Mirdan Hammer",
+    "url": "https://demonssouls.wiki.fextralife.com/Mirdan_Hammer",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "blessed-iron-knuckles-5",
+   "name": "Blessed Iron Knuckles +5",
+   "category": "blessed",
+   "description": "Recipe used by builds in builds.json. Start from Iron Knuckles +6 and take the Blessed path to +5 with Faintstone.",
+   "effect": "Blessed Iron Knuckles +5: physical 97, magic 92. Lowers the STR and DEX bonuses but adds magic damage with high Faith bonus. Also adds HP regen of +2~6 per second.",
+   "materials": [
+    {
+     "name": "Iron Knuckles +6",
+     "qty": 1,
+     "note": "Base weapon at this level (Regular path)"
+    },
+    {
+     "name": "Faintstone Shard",
+     "qty": 15,
+     "note": "Total for +1 to +5 per the Fextralife table"
+    },
+    {
+     "name": "Faintstone Chunk",
+     "qty": 7,
+     "note": "Total for +1 to +5 per the Fextralife table"
+    },
+    {
+     "name": "Pure Faintstone",
+     "qty": 1,
+     "note": "Total for +1 to +5 per the Fextralife table"
+    }
+   ],
+   "whereToFind": "Blacksmith Ed (Stonefang Tunnel 2-1)",
+   "source": {
+    "label": "Fextralife – Iron Knuckles",
+    "url": "https://demonssouls.wiki.fextralife.com/Iron_Knuckles",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "crushing-great-axe-5",
+   "name": "Crushing Great Axe +5",
+   "category": "crushing",
+   "description": "Recipe used by builds in builds.json. Start from Great Axe +0 and take the Crushing path to +5 with Greystone.",
+   "effect": "Crushing Great Axe +5: physical 195. Yields high STR bonus, but removes the DEX bonus.",
+   "materials": [
+    {
+     "name": "Great Axe +0",
+     "qty": 1,
+     "note": "Base weapon at this level (Regular path)"
+    },
+    {
+     "name": "Greystone Shard",
+     "qty": 44,
+     "note": "Total for +1 to +5 per the Fextralife table"
+    },
+    {
+     "name": "Greystone Chunk",
+     "qty": 18,
+     "note": "Total for +1 to +5 per the Fextralife table"
+    },
+    {
+     "name": "Pure Greystone",
+     "qty": 2,
+     "note": "Total for +1 to +5 per the Fextralife table"
+    }
+   ],
+   "whereToFind": "Blacksmith Ed (Stonefang Tunnel 2-1)",
+   "source": {
+    "label": "Fextralife – Great Axe",
+    "url": "https://demonssouls.wiki.fextralife.com/Great_Axe",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "crushing-battle-axe-5",
+   "name": "Crushing Battle Axe +5",
+   "category": "crushing",
+   "description": "Recipe used by builds in builds.json. Start from Battle Axe +0 and take the Crushing path to +5 with Greystone.",
+   "effect": "Crushing Battle Axe +5: physical 120. Yields high STR bonus, but removes the DEX bonus.",
+   "materials": [
+    {
+     "name": "Battle Axe +0",
+     "qty": 1,
+     "note": "Base weapon at this level (Regular path)"
+    },
+    {
+     "name": "Greystone Shard",
+     "qty": 25,
+     "note": "Total for +1 to +5 per the Fextralife table"
+    },
+    {
+     "name": "Greystone Chunk",
+     "qty": 9,
+     "note": "Total for +1 to +5 per the Fextralife table"
+    },
+    {
+     "name": "Pure Greystone",
+     "qty": 1,
+     "note": "Total for +1 to +5 per the Fextralife table"
+    }
+   ],
+   "whereToFind": "Blacksmith Ed (Stonefang Tunnel 2-1)",
+   "source": {
+    "label": "Fextralife – Battle Axe",
+    "url": "https://demonssouls.wiki.fextralife.com/Battle_Axe",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "crushing-guillotine-axe-5",
+   "name": "Crushing Guillotine Axe +5",
+   "category": "crushing",
+   "description": "Recipe used by builds in builds.json. Start from Guillotine Axe +0 and take the Crushing path to +5 with Greystone.",
+   "effect": "Crushing Guillotine Axe +5: physical 131. Yields high STR bonus, but removes the DEX bonus.",
+   "materials": [
+    {
+     "name": "Guillotine Axe +0",
+     "qty": 1,
+     "note": "Base weapon at this level (Regular path)"
+    },
+    {
+     "name": "Greystone Shard",
+     "qty": 34,
+     "note": "Total for +1 to +5 per the Fextralife table"
+    },
+    {
+     "name": "Greystone Chunk",
+     "qty": 12,
+     "note": "Total for +1 to +5 per the Fextralife table"
+    },
+    {
+     "name": "Pure Greystone",
+     "qty": 1,
+     "note": "Total for +1 to +5 per the Fextralife table"
+    }
+   ],
+   "whereToFind": "Blacksmith Ed (Stonefang Tunnel 2-1)",
+   "source": {
+    "label": "Fextralife – Guillotine Axe",
+    "url": "https://demonssouls.wiki.fextralife.com/Guillotine_Axe",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "quality-winged-spear-5",
+   "name": "Quality Winged Spear +5",
+   "category": "quality",
+   "description": "Recipe used by builds in builds.json. Start from Winged Spear +3 and take the Quality path to +5 with Clearstone.",
+   "effect": "Quality Winged Spear +5: physical 149. Yields equal STR and DEX bonuses.",
+   "materials": [
+    {
+     "name": "Winged Spear +3",
+     "qty": 1,
+     "note": "Base weapon at this level (Regular path)"
+    },
+    {
+     "name": "Clearstone Shard",
+     "qty": 25,
+     "note": "Total for +1 to +5 per the Fextralife table"
+    },
+    {
+     "name": "Clearstone Chunk",
+     "qty": 9,
+     "note": "Total for +1 to +5 per the Fextralife table"
+    },
+    {
+     "name": "Pure Clearstone",
+     "qty": 1,
+     "note": "Total for +1 to +5 per the Fextralife table"
+    }
+   ],
+   "whereToFind": "Blacksmith Ed (Stonefang Tunnel 2-1)",
+   "source": {
+    "label": "Fextralife – Winged Spear",
+    "url": "https://demonssouls.wiki.fextralife.com/Winged_Spear",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "moon-great-sword-5",
+   "name": "Moon Great Sword +5",
+   "category": "moon",
+   "description": "Recipe used by builds in builds.json. Start from Great Sword +6 and take the Moon path to +5 with Moonlightstone.",
+   "effect": "Moon Great Sword +5: physical 195, magic 218. Lowers the STR and DEX bonuses but adds magic damage with decent Magic bonus.",
+   "materials": [
+    {
+     "name": "Great Sword +6",
+     "qty": 1,
+     "note": "Base weapon at this level (Regular path)"
+    },
+    {
+     "name": "Moonlightstone Shard",
+     "qty": 44,
+     "note": "Total for +1 to +5 per the Fextralife table"
+    },
+    {
+     "name": "Moonlightstone Chunk",
+     "qty": 18,
+     "note": "Total for +1 to +5 per the Fextralife table"
+    },
+    {
+     "name": "Pure Moonlightstone",
+     "qty": 2,
+     "note": "Total for +1 to +5 per the Fextralife table"
+    }
+   ],
+   "whereToFind": "Blacksmith Ed (Stonefang Tunnel 2-1)",
+   "source": {
+    "label": "Fextralife – Great Sword",
+    "url": "https://demonssouls.wiki.fextralife.com/Great_Sword",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "tearing-falchion-5",
+   "name": "Tearing Falchion +5",
+   "category": "tearing",
+   "description": "Recipe used by builds in builds.json. Start from Falchion +3 and take the Tearing path to +5 with Suckerstone.",
+   "effect": "Tearing Falchion +5: physical 96. Yields high DEX bonus, lowers the STR bonus, and adds Bleed damage.",
+   "materials": [
+    {
+     "name": "Falchion +3",
+     "qty": 1,
+     "note": "Base weapon at this level (Regular path)"
+    },
+    {
+     "name": "Suckerstone Shard",
+     "qty": 25,
+     "note": "Total for +1 to +5 per the Fextralife table"
+    },
+    {
+     "name": "Suckerstone Chunk",
+     "qty": 9,
+     "note": "Total for +1 to +5 per the Fextralife table"
+    },
+    {
+     "name": "Pure Suckerstone",
+     "qty": 1,
+     "note": "Total for +1 to +5 per the Fextralife table"
+    }
+   ],
+   "whereToFind": "Blacksmith Ed (Stonefang Tunnel 2-1)",
+   "source": {
+    "label": "Fextralife – Falchion",
+    "url": "https://demonssouls.wiki.fextralife.com/Falchion",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "blueblood-sword",
+   "name": "Blueblood Sword",
+   "category": "boss-soul-weapons",
+   "description": "Created by Blacksmith Ed requires a Pureblood Demon Soul and Broken Sword +0",
+   "effect": "Physical 100, magic/bonus 200, weight 5.0. Requirements/scaling (STR, DEX, MAG, FTH): 18 D, 18 -, 18 E, 18 E.",
+   "materials": [
+    {
+     "name": "Pureblood Demon Soul",
+     "qty": 1,
+     "note": ""
+    },
+    {
+     "name": "Base weapon",
+     "qty": 1,
+     "note": "Fextralife Boss Soul Weapons table: a Pureblood Demon Soul and Broken Sword +0"
+    }
+   ],
+   "whereToFind": "Blacksmith Ed, Stonefang Tunnel (2-1), after giving him the Searing Demon Soul (Flamelurker).",
+   "source": {
+    "label": "Fextralife – Boss Soul Weapons",
+    "url": "https://demonssouls.wiki.fextralife.com/Boss_Soul_Weapons",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "dozer-axe",
+   "name": "Dozer Axe",
+   "category": "boss-soul-weapons",
+   "description": "Created by Blacksmith Ed requires a Gray Demon Soul and any of the following weapons: Battle Axe +6, Guillotine Axe +6, Crescent Axe +6, Great Axe + 6 or Halberd +6.",
+   "effect": "Physical 340, magic/bonus 0, weight 22.0. Requirements/scaling (STR, DEX, MAG, FTH): 30 -, - -, - -, - -.",
+   "materials": [
+    {
+     "name": "Gray Demon Soul",
+     "qty": 1,
+     "note": ""
+    },
+    {
+     "name": "Base weapon",
+     "qty": 1,
+     "note": "Fextralife Boss Soul Weapons table: a Gray Demon Soul and any of the following weapons: Battle Axe +6, Guillotine Axe +6, Crescent Axe +6, Great Axe + 6 or Halberd +6. Item pages list: Battle Axe +6, Crescent Axe +6, Great Axe +6, Guillotine Axe +6, Halberd +6"
+    }
+   ],
+   "whereToFind": "Blacksmith Ed, Stonefang Tunnel (2-1), after giving him the Searing Demon Soul (Flamelurker).",
+   "source": {
+    "label": "Fextralife – Boss Soul Weapons",
+    "url": "https://demonssouls.wiki.fextralife.com/Boss_Soul_Weapons",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "insanity-catalyst",
+   "name": "Insanity Catalyst",
+   "category": "boss-soul-weapons",
+   "description": "Created by Blacksmith Ed requires a Golden Demon Soul and any of the following weapons: Wooden Catalyst +0 or Silver Catalyst +0.",
+   "effect": "Physical 59, magic/bonus 143 (Mag Adjust), weight 0.5. Requirements/scaling (STR, DEX, MAG, FTH): 6 E, - -, 16 A, - -.",
+   "materials": [
+    {
+     "name": "Golden Demon Soul",
+     "qty": 1,
+     "note": ""
+    },
+    {
+     "name": "Base weapon",
+     "qty": 1,
+     "note": "Fextralife Boss Soul Weapons table: a Golden Demon Soul and any of the following weapons: Wooden Catalyst +0 or Silver Catalyst +0. Item pages list: Silver Catalyst +0, Wooden Catalyst +0"
+    }
+   ],
+   "whereToFind": "Blacksmith Ed, Stonefang Tunnel (2-1), after giving him the Searing Demon Soul (Flamelurker).",
+   "source": {
+    "label": "Fextralife – Boss Soul Weapons",
+    "url": "https://demonssouls.wiki.fextralife.com/Boss_Soul_Weapons",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "lava-bow",
+   "name": "Lava Bow",
+   "category": "boss-soul-weapons",
+   "description": "Created by Blacksmith Ed requires a Hard Demon Soul and any of the following weapons: Short Bow +7, Long Bow +7, Compound Short Bow +7 or Compound Long Bow +7",
+   "effect": "Physical 55, magic/bonus 0, weight 2.0. Requirements/scaling (STR, DEX, MAG, FTH): 21 D, 16 D, - E, - -.",
+   "materials": [
+    {
+     "name": "Hard Demon Soul",
+     "qty": 1,
+     "note": ""
+    },
+    {
+     "name": "Base weapon",
+     "qty": 1,
+     "note": "Fextralife Boss Soul Weapons table: a Hard Demon Soul and any of the following weapons: Short Bow +7, Long Bow +7, Compound Short Bow +7 or Compound Long Bow +7. Item pages list: Compound Long Bow +7, Compound Short Bow +7, Long Bow +7, Short Bow +7"
+    }
+   ],
+   "whereToFind": "Blacksmith Ed, Stonefang Tunnel (2-1), after giving him the Searing Demon Soul (Flamelurker).",
+   "source": {
+    "label": "Fextralife – Boss Soul Weapons",
+    "url": "https://demonssouls.wiki.fextralife.com/Boss_Soul_Weapons",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "meat-cleaver",
+   "name": "Meat Cleaver",
+   "category": "boss-soul-weapons",
+   "description": "A Searing Demon Soul must be given to Blacksmith Ed before he will allow transformation of items into Unique Weapons. Can be created by Blacksmith Ed requires a Swollen Demon Soul and from any of the following weapons: Club +0, Great Club +0, War Pick +6, Mace +6, Pickaxe +6, Morning Star +6, Iron Knuckles +6 or Mirdan Hammer +6.",
+   "effect": "Physical 90, magic/bonus 90, weight 10.0. Requirements/scaling (STR, DEX, MAG, FTH): 26 S, - S, - -, 16 A.",
+   "materials": [
+    {
+     "name": "Swollen Demon Soul",
+     "qty": 1,
+     "note": ""
+    },
+    {
+     "name": "Base weapon",
+     "qty": 1,
+     "note": "Fextralife Boss Soul Weapons table: a Swollen Demon Soul and from any of the following weapons: Club +0, Great Club +0, War Pick +6, Mace +6, Pickaxe +6, Morning Star +6, Iron Knuckles +6 or Mirdan Hammer +6. Item pages list: Club +0, Great Club +0, Iron Knuckles +6, Mace +6, Mirdan Hammer +6, Morning Star +6, Pickaxe +6, War Pick +6"
+    }
+   ],
+   "whereToFind": "Blacksmith Ed, Stonefang Tunnel (2-1), after giving him the Searing Demon Soul (Flamelurker).",
+   "source": {
+    "label": "Fextralife – Boss Soul Weapons",
+    "url": "https://demonssouls.wiki.fextralife.com/Boss_Soul_Weapons",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "morion-blade",
+   "name": "Morion Blade",
+   "category": "boss-soul-weapons",
+   "description": "Can be created by Blacksmith Ed requires a Storm Demon Soul any of the following weapons: Short Sword +8, Long Sword +8, Knight Sword +8, Bastard Sword +8, Claymore +8 or Great Sword +8.",
+   "effect": "Physical 210, magic/bonus 0, weight 3.0. Requirements/scaling (STR, DEX, MAG, FTH): 14 -, 14 -, - -, - -.",
+   "materials": [
+    {
+     "name": "Storm Demon Soul",
+     "qty": 1,
+     "note": ""
+    },
+    {
+     "name": "Base weapon",
+     "qty": 1,
+     "note": "Fextralife Boss Soul Weapons table: a Storm Demon Soul any of the following weapons: Short Sword +8, Long Sword +8, Knight Sword +8, Bastard Sword +8, Claymore +8 or Great Sword +8. Item pages list: Bastard Sword +8, Claymore +8, Great Sword +8, Knight Sword +8, Long Sword +8, Short Sword +8"
+    }
+   ],
+   "whereToFind": "Blacksmith Ed, Stonefang Tunnel (2-1), after giving him the Searing Demon Soul (Flamelurker).",
+   "source": {
+    "label": "Fextralife – Boss Soul Weapons",
+    "url": "https://demonssouls.wiki.fextralife.com/Boss_Soul_Weapons",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "needle-of-eternal-agony",
+   "name": "Needle of Eternal Agony",
+   "category": "boss-soul-weapons",
+   "description": "Can be created at Blacksmith Ed, requires a using a Mixed Demon Soul and can be created from any of the following weapons: Parrying Dagger +7, Secret Dagger +7, Rapier +7 or Estoc +7.",
+   "effect": "Physical 10, magic/bonus 50, weight 0.5. Requirements/scaling (STR, DEX, MAG, FTH): 6 -, 20 -, 20 -, - -.",
+   "materials": [
+    {
+     "name": "Mixed Demon Soul",
+     "qty": 1,
+     "note": ""
+    },
+    {
+     "name": "Base weapon",
+     "qty": 1,
+     "note": "Fextralife Boss Soul Weapons table: a using a Mixed Demon Soul and can be created from any of the following weapons: Parrying Dagger +7, Secret Dagger +7, Rapier +7 or Estoc +7. Item pages list: Dagger +7, Estoc +7, Mail Breaker +7, Parrying Dagger +7, Rapier +7, Secret Dagger +7"
+    }
+   ],
+   "whereToFind": "Blacksmith Ed, Stonefang Tunnel (2-1), after giving him the Searing Demon Soul (Flamelurker).",
+   "source": {
+    "label": "Fextralife – Boss Soul Weapons",
+    "url": "https://demonssouls.wiki.fextralife.com/Boss_Soul_Weapons",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "northern-regalia",
+   "name": "Northern Regalia",
+   "category": "boss-soul-weapons",
+   "description": "Can be created by Blacksmith Ed requires a False King Demon Soul and it must be created by having both of the following: Soulbrandt +0 and Demonbrandt +0.",
+   "effect": "Physical 135, magic/bonus 135, weight 6.5. Requirements/scaling (STR, DEX, MAG, FTH): 20 -, 14 -, 12 -, 12 -.",
+   "materials": [
+    {
+     "name": "False King Demon Soul",
+     "qty": 1,
+     "note": ""
+    },
+    {
+     "name": "Base weapon",
+     "qty": 1,
+     "note": "Fextralife Boss Soul Weapons table: a False King Demon Soul and it must be created by having both of the following: Soulbrandt +0 and Demonbrandt +0"
+    }
+   ],
+   "whereToFind": "Blacksmith Ed, Stonefang Tunnel (2-1), after giving him the Searing Demon Soul (Flamelurker).",
+   "source": {
+    "label": "Fextralife – Boss Soul Weapons",
+    "url": "https://demonssouls.wiki.fextralife.com/Boss_Soul_Weapons",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "scraping-spear",
+   "name": "Scraping Spear",
+   "category": "boss-soul-weapons",
+   "description": "Created by Blacksmith Ed, requires a Lead Demon Soul and any one of the following weapons: Short Spear +7 or Winged Spear + 7.",
+   "effect": "Physical 100, magic/bonus 0, weight 4.0. Requirements/scaling (STR, DEX, MAG, FTH): 15 E, 15 A, - -, - -.",
+   "materials": [
+    {
+     "name": "Lead Demon Soul",
+     "qty": 1,
+     "note": ""
+    },
+    {
+     "name": "Base weapon",
+     "qty": 1,
+     "note": "Fextralife Boss Soul Weapons table: a Lead Demon Soul and any one of the following weapons: Short Spear +7 or Winged Spear + 7. Item pages list: Short Spear +7, Winged Spear +7"
+    }
+   ],
+   "whereToFind": "Blacksmith Ed, Stonefang Tunnel (2-1), after giving him the Searing Demon Soul (Flamelurker).",
+   "source": {
+    "label": "Fextralife – Boss Soul Weapons",
+    "url": "https://demonssouls.wiki.fextralife.com/Boss_Soul_Weapons",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "large-sword-of-searching",
+   "name": "Large Sword of Searching",
+   "category": "boss-soul-weapons",
+   "description": "This weapon is created at Blacksmith Ed using a Hero Demon Soul.",
+   "effect": "Physical 170, weight 8.0. Requirements/scaling (STR, DEX, MAG, FTH): 24 D, 16 D, - -, - -.",
+   "materials": [
+    {
+     "name": "Hero Demon Soul",
+     "qty": 1,
+     "note": ""
+    },
+    {
+     "name": "Base weapon",
+     "qty": 1,
+     "note": "Fextralife Boss Soul Weapons table: This weapon is created at Blacksmith Ed using a Hero Demon Soul. Item pages list: Broad Sword +8, Claws +8, Falchion +8, Flamberge +8, Kilij +8, Scimitar +8, Shotel +8, Uchigatana +8, War Scythe +8"
+    }
+   ],
+   "whereToFind": "Blacksmith Ed, Stonefang Tunnel (2-1), after giving him the Searing Demon Soul (Flamelurker).",
+   "source": {
+    "label": "Fextralife – Boss Soul Weapons",
+    "url": "https://demonssouls.wiki.fextralife.com/Boss_Soul_Weapons",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "adjudicators-shield-colorless",
+   "name": "Adjudicator's Shield (Colorless Demon Soul upgrade)",
+   "category": "colorless",
+   "description": "Adjudicator's Shield cannot take ores; it is upgraded only with Colorless Demon Souls at Blacksmith Ed.",
+   "effect": "Raises the unique weapon/shield level",
+   "materials": [
+    {
+     "name": "Colorless Demon Soul",
+     "qty": "",
+     "note": "The count per level is not stated on the item page"
+    }
+   ],
+   "whereToFind": "Blacksmith Ed (Stonefang Tunnel 2-1), after the Searing Demon Soul",
+   "source": {
+    "label": "Fextralife – Colorless Demon Soul",
+    "url": "https://demonssouls.wiki.fextralife.com/Colorless_Demon_Soul",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "babys-nail-colorless",
+   "name": "Baby's Nail (Colorless Demon Soul upgrade)",
+   "category": "colorless",
+   "description": "Baby's Nail cannot take ores; it is upgraded only with Colorless Demon Souls at Blacksmith Ed.",
+   "effect": "Raises the unique weapon/shield level (max +5)",
+   "materials": [
+    {
+     "name": "Colorless Demon Soul",
+     "qty": "",
+     "note": "The count per level is not stated on the item page"
+    }
+   ],
+   "whereToFind": "Blacksmith Ed (Stonefang Tunnel 2-1), after the Searing Demon Soul",
+   "source": {
+    "label": "Fextralife – Colorless Demon Soul",
+    "url": "https://demonssouls.wiki.fextralife.com/Colorless_Demon_Soul",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "blind-colorless",
+   "name": "Blind (Colorless Demon Soul upgrade)",
+   "category": "colorless",
+   "description": "Blind cannot take ores; it is upgraded only with Colorless Demon Souls at Blacksmith Ed.",
+   "effect": "Raises the unique weapon/shield level (max +4)",
+   "materials": [
+    {
+     "name": "Colorless Demon Soul",
+     "qty": 5,
+     "note": "Fextralife item page: Blind +4 for 5x Colorless Demon Soul"
+    }
+   ],
+   "whereToFind": "Blacksmith Ed (Stonefang Tunnel 2-1), after the Searing Demon Soul",
+   "source": {
+    "label": "Fextralife – Colorless Demon Soul",
+    "url": "https://demonssouls.wiki.fextralife.com/Colorless_Demon_Soul",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "bramd-colorless",
+   "name": "Bramd (Colorless Demon Soul upgrade)",
+   "category": "colorless",
+   "description": "Bramd cannot take ores; it is upgraded only with Colorless Demon Souls at Blacksmith Ed.",
+   "effect": "Raises the unique weapon/shield level (max +5)",
+   "materials": [
+    {
+     "name": "Colorless Demon Soul",
+     "qty": 5,
+     "note": "Fextralife item page: Bramd +5 for 5x Colorless Demon Soul"
+    }
+   ],
+   "whereToFind": "Blacksmith Ed (Stonefang Tunnel 2-1), after the Searing Demon Soul",
+   "source": {
+    "label": "Fextralife – Colorless Demon Soul",
+    "url": "https://demonssouls.wiki.fextralife.com/Colorless_Demon_Soul",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "dark-silver-shield-colorless",
+   "name": "Dark Silver Shield (Colorless Demon Soul upgrade)",
+   "category": "colorless",
+   "description": "Dark Silver Shield cannot take ores; it is upgraded only with Colorless Demon Souls at Blacksmith Ed.",
+   "effect": "Raises the unique weapon/shield level",
+   "materials": [
+    {
+     "name": "Colorless Demon Soul",
+     "qty": "",
+     "note": "The count per level is not stated on the item page"
+    }
+   ],
+   "whereToFind": "Blacksmith Ed (Stonefang Tunnel 2-1), after the Searing Demon Soul",
+   "source": {
+    "label": "Fextralife – Colorless Demon Soul",
+    "url": "https://demonssouls.wiki.fextralife.com/Colorless_Demon_Soul",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "dragon-bone-smasher-colorless",
+   "name": "Dragon Bone Smasher (Colorless Demon Soul upgrade)",
+   "category": "colorless",
+   "description": "Dragon Bone Smasher cannot take ores; it is upgraded only with Colorless Demon Souls at Blacksmith Ed.",
+   "effect": "Raises the unique weapon/shield level (max +5)",
+   "materials": [
+    {
+     "name": "Colorless Demon Soul",
+     "qty": 5,
+     "note": "Fextralife item page: Dragon Bone Smasher +5 for 5x Colorless Demon Soul"
+    }
+   ],
+   "whereToFind": "Blacksmith Ed (Stonefang Tunnel 2-1), after the Searing Demon Soul",
+   "source": {
+    "label": "Fextralife – Colorless Demon Soul",
+    "url": "https://demonssouls.wiki.fextralife.com/Colorless_Demon_Soul",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "epee-rapier-colorless",
+   "name": "Epee Rapier (Colorless Demon Soul upgrade)",
+   "category": "colorless",
+   "description": "Epee Rapier cannot take ores; it is upgraded only with Colorless Demon Souls at Blacksmith Ed.",
+   "effect": "Raises the unique weapon/shield level (max +5)",
+   "materials": [
+    {
+     "name": "Colorless Demon Soul",
+     "qty": 5,
+     "note": "Fextralife item page: Epee Rapier +5 for 5x Colorless Demon Soul"
+    }
+   ],
+   "whereToFind": "Blacksmith Ed (Stonefang Tunnel 2-1), after the Searing Demon Soul",
+   "source": {
+    "label": "Fextralife – Colorless Demon Soul",
+    "url": "https://demonssouls.wiki.fextralife.com/Colorless_Demon_Soul",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "geris-stiletto-colorless",
+   "name": "Geri's Stiletto (Colorless Demon Soul upgrade)",
+   "category": "colorless",
+   "description": "Geri's Stiletto cannot take ores; it is upgraded only with Colorless Demon Souls at Blacksmith Ed.",
+   "effect": "Raises the unique weapon/shield level (max +5)",
+   "materials": [
+    {
+     "name": "Colorless Demon Soul",
+     "qty": 5,
+     "note": "Fextralife item page: Geri's Stiletto +5 for 5x Colorless Demon Soul"
+    }
+   ],
+   "whereToFind": "Blacksmith Ed (Stonefang Tunnel 2-1), after the Searing Demon Soul",
+   "source": {
+    "label": "Fextralife – Colorless Demon Soul",
+    "url": "https://demonssouls.wiki.fextralife.com/Colorless_Demon_Soul",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "hands-of-god-colorless",
+   "name": "Hands of God (Colorless Demon Soul upgrade)",
+   "category": "colorless",
+   "description": "Hands of God cannot take ores; it is upgraded only with Colorless Demon Souls at Blacksmith Ed.",
+   "effect": "Raises the unique weapon/shield level",
+   "materials": [
+    {
+     "name": "Colorless Demon Soul",
+     "qty": "",
+     "note": "The count per level is not stated on the item page"
+    }
+   ],
+   "whereToFind": "Blacksmith Ed (Stonefang Tunnel 2-1), after the Searing Demon Soul",
+   "source": {
+    "label": "Fextralife – Colorless Demon Soul",
+    "url": "https://demonssouls.wiki.fextralife.com/Colorless_Demon_Soul",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "hiltless-colorless",
+   "name": "Hiltless (Colorless Demon Soul upgrade)",
+   "category": "colorless",
+   "description": "Hiltless cannot take ores; it is upgraded only with Colorless Demon Souls at Blacksmith Ed.",
+   "effect": "Raises the unique weapon/shield level (max +5)",
+   "materials": [
+    {
+     "name": "Colorless Demon Soul",
+     "qty": 5,
+     "note": "Fextralife item page: Hiltless +5 for 5x Colorless Demon Soul"
+    }
+   ],
+   "whereToFind": "Blacksmith Ed (Stonefang Tunnel 2-1), after the Searing Demon Soul",
+   "source": {
+    "label": "Fextralife – Colorless Demon Soul",
+    "url": "https://demonssouls.wiki.fextralife.com/Colorless_Demon_Soul",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "istarelle-colorless",
+   "name": "Istarelle (Colorless Demon Soul upgrade)",
+   "category": "colorless",
+   "description": "Istarelle cannot take ores; it is upgraded only with Colorless Demon Souls at Blacksmith Ed.",
+   "effect": "Raises the unique weapon/shield level (max +5)",
+   "materials": [
+    {
+     "name": "Colorless Demon Soul",
+     "qty": 5,
+     "note": "Fextralife item page lists one Colorless Demon Soul per level, +1 to +5"
+    }
+   ],
+   "whereToFind": "Blacksmith Ed (Stonefang Tunnel 2-1), after the Searing Demon Soul",
+   "source": {
+    "label": "Fextralife – Colorless Demon Soul",
+    "url": "https://demonssouls.wiki.fextralife.com/Colorless_Demon_Soul",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "kris-blade-colorless",
+   "name": "Kris Blade (Colorless Demon Soul upgrade)",
+   "category": "colorless",
+   "description": "Kris Blade cannot take ores; it is upgraded only with Colorless Demon Souls at Blacksmith Ed.",
+   "effect": "Raises the unique weapon/shield level (max +5)",
+   "materials": [
+    {
+     "name": "Colorless Demon Soul",
+     "qty": "",
+     "note": "The count per level is not stated on the item page"
+    }
+   ],
+   "whereToFind": "Blacksmith Ed (Stonefang Tunnel 2-1), after the Searing Demon Soul",
+   "source": {
+    "label": "Fextralife – Colorless Demon Soul",
+    "url": "https://demonssouls.wiki.fextralife.com/Colorless_Demon_Soul",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "large-brushwood-shield-colorless",
+   "name": "Large Brushwood Shield (Colorless Demon Soul upgrade)",
+   "category": "colorless",
+   "description": "Large Brushwood Shield cannot take ores; it is upgraded only with Colorless Demon Souls at Blacksmith Ed.",
+   "effect": "Raises the unique weapon/shield level",
+   "materials": [
+    {
+     "name": "Colorless Demon Soul",
+     "qty": "",
+     "note": "The count per level is not stated on the item page"
+    }
+   ],
+   "whereToFind": "Blacksmith Ed (Stonefang Tunnel 2-1), after the Searing Demon Soul",
+   "source": {
+    "label": "Fextralife – Colorless Demon Soul",
+    "url": "https://demonssouls.wiki.fextralife.com/Colorless_Demon_Soul",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "large-sword-of-moonlight-colorless",
+   "name": "Large Sword of Moonlight (Colorless Demon Soul upgrade)",
+   "category": "colorless",
+   "description": "Large Sword of Moonlight cannot take ores; it is upgraded only with Colorless Demon Souls at Blacksmith Ed.",
+   "effect": "Raises the unique weapon/shield level (max +5)",
+   "materials": [
+    {
+     "name": "Colorless Demon Soul",
+     "qty": 5,
+     "note": "Fextralife item page lists one Colorless Demon Soul per level, +1 to +5"
+    }
+   ],
+   "whereToFind": "Blacksmith Ed (Stonefang Tunnel 2-1), after the Searing Demon Soul",
+   "source": {
+    "label": "Fextralife – Colorless Demon Soul",
+    "url": "https://demonssouls.wiki.fextralife.com/Colorless_Demon_Soul",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "magic-sword-makoto-colorless",
+   "name": "Magic Sword \"Makoto\" (Colorless Demon Soul upgrade)",
+   "category": "colorless",
+   "description": "Magic Sword \"Makoto\" cannot take ores; it is upgraded only with Colorless Demon Souls at Blacksmith Ed.",
+   "effect": "Raises the unique weapon/shield level (max +5)",
+   "materials": [
+    {
+     "name": "Colorless Demon Soul",
+     "qty": 5,
+     "note": "Fextralife item page: Magic Sword \"Makoto\" +5 for 5x Colorless Demon Soul"
+    }
+   ],
+   "whereToFind": "Blacksmith Ed (Stonefang Tunnel 2-1), after the Searing Demon Soul",
+   "source": {
+    "label": "Fextralife – Colorless Demon Soul",
+    "url": "https://demonssouls.wiki.fextralife.com/Colorless_Demon_Soul",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "penetrating-sword-colorless",
+   "name": "Penetrating Sword (Colorless Demon Soul upgrade)",
+   "category": "colorless",
+   "description": "Penetrating Sword cannot take ores; it is upgraded only with Colorless Demon Souls at Blacksmith Ed.",
+   "effect": "Raises the unique weapon/shield level (max +5)",
+   "materials": [
+    {
+     "name": "Colorless Demon Soul",
+     "qty": 5,
+     "note": "Fextralife item page: Penetrating Sword +5 for 5x Colorless Demon Soul"
+    }
+   ],
+   "whereToFind": "Blacksmith Ed (Stonefang Tunnel 2-1), after the Searing Demon Soul",
+   "source": {
+    "label": "Fextralife – Colorless Demon Soul",
+    "url": "https://demonssouls.wiki.fextralife.com/Colorless_Demon_Soul",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "phosphorescent-pole-colorless",
+   "name": "Phosphorescent Pole (Colorless Demon Soul upgrade)",
+   "category": "colorless",
+   "description": "Phosphorescent Pole cannot take ores; it is upgraded only with Colorless Demon Souls at Blacksmith Ed.",
+   "effect": "Raises the unique weapon/shield level",
+   "materials": [
+    {
+     "name": "Colorless Demon Soul",
+     "qty": "",
+     "note": "The count per level is not stated on the item page"
+    }
+   ],
+   "whereToFind": "Blacksmith Ed (Stonefang Tunnel 2-1), after the Searing Demon Soul",
+   "source": {
+    "label": "Fextralife – Colorless Demon Soul",
+    "url": "https://demonssouls.wiki.fextralife.com/Colorless_Demon_Soul",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "rune-shield-colorless",
+   "name": "Rune Shield (Colorless Demon Soul upgrade)",
+   "category": "colorless",
+   "description": "Rune Shield cannot take ores; it is upgraded only with Colorless Demon Souls at Blacksmith Ed.",
+   "effect": "Raises the unique weapon/shield level",
+   "materials": [
+    {
+     "name": "Colorless Demon Soul",
+     "qty": "",
+     "note": "The count per level is not stated on the item page"
+    }
+   ],
+   "whereToFind": "Blacksmith Ed (Stonefang Tunnel 2-1), after the Searing Demon Soul",
+   "source": {
+    "label": "Fextralife – Colorless Demon Soul",
+    "url": "https://demonssouls.wiki.fextralife.com/Colorless_Demon_Soul",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "rune-sword-colorless",
+   "name": "Rune Sword (Colorless Demon Soul upgrade)",
+   "category": "colorless",
+   "description": "Rune Sword cannot take ores; it is upgraded only with Colorless Demon Souls at Blacksmith Ed.",
+   "effect": "Raises the unique weapon/shield level (max +5)",
+   "materials": [
+    {
+     "name": "Colorless Demon Soul",
+     "qty": 5,
+     "note": "Fextralife item page: Rune Sword +5 for 5x Colorless Demon Soul"
+    }
+   ],
+   "whereToFind": "Blacksmith Ed (Stonefang Tunnel 2-1), after the Searing Demon Soul",
+   "source": {
+    "label": "Fextralife – Colorless Demon Soul",
+    "url": "https://demonssouls.wiki.fextralife.com/Colorless_Demon_Soul",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "tower-shield-colorless",
+   "name": "Tower Shield (Colorless Demon Soul upgrade)",
+   "category": "colorless",
+   "description": "Tower Shield cannot take ores; it is upgraded only with Colorless Demon Souls at Blacksmith Ed.",
+   "effect": "Raises the unique weapon/shield level",
+   "materials": [
+    {
+     "name": "Colorless Demon Soul",
+     "qty": "",
+     "note": "The count per level is not stated on the item page"
+    }
+   ],
+   "whereToFind": "Blacksmith Ed (Stonefang Tunnel 2-1), after the Searing Demon Soul",
+   "source": {
+    "label": "Fextralife – Colorless Demon Soul",
+    "url": "https://demonssouls.wiki.fextralife.com/Colorless_Demon_Soul",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "white-bow-colorless",
+   "name": "White Bow (Colorless Demon Soul upgrade)",
+   "category": "colorless",
+   "description": "White Bow cannot take ores; it is upgraded only with Colorless Demon Souls at Blacksmith Ed.",
+   "effect": "Raises the unique weapon/shield level",
+   "materials": [
+    {
+     "name": "Colorless Demon Soul",
+     "qty": "",
+     "note": "The count per level is not stated on the item page"
+    }
+   ],
+   "whereToFind": "Blacksmith Ed (Stonefang Tunnel 2-1), after the Searing Demon Soul",
+   "source": {
+    "label": "Fextralife – Colorless Demon Soul",
+    "url": "https://demonssouls.wiki.fextralife.com/Colorless_Demon_Soul",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "trade-beast-demon-soul-soul-of-the-old-one",
+   "name": "Beast Demon Soul / Soul of the Old One",
+   "category": "demon-soul-trades",
+   "description": "Boss soul from End Game.",
+   "effect": "Can be consumed to obtain 200,000 Souls.",
+   "materials": [
+    {
+     "name": "Beast Demon Soul / Soul of the Old One",
+     "qty": 1,
+     "note": ""
+    }
+   ],
+   "whereToFind": "Sage Freke / Yuria / Saint Urbain (The Nexus) for spells & miracles; Blacksmith Ed for weapons",
+   "source": {
+    "label": "Fextralife – Demon's Souls (boss souls)",
+    "url": "https://demonssouls.wiki.fextralife.com/Demon%27s+Souls",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "trade-maiden-in-black-demon-soul",
+   "name": "Maiden in Black Demon Soul",
+   "category": "demon-soul-trades",
+   "description": "Boss soul from End Game.",
+   "effect": "Can be consumed to obtain 60,000 Souls. Can be traded to Yuria, the Witch to purchase the spell Soulsucker.",
+   "materials": [
+    {
+     "name": "Maiden in Black Demon Soul",
+     "qty": 1,
+     "note": ""
+    }
+   ],
+   "whereToFind": "Sage Freke / Yuria / Saint Urbain (The Nexus) for spells & miracles; Blacksmith Ed for weapons",
+   "source": {
+    "label": "Fextralife – Demon's Souls (boss souls)",
+    "url": "https://demonssouls.wiki.fextralife.com/Demon%27s+Souls",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "trade-colorless-demon-soul",
+   "name": "Colorless Demon Soul",
+   "category": "demon-soul-trades",
+   "description": "Boss soul from Multiple Locations.",
+   "effect": "Can be consumed to obtain 5,000 Souls. Can be traded with Saint Urbain to obtain the Recovery Miracle. At least one Primeval Demon needs to be killed during the same playthrough. After giving Blacksmith Ed the Searing Demon Soul from Flamelurker: this Soul can be traded with Blacksmith Ed to obtain an upgrade.",
+   "materials": [
+    {
+     "name": "Colorless Demon Soul",
+     "qty": 1,
+     "note": "3 needed for Recovery (Saint Urbain)"
+    }
+   ],
+   "whereToFind": "Sage Freke / Yuria / Saint Urbain (The Nexus) for spells & miracles; Blacksmith Ed for weapons",
+   "source": {
+    "label": "Fextralife – Demon's Souls (boss souls)",
+    "url": "https://demonssouls.wiki.fextralife.com/Demon%27s+Souls",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "trade-doll-demon-soul",
+   "name": "Doll Demon Soul",
+   "category": "demon-soul-trades",
+   "description": "Boss soul from Prison of Hope.",
+   "effect": "Can be consumed to obtain 7,600 Souls. The Doll Demon Soul can be used to purchase the Soul Ray spell from Sage Freke, the Visionary.",
+   "materials": [
+    {
+     "name": "Doll Demon Soul",
+     "qty": 1,
+     "note": ""
+    }
+   ],
+   "whereToFind": "Sage Freke / Yuria / Saint Urbain (The Nexus) for spells & miracles; Blacksmith Ed for weapons",
+   "source": {
+    "label": "Fextralife – Demon's Souls (boss souls)",
+    "url": "https://demonssouls.wiki.fextralife.com/Demon%27s+Souls",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "trade-dragon-demon-soul",
+   "name": "Dragon Demon Soul",
+   "category": "demon-soul-trades",
+   "description": "Boss soul from Underground Temple.",
+   "effect": "Can be consumed to obtain 26,400 Souls. This Demon's Soul can be traded for the following spells Fireball from Sage Freke, the spell Firestorm from Yuria, the Witch, or the miracle God's Wrath from Saint Urbain.0",
+   "materials": [
+    {
+     "name": "Dragon Demon Soul",
+     "qty": 1,
+     "note": ""
+    }
+   ],
+   "whereToFind": "Sage Freke / Yuria / Saint Urbain (The Nexus) for spells & miracles; Blacksmith Ed for weapons",
+   "source": {
+    "label": "Fextralife – Demon's Souls (boss souls)",
+    "url": "https://demonssouls.wiki.fextralife.com/Demon%27s+Souls",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "trade-eroded-demon-soul",
+   "name": "Eroded Demon Soul",
+   "category": "demon-soul-trades",
+   "description": "Boss soul from Swamp of Sorrow.",
+   "effect": "Can be consumed to obtain 40,000 Souls. The Eroded Demon Soul can be used to purchase the spell Acid Cloud from Sage Freke, the Visionary.",
+   "materials": [
+    {
+     "name": "Eroded Demon Soul",
+     "qty": 1,
+     "note": ""
+    }
+   ],
+   "whereToFind": "Sage Freke / Yuria / Saint Urbain (The Nexus) for spells & miracles; Blacksmith Ed for weapons",
+   "source": {
+    "label": "Fextralife – Demon's Souls (boss souls)",
+    "url": "https://demonssouls.wiki.fextralife.com/Demon%27s+Souls",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "trade-false-king-demon-soul",
+   "name": "False King Demon Soul",
+   "category": "demon-soul-trades",
+   "description": "Boss soul from The King's Tower.",
+   "effect": "Can be consumed to obtain 60,000 Souls. The False King Demon Soul can be used to combine the Soulbrandt and the Demonbrandt into the Northern Regalia with Blacksmith Ed.",
+   "materials": [
+    {
+     "name": "False King Demon Soul",
+     "qty": 1,
+     "note": ""
+    }
+   ],
+   "whereToFind": "Sage Freke / Yuria / Saint Urbain (The Nexus) for spells & miracles; Blacksmith Ed for weapons",
+   "source": {
+    "label": "Fextralife – Demon's Souls (boss souls)",
+    "url": "https://demonssouls.wiki.fextralife.com/Demon%27s+Souls",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "trade-golden-demon-soul",
+   "name": "Golden Demon Soul",
+   "category": "demon-soul-trades",
+   "description": "Boss soul from The Ivory Tower.",
+   "effect": "Can be consumed to obtain 26,400 Souls. The Golden Demon Soul can be used to ascend a Wooden Catalyst or Silver Catalyst into the Insanity Catalyst with Blacksmith Ed. It can also be used to purchase the spell Homing Soul Arrow from Sage Freke, the Visionary, the spell Soul Thirst from Yuria the Witch, or the miracle Banish from Saint Urbain.",
+   "materials": [
+    {
+     "name": "Golden Demon Soul",
+     "qty": 1,
+     "note": ""
+    }
+   ],
+   "whereToFind": "Sage Freke / Yuria / Saint Urbain (The Nexus) for spells & miracles; Blacksmith Ed for weapons",
+   "source": {
+    "label": "Fextralife – Demon's Souls (boss souls)",
+    "url": "https://demonssouls.wiki.fextralife.com/Demon%27s+Souls",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "trade-gray-demon-soul",
+   "name": "Gray Demon Soul",
+   "category": "demon-soul-trades",
+   "description": "Boss soul from Island's Edge.",
+   "effect": "Can be consumed to obtain 1,500 Souls. The Gray Demon Soul can be used to ascend a Battle Axe +6 into the Dozer Axe with Blacksmith Ed.",
+   "materials": [
+    {
+     "name": "Gray Demon Soul",
+     "qty": 1,
+     "note": ""
+    }
+   ],
+   "whereToFind": "Sage Freke / Yuria / Saint Urbain (The Nexus) for spells & miracles; Blacksmith Ed for weapons",
+   "source": {
+    "label": "Fextralife – Demon's Souls (boss souls)",
+    "url": "https://demonssouls.wiki.fextralife.com/Demon%27s+Souls",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "trade-hard-demon-soul",
+   "name": "Hard Demon Soul",
+   "category": "demon-soul-trades",
+   "description": "Boss soul from Smithing Grounds.",
+   "effect": "Can be consumed to obtain 3,200 Souls. The Hard Demon Soul can be used to ascend a Short Bow +7 into the Lava Bow at Blacksmith Ed. It can also be used to purchase the spell Fire Spray from Sage Freke, the Visionary, or Ignite from Yuria the Witch.",
+   "materials": [
+    {
+     "name": "Hard Demon Soul",
+     "qty": 1,
+     "note": ""
+    }
+   ],
+   "whereToFind": "Sage Freke / Yuria / Saint Urbain (The Nexus) for spells & miracles; Blacksmith Ed for weapons",
+   "source": {
+    "label": "Fextralife – Demon's Souls (boss souls)",
+    "url": "https://demonssouls.wiki.fextralife.com/Demon%27s+Souls",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "trade-hero-demon-soul",
+   "name": "Hero Demon Soul",
+   "category": "demon-soul-trades",
+   "description": "Boss soul from The Ritual Path.",
+   "effect": "Can be consumed to obtain 36,000 Souls. It can also be used to purchase the miracle Second Chance from Saint Urbain. The Hero Demon Soul can be used to ascend a Claws +8 into the Large Sword of Searching with Blacksmith Ed.",
+   "materials": [
+    {
+     "name": "Hero Demon Soul",
+     "qty": 1,
+     "note": ""
+    }
+   ],
+   "whereToFind": "Sage Freke / Yuria / Saint Urbain (The Nexus) for spells & miracles; Blacksmith Ed for weapons",
+   "source": {
+    "label": "Fextralife – Demon's Souls (boss souls)",
+    "url": "https://demonssouls.wiki.fextralife.com/Demon%27s+Souls",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "trade-iron-demon-soul",
+   "name": "Iron Demon Soul",
+   "category": "demon-soul-trades",
+   "description": "Boss soul from The Lord's Path.",
+   "effect": "Can be consumed to obtain 4,400 Souls. The Iron Demon Soul can be used to purchase the spell Warding from Sage Freke, the Visionary.",
+   "materials": [
+    {
+     "name": "Iron Demon Soul",
+     "qty": 1,
+     "note": ""
+    }
+   ],
+   "whereToFind": "Sage Freke / Yuria / Saint Urbain (The Nexus) for spells & miracles; Blacksmith Ed for weapons",
+   "source": {
+    "label": "Fextralife – Demon's Souls (boss souls)",
+    "url": "https://demonssouls.wiki.fextralife.com/Demon%27s+Souls",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "trade-large-scaled-flame-demon-soul",
+   "name": "Large Scaled Flame Demon Soul",
+   "category": "demon-soul-trades",
+   "description": "Boss soul from Gates of Boletaria.",
+   "effect": "Can be consumed to obtain 30,000 Souls.",
+   "materials": [
+    {
+     "name": "Large Scaled Flame Demon Soul",
+     "qty": 1,
+     "note": ""
+    }
+   ],
+   "whereToFind": "Sage Freke / Yuria / Saint Urbain (The Nexus) for spells & miracles; Blacksmith Ed for weapons",
+   "source": {
+    "label": "Fextralife – Demon's Souls (boss souls)",
+    "url": "https://demonssouls.wiki.fextralife.com/Demon%27s+Souls",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "trade-lead-demon-soul",
+   "name": "Lead Demon Soul",
+   "category": "demon-soul-trades",
+   "description": "Boss soul from Gates of Boletaria.",
+   "effect": "Can be consumed to obtain 1,520 Souls. The Lead Demon Soul can be used to ascend a Short Spear +7 into the Scraping Spear with Blacksmith Ed.",
+   "materials": [
+    {
+     "name": "Lead Demon Soul",
+     "qty": 1,
+     "note": ""
+    }
+   ],
+   "whereToFind": "Sage Freke / Yuria / Saint Urbain (The Nexus) for spells & miracles; Blacksmith Ed for weapons",
+   "source": {
+    "label": "Fextralife – Demon's Souls (boss souls)",
+    "url": "https://demonssouls.wiki.fextralife.com/Demon%27s+Souls",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "trade-mixed-demon-soul",
+   "name": "Mixed Demon Soul",
+   "category": "demon-soul-trades",
+   "description": "Boss soul from Upper Latria.",
+   "effect": "Can be consumed to obtain 7,600 Souls. The Mixed Demon Soul can be used to ascend a Dagger +7 into the Needle of Eternal Agony at Blacksmith Ed.",
+   "materials": [
+    {
+     "name": "Mixed Demon Soul",
+     "qty": 1,
+     "note": ""
+    }
+   ],
+   "whereToFind": "Sage Freke / Yuria / Saint Urbain (The Nexus) for spells & miracles; Blacksmith Ed for weapons",
+   "source": {
+    "label": "Fextralife – Demon's Souls (boss souls)",
+    "url": "https://demonssouls.wiki.fextralife.com/Demon%27s+Souls",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "trade-pureblood-demon-soul",
+   "name": "Pureblood Demon Soul",
+   "category": "demon-soul-trades",
+   "description": "Boss soul from Rotting Haven.",
+   "effect": "Can be consumed to obtain 48,000 Souls. The Pureblood Demon Soul can be used to ascend a Broken Sword into the Blueblood Sword. It can also be used to purchase the spell Death Cloud from Sage Freke, the Visionary, the spell Relief from Yuria the Witch, or the miracle Resurrection from Saint Urbain.",
+   "materials": [
+    {
+     "name": "Pureblood Demon Soul",
+     "qty": 1,
+     "note": ""
+    }
+   ],
+   "whereToFind": "Sage Freke / Yuria / Saint Urbain (The Nexus) for spells & miracles; Blacksmith Ed for weapons",
+   "source": {
+    "label": "Fextralife – Demon's Souls (boss souls)",
+    "url": "https://demonssouls.wiki.fextralife.com/Demon%27s+Souls",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "trade-searing-demon-soul",
+   "name": "Searing Demon Soul",
+   "category": "demon-soul-trades",
+   "description": "Boss soul from The Tunnel City.",
+   "effect": "Can be consumed to obtain 18,000 Souls. The Searing Demon Soul must be given to Blacksmith Ed to enable advanced weapon forging.",
+   "materials": [
+    {
+     "name": "Searing Demon Soul",
+     "qty": 1,
+     "note": ""
+    }
+   ],
+   "whereToFind": "Sage Freke / Yuria / Saint Urbain (The Nexus) for spells & miracles; Blacksmith Ed for weapons",
+   "source": {
+    "label": "Fextralife – Demon's Souls (boss souls)",
+    "url": "https://demonssouls.wiki.fextralife.com/Demon%27s+Souls",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "trade-silver-demon-soul",
+   "name": "Silver Demon Soul",
+   "category": "demon-soul-trades",
+   "description": "Boss soul from Inner Ward.",
+   "effect": "Can be consumed to obtain 36,000 Souls. The Silver Demon Soul can be used to purchase the spell Light Weapon from Sage Freke, the Visionary, or the spell Curse Weapon from Yuria the Witch.",
+   "materials": [
+    {
+     "name": "Silver Demon Soul",
+     "qty": 1,
+     "note": ""
+    }
+   ],
+   "whereToFind": "Sage Freke / Yuria / Saint Urbain (The Nexus) for spells & miracles; Blacksmith Ed for weapons",
+   "source": {
+    "label": "Fextralife – Demon's Souls (boss souls)",
+    "url": "https://demonssouls.wiki.fextralife.com/Demon%27s+Souls",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "trade-small-scaled-flame-demon-soul",
+   "name": "Small Scaled Flame Demon Soul",
+   "category": "demon-soul-trades",
+   "description": "Boss soul from Gates of Boletaria.",
+   "effect": "Can be consumed to obtain 10,000 Souls.",
+   "materials": [
+    {
+     "name": "Small Scaled Flame Demon Soul",
+     "qty": 1,
+     "note": ""
+    }
+   ],
+   "whereToFind": "Sage Freke / Yuria / Saint Urbain (The Nexus) for spells & miracles; Blacksmith Ed for weapons",
+   "source": {
+    "label": "Fextralife – Demon's Souls (boss souls)",
+    "url": "https://demonssouls.wiki.fextralife.com/Demon%27s+Souls",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "trade-storm-demon-soul",
+   "name": "Storm Demon Soul",
+   "category": "demon-soul-trades",
+   "description": "Boss soul from Altar of Storms.",
+   "effect": "Can be consumed to obtain 48,000 Souls. It can also be used to purchase the miracle Anti-Magic Field from Saint Urbain. The Storm Demon Soul can be used to ascend a Short Sword +8 into the Morion Blade with Blacksmith Ed.",
+   "materials": [
+    {
+     "name": "Storm Demon Soul",
+     "qty": 1,
+     "note": ""
+    }
+   ],
+   "whereToFind": "Sage Freke / Yuria / Saint Urbain (The Nexus) for spells & miracles; Blacksmith Ed for weapons",
+   "source": {
+    "label": "Fextralife – Demon's Souls (boss souls)",
+    "url": "https://demonssouls.wiki.fextralife.com/Demon%27s+Souls",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "trade-swollen-demon-soul",
+   "name": "Swollen Demon Soul",
+   "category": "demon-soul-trades",
+   "description": "Boss soul from Island's Edge.",
+   "effect": "Can be consumed to obtain 13,200 Souls. It can also be used to purchase the miracle Regeneration from Saint Urbain. The Swollen Demon Soul can be used to ascend a Club or Great Club into the Meat Cleaver.",
+   "materials": [
+    {
+     "name": "Swollen Demon Soul",
+     "qty": 1,
+     "note": ""
+    }
+   ],
+   "whereToFind": "Sage Freke / Yuria / Saint Urbain (The Nexus) for spells & miracles; Blacksmith Ed for weapons",
+   "source": {
+    "label": "Fextralife – Demon's Souls (boss souls)",
+    "url": "https://demonssouls.wiki.fextralife.com/Demon%27s+Souls",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "trade-writhing-demon-soul",
+   "name": "Writhing Demon Soul",
+   "category": "demon-soul-trades",
+   "description": "Boss soul from Depraved Chasm.",
+   "effect": "Can be consumed to obtain 6,400 Souls. The Writhing Demon Soul can be used to purchase the spell Poison Cloud from Sage Freke, the Visionary, or the miracle Cure from Saint Urbain.",
+   "materials": [
+    {
+     "name": "Writhing Demon Soul",
+     "qty": 1,
+     "note": ""
+    }
+   ],
+   "whereToFind": "Sage Freke / Yuria / Saint Urbain (The Nexus) for spells & miracles; Blacksmith Ed for weapons",
+   "source": {
+    "label": "Fextralife – Demon's Souls (boss souls)",
+    "url": "https://demonssouls.wiki.fextralife.com/Demon%27s+Souls",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "sparkly-soul-remains",
+   "name": "Sparkly: Soul Remains → x10 White Arrow",
+   "category": "sparkly-trades",
+   "description": "",
+   "effect": "Receive x10 White Arrow",
+   "materials": [
+    {
+     "name": "Soul Remains",
+     "qty": 1,
+     "note": ""
+    }
+   ],
+   "whereToFind": "Sparkly the Crow, Island's Edge (Shrine of Storms 4-1), crow's nest tree at the top of the level",
+   "source": {
+    "label": "Fextralife – Sparkly the Crow",
+    "url": "https://demonssouls.wiki.fextralife.com/Sparkly_the_Crow",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "sparkly-augite-of-guidance",
+   "name": "Sparkly: Augite of Guidance → x10 White Arrow",
+   "category": "sparkly-trades",
+   "description": "",
+   "effect": "Receive x10 White Arrow",
+   "materials": [
+    {
+     "name": "Augite of Guidance",
+     "qty": 1,
+     "note": ""
+    }
+   ],
+   "whereToFind": "Sparkly the Crow, Island's Edge (Shrine of Storms 4-1), crow's nest tree at the top of the level",
+   "source": {
+    "label": "Fextralife – Sparkly the Crow",
+    "url": "https://demonssouls.wiki.fextralife.com/Sparkly_the_Crow",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "sparkly-mercurystone-shard",
+   "name": "Sparkly: Mercurystone Shard → x10 Full Moon Grass",
+   "category": "sparkly-trades",
+   "description": "",
+   "effect": "Receive x10 Full Moon Grass",
+   "materials": [
+    {
+     "name": "Mercurystone Shard",
+     "qty": 1,
+     "note": ""
+    }
+   ],
+   "whereToFind": "Sparkly the Crow, Island's Edge (Shrine of Storms 4-1), crow's nest tree at the top of the level",
+   "source": {
+    "label": "Fextralife – Sparkly the Crow",
+    "url": "https://demonssouls.wiki.fextralife.com/Sparkly_the_Crow",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "sparkly-mercurystone-chunk",
+   "name": "Sparkly: Mercurystone Chunk → x10 New Moon Grass",
+   "category": "sparkly-trades",
+   "description": "",
+   "effect": "Receive x10 New Moon Grass",
+   "materials": [
+    {
+     "name": "Mercurystone Chunk",
+     "qty": 1,
+     "note": ""
+    }
+   ],
+   "whereToFind": "Sparkly the Crow, Island's Edge (Shrine of Storms 4-1), crow's nest tree at the top of the level",
+   "source": {
+    "label": "Fextralife – Sparkly the Crow",
+    "url": "https://demonssouls.wiki.fextralife.com/Sparkly_the_Crow",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "sparkly-pure-mercurystone",
+   "name": "Sparkly: Pure Mercurystone → x10 Dark Moon Grass",
+   "category": "sparkly-trades",
+   "description": "",
+   "effect": "Receive x10 Dark Moon Grass",
+   "materials": [
+    {
+     "name": "Pure Mercurystone",
+     "qty": 1,
+     "note": ""
+    }
+   ],
+   "whereToFind": "Sparkly the Crow, Island's Edge (Shrine of Storms 4-1), crow's nest tree at the top of the level",
+   "source": {
+    "label": "Fextralife – Sparkly the Crow",
+    "url": "https://demonssouls.wiki.fextralife.com/Sparkly_the_Crow",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "sparkly-faintstone-shard",
+   "name": "Sparkly: Faintstone Shard → x5 Archstone Shard",
+   "category": "sparkly-trades",
+   "description": "",
+   "effect": "Receive x5 Archstone Shard",
+   "materials": [
+    {
+     "name": "Faintstone Shard",
+     "qty": 1,
+     "note": ""
+    }
+   ],
+   "whereToFind": "Sparkly the Crow, Island's Edge (Shrine of Storms 4-1), crow's nest tree at the top of the level",
+   "source": {
+    "label": "Fextralife – Sparkly the Crow",
+    "url": "https://demonssouls.wiki.fextralife.com/Sparkly_the_Crow",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "sparkly-faintstone-chunk",
+   "name": "Sparkly: Faintstone Chunk → x10 Sticky White Slime",
+   "category": "sparkly-trades",
+   "description": "",
+   "effect": "Receive x10 Sticky White Slime",
+   "materials": [
+    {
+     "name": "Faintstone Chunk",
+     "qty": 1,
+     "note": ""
+    }
+   ],
+   "whereToFind": "Sparkly the Crow, Island's Edge (Shrine of Storms 4-1), crow's nest tree at the top of the level",
+   "source": {
+    "label": "Fextralife – Sparkly the Crow",
+    "url": "https://demonssouls.wiki.fextralife.com/Sparkly_the_Crow",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "sparkly-pure-faintstone",
+   "name": "Sparkly: Pure Faintstone → x3 Stone of Ephemeral Eyes",
+   "category": "sparkly-trades",
+   "description": "",
+   "effect": "Receive x3 Stone of Ephemeral Eyes",
+   "materials": [
+    {
+     "name": "Pure Faintstone",
+     "qty": 1,
+     "note": ""
+    }
+   ],
+   "whereToFind": "Sparkly the Crow, Island's Edge (Shrine of Storms 4-1), crow's nest tree at the top of the level",
+   "source": {
+    "label": "Fextralife – Sparkly the Crow",
+    "url": "https://demonssouls.wiki.fextralife.com/Sparkly_the_Crow",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "sparkly-moonlightstone-shard",
+   "name": "Sparkly: Moonlightstone Shard → x20 White Arrow",
+   "category": "sparkly-trades",
+   "description": "",
+   "effect": "Receive x20 White Arrow",
+   "materials": [
+    {
+     "name": "Moonlightstone Shard",
+     "qty": 1,
+     "note": ""
+    }
+   ],
+   "whereToFind": "Sparkly the Crow, Island's Edge (Shrine of Storms 4-1), crow's nest tree at the top of the level",
+   "source": {
+    "label": "Fextralife – Sparkly the Crow",
+    "url": "https://demonssouls.wiki.fextralife.com/Sparkly_the_Crow",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "sparkly-moonlightstone-chunk",
+   "name": "Sparkly: Moonlightstone Chunk → x40 White Arrow",
+   "category": "sparkly-trades",
+   "description": "",
+   "effect": "Receive x40 White Arrow",
+   "materials": [
+    {
+     "name": "Moonlightstone Chunk",
+     "qty": 1,
+     "note": ""
+    }
+   ],
+   "whereToFind": "Sparkly the Crow, Island's Edge (Shrine of Storms 4-1), crow's nest tree at the top of the level",
+   "source": {
+    "label": "Fextralife – Sparkly the Crow",
+    "url": "https://demonssouls.wiki.fextralife.com/Sparkly_the_Crow",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "sparkly-pure-moonlightstone",
+   "name": "Sparkly: Pure Moonlightstone → White Bow",
+   "category": "sparkly-trades",
+   "description": "",
+   "effect": "Receive White Bow",
+   "materials": [
+    {
+     "name": "Pure Moonlightstone",
+     "qty": 1,
+     "note": ""
+    }
+   ],
+   "whereToFind": "Sparkly the Crow, Island's Edge (Shrine of Storms 4-1), crow's nest tree at the top of the level",
+   "source": {
+    "label": "Fextralife – Sparkly the Crow",
+    "url": "https://demonssouls.wiki.fextralife.com/Sparkly_the_Crow",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "sparkly-jade-hair-ornament",
+   "name": "Sparkly: Jade Hair Ornament → Regenerator's Ring",
+   "category": "sparkly-trades",
+   "description": "",
+   "effect": "Receive Regenerator's Ring",
+   "materials": [
+    {
+     "name": "Jade Hair Ornament",
+     "qty": 1,
+     "note": ""
+    }
+   ],
+   "whereToFind": "Sparkly the Crow, Island's Edge (Shrine of Storms 4-1), crow's nest tree at the top of the level",
+   "source": {
+    "label": "Fextralife – Sparkly the Crow",
+    "url": "https://demonssouls.wiki.fextralife.com/Sparkly_the_Crow",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "sparkly-brass-telescope",
+   "name": "Sparkly: Brass Telescope → Fragrant Ring",
+   "category": "sparkly-trades",
+   "description": "",
+   "effect": "Receive Fragrant Ring",
+   "materials": [
+    {
+     "name": "Brass Telescope",
+     "qty": 1,
+     "note": ""
+    }
+   ],
+   "whereToFind": "Sparkly the Crow, Island's Edge (Shrine of Storms 4-1), crow's nest tree at the top of the level",
+   "source": {
+    "label": "Fextralife – Sparkly the Crow",
+    "url": "https://demonssouls.wiki.fextralife.com/Sparkly_the_Crow",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "sparkly-large-sword-of-moonlight",
+   "name": "Sparkly: Large Sword of Moonlight → Ring of Devout Prayer",
+   "category": "sparkly-trades",
+   "description": "",
+   "effect": "Receive Ring of Devout Prayer",
+   "materials": [
+    {
+     "name": "Large Sword of Moonlight",
+     "qty": 1,
+     "note": ""
+    }
+   ],
+   "whereToFind": "Sparkly the Crow, Island's Edge (Shrine of Storms 4-1), crow's nest tree at the top of the level",
+   "source": {
+    "label": "Fextralife – Sparkly the Crow",
+    "url": "https://demonssouls.wiki.fextralife.com/Sparkly_the_Crow",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "sparkly-phosphorescent-pole",
+   "name": "Sparkly: Phosphorescent Pole → Ring Of Magical Dullness",
+   "category": "sparkly-trades",
+   "description": "",
+   "effect": "Receive Ring Of Magical Dullness",
+   "materials": [
+    {
+     "name": "Phosphorescent Pole",
+     "qty": 1,
+     "note": ""
+    }
+   ],
+   "whereToFind": "Sparkly the Crow, Island's Edge (Shrine of Storms 4-1), crow's nest tree at the top of the level",
+   "source": {
+    "label": "Fextralife – Sparkly the Crow",
+    "url": "https://demonssouls.wiki.fextralife.com/Sparkly_the_Crow",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "sparkly-silver-coronet",
+   "name": "Sparkly: Silver Coronet → Storied Hero Soul",
+   "category": "sparkly-trades",
+   "description": "",
+   "effect": "Receive Storied Hero Soul",
+   "materials": [
+    {
+     "name": "Silver Coronet",
+     "qty": 1,
+     "note": ""
+    }
+   ],
+   "whereToFind": "Sparkly the Crow, Island's Edge (Shrine of Storms 4-1), crow's nest tree at the top of the level",
+   "source": {
+    "label": "Fextralife – Sparkly the Crow",
+    "url": "https://demonssouls.wiki.fextralife.com/Sparkly_the_Crow",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "sparkly-silver-bracelet",
+   "name": "Sparkly: Silver Bracelet → Storied Hero Soul",
+   "category": "sparkly-trades",
+   "description": "",
+   "effect": "Receive Storied Hero Soul",
+   "materials": [
+    {
+     "name": "Silver Bracelet",
+     "qty": 1,
+     "note": ""
+    }
+   ],
+   "whereToFind": "Sparkly the Crow, Island's Edge (Shrine of Storms 4-1), crow's nest tree at the top of the level",
+   "source": {
+    "label": "Fextralife – Sparkly the Crow",
+    "url": "https://demonssouls.wiki.fextralife.com/Sparkly_the_Crow",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "sparkly-talisman-of-god",
+   "name": "Sparkly: Talisman of God → Colorless Demon Soul",
+   "category": "sparkly-trades",
+   "description": "",
+   "effect": "Receive Colorless Demon Soul",
+   "materials": [
+    {
+     "name": "Talisman of God",
+     "qty": 1,
+     "note": ""
+    }
+   ],
+   "whereToFind": "Sparkly the Crow, Island's Edge (Shrine of Storms 4-1), crow's nest tree at the top of the level",
+   "source": {
+    "label": "Fextralife – Sparkly the Crow",
+    "url": "https://demonssouls.wiki.fextralife.com/Sparkly_the_Crow",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "sparkly-gold-mask",
+   "name": "Sparkly: Gold Mask → Colorless Demon Soul",
+   "category": "sparkly-trades",
+   "description": "",
+   "effect": "Receive Colorless Demon Soul",
+   "materials": [
+    {
+     "name": "Gold Mask",
+     "qty": 1,
+     "note": ""
+    }
+   ],
+   "whereToFind": "Sparkly the Crow, Island's Edge (Shrine of Storms 4-1), crow's nest tree at the top of the level",
+   "source": {
+    "label": "Fextralife – Sparkly the Crow",
+    "url": "https://demonssouls.wiki.fextralife.com/Sparkly_the_Crow",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "sparkly-gold-coin",
+   "name": "Sparkly: Gold Coin → Ring of Uneven Scales (remake only)",
+   "category": "sparkly-trades",
+   "description": "Remake-only trade.",
+   "effect": "Receive Ring of Uneven Scales",
+   "materials": [
+    {
+     "name": "Gold Coin",
+     "qty": 1,
+     "note": ""
+    }
+   ],
+   "whereToFind": "Sparkly the Crow, Island's Edge (Shrine of Storms 4-1), crow's nest tree at the top of the level",
+   "source": {
+    "label": "Fextralife – Sparkly the Crow",
+    "url": "https://demonssouls.wiki.fextralife.com/Sparkly_the_Crow",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "sparkly-pure-bladestone",
+   "name": "Sparkly: Pure Bladestone → Ring of Longevity (remake only)",
+   "category": "sparkly-trades",
+   "description": "Remake-only trade.",
+   "effect": "Receive Ring of Longevity",
+   "materials": [
+    {
+     "name": "Pure Bladestone",
+     "qty": 1,
+     "note": ""
+    }
+   ],
+   "whereToFind": "Sparkly the Crow, Island's Edge (Shrine of Storms 4-1), crow's nest tree at the top of the level",
+   "source": {
+    "label": "Fextralife – Sparkly the Crow",
+    "url": "https://demonssouls.wiki.fextralife.com/Sparkly_the_Crow",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "sparkly-rune-sword",
+   "name": "Sparkly: Rune Sword → x40 White Arrow (remake only)",
+   "category": "sparkly-trades",
+   "description": "Remake-only trade.",
+   "effect": "Receive x40 White Arrow",
+   "materials": [
+    {
+     "name": "Rune Sword",
+     "qty": 1,
+     "note": ""
+    }
+   ],
+   "whereToFind": "Sparkly the Crow, Island's Edge (Shrine of Storms 4-1), crow's nest tree at the top of the level",
+   "source": {
+    "label": "Fextralife – Sparkly the Crow",
+    "url": "https://demonssouls.wiki.fextralife.com/Sparkly_the_Crow",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "sparkly-rune-shield",
+   "name": "Sparkly: Rune Shield → Hoplite Shield (remake only)",
+   "category": "sparkly-trades",
+   "description": "Remake-only trade.",
+   "effect": "Receive Hoplite Shield",
+   "materials": [
+    {
+     "name": "Rune Shield",
+     "qty": 1,
+     "note": ""
+    }
+   ],
+   "whereToFind": "Sparkly the Crow, Island's Edge (Shrine of Storms 4-1), crow's nest tree at the top of the level",
+   "source": {
+    "label": "Fextralife – Sparkly the Crow",
+    "url": "https://demonssouls.wiki.fextralife.com/Sparkly_the_Crow",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "sparkly-ceramic-coin-x-26",
+   "name": "Sparkly: Ceramic Coin x 26 → Rusted Key to open Door to Penetrator Set (remake only)",
+   "category": "sparkly-trades",
+   "description": "Remake-only trade.",
+   "effect": "Receive Rusted Key to open Door to Penetrator Set",
+   "materials": [
+    {
+     "name": "Ceramic Coin",
+     "qty": 26,
+     "note": ""
+    }
+   ],
+   "whereToFind": "Sparkly the Crow, Island's Edge (Shrine of Storms 4-1), crow's nest tree at the top of the level",
+   "source": {
+    "label": "Fextralife – Sparkly the Crow",
+    "url": "https://demonssouls.wiki.fextralife.com/Sparkly_the_Crow",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "sparkly-large-sword-of-searching-must-have-been-created-from-a-scimitar-8",
+   "name": "Sparkly: Large Sword of Searching ( MUST HAVE been created from a Scimitar +8) → Providential Ring (remake only)",
+   "category": "sparkly-trades",
+   "description": "Remake-only trade.",
+   "effect": "Receive Providential Ring",
+   "materials": [
+    {
+     "name": "Large Sword of Searching",
+     "qty": 1,
+     "note": "Large Sword of Searching must have been made from a Scimitar +8 (per wiki)"
+    }
+   ],
+   "whereToFind": "Sparkly the Crow, Island's Edge (Shrine of Storms 4-1), crow's nest tree at the top of the level",
+   "source": {
+    "label": "Fextralife – Sparkly the Crow",
+    "url": "https://demonssouls.wiki.fextralife.com/Sparkly_the_Crow",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "meltstone-revert",
+   "name": "Revert a weapon to +0 (Meltstone Shard)",
+   "category": "blacksmith-services",
+   "description": "Removes all upgrades so the weapon can take a different path. Ores and souls are not refunded.",
+   "effect": "Weapon returns to its original, un-upgraded state.",
+   "materials": [
+    {
+     "name": "Meltstone Shard",
+     "qty": 1,
+     "note": ""
+    }
+   ],
+   "whereToFind": "Blacksmith (Ed)",
+   "source": {
+    "label": "Fextralife – Meltstone Shard",
+    "url": "https://demonssouls.wiki.fextralife.com/Meltstone_Shard",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "searing-unlock",
+   "name": "Unlock advanced upgrades (give Searing Demon Soul to Ed)",
+   "category": "blacksmith-services",
+   "description": "Talk to Blacksmith Ed until his dialogue repeats, with the Searing Demon Soul in your inventory, after killing Armor Spider and Flamelurker this playthrough (return via the Armor Spider Archstone first).",
+   "effect": "Ed can now make boss soul weapons and do Colorless Demon Soul upgrades.",
+   "materials": [
+    {
+     "name": "Searing Demon Soul",
+     "qty": 1,
+     "note": "From Flamelurker (Stonefang Tunnel 2-3)"
+    }
+   ],
+   "whereToFind": "Blacksmith Ed, Stonefang Tunnel 2-1",
+   "source": {
+    "label": "Fextralife – Blacksmith Ed",
+    "url": "https://demonssouls.wiki.fextralife.com/Blacksmith_Ed",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "buy-stones-filthy-man",
+   "name": "Buy stones from the Filthy Man",
+   "category": "blacksmith-services",
+   "description": "Merchant at the Armor Spider Archstone, Stonefang Tunnel.",
+   "effect": "Hardstone/Sharpstone Shard 500, Large Hardstone/Sharpstone Shard 1,500, Clearstone/Greystone/Dragonstone Shard 3,000 souls each.",
+   "materials": [
+    {
+     "name": "Souls",
+     "qty": "",
+     "note": "Prices from the Fextralife merchant table"
+    }
+   ],
+   "whereToFind": "Filthy Man, Stonefang Tunnel (Armor Spider Archstone)",
+   "source": {
+    "label": "Fextralife – Filthy Man",
+    "url": "https://demonssouls.wiki.fextralife.com/Filthy_Man",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "farm-pure-bladestone-all-bladestone",
+   "name": "Farm: Pure Bladestone (all Bladestone)",
+   "category": "farming",
+   "description": "From the Ritual Path (4-2) archstone, go to the first Reaper room, climb two flights of stairs, hit the illusory wall and kill the lone Black Skeleton outside. Run back and repeat. Very rare drop; Pure Black World Tendency, Luck and the Providential Ring help.",
+   "effect": "",
+   "materials": [],
+   "whereToFind": "From the Ritual Path (4-2) archstone, go to the first Reaper room, climb two flights of stairs, hit the illusory wall and kill the lone Black Skeleton outside",
+   "source": {
+    "label": "Fextralife – Pure Bladestone",
+    "url": "https://demonssouls.wiki.fextralife.com/Pure_Bladestone",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "farm-pure-bladestone-second-spot",
+   "name": "Farm: Pure Bladestone – second spot",
+   "category": "farming",
+   "description": "In 4-2, a Black Phantom Black Skeleton just before the second Reaper (Pure Black World Tendency only) can also drop it.",
+   "effect": "",
+   "materials": [],
+   "whereToFind": "In 4-2, a Black Phantom Black Skeleton just before the second Reaper (Pure Black World Tendency only) can also drop it",
+   "source": {
+    "label": "Twinfinite – How to Farm Pure Bladestone",
+    "url": "https://twinfinite.net/guides/demons-souls-pure-bladestone-farm-how/",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "farm-hardstone-sharpstone-all-grades-plus-clearstone",
+   "name": "Farm: Hardstone / Sharpstone (all grades), plus Clearstone",
+   "category": "farming",
+   "description": "From the Armor Spider Archstone (2-2) in Pure Black World Tendency, ride the Fat Official room lift down and clear the Crystal Lizard nest (an AoE spell like Firestorm or God's Wrath kills them before they flee). Reload and repeat.",
+   "effect": "",
+   "materials": [],
+   "whereToFind": "From the Armor Spider Archstone (2-2) in Pure Black World Tendency, ride the Fat Official room lift down and clear the Crystal Lizard nest (an AoE spell like Firestorm or God's Wrath kills them before they flee)",
+   "source": {
+    "label": "Wikidot – Stone Farming (PS3-era)",
+    "url": "https://demonssouls.wikidot.com/stone-farming",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "farm-hardstone-sharpstone-shards-early",
+   "name": "Farm: Hardstone / Sharpstone shards (early)",
+   "category": "farming",
+   "description": "Hoplites in The Lord's Path (1-2), from the Phalanx Archstone; backstab them. Or just buy shards from the Filthy Man in 2-1/2-2.",
+   "effect": "",
+   "materials": [],
+   "whereToFind": "Hoplites in The Lord's Path (1-2), from the Phalanx Archstone; backstab them",
+   "source": {
+    "label": "Wikidot – Stone Farming (PS3-era)",
+    "url": "https://demonssouls.wikidot.com/stone-farming",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "farm-greystone-all-grades",
+   "name": "Farm: Greystone (all grades)",
+   "category": "farming",
+   "description": "From the Flamelurker Archstone (2-3), run back to 2-2 near the pair of Hands of God and kill the Rock Worms (Soul Arrow to the head).",
+   "effect": "",
+   "materials": [],
+   "whereToFind": "From the Flamelurker Archstone (2-3), run back to 2-2 near the pair of Hands of God and kill the Rock Worms (Soul Arrow to the head)",
+   "source": {
+    "label": "Wikidot – Stone Farming (PS3-era)",
+    "url": "https://demonssouls.wikidot.com/stone-farming",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "farm-dragonstone-all-grades",
+   "name": "Farm: Dragonstone (all grades)",
+   "category": "farming",
+   "description": "From the Flamelurker Archstone (2-3), go back to 2-2 and kill the Large Bearbugs in the tunnel (Soulsucker works well).",
+   "effect": "",
+   "materials": [],
+   "whereToFind": "From the Flamelurker Archstone (2-3), go back to 2-2 and kill the Large Bearbugs in the tunnel (Soulsucker works well)",
+   "source": {
+    "label": "Wikidot – Stone Farming (PS3-era)",
+    "url": "https://demonssouls.wikidot.com/stone-farming",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "farm-spiderstone-shards-and-chunks",
+   "name": "Farm: Spiderstone shards and chunks",
+   "category": "farming",
+   "description": "From the Armor Spider Archstone (2-2), snipe the Scale Miners (Lizardmen) in the tunnel with a bow. Wikidot says this is the only Spiderstone Chunk farm; 2-1 miners give only shards.",
+   "effect": "",
+   "materials": [],
+   "whereToFind": "From the Armor Spider Archstone (2-2), snipe the Scale Miners (Lizardmen) in the tunnel with a bow",
+   "source": {
+    "label": "Wikidot – Stone Farming (PS3-era)",
+    "url": "https://demonssouls.wikidot.com/stone-farming",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "farm-faintstone-all-grades",
+   "name": "Farm: Faintstone (all grades)",
+   "category": "farming",
+   "description": "From the Dirty Colossus Archstone (5-3), run back toward the 5-2 poison swamp and kill the Depraved One Shaman by the boss-room entrance, or the Crystal Lizard near the shortcut bridge.",
+   "effect": "",
+   "materials": [],
+   "whereToFind": "From the Dirty Colossus Archstone (5-3), run back toward the 5-2 poison swamp and kill the Depraved One Shaman by the boss-room entrance, or the Crystal Lizard near the shortcut bridge",
+   "source": {
+    "label": "Wikidot – Stone Farming (PS3-era)",
+    "url": "https://demonssouls.wikidot.com/stone-farming",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "farm-suckerstone-all-grades-marrowstone",
+   "name": "Farm: Suckerstone (all grades) + Marrowstone",
+   "category": "farming",
+   "description": "From 5-3 Dirty Colossus Archstone, go into the 5-2 swamp and kill the Phosphorescent Slugs (Firestorm on the cluster near the Large Sword of Moonlight); the mosquitoes on the way drop Marrowstone. Alternative: the slug pits next to the Old Hero Archstone (4-3).",
+   "effect": "",
+   "materials": [],
+   "whereToFind": "From 5-3 Dirty Colossus Archstone, go into the 5-2 swamp and kill the Phosphorescent Slugs (Firestorm on the cluster near the Large Sword of Moonlight); the mosquitoes on the way drop Marrowstone",
+   "source": {
+    "label": "Wikidot – Stone Farming (PS3-era)",
+    "url": "https://demonssouls.wikidot.com/stone-farming",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "farm-moonlightstone-shards-and-chunks",
+   "name": "Farm: Moonlightstone shards and chunks",
+   "category": "farming",
+   "description": "Prisoners and worshippers in Tower of Latria 3-1 (the church worshippers respawn on reload); chunks from the tower worshippers on the 3-2 route before the Maneater chains are released.",
+   "effect": "",
+   "materials": [],
+   "whereToFind": "Prisoners and worshippers in Tower of Latria 3-1 (the church worshippers respawn on reload); chunks from the tower worshippers on the 3-2 route before the Maneater chains are released",
+   "source": {
+    "label": "Wikidot – Stone Farming (PS3-era)",
+    "url": "https://demonssouls.wikidot.com/stone-farming",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "farm-moonshadestone-darkmoonstone-on-ps3",
+   "name": "Farm: Moonshadestone (Darkmoonstone on PS3)",
+   "category": "farming",
+   "description": "Altar of Storms (4-3): kill the Storm Beasts with the Storm Ruler, then the two Crystal Lizards. Shards and chunks also drop from the first Reaper in 4-2.",
+   "effect": "",
+   "materials": [],
+   "whereToFind": "Altar of Storms (4-3): kill the Storm Beasts with the Storm Ruler, then the two Crystal Lizards",
+   "source": {
+    "label": "Wikidot – Stone Farming (PS3-era)",
+    "url": "https://demonssouls.wikidot.com/stone-farming",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "farm-cloudstone-shards-and-chunks",
+   "name": "Farm: Cloudstone shards and chunks",
+   "category": "farming",
+   "description": "Storm Beasts in Island's Edge, The Ritual Path and Altar of Storms. Kill them with the Storm Ruler from the Storm King's Archstone (4-4).",
+   "effect": "",
+   "materials": [],
+   "whereToFind": "Storm Beasts in Island's Edge, The Ritual Path and Altar of Storms",
+   "source": {
+    "label": "Wikidot – Stone Farming (PS3-era)",
+    "url": "https://demonssouls.wikidot.com/stone-farming",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "farm-mercurystone",
+   "name": "Farm: Mercurystone",
+   "category": "farming",
+   "description": "Man Centipedes and Giant Man Centipedes in Upper Latria and The Ivory Tower; Prisoners in Prison of Hope drop shards. A Pure Mercurystone lies in the Rotting Haven plague swamp.",
+   "effect": "",
+   "materials": [],
+   "whereToFind": "Man Centipedes and Giant Man Centipedes in Upper Latria and The Ivory Tower; Prisoners in Prison of Hope drop shards",
+   "source": {
+    "label": "Fextralife – Stones",
+    "url": "https://demonssouls.wiki.fextralife.com/Stones",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  }
+ ],
+ "materials": [
+  {
+   "id": "hardstone-shard",
+   "name": "Hardstone Shard",
+   "type": "Upgrade stone (Hardstone)",
+   "description": "Hard ore. Enhances straight swords, axes, hammers, and so on.",
+   "whereToFind": "Dropped by Hoplite in Gates of Boletaria, The Lord's Path. Dropped by Scale Miners in Smithing Grounds. Dropped by Crystal Lizard in Gates of Boletaria Side passage left at the starting Archstone. (To reach this area you require Pure Black or Pure White Tendency). Dropped by Crystal Lizard in Smithing Grounds at the start of the area, on the left side. Can be visible from the stairs you have to ascend from the archstone. Dropped by Crystal Lizard in Smithing Grounds at the start of the area, on the left side. Can be visible from the stairs you have to ascend from the archstone. Can be bought from the Filthy Man for 500 souls each in Smithing Grounds, The Tunnel City.",
+   "usedFor": "Regular +10 path for STR weapons, bows and shields",
+   "source": {
+    "label": "Fextralife – Stones",
+    "url": "https://demonssouls.wiki.fextralife.com/Stones",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "large-hardstone-shard",
+   "name": "Large Hardstone Shard",
+   "type": "Upgrade stone (Hardstone)",
+   "description": "Hard ore. Enhances straight swords, axes, hammers, and so on.",
+   "whereToFind": "Dropped by Hoplite in Gates of Boletaria, The Lord's Path. Dropped by Scale Miners in Smithing Grounds side passage left at the starting Archstone. (To reach this area you require Pure Black or Pure White Tendency). Dropped by Crystal Lizard in The Lord's Path. Before the fight with the Tower Knight, there is a staircase on the right, the Crystal Lizard can be found upstairs. Dropped by Crystal Lizard in The Lord's Path. There is one inside the prison where Biorr, of the Twin Fangs is being held. You must have acquired the Iron Key Ring to access the prison. Dropped by Crystal Lizard in The Tunnel City. From the start point, you start through a tunnel, there is a Scale Miner on your right and a Crystal Lizard a little further. Dropped by Crystal Lizard in The Tunnel City. From the archstone. go right along the tunnel. Once you reach the end, turn right, go through the narrow passage. You will have to start dropping from scaffolding to scaffolding. On the third one, turn to your right and drop on the narrow wooden beam. Go across it and enter the cave. At the end of it, you will find two Crystal Lizards. Dropped by Crystal Lizard in The Tunnel City. After the archstone, go left. cross the platform at the upper level, and go through a passage. The Lizard is hiding behind a pile of debris on the left. Dropped by Crystal Lizards in The Tunnel City. Take the moving platform and venture to the lower level. You will find 2 Crystal Lizards in this room, and they will lead you towards their nest. Dropped by Crystal Lizard in The Tunnel City. There is one after the 3 Rock Worms, just before reaching the Filthy Man. Dropped by Crystal Lizards in The Tunnel City. In the lava area, near the exit passage towards the boss. There are 2 Crystal Lizards in the room behind the one with a Large Bearbug. Dropped by Crystal Lizard in The Tunnel City. Just before you jump down on the 3 Rock Worms, you can reach another Crystal Lizard by a ladder. It is located on an upper wooden plank. Dropped by Crystal Lizard in Gates of Boletaria. Side passage left at the starting Archstone. (To reach this area you require Pure Black or Pure White Tendency). Dropped by Crystal Lizard in Smithing Grounds. At the start of the area, on the left side. Can be visible from the stairs you have to ascend from the archstone. Can be bought from the Filthy Man for 1500 souls each in The Tunnel City. Included as a Digital Deluxe Edition bonus.",
+   "usedFor": "Regular +10 path for STR weapons, bows and shields",
+   "source": {
+    "label": "Fextralife – Stones",
+    "url": "https://demonssouls.wiki.fextralife.com/Stones",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "hardstone-chunk",
+   "name": "Hardstone Chunk",
+   "type": "Upgrade stone (Hardstone)",
+   "description": "Hard ore. Enhances straight swords, axes, hammers, and so on.",
+   "whereToFind": "Dropped by Crystal Lizard in The Lord's Path, before the fight with the Tower Knight, there is a staircase on the right, the Crystal Lizard can be found upstairs. Dropped by Crystal Lizard in The Lord's Path. There is one inside the prison where Biorr, of the Twin Fangs is being held. You must have acquired the Iron Key Ring to access the prison. Dropped by Crystal Lizard in Inner Ward, after the cutscene where the Fat Official closes the door, turn right. You can find one hiding between the columns. Dropped by Crystal Lizard in The King's Tower. Behind the 3 Boletaria Soldiers wielding crossbows at the start of the area. Dropped by Crystal Lizard in The King's Tower. Hiding behind the planks, halfway the right alleyway. Dropped by Crystal Lizards in The Tunnel City From the archstone. go right along the tunnel. Once you reach the end, turn right, go through the narrow passage. You will have to start dropping from scaffolding to scaffolding. On the third one, turn to your right and drop on the narrow wooden beam. Go across it and enter the cave. At the end of it, you will find two Crystal Lizards. Dropped by Crystal Lizard in The Tunnel City. After the archstone, go left. cross the platform at the upper level, and go through a passage. The Lizard is hiding behind a pile of debris on the left. Dropped by Crystal Lizards in The Tunnel City. Take the moving platform and venture to the lower level. You will find 2 Crystal Lizards in this room, and they will lead you towards their nest. Dropped by Crystal Lizards in The Tunnel City. There is one after the 3 Rock Worms, just before reaching the Filthy Man. Dropped by Crystal Lizards in The Tunnel City. In the lava area, near the exit passage towards the boss. There are 2 Crystal Lizards in the room behind the one with a Large Bearbug. Dropped by Crystal Lizard in The Tunnel City. Just before you jump down on the 3 Rock Worms, you can reach another Crystal Lizardby a ladder. It is located on an upper wooden plank. Dropped by Crystal Lizard in Underground Temple. There's one Crystal Lizardon the left side of the corridor, just before reaching the room where you fight the Dragon God. Dropped by Scale Miners in Smithing Grounds and The Tunnel City.",
+   "usedFor": "Regular +10 path for STR weapons, bows and shields",
+   "source": {
+    "label": "Fextralife – Stones",
+    "url": "https://demonssouls.wiki.fextralife.com/Stones",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "pure-hardstone",
+   "name": "Pure Hardstone",
+   "type": "Upgrade stone (Hardstone)",
+   "description": "Hard ore. Enhances straight swords, axes, hammers, and so on.",
+   "whereToFind": "Dropped by Crystal Lizard in Inner Ward After the cutscene where the Fat Official closes the door, turn right. You can find one hiding between the columns. Dropped by Crystal Lizard in The King's Tower. Behind the 3 Boletaria Soldiers wielding crossbows at the start of the area. Dropped by Crystal Lizard in The King's Tower. Hiding behind the planks, halfway the right alleyway. Dropped by Crystal Lizard in Underground Temple. There's one Crystal Lizardon the left side of the corridor, just before reaching the room where you fight the Dragon God. Found on a corpse in the Crystal Gecko nest in The Tunnel City.",
+   "usedFor": "Regular +10 path for STR weapons, bows and shields",
+   "source": {
+    "label": "Fextralife – Stones",
+    "url": "https://demonssouls.wiki.fextralife.com/Stones",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "sharpstone-shard",
+   "name": "Sharpstone Shard",
+   "type": "Upgrade stone (Sharpstone)",
+   "description": "Sharp ore. Enhances daggers, curved swords, spears and so on.",
+   "whereToFind": "Dropped by Hoplite in The Lord's Path. Dropped by Scale Miners in Smithing Grounds Dropped by Miners in The Tunnel City Dropped by Crystal Lizard in Smithing Grounds. At the start of the area, on the left side. Can be visible from the stairs you have to ascend from the archstone. Dropped by Crystal Lizard in Gates of Boletaria. Side passage left at the starting Archstone. (To reach this area you require Pure Black or Pure White Tendency). Dropped by Crystal Lizard in The Tunnel City. From the archstone. go right along the tunnel. Once you reach the end, turn right, go through the narrow passage. You will have to start dropping from scaffolding to scaffolding. On the third one, turn to your right and drop on the narrow wooden beam. Go across it and enter the cave. At the end of it, you will find two Crystal Lizards. Can be bought from the Filthy Man for 500 souls each in Smithing Grounds.",
+   "usedFor": "Regular +10 path for DEX weapons and the Spiked Shield",
+   "source": {
+    "label": "Fextralife – Stones",
+    "url": "https://demonssouls.wiki.fextralife.com/Stones",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "large-sharpstone-shard",
+   "name": "Large Sharpstone Shard",
+   "type": "Upgrade stone (Sharpstone)",
+   "description": "Sharp ore. Enhances daggers, curved swords, spears and so on.",
+   "whereToFind": "Dropped by Hoplite in The Lord's Path. Dropped by Scale Miners in The Tunnel City Dropped by Crystal Lizard in Gates of Boletaria. Side passage left at the starting Archstone. (To reach this area you require Pure Black or Pure White Tendency). Dropped by Crystal Lizard in The Lord's Path. Before the fight with the Tower Knight, there is a staircase on the right, the Crystal Lizard can be found upstairs. Dropped by Crystal Lizard in Smithing Grounds. At the start of the area, on the left side. Can be visible from the stairs you have to ascend from the archstone. Dropped by Crystal Lizard in The Tunnel City. From the start point, you start through a tunnel, there is a Scale Miner on your right and a Crystal Lizard a little further. Dropped by Crystal Lizard in The Tunnel City. After the archstone, go left. cross the platform at the upper level, and go through a passage. The Lizard is hiding behind a pile of debris on the left. Dropped by Crystal Lizard in The Tunnel City. Take the moving platform and venture to the lower level. You will find 2 Crystal Lizards in this room, and they will lead you towards their nest. Dropped by Crystal Lizard in The Tunnel City. There is one after the 3 Rock Worms, just before reaching the Filthy Man. Dropped by Crystal Lizard in The Tunnel City. In the lava area, near the exit passage towards the boss. There are 2 Crystal Lizards in the room behind the one with a Large Bearbug. Dropped by Crystal Lizard in The Tunnel City. Just before you jump down on the 3 Rock Worms, you can reach another Crystal Lizard by a ladder. It is located on an upper wooden plank. Can be bought from the Filthy Man for 1500 souls each in The Tunnel City.",
+   "usedFor": "Regular +10 path for DEX weapons and the Spiked Shield",
+   "source": {
+    "label": "Fextralife – Stones",
+    "url": "https://demonssouls.wiki.fextralife.com/Stones",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "sharpstone-chunk",
+   "name": "Sharpstone Chunk",
+   "type": "Upgrade stone (Sharpstone)",
+   "description": "Sharp ore. Enhances daggers, curved swords, spears and so on.",
+   "whereToFind": "Dropped by Crystal Lizard in The Lord's Path. Before the fight with the Tower Knight, there is a staircase on the right, the Crystal Lizard can be found upstairs. Dropped by Crystal Lizard in Inner Ward. After the cutscene where the Fat Official closes the door, turn right. You can find one hiding between the columns. Dropped by Crystal Lizard in The King's Tower. Behind the 3 Boletaria Soldiers wielding crossbows at the start of the area. Dropped by Crystal Lizard in The King's Tower. Hiding behind the planks, halfway the right alleyway Dropped by Crystal Lizard in The Tunnel City. From the start point, you start through a tunnel, there is a Scale Miner on your right and a Crystal Lizard a little further. Dropped by Crystal Lizard in The Tunnel City. After the archstone, go left. cross the platform at the upper level, and go through a passage. The Lizard is hiding behind a pile of debris on the left. Dropped by Crystal Lizard in The Tunnel City. Take the moving platform and venture to the lower level. You will find 2 Crystal Lizards in this room, and they will lead you towards their nest. Dropped by Crystal Lizard in The Tunnel City. In the lava area, near the exit passage towards the boss. There are 2 Crystal Lizardsin the room behind the one with a Large Bearbug. Dropped by Crystal Lizard in The Tunnel City. Just before you jump down on the 3 Rock Worms, you can reach another Crystal Lizardby a ladder. It is located on an upper wooden plank. Dropped by Crystal Lizard in Underground Temple. There's one Crystal Lizardon the left side of the corridor, just before reaching the room where you fight the Dragon God. Dropped by Scale Miners in The Tunnel City.",
+   "usedFor": "Regular +10 path for DEX weapons and the Spiked Shield",
+   "source": {
+    "label": "Fextralife – Stones",
+    "url": "https://demonssouls.wiki.fextralife.com/Stones",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "pure-sharpstone",
+   "name": "Pure Sharpstone",
+   "type": "Upgrade stone (Sharpstone)",
+   "description": "Sharp ore. Enhances daggers, curved swords, spears and so on.",
+   "whereToFind": "Dropped by Crystal Lizard in Inner Ward. After the cutscene where the Fat Official closes the door, turn right. You can find one hiding between the columns. Dropped by Crystal Lizard in The King's Tower. Behind the 3 Boletaria Soldiers wielding crossbows at the start of the area. Dropped by Crystal Lizard in The King's Tower. Hiding behind the planks, halfway the right alleyway Dropped by Crystal Lizard in Underground Temple. There's one Crystal Lizardon the left side of the corridor, just before reaching the room where you fight the Dragon God. Found on a corpse in the Crystal Gecko nest in The Tunnel City",
+   "usedFor": "Regular +10 path for DEX weapons and the Spiked Shield",
+   "source": {
+    "label": "Fextralife – Stones",
+    "url": "https://demonssouls.wiki.fextralife.com/Stones",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "clearstone-shard",
+   "name": "Clearstone Shard",
+   "type": "Upgrade stone (Clearstone)",
+   "description": "Crystallized white ore. Capable of enhancing a variety of weapons.",
+   "whereToFind": "Dropped by Crystal Lizard in The Tunnel City. From the start point, you start through a tunnel, there is a Scale Miner on your right and a Crystal Lizard a little further. Dropped by Crystal Lizard in The Tunnel City. From the archstone. go right along the tunnel. Once you reach the end, turn right, go through the narrow passage. You will have to start dropping from scaffolding to scaffolding. On the third one, turn to your right and drop on the narrow wooden beam. Go across it and enter the cave. At the end of it, you will find two Crystal Lizards. Dropped by Crystal Lizard in The Tunnel City. After the archstone, go left. cross the platform at the upper level, and go through a passage. The Lizard is hiding behind a pile of debris on the left. Dropped by Crystal Lizard in The Tunnel City. Take the moving platform and venture to the lower level. You will find 2 Crystal Lizards in this room, and they will lead you towards their nest. Dropped by Crystal Lizard in The Tunnel City. There is one after the 3 Rock Worms, just before reaching the Filthy Man. Dropped by Crystal Lizard in The Tunnel City. In the lava area, near the exit passage towards the boss. There are 2 Crystal Lizardsin the room behind the one with a Large Bearbug. Dropped by Crystal Lizard in The Tunnel City. Just before you jump down on the 3 Rock Worms, you can reach another Crystal Lizard by a ladder. It is located on an upper wooden plank. Can be bought from the Filthy Man for 500 souls each in The Tunnel City.",
+   "usedFor": "Quality path (+1 to +5)",
+   "source": {
+    "label": "Fextralife – Stones",
+    "url": "https://demonssouls.wiki.fextralife.com/Stones",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "clearstone-chunk",
+   "name": "Clearstone Chunk",
+   "type": "Upgrade stone (Clearstone)",
+   "description": "Crystallized white ore. Capable of enhancing a variety of weapons.",
+   "whereToFind": "Dropped by Imperial Spies in Inner Ward Dropped by Crystal Lizard in The Tunnel City. From the start point, you start through a tunnel, there is a Scale Miner on your right and a Crystal Lizard a little further. Dropped by Crystal Lizard in The Tunnel City. From the archstone. go right along the tunnel. Once you reach the end, turn right, go through the narrow passage. You will have to start dropping from scaffolding to scaffolding. On the third one, turn to your right and drop on the narrow wooden beam. Go across it and enter the cave. At the end of it, you will find two Crystal Lizards. Dropped by Crystal Lizard in The Tunnel City. After the archstone, go left. cross the platform at the upper level, and go through a passage. The Lizard is hiding behind a pile of debris on the left. Dropped by Crystal Lizard in The Tunnel City. Take the moving platform and venture to the lower level. You will find 2 Crystal Lizards in this room, and they will lead you towards their nest. Dropped by Crystal Lizard in The Tunnel City. There is one after the 3 Rock Worms, just before reaching the Filthy Man. Dropped by Crystal Lizard in The Tunnel City. In the lava area, near the exit passage towards the boss. There are 2 Crystal Lizardsin the room behind the one with a Large Bearbug. Dropped by Crystal Lizard in Underground Temple. There's one next to the second harpoon used to hurt the Dragon God. Dropped Black Phantom in The Tunnel City.",
+   "usedFor": "Quality path (+1 to +5)",
+   "source": {
+    "label": "Fextralife – Stones",
+    "url": "https://demonssouls.wiki.fextralife.com/Stones",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "pure-clearstone",
+   "name": "Pure Clearstone",
+   "type": "Upgrade stone (Clearstone)",
+   "description": "Crystallized white ore. Capable of enhancing a variety of weapons.",
+   "whereToFind": "Dropped by Crystal Lizard in Underground Temple. There's one next to the second harpoon used to hurt the Dragon God. Rewarded after rescuing Ostrava, of Boletaria in Inner Ward.",
+   "usedFor": "Quality path (+1 to +5)",
+   "source": {
+    "label": "Fextralife – Stones",
+    "url": "https://demonssouls.wiki.fextralife.com/Stones",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "greystone-shard",
+   "name": "Greystone Shard",
+   "type": "Upgrade stone (Greystone)",
+   "description": "Grey ore that gives off a dull light. Enhances straight swords, axes, hammers, and so on.",
+   "whereToFind": "Dropped by Scale Miners in Smithing Grounds, The Tunnel City. Dropped by Rock Worms in The Tunnel City.",
+   "usedFor": "Crushing path (+1 to +5)",
+   "source": {
+    "label": "Fextralife – Stones",
+    "url": "https://demonssouls.wiki.fextralife.com/Stones",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "greystone-chunk",
+   "name": "Greystone Chunk",
+   "type": "Upgrade stone (Greystone)",
+   "description": "Grey ore that gives off a dull light. Enhances straight swords, axes, hammers, and so on.",
+   "whereToFind": "Dropped by Rock Worm in The Tunnel City.",
+   "usedFor": "Crushing path (+1 to +5)",
+   "source": {
+    "label": "Fextralife – Stones",
+    "url": "https://demonssouls.wiki.fextralife.com/Stones",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "pure-greystone",
+   "name": "Pure Greystone",
+   "type": "Upgrade stone (Greystone)",
+   "description": "Grey ore that gives off a dull light. Enhances straight swords, axes, hammers, and so on.",
+   "whereToFind": "Dropped by Rock Worm in The Tunnel City. Rewarded after showing the Dragon Bone Smasher to Scirvir, the Wanderer. Pure White World Tendency required.",
+   "usedFor": "Crushing path (+1 to +5)",
+   "source": {
+    "label": "Fextralife – Stones",
+    "url": "https://demonssouls.wiki.fextralife.com/Stones",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "bladestone-shard",
+   "name": "Bladestone Shard",
+   "type": "Upgrade stone (Bladestone)",
+   "description": "Ore wet with dew. Enhances knives, curved swords, spears, and so on.",
+   "whereToFind": "Dropped by Silver Skeleton in Island's Edge, The Ritual Path and Altar of Storms",
+   "usedFor": "Sharp path (+1 to +5)",
+   "source": {
+    "label": "Fextralife – Stones",
+    "url": "https://demonssouls.wiki.fextralife.com/Stones",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "bladestone-chunk",
+   "name": "Bladestone Chunk",
+   "type": "Upgrade stone (Bladestone)",
+   "description": "Ore wet with dew. Enhances knives, curved swords, spears, and so on.",
+   "whereToFind": "Dropped by Silver Skeleton in Island's Edge, The Ritual Path and Altar of Storms Dropped by Golden Skeleton in The Ritual Path Dropped by Black Skeleton in Island's Edge, The Ritual Path",
+   "usedFor": "Sharp path (+1 to +5)",
+   "source": {
+    "label": "Fextralife – Stones",
+    "url": "https://demonssouls.wiki.fextralife.com/Stones",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "pure-bladestone",
+   "name": "Pure Bladestone",
+   "type": "Upgrade stone (Bladestone)",
+   "description": "Ore wet with dew. Enhances knives, curved swords, spears, and so on.",
+   "whereToFind": "Dropped by Black Skeleton in The Ritual Path",
+   "usedFor": "Sharp path (+1 to +5)",
+   "source": {
+    "label": "Fextralife – Stones",
+    "url": "https://demonssouls.wiki.fextralife.com/Stones",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "dragonstone-shard",
+   "name": "Dragonstone Shard",
+   "type": "Upgrade stone (Dragonstone)",
+   "description": "Dragon bone fossilized by lava. Enhances straight swords, axes, hammers, and so on.",
+   "whereToFind": "Dropped by Bearbug in The Tunnel City Dropped by Large Bearbug in The Tunnel City Dropped by Giant Bearbug in The Tunnel City Dropped by Flying Bearbug in The Tunnel City Can be bought from the Filthy Man for 3000 souls each in The Tunnel City",
+   "usedFor": "Dragon path (+1 to +5)",
+   "source": {
+    "label": "Fextralife – Stones",
+    "url": "https://demonssouls.wiki.fextralife.com/Stones",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "dragonstone-chunk",
+   "name": "Dragonstone Chunk",
+   "type": "Upgrade stone (Dragonstone)",
+   "description": "Dragon bone fossilized by lava. Enhances straight swords, axes, hammers, and so on.",
+   "whereToFind": "Dropped by Large Bearbug in The Tunnel City",
+   "usedFor": "Dragon path (+1 to +5)",
+   "source": {
+    "label": "Fextralife – Stones",
+    "url": "https://demonssouls.wiki.fextralife.com/Stones",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "pure-dragonstone",
+   "name": "Pure Dragonstone",
+   "type": "Upgrade stone (Dragonstone)",
+   "description": "Dragon bone fossilized by lava. Enhances straight swords, axes, hammers, and so on.",
+   "whereToFind": "Dropped by Giant Bearbugs in The Tunnel City Dropped by the Dragon God in Shrine of the Dragon God. Found on a corpse in the Lava Pit in The Tunnel City.",
+   "usedFor": "Dragon path (+1 to +5)",
+   "source": {
+    "label": "Fextralife – Stones",
+    "url": "https://demonssouls.wiki.fextralife.com/Stones",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "suckerstone-shard",
+   "name": "Suckerstone Shard",
+   "type": "Upgrade stone (Suckerstone)",
+   "description": "Vampiric ore that sticks to the skin. Enhances curved swords, katanas, and so on.",
+   "whereToFind": "Dropped by Phosphorescent Slugs in The Ritual Path and Swamp of Sorrow.",
+   "usedFor": "Tearing path (+1 to +5)",
+   "source": {
+    "label": "Fextralife – Stones",
+    "url": "https://demonssouls.wiki.fextralife.com/Stones",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "suckerstone-chunk",
+   "name": "Suckerstone Chunk",
+   "type": "Upgrade stone (Suckerstone)",
+   "description": "Vampiric ore that sticks to the skin. Enhances curved swords, katanas, and so on.",
+   "whereToFind": "Dropped by Phosphorescent Slugs in The Ritual Path and Swamp of Sorrow.",
+   "usedFor": "Tearing path (+1 to +5)",
+   "source": {
+    "label": "Fextralife – Stones",
+    "url": "https://demonssouls.wiki.fextralife.com/Stones",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "pure-suckerstone",
+   "name": "Pure Suckerstone",
+   "type": "Upgrade stone (Suckerstone)",
+   "description": "Vampiric ore that sticks to the skin. Enhances curved swords, katanas, and so on.",
+   "whereToFind": "Dropped by Phosphorescent Slugs in The Ritual Path and Swamp of Sorrow 1 Found on a corpse near the Meat Cleaver Black Phantom in Swamp of Sorrow. 1 Found in the Plague Swamp in Rotting Haven.",
+   "usedFor": "Tearing path (+1 to +5)",
+   "source": {
+    "label": "Fextralife – Stones",
+    "url": "https://demonssouls.wiki.fextralife.com/Stones",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "mercurystone-shard",
+   "name": "Mercurystone Shard",
+   "type": "Upgrade stone (Mercurystone)",
+   "description": "Melted, poisonous ore. Enhances knives, curved swords, spears, and so on.",
+   "whereToFind": "Dropped by Prisoners in Prison of Hope Dropped by Man Centipedes in Upper Latria and The Ivory Tower Dropped by Giant Man Centipedes in Upper Latria and The Ivory Tower",
+   "usedFor": "Mercury path (+1 to +5)",
+   "source": {
+    "label": "Fextralife – Stones",
+    "url": "https://demonssouls.wiki.fextralife.com/Stones",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "mercurystone-chunk",
+   "name": "Mercurystone Chunk",
+   "type": "Upgrade stone (Mercurystone)",
+   "description": "Melted, poisonous ore. Enhances knives, curved swords, spears, and so on.",
+   "whereToFind": "Dropped by Man Centipedes in Upper Latria and The Ivory Tower Dropped by Giant Man Centipedes in Upper Latria and The Ivory Tower",
+   "usedFor": "Mercury path (+1 to +5)",
+   "source": {
+    "label": "Fextralife – Stones",
+    "url": "https://demonssouls.wiki.fextralife.com/Stones",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "pure-mercurystone",
+   "name": "Pure Mercurystone",
+   "type": "Upgrade stone (Mercurystone)",
+   "description": "Melted, poisonous ore. Enhances knives, curved swords, spears, and so on.",
+   "whereToFind": "Dropped by Giant Man Centipedes in Upper Latria. Found in the Plague Swamp in Rotting Haven",
+   "usedFor": "Mercury path (+1 to +5)",
+   "source": {
+    "label": "Fextralife – Stones",
+    "url": "https://demonssouls.wiki.fextralife.com/Stones",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "marrowstone-shard",
+   "name": "Marrowstone Shard",
+   "type": "Upgrade stone (Marrowstone)",
+   "description": "Very thin, sharp, ore. Enhances daggers, knives, spears and so on.",
+   "whereToFind": "Dropped by Giant Ticks in Depraved Chasm and Swamp of Sorrow. Dropped by Giant Mosquitos in Depraved Chasm and Swamp of Sorrow.",
+   "usedFor": "Fatal path (+1 to +5)",
+   "source": {
+    "label": "Fextralife – Stones",
+    "url": "https://demonssouls.wiki.fextralife.com/Stones",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "marrowstone-chunk",
+   "name": "Marrowstone Chunk",
+   "type": "Upgrade stone (Marrowstone)",
+   "description": "Very thin, sharp, ore. Enhances daggers, knives, spears and so on.",
+   "whereToFind": "Dropped by Giant Ticks in Depraved Chasm and Swamp of Sorrow. Dropped by Giant Mosquitos in Depraved Chasm and Swamp of Sorrow.",
+   "usedFor": "Fatal path (+1 to +5)",
+   "source": {
+    "label": "Fextralife – Stones",
+    "url": "https://demonssouls.wiki.fextralife.com/Stones",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "pure-marrowstone",
+   "name": "Pure Marrowstone",
+   "type": "Upgrade stone (Marrowstone)",
+   "description": "Very thin, sharp, ore. Enhances daggers, knives, spears and so on.",
+   "whereToFind": "Dropped by Giant Ticks in Depraved Chasm and Swamp of Sorrow. Found in the Plague Swamp in Rotting Haven.",
+   "usedFor": "Fatal path (+1 to +5)",
+   "source": {
+    "label": "Fextralife – Stones",
+    "url": "https://demonssouls.wiki.fextralife.com/Stones",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "moonlightstone-shard",
+   "name": "Moonlightstone Shard",
+   "type": "Upgrade stone (Moonlightstone)",
+   "description": "Ore which reflects moonlight. Enhances straight swords, curved swords, axes, hammers, and so on.",
+   "whereToFind": "Dropped by Prisoners in Prison of Hope and Upper Latria. Dropped by Crystal Lizard in Prison of Hope. In the first floor, after fighting the Prisoner Horde, keep going forward and turn left. Can be bought from Once Royal Mistress in Prison of Hope. Can be found in Prison of Hope, on the first floor's balcony, after defeating the Prisoner Horde. In Upper Latria, just outside the giant beating heart., on the edge of a platform. In Upper Latria, in one of the circular platforms with a bonfire on it, there are two corpses containing one each. Included as a Digital Deluxe Edition bonus",
+   "usedFor": "Moon path (+1 to +5)",
+   "source": {
+    "label": "Fextralife – Stones",
+    "url": "https://demonssouls.wiki.fextralife.com/Stones",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "moonlightstone-chunk",
+   "name": "Moonlightstone Chunk",
+   "type": "Upgrade stone (Moonlightstone)",
+   "description": "Ore which reflects moonlight. Enhances straight swords, curved swords, axes, hammers, and so on.",
+   "whereToFind": "Dropped by Prisoners in Fool's Idol Archstone. Dropped by Crystal Lizard in Tower of Latria. In the first floor, after fighting the Prisoner Horde, keep going forward and turn left. Dropped by Crystal Lizard in Fool's Idol Archstone. Once you past the Black Phantom Mind Flayer 's stairs, and fight the Enemies on your right, when you are fighting the Giant Man Centipede, under the big red tentacle, you will spot one Crystal Lizardon the distance. Dropped by Crystal Lizard in Maneater Archstone. Can be found right in front of the area where you fight the Old Monk. In 3-2, you can obtain it from a body hanging on the edge of the circular platform you find after arriving at the giant heart.",
+   "usedFor": "Moon path (+1 to +5)",
+   "source": {
+    "label": "Fextralife – Stones",
+    "url": "https://demonssouls.wiki.fextralife.com/Stones",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "pure-moonlightstone",
+   "name": "Pure Moonlightstone",
+   "type": "Upgrade stone (Moonlightstone)",
+   "description": "Ore which reflects moonlight. Enhances straight swords, curved swords, axes, hammers, and so on.",
+   "whereToFind": "Dropped by Crystal Lizard in Upper Latria. Once you past the Black Phantom Mind Flayer 's stairs, and fight the Enemies on your right, when you are fighting the Giant Man Centipede, under the big red tentacle, you will spot one Crystal Lizardon the distance. Dropped by Crystal Lizard in The Ivory Tower. Can be found right in front of the area where you fight the Old Monk.",
+   "usedFor": "Moon path (+1 to +5)",
+   "source": {
+    "label": "Fextralife – Stones",
+    "url": "https://demonssouls.wiki.fextralife.com/Stones",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "moonshadestone-shard",
+   "name": "Moonshadestone Shard",
+   "type": "Upgrade stone (Moonshadestone)",
+   "description": "Moonshadow. Enhances daggers, knives, and so on.",
+   "whereToFind": "Dropped by Reaper in The Ritual Path. Dropped by Crystal Lizard in Island's Edge. Roll over the broken down tower walls to find a corpse containing x1 Regenerator's Ring, then take the narrow path on the right to find a Crystal Lizard. Dropped by Crystal Lizard in Island's Edge. In the area where you find Sparkly, the Crow. Get close to the right edge and you will see one Crystal Lizard, drop down and chase it to kill it. Can be bought from the Graverobber Blige for 3000 souls each in The Ritual Path.",
+   "usedFor": "Crescent path (+1 to +5)",
+   "source": {
+    "label": "Fextralife – Stones",
+    "url": "https://demonssouls.wiki.fextralife.com/Stones",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "moonshadestone-chunk",
+   "name": "Moonshadestone Chunk",
+   "type": "Upgrade stone (Moonshadestone)",
+   "description": "Moonshadow. Enhances daggers, knives, and so on.",
+   "whereToFind": "Dropped by Reaper in The Ritual Path Dropped by Crystal Lizard in Island's Edge. Roll over the broken down tower walls to find a corpse containing x1 Regenerator's Ring, then take the narrow path on the right to find a Crystal Lizard. Dropped by Crystal Lizard in Island's Edge. In the area where you find Sparkly, the Crow. Get close to the right edge and you will see one Crystal Lizard, drop down and chase it to kill it. Dropped by Crystal Lizard in The Ritual Path. Near the location of the White Bow, by the cliff side. Dropped by Crystal Lizard in The Ritual Path. One emerges from a grave on the cemetery area and the other is hidden on the grass. Dropped by the Black Phantom guarding Saint Urbain in The Ritual Path.",
+   "usedFor": "Crescent path (+1 to +5)",
+   "source": {
+    "label": "Fextralife – Stones",
+    "url": "https://demonssouls.wiki.fextralife.com/Stones",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "pure-moonshadestone",
+   "name": "Pure Moonshadestone",
+   "type": "Upgrade stone (Moonshadestone)",
+   "description": "Moonshadow. Enhances daggers, knives, and so on.",
+   "whereToFind": "Dropped by Crystal Lizard in The Ritual Path. Near the location of the White Bow, by the cliff side Dropped by Crystal Lizard in Altar of Storms. One emerges from a grave on the cemetery area and the other is hidden on the grass.",
+   "usedFor": "Crescent path (+1 to +5)",
+   "source": {
+    "label": "Fextralife – Stones",
+    "url": "https://demonssouls.wiki.fextralife.com/Stones",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "faintstone-shard",
+   "name": "Faintstone Shard",
+   "type": "Upgrade stone (Faintstone)",
+   "description": "Cold, holy ore that shines dimly. Enhances straight swords, axes, hammers, and so on.",
+   "whereToFind": "Dropped by Depraved One in Swamp of Sorrow. Dropped by Crystal Lizard in Depraved Chasm. Across the bridge, next to the Rat's nest. Can be bought from the Filthy Woman for in Swamp of Sorrow.",
+   "usedFor": "Blessed path (+1 to +5)",
+   "source": {
+    "label": "Fextralife – Stones",
+    "url": "https://demonssouls.wiki.fextralife.com/Stones",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "faintstone-chunk",
+   "name": "Faintstone Chunk",
+   "type": "Upgrade stone (Faintstone)",
+   "description": "Cold, holy ore that shines dimly. Enhances straight swords, axes, hammers, and so on.",
+   "whereToFind": "Dropped by Depraved One in Swamp of Sorrow. Dropped by Crystal Lizard in Depraved Chasm. Across the bridge, next to the Rat's nest. Dropped by Crystal Lizard in Rotting Haven. On the boss area, there is a path to the right that leads to more creatures. Midway through this path, you can see the lizard. Dropped by a Black Phantom in Swamp of Sorrow.",
+   "usedFor": "Blessed path (+1 to +5)",
+   "source": {
+    "label": "Fextralife – Stones",
+    "url": "https://demonssouls.wiki.fextralife.com/Stones",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "pure-faintstone",
+   "name": "Pure Faintstone",
+   "type": "Upgrade stone (Faintstone)",
+   "description": "Cold, holy ore that shines dimly. Enhances straight swords, axes, hammers, and so on.",
+   "whereToFind": "Dropped by Depraved One in Swamp of Sorrow. Dropped by Giant Depraved One in Swamp of Sorrow. If you have 20 point in your Faith stats, talk to Worshipper of God in the Nexus.",
+   "usedFor": "Blessed path (+1 to +5)",
+   "source": {
+    "label": "Fextralife – Stones",
+    "url": "https://demonssouls.wiki.fextralife.com/Stones",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "spiderstone-shard",
+   "name": "Spiderstone Shard",
+   "type": "Upgrade stone (Spiderstone)",
+   "description": "Fabric-like, transparent ore. Mainly used to enhance bows.",
+   "whereToFind": "Dropped by Scale Miners in Smithing Grounds and The Tunnel City, Dropped by Crystal Lizard in Smithing Grounds. Guarded by Scale Miners after going through the bellows room.",
+   "usedFor": "Sticky path (+1 to +5)",
+   "source": {
+    "label": "Fextralife – Stones",
+    "url": "https://demonssouls.wiki.fextralife.com/Stones",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "spiderstone-chunk",
+   "name": "Spiderstone Chunk",
+   "type": "Upgrade stone (Spiderstone)",
+   "description": "Fabric-like, transparent ore. Mainly used to enhance bows.",
+   "whereToFind": "Dropped by Scale Miners in The Tunnel City. Dropped by Crystal Lizard in Smithing Grounds. Guarded by Scale Miners after going through the bellows room.",
+   "usedFor": "Sticky path (+1 to +5)",
+   "source": {
+    "label": "Fextralife – Stones",
+    "url": "https://demonssouls.wiki.fextralife.com/Stones",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "pure-spiderstone",
+   "name": "Pure Spiderstone",
+   "type": "Upgrade stone (Spiderstone)",
+   "description": "Fabric-like, transparent ore. Mainly used to enhance bows.",
+   "whereToFind": "Dropped by Crystal Lizard in Smithing Grounds. Guarded by Scale Miners after going through the bellows room. Dropped by Armor Spider in Smithing Grounds",
+   "usedFor": "Sticky path (+1 to +5)",
+   "source": {
+    "label": "Fextralife – Stones",
+    "url": "https://demonssouls.wiki.fextralife.com/Stones",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "cloudstone-shard",
+   "name": "Cloudstone Shard",
+   "type": "Upgrade stone (Cloudstone)",
+   "description": "Green ore said to be found in the sky. Enhances shields in particular.",
+   "whereToFind": "Dropped by Storm Beast in Island's Edge, The Ritual Path and Altar of Storms Can be bought from the Graverobber Blige in The Ritual Path for 3000 souls",
+   "usedFor": "Dark path (+1 to +5)",
+   "source": {
+    "label": "Fextralife – Stones",
+    "url": "https://demonssouls.wiki.fextralife.com/Stones",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "cloudstone-chunk",
+   "name": "Cloudstone Chunk",
+   "type": "Upgrade stone (Cloudstone)",
+   "description": "Green ore said to be found in the sky. Enhances shields in particular.",
+   "whereToFind": "Dropped by Storm Beast in Island's Edge, The Ritual Path and Altar of Storms Two are located on a body in the Altar of Storms straight ahead from the Archstone on a lower ledge",
+   "usedFor": "Dark path (+1 to +5)",
+   "source": {
+    "label": "Fextralife – Stones",
+    "url": "https://demonssouls.wiki.fextralife.com/Stones",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "pure-cloudstone",
+   "name": "Pure Cloudstone",
+   "type": "Upgrade stone (Cloudstone)",
+   "description": "Green ore said to be found in the sky. Enhances shields in particular.",
+   "whereToFind": "Dropped by Storm Beast in Island's Edge, The Ritual Path and Altar of Storms Dropped by the Storm King in The Monolith Forest.",
+   "usedFor": "Dark path (+1 to +5)",
+   "source": {
+    "label": "Fextralife – Stones",
+    "url": "https://demonssouls.wiki.fextralife.com/Stones",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "meltstone-shard",
+   "name": "Meltstone Shard",
+   "type": "Special ore",
+   "description": "A shard of lava containing intense heat. This unique ore can melt all other ores and return an enhanced weapon to its original state.",
+   "whereToFind": "Dropped by Fire Lizards in Stonefang Tunnel",
+   "usedFor": "Reverting a weapon to +0 (no refund)",
+   "source": {
+    "label": "Fextralife – Meltstone Shard",
+    "url": "https://demonssouls.wiki.fextralife.com/Meltstone_Shard",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "beast-demon-soul-soul-of-the-old-one",
+   "name": "Beast Demon Soul / Soul of the Old One",
+   "type": "Demon Soul",
+   "description": "Boss soul.",
+   "whereToFind": "End Game",
+   "usedFor": "Can be consumed to obtain 200,000 Souls.",
+   "source": {
+    "label": "Fextralife – Demon's Souls (boss souls)",
+    "url": "https://demonssouls.wiki.fextralife.com/Demon%27s+Souls",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "maiden-in-black-demon-soul",
+   "name": "Maiden in Black Demon Soul",
+   "type": "Demon Soul",
+   "description": "Boss soul.",
+   "whereToFind": "End Game",
+   "usedFor": "Can be consumed to obtain 60,000 Souls. Can be traded to Yuria, the Witch to purchase the spell Soulsucker.",
+   "source": {
+    "label": "Fextralife – Demon's Souls (boss souls)",
+    "url": "https://demonssouls.wiki.fextralife.com/Demon%27s+Souls",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "colorless-demon-soul",
+   "name": "Colorless Demon Soul",
+   "type": "Demon Soul",
+   "description": "The soul of a Primeval Demon.",
+   "whereToFind": "Five from Primeval Demons; one on a beam in Gates of Boletaria near Miralda (Pure White/Black World Tendency); two by trading with Sparkly the Crow (Talisman of God, Gold Mask).",
+   "usedFor": "Can be consumed to obtain 5,000 Souls. Can be traded with Saint Urbain to obtain the Recovery Miracle. At least one Primeval Demon needs to be killed during the same playthrough. After giving Blacksmith Ed the Searing Demon Soul from Flamelurker: this Soul can be traded with Blacksmith Ed to obtain an upgrade.",
+   "source": {
+    "label": "Fextralife – Colorless Demon Soul",
+    "url": "https://demonssouls.wiki.fextralife.com/Colorless_Demon_Soul",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "doll-demon-soul",
+   "name": "Doll Demon Soul",
+   "type": "Demon Soul",
+   "description": "Boss soul.",
+   "whereToFind": "Prison of Hope",
+   "usedFor": "Can be consumed to obtain 7,600 Souls. The Doll Demon Soul can be used to purchase the Soul Ray spell from Sage Freke, the Visionary.",
+   "source": {
+    "label": "Fextralife – Demon's Souls (boss souls)",
+    "url": "https://demonssouls.wiki.fextralife.com/Demon%27s+Souls",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "dragon-demon-soul",
+   "name": "Dragon Demon Soul",
+   "type": "Demon Soul",
+   "description": "Boss soul.",
+   "whereToFind": "Underground Temple",
+   "usedFor": "Can be consumed to obtain 26,400 Souls. This Demon's Soul can be traded for the following spells Fireball from Sage Freke, the spell Firestorm from Yuria, the Witch, or the miracle God's Wrath from Saint Urbain.0",
+   "source": {
+    "label": "Fextralife – Demon's Souls (boss souls)",
+    "url": "https://demonssouls.wiki.fextralife.com/Demon%27s+Souls",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "eroded-demon-soul",
+   "name": "Eroded Demon Soul",
+   "type": "Demon Soul",
+   "description": "Boss soul.",
+   "whereToFind": "Swamp of Sorrow",
+   "usedFor": "Can be consumed to obtain 40,000 Souls. The Eroded Demon Soul can be used to purchase the spell Acid Cloud from Sage Freke, the Visionary.",
+   "source": {
+    "label": "Fextralife – Demon's Souls (boss souls)",
+    "url": "https://demonssouls.wiki.fextralife.com/Demon%27s+Souls",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "false-king-demon-soul",
+   "name": "False King Demon Soul",
+   "type": "Demon Soul",
+   "description": "Boss soul.",
+   "whereToFind": "The King's Tower",
+   "usedFor": "Can be consumed to obtain 60,000 Souls. The False King Demon Soul can be used to combine the Soulbrandt and the Demonbrandt into the Northern Regalia with Blacksmith Ed.",
+   "source": {
+    "label": "Fextralife – Demon's Souls (boss souls)",
+    "url": "https://demonssouls.wiki.fextralife.com/Demon%27s+Souls",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "golden-demon-soul",
+   "name": "Golden Demon Soul",
+   "type": "Demon Soul",
+   "description": "Boss soul.",
+   "whereToFind": "The Ivory Tower",
+   "usedFor": "Can be consumed to obtain 26,400 Souls. The Golden Demon Soul can be used to ascend a Wooden Catalyst or Silver Catalyst into the Insanity Catalyst with Blacksmith Ed. It can also be used to purchase the spell Homing Soul Arrow from Sage Freke, the Visionary, the spell Soul Thirst from Yuria the Witch, or the miracle Banish from Saint Urbain.",
+   "source": {
+    "label": "Fextralife – Demon's Souls (boss souls)",
+    "url": "https://demonssouls.wiki.fextralife.com/Demon%27s+Souls",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "gray-demon-soul",
+   "name": "Gray Demon Soul",
+   "type": "Demon Soul",
+   "description": "Boss soul.",
+   "whereToFind": "Island's Edge",
+   "usedFor": "Can be consumed to obtain 1,500 Souls. The Gray Demon Soul can be used to ascend a Battle Axe +6 into the Dozer Axe with Blacksmith Ed.",
+   "source": {
+    "label": "Fextralife – Demon's Souls (boss souls)",
+    "url": "https://demonssouls.wiki.fextralife.com/Demon%27s+Souls",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "hard-demon-soul",
+   "name": "Hard Demon Soul",
+   "type": "Demon Soul",
+   "description": "Boss soul.",
+   "whereToFind": "Smithing Grounds",
+   "usedFor": "Can be consumed to obtain 3,200 Souls. The Hard Demon Soul can be used to ascend a Short Bow +7 into the Lava Bow at Blacksmith Ed. It can also be used to purchase the spell Fire Spray from Sage Freke, the Visionary, or Ignite from Yuria the Witch.",
+   "source": {
+    "label": "Fextralife – Demon's Souls (boss souls)",
+    "url": "https://demonssouls.wiki.fextralife.com/Demon%27s+Souls",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "hero-demon-soul",
+   "name": "Hero Demon Soul",
+   "type": "Demon Soul",
+   "description": "Boss soul.",
+   "whereToFind": "The Ritual Path",
+   "usedFor": "Can be consumed to obtain 36,000 Souls. It can also be used to purchase the miracle Second Chance from Saint Urbain. The Hero Demon Soul can be used to ascend a Claws +8 into the Large Sword of Searching with Blacksmith Ed.",
+   "source": {
+    "label": "Fextralife – Demon's Souls (boss souls)",
+    "url": "https://demonssouls.wiki.fextralife.com/Demon%27s+Souls",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "iron-demon-soul",
+   "name": "Iron Demon Soul",
+   "type": "Demon Soul",
+   "description": "Boss soul.",
+   "whereToFind": "The Lord's Path",
+   "usedFor": "Can be consumed to obtain 4,400 Souls. The Iron Demon Soul can be used to purchase the spell Warding from Sage Freke, the Visionary.",
+   "source": {
+    "label": "Fextralife – Demon's Souls (boss souls)",
+    "url": "https://demonssouls.wiki.fextralife.com/Demon%27s+Souls",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "large-scaled-flame-demon-soul",
+   "name": "Large Scaled Flame Demon Soul",
+   "type": "Demon Soul",
+   "description": "Boss soul.",
+   "whereToFind": "Gates of Boletaria",
+   "usedFor": "Can be consumed to obtain 30,000 Souls.",
+   "source": {
+    "label": "Fextralife – Demon's Souls (boss souls)",
+    "url": "https://demonssouls.wiki.fextralife.com/Demon%27s+Souls",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "lead-demon-soul",
+   "name": "Lead Demon Soul",
+   "type": "Demon Soul",
+   "description": "Boss soul.",
+   "whereToFind": "Gates of Boletaria",
+   "usedFor": "Can be consumed to obtain 1,520 Souls. The Lead Demon Soul can be used to ascend a Short Spear +7 into the Scraping Spear with Blacksmith Ed.",
+   "source": {
+    "label": "Fextralife – Demon's Souls (boss souls)",
+    "url": "https://demonssouls.wiki.fextralife.com/Demon%27s+Souls",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "mixed-demon-soul",
+   "name": "Mixed Demon Soul",
+   "type": "Demon Soul",
+   "description": "Boss soul.",
+   "whereToFind": "Upper Latria",
+   "usedFor": "Can be consumed to obtain 7,600 Souls. The Mixed Demon Soul can be used to ascend a Dagger +7 into the Needle of Eternal Agony at Blacksmith Ed.",
+   "source": {
+    "label": "Fextralife – Demon's Souls (boss souls)",
+    "url": "https://demonssouls.wiki.fextralife.com/Demon%27s+Souls",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "pureblood-demon-soul",
+   "name": "Pureblood Demon Soul",
+   "type": "Demon Soul",
+   "description": "Boss soul.",
+   "whereToFind": "Rotting Haven",
+   "usedFor": "Can be consumed to obtain 48,000 Souls. The Pureblood Demon Soul can be used to ascend a Broken Sword into the Blueblood Sword. It can also be used to purchase the spell Death Cloud from Sage Freke, the Visionary, the spell Relief from Yuria the Witch, or the miracle Resurrection from Saint Urbain.",
+   "source": {
+    "label": "Fextralife – Demon's Souls (boss souls)",
+    "url": "https://demonssouls.wiki.fextralife.com/Demon%27s+Souls",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "searing-demon-soul",
+   "name": "Searing Demon Soul",
+   "type": "Demon Soul",
+   "description": "Boss soul.",
+   "whereToFind": "The Tunnel City",
+   "usedFor": "Can be consumed to obtain 18,000 Souls. The Searing Demon Soul must be given to Blacksmith Ed to enable advanced weapon forging.",
+   "source": {
+    "label": "Fextralife – Demon's Souls (boss souls)",
+    "url": "https://demonssouls.wiki.fextralife.com/Demon%27s+Souls",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "silver-demon-soul",
+   "name": "Silver Demon Soul",
+   "type": "Demon Soul",
+   "description": "Boss soul.",
+   "whereToFind": "Inner Ward",
+   "usedFor": "Can be consumed to obtain 36,000 Souls. The Silver Demon Soul can be used to purchase the spell Light Weapon from Sage Freke, the Visionary, or the spell Curse Weapon from Yuria the Witch.",
+   "source": {
+    "label": "Fextralife – Demon's Souls (boss souls)",
+    "url": "https://demonssouls.wiki.fextralife.com/Demon%27s+Souls",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "small-scaled-flame-demon-soul",
+   "name": "Small Scaled Flame Demon Soul",
+   "type": "Demon Soul",
+   "description": "Boss soul.",
+   "whereToFind": "Gates of Boletaria",
+   "usedFor": "Can be consumed to obtain 10,000 Souls.",
+   "source": {
+    "label": "Fextralife – Demon's Souls (boss souls)",
+    "url": "https://demonssouls.wiki.fextralife.com/Demon%27s+Souls",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "storm-demon-soul",
+   "name": "Storm Demon Soul",
+   "type": "Demon Soul",
+   "description": "Boss soul.",
+   "whereToFind": "Altar of Storms",
+   "usedFor": "Can be consumed to obtain 48,000 Souls. It can also be used to purchase the miracle Anti-Magic Field from Saint Urbain. The Storm Demon Soul can be used to ascend a Short Sword +8 into the Morion Blade with Blacksmith Ed.",
+   "source": {
+    "label": "Fextralife – Demon's Souls (boss souls)",
+    "url": "https://demonssouls.wiki.fextralife.com/Demon%27s+Souls",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "swollen-demon-soul",
+   "name": "Swollen Demon Soul",
+   "type": "Demon Soul",
+   "description": "Boss soul.",
+   "whereToFind": "Island's Edge",
+   "usedFor": "Can be consumed to obtain 13,200 Souls. It can also be used to purchase the miracle Regeneration from Saint Urbain. The Swollen Demon Soul can be used to ascend a Club or Great Club into the Meat Cleaver.",
+   "source": {
+    "label": "Fextralife – Demon's Souls (boss souls)",
+    "url": "https://demonssouls.wiki.fextralife.com/Demon%27s+Souls",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  },
+  {
+   "id": "writhing-demon-soul",
+   "name": "Writhing Demon Soul",
+   "type": "Demon Soul",
+   "description": "Boss soul.",
+   "whereToFind": "Depraved Chasm",
+   "usedFor": "Can be consumed to obtain 6,400 Souls. The Writhing Demon Soul can be used to purchase the spell Poison Cloud from Sage Freke, the Visionary, or the miracle Cure from Saint Urbain.",
+   "source": {
+    "label": "Fextralife – Demon's Souls (boss souls)",
+    "url": "https://demonssouls.wiki.fextralife.com/Demon%27s+Souls",
+    "verifiedVia": "curl-200",
+    "unverified": false
+   }
+  }
+ ],
+ "guides": [
+  {
+   "title": "Fextralife – Upgrades (paths and stones)",
+   "url": "https://demonssouls.wiki.fextralife.com/Upgrades",
+   "source": "Fextralife"
+  },
+  {
+   "title": "Fextralife – Stones (where every stone drops)",
+   "url": "https://demonssouls.wiki.fextralife.com/Stones",
+   "source": "Fextralife"
+  },
+  {
+   "title": "Fextralife – Boss Soul Weapons",
+   "url": "https://demonssouls.wiki.fextralife.com/Boss_Soul_Weapons",
+   "source": "Fextralife"
+  },
+  {
+   "title": "Fextralife – Demon's Souls (boss soul uses)",
+   "url": "https://demonssouls.wiki.fextralife.com/Demon%27s+Souls",
+   "source": "Fextralife"
+  },
+  {
+   "title": "Fextralife – Sparkly the Crow trades",
+   "url": "https://demonssouls.wiki.fextralife.com/Sparkly_the_Crow",
+   "source": "Fextralife"
+  },
+  {
+   "title": "Fextralife – Blacksmith Ed",
+   "url": "https://demonssouls.wiki.fextralife.com/Blacksmith_Ed",
+   "source": "Fextralife"
+  },
+  {
+   "title": "Game8 – How to Upgrade Weapons (PS5)",
+   "url": "https://game8.co/games/demons-souls/archives/306585",
+   "source": "Game8"
+  },
+  {
+   "title": "Game8 – Where to Find Upgrade Stones (PS5)",
+   "url": "https://game8.co/games/demons-souls/archives/311482",
+   "source": "Game8"
+  },
+  {
+   "title": "Samurai Gamers – All Crystal Lizard Locations (remake)",
+   "url": "https://samurai-gamers.com/demons-souls-remake/all-crystal-lizard-locations-and-guide/",
+   "source": "Samurai Gamers"
+  },
+  {
+   "title": "Twinfinite – How to Farm Pure Bladestone",
+   "url": "https://twinfinite.net/guides/demons-souls-pure-bladestone-farm-how/",
+   "source": "Twinfinite"
+  },
+  {
+   "title": "Wikidot – Stone Farming (PS3-era methods)",
+   "url": "https://demonssouls.wikidot.com/stone-farming",
+   "source": "Wikidot"
+  }
+ ]
+}
