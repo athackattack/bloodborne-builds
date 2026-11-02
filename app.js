@@ -166,6 +166,24 @@ function variantBannerNode() {
   return node;
 }
 
+function reforgedCreditNode() {
+  const variant = state.variant;
+  if (!variant || variant.default) return null;
+  const wiki = externalLink("https://err.fandom.com/wiki/ELDEN_RING_Reforged_Wiki");
+  wiki.textContent = "ERR community wiki";
+  const calc = externalLink("https://github.com/mandude/elden-ring-weapon-calculator");
+  calc.textContent = "mandude calculator";
+  const line = el("p");
+  line.append(
+    document.createTextNode("Text adapted from the "),
+    wiki,
+    document.createTextNode(" (CC BY-SA 3.0). Weapon numbers from the "),
+    calc,
+    document.createTextNode(" (MIT).")
+  );
+  return el("div", { class: "about-note" }, [line]);
+}
+
 function variantBuildsNote() {
   const variant = state.variant;
   if (!variant || variant.default || !variant.buildsNote) return null;
@@ -387,12 +405,34 @@ function parseHash() {
       route.view = "weapons";
       route.focus = { kind: "section-about", id: "equipment" };
     } else {
-      const tab = rest[1] === "armor" ? "armor" : "weapons";
+      const tab = rest[1] === "armor" ? "armor" : rest[1] === "talismans" ? "talismans" : "weapons";
       route.view = tab;
-      if (rest[2]) route.focus = { kind: tab === "armor" ? "armor" : "weapon", id: rest.slice(2).join("/") };
+      if (rest[2]) {
+        const kind = tab === "armor" ? "armor" : tab === "talismans" ? "talisman" : "weapon";
+        route.focus = { kind, id: rest.slice(2).join("/") };
+      }
     }
+  } else if (head && extraSectionById(gameId, head)) {
+    route.section = head;
+    route.view = head;
+    if (rest[1] === "about") route.focus = { kind: "section-about", id: head };
+    else if (rest[1]) route.focus = { kind: "system-section", id: rest.slice(1).join("/") };
   }
   return route;
+}
+
+function extraSectionById(gameId, id) {
+  const game = gameById(gameId);
+  if (!game || !id) return null;
+  for (const variant of game.variants || []) {
+    const found = (variant.sections || []).find((section) => section.id === id);
+    if (found) return found;
+  }
+  return null;
+}
+
+function activeExtraSections() {
+  return (state.variant && state.variant.sections) || [];
 }
 
 function hashFor(gameId, view, id) {
@@ -409,7 +449,10 @@ function hashFor(gameId, view, id) {
   if (view === "equip-about") return `${root}/equipment/about`;
   if (view === "weapons") return id ? `${root}/equipment/weapons/${encodeURIComponent(id)}` : `${root}/equipment/weapons`;
   if (view === "armor") return id ? `${root}/equipment/armor/${encodeURIComponent(id)}` : `${root}/equipment/armor`;
+  if (view === "talismans") return id ? `${root}/equipment/talismans/${encodeURIComponent(id)}` : `${root}/equipment/talismans`;
   if (view === "equipment") return `${root}/equipment/weapons`;
+  const extra = extraSectionById(gameId, view);
+  if (extra) return id ? `${root}/${extra.id}/${encodeURIComponent(id)}` : `${root}/${extra.id}`;
   return root;
 }
 
@@ -419,6 +462,8 @@ function sectionFile(game, section) {
   if (section === "map") return game.map || "";
   if (section === "crafting") return (variant && variant.crafting) || game.crafting || "";
   if (section === "equipment") return (variant && variant.equipment) || game.equipment || "";
+  const extra = (variant && variant.sections || []).find((item) => item.id === section);
+  if (extra && extra.file) return extra.file;
   return "";
 }
 
@@ -429,6 +474,8 @@ function scopedHash(gameId, route) {
     if (route.focus.kind === "material") return hashFor(gameId, "craft-material", route.focus.id);
     if (route.focus.kind === "weapon") return hashFor(gameId, "weapons", route.focus.id);
     if (route.focus.kind === "armor") return hashFor(gameId, "armor", route.focus.id);
+    if (route.focus.kind === "talisman") return hashFor(gameId, "talismans", route.focus.id);
+    if (route.focus.kind === "system-section") return hashFor(gameId, route.section, route.focus.id);
     if (route.focus.kind === "section-about") {
       const view = route.focus.id === "equipment" ? "equip-about" : route.focus.id === "map" ? "map-about" : "craft-about";
       return hashFor(gameId, view);
@@ -436,7 +483,11 @@ function scopedHash(gameId, route) {
   }
   if (route.section === "map") return hashFor(gameId, "map");
   if (route.section === "crafting") return hashFor(gameId, "crafting");
-  if (route.section === "equipment") return hashFor(gameId, route.view === "armor" ? "armor" : "weapons");
+  if (route.section === "equipment") {
+    const view = route.view === "armor" ? "armor" : route.view === "talismans" ? "talismans" : "weapons";
+    return hashFor(gameId, view);
+  }
+  if (extraSectionById(gameId, route.section)) return hashFor(gameId, route.section);
   return hashFor(gameId, route.about ? "about" : route.view, route.build);
 }
 
@@ -451,9 +502,15 @@ function sectionCount(section, extra) {
     const n = (extra.items || []).length;
     return `${n} ${n === 1 ? "recipe" : "recipes"}`;
   }
+  if (extraSectionById(state.game && state.game.id, section) || Array.isArray(extra.sections)) {
+    const n = (extra.sections || []).length;
+    const fortunes = extra.meta && extra.meta.counts && extra.meta.counts.fortunes;
+    return fortunes ? `${n} sections · ${fortunes} fortunes` : `${n} ${n === 1 ? "section" : "sections"}`;
+  }
   const weapons = (extra.weapons || []).length;
   const sets = (extra.armorSets || []).length;
-  return `${weapons} weapons · ${sets} sets`;
+  const talismans = (extra.talismans || []).length;
+  return talismans ? `${weapons} weapons · ${sets} sets · ${talismans} talismans` : `${weapons} weapons · ${sets} sets`;
 }
 
 function setHash(hash) {
@@ -480,7 +537,10 @@ function leaveSheet() {
   let next;
   if (route.section === "map") next = hashFor(route.gameId, "map");
   else if (route.section === "crafting") next = hashFor(route.gameId, "crafting");
-  else if (route.section === "equipment") next = hashFor(route.gameId, route.view === "armor" ? "armor" : "weapons");
+  else if (route.section === "equipment") {
+    const view = route.view === "armor" ? "armor" : route.view === "talismans" ? "talismans" : "weapons";
+    next = hashFor(route.gameId, view);
+  } else if (extraSectionById(route.gameId, route.section)) next = hashFor(route.gameId, route.section);
   else next = hashFor(route.gameId, route.view === "guides" ? "guides" : "tiers");
   history.replaceState({ bb: true }, "", `${location.pathname}${location.search}#${next}`);
   render();
@@ -557,7 +617,8 @@ function renderSectionNav(route) {
     ["builds", "Builds", true],
     ["map", "Map", Boolean(game.map)],
     ["crafting", "Crafting", Boolean(game.crafting)],
-    ["equipment", "Equipment", Boolean(game.equipment)]
+    ["equipment", "Equipment", Boolean(game.equipment)],
+    ...activeExtraSections().filter((section) => section && section.id).map((section) => [section.id, section.label || section.id, true])
   ].filter((item) => item[2]);
   nav.replaceChildren(
     ...items.map(([id, label]) =>
@@ -841,6 +902,7 @@ function renderAbout() {
   const guideCount = (state.data.guides || []).length;
   return el("article", {}, [
     variantBannerNode(),
+    reforgedCreditNode(),
     el("p", { class: "sheet-kicker", text: kicker }),
     el("h2", { id: "sheet-title", text: meta.title || state.game.name }),
     el("p", {
@@ -946,9 +1008,12 @@ async function render() {
   document.querySelector(".tabs").hidden = !onBuilds;
   document.getElementById("panel-tiers").hidden = !onBuilds || onGuides;
   document.getElementById("panel-guides").hidden = !onGuides;
+  const onExtra = Boolean(extraSectionById(game.id, route.section));
   document.getElementById("panel-map").hidden = route.section !== "map";
   document.getElementById("panel-crafting").hidden = route.section !== "crafting";
   document.getElementById("panel-equipment").hidden = route.section !== "equipment";
+  const extraPanel = document.getElementById("panel-extra");
+  if (extraPanel) extraPanel.hidden = !onExtra;
   document.getElementById("tab-tiers").setAttribute("aria-selected", onGuides ? "false" : "true");
   document.getElementById("tab-guides").setAttribute("aria-selected", onGuides ? "true" : "false");
   renderGameTabs();
@@ -974,7 +1039,7 @@ async function render() {
     renderGuides();
   } else {
     const path = sectionFile(game, route.section);
-    const panel = document.getElementById(`panel-${route.section}`);
+    const panel = document.getElementById(onExtra ? "panel-extra" : `panel-${route.section}`);
     try {
       state.extra = await loadExtra(path);
     } catch (error) {
@@ -991,6 +1056,12 @@ async function render() {
     document.getElementById("colophon").textContent = sample
       ? `${game.name}${variantBit} · sample ${route.section} entries.`
       : `${game.name}${variantBit} · ${route.section}.`;
+    if (route.section === "equipment" && route.view === "talismans" && state.extra && !(state.extra.talismans || []).length) {
+      route.view = "weapons";
+      route.focus = null;
+      const back = `#${hashFor(game.id, "weapons")}`;
+      if (location.hash !== back) history.replaceState(history.state || { bb: true }, "", `${location.pathname}${location.search}${back}`);
+    }
     if (state.extra && typeof SoulsSections !== "undefined") {
       SoulsSections.render({ section: route.section, extra: state.extra, route });
     }
@@ -1075,7 +1146,8 @@ function bind() {
     const button = event.target.closest("[data-section]");
     if (!button || !state.game) return;
     const id = button.dataset.section;
-    if (id === "map") setHash(hashFor(state.game.id, "map"));
+    if (activeExtraSections().some((section) => section.id === id)) setHash(hashFor(state.game.id, id));
+    else if (id === "map") setHash(hashFor(state.game.id, "map"));
     else if (id === "crafting") setHash(hashFor(state.game.id, "crafting"));
     else if (id === "equipment") setHash(hashFor(state.game.id, "weapons"));
     else setHash(hashFor(state.game.id, "tiers"));

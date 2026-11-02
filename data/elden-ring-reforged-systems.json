@@ -1,0 +1,2066 @@
+{
+  "meta": {
+    "generatedDate": "2026-11-02",
+    "game": "ELDEN RING Reforged (mod)",
+    "dataVersion": "ERR 2.3.5.3 (mandude calculator regulation data) + ERR community wiki revisions up to 2026-11-01",
+    "targetVersion": "ERR 2.3.8.1 / Elden Ring 1.17.2",
+    "caveat": "Public machine-readable ERR data stops at roughly 2.3.5.3-2.3.7.1; the mod is at 2.3.8.1 (Nexus, updated 30 Oct 2026). Numbers may have shifted in later patches. Treat values as close, not exact, and check in game.",
+    "license": "Text from the ELDEN RING Reforged community wiki (err.fandom.com) is CC BY-SA 3.0; attribute and share alike. Weapon numbers come from mandude/elden-ring-weapon-calculator (MIT). No ERR icons, images or other mod assets are included (the Nexus page forbids asset reuse).",
+    "mode": "reforged",
+    "notes": "ERR-only systems (Fortunes, Affinities, Runeforging, stats, upgrading, difficulty, Spirit Fury, new bosses/areas, misc) summarized from the ERR wiki.",
+    "fortunesEffectsFilledFromPages": [
+      "Fortune of the Assassin",
+      "Fortune of the Barbarian",
+      "Fortune of the Cleric",
+      "Fortune of the Dancer",
+      "Fortune of the Heretic",
+      "Fortune of the Ranger",
+      "Fortune of the Sage",
+      "Fortune of the Sentinel",
+      "Fortune of the Sorcerer",
+      "Fortune of the Spellsword",
+      "Fortune of the Veteran",
+      "Fortune of the Brave",
+      "Fortune of the Bulwark",
+      "Fortune of Haima",
+      "Fortune of the Spiritcaller",
+      "Fortune of the Warmaster"
+    ],
+    "counts": {
+      "sections": 10,
+      "fortunes": 28
+    }
+  },
+  "sections": [
+    {
+      "id": "fortunes",
+      "title": "Fortunes",
+      "summary": "Fortunes are a new set of items that each add unique mechanics which enhance and reward specific playstyles. Each Fortune comes with buffs, drawbacks, and some unique effects.\nA Tarnished may have one Major Fortune and one Minor Fortune active at a time.\n\n=== Martyr Saint Shrines ===\nMartyr Saint Shrines are new points of interest placed around the world, representing an oracle Martyr.\nWhen interacted with, they will grant an Oracle's Remedy.\nShrines are indicated by very bright, multicolored flowers. When these are present, a shrine is sure to be nearby.\n=== Oracle Effigy ===\nThe first Martyr Saint Shrine interacted with will grant the Tarnished the Oracle Effigy, allowing them to choose a Fortune from the list they have divined. The statue will also grant the Tarnished the three Basic Fortunes.\nAll Fortunes other than Basic must be either found by exploring the world, by defeating certain powerful enemies, or by unlocking them with an Oracle's Remedy at a Site of Grace.\n=== Oracle's Remedy ===\nOracle's Remedies can be found at Martyr Saint Shrines. \nOracle's Remedies allow the Tarnished to unlock a Common Fortune when resting at any Site of Grace, by accessing the Fortunes menu and then selecting a Common Fortune from the list. When you select a chosen Common Fortune, you will be given a preview of its features before being asked if you wish to unlock it. If you proceed to unlock it, this will use one Oracle's Remedy. \nThere are more Oracle's Remedies in the world than there are Common Fortunes.\n=== Minor Fortunes ===\nAfter defeating Royal Guardian Helicos in Leyndell, the Tarnished will receive the Phantasmal Effigy. This allows you to equip a Minor version of a Fortune at any Site of Grace.\nMinor Fortunes can be equipped a",
+      "items": [
+        {
+          "name": "Martyr Saint Shrines",
+          "description": "Martyr Saint Shrines are new points of interest placed around the world, representing an oracle Martyr.\nWhen interacted with, they will grant an Oracle's Remedy.\nShrines are indicated by very bright, multicolored flowers. When these are present, a shrine is sure to be nearby.",
+          "source": {
+            "label": "ERR wiki - Fortunes § Martyr Saint Shrines",
+            "url": "https://err.fandom.com/wiki/Fortunes#Martyr_Saint_Shrines",
+            "wikiRevision": "2026-02-21T14:07:01Z",
+            "verifiedVia": "Fandom API query 2026-11-02: page exists"
+          }
+        },
+        {
+          "name": "Oracle Effigy",
+          "description": "The first Martyr Saint Shrine interacted with will grant the Tarnished the Oracle Effigy, allowing them to choose a Fortune from the list they have divined. The statue will also grant the Tarnished the three Basic Fortunes.\nAll Fortunes other than Basic must be either found by exploring the world, by defeating certain powerful enemies, or by unlocking them with an Oracle's Remedy at a Site of Grace.",
+          "source": {
+            "label": "ERR wiki - Fortunes § Oracle Effigy",
+            "url": "https://err.fandom.com/wiki/Fortunes#Oracle_Effigy",
+            "wikiRevision": "2026-02-21T14:07:01Z",
+            "verifiedVia": "Fandom API query 2026-11-02: page exists"
+          }
+        },
+        {
+          "name": "Oracle's Remedy",
+          "description": "Oracle's Remedies can be found at Martyr Saint Shrines. \nOracle's Remedies allow the Tarnished to unlock a Common Fortune when resting at any Site of Grace, by accessing the Fortunes menu and then selecting a Common Fortune from the list. When you select a chosen Common Fortune, you will be given a preview of its features before being asked if you wish to unlock it. If you proceed to unlock it, this will use one Oracle's Remedy. \nThere are more Oracle's Remedies in the world than there are Common Fortunes.",
+          "source": {
+            "label": "ERR wiki - Fortunes § Oracle's Remedy",
+            "url": "https://err.fandom.com/wiki/Fortunes#Oracle's_Remedy",
+            "wikiRevision": "2026-02-21T14:07:01Z",
+            "verifiedVia": "Fandom API query 2026-11-02: page exists"
+          }
+        },
+        {
+          "name": "Minor Fortunes",
+          "description": "After defeating Royal Guardian Helicos in Leyndell, the Tarnished will receive the Phantasmal Effigy. This allows you to equip a Minor version of a Fortune at any Site of Grace.\nMinor Fortunes can be equipped alongside your current Fortune. Minor Fortunes provide a weaker and more limited effect than the original Fortune, but do not have downsides. However, the selected Minor Fortune must not be the same as your current Fortune. For example, if you equip the Fortune of the Assassin, you can equip any Fortune you have alongside it as a Minor Fortune, except for the Fortune of the Assassin.",
+          "source": {
+            "label": "ERR wiki - Fortunes § Minor Fortunes",
+            "url": "https://err.fandom.com/wiki/Fortunes#Minor_Fortunes",
+            "wikiRevision": "2026-02-21T14:07:01Z",
+            "verifiedVia": "Fandom API query 2026-11-02: page exists"
+          }
+        },
+        {
+          "name": "Fortune of the Bold",
+          "description": "The aspect of an ordinary Tarnished warrior, using melee weapons to defeat foes.",
+          "tier": "Basic",
+          "effects": "▲ Increases maximum HP (+5% [x1.05] max HP)\n▲ Slightly increases melee attack power (+2.5% [x1.025] attack power of melee attacks)\n▲ Slightly increases guarding effectiveness (-2.5% [x0.975] stamina cost of blocks)\n▼ Slightly decreases FP (-6% [x0.94] max FP)",
+          "minorEffects": "Basic Fortunes cannot be used as Minor Fortunes.",
+          "acquisition": "Fortune of the Bold is acquired automatically with the Oracle's Effigy.",
+          "source": {
+            "label": "ERR wiki - Fortune of the Bold",
+            "url": "https://err.fandom.com/wiki/Fortune_of_the_Bold",
+            "wikiRevision": "2026-09-17T14:44:46Z",
+            "verifiedVia": "Fandom API query 2026-11-02: page exists"
+          }
+        },
+        {
+          "name": "Fortune of the Cunning",
+          "description": "The aspect of an ordinary Tarnished marksman, using ranged weapons and thrown items to defeat foes.",
+          "tier": "Basic",
+          "effects": "▲ Increases maximum stamina (+10% [x1.1] max stamina)\n▲ Slightly increases bow, crossbow and consumable item attack power (+3.5% [x1.035] attack power of arrows, bolts and consumable items)\n▲ Slightly increases the duration of buffs (+10% [x1.1] buff duration)\n▼ Slightly decreases HP (-5.5% [x0.945] max HP)",
+          "minorEffects": "Basic Fortunes cannot be used as Minor Fortunes.",
+          "acquisition": "Fortune of the Cunning is acquired automatically with the Oracle's Effigy.",
+          "source": {
+            "label": "ERR wiki - Fortune of the Cunning",
+            "url": "https://err.fandom.com/wiki/Fortune_of_the_Cunning",
+            "wikiRevision": "2026-09-17T14:41:49Z",
+            "verifiedVia": "Fandom API query 2026-11-02: page exists"
+          }
+        },
+        {
+          "name": "Fortune of the Wise",
+          "description": "The aspect of an ordinary Tarnished scholar, using sorceries and incantations to defeat foes.",
+          "tier": "Basic",
+          "effects": "▲ Increases maximum FP (+7.5% max FP)\n▲ Slightly increases spell and catalyst attack power (+3% attack power of spells and catalyst heavy attacks)\n▲ Slightly increases memory slots (+1 memoryslot)\n▼ Slightly decreases stamina (-6.5% max stamina)",
+          "minorEffects": "Basic Fortunes cannot be used as Minor Fortunes.",
+          "acquisition": "Fortune of the Wise is acquired automatically with the Oracle's Effigy.",
+          "source": {
+            "label": "ERR wiki - Fortune of the Wise",
+            "url": "https://err.fandom.com/wiki/Fortune_of_the_Wise",
+            "wikiRevision": "2026-09-18T11:57:21Z",
+            "verifiedVia": "Fandom API query 2026-11-02: page exists"
+          }
+        },
+        {
+          "name": "Fortune of the Adherent",
+          "description": "The aspect of a pious supplicant who commits to routing unbelievers with one incantation school at a time.",
+          "tier": "Common",
+          "effects": "▲ Slightly increases faith (+2 Faith)\n▲ Slightly increases memory slots (+1 memoryslot)\n▼ Slightly decreases elemental negation (+5% [x1.05] elemental damage received)\n▼ Decreases poise (-8 poise)",
+          "minorEffects": ": When casting a support incantation: / ::⮝ Slightly increases cast speed for a time | :   / ::+75 cast speed for 60 seconds",
+          "acquisition": "The Fortune of the Adherent can be unlocked at any Site of Grace by accessing the Fortunes menu and using an Oracle's Remedy.",
+          "source": {
+            "label": "ERR wiki - Fortune of the Adherent",
+            "url": "https://err.fandom.com/wiki/Fortune_of_the_Adherent",
+            "wikiRevision": "2026-09-18T23:43:10Z",
+            "verifiedVia": "Fandom API query 2026-11-02: page exists"
+          }
+        },
+        {
+          "name": "Fortune of the Apothecary",
+          "description": "The aspect of a proficient craftsman who pelts their foes with consumables and crossbow bolts.",
+          "tier": "Common",
+          "effects": "▲ Increases arcane (+3 Arcane)\n▲ Decreases the FP cost of consumables (-10% FP cost of consumable items)\n▼ Slightly increases the stamina consumption of attacks (+5% stamina cost of attacks)\n▼ Slightly decreases the effectiveness of blocking (+10% stamina cost of blocking)",
+          "minorEffects": "• Landing attacks with weapons, crossbows, elemental stone items and reusable tools:\n• Builds a buff that greatly increases the damage of the next pot or aromatic used\n• Using a pot or aromatic consumes the buff and applies:\n:: +25% attack power of pot or aromatic used\n:: +15% attack power of hefty pot used\n• Low-damage and status pots/aromatics (such as Rot Pot or Poison Spraymist) do NOT consume the buff \n• The buff accumulates from landing various attack types:\n• +45 from a crossbow shot\n• +120 from a ballista shot\n• +60 from an elemental stone item\n• +60 from a reusable tool\n• Weapon attacks grant varying points, dependent upon the weapon category \n• The buff requires 333 points accumulated, and only a single buff can be stored with a maximum 345 points accumulable at one time.",
+          "acquisition": "The Fortune of the Apothecary can be unlocked at any Site of Grace by accessing the Fortunes menu and using an Oracle's Remedy.",
+          "source": {
+            "label": "ERR wiki - Fortune of the Apothecary",
+            "url": "https://err.fandom.com/wiki/Fortune_of_the_Apothecary",
+            "wikiRevision": "2026-09-19T12:45:00Z",
+            "verifiedVia": "Fandom API query 2026-11-02: page exists"
+          }
+        },
+        {
+          "name": "Fortune of the Assassin",
+          "description": "The aspect of a resourceful combatant focused on breaking enemy stances with quick blows.",
+          "tier": "Common",
+          "effects": "• +25 spregen\n• -0.025 target priority\n• +50% poise damage of consumable throwing knives (Bone/Crystal/Poisonbone Darts, Fan/Throwing Daggers, Kukris)\n• +20% poise damage of chakrams\n• +5% poise damage dealt\n• When wielding a Light Weapon, deals additional flat poise damage based on the weapon\n• Light weapons consist of the following : Axes / Backhand Blades / Beast Claws / Claws / Curved Swords / Daggers / Fists / Flails / Hammers / Hand-to-Hand / Katanas / Perfume Bottles / Spears / Straight Swords / Throwing Blades / Thrusting Swords / Twinblades / Whips\n• -9% max HP\n• -18% alldefense\n• -25% FP restoration from Flasks\n• +9% status buildup received",
+          "minorEffects": "When dealing a critical attack:\n• Greatly restores stamina\n• Slightly restores HP and FP\n• When dealing a critical attack:\n• 2.5% max HP + 50 restoration\n• 4% max FP + 20 restoration\n• 12% max stamina + 180 restoration",
+          "acquisition": "The Fortune of the Assassin can be unlocked at any Site of Grace in the Fortunes menu by using an Oracle's Remedy.",
+          "source": {
+            "label": "ERR wiki - Fortune of the Assassin",
+            "url": "https://err.fandom.com/wiki/Fortune_of_the_Assassin",
+            "wikiRevision": "2026-09-23T06:10:14Z",
+            "verifiedVia": "Fandom API query 2026-11-02: page exists"
+          },
+          "effectsNote": "Filled from the fortune's own ERR wiki page (EFFECTS list); the Fortunes overview table wasn't machine-parsed. Terms like 'spregen' are the wiki's internal stat names."
+        },
+        {
+          "name": "Fortune of the Barbarian",
+          "description": "The aspect of a savage warrior who endures pain to satisfy their bloodlust.",
+          "tier": "Common",
+          "effects": "• +15% max stamina\n• +0.025 target priority\n• +15 poise\n• -15% max FP\n• -15% equipload\n• x0.957 pierceattackpower of Counterattacks\n• This cancels out their naturally increased counterdamage, making them equal to other damage sources.\n• +11% damage taken from bloodloss\n• +50% damage taken from frostbite\n• +25% damage taken from madness\n• +100% damage taken from sleep\n• 0.2% max HP/s additional damage taken from poison\n• 0.4% max HP/s additional damage taken from scarletrot",
+          "minorEffects": "Nullifies most counter damage received\n• While vulnerable to counter damage:\n• x0.92 (x0.96 in PvP) damage taken",
+          "acquisition": "The Fortune of the Barbarian can be unlocked at any Site of Grace in the Fortunes menu by using an Oracle's Remedy.",
+          "source": {
+            "label": "ERR wiki - Fortune of the Barbarian",
+            "url": "https://err.fandom.com/wiki/Fortune_of_the_Barbarian",
+            "wikiRevision": "2026-09-29T17:59:20Z",
+            "verifiedVia": "Fandom API query 2026-11-02: page exists"
+          },
+          "effectsNote": "Filled from the fortune's own ERR wiki page (EFFECTS list); the Fortunes overview table wasn't machine-parsed. Terms like 'spregen' are the wiki's internal stat names."
+        },
+        {
+          "name": "Fortune of the Cleric",
+          "description": "The aspect of a devout servant of the powers that be, ready to aid with supportive and healing incantations.",
+          "tier": "Common",
+          "effects": "• +10% max HP\n• +2 memoryslot\n• -5% FP cost of incantations\n• -10% max stamina\n• +10% FP cost of skills and sorceries\n• -5% damage dealt with weapons",
+          "minorEffects": "Increases HP and FP restoration from flasks for self and nearby allies\n• +8% HP restoration from flasks for self and nearby allies\n• +4% FP restoration from flasks for self and nearby allies",
+          "acquisition": "The Fortune of the Cleric can be unlocked at any Site of Grace in the Fortunes menu by using an Oracle's Remedy.",
+          "source": {
+            "label": "ERR wiki - Fortune of the Cleric",
+            "url": "https://err.fandom.com/wiki/Fortune_of_the_Cleric",
+            "wikiRevision": "2026-09-30T23:44:08Z",
+            "verifiedVia": "Fandom API query 2026-11-02: page exists"
+          },
+          "effectsNote": "Filled from the fortune's own ERR wiki page (EFFECTS list); the Fortunes overview table wasn't machine-parsed. Terms like 'spregen' are the wiki's internal stat names."
+        },
+        {
+          "name": "Fortune of the Dancer",
+          "description": "The aspect of a skilled fighter who thrives when deflecting blows with precision and employing weapon skills.",
+          "tier": "Common",
+          "effects": "• -25% FP cost of skills\n• -5% stamina cost of attacks\n• -25% max FP\n• -5% damage of unboosted attacks\n• x1.1 stamina cost of blocks with light shields\n• x1.3 stamina cost of blocks with medium shields\n• x1.5 stamina cost of blocks with greatshields\n• x1.3 stamina cost of blocks with thrusting shields",
+          "minorEffects": "Performing a deflect restores a small amount of stamina\nPerforming a perfect deflect slightly increases attack power for a time\n• 0.5% + 3 stamina restoration upon performing a deflect\n• x1.05 damage for 4 seconds upon performing a perfect deflect",
+          "acquisition": "The Fortune of the Dancer can be unlocked at any Site of Grace in the Fortunes menu by using an Oracle's Remedy.",
+          "source": {
+            "label": "ERR wiki - Fortune of the Dancer",
+            "url": "https://err.fandom.com/wiki/Fortune_of_the_Dancer",
+            "wikiRevision": "2026-09-30T23:41:14Z",
+            "verifiedVia": "Fandom API query 2026-11-02: page exists"
+          },
+          "effectsNote": "Filled from the fortune's own ERR wiki page (EFFECTS list); the Fortunes overview table wasn't machine-parsed. Terms like 'spregen' are the wiki's internal stat names."
+        },
+        {
+          "name": "Fortune of the Heretic",
+          "description": "The aspect of an acolyte of greater powers seeking to weaken and afflict their foes.",
+          "tier": "Common",
+          "effects": "• x1.05 Status Buildup\n• +1 memoryslot\n• -3 Vigor\n• x0.8 innatestatusresistance\n• x0.95 runegain",
+          "minorEffects": "In the presence of any status effect:\n• Slightly increases stamina recovery\n• This effect is applied separately for each type of status effect\n• In the presence of any status effect:\n• +25 spregen\n• This effect is applied separately for each type of status effect and lasts 90 seconds",
+          "acquisition": "The Fortune of the Heretic can be unlocked at any Site of Grace in the Fortunes menu by using an Oracle's Remedy.",
+          "source": {
+            "label": "ERR wiki - Fortune of the Heretic",
+            "url": "https://err.fandom.com/wiki/Fortune_of_the_Heretic",
+            "wikiRevision": "2026-10-17T11:16:21Z",
+            "verifiedVia": "Fandom API query 2026-11-02: page exists"
+          },
+          "effectsNote": "Filled from the fortune's own ERR wiki page (EFFECTS list); the Fortunes overview table wasn't machine-parsed. Terms like 'spregen' are the wiki's internal stat names."
+        },
+        {
+          "name": "Fortune of the Ranger",
+          "description": "The aspect of a trained archer, able to last in strenuous circumstances.",
+          "tier": "Common",
+          "effects": "• +40 item discovery\n• x1.15 buff duration\n• x0.94 status buildup received\n• x1.1 movementspeed when wielding bows\n• x0.9 HP restoration from flasks\n• x0.9 FP restoration from flasks\n• x0.9 poise damage",
+          "minorEffects": "Landing attacks with weapons and bows:\n• Decreases the stamina consumption of successive attacks\n• This effect is increased for stronger attacks and stacks\n• Landing an attack with a weapon or bow grants a 5-second buff that decreases stamina cost of successive attacks based on strength of the hit, ranging from x0.995 to x0.95 stamina cost. Each buff can stack with itself as well as buffs of a different tier.",
+          "acquisition": "The Fortune of the Ranger can be unlocked at any Site of Grace in the Fortunes menu by using an Oracle's Remedy.",
+          "source": {
+            "label": "ERR wiki - Fortune of the Ranger",
+            "url": "https://err.fandom.com/wiki/Fortune_of_the_Ranger",
+            "wikiRevision": "2026-09-30T23:52:29Z",
+            "verifiedVia": "Fandom API query 2026-11-02: page exists"
+          },
+          "effectsNote": "Filled from the fortune's own ERR wiki page (EFFECTS list); the Fortunes overview table wasn't machine-parsed. Terms like 'spregen' are the wiki's internal stat names."
+        },
+        {
+          "name": "Fortune of the Sage",
+          "description": "The aspect of a wayward mage dealing in hidden arts, striking with unconventional spells.",
+          "tier": "Common",
+          "effects": "• x1.1 max FP\n• +2 memoryslot\n• -1 Vigor\n• x1.12 physicaldamage taken\n• x1.1 FP cost of skills and consumables\n• x0.9 physical attack power of weapons",
+          "minorEffects": "Slightly increases the natural FP regeneration gained when casting a spell\n• This effect is increased based on memory slot cost\nGrants natural stamina regeneration when casting a spell\n• This effect is increased based on memory slot cost\n+Casting a spell grants FP (on top of the natural FP restoration) and stamina restoration based on memory slot cost | memoryslot cost | 0 | 1 | 2 | 3\nmax FP restoration | 0 | 7 + 0.14% | 7 + 0.35% | 7 + 0.7%\nstamina restoration | 0 | 7 + 0.7% | 7 + 2.1% | 7 + 4.2%",
+          "acquisition": "The Fortune of the Sage can be unlocked at any Site of Grace in the Fortunes menu by using an Oracle's Remedy.",
+          "source": {
+            "label": "ERR wiki - Fortune of the Sage",
+            "url": "https://err.fandom.com/wiki/Fortune_of_the_Sage",
+            "wikiRevision": "2026-09-30T23:52:38Z",
+            "verifiedVia": "Fandom API query 2026-11-02: page exists"
+          },
+          "effectsNote": "Filled from the fortune's own ERR wiki page (EFFECTS list); the Fortunes overview table wasn't machine-parsed. Terms like 'spregen' are the wiki's internal stat names."
+        },
+        {
+          "name": "Fortune of the Sentinel",
+          "description": "The aspect of a holy warrior who invokes divine power from the safety of their heavy armor and shield.",
+          "tier": "Common",
+          "effects": "• x1.04 equipload\n• x1.1 + 10 elementaldefense\n• x1.05 attack power of spells\n• x1.05 poise\n• x0.9 stamina cost of blocks with shields\n• -3 Arcane\n• -20 spregen\n• x0.9 movementspeed while in combat",
+          "minorEffects": "Blocking attacks and taking damage slightly restores FP\n• 0.3% max FP + 3 restoration upon blocking an attack\n• Deflects count as blocks\n• 0.6% max FP + 6 restoration upon taking damage",
+          "acquisition": "The Fortune of the Sentinel can be unlocked at any Site of Grace in the Fortunes menu by using an Oracle's Remedy.",
+          "source": {
+            "label": "ERR wiki - Fortune of the Sentinel",
+            "url": "https://err.fandom.com/wiki/Fortune_of_the_Sentinel",
+            "wikiRevision": "2026-09-30T23:52:48Z",
+            "verifiedVia": "Fandom API query 2026-11-02: page exists"
+          },
+          "effectsNote": "Filled from the fortune's own ERR wiki page (EFFECTS list); the Fortunes overview table wasn't machine-parsed. Terms like 'spregen' are the wiki's internal stat names."
+        },
+        {
+          "name": "Fortune of the Sorcerer",
+          "description": "The aspect of a learned practitioner of the magical arts who can quickly unleash a barrage of sorceries.",
+          "tier": "Common",
+          "effects": "• x0.9 FP cost of sorceries\n• +1 memoryslot\n• x0.83 poise\n• x0.95 max stamina\n• x0.8 buff duration",
+          "minorEffects": "Casting a sorcery grants these incrementing effects:\n• Briefly slightly increases cast speed\n• Briefly decreases FP cost of sorceries\n• Casting a sorcery grants for 5 seconds:\n• +20 cast speed\n• x0.975 FP cost of sorceries\n• This effect can be stacked",
+          "acquisition": "The Fortune of the Sorcerer can be unlocked at any Site of Grace in the Fortunes menu by using an Oracle's Remedy.",
+          "source": {
+            "label": "ERR wiki - Fortune of the Sorcerer",
+            "url": "https://err.fandom.com/wiki/Fortune_of_the_Sorcerer",
+            "wikiRevision": "2026-09-30T23:53:18Z",
+            "verifiedVia": "Fandom API query 2026-11-02: page exists"
+          },
+          "effectsNote": "Filled from the fortune's own ERR wiki page (EFFECTS list); the Fortunes overview table wasn't machine-parsed. Terms like 'spregen' are the wiki's internal stat names."
+        },
+        {
+          "name": "Fortune of the Spellsword",
+          "description": "The aspect of a wielder of magics and weapons who alternates between magical and physical combat.",
+          "tier": "Common",
+          "effects": "• +6 Mind\n• +50 cast speed\n• x0.65 HP restoration from non-flask sources\n• x1.1 status buildup received\n• x0.92 attack power of unboosted attacks",
+          "minorEffects": "• Casting spells increases melee attack power\n• Landing melee attacks increases spell attack power\nThese effects begin to expire upon landing a melee attack or casting a spell\nGenerator spells do not build or consume these effects\n• Casting spells grants the following effects:\n• x1.08 attack power of melee attacks\n• x0.96 FP cost of skills\n• Generator spells do not build the effect\n• Landing melee attacks grants the following effects:\n• x1.08 attack power of spells\n• x0.98 FP cost of spells\n• Generator spells do not consume the effect\n• These buffs operate independently and can be active simultaneously\n• Once a melee attack is landed or a spell is cast, the corresponding buff will disappear after 12 seconds and its duration cannot be extended or refreshed",
+          "acquisition": "The Fortune of the Spellsword can be unlocked at any Site of Grace in the Fortunes menu by using an Oracle's Remedy.",
+          "source": {
+            "label": "ERR wiki - Fortune of the Spellsword",
+            "url": "https://err.fandom.com/wiki/Fortune_of_the_Spellsword",
+            "wikiRevision": "2026-09-30T23:53:28Z",
+            "verifiedVia": "Fandom API query 2026-11-02: page exists"
+          },
+          "effectsNote": "Filled from the fortune's own ERR wiki page (EFFECTS list); the Fortunes overview table wasn't machine-parsed. Terms like 'spregen' are the wiki's internal stat names."
+        },
+        {
+          "name": "Fortune of the Veteran",
+          "description": "The aspect of a seasoned old hand, employing lost battle arts to bolster their melee combat.",
+          "tier": "Common",
+          "effects": "• x1.02 max HP\n• x1.04 max stamina\n• x1.03 max FP\n• x0.9 stamina cost of of attacks when using a variety of different weapon attack types\n• x0.8 damage dealt with backstabs\n• x0.9 status buildup dealt\n• x1.08 FP cost of spells, items and skills",
+          "minorEffects": "Slightly increases the attack power of weapon skills\nx1.06 attack power of skills",
+          "acquisition": "The Fortune of the Veteran can be unlocked at any Site of Grace in the Fortunes menu by using an Oracle's Remedy.",
+          "source": {
+            "label": "ERR wiki - Fortune of the Veteran",
+            "url": "https://err.fandom.com/wiki/Fortune_of_the_Veteran",
+            "wikiRevision": "2026-10-01T00:29:29Z",
+            "verifiedVia": "Fandom API query 2026-11-02: page exists"
+          },
+          "effectsNote": "Filled from the fortune's own ERR wiki page (EFFECTS list); the Fortunes overview table wasn't machine-parsed. Terms like 'spregen' are the wiki's internal stat names."
+        },
+        {
+          "name": "Fortune of the Brave",
+          "description": "The aspect of a rough warrior from the frigid highlands who endures pain to return devastating charged attacks.",
+          "tier": "Rare",
+          "effects": "• +2 Vigor\n• +2 Endurance\n• x1.05 attack power of roar arts and stomp attacks\n• Decreases poise at higher equip loads, up to x1.49 poise damage Taken\n• x0.8 guardboost\n• -150 cast speed",
+          "minorEffects": "While charging attacks:\n• x0.85 taken\n• x0.85 received",
+          "acquisition": "The Fortune of the Brave can be obtained by defeating a Kaiden Sellsword found in the Capital Outskirts, north of the Draconic Tree Sentinel. Capital Rampart is the nearest Site of Grace. \nPlayer Icon indicates location of fortune.",
+          "source": {
+            "label": "ERR wiki - Fortune of the Brave",
+            "url": "https://err.fandom.com/wiki/Fortune_of_the_Brave",
+            "wikiRevision": "2026-09-30T13:15:20Z",
+            "verifiedVia": "Fandom API query 2026-11-02: page exists"
+          },
+          "effectsNote": "Filled from the fortune's own ERR wiki page (EFFECTS list); the Fortunes overview table wasn't machine-parsed. Terms like 'spregen' are the wiki's internal stat names."
+        },
+        {
+          "name": "Fortune of the Bulwark",
+          "description": "The aspect of a pillar of defense, standing firm as foes break themselves against their body.",
+          "tier": "Rare",
+          "effects": "• +6 Endurance\n• +0.15 target priority\n• x1.25 guardboost of Colossal Swords\n• x1.225 guardboost of Colossal Weapons\n• x1.45 guardboost of Curved Greatswords\n• x1.35 guardboost of Greataxes\n• x1.35 guardboost of Great Hammers\n• x1.375 guardboost of Great Katanas\n• x1.05 guardboost of Greatshields\n• x1.375 guardboost of Great Spears\n• x1.425 guardboost of Greatswords\n• x1.15 guardboost of Thrusting Shields\n• x1.45 guardboost of Halberds\n• x1.5 guardboost of Heavy Thrusting Swords\n• Always at Massive Frame\n• x0.95 damage dealt\n• x1.25 FP cost of spells",
+          "minorEffects": "Increases non-deflect guarding effectiveness\n• x0.85 stamina cost of blocks when not deflecting",
+          "acquisition": "Defeat the lone Godrick Knight in a small camp at the edge of a cliff south-west of the Ailing Village (Weeping Peninsula).",
+          "source": {
+            "label": "ERR wiki - Fortune of the Bulwark",
+            "url": "https://err.fandom.com/wiki/Fortune_of_the_Bulwark",
+            "wikiRevision": "2026-10-30T03:11:15Z",
+            "verifiedVia": "Fandom API query 2026-11-02: page exists"
+          },
+          "effectsNote": "Filled from the fortune's own ERR wiki page (EFFECTS list); the Fortunes overview table wasn't machine-parsed. Terms like 'spregen' are the wiki's internal stat names."
+        },
+        {
+          "name": "Fortune of the Godslayers",
+          "description": "The aspect of an avenger of the Gloam-Eyed Queen, wielding black flame with a one-handed weapon.",
+          "tier": "Rare",
+          "effects": "=\n• x0.9 FP cost of skills\n• +2 Dexterity\n• x0.75 HP restoration from flasks\n• This effect is disabled for the next Crimson Flask if in the presence of an enemy afflicted by Black Flame for 6 seconds.\n• x0.93 attack power of two-handed attacks\n• x0.87 attack power of powerstanced attack\n• x1.05 damage taken while not in the presence of Black Flame",
+          "minorEffects": "• +0.6 seconds duration of Black flame effects applied by incantations\n• In the presence of black flame:\n• x0.85 damage taken",
+          "acquisition": "Defeat the Godskin Noble of the Divine Tower of Liurnia.",
+          "source": {
+            "label": "ERR wiki - Fortune of the Godslayers",
+            "url": "https://err.fandom.com/wiki/Fortune_of_the_Godslayers",
+            "wikiRevision": "2026-09-16T16:57:01Z",
+            "verifiedVia": "Fandom API query 2026-11-02: page exists"
+          }
+        },
+        {
+          "name": "Fortune of Haima",
+          "description": "The aspect of a heavy magic hitter who prioritizes the breaking of enemy stances.",
+          "tier": "Rare",
+          "effects": "• x0.8 FP cost of sorceries\n• x1.05 strikeattackpower of weapons\n• x0.8 max FP\n• x0.8 critical damage\n• -30 FP restoration from generator spells",
+          "minorEffects": "• Stance-breaking foes restores 5% + 50 FP and 10% + 50 stamina\n• Stance-breaking a foe after casting a spell:\n• x1.1 attack power of spells for 6 seconds",
+          "acquisition": "Defeat Battlemage Hugues in the Sellia Evergaol.",
+          "source": {
+            "label": "ERR wiki - Fortune of Haima",
+            "url": "https://err.fandom.com/wiki/Fortune_of_Haima",
+            "wikiRevision": "2025-08-07T19:51:53Z",
+            "verifiedVia": "Fandom API query 2026-11-02: page exists"
+          },
+          "effectsNote": "Filled from the fortune's own ERR wiki page (EFFECTS list); the Fortunes overview table wasn't machine-parsed. Terms like 'spregen' are the wiki's internal stat names."
+        },
+        {
+          "name": "Fortune of the Spiritcaller",
+          "description": "The aspect of a mystical beast deeply in touch with the spirit world, calling long-lost defenders to its side.",
+          "tier": "Rare",
+          "effects": "• Increases movement speed\n• Decreases maximum HP, stamina, attack power, and status buildup when a Spirit Ash is summoned\n• Vastly decreases maximum FP when no Spirit Ash is summoned",
+          "minorEffects": "Nearby Spirit Ashes take decreased damage.",
+          "acquisition": "The Fortune of the Spiritcaller can be obtained by defeating the Spiritcaller Snail boss in the Road's End Catacombs.",
+          "source": {
+            "label": "ERR wiki - Fortune of the Spiritcaller",
+            "url": "https://err.fandom.com/wiki/Fortune_of_the_Spiritcaller",
+            "wikiRevision": "2026-10-01T00:28:46Z",
+            "verifiedVia": "Fandom API query 2026-11-02: page exists"
+          },
+          "effectsNote": "Filled from the fortune's own ERR wiki page (EFFECTS list); the Fortunes overview table wasn't machine-parsed. Terms like 'spregen' are the wiki's internal stat names."
+        },
+        {
+          "name": "Fortune of the Warmaster",
+          "description": "The aspect of a master of disciplines who alternates from weapon to weapon in combat.",
+          "tier": "Rare",
+          "effects": "• +2 Strength\n• +2 Dexterity\n• x1.1 stamina cost\n• -5 Arcane\n• x0.8 damage of spells\n• -125 cast speed\n• x0.8 damage of unfavored weapons\n• When in combat, removed ability to swap equipment\n• This includes armor, items in quick slots, arrows/bolts, talismans",
+          "minorEffects": "At certain intervals, designates a favored weapon arsenal\n• Successful attacks accelerate this process\n• Being hit slows down this process\nWielding a favored weapon:\n• Increases the weapon's attack power\n• Wielding a favored weapon grants:\n• x1.1 attack power of the weapon\n• x0.9 FP cost of skills\n• The Minor Fortune does NOT remove the ability to swap equipment",
+          "acquisition": "Defeat the Bell Bearing Hunter in Warmaster's Shack (Limgrave).",
+          "source": {
+            "label": "ERR wiki - Fortune of the Warmaster",
+            "url": "https://err.fandom.com/wiki/Fortune_of_the_Warmaster",
+            "wikiRevision": "2026-10-01T00:29:38Z",
+            "verifiedVia": "Fandom API query 2026-11-02: page exists"
+          },
+          "effectsNote": "Filled from the fortune's own ERR wiki page (EFFECTS list); the Fortunes overview table wasn't machine-parsed. Terms like 'spregen' are the wiki's internal stat names."
+        },
+        {
+          "name": "Fortune of the Beasts",
+          "description": "The aspect of a hybrid incantation user who succumbs to beasthood to exchange damage negation for attack power.",
+          "tier": "Legendary",
+          "effects": "=\n• x1.1 movementspeed\n• +50 \n• -20 poise\n• x1.5 FP cost of consumables\n• x0.8 HP restoration at zero Beasthood",
+          "minorEffects": "• Beasthood drains at a rate of 105/s\n• Sources of Beasthood:\n• Bestial affinity active effect +24/s (does not stack)\n• Bestial Vitality +50/s\n• Bestial Constitution +2375 (when used with no Beasthood tier active)\n• Bestial Sling +100\n• Beast Claw +500\n• Gurranq's Beast Claw +1625\n• Stone of Gurranq +750\n• Any Bestial incantation +100 during Beast's Step incantation boost\n• Beast's Roar (skill) +625\n• Regal Beastclaw (skill) +1250\n• Any weapon hit +10 - +100 (depends on the kind of hit)\n• 50 Beasthood grants:\n• x1.1 physicaldamage\n• x1.05 magic Damage\n• x1.05 fire Damage\n• x1.05 lightning Damage\n• x1.075 holy Damage\n• x1.15 damage Taken\n• +0.025 target priority",
+          "acquisition": "Give Gurranq all nine deathroot.",
+          "source": {
+            "label": "ERR wiki - Fortune of the Beasts",
+            "url": "https://err.fandom.com/wiki/Fortune_of_the_Beasts",
+            "wikiRevision": "2026-06-11T20:22:02Z",
+            "verifiedVia": "Fandom API query 2026-11-02: page exists"
+          },
+          "effectsNote": "One line on the wiki ('+50') lost its stat name in a template; the stat is unknown here."
+        },
+        {
+          "name": "Fortune of the Crucible",
+          "description": "The aspect of a primal warrior whose physique is empowered by Crucible incantations.",
+          "tier": "Legendary",
+          "effects": "=\n• +50 cast speed\n• x0.96 (x0.99 in PvP) damage taken\n• x1.08 alldefense\n• -5 Arcane\n• -50 spregen\n• x0.9 magic Damage\n• x0.9 fire Damage (excluding Aspect of the Crucible: Breath)\n• x0.9 lightning Damage\n• x0.67 duration of non-Aspect buffs",
+          "minorEffects": "• When casting Aspect of the Crucible incantations:\n• 2% + 40 HP restoration\n• x1.03 attack power for 25 seconds\n• x0.92 damage taken for 25 seconds\n• +30 spregen for 25 seconds",
+          "acquisition": "Defeat Crucible Knight Hirnan, on the other side of the Nokron waygate at the Four Belfries.",
+          "source": {
+            "label": "ERR wiki - Fortune of the Crucible",
+            "url": "https://err.fandom.com/wiki/Fortune_of_the_Crucible",
+            "wikiRevision": "2026-05-19T16:52:18Z",
+            "verifiedVia": "Fandom API query 2026-11-02: page exists"
+          }
+        },
+        {
+          "name": "Fortune of the Dynasts",
+          "description": "The aspect of an aspirant of the Moghywn Dynasty who feasts on the blood of their enemies.",
+          "tier": "Legendary",
+          "effects": "=\n• +60 bloodloss resistance\n• +60 frostbite resistance\n• x1.05 pierceattackpower\n• x0.85 equipload\n• x0.9 magic attack power\n• x0.9 lightning attack power\n• x0.9 holy attack power\n• x0.8 HP restoration from flasks when outside of the sanguine pool",
+          "minorEffects": "• In the presence of blood loss, form a sanguine pool for 25 seconds\n• Lingering in the pool grants:\n• +50 spregen\n• x1.1 movementspeed\n• 1/s hpregen\n• Allies receive reduced benefits:\n• +30 spregen\n• x? movementspeed\n• 1/s hpregen\n• Foes in the pool suffer:\n• x1.06 bloodloss buildup\n• 0.08% + 1 HP damage and 1 bloodloss buildup per second",
+          "acquisition": "Defeat Sanguine Noble Annalise, a new invading NPC found in a red-lit cave under the waterfall west of the Below the Well Site of Grace in Siofra River.",
+          "source": {
+            "label": "ERR wiki - Fortune of the Dynasts",
+            "url": "https://err.fandom.com/wiki/Fortune_of_the_Dynasts",
+            "wikiRevision": "2026-05-18T07:03:29Z",
+            "verifiedVia": "Fandom API query 2026-11-02: page exists"
+          }
+        },
+        {
+          "name": "Fortune of Latenna",
+          "description": "The aspect of a magical archer who strikes true with careful shots at the expense of mobility.",
+          "tier": "Legendary",
+          "effects": "=\n• x1.1 max FP\n• x1.05 attack power of bows\n• +20 magic Damage of bows\n• +30 range of bows\n• 0.1% + 1 fpregen every 2 seconds\n• x? movementspeed while in combat\n• -150 spregen while dashing\n• +10 stamina cost of dashing\n• Jumping costs 100 + 10% of max stamina\n• x0.9 attack power of spells",
+          "minorEffects": "• When wielding a medium sized bow, holding an arrow while stationary charges the shot\n• Charging a shot grants:\n• x1.3 attack power\n• x1.15 staminadamage\n• x1.15 poise damage\n• +10 magic Damage\n• +30 range\n• +0.025 target priority",
+          "acquisition": "Rewarded for giving the first half of the Haligtree Medallion to Latenna, past the Lakeside Crystal Cave.",
+          "source": {
+            "label": "ERR wiki - Fortune of Latenna",
+            "url": "https://err.fandom.com/wiki/Fortune_of_Latenna",
+            "wikiRevision": "2026-04-20T16:57:10Z",
+            "verifiedVia": "Fandom API query 2026-11-02: page exists"
+          },
+          "effectsNote": "The wiki gives the in-combat movement speed multiplier as 'x?' (unknown)."
+        },
+        {
+          "name": "Fortune of the Reeds",
+          "description": "The aspect of a bloodsoaked warrior from across the sea, deftly two-handing a weapon for skilled feats of deflection.",
+          "tier": "Legendary",
+          "effects": "=\n• x0.9 stamina cost of blocks\n• x0 stamina cost of raising your guard\n• x1.1 damage taken\n• -2 iframe while dodging\n• This effect does not apply in Shura Mode.\n• x0.5 poise damage\n• x1.333 stamina cost of blocks with shields",
+          "minorEffects": "• When performing a perfect deflect, inflicts 0.1 poise damage on foes ahead\n• This is a nearly meaningless amount of poise damage, but interrupts enemy poise regeneration.",
+          "acquisition": "Defeat the Bell Bearing Hunter of the Isolated Merchant's Shack in Dragonbarrow.",
+          "source": {
+            "label": "ERR wiki - Fortune of the Reeds",
+            "url": "https://err.fandom.com/wiki/Fortune_of_the_Reeds",
+            "wikiRevision": "2026-08-21T18:05:13Z",
+            "verifiedVia": "Fandom API query 2026-11-02: page exists"
+          }
+        },
+        {
+          "name": "Fortune of the Houses",
+          "description": "The aspect of a scholar of sorcerers and incantations, employing both in equal measure.",
+          "tier": "Rare",
+          "effects": "=== How to Acquire ===\nDefeat the Bell Bearing Hunter at the Church of Vows.\n=== Unique Mechanic - Royal Marriage ===\n• Upon casting spells:\n• +50 cast speed for 20 seconds\n• x0.75 stamina cost for 20 seconds\n• After casting an incantation/sorcery:\n• x1.08 attack power of the opposite type for 20 seconds\n• x0.92 FP cost of the opposite type for 20 seconds\n• (Only applies to the next spell as it will swap to the other type once used.)\n• Upon chaining six boosted spells in succession:\n• x0.25 FP cost of the next cast spell\n• x0.444 stamina cost of the next cast spell\n=== Fortune Effects ===\n• +2 memoryslot\n• +2 Intelligence\n• +2 Faith\n• -3 Strength\n• -3 Dexterity\n• x1.25 FP cost of unboosted spells\n=== Minor Fortune Effects ===\n• After casting an incantation/sorcery:\n• x1.04 attack power of the opposite type for 10 seconds\n• x0.92 FP cost of the opposite type for 10 seconds\n=== Fortune Advice ===\nThis section is subjective, and self-experimentation is encouraged.\n• This fortune works best against bigger encounters of enemies/elites/bosses since until the third spell, you use more FP than you would have without the fortune active.\n• Quick generator spells are a good option for starting a chain (e.g. Carian Slicer, Catch Flame, Golden Star, etc) since the first spell won't be buffed and costs 25% more.\n• Layering your spell order is helpful in maintaining a chain to stop you from using an unboosted spell, as a basic example:\n• Keep in mind that:\n• After chaining six spells, the next spell cast will inherit the enhanced reduction in cost so placing an expensive spell in the 7th slot is effective.\n• Spells in a chain don't need to be new, the only requirement is that it's the alternate type. You can chain the same two spells continuously.\n• Spells also don't need to inflict damage, only be cast so you can use a cheap/quick spell in-between to use buffed spells of the other type.\n• Using a Dual Catalyst is beneficial so you aren't required to use a stave and seal/don't need to swap weapons/alternate inputs.\n• Along with starting chains, Generator Spells are efficient in maintaining them since you will be casting multiple spells in a row and may burn through FP rapidly based on spell choice.\n• Repeatedly casting a generator spell will be less effective since each cast will cost 25% more.\nCategory:Fortunes",
+          "minorEffects": "",
+          "acquisition": "Defeat the Bell Bearing Hunter at the Church of Vows.",
+          "note": "Not listed in the Fortunes overview gallery (overview page last edited 2026-02-21); has its own wiki page, likely added in a later patch.",
+          "source": {
+            "label": "ERR wiki - Fortune of the Houses",
+            "url": "https://err.fandom.com/wiki/Fortune_of_the_Houses",
+            "wikiRevision": "2026-09-30T23:42:32Z",
+            "verifiedVia": "Fandom API query 2026-11-02: page exists"
+          },
+          "effectsNote": "Houses has a wiki page but is not in the Fortunes gallery; its tier (listed Rare) is less certain."
+        }
+      ]
+    },
+    {
+      "id": "affinities",
+      "title": "Affinities",
+      "summary": "Reforged alters vanilla armament affinities and also adds several new affinities, allowing all non-somber armaments to inflict any status effect or elemental damage type. \nDamage scaling of each existing affinity has been reworked, and every affinity now has an effect associated with it. Affinities have been changed to modify an armament's attribute scaling rather than overwrite it. This means each armament has effectively unique scaling combinations depending upon which affinity is applied. \nPassive effects from affinities are active so long as the armament is equipped in hand, even while two-handing an armament equipped in the opposite hand. On-hit effects, such as Magma's Frostbite interaction, will only activate if hitting with that armament.\n\nValues verified for version 2.3.4.1 (per the wiki table caption).",
+      "items": [
+        {
+          "name": "Whetblades",
+          "description": "Affinities can be applied to armaments once a character has acquired the appropriate Whetblade. The new Fated Whetblade can apply the \"Fated\" affinity, a special affinity which applies unique combinations of scaling and effects to a valid armament. The Fated Whetblade can only be acquired after defeating a special endgame boss, or by purchasing it from the Starlight Token shop.\nThe Whetblade Fragment is a new item which can be found in Merchant Kalé's shop at the Church of Elleh in Limgrave. A Whetblade Fragment can only be used at the nearby anvil, and allows the player to unlock a single affinity without requiring its corresponding whetblade. Only two Whetblade Fragments can be bought from Kalé, and they can not be used to unlock the Fated affinity.\nThe location of the Red-Hot Whetblade has changed slightly: it remains in Redmane Castle, but is on the ground in the small courtyard outside its original room, guarded by an Abductor Virgin. Other Whetblades are in their original locations.",
+          "source": {
+            "label": "ERR wiki - Affinities § Whetblades",
+            "url": "https://err.fandom.com/wiki/Affinities#Whetblades",
+            "wikiRevision": "2026-10-02T07:00:54Z",
+            "verifiedVia": "Fandom API query 2026-11-02: page exists"
+          }
+        },
+        {
+          "name": "Heavy",
+          "description": "+5% poise damage of armament. \nPassive: +2.5% poise damage dealt.",
+          "whetblade": "Iron",
+          "primaryScaling": "Strength",
+          "damageType": "none",
+          "source": {
+            "label": "ERR wiki - Affinities",
+            "url": "https://err.fandom.com/wiki/Affinities",
+            "wikiRevision": "2026-10-02T07:00:54Z",
+            "verifiedVia": "Fandom API query 2026-11-02: page exists"
+          }
+        },
+        {
+          "name": "Keen",
+          "description": "-5% stamina cost of armament's attacks. \nPassive: -2.5% stamina cost of attacking and casting.",
+          "whetblade": "Iron",
+          "primaryScaling": "Dexterity",
+          "damageType": "none",
+          "source": {
+            "label": "ERR wiki - Affinities",
+            "url": "https://err.fandom.com/wiki/Affinities",
+            "wikiRevision": "2026-10-02T07:00:54Z",
+            "verifiedVia": "Fandom API query 2026-11-02: page exists"
+          }
+        },
+        {
+          "name": "Quality",
+          "description": "Slightly increases guardboost of armament. \nPassive: -2.5% stamina cost of blocking.",
+          "whetblade": "Iron",
+          "primaryScaling": "Total equalized between:  Strength  Dexterity;  Increased by +10%",
+          "damageType": "none",
+          "source": {
+            "label": "ERR wiki - Affinities",
+            "url": "https://err.fandom.com/wiki/Affinities",
+            "wikiRevision": "2026-10-02T07:00:54Z",
+            "verifiedVia": "Fandom API query 2026-11-02: page exists"
+          }
+        },
+        {
+          "name": "Bestial",
+          "description": "Each hit with armament grants:\n• +4% attack power\n• +6% damage taken\n• This effect lasts for 4 seconds. It can be stacked multiple times, but each instance of the effect maintains its own duration.\n+5% attack power versus Beast-type enemies on this armament.",
+          "whetblade": "Iron",
+          "primaryScaling": "Decreases all scaling  Increases armament base damage",
+          "damageType": "none",
+          "source": {
+            "label": "ERR wiki - Affinities",
+            "url": "https://err.fandom.com/wiki/Affinities",
+            "wikiRevision": "2026-10-02T07:00:54Z",
+            "verifiedVia": "Fandom API query 2026-11-02: page exists"
+          }
+        },
+        {
+          "name": "Magic",
+          "description": "Increases magicguardednegation of armament. \nPassive: 0.21% + 1 fpregen every 2 seconds while in combat.",
+          "whetblade": "Glintstone",
+          "primaryScaling": "Intelligence",
+          "damageType": "magic",
+          "source": {
+            "label": "ERR wiki - Affinities",
+            "url": "https://err.fandom.com/wiki/Affinities",
+            "wikiRevision": "2026-10-02T07:00:54Z",
+            "verifiedVia": "Fandom API query 2026-11-02: page exists"
+          }
+        },
+        {
+          "name": "Night",
+          "description": "+5 critical damage multiplier on armament. \n+40% damage dealt to unalerted enemies with this armament.\nIncreases magicguardednegation of armament.",
+          "whetblade": "Glintstone",
+          "primaryScaling": "Dexterity",
+          "damageType": "magic",
+          "source": {
+            "label": "ERR wiki - Affinities",
+            "url": "https://err.fandom.com/wiki/Affinities",
+            "wikiRevision": "2026-10-02T07:00:54Z",
+            "verifiedVia": "Fandom API query 2026-11-02: page exists"
+          }
+        },
+        {
+          "name": "Cold",
+          "description": "Adds frostbite buildup to armament.\nIncreases the amount of frostbite buildup blocked by armament. \n+5% attack power versus Stone-type enemies on armament.",
+          "whetblade": "Glintstone",
+          "primaryScaling": "Intelligence",
+          "damageType": "magic",
+          "source": {
+            "label": "ERR wiki - Affinities",
+            "url": "https://err.fandom.com/wiki/Affinities",
+            "wikiRevision": "2026-10-02T07:00:54Z",
+            "verifiedVia": "Fandom API query 2026-11-02: page exists"
+          }
+        },
+        {
+          "name": "Gravitational",
+          "description": "-50% weight of armament.\n+5%} attack power versus Void-type enemies on armament. \nGreatly reduces guardboost of armament.",
+          "whetblade": "Glintstone",
+          "primaryScaling": "Intelligence",
+          "damageType": "lightning\nphysical",
+          "source": {
+            "label": "ERR wiki - Affinities",
+            "url": "https://err.fandom.com/wiki/Affinities",
+            "wikiRevision": "2026-10-02T07:00:54Z",
+            "verifiedVia": "Fandom API query 2026-11-02: page exists"
+          }
+        },
+        {
+          "name": "Fell",
+          "description": "Increases armament's fireguardednegation. \nPassive: -1 status buildup every 2 seconds.",
+          "whetblade": "Red-Hot",
+          "primaryScaling": "Faith",
+          "damageType": "fire",
+          "source": {
+            "label": "ERR wiki - Affinities",
+            "url": "https://err.fandom.com/wiki/Affinities",
+            "wikiRevision": "2026-10-02T07:00:54Z",
+            "verifiedVia": "Fandom API query 2026-11-02: page exists"
+          }
+        },
+        {
+          "name": "Magma",
+          "description": "When armament hits an enemy afflicted with frostbite, the frostbite status effect ends and deals a burst of fire damage and 100 poise damage.Burst damage value depends upon the enemy being struck and their level. It is not affected by any buffs to fire damage. \nIncreases armament's fireguardednegation.",
+          "whetblade": "Red-Hot",
+          "primaryScaling": "Intelligence",
+          "damageType": "fire",
+          "source": {
+            "label": "ERR wiki - Affinities",
+            "url": "https://err.fandom.com/wiki/Affinities",
+            "wikiRevision": "2026-10-02T07:00:54Z",
+            "verifiedVia": "Fandom API query 2026-11-02: page exists"
+          }
+        },
+        {
+          "name": "Fire",
+          "description": "Armament hits apply a lingering burn which deals 0.06% of max HP + 1 every second for 5 seconds (0.36% of max HP + 6 total).This damage may be multiplied (x1 to x40) dependent upon the enemy type. \nIncreases armament's fireguardednegation.",
+          "whetblade": "Red-Hot",
+          "primaryScaling": "Strength",
+          "damageType": "fire",
+          "source": {
+            "label": "ERR wiki - Affinities",
+            "url": "https://err.fandom.com/wiki/Affinities",
+            "wikiRevision": "2026-10-02T07:00:54Z",
+            "verifiedVia": "Fandom API query 2026-11-02: page exists"
+          }
+        },
+        {
+          "name": "Frenzied",
+          "description": "Adds madness buildup to armament.\nIncreases the amount of madness buildup blocked by armament.",
+          "whetblade": "Red-Hot",
+          "primaryScaling": "Strength Dexterity Intelligence Faith",
+          "damageType": "fire",
+          "source": {
+            "label": "ERR wiki - Affinities",
+            "url": "https://err.fandom.com/wiki/Affinities",
+            "wikiRevision": "2026-10-02T07:00:54Z",
+            "verifiedVia": "Fandom API query 2026-11-02: page exists"
+          }
+        },
+        {
+          "name": "Bolt",
+          "description": "+5% attack power versus Dragon-type enemies on armament.\nIncreases armament's lightningguardednegation.",
+          "whetblade": "Sanctified",
+          "primaryScaling": "Faith",
+          "damageType": "lightning",
+          "source": {
+            "label": "ERR wiki - Affinities",
+            "url": "https://err.fandom.com/wiki/Affinities",
+            "wikiRevision": "2026-10-02T07:00:54Z",
+            "verifiedVia": "Fandom API query 2026-11-02: page exists"
+          }
+        },
+        {
+          "name": "Sacred",
+          "description": "+5% attack power versus Undead-type enemies on armament.\nPrevents undead enemies from reviving on death.\nIncreases armament's holyguardednegation.",
+          "whetblade": "Sanctified",
+          "primaryScaling": "Faith",
+          "damageType": "holy",
+          "source": {
+            "label": "ERR wiki - Affinities",
+            "url": "https://err.fandom.com/wiki/Affinities",
+            "wikiRevision": "2026-10-02T07:00:54Z",
+            "verifiedVia": "Fandom API query 2026-11-02: page exists"
+          }
+        },
+        {
+          "name": "Lightning",
+          "description": "Armament hits grant +15spregen for 4 seconds. This effect does not stack, but resets on consecutive hits.\nIncreases armament's lightningguardednegation. \nPassive: +15 spregen.",
+          "whetblade": "Sanctified",
+          "primaryScaling": "Dexterity",
+          "damageType": "lightning",
+          "source": {
+            "label": "ERR wiki - Affinities",
+            "url": "https://err.fandom.com/wiki/Affinities",
+            "wikiRevision": "2026-10-02T07:00:54Z",
+            "verifiedVia": "Fandom API query 2026-11-02: page exists"
+          }
+        },
+        {
+          "name": "Blessed",
+          "description": "Increases armament's holyguardednegation. \nPassive: 0.08% + 4 hpregen every 2 seconds while in combat.",
+          "whetblade": "Sanctified",
+          "primaryScaling": "Strength",
+          "damageType": "holy",
+          "source": {
+            "label": "ERR wiki - Affinities",
+            "url": "https://err.fandom.com/wiki/Affinities",
+            "wikiRevision": "2026-10-02T07:00:54Z",
+            "verifiedVia": "Fandom API query 2026-11-02: page exists"
+          }
+        },
+        {
+          "name": "Soporific",
+          "description": "Adds sleep buildup to armament.\nIncreases the amount of sleep buildup blocked by armament.",
+          "whetblade": "Sanctified",
+          "primaryScaling": "Intelligence Faith",
+          "damageType": "magic\nfire",
+          "source": {
+            "label": "ERR wiki - Affinities",
+            "url": "https://err.fandom.com/wiki/Affinities",
+            "wikiRevision": "2026-10-02T07:00:54Z",
+            "verifiedVia": "Fandom API query 2026-11-02: page exists"
+          }
+        },
+        {
+          "name": "Rotten",
+          "description": "Adds scarletrot buildup to armament.\nIncreases the amount of scarletrot buildup blocked by armament.",
+          "whetblade": "Sanctified",
+          "primaryScaling": "Faith",
+          "damageType": "none",
+          "source": {
+            "label": "ERR wiki - Affinities",
+            "url": "https://err.fandom.com/wiki/Affinities",
+            "wikiRevision": "2026-10-02T07:00:54Z",
+            "verifiedVia": "Fandom API query 2026-11-02: page exists"
+          }
+        },
+        {
+          "name": "Poison",
+          "description": "Adds poison buildup to armament.\nIncreases the amount of poison buildup blocked by armament.",
+          "whetblade": "Black",
+          "primaryScaling": "Arcane",
+          "damageType": "none",
+          "source": {
+            "label": "ERR wiki - Affinities",
+            "url": "https://err.fandom.com/wiki/Affinities",
+            "wikiRevision": "2026-10-02T07:00:54Z",
+            "verifiedVia": "Fandom API query 2026-11-02: page exists"
+          }
+        },
+        {
+          "name": "Blood",
+          "description": "Adds bloodloss buildup to armament.\nIncreases the amount of bloodloss buildup blocked by armament.",
+          "whetblade": "Black",
+          "primaryScaling": "Arcane",
+          "damageType": "none",
+          "source": {
+            "label": "ERR wiki - Affinities",
+            "url": "https://err.fandom.com/wiki/Affinities",
+            "wikiRevision": "2026-10-02T07:00:54Z",
+            "verifiedVia": "Fandom API query 2026-11-02: page exists"
+          }
+        },
+        {
+          "name": "Cursed",
+          "description": "Adds deathblight buildup to armament.\nArmament hits reduce the target's attack power by -5% for 0.5 seconds, followed by -2.5% for 2.5 seconds. This effect does not stack, but resets on consecutive hits. \nIncreases the amount of deathblight buildup blocked by armament.",
+          "whetblade": "Black",
+          "primaryScaling": "Intelligence Faith",
+          "damageType": "holy",
+          "source": {
+            "label": "ERR wiki - Affinities",
+            "url": "https://err.fandom.com/wiki/Affinities",
+            "wikiRevision": "2026-10-02T07:00:54Z",
+            "verifiedVia": "Fandom API query 2026-11-02: page exists"
+          }
+        },
+        {
+          "name": "Occult",
+          "description": "+5% attack power versus Divine-type enemies on armament.",
+          "whetblade": "Black",
+          "primaryScaling": "Arcane",
+          "damageType": "none",
+          "source": {
+            "label": "ERR wiki - Affinities",
+            "url": "https://err.fandom.com/wiki/Affinities",
+            "wikiRevision": "2026-10-02T07:00:54Z",
+            "verifiedVia": "Fandom API query 2026-11-02: page exists"
+          }
+        },
+        {
+          "name": "Fated",
+          "description": "Fated applies completely custom scaling, affinities, and effects to each individual weapon in the game. \nSee Fated Whetblade for details.",
+          "whetblade": "Fated",
+          "primaryScaling": "Varies",
+          "damageType": "Varies",
+          "source": {
+            "label": "ERR wiki - Affinities",
+            "url": "https://err.fandom.com/wiki/Affinities",
+            "wikiRevision": "2026-10-02T07:00:54Z",
+            "verifiedVia": "Fandom API query 2026-11-02: page exists"
+          }
+        }
+      ]
+    },
+    {
+      "id": "runeforging",
+      "title": "Runeforging & Rune Pieces",
+      "summary": "Runeforging is a new progression system introduced in ELDEN RING Reforged. \nRuneforging enables the creation of Binding Runes, a new category of items that grant passive boosts while held in the inventory.\nTo unlock the Runeforging system, a Great Rune must be acquired (even not restored) and 20 Rune Pieces must be presented to Finger Reader Enia in the Roundtable Hold. \n• Unlocking the system gives you the Fractured Great Rune key item that, upon being deposited in the storage chest disables the effects of all your Binding Runes.\n• Having this item also allows you to manage Binding Runes at any site of grace.",
+      "items": [
+        {
+          "name": "Rune Pieces & Runic Traces",
+          "description": "Rune Pieces are collectible items scattered throughout the Lands Between and are used to create Binding Runes.\nRune Pieces are generally found in the more obscure and hidden corners of the world, so thorough exploration is recommended to collect as many of them as possible.\n• Bosses also drop them, and will drop additional Pieces in NG+ cycles.\nRunic Traces are simply a way of tracking the total number of Rune Pieces collected from world pick-ups so far. \n• Other methods of collection (such as killing bosses) do not grant Traces.\nReaching the level cap in NG+ replaces the level up menu at Sites of Grace with the option of purchasing Rune Pieces, Ember Pieces and Lost Ashes for 500000 runes each. \n=== Rune Piece Locations===\nRune Pieces are found scattered in the open world, in dungeons (such as caves, catacombs and Hero's Graves), in castles (such as Morne and Sol) and also in Legacy Dungeons. \n• Every dungeon has at least one Piece, with the larger ones having two or more.\nThere are, generally speaking, four types of Rune Piece locations: \n• Scattered around on non-descript cliff edges, inside ponds, and atop roofs. These are the easiest to access, obvious when nearby, and usually merely require looking at areas of the game world you may otherwise skip.\n• In obscure corners and outcrops in dungeons, requiring more attention to your environment, especially looking up or down ledges and cliffs, or inside bushes and long grass. These are harder to notice but are usually straightforward to get once you know they're there.\n• Inside breakable objects (such as vases, boxes and barrels). The orange glow of a Rune Piece is only intermittently visible when it is contained in an object, so it may be hard to notice.\n• Requiring difficult platforming and parkour to get to, either on foot or by using Torrent. These are generally easy to find but getting to them is more challenging, both mechanically and logically. There are relatively few of these Rune Pieces. They are there for the most adventurous players.\nIn total, there are over 1000 Rune Pieces in the Lands Between. The community is compiling a list of them in these interactive maps:",
+          "source": {
+            "label": "ERR wiki - Runeforging § Rune Pieces & Runic Traces",
+            "url": "https://err.fandom.com/wiki/Runeforging#Rune_Pieces_&_Runic_Traces",
+            "wikiRevision": "2026-10-19T06:30:41Z",
+            "verifiedVia": "Fandom API query 2026-11-02: page exists"
+          }
+        },
+        {
+          "name": "Rune Piece Locations",
+          "description": "Rune Pieces are found scattered in the open world, in dungeons (such as caves, catacombs and Hero's Graves), in castles (such as Morne and Sol) and also in Legacy Dungeons. \n• Every dungeon has at least one Piece, with the larger ones having two or more.\nThere are, generally speaking, four types of Rune Piece locations: \n• Scattered around on non-descript cliff edges, inside ponds, and atop roofs. These are the easiest to access, obvious when nearby, and usually merely require looking at areas of the game world you may otherwise skip.\n• In obscure corners and outcrops in dungeons, requiring more attention to your environment, especially looking up or down ledges and cliffs, or inside bushes and long grass. These are harder to notice but are usually straightforward to get once you know they're there.\n• Inside breakable objects (such as vases, boxes and barrels). The orange glow of a Rune Piece is only intermittently visible when it is contained in an object, so it may be hard to notice.\n• Requiring difficult platforming and parkour to get to, either on foot or by using Torrent. These are generally easy to find but getting to them is more challenging, both mechanically and logically. There are relatively few of these Rune Pieces. They are there for the most adventurous players.\nIn total, there are over 1000 Rune Pieces in the Lands Between. The community is compiling a list of them in these interactive maps:",
+          "source": {
+            "label": "ERR wiki - Runeforging § Rune Piece Locations",
+            "url": "https://err.fandom.com/wiki/Runeforging#Rune_Piece_Locations",
+            "wikiRevision": "2026-10-19T06:30:41Z",
+            "verifiedVia": "Fandom API query 2026-11-02: page exists"
+          }
+        },
+        {
+          "name": "Binding Runes",
+          "description": "Binding Runes range from attribute increases to improvements in various aspects like FP cost, poise damage or movementspeed.\nEach Binding Rune is forged from 10 Rune Pieces (25 for Grafted Runes) and can be consumed in the inventory at any time to retrieve the spent Pieces.\nEach Binding Rune can be forged up to a maximum of 10 times (4 times for Grafted Runes).\nEach Great Rune unlocks the forging of new Binding Runes, themed in accordance with the Demigod whose power binds them.\nBinding Runes are available for purchase at any site of grace, or at Finger Reader Enia.\nUpdated to version 2.3.5.3\n===Grafted Runes (Godrick's Great Rune)===\nBinding Rune | Effect when held in inventory (x4)\nGrafted Vigor | +1 (+4) Vigor\nGrafted Mind | +1 (+4) Mind\nGrafted Endurance | +1 (+4) Endurance\nGrafted Strength | +1 (+4) Strength\nGrafted Dexterity | +1 (+4) Dexterity\nGrafted Intelligence | +1 (+4) Intelligence\nGrafted Faith | +1 (+4) Faith\nGrafted Arcane | +1 (+4) Arcane\n===Cradled Runes (Great Rune of the Unborn)===\nBinding Rune | Effect when held in inventory (x10)\nCradled Focus | +0.7% (+7%) max FP\nCradled Starlight | 0.012% + 1 (0.12%+3) fpregen every 2 seconds while in combat\nCradled Consumption | -0.4% (-4%) FP cost of spells\nCradled Night | -1.2% (-12%) enemy vision / enemy hearing\n=== Leonine Runes (Radahn's Great Rune)===\nBinding Rune | Effect when held in inventory (x10)\nLeonine Stamina | +0.8% (+8%) max stamina\nLeonine Consumption | -0.7% (-7%) FP cost of skills\nLeonine Weight | +0.1% (+1%) equipload\nLeonine Reach | +0.6% (+6%) Distance moved during attacks / +3 (+30) range\n===Covetous Runes (Rykard's Great Rune)===\nBinding Rune | Effect when held in inventory (x10)\nCovetous Gold | +0.5% (+5%) runegain / +0.4% (+4%) HP restoration\nCovetous Silver | +8 (+80) item discovery / +0.6% (+6%) FP restoration from all sources\nCovetous Age | 1.5% (+15%) buff duration\nCovetous Immunity | +8 (+80) immunity\n=== Cursed Runes (Morgott's Great Rune)===\nBinding Rune | Effect when held in inventory (x10)\nCursed Health | +0.6% (+6%) max HP\nCursed Vitality | +8 (+80) vitality\nCursed Determination | -0.5% (-5%) stamina cost of all actions\nCursed Resolve | x1.01 (x1.11) poise\n===Tainted Runes (Mohg's Great Rune)===\nBinding Rune | Effect when held in inventory (x10)\nTainted Resistance | +0.5% (+5%) statusresistance\nTainted Robustness | +8 (+80) robustness\nTainted Consumption | -1% (-10%) FP cost of tools and consumables\nTainted Projection | +5 (+50) cast speed\n===Scarlet Runes (Malenia's Great Rune)===\nBinding Rune | Effect when held in inventory (x10)\nScarlet Concentration | +8 (+80) concentration\nScarlet Swiftness | +0.6% (+6%) movementspeed\nScarlet Stability | -0.6% (-6%) stamina cost of blocks\nScarlet Persistence | +1 (+15) spregen / Alternates between increasing by 1 and 2 spregen with more binding runes",
+          "source": {
+            "label": "ERR wiki - Runeforging § Binding Runes",
+            "url": "https://err.fandom.com/wiki/Runeforging#Binding_Runes",
+            "wikiRevision": "2026-10-19T06:30:41Z",
+            "verifiedVia": "Fandom API query 2026-11-02: page exists"
+          }
+        },
+        {
+          "name": "Grafted Runes (Godrick's Great Rune)",
+          "description": "Binding Rune | Effect when held in inventory (x4)\nGrafted Vigor | +1 (+4) Vigor\nGrafted Mind | +1 (+4) Mind\nGrafted Endurance | +1 (+4) Endurance\nGrafted Strength | +1 (+4) Strength\nGrafted Dexterity | +1 (+4) Dexterity\nGrafted Intelligence | +1 (+4) Intelligence\nGrafted Faith | +1 (+4) Faith\nGrafted Arcane | +1 (+4) Arcane",
+          "source": {
+            "label": "ERR wiki - Runeforging § Grafted Runes (Godrick's Great Rune)",
+            "url": "https://err.fandom.com/wiki/Runeforging#Grafted_Runes_(Godrick's_Great_Rune)",
+            "wikiRevision": "2026-10-19T06:30:41Z",
+            "verifiedVia": "Fandom API query 2026-11-02: page exists"
+          }
+        },
+        {
+          "name": "Cradled Runes (Great Rune of the Unborn)",
+          "description": "Binding Rune | Effect when held in inventory (x10)\nCradled Focus | +0.7% (+7%) max FP\nCradled Starlight | 0.012% + 1 (0.12%+3) fpregen every 2 seconds while in combat\nCradled Consumption | -0.4% (-4%) FP cost of spells\nCradled Night | -1.2% (-12%) enemy vision / enemy hearing",
+          "source": {
+            "label": "ERR wiki - Runeforging § Cradled Runes (Great Rune of the Unborn)",
+            "url": "https://err.fandom.com/wiki/Runeforging#Cradled_Runes_(Great_Rune_of_the_Unborn)",
+            "wikiRevision": "2026-10-19T06:30:41Z",
+            "verifiedVia": "Fandom API query 2026-11-02: page exists"
+          }
+        },
+        {
+          "name": "Leonine Runes (Radahn's Great Rune)",
+          "description": "Binding Rune | Effect when held in inventory (x10)\nLeonine Stamina | +0.8% (+8%) max stamina\nLeonine Consumption | -0.7% (-7%) FP cost of skills\nLeonine Weight | +0.1% (+1%) equipload\nLeonine Reach | +0.6% (+6%) Distance moved during attacks / +3 (+30) range",
+          "source": {
+            "label": "ERR wiki - Runeforging § Leonine Runes (Radahn's Great Rune)",
+            "url": "https://err.fandom.com/wiki/Runeforging#Leonine_Runes_(Radahn's_Great_Rune)",
+            "wikiRevision": "2026-10-19T06:30:41Z",
+            "verifiedVia": "Fandom API query 2026-11-02: page exists"
+          }
+        },
+        {
+          "name": "Covetous Runes (Rykard's Great Rune)",
+          "description": "Binding Rune | Effect when held in inventory (x10)\nCovetous Gold | +0.5% (+5%) runegain / +0.4% (+4%) HP restoration\nCovetous Silver | +8 (+80) item discovery / +0.6% (+6%) FP restoration from all sources\nCovetous Age | 1.5% (+15%) buff duration\nCovetous Immunity | +8 (+80) immunity",
+          "source": {
+            "label": "ERR wiki - Runeforging § Covetous Runes (Rykard's Great Rune)",
+            "url": "https://err.fandom.com/wiki/Runeforging#Covetous_Runes_(Rykard's_Great_Rune)",
+            "wikiRevision": "2026-10-19T06:30:41Z",
+            "verifiedVia": "Fandom API query 2026-11-02: page exists"
+          }
+        },
+        {
+          "name": "Cursed Runes (Morgott's Great Rune)",
+          "description": "Binding Rune | Effect when held in inventory (x10)\nCursed Health | +0.6% (+6%) max HP\nCursed Vitality | +8 (+80) vitality\nCursed Determination | -0.5% (-5%) stamina cost of all actions\nCursed Resolve | x1.01 (x1.11) poise",
+          "source": {
+            "label": "ERR wiki - Runeforging § Cursed Runes (Morgott's Great Rune)",
+            "url": "https://err.fandom.com/wiki/Runeforging#Cursed_Runes_(Morgott's_Great_Rune)",
+            "wikiRevision": "2026-10-19T06:30:41Z",
+            "verifiedVia": "Fandom API query 2026-11-02: page exists"
+          }
+        },
+        {
+          "name": "Tainted Runes (Mohg's Great Rune)",
+          "description": "Binding Rune | Effect when held in inventory (x10)\nTainted Resistance | +0.5% (+5%) statusresistance\nTainted Robustness | +8 (+80) robustness\nTainted Consumption | -1% (-10%) FP cost of tools and consumables\nTainted Projection | +5 (+50) cast speed",
+          "source": {
+            "label": "ERR wiki - Runeforging § Tainted Runes (Mohg's Great Rune)",
+            "url": "https://err.fandom.com/wiki/Runeforging#Tainted_Runes_(Mohg's_Great_Rune)",
+            "wikiRevision": "2026-10-19T06:30:41Z",
+            "verifiedVia": "Fandom API query 2026-11-02: page exists"
+          }
+        },
+        {
+          "name": "Scarlet Runes (Malenia's Great Rune)",
+          "description": "Binding Rune | Effect when held in inventory (x10)\nScarlet Concentration | +8 (+80) concentration\nScarlet Swiftness | +0.6% (+6%) movementspeed\nScarlet Stability | -0.6% (-6%) stamina cost of blocks\nScarlet Persistence | +1 (+15) spregen / Alternates between increasing by 1 and 2 spregen with more binding runes",
+          "source": {
+            "label": "ERR wiki - Runeforging § Scarlet Runes (Malenia's Great Rune)",
+            "url": "https://err.fandom.com/wiki/Runeforging#Scarlet_Runes_(Malenia's_Great_Rune)",
+            "wikiRevision": "2026-10-19T06:30:41Z",
+            "verifiedVia": "Fandom API query 2026-11-02: page exists"
+          }
+        },
+        {
+          "name": "Ascended Binding Runes",
+          "description": "Starting in NG+, an Ascended selection of Binding Runes becomes available.\nEach Ascended Rune can be forged up to a maximum of 100 times.\nBinding Rune | Effect when held in inventory (x100)\nAscended Power | +0.1% (+10%) attack power\nAscended Negation | -0.1% (-10%) damage taken\nCategory:Features\nCategory:New Content",
+          "source": {
+            "label": "ERR wiki - Runeforging § Ascended Binding Runes",
+            "url": "https://err.fandom.com/wiki/Runeforging#Ascended_Binding_Runes",
+            "wikiRevision": "2026-10-19T06:30:41Z",
+            "verifiedVia": "Fandom API query 2026-11-02: page exists"
+          }
+        }
+      ]
+    },
+    {
+      "id": "character",
+      "title": "Stats, Levels & Classes",
+      "summary": "",
+      "items": [
+        {
+          "name": "Universal Character Changes",
+          "description": "Increased default Talisman and Spell slots by 1 (Golden Shade Godfrey no longer drops a Talisman pouch. No memory stones were removed, rather this change allows for the absolute engine-level maximum number of spell slots).\nAlmost all non-weapon buffs can now be stacked with each other. Very few buffs overwrite each other.\n• This change reduces the amount of guesswork involved with figuring out what buffs you can use together, and allows for more varied usage of buffs.\n• All buffs were rebalanced around this, so some may have lower individual effects.\n• Stacking buffs with similar effects now has diminishing returns. \n• For example, in vanilla casting Golden Vow (+15% damage Aura buff) and Flame Grant Me Strength (+20% damage Body buff) would stack multiplicatively giving 1.15 x 1.2 = +38% damage, but Rallying Standard (+20% damage) couldn't be stacked since it's also an Aura buff. \n• In Reforged you can stack all 3 damage buffs, but Golden Vow is now +10% damage, FGMS is +12%, and Rallying Standard is +10%, which would normally result in 1.10 x 1.12 x 1.10 = +36% damage. However, with diminishing returns the 2nd damage buff only gives about 72% of it's value, and a 3rd buff only gives about 50% of it's value, for an actual total of 1.10 x 1.086 x 1.05 = +25% more damage.\n• Weapon buffs still over-write each other, as stacking weapon buffs would allow for absurdly high damage output.\n• All buffs are removed when resting at a site of grace.\nIncreased the healing done by various hpregen effects. Almost all sources of healing over time (AKA \"regen\") now have both flat healing and a % of max HP heal, allowing them to scale on Max HP.\nhpregen effects can now be stacked.\n• In vanilla, practically all hpregen effects overwrite each other. Only very select ones can be stacked normally, now all can be stacked.\n• To balance this feature alongside the % healing hpregen effects have gained, regen effects have diminishing returns. Stacking healing will, of course, still be more effective than using any buff alone, just not to the point of invalidating enemy damage.\n• Additionally, Spell/Skill based active hpregen effects (such as Blessing's Boon, Holy Ground, and Bestial Vitality) can now be stacked.\n• Warning: Having lots of hpregen effects active can reduce the effectiveness of active HP recovery effects such as the Crimson Dagger talisman or Godskin Swaddling Cloth. \nChanged how poise buffs work.\n• Some poise buffs in reforged are flat values instead of multipliers like in vanilla, for example Fortune of the Barbarian. This allows even light armor to gain substantial poise with those buffs.\n• However to keep high poise setups in check, every flat poise buff causes \"diminishing returns\" to all other sources of poise\nChanged the impact of falls. \n• The \"medium\" landing will now occur above 12m of falling distance, and the \"heavy\" landing above 16m, up from 4m and 8m respectively. \n• This results in a lot less slowdown when falling from various distances. \n• Fall damage, beginning at 16m, has not been changed. Additionally, the lethal fall threshold has not been changed.",
+          "source": {
+            "label": "ERR wiki - Character Changes § Universal Character Changes",
+            "url": "https://err.fandom.com/wiki/Character_Changes#Universal_Character_Changes",
+            "wikiRevision": "2026-10-19T06:36:04Z",
+            "verifiedVia": "Fandom API query 2026-11-02: page exists"
+          }
+        },
+        {
+          "name": "Torrent",
+          "description": "Removed the message that asks if you want to consume a flask to summon Torrent when using the whistle after Torrent dies. A flask is now used automatically.\nGreatly increased Torrent's movement speed while decreasing his health and increasing the player's vulnerability while riding.\n• New Raisin items have been added to customize Torrent's abilities. They can be crafted after acquiring Stable-Master's Cookbook [1], dropped by a new Haligtree Knight roaming in the Mistwood area area of Limgrave.\nAdded max HP scaling to Torrent based on player level. Torrent will scale up to 2x HP at level 200, gaining 5% more HP every 10 levels. \nFixed the bug where Torrent would not heal between loading screens or when resting at Sites of Grace.\nTorrent is no longer immune to the status effect buildup incurred from walking through swamps, and will take damage when doing so. Raisins will now cure status in addition to healing.\nImproved Torrents controls by allowing the stopping animation to cancel Torrent's gallop state, making it easier to slow down. Additionally, Torrent will slide much less when landing if no direction is being held.\nTorrent can now be dyed using Body Hues in the Gilded Court.\nCombat with a Camp Leader disables Torrent until the leader(s) is defeated.",
+          "source": {
+            "label": "ERR wiki - Character Changes § Torrent",
+            "url": "https://err.fandom.com/wiki/Character_Changes#Torrent",
+            "wikiRevision": "2026-10-19T06:36:04Z",
+            "verifiedVia": "Fandom API query 2026-11-02: page exists"
+          }
+        },
+        {
+          "name": "FP/Stamina Universal Scaling Changes",
+          "description": "FP and stamina were changed to use a base 100 scale rather than base 10, meaning what would have been 50FP in vanilla is now 500FP. \n• This creates a more distinct granularity to the stats, and allows FP/stamina regeneration effects to have more impact at low amounts. It also allows changes in balancing to be done with more precision.",
+          "source": {
+            "label": "ERR wiki - Character Changes § FP/Stamina Universal Scaling Changes",
+            "url": "https://err.fandom.com/wiki/Character_Changes#FP/Stamina_Universal_Scaling_Changes",
+            "wikiRevision": "2026-10-19T06:36:04Z",
+            "verifiedVia": "Fandom API query 2026-11-02: page exists"
+          }
+        },
+        {
+          "name": "Level Cap and Level Scaling",
+          "description": "The game now has a level cap of 200.\nVigor, Mind, and Endurance will now give more max HP, max FP, and max stamina respectively, beyond the original softcap of 60. \n• Scaling and progression for these stats has been completely reworked. Generally, they give slightly more early, less in the middle levels, and vastly more at high levels. \n• New level progression\nWeapons will now benefit much more from higher levels of investment. Split scaling weapons and catalysts have been updated to require a similar level of investment as single stat scaling gear.\n• In short: Any weapon with A or S scaling in a stat should benefit from going all the way to 80-99 of that stat. Weapons with a B or lower will benefit less from higher levels of a stat, but typically scale effectively with multiple stats. Affinities can be used to improve scaling.\n• See the ERR Weapon Calculator to view exact scaling effectiveness for weapons.\nReduced the amount of alldefense and statusresistance gained from leveling.\nEnemy rune drops have been increased to make higher levels more realistically achievable level in NG.",
+          "source": {
+            "label": "ERR wiki - Character Changes § Level Cap and Level Scaling",
+            "url": "https://err.fandom.com/wiki/Character_Changes#Level_Cap_and_Level_Scaling",
+            "wikiRevision": "2026-10-19T06:36:04Z",
+            "verifiedVia": "Fandom API query 2026-11-02: page exists"
+          }
+        },
+        {
+          "name": "Vigor and HP",
+          "description": "Adjusted HP values have been adjusted to be roughly 2.3x the vanilla value at 99 vigor (2100 in vanilla to 4800 in reforged). \n• Enemy damage values have been widely rebalanced and adjusted across the board partially to scale with this increase, but many have been raised or lowered relative to the HP value adjustment based on the nature of the attack and the enemy.\nIncreasing Vigor also slightly increases the drainspeed of Status Effects, from a minimum of 3 per second, up to a maximum of 4 per second at 99 Vigor.",
+          "source": {
+            "label": "ERR wiki - Character Changes § Vigor and HP",
+            "url": "https://err.fandom.com/wiki/Character_Changes#Vigor_and_HP",
+            "wikiRevision": "2026-10-19T06:36:04Z",
+            "verifiedVia": "Fandom API query 2026-11-02: page exists"
+          }
+        },
+        {
+          "name": "Endurance and Stamina",
+          "description": "Endurance no longer increases equipload, which is now locked at a flat 100 and can only be increased by gear or conditional effects.\n• See Combat Mechanics for extensive details on equipload.\nAdjusted stamina values to be roughly 13x the vanilla value at 99 end (170 in vanilla to 2200 in reforged)\n• Stamina costs for all actions have been adjusted mutually with this rescaling, and in turn the direct translation of stamina from vanilla to reforged of effective stamina will not come out to a 13x increase.\nspregen speed now scales depending on Endurance, up to a 40% increase at 99 Endurance. \nCompletely depleting your stamina bar will now apply a brief \"Out of Stamina\" penalty which reduces spregen considerably for a few seconds. This has a visual effect which is more intense in PvP.",
+          "source": {
+            "label": "ERR wiki - Character Changes § Endurance and Stamina",
+            "url": "https://err.fandom.com/wiki/Character_Changes#Endurance_and_Stamina",
+            "wikiRevision": "2026-10-19T06:36:04Z",
+            "verifiedVia": "Fandom API query 2026-11-02: page exists"
+          }
+        },
+        {
+          "name": "Mind and FP",
+          "description": "Adjusted FP values to be roughly 8x the vanilla value at 99 mind (450 in vanilla to 3500 in reforged)\n• FP costs have been adjusted mutually with this rescaling, and in turn the direct translation of FP from vanilla to reforged of effective FP will not come out to a 8x increase.\nAdded a slight passive fpregen effect while in combat (0.1% max FP + 1 every 2 seconds). \nAdded the ability to restore FP by attacking enemies. This scales with the speed of the weapon, type of attack, Intelligence, and max FP. \nAdded the ability to regenerate FP by hitting enemies via \"Generator\" spells. These restore both a flat amount of FP and a % of maximum FP.\nMind now scales cast speed, instead of Dexterity. See Spells.\nMind scales the duration of Spirit Fury, a new mechanic to do with Spirit Ashes. The base duration is 30 seconds at 1 Mind, scaling up to 50 seconds at 99 Mind.",
+          "source": {
+            "label": "ERR wiki - Character Changes § Mind and FP",
+            "url": "https://err.fandom.com/wiki/Character_Changes#Mind_and_FP",
+            "wikiRevision": "2026-10-19T06:36:04Z",
+            "verifiedVia": "Fandom API query 2026-11-02: page exists"
+          }
+        },
+        {
+          "name": "Damage Attributes",
+          "description": "Reforged adds additional effects to all damage attributes, to allow builds to be more unique.\nStrength increases poise damage, up to a maximum increase of 25%. Strength also increases physicaldefense somewhat more than other stats. \nDexterity increases critical damage, up to a maximum increase of 50%. Dexterity also reduces the stamina cost of melee attacks and spells by up to 10%.\nIntelligence increases the fpregen from attacks and spells, up to a maximum increase of 40%. Catalyst heavy attacks and generator spells also benefit from this fpregen, but at 25% the efficacy. Intelligence also increases elementaldefense somewhat more than other stats.\nFaith increases the duration of Common Buffs (non-healing spells, ashes of war, consumables, Enkindled Ashes, and Armor Passives), up to a maximum increase of 60%. Faith also increases poise by up to 10%.\nArcane increases the amount of status buildup enemies take from all status effects, up to a maximum increase of 50%. Arcane also increases item discovery.\nThese effects increase all the way to 99 in a stat. See the ERR Level Progression spreadsheet for more details.",
+          "source": {
+            "label": "ERR wiki - Character Changes § Damage Attributes",
+            "url": "https://err.fandom.com/wiki/Character_Changes#Damage_Attributes",
+            "wikiRevision": "2026-10-19T06:36:04Z",
+            "verifiedVia": "Fandom API query 2026-11-02: page exists"
+          }
+        },
+        {
+          "name": "Scadutree Blessing and Revered Spirit Ash",
+          "description": "Adjusted Scadutree Blessing values and added/moved a few Scadutree Fragments, so that the amount of fragments in the world is more than the required amount for maximum Scadutree Blessing level.\n+Scadutree Blessing / Updated to 2.1.2.3 | | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 | 13 | 14 | 15 | 16 | 17 | 18 | 19 | 20\ndamage dealt | x1.025 | x1.05 | x1.075 | x1.1 | x1.125 | x1.15 | x1.175 | x1.2 | x1.225 | x1.25 | x1.275 | x1.3 | x1.325 | x1.35 | x1.375 | x1.4 | x1.425 | x1.45 | x1.475 | x1.5\ndamage taken | x0.968 | x0.939 | x0.913 | x0.889 | x0.867 | x0.846 | x0.827 | x0.809 | x0.793 | x0.778 | x0.763 | x0.75 | x0.737 | x0.725 | x0.714 | x0.704 | x0.694 | x0.684 | x0.675 | x0.667\nAdjusted Revered Spirit Ash values.\n+Revered Spirit Ash / Updated to 2.1.2.3 | | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10\nmax HP / (Spirit Ashes) | x1.025 | x1.05 | x1.075 | x1.1 | x1.125 | x1.15 | x1.175 | x1.2 | x1.225 | x1.25\nattack power / (Spirit Ashes) | x1.05 | x1.1 | x1.15 | x1.2 | x1.25 | x1.3 | x1.35 | x1.4 | x1.45 | x1.5\ndamage taken / (Spirit Ashes) | x0.976 | x0.952 | x0.93 | x0.909 | x0.889 | x0.87 | x0.851 | x0.833 | x0.816 | x0.8\ndamage taken / (Torrent) | x0.939 | x0.889 | x0.846 | x0.809 | x0.778 | x0.75 | x0.725 | x0.704 | x0.684 | x0.667",
+          "source": {
+            "label": "ERR wiki - Character Changes § Scadutree Blessing and Revered Spirit Ash",
+            "url": "https://err.fandom.com/wiki/Character_Changes#Scadutree_Blessing_and_Revered_Spirit_Ash",
+            "wikiRevision": "2026-10-19T06:36:04Z",
+            "verifiedVia": "Fandom API query 2026-11-02: page exists"
+          }
+        },
+        {
+          "name": "Starting Classes",
+          "description": "Reforged makes changes to the character classes you choose at the start of the game and adds a few new ones based on the Elden Ring Tabletop game:\n• All starting classes now have a level of 10 with equal total stats, except for the Wretch (starting at level 1).\n• Each class starts with a talisman and some also have spells.\n+Download a copy to use: ERR Class Calculator | Class | Equipment | Talisman | Spells | VIG | MND | END | STR | DEX | INT | FTH | ARC\nVagabond | • Longsword / • Halberd / • Heater Shield | Arsenal Charm | - | 15 | 10 | 11 | 14 | 13 | 9 | 9 | 8\nWarrior | • Scimitar (x2) / • Riveted Wooden Shield | Warrior Jar Shard | - | 13 | 12 | 11 | 10 | 16 | 10 | 8 | 9\nHero | • Battle Axe / • Large Leather Shield / • Exalted Flesh (x2) | Godfrey Icon | - | 15 | 9 | 13 | 16 | 10 | 7 | 9 | 10\nBandit | • Great Knife / • Buckler / • Shortbow / • Bone Arrow (x20) / • Bone Dart (x20) / • Thin Beast Bones (x8) | Dagger Talisman | - | 11 | 11 | 13 | 9 | 14 | 9 | 8 | 14\nAstrologer | • Astrologer's Staff / • Short Sword / • Scripture Wooden Shield | Graven-School Talisman | • Glintstone Pebble / • Great Glintstone Shard / • Glintstone Arc | 11 | 16 | 10 | 8 | 12 | 16 | 7 | 9\nProphet | • Short Spear / • Finger Seal / • Rickety Shield | Faithful’s Canvas Talisman | • Catch Flame / • Flame Sling | 11 | 15 | 9 | 11 | 10 | 7 | 16 | 10\nSamurai | • Uchigatana / • Longbow / • Red Thorn Roundshield / • Arrow (x10) / • Fire Arrow (x10) / • Flight Pinion (x6) | Green Turtle Talisman | - | 12 | 11 | 14 | 12 | 15 | 9 | 8 | 8\nPrisoner | • Estoc / • Glintstone Staff / • Rift Shield | Carian Filigreed Crest | • Magic Glintblade | 11 | 13 | 11 | 10 | 14 | 14 | 7 | 9\nConfessor | • Broadsword / • Blue Crest Heater Shield / • Finger Seal | Radagon Icon | • Urgent Heal / • Assassin's Approach | 12 | 13 | 10 | 12 | 12 | 8 | 14 | 8\nWretch | • Club | Sacrificial Twig | - | 10 | 10 | 10 | 10 | 10 | 10 | 10 | 10\nIdus Knight | • Idus Sword | Erdtree's Favor | - | 12 | 12 | 11 | 13 | 15 | 8 | 11 | 7\nHeavy Knight | • Hefty Scimitar | Pearldrake Talisman | - | 13 | 10 | 14 | 15 | 11 | 8 | 9 | 9\nPerfumer | • Whip / • Perfumer's Shield / • Spark Aromatic (x5) / • Uplifiting Aromatic (x1) / • Perfume Bottle x 6 / • Perfumer's Cookbook (1) / • Miranda Powder (x12) | Perfumer's Talisman | - | 10 | 12 | 11 | 9 | 14 | 10 | 7 | 16\nScout | • Soldier's Crossbow / • Hand Axe / • iveted Wooden Shield / • Lordsworn's Bolt (x10) / • Explosive Bolt (x10) / • Thin Beast Bones (x4) | Arrow's Sting Talisman | - | 12 | 11 | 12 | 12 | 11 | 10 | 10 | 11\nGladiator | • Caestus | Bull-Goat's Talisman | - | 12 | 9 | 13 | 14 | 14 | 9 | 6 | 12\nGuide | • Finger Seal / • Brass Dagger / • Round Shield / • Warming Stone (x3) | Cerulean Seed Talisman | • Heal / • Rejection / • Golden Star | 13 | 15 | 11 | 9 | 11 | 10 | 14 | 6\nCategory:Features",
+          "source": {
+            "label": "ERR wiki - Character Changes § Starting Classes",
+            "url": "https://err.fandom.com/wiki/Character_Changes#Starting_Classes",
+            "wikiRevision": "2026-10-19T06:36:04Z",
+            "verifiedVia": "Fandom API query 2026-11-02: page exists"
+          },
+          "classes": [
+            {
+              "class": "Vagabond",
+              "equipment": "• Longsword • Halberd • Heater Shield",
+              "talisman": "Arsenal Charm",
+              "spells": "-",
+              "stats": {
+                "VIG": "15",
+                "MND": "10",
+                "END": "11",
+                "STR": "14",
+                "DEX": "13",
+                "INT": "9",
+                "FTH": "9",
+                "ARC": "8"
+              }
+            },
+            {
+              "class": "Warrior",
+              "equipment": "• Scimitar (x2) • Riveted Wooden Shield",
+              "talisman": "Warrior Jar Shard",
+              "spells": "-",
+              "stats": {
+                "VIG": "13",
+                "MND": "12",
+                "END": "11",
+                "STR": "10",
+                "DEX": "16",
+                "INT": "10",
+                "FTH": "8",
+                "ARC": "9"
+              }
+            },
+            {
+              "class": "Hero",
+              "equipment": "• Battle Axe • Large Leather Shield • Exalted Flesh (x2)",
+              "talisman": "Godfrey Icon",
+              "spells": "-",
+              "stats": {
+                "VIG": "15",
+                "MND": "9",
+                "END": "13",
+                "STR": "16",
+                "DEX": "10",
+                "INT": "7",
+                "FTH": "9",
+                "ARC": "10"
+              }
+            },
+            {
+              "class": "Bandit",
+              "equipment": "• Great Knife • Buckler • Shortbow • Bone Arrow (x20) • Bone Dart (x20) • Thin Beast Bones (x8)",
+              "talisman": "Dagger Talisman",
+              "spells": "-",
+              "stats": {
+                "VIG": "11",
+                "MND": "11",
+                "END": "13",
+                "STR": "9",
+                "DEX": "14",
+                "INT": "9",
+                "FTH": "8",
+                "ARC": "14"
+              }
+            },
+            {
+              "class": "Astrologer",
+              "equipment": "• Astrologer's Staff • Short Sword • Scripture Wooden Shield",
+              "talisman": "Graven-School Talisman",
+              "spells": "• Glintstone Pebble • Great Glintstone Shard • Glintstone Arc",
+              "stats": {
+                "VIG": "11",
+                "MND": "16",
+                "END": "10",
+                "STR": "8",
+                "DEX": "12",
+                "INT": "16",
+                "FTH": "7",
+                "ARC": "9"
+              }
+            },
+            {
+              "class": "Prophet",
+              "equipment": "• Short Spear • Finger Seal • Rickety Shield",
+              "talisman": "Faithful’s Canvas Talisman",
+              "spells": "• Catch Flame • Flame Sling",
+              "stats": {
+                "VIG": "11",
+                "MND": "15",
+                "END": "9",
+                "STR": "11",
+                "DEX": "10",
+                "INT": "7",
+                "FTH": "16",
+                "ARC": "10"
+              }
+            },
+            {
+              "class": "Samurai",
+              "equipment": "• Uchigatana • Longbow • Red Thorn Roundshield • Arrow (x10) • Fire Arrow (x10) • Flight Pinion (x6)",
+              "talisman": "Green Turtle Talisman",
+              "spells": "-",
+              "stats": {
+                "VIG": "12",
+                "MND": "11",
+                "END": "14",
+                "STR": "12",
+                "DEX": "15",
+                "INT": "9",
+                "FTH": "8",
+                "ARC": "8"
+              }
+            },
+            {
+              "class": "Prisoner",
+              "equipment": "• Estoc • Glintstone Staff • Rift Shield",
+              "talisman": "Carian Filigreed Crest",
+              "spells": "• Magic Glintblade",
+              "stats": {
+                "VIG": "11",
+                "MND": "13",
+                "END": "11",
+                "STR": "10",
+                "DEX": "14",
+                "INT": "14",
+                "FTH": "7",
+                "ARC": "9"
+              }
+            },
+            {
+              "class": "Confessor",
+              "equipment": "• Broadsword • Blue Crest Heater Shield • Finger Seal",
+              "talisman": "Radagon Icon",
+              "spells": "• Urgent Heal • Assassin's Approach",
+              "stats": {
+                "VIG": "12",
+                "MND": "13",
+                "END": "10",
+                "STR": "12",
+                "DEX": "12",
+                "INT": "8",
+                "FTH": "14",
+                "ARC": "8"
+              }
+            },
+            {
+              "class": "Wretch",
+              "equipment": "• Club",
+              "talisman": "Sacrificial Twig",
+              "spells": "-",
+              "stats": {
+                "VIG": "10",
+                "MND": "10",
+                "END": "10",
+                "STR": "10",
+                "DEX": "10",
+                "INT": "10",
+                "FTH": "10",
+                "ARC": "10"
+              }
+            },
+            {
+              "class": "Idus Knight",
+              "equipment": "• Idus Sword",
+              "talisman": "Erdtree's Favor",
+              "spells": "-",
+              "stats": {
+                "VIG": "12",
+                "MND": "12",
+                "END": "11",
+                "STR": "13",
+                "DEX": "15",
+                "INT": "8",
+                "FTH": "11",
+                "ARC": "7"
+              }
+            },
+            {
+              "class": "Heavy Knight",
+              "equipment": "• Hefty Scimitar",
+              "talisman": "Pearldrake Talisman",
+              "spells": "-",
+              "stats": {
+                "VIG": "13",
+                "MND": "10",
+                "END": "14",
+                "STR": "15",
+                "DEX": "11",
+                "INT": "8",
+                "FTH": "9",
+                "ARC": "9"
+              }
+            },
+            {
+              "class": "Perfumer",
+              "equipment": "• Whip • Perfumer's Shield • Spark Aromatic (x5) • Uplifiting Aromatic (x1) • Perfume Bottle x 6 • Perfumer's Cookbook (1) • Miranda Powder (x12)",
+              "talisman": "Perfumer's Talisman",
+              "spells": "-",
+              "stats": {
+                "VIG": "10",
+                "MND": "12",
+                "END": "11",
+                "STR": "9",
+                "DEX": "14",
+                "INT": "10",
+                "FTH": "7",
+                "ARC": "16"
+              }
+            },
+            {
+              "class": "Scout",
+              "equipment": "• Soldier's Crossbow • Hand Axe • iveted Wooden Shield • Lordsworn's Bolt (x10) • Explosive Bolt (x10) • Thin Beast Bones (x4)",
+              "talisman": "Arrow's Sting Talisman",
+              "spells": "-",
+              "stats": {
+                "VIG": "12",
+                "MND": "11",
+                "END": "12",
+                "STR": "12",
+                "DEX": "11",
+                "INT": "10",
+                "FTH": "10",
+                "ARC": "11"
+              }
+            },
+            {
+              "class": "Gladiator",
+              "equipment": "• Caestus",
+              "talisman": "Bull-Goat's Talisman",
+              "spells": "-",
+              "stats": {
+                "VIG": "12",
+                "MND": "9",
+                "END": "13",
+                "STR": "14",
+                "DEX": "14",
+                "INT": "9",
+                "FTH": "6",
+                "ARC": "12"
+              }
+            },
+            {
+              "class": "Guide",
+              "equipment": "• Finger Seal • Brass Dagger • Round Shield • Warming Stone (x3)",
+              "talisman": "Cerulean Seed Talisman",
+              "spells": "• Heal • Rejection • Golden Star",
+              "stats": {
+                "VIG": "13",
+                "MND": "15",
+                "END": "11",
+                "STR": "9",
+                "DEX": "11",
+                "INT": "10",
+                "FTH": "14",
+                "ARC": "6"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "upgrading",
+      "title": "Armament Upgrading",
+      "summary": "Elden Ring Reforged substantially changes the general flow of upgrading armaments. Notably, Smithing-Stone Miner's Bell Bearings have been removed from the game; instead, smithing stones may be bought from Smithing Master Hewg once at least one armament has been fully upgraded through that tier of smithing stone. The rune cost for armament upgrading has also been removed. \nThe number of smithing stones required to upgrade a weapon has been adjusted:\n• Regular armaments require 3 smithing stones per upgrade level, for a total of 9 smithing stones required for each smithing stone tier.\n• Somber armaments require 3 smithing stones per upgrade level. \nWith the exception of catalysts and weapon catalysts, armament scaling no longer increases with the armament's upgrade level. This allows players to more easily plan out builds and gauge equipment. Catalysts retain attribute scaling increases so that spell scaling upgrades appropriately. \nArmaments have generally had their scaling values increased and their base damage decreased, causing scaling to play a greater role in armament damage. Upgrading a melee armament does increase its status buildup, reaching a 25% boost at +25/+10. Base level armaments also have a 25% reduced stamina cost for all actions, including blocking attacks. This gradually fades as the armament is upgraded, reducing the need to level Endurance in the early game. Similarly, the FP cost of skills, spells and items is reduced at lower armament levels, with a 12.5% reduction at base upgrade level.\n\nArmament attribute scaling (E to S+) no longer changes with armament reinforcement level but instead always uses the maximum scaling regardless of reinforcement. This means an armament with A scaling in Strength at +25 (or +10 for somber armaments) will also have A scaling at +0. This makes it easier to determine how a weapon will work within your build without any unnecessary guesswork. However, catalysts, including weapon catalysts, still increase their scaling with weapon level, as this is the only way to make them upgrade. \nThe base damage of armaments has been reduced but their stat scaling has been greatly increased. This results in most of an armament's damage coming from your stats rather than smithing stones. Although both remain important for an armament to be fully effective. \nFor characters investing incredibly heavily in bar stats (Vigor, Mind, and Endurance) and less in damage stats, it's recommended to experiment with status effects, as they deal percent health damage output and can make up for lower up-front damage. Crossbows are also largely stat agnostic. Additionally, Spirit Ashes can be a great asset to damage if you have the FP to consistently enrage them and the Mind to extend the duration of their rage.",
+      "items": [
+        {
+          "name": "Smithing Master Hewg",
+          "description": "Unlimited smithing stones of both varieties are now purchased from Smithing Master Hewg. In order to unlock a tier of smithing stones for purchase, an armament must first be fully upgraded through that tier of smithing stones, e.g. once a normal armament has been upgraded to +3, unlimited Smithing Stone [1] becomes available at Hewg.\nAncient Dragon Smithing Stones of either variety are only available for unlimited purchase after the Elden Beast has been defeated.\nOnce an armament has been fully upgraded through a tier of smithing stones, the armament should be swapped in and out of an active hand to unlock the relevant smithing stone(s) for purchase. Alternately, the same can be achieved by having the armament in hand during travel which triggers a loading screen or reloading the save. The player is notified when new smithing stones are unlocked with the message \"New smithing stones can be purchased from Smithing Master Hewg\". \n=== Other NPCs ===\n==== Kalé ====\nKalé's smithing table in the Church of Elleh can now strengthen armaments to +25/+10 and allows the player to use Whetblade Fragments.\n==== Smithing Master Iji ====\nSmithing Master Iji, found by the Road to the Manor Site of Grace in Liurnia, can also upgrade armaments. Iji no longer sells any somber smithing stones, instead offering the Spellsmith's Etching Tool and 20 Lost Ashes, among other wares.\n==== Smithing Master Sfyrix ====\nBlacksmith Sfyrix is a new blacksmith who resides behind Castle Sol in the Mountaintops of the Giants. Like Iji, he doesn't offer any smithing stones, but can upgrade the player's armaments and sells 30 Lost Ashes, among other wares.",
+          "source": {
+            "label": "ERR wiki - Armament Upgrading § Smithing Master Hewg",
+            "url": "https://err.fandom.com/wiki/Armament_Upgrading#Smithing_Master_Hewg",
+            "wikiRevision": "2026-10-02T21:33:47Z",
+            "verifiedVia": "Fandom API query 2026-11-02: page exists"
+          }
+        },
+        {
+          "name": "Kalé",
+          "description": "Kalé's smithing table in the Church of Elleh can now strengthen armaments to +25/+10 and allows the player to use Whetblade Fragments.",
+          "source": {
+            "label": "ERR wiki - Armament Upgrading § Kalé",
+            "url": "https://err.fandom.com/wiki/Armament_Upgrading#Kalé",
+            "wikiRevision": "2026-10-02T21:33:47Z",
+            "verifiedVia": "Fandom API query 2026-11-02: page exists"
+          }
+        },
+        {
+          "name": "Smithing Master Iji",
+          "description": "Smithing Master Iji, found by the Road to the Manor Site of Grace in Liurnia, can also upgrade armaments. Iji no longer sells any somber smithing stones, instead offering the Spellsmith's Etching Tool and 20 Lost Ashes, among other wares.",
+          "source": {
+            "label": "ERR wiki - Armament Upgrading § Smithing Master Iji",
+            "url": "https://err.fandom.com/wiki/Armament_Upgrading#Smithing_Master_Iji",
+            "wikiRevision": "2026-10-02T21:33:47Z",
+            "verifiedVia": "Fandom API query 2026-11-02: page exists"
+          }
+        },
+        {
+          "name": "Smithing Master Sfyrix",
+          "description": "Blacksmith Sfyrix is a new blacksmith who resides behind Castle Sol in the Mountaintops of the Giants. Like Iji, he doesn't offer any smithing stones, but can upgrade the player's armaments and sells 30 Lost Ashes, among other wares.",
+          "source": {
+            "label": "ERR wiki - Armament Upgrading § Smithing Master Sfyrix",
+            "url": "https://err.fandom.com/wiki/Armament_Upgrading#Smithing_Master_Sfyrix",
+            "wikiRevision": "2026-10-02T21:33:47Z",
+            "verifiedVia": "Fandom API query 2026-11-02: page exists"
+          }
+        },
+        {
+          "name": "Bell Bearing Replacements",
+          "description": "Certain Smithing-Stone Miner's Bell Bearing items were replaced in the world with new Spirit Ashes. Others were replaced with new types of Bell Bearing:\n• Bomb Miner's Bell Bearing: allows the purchase of Explosive Stones and Explosive Stone Clumps. Found in the Sealed Tunnel.\n• Glintstone Miner's Bell Bearing: allows the purchase of Glintstone Scrap and Large Glintstone Scrap. Found in the Sellia Hideaway.\n• Poisoned Miner's Bell Bearing: allows the purchase of Poisoned Stones and Poisoned Stone Clumps. Found in the Seethewater Cave.",
+          "source": {
+            "label": "ERR wiki - Armament Upgrading § Bell Bearing Replacements",
+            "url": "https://err.fandom.com/wiki/Armament_Upgrading#Bell_Bearing_Replacements",
+            "wikiRevision": "2026-10-02T21:33:47Z",
+            "verifiedVia": "Fandom API query 2026-11-02: page exists"
+          }
+        },
+        {
+          "name": "World Pickups",
+          "description": "Smithing stones of both varieties have been redistributed around the map to better match game progression. For example, in Limgrave, Somber/Smithing Stones [1]s are readily available, while Somber/Smithing [2]s are abundant in Weeping Peninsula, Somber/Smithing [3]s become plentiful in Liurnia, and so on. More somber smithing stones have been added to the game in the form of somber scarabs to help meet the higher amounts of somber stones required for upgrades.\nChests found in the cellars of many ruins now contain a region-appropriate smithing stone in addition to their normal drops, to further encourage exploration. Bosses in optional dungeons generally also drop region-appropriate smithing stones alongside their other rewards. \"Catch up\" stones have also been placed: lower-tier stones than expected for a region, usually in very obvious locations to help finish off upgrade tiers. \nSome easily accessible early high-tier smithing stones (notably, in Dragonbarrow) have been replaced with stones more appropriate for the point in the game at which they're expected to be found. Alongside other changes to item placements and drops, this means there is now no 'route' to quickly get a +25/+10 armament early on.\n\"Chair corpse\" smithing stones have been replaced with Signs of the All-Knowing.\nA community-maintained spreadsheet recording the locations of Somber/Smithing Stone pickups throughout the world can be found here.",
+          "source": {
+            "label": "ERR wiki - Armament Upgrading § World Pickups",
+            "url": "https://err.fandom.com/wiki/Armament_Upgrading#World_Pickups",
+            "wikiRevision": "2026-10-02T21:33:47Z",
+            "verifiedVia": "Fandom API query 2026-11-02: page exists"
+          }
+        },
+        {
+          "name": "Enemy Drops",
+          "description": "The drop rates for smithing stones from relevant enemies, such as miners and soldiers, have been increased substantially.\nA new enemy, the Rockbelly, can be found in certain caves and mines. Once defeated, interacting with their corpse rewards the player with the smithing stone growing out of their back. Rockbelly smithing stone drops do not respawn with the enemy.\n__NOTOC__\nCategory:Features\nCategory:Mechanics",
+          "source": {
+            "label": "ERR wiki - Armament Upgrading § Enemy Drops",
+            "url": "https://err.fandom.com/wiki/Armament_Upgrading#Enemy_Drops",
+            "wikiRevision": "2026-10-02T21:33:47Z",
+            "verifiedVia": "Fandom API query 2026-11-02: page exists"
+          }
+        },
+        {
+          "name": "Two-handing",
+          "description": "The 50% Strength damage boost from two-handing an armament has been removed, and replaced with a global 8% damage increase when doing so. This allows all melee armaments to benefit from two-handing. \nThe 50% Strength boost when two-handing for the purpose of meeting minimum stat requirements still exists.",
+          "source": {
+            "label": "ERR wiki - Weapons § Two-handing",
+            "url": "https://err.fandom.com/wiki/Weapons#Two-handing",
+            "wikiRevision": "2026-10-28T16:15:29Z",
+            "verifiedVia": "Fandom API query 2026-11-02: page exists"
+          }
+        },
+        {
+          "name": "Catalyst Attacks",
+          "description": "Catalysts have been reworked to have unique projectile based heavy attacks. \nAll on hit effects such as affinity passives and status buildup on catalysts are applied via this heavy attack, not through spells. \nMany catalyst attacks are condensed versions of actual spells of the spell category the catalyst boosts or come with innately as a mystic ash skill, and share properties with those spells (ex: albinauric staff heavy attack recieving standard damage like night maiden's mist).",
+          "source": {
+            "label": "ERR wiki - Weapons § Catalyst Attacks",
+            "url": "https://err.fandom.com/wiki/Weapons#Catalyst_Attacks",
+            "wikiRevision": "2026-10-28T16:15:29Z",
+            "verifiedVia": "Fandom API query 2026-11-02: page exists"
+          }
+        },
+        {
+          "name": "FP Generation",
+          "description": "Hitting enemies with attacks of all types will restore a small amount of FP. The amount restored is based on your max FP, Intelligence, and whether it was a light, heavy, or critical attack. Slower attacking armaments will also generally restore more FP.",
+          "source": {
+            "label": "ERR wiki - Weapons § FP Generation",
+            "url": "https://err.fandom.com/wiki/Weapons#FP_Generation",
+            "wikiRevision": "2026-10-28T16:15:29Z",
+            "verifiedVia": "Fandom API query 2026-11-02: page exists"
+          }
+        }
+      ]
+    },
+    {
+      "id": "difficulty",
+      "title": "Difficulty & Game Modes",
+      "summary": "Reforged adds a variety of difficulty levels, options, and game modes. By default, the Normal difficulty is enabled.\nDifficulties can be changed at any time by accessing the Reforged Options menu at a Site of Grace. All currently held runes are lost when changing difficulties.\nHard, Master, Co-op, and Co-op Raid difficulties can only be selected after defeating the boss of the Gilded Cave of Knowledge.\nCertain AI changes are added to bosses and enemies at higher difficulties. If a foe has specific changes based on difficulty, it will be listed under their name on the Enemies or Bosses pages. Restored cut attacks and similar changes are not dependent on difficulty.\nSee Enemies for detailed information on enemy and area scaling.",
+      "items": [
+        {
+          "name": "Relaxed Mode",
+          "description": "Great for experimenting, exploring, introducing unfamiliar players, and overall wielding undisputed mastery over the world.\nEnemy stats:\n• x0.35 max HP\n• x0.35 damage\n• x0.5 staminadamage dealt\n• x0.5 poise damage dealt\n• x3 poise damage received\n• x3 stanceregen\n• x3 status buildup received\nPlayer stats:\n• x0.75 status buildup received\n• +0.2% + 2 fpregen every 2 second while in combat\n• This effect overrides natural FP regeneration\n• +1 iframe\n• No rune loss on death",
+          "source": {
+            "label": "ERR wiki - Difficulties and Game Modes",
+            "url": "https://err.fandom.com/wiki/Difficulties_and_Game_Modes",
+            "wikiRevision": "2026-09-23T12:20:41Z",
+            "verifiedVia": "Fandom API query 2026-11-02: page exists"
+          }
+        },
+        {
+          "name": "Casual Mode",
+          "description": "Suitable when accustomed to exercising great power in the original game. Takes some of the edge off from challenging mighty foes. \nEnemy stats:\n• x0.6 max HP\n• x0.6 attack power\n• x0.7 staminadamage dealt\n• x0.6 \n• x1.667 poise damage received\n• x1.667 stanceregen\nPlayer stats:\n• x0.8 status buildup received\n• 0.2% + 2 fpregen every 2 seconds while in combat\n• This effect overrides natural FP regeneration\n• +1 iframe\n• No rune loss on death",
+          "source": {
+            "label": "ERR wiki - Difficulties and Game Modes",
+            "url": "https://err.fandom.com/wiki/Difficulties_and_Game_Modes",
+            "wikiRevision": "2026-09-23T12:20:41Z",
+            "verifiedVia": "Fandom API query 2026-11-02: page exists"
+          }
+        },
+        {
+          "name": "Normal Mode",
+          "description": "A fair experience for most players, and a good starting point to get familiar with Reforged systems and additions. \nNormal Mode is the difficulty set by default on all new characters.\nEnemy stats:\n• x0.8 max HP;\n• x0.8 attack power;\n• x0.9 staminadamage dealt;\n• x0.8 ;\n• x1.25 poise damage received;\n• x1.25 stanceregen;\nPlayer stats:\n• x0.9 status buildup received;\n• +1 iframe.",
+          "source": {
+            "label": "ERR wiki - Difficulties and Game Modes",
+            "url": "https://err.fandom.com/wiki/Difficulties_and_Game_Modes",
+            "wikiRevision": "2026-09-23T12:20:41Z",
+            "verifiedVia": "Fandom API query 2026-11-02: page exists"
+          }
+        },
+        {
+          "name": "Reforged Mode",
+          "description": "Recommended experience for Reforged veterans familiar with the mod, with plenty of challenge to overcome.\nNo modifiers are applied to the player or enemies in this mode.",
+          "source": {
+            "label": "ERR wiki - Difficulties and Game Modes",
+            "url": "https://err.fandom.com/wiki/Difficulties_and_Game_Modes",
+            "wikiRevision": "2026-09-23T12:20:41Z",
+            "verifiedVia": "Fandom API query 2026-11-02: page exists"
+          }
+        },
+        {
+          "name": "Adept Mode",
+          "description": "Notably ramps up the challenge; expect to fine-tune your tactics for most encounters. \nEnemy stats:\n• x1.35 max HP\n• x1.05 max stamina\n• x1.1 attack power\n• x1.05 staminadamage dealt\n• x0.851 poise damage received \n• x0.851 stanceregen\n• x0.806 status buildup received \n• x0.96 damage received from bloodlossnl / frostbitenl / sleepnl / madnessnl\nPlayer stats: \n• x1.05 status buildup received",
+          "source": {
+            "label": "ERR wiki - Difficulties and Game Modes",
+            "url": "https://err.fandom.com/wiki/Difficulties_and_Game_Modes",
+            "wikiRevision": "2026-09-23T12:20:41Z",
+            "verifiedVia": "Fandom API query 2026-11-02: page exists"
+          }
+        },
+        {
+          "name": "Hard Mode",
+          "description": "Requires expert build-crafting, preparation and detailed study of opponents to succeed. Does not offer a \"superior\" experience. \nEnemy stats: \n• x1.6 max HP\n• x1.1 max stamina\n• x1.2 attack power\n• x1.1 staminadamage dealt\n• x0.77 poise damage received \n• x0.77 stanceregen\n• x0.72 status buildup received \n• x0.93 damage received from bloodlossnl / frostbitenl / sleepnl / madnessnl\n• Hard enemy effects\nPlayer stats: \n• x1.1 status buildup received\n• -1 iframe\n==== Hard Enemy Effects ====\nOn Hard, Master, Co-op Hard/Master/Raid, and any Special difficulties that list it: \n• Some Bosses and a small number of Elite Enemies have \"Hard\" AI (new attack effects and new strings/combos) and are more aggressive. These are not new attacks, rather new combinations of existing attacks and modifiers to existing attacks. \n• For example, Margit will throw a spread of 3 daggers rather than just one, to prevent the player from simply strafing the attack.\n• Some basic enemies will gain faster cancel windows for some attacks. This will will allow them to act more quickly out of certain animations. This is primarily present on very simple enemies such as Giant Crabs, Scaly Misbegotten, and Trolls.\n• This does not increase their aggression, it simply reduces the length of the punish window on very safe attacks.\n• Enemies begin to slowly recover their health after a few seconds of not getting hit. Aggressive play prevents this from happening.\n• Use of ranged attacks (such as consumables, an offhand Throwing Blade, skills like Spectral Lance, or shortbows) can be extremely useful to prevent enemies' HP and stance regeneration during windows where melee attacks are difficult to perform.\n• Enemy regen will be paused during attacks where attacking them isn't feasible even with these options, such as dragons flying long distances away or into the air, or bosses that vanish temporarily.\n• If an enemy is fully alerted, it becomes immune to backstabs.\n• Upon dying and retrieving your lost runes, 10% of them will be gone. This is usually referred to as \"rune decay\".",
+          "source": {
+            "label": "ERR wiki - Difficulties and Game Modes",
+            "url": "https://err.fandom.com/wiki/Difficulties_and_Game_Modes",
+            "wikiRevision": "2026-09-23T12:20:41Z",
+            "verifiedVia": "Fandom API query 2026-11-02: page exists"
+          }
+        },
+        {
+          "name": "Master Mode",
+          "description": "A thoroughly punishing, uncompromising marathon. Expect to invest many hours into most major encounters.\nEnemy stats: \n• x2 max HP\n• x1.2 max stamina\n• x1.3 attack power\n• x1.2 staminadamage dealt\n• x0.67 poise damage received \n• x0.67 stanceregen \n• x0.625 status buildup received\n• x0.84 damage received from bloodlossnl / frostbitenl / sleepnl / madnessnl\n• Hard enemy effects\nPlayer stats: \n• x1.15 status buildup received\n• -1 iframe",
+          "source": {
+            "label": "ERR wiki - Difficulties and Game Modes",
+            "url": "https://err.fandom.com/wiki/Difficulties_and_Game_Modes",
+            "wikiRevision": "2026-09-23T12:20:41Z",
+            "verifiedVia": "Fandom API query 2026-11-02: page exists"
+          }
+        },
+        {
+          "name": "Co-op Adept Mode",
+          "description": "Co-Op Adept is NOT the default Co-Op difficulty. Groups should start with Reforged difficulty and move to this mode if they find it too easy.\nSuitable for coordinated groups of players who want a consistently challenging, but not overwhelming experience.\nEnemy stats:\n• x1.35 max HP;\n• x1.15 max stamina;\n• x1.2 attack power;\n• x1.15 staminadamage dealt;\n• x0.851 poise damage received; \n• x0.851 stanceregen;\n• x0.806 status buildup received; \n• x0.96 damage received from bloodlossnl / frostbitenl / sleepnl / madnessnl;\nPlayer stats:\n• x1.05 status buildup received;\n• x0.98 attack power of spells, arrows, consumables and thrown attacks (this includes the ranged attacks of Smithscript weapons);\n• x0.9 HP restoration from flasks;\n• x0.95 FP restoration from flasks.",
+          "source": {
+            "label": "ERR wiki - Difficulties and Game Modes",
+            "url": "https://err.fandom.com/wiki/Difficulties_and_Game_Modes",
+            "wikiRevision": "2026-09-23T12:20:41Z",
+            "verifiedVia": "Fandom API query 2026-11-02: page exists"
+          }
+        },
+        {
+          "name": "Co-op Hard Mode",
+          "description": "Suitable for coordinated groups of players who want a challenge that requires perseverance and well-crafted builds to triumph.\nEnemy stats:\n• x1.5 max HP;\n• x1.2 max stamina;\n• x1.25 attack power;\n• x1.2 staminadamage dealt;\n• x0.77 poise damage received; \n• x0.77 stanceregen;\n• x0.77 status buildup received; \n• x0.94 damage received from bloodlossnl / frostbitenl / sleepnl / madnessnl;\n• Hard enemy effects.\nPlayer stats:\n• x1.035 max HP;\n• x1.1 status buildup received;\n• x0.96 attack power of spells, arrows, consumables and thrown attacks (this includes the ranged attacks of Smithscript weapons);\n• x0.8 HP restoration from the Flask;\n• x0.965 HP restoration from non-Flask sources;\n• x0.85 FP restoration from flasks.\n• -1 iframe.",
+          "source": {
+            "label": "ERR wiki - Difficulties and Game Modes",
+            "url": "https://err.fandom.com/wiki/Difficulties_and_Game_Modes",
+            "wikiRevision": "2026-09-23T12:20:41Z",
+            "verifiedVia": "Fandom API query 2026-11-02: page exists"
+          }
+        },
+        {
+          "name": "Co-op Master Mode",
+          "description": "Suitable for highly coordinated groups of players who want a brutal challenge that requires teamwork, synergy, and nerves of steel. Major encounters will test every skill you have.\nEnemy stats:\n• x1.75 max HP;\n• x1.25 max stamina;\n• x1.3 attack power;\n• x1.25 staminadamage dealt;\n• x0.727 poise damage received; \n• x0.727 stanceregen;\n• x0.657 status buildup received; \n• x0.88 damage received from bloodlossnl / frostbitenl / sleepnl / madnessnl;\n• Hard enemy effects.\nPlayer stats:\n• x1.065 max HP;\n• x1.15 status buildup received;\n• x0.94 attack power of spells, arrows, consumables and thrown attacks (this includes the ranged attacks of Smithscript weapons);\n• x0.7 HP restoration from the Flask;\n• x0.935 HP restoration from non-Flask sources;\n• x0.75 FP restoration from flasks.\n• -1 iframe.",
+          "source": {
+            "label": "ERR wiki - Difficulties and Game Modes",
+            "url": "https://err.fandom.com/wiki/Difficulties_and_Game_Modes",
+            "wikiRevision": "2026-09-23T12:20:41Z",
+            "verifiedVia": "Fandom API query 2026-11-02: page exists"
+          }
+        },
+        {
+          "name": "Co-op Raid Mode",
+          "description": "An extremely difficult co-op mode intended only for expertly coordinated groups who wish to suffer. Every encounter will push your builds and teamwork to the limit.\nSome major bosses gain additional attack effects uniquely suited for handling multiple players.\nEnemy stats:\n• x2 max HP;\n• x1.3 max stamina;\n• x1.35 attack power;\n• x1.3 staminadamage dealt;\n• x0.667 poise damage received; \n• x0.667 stanceregen;\n• x0.625 status buildup received; \n• x0.84 damage received from bloodlossnl / frostbitenl / sleepnl / madnessnl;\n• Hard enemy effects.\nPlayer stats:\n• x1.1 max HP;\n• x1.2 status buildup received;\n• x0.94 attack power of spells, arrows, consumables and thrown attacks (this includes the ranged attacks of Smithscript weapons);\n• x0.6 HP restoration from the Flask;\n• x0.9 HP restoration from non-Flask sources;\n• x0.65 FP restoration from flasks.\n• -1 iframe.",
+          "source": {
+            "label": "ERR wiki - Difficulties and Game Modes",
+            "url": "https://err.fandom.com/wiki/Difficulties_and_Game_Modes",
+            "wikiRevision": "2026-09-23T12:20:41Z",
+            "verifiedVia": "Fandom API query 2026-11-02: page exists"
+          }
+        },
+        {
+          "name": "PvP Mode",
+          "description": "Replicates the effects of the automatically applied \"PvP Mode\" from standard multiplayer in Seamless Co-Op PvP play.\nThis mode is only available when using Seamless Co-Op, as the effects are applied automatically when invaded or in a duel normally.\nNote: This mode is NOT intended for normal gameplay or for fighting NPC/Tarnished enemies. It is designed exclusively for fighting other human players.",
+          "source": {
+            "label": "ERR wiki - Difficulties and Game Modes",
+            "url": "https://err.fandom.com/wiki/Difficulties_and_Game_Modes",
+            "wikiRevision": "2026-09-23T12:20:41Z",
+            "verifiedVia": "Fandom API query 2026-11-02: page exists"
+          }
+        },
+        {
+          "name": "New Game Plus",
+          "description": "NG+ enemy scaling greatly reworked - All enemies will be roughly the same power level for the entire game, rather than early enemies still being significantly weaker than endgame NG enemies.\nAdded the ability to advance to the next Journey (NG+) early at the Chapel of Anticipation. See page for more details. \nWhen in NG+, you will be able to buy additional Rune Pieces, Ember Pieces and Lost Ashes at any Site of Grace upon reaching the level cap. Additionally, new Ascended Runes will be available for purchase, which grant extremely small bonuses and act as a rune dump once you've bought every other Binding Rune.\n+NG+ values (1.2.3C) | | NG+1 | NG+2 | NG+3 | NG+4 | NG+5 | NG+6 | NG+7\nmax HP | x1.0 42 | x1.083 | x1.167 | x1.25 | x1.333 | x1.417 | x1.5\nmax stamina | x1.05 | x1.075 | x1.1 | x1.125 | x1.15 | x1.175 | x1.2\ndamage / dealt | x1.029 | x1.071 | x1.143 | x1.214 | x1.286 | x1.358 | x1.429\nstaminadamage / dealt | x1.025 | x1.05 | x1.075 | x1.1 | x1.15 | x1.2 | x1.25\nstatus buildup / received | x0.96 | x0.923 | x0.857 | x0.8 | x0.75 | x0.706 | x0.667\npoise damage / received | x0.979 | x0.96 | x0.923 | x0.889 | x0.857 | x0.827 | x0.8",
+          "source": {
+            "label": "ERR wiki - Difficulties and Game Modes",
+            "url": "https://err.fandom.com/wiki/Difficulties_and_Game_Modes",
+            "wikiRevision": "2026-09-23T12:20:41Z",
+            "verifiedVia": "Fandom API query 2026-11-02: page exists"
+          }
+        },
+        {
+          "name": "Adventure Mode",
+          "description": "Adventure Mode replaces fast traveling to sites of grace with waygate teleportation between the Roundtable Hold and certain points in the Lands Between and Realm of Shadow. This creates an experience similar to the original Dark Souls, with limited warp points and no ability to freely escape to a grace. \nThere are 34 gateways in the Lands Between, and 13 in the Realm of Shadow.",
+          "source": {
+            "label": "ERR wiki - Difficulties and Game Modes",
+            "url": "https://err.fandom.com/wiki/Difficulties_and_Game_Modes",
+            "wikiRevision": "2026-09-23T12:20:41Z",
+            "verifiedVia": "Fandom API query 2026-11-02: page exists"
+          }
+        },
+        {
+          "name": "Eternal Return Challenge",
+          "description": "Eternal Return is a game mode focused on NPC quests. Cursed by the Three Fingers, you only have three (in-game) days to become Elden Lord before the flame consumes you and Order is lost forever. Players must empower themselves with Grace found from interacting with and completing NPC quests to become Elden Lord.",
+          "source": {
+            "label": "ERR wiki - Difficulties and Game Modes",
+            "url": "https://err.fandom.com/wiki/Difficulties_and_Game_Modes",
+            "wikiRevision": "2026-09-23T12:20:41Z",
+            "verifiedVia": "Fandom API query 2026-11-02: page exists"
+          }
+        },
+        {
+          "name": "Additional Enemies",
+          "description": "Additional Enemies is an in-development feature which can be accessed via a toggleable option inside the Knight's Study of the Gilded Court. It adds a variety of enemies to most of the dungeons and legacy dungeons throughout the game. Each enemy is manually placed in an effort to create new and interesting enemy encounters inside familiar dungeons, and often includes enemies not seen in that dungeon. This includes DLC enemies inside base-game dungeons.\nThe enemies added have a slight green tint to distinguish them from the ordinary enemies present in that dungeon.\nCategory:Features",
+          "source": {
+            "label": "ERR wiki - Difficulties and Game Modes",
+            "url": "https://err.fandom.com/wiki/Difficulties_and_Game_Modes",
+            "wikiRevision": "2026-09-23T12:20:41Z",
+            "verifiedVia": "Fandom API query 2026-11-02: page exists"
+          }
+        }
+      ]
+    },
+    {
+      "id": "spirit-fury",
+      "title": "Spirit Ashes & Spirit Fury",
+      "summary": "The Spirit Ash system has been substantially rebalanced in Reforged, especially with the addition of Spirit Fury. Spirit Ashes now require more substantial investment in Mind in order to be most effective, and will not trivialize most boss encounters like in vanilla merely upon being summoned, allowing them to be a more carefully considered part of any build. \nAdditionally, Reforged adds multiple new Spirit Ashes and has reworked the numbers on many existing ones.",
+      "items": [
+        {
+          "name": "Spirit Fury",
+          "description": "Spirit Ashes are now \"Passive\" by default when summoned. When passive, the following effects apply to all spirit ashes:\n• Very low damage output.\n• Very high damage reduction.\n• Reduced status buildup.\n• Passive ashes cannot stagger or flatten enemies.\n• Passive ashes are completely ignored by enemies unless no other targets exist (I.E. you're too far away for the enemy to engage you).\nPassive ashes are intended to be background companions. They do limited damage and cannot draw enemies away from you, but are very cheap to summon and can provide supportive effects such as status effects, buffs, or supplemental DPS.\nUsing the Spirit Ash again while it is already summoned will \"Enrage\" the ash for twice theFP cost of the initial summon. This has the following effects.\n• Vastly increased damage output (5x compared to passive, typically roughly 2x vanilla damage values).\n• Normal damage reduction.\n• Vastly increased target priority.\n• Note: Some spirit ashes will receive a smaller target priority boost, such as Latenna. This is because these summons are not meant to draw excessive aggro, and are typically fragile. You still need to keep up your attacks or enemies will go after them!\n• Heals the Sprit Ash for 10% of their max HP. This activates every time you Enrage.\nThis Enraged state lasts for a limited time, after which the spirit will calm again. Enraging can be repeated indefinitely, as long as you have enough FP. High levels of Mind, Generator Spells, and fpregen boosts can allow for near-indefinite uptime.\nMind scales the duration of Spirit Fury. The base duration is 30 seconds at 1 Mind, scaling up to 40 seconds at 99 Mind.\n• Certain spirit ashes will act differently in Passive state versus Enraged state, generally switching to more aggressive and direct attacks when Enraged.\n• Certain spirit ashes with powerful buffs or debuffs may use these much less frequently while passive.\n• Certain spirit ashes will perform specific attacks or skills immediately upon being enraged.",
+          "source": {
+            "label": "ERR wiki - Spirit Ashes § Spirit Fury",
+            "url": "https://err.fandom.com/wiki/Spirit_Ashes#Spirit_Fury",
+            "wikiRevision": "2026-09-19T16:01:28Z",
+            "verifiedVia": "Fandom API query 2026-11-02: page exists"
+          }
+        },
+        {
+          "name": "General Changes",
+          "description": "The initial summon costs for spirit summons has been greatly reduced.\nSpirit Ashes will now scale with NG+ cycles.\nUsing the Spiritcalling Bell is now faster and can be done while moving.\nSpirit summons are now vulnerable to status effects.\n• The status effects a spirit summon is vulnerable to depends on what the normal version of that enemy is vulnerable to.\n• This change makes choosing which spirit summon to pick against status afflicting enemies more interesting.\nIncreased the strength of the early levels of Spirit Ash reinforcement, removing the power spike that later levels of reinforcement gained, making reinforcement a more steady upgrade process.\nReplaced some early high-level Gloveworts with lower level ones. A community-maintained, comprehensive spreadsheet of world pickups for Grave/Ghost gloveworts can be found here.\n=== \"Depleted\" Spirit Ashes ===\nDue to item changes from vanilla to Reforged, it may occur that your Spirit Ashes show as \"depleted\". These are outdated versions of the Spirit Ashes.\n• If you have \"depleted spirit ashes\" in your inventory: Go into the Reforged options at a Site of Grace, navigate to \"Compatibility\", and select the \"Restore depleted spirit ashes\" option. After fast traveling, your Spirit Ashes will be restored.\n• If you have \"depleted spirit ashes\" in your quick item slots, but your inventory is fine: Simply re-assign the slots to the new, un-depleted versions of the ash.",
+          "source": {
+            "label": "ERR wiki - Spirit Ashes § General Changes",
+            "url": "https://err.fandom.com/wiki/Spirit_Ashes#General_Changes",
+            "wikiRevision": "2026-09-19T16:01:28Z",
+            "verifiedVia": "Fandom API query 2026-11-02: page exists"
+          }
+        },
+        {
+          "name": "\"Depleted\" Spirit Ashes",
+          "description": "Due to item changes from vanilla to Reforged, it may occur that your Spirit Ashes show as \"depleted\". These are outdated versions of the Spirit Ashes.\n• If you have \"depleted spirit ashes\" in your inventory: Go into the Reforged options at a Site of Grace, navigate to \"Compatibility\", and select the \"Restore depleted spirit ashes\" option. After fast traveling, your Spirit Ashes will be restored.\n• If you have \"depleted spirit ashes\" in your quick item slots, but your inventory is fine: Simply re-assign the slots to the new, un-depleted versions of the ash.",
+          "source": {
+            "label": "ERR wiki - Spirit Ashes § \"Depleted\" Spirit Ashes",
+            "url": "https://err.fandom.com/wiki/Spirit_Ashes#\"Depleted\"_Spirit_Ashes",
+            "wikiRevision": "2026-09-19T16:01:28Z",
+            "verifiedVia": "Fandom API query 2026-11-02: page exists"
+          }
+        }
+      ]
+    },
+    {
+      "id": "bosses",
+      "title": "New Bosses",
+      "summary": "Elden Ring Reforged adds several new bosses to the game. Some of these bosses are entirely new encounters, while others replace less interesting bosses. Additionally, many changes are made to existing bosses, including AI, hitbox, and camera alterations, and in some cases, entirely new attacks based on cut content.\nAdditionally, the player now has the ability to freely resurrect bosses at the Roundtable Hold, allowing you to challenge them any number of times.\nAn endgame boss rush mode called the Trial of Recollection has also been added, to demonstrate your mastery over the game's many boss encounters.",
+      "items": [
+        {
+          "name": "Asimi, Nascent Lord",
+          "description": "Wrapped in enchanted silks, her transformation interrupted, she defends herself, surrendered to her people's will. Conflicted over the necessity of your battle, and the bonds you shared, her swings seem lethargic, even labored.",
+          "kind": "boss",
+          "location": "The Black Cradle",
+          "drops": "125000 Runes",
+          "hp": "16500 (wiki; difficulty/NG may change)",
+          "source": {
+            "label": "ERR wiki - Asimi, Nascent Lord",
+            "url": "https://err.fandom.com/wiki/Asimi,_Nascent_Lord",
+            "wikiRevision": "2026-09-30T12:52:00Z",
+            "verifiedVia": "Fandom API query 2026-11-02: page exists"
+          }
+        },
+        {
+          "name": "Azash, Pride of the Redmanes",
+          "description": "__NOTOC__\nAzash, Pride of the Redmanes is a new boss found in the plaza at the end of Redmane Castle that replaces the Leonine Misbegetton and Crucible Knight. That fight, and its drops, have been moved outside of Redmane Castle.\nIts moveset is that of an elder lion, but it additionally has fire effects on attacks, as well as creating fire surfaces that damage you. It can also inflict bleed with its bite attacks.\nTo mark the beginning of Phase 2, and occasionally during the rest of the fight, he will jump into the air and crash down with a powerful fireball attack.",
+          "kind": "boss",
+          "location": "Redmane Castle|drops=",
+          "drops": "Fury of Azash",
+          "hp": null,
+          "source": {
+            "label": "ERR wiki - Azash, Pride of the Redmanes",
+            "url": "https://err.fandom.com/wiki/Azash,_Pride_of_the_Redmanes",
+            "wikiRevision": "2026-09-30T12:52:35Z",
+            "verifiedVia": "Fandom API query 2026-11-02: page exists"
+          }
+        },
+        {
+          "name": "Crucible Knight Hirnan",
+          "description": "__NOTOC__\nCrucible Knight Hirnan is a new boss located after the Night Sky Unceasing waygate at the Four Belfries in Liurnia. \nHirnan is an endgame fight, but can be fought at any time.",
+          "kind": "boss",
+          "location": "Nokron - Belfry Teleport|drops=",
+          "drops": "Fortune of the Crucible",
+          "hp": null,
+          "source": {
+            "label": "ERR wiki - Crucible Knight Hirnan",
+            "url": "https://err.fandom.com/wiki/Crucible_Knight_Hirnan",
+            "wikiRevision": "2026-09-30T13:01:18Z",
+            "verifiedVia": "Fandom API query 2026-11-02: page exists"
+          }
+        },
+        {
+          "name": "Crucible Knight Rhyacis",
+          "description": "Crucible Knight Rhyacis is a new boss added at the end of the Gilded Cave of Knowledge, the area that replaces the Cave of Knowledge. \nRhyacis is a unique boss, in that he cannot be directly damaged. Instead, you must demonstrate your dodging abilities by successfully avoiding his attacks to deal damage to his healthbar. Repeated failure to dodge will allow him to slowly regenerate his healthbar. He does very little damage, however, so as to not overly punish your attempts to learn.\nRhyacis must be defeated to access Hard Mode and Master Mode in the options at Sites of Grace.",
+          "kind": "boss",
+          "location": "Gilded Cave of Knowledge|drops=",
+          "drops": "Strength Gesture",
+          "hp": null,
+          "source": {
+            "label": "ERR wiki - Crucible Knight Rhyacis",
+            "url": "https://err.fandom.com/wiki/Crucible_Knight_Rhyacis",
+            "wikiRevision": "2026-09-30T13:01:52Z",
+            "verifiedVia": "Fandom API query 2026-11-02: page exists"
+          }
+        },
+        {
+          "name": "Dismounted Tree Sentinel",
+          "description": "__NOTOC__\nThe Dismounted Tree Sentinel is a new boss found on the Bridge of Sacrifice, located between Limgrave and the Weeping Peninsula. It is counted as a Weeping Peninsula boss in terms of scaling and boss resurrection.\nWhen the boss is alive, all enemies on the bridge are absent, including the large ballista, giving you no distractions and a reasonable amount of room. When the boss is defeated, the enemies and ballista return.\nIts moveset is very similar to that of the Dragonslayer Armor in Dark Souls 3, featuring shield bashes and horizontal and overhead swipes. It does not, however, pos",
+          "kind": "boss",
+          "location": "Bridge of Sacrifice|drops=",
+          "drops": "Projection of Gold",
+          "hp": null,
+          "source": {
+            "label": "ERR wiki - Dismounted Tree Sentinel",
+            "url": "https://err.fandom.com/wiki/Dismounted_Tree_Sentinel",
+            "wikiRevision": "2026-09-30T13:02:43Z",
+            "verifiedVia": "Fandom API query 2026-11-02: page exists"
+          }
+        },
+        {
+          "name": "Equilibrious Beast",
+          "description": "Equilibrious Beast is a new boss found at the end of the Subterranean Shunning-Grounds. It replaces Mohg, the Omen.\nEquilibrious Beast is an adapted version of the Nightlord Libra, from Nightreign. The first phase consists of Libra's mixed melee-casting moveset. At 70% HP, Libra enters an invulnerable meditation, in which you must break his sigils. This maddens him and allows you to damage him once more.\nAt 50% HP, Libra disappears and a non-hostile Scale-Bearing Merchant appears, who offers you a deal (options detailed below). Once you pick an option, Libra reappears in his Everdark form, tho",
+          "kind": "boss",
+          "location": "Subterranean Shunning-Grounds|",
+          "drops": "Scepter of Serenity",
+          "hp": null,
+          "source": {
+            "label": "ERR wiki - Equilibrious Beast",
+            "url": "https://err.fandom.com/wiki/Equilibrious_Beast",
+            "wikiRevision": "2026-09-30T13:03:51Z",
+            "verifiedVia": "Fandom API query 2026-11-02: page exists"
+          }
+        },
+        {
+          "name": "Fallen Cavalry",
+          "description": "__NOTOC__\nThe Fallen Cavalry is a new boss found on the broken bridge leading to the shortcut from northern Limgrave to southern Liurnia. \nIt is a halberd Night Cavalry unit, but it starts without its horse and cannot summon it. Unlike other Night Cavalry, it is constantly present on the bridge, night and day.",
+          "kind": "boss",
+          "location": "Northern Limgrave|drops=",
+          "drops": "Ash of War: No Skill",
+          "hp": null,
+          "source": {
+            "label": "ERR wiki - Fallen Cavalry",
+            "url": "https://err.fandom.com/wiki/Fallen_Cavalry",
+            "wikiRevision": "2026-09-30T13:04:58Z",
+            "verifiedVia": "Fandom API query 2026-11-02: page exists"
+          }
+        },
+        {
+          "name": "Fellthorn Spirit",
+          "description": "__NOTOC__\nThe Fellthorn Spirit is a new boss. One is located in the Giant's Gravepost, north of the Foot of the Forge Site of Grace. The other is located in Ashen Leyndell, after backtracking from the Forbidden Lands, where the three Ulcerated Tree Spirits once were.\nThe Fellthorn Spirits are large, trident-wielding creatures which gain the ability to use fire attacks once they reach about 80% health. They additionally inflict bleed upon striking you with their trident.",
+          "kind": "boss",
+          "location": "Giant's Gravepost, Ashen Leyndell|drops=",
+          "drops": "Giant's Gravepost:",
+          "hp": null,
+          "source": {
+            "label": "ERR wiki - Fellthorn Spirit",
+            "url": "https://err.fandom.com/wiki/Fellthorn_Spirit",
+            "wikiRevision": "2026-09-30T13:05:43Z",
+            "verifiedVia": "Fandom API query 2026-11-02: page exists"
+          }
+        },
+        {
+          "name": "Flamelost Knight",
+          "description": "__NOTOC__The Flamelost Knights are a new boss added in Elden Ring Reforged 2.0, which can be found at the end of the Serpentine Depths after giving all three offerings to the altar at the Sacrificial Chasm of Old site of grace.",
+          "kind": "boss",
+          "location": "Serpentine Depths|drops=46200 Runes",
+          "drops": "46200 Runes",
+          "hp": null,
+          "source": {
+            "label": "ERR wiki - Flamelost Knight",
+            "url": "https://err.fandom.com/wiki/Flamelost_Knight",
+            "wikiRevision": "2026-02-21T00:21:28Z",
+            "verifiedVia": "Fandom API query 2026-11-02: page exists"
+          }
+        },
+        {
+          "name": "Fulghor, Champion of Rauh",
+          "description": "Fulghor, Champion of Rauh is a new boss accessed from the Castle Ensis belfry waygate. It replaces a Divine Bird Warrior.\nFulghor is an adapted version of the Nightlord of the same name from Nightreign. First phase consists of a relatively basic moveset with stomps and twinblade swings. At 80% HP, he initiates a massive combo in which he charges three times through you. At 70% HP, he unleashes a dark, thorny hand, which grants him new attacks which inflict deathblight.\nAt 40% HP, he performs the charging combo once more. Finally, at 30% HP, he transitions to his Everdark attacks, which both gr",
+          "kind": "boss",
+          "location": "Ancient Ruins of Rauh (accessed from Castle Ensis)|drops=",
+          "drops": "Dawnglow Greatbolt",
+          "hp": null,
+          "source": {
+            "label": "ERR wiki - Fulghor, Champion of Rauh",
+            "url": "https://err.fandom.com/wiki/Fulghor,_Champion_of_Rauh",
+            "wikiRevision": "2026-10-01T00:48:09Z",
+            "verifiedVia": "Fandom API query 2026-11-02: page exists"
+          }
+        },
+        {
+          "name": "Fulminating Runebear",
+          "description": "__NOTOC__\nThe Fulminating Runebear is a new boss in Liurnia of the Lakes, found in some ruins northeast of the Sorcerer's Isle.\nIts moveset is that of a runebear, but it has additional lightning effects on some attacks. This, in combination with the fulgurbloom field around it, makes this boss dangerous to fight in the water, as lightning spreads on water.",
+          "kind": "boss",
+          "location": "Liurnia, near Sorcerer's Isle|drops=",
+          "drops": "Thunderous Beast Charm",
+          "hp": null,
+          "source": {
+            "label": "ERR wiki - Fulminating Runebear",
+            "url": "https://err.fandom.com/wiki/Fulminating_Runebear",
+            "wikiRevision": "2026-10-01T00:56:48Z",
+            "verifiedVia": "Fandom API query 2026-11-02: page exists"
+          }
+        },
+        {
+          "name": "Gaping Jaw",
+          "description": "Gaping Jaw is a new boss found in Yelough Anix Tunnel. It replaces Astel, Stars of Darkness as the dungeon's boss.\nGaping Jaw is an adapted version of Adel, Baron of Night from Elden Ring Nightreign.",
+          "kind": "boss",
+          "location": "Yelough Anix Tunnel",
+          "drops": "| weak_to = pierce \nholy",
+          "hp": "35914 (wiki; difficulty/NG may change)",
+          "source": {
+            "label": "ERR wiki - Gaping Jaw",
+            "url": "https://err.fandom.com/wiki/Gaping_Jaw",
+            "wikiRevision": "2026-10-01T00:57:08Z",
+            "verifiedVia": "Fandom API query 2026-11-02: page exists"
+          }
+        },
+        {
+          "name": "Gnoster, the False Sky",
+          "description": "Gnoster, the False Sky is a new boss found in Nokron, at the end of the Siofra Aqueduct. It replaces the Valiant Gargoyle duo.\nGnoster is an adapted version of the Nightlord of the same name from Nightreign. Like the Nightlord, it consists of two phases. The fight begins in a duo phase, with the Stoneshield Scorpion on the ground and the Gnoster Moth flying in the sky. Bringing the health of the Scorpion or the Moth to zero will cause the second phase to begin.\nIn its second phase, the Moth lands on the Scorpion and becomes a single entity, with attacks from the first phase mixed with new ones",
+          "kind": "boss",
+          "location": "Nokron|",
+          "drops": "False Constellation",
+          "hp": null,
+          "source": {
+            "label": "ERR wiki - Gnoster, the False Sky",
+            "url": "https://err.fandom.com/wiki/Gnoster,_the_False_Sky",
+            "wikiRevision": "2026-10-01T01:04:26Z",
+            "verifiedVia": "Fandom API query 2026-11-02: page exists"
+          }
+        },
+        {
+          "name": "Grave Sentinel Wyngrant",
+          "description": "__NOTOC__\nGrave Sentinel Wyngrant is a new boss at the end of the Sainted Hero's Grave that replaces the Ancient Hero of Zamor. \nIts moveset is very similar to that of the Dragonslayer Armor from Dark Souls 3, featuring shield bashes and horizontal and overhead swipes. \nUnlike the earlier Dismounted Tree Sentinel, Wyngrant possesses some of the more dangerous parts of Dragonslayer Armor's moveset, such as his charging attacks and area of effect slams, but with a holy theme instead of lightning. These attacks come out mostly in Phase 2. \nAdditionally, his giant holy slam heals himself for about",
+          "kind": "boss",
+          "location": "Sainted Hero's Grave|hp=10074|drops=",
+          "drops": "Tree Sentinel Armor Set",
+          "hp": null,
+          "source": {
+            "label": "ERR wiki - Grave Sentinel Wyngrant",
+            "url": "https://err.fandom.com/wiki/Grave_Sentinel_Wyngrant",
+            "wikiRevision": "2026-10-01T01:04:35Z",
+            "verifiedVia": "Fandom API query 2026-11-02: page exists"
+          }
+        },
+        {
+          "name": "Hallowed Avatar",
+          "description": "__NOTOC__\nThe Hallowed Avatar is a new boss that is only accessible after defeating the final boss of Elden Ring and choosing an ending without immediately transitioning into NG+. \nThe Hallowed Avatar possesses the combined buffs and abilities of every Erdtree Avatar in the game, and this, plus its relatively high health, makes it a challenging fight.",
+          "kind": "boss",
+          "location": "Stone Platform|drops=",
+          "drops": "Fated Whetblade",
+          "hp": null,
+          "source": {
+            "label": "ERR wiki - Hallowed Avatar",
+            "url": "https://err.fandom.com/wiki/Hallowed_Avatar",
+            "wikiRevision": "2026-10-01T01:06:42Z",
+            "verifiedVia": "Fandom API query 2026-11-02: page exists"
+          }
+        },
+        {
+          "name": "Morion, the Unbound Death",
+          "description": "__NOTOC__\nMorion, The Unbound Death is a new boss in Dragonbarrow, found on the Farum Greatbridge to the Bestial Sanctum.\nThey have a similar move set to other dragons, however his breath attack uses the Destined Death visuals and effects.",
+          "kind": "boss",
+          "location": "Dragonbarrow|drops=",
+          "drops": "Rune Piece x 2",
+          "hp": null,
+          "source": {
+            "label": "ERR wiki - Morion, the Unbound Death",
+            "url": "https://err.fandom.com/wiki/Morion,_the_Unbound_Death",
+            "wikiRevision": "2026-10-01T01:08:54Z",
+            "verifiedVia": "Fandom API query 2026-11-02: page exists"
+          }
+        },
+        {
+          "name": "Nox Nightmaiden",
+          "description": "__NOTOC__\nThe Nox Nightmaiden is a new boss found at the ground level in the Night's Sacred Ground section of Nokron, and must be defeated in order to obtain the Fingerslayer Blade. \nThe battle against the Nightmaiden begins as normal. However, upon reaching approximately 60% health, the Nightmaiden will become undamageable and summon one of five possible mimics to help defeat you. While she is less aggressive when she is undamageable, she will slowly follow the player around while they are battling her summon and cast Night Maiden's Mist, dealing damage over time in an area. Spells will also ",
+          "kind": "boss",
+          "location": "Night's Sacred Ground|drops=",
+          "drops": "Night's Edge",
+          "hp": null,
+          "source": {
+            "label": "ERR wiki - Nox Nightmaiden",
+            "url": "https://err.fandom.com/wiki/Nox_Nightmaiden",
+            "wikiRevision": "2026-10-01T01:09:24Z",
+            "verifiedVia": "Fandom API query 2026-11-02: page exists"
+          }
+        },
+        {
+          "name": "Royal Guardian Helicos",
+          "description": "__NOTOC__\nRoyal Guardian Helicos is a new boss found in Leyndell, Royal Capital, inside the Erdtree Sanctuary. He replaces the golden shade of Godfrey, First Elden Lord. \nHelicos consists of three phases. During his first healthbar, its moveset is initially very similar to that of Iudex Gundyr in Dark Souls 3. As his health is depleted, his moveset then becomes similar to Champion Gundyr, featuring sweeping spear attacks, stomps, and kicks. \nAt the start of his second healthbar, he transitions to a model and moveset reminiscent of Iudex Gundyr's second phase, with a body corrupted by an Ulcera",
+          "kind": "boss",
+          "location": "Leyndell, Royal Capital|",
+          "drops": "Phantasmal Effigy",
+          "hp": null,
+          "source": {
+            "label": "ERR wiki - Royal Guardian Helicos",
+            "url": "https://err.fandom.com/wiki/Royal_Guardian_Helicos",
+            "wikiRevision": "2026-07-03T19:46:56Z",
+            "verifiedVia": "Fandom API query 2026-11-02: page exists"
+          }
+        },
+        {
+          "name": "The Sovereign Eternal",
+          "description": "The Sovereign Eternal is a new Remembrance boss found in The Black Cradle. She is the final boss of the dungeon.\nThe Sovereign Eternal is an adapted version of Heolstor the Nightlord from Elden Ring Nightreign.",
+          "kind": "boss",
+          "location": "The Black Cradle",
+          "drops": "• Remembrance of the Sovereign Eternal",
+          "hp": "29700 (wiki; difficulty/NG may change)",
+          "source": {
+            "label": "ERR wiki - The Sovereign Eternal",
+            "url": "https://err.fandom.com/wiki/The_Sovereign_Eternal",
+            "wikiRevision": "2026-10-11T05:06:07Z",
+            "verifiedVia": "Fandom API query 2026-11-02: page exists"
+          }
+        },
+        {
+          "name": "Thief-Taker Acacio",
+          "description": "__NOTOC__\nThief-Taker Acacio is a new boss inside the Malefactor's Evergaol in southern Liurnia, replacing Adan, Thief of Fire.\nUpon beginning the fight, Acacio, a fire prelate, will instantly kill Adan, Thief of Fire before turning around and beginning to battle you. \nAt 60% health, he will enter Phase 2, in which he gains the ability to do an eruption attack and his fire prelate charge. Small fire surfaces will also dot the arena, causing a hazard for the player.",
+          "kind": "boss",
+          "location": "Malefactor's Evergaol|",
+          "drops": "Flame of the Fell God",
+          "hp": null,
+          "source": {
+            "label": "ERR wiki - Thief-Taker Acacio",
+            "url": "https://err.fandom.com/wiki/Thief-Taker_Acacio",
+            "wikiRevision": "2025-12-04T00:21:17Z",
+            "verifiedVia": "Fandom API query 2026-11-02: page exists"
+          }
+        },
+        {
+          "name": "Boss Resurrection",
+          "description": "This feature allows you to resurrect bosses and fight them again, accessible from the Roundtable Hold Site of Grace. Any currently supported bosses will automatically appear in the menu once defeated.\nYou must travel to most boss to re-fight them, though certain bosses with very significant runbacks, such as some catacomb bosses, will give the option to warp directly to them.\nYou may resurrect as many bosses at a time as you wish, with no cost.\nThis is a good way to practice difficult bosses, acquire extra runes, and mark bosses for the Codex of the All Knowing.",
+          "source": {
+            "label": "ERR wiki - Bosses § Boss Resurrection",
+            "url": "https://err.fandom.com/wiki/Bosses#Boss_Resurrection",
+            "wikiRevision": "2026-09-30T14:51:11Z",
+            "verifiedVia": "Fandom API query 2026-11-02: page exists"
+          }
+        }
+      ]
+    },
+    {
+      "id": "areas",
+      "title": "New Areas",
+      "summary": "",
+      "items": [
+        {
+          "name": "Church of Vengeance",
+          "description": "The Church of Vengeance is a new area within southern Stormhill, southwest of the Stormhill Evergaol, overlooking Limegrave's western beach. These dilapidated ruins contain the Redeemer's Plated Finger, as well as the Gracebound Greatsword and the Gracebound Round Shield.",
+          "source": {
+            "label": "ERR wiki - New Locations",
+            "url": "https://err.fandom.com/wiki/New_Locations",
+            "wikiRevision": "2026-09-20T12:26:28Z",
+            "verifiedVia": "Fandom API query 2026-11-02: page exists"
+          }
+        },
+        {
+          "name": "Serpentine Depths",
+          "description": "The Serpentine Depths are a new dungeon in Mt. Gelmir, initially accessed via a side path in Seethewater Cave. This labyrinth of winding tunnels and lava-strewn caves contains a variety of new items and new bosses.\n\nYou can obtain a hint as to how to reach this area from the Mt. Gelmir merchant just before the Ninth Mt. Gelmir Campsite grace.\nTo access this area, you must first enter the Seethewater Cave in Mt. Gelmir. Before you take the plunge down the hole to the boss, instead veer into a side tunnel which contains frenzied rats and a frenzied Leyndell Knight, then go further into a room with wooden scaffolding and a pile of explosive barrels in the corner. Use fire damage to explode these barrels and unveil the entrance to the Serpentine Depths.\nVideo Walkthrough on How to Access",
+          "source": {
+            "label": "ERR wiki - Serpentine Depths",
+            "url": "https://err.fandom.com/wiki/Serpentine_Depths",
+            "wikiRevision": "2026-01-25T21:11:20Z",
+            "verifiedVia": "Fandom API query 2026-11-02: page exists"
+          }
+        },
+        {
+          "name": "The Black Cradle",
+          "description": "The Black Cradle is a new dungeon in the vicinity of Nokron, accessible by progressing its associated new questline and by defeating Maliketh, the Black Blade in the main game's story progression. This extensive underground cityscape contains a variety of puzzles and hidden pathways, as well as new items, new enemies and new bosses.\nCategory:New Content",
+          "source": {
+            "label": "ERR wiki - The Black Cradle",
+            "url": "https://err.fandom.com/wiki/The_Black_Cradle",
+            "wikiRevision": "2026-10-09T13:36:17Z",
+            "verifiedVia": "Fandom API query 2026-11-02: page exists"
+          }
+        }
+      ]
+    },
+    {
+      "id": "misc",
+      "title": "Other Systems",
+      "summary": "Other ERR systems relevant to builds.",
+      "items": [
+        {
+          "name": "Talisman slots and weight",
+          "description": "All talismans now have zero weight.\nAll classes now start with 2 talisman slots. The third slot is unlocked upon defeating Margit, the Fell Omen, while the fourth slot is unlocked by speaking to Finger Reader Enia in Roundtable Hold after acquiring two Great Runes.",
+          "source": {
+            "label": "ERR wiki - Talismans § General Changes",
+            "url": "https://err.fandom.com/wiki/Talismans#General_Changes",
+            "wikiRevision": "2026-10-19T13:37:47Z",
+            "verifiedVia": "Fandom API query 2026-11-02: page exists"
+          }
+        },
+        {
+          "name": "Shadowed Curio",
+          "description": "Shadowed Curios are a new, permanent progression system found in the Realm of Shadow that allow you to upgrade very specific, active portions of your build (unlike the passive boosts of Binding Runes) and typically provide some moderately sized temporary buff upon performing a specific action.\n• Each Curio lets you choose and strengthen one of three unique effects that occur upon the trigger condition.\n• Curios will function both inside and outside the Shadow Realm, unlike Scadutree Blessing.\n• Curios can be re-sealed at any site of grace. This will disable its effect and refund all spent Ember Pieces. \nShadowed Curios must be found throughout the Shadow Realm. Some are found as item pickups, while for others you must defeat certain enemies.\n\nEach Shadowed Curio can be unlocked at the cost of 50 Ember Pieces, which are glowing red collectables found throughout the Shadow Realm, and are found in similarly obscure locations as Rune Pieces in the Lands Between. You can additionally obtain Ember Pieces by defeating bosses. \nTo unlock a Shadowed Curio, you must go to the Strengthen Character menu at a site of grace and select Shadowed curios. You will then be given a choice between three options, allowing you to choose the most relevant effect for your build and playstyle.\nEach effect can be further strengthened by two ranks. To see exactly what strengthening the Shadowed Curio achieves, check their respective pages below. Each rank costs a further 25 Ember Pieces; therefore, a fully upgraded Shadowed Curio will cost you a total of 100 Ember Pieces.\n• It is possible to fully upgrade all nine Shadowed Curios (with one effect each), but not in a single NG cycle due to the limited number of Ember Pieces.\nIn total, there are approximately 250 Ember Pieces as ground pickups in the Realm of Shadow. The community is compiling a list of these ember pieces in this interactive map:",
+          "source": {
+            "label": "ERR wiki - Shadowed Curio",
+            "url": "https://err.fandom.com/wiki/Shadowed_Curio",
+            "wikiRevision": "2025-12-13T22:59:01Z",
+            "verifiedVia": "Fandom API query 2026-11-02: page exists"
+          }
+        },
+        {
+          "name": "Camps",
+          "description": "Camps are new locations added in Reforged, spread around the Lands Between and Realm of Shadow. \nEach camp has several enemies, including one or more camp leaders, which can be easily distinguished by their glowing red eyes. Defeating the camp leader(s) will unlock a camp chest, which usually contains weapons or armor.\n\nUpon approaching a camp, you will be dismounted from Torrent and become unable to summon him until you travel some distance from the camp or complete the camp.\nWithin each camp, you will find a locked chest as well as one or more enemies with glowing red eyes. These enemies are the camp's leaders and must all be defeated to unlock the camp's chest. Camp leaders have increased stats and increase the awareness of nearby enemies when they themselves are alerted.\nOnce all leaders are defeated, a message telling you the camp's chest has opened will appear. At this point, you will be able to use Torrent again. Finding and opening the camp's chest will award you with a themed set of items - often a full armour set or selection of weapons. Typically, camp rewards are items that can be farmed from enemies. However, due to now being accessible via camps they have had their drop rates drastically reduced to reduce inventory clutter. This makes completing camps a much more reliable way to acquire these items without having to rely on RNG.\nResting at a Site of Grace once a camp is complete will cause all the enemies within it (including the ones who were marked as leaders) to respawn. However their leader status, the chest, and Torrent being disabled when nearby will not reset.",
+          "source": {
+            "label": "ERR wiki - Camps",
+            "url": "https://err.fandom.com/wiki/Camps",
+            "wikiRevision": "2026-09-30T12:55:28Z",
+            "verifiedVia": "Fandom API query 2026-11-02: page exists"
+          }
+        },
+        {
+          "name": "Ash of War Enkindling",
+          "description": "Enkindling is a system added in Elden Ring Reforged that allows you to upgrade your Ashes of War with new and interesting passive effects, repurposing the Lost Ashes of War (now called Lost Ashes) found throughout the world.\n\nAsh of War Enkindling replaces the Ash of War duplication menu at Smithing Master Hewg, using the Lost Ashes currency.\nWhen an Ash of War is enkindled, you will be granted an extra copy of it.\n• This copy will have a random rarity of Common, Rare or Legendary, represented respectively by 1, 2 or 3 stars on the Ash of War icon, as well as a random Affix which will grant powerful benefits (see the section below).\n• 3-star (Legendary) Enkindled Ashes of War can also be equipped on Somber weapons of the appropriate weapon class: this allows more varied builds with weapons that are upgraded via Somber Smithing Stones.\n• \"No Skill\" can always be equipped on Somber weapons, even without any Enkindling.\n• Weapon Catalysts are considered weapons for Enkindled Ashes' compatibility.\nUnwanted Enkindled Ashes of War can be sold for runes (1000/4000/16000 respectively for Common/Rare/Legendary).\nEach Enkindled Ash of War purchased also produces a Residual Ashes item. Once 100 Residual Ashes are obtained, they can be traded for 3-star Enkindled Ashes of War.\nFor a list of the Ashes of War that can be placed on staves and seals, see this table.\n===Lost Ashes Availability ===\n• Added to replace many generic crafting ingredients or corpse loot pickups in the world.\n• To make them stand out more, they have been upgraded to Legendary rarity.\n• Guaranteed chest reward for each cleared Camp.\n• Available for purchase in large quantities from Smithing Master Iji (20), Blacksmith Sfyrix (30) and Forsaken Merchant (50).\n• Also available at a few merchants around the world (see this page).\n• New Game Plus (NG+) unlocks a shop, available at every site of grace, where you can purchase unlimited Lost Ashes for 500000 runes each.\n• Lost Ashes have a very small chance to drop from powerful enemies.\n• This chance is not affected by item discovery.\n• Reward for defeating at least two bosses in the Trial of Recollection (based on the chosen difficulty and number of defeated bosses).\n• Unlocked after defeating Elden Beast or in New Game Plus (NG+) and infinitely repeatable, making it one of the best sources in the end-game.",
+          "source": {
+            "label": "ERR wiki - Ash of War Enkindling",
+            "url": "https://err.fandom.com/wiki/Ash_of_War_Enkindling",
+            "wikiRevision": "2026-10-26T15:21:24Z",
+            "verifiedVia": "Fandom API query 2026-11-02: page exists"
+          }
+        },
+        {
+          "name": "Spellcasting changes",
+          "description": "Every spell has received rebalancing for Damage, stamina cost, memoryslot cost, and FP cost. \nCharacters start with one extra memoryslot, for a maximum of 14. This is the maximum number of memoryslots the game supports. The Moon of Nokstella talisman will now grant you maximum memoryslots. \nEach spell cast will initially consume FP based on and then regenerate some FP over one second. This effect is based on the number of memoryslot the spell requires:\n• 0-slot (Generator): 0.2% max FP penalty, then 0.5% max FP + 4\n• 1-slot: 0.4% max FP penalty, then 1% max FP + 12\n• 2-slot: 0.8% max FP penalty, then 1.5% max FP + 20\n• 3-slot: 1.6% max FP penalty, then 2% max FP + 28\nThe range of support Incantations has been increased so affecting allies is more consistent.\nCasting a spell will now very slightly increase the damage of other spells for an extended time. This is not visible as a buff and applis separately for every spell.\n• This provides an incentive to use a wider variety of spells in a given loadout.\nBoosts to specific spell schools from weapon effects now cannot stack if they are both the same potency.\n• For example, Cinqueda's boost to Beast Incantations can stack with the Clawmark Seal, but wielding 2 Beastclaw Seals would not allow them to stack.\nbuff duration increasing effects do not affect hpregen effects, including from spells.\n All spells that increase a weapons' damage or status have a base value listed on the spell, but is modified by the weapon class, with slower weapon types getting a higher amount than listed, while faster weapons getting a lower amount than listed. For more information check the Buffing Weapons section on Weapons\n=== Cast Speed ===\nGreatly increased the speed of most spell casting animations. Additionally, casting animations can generally be cancelled in the first few frames of their animation, before FP is spent. The animations can also be cancelled more quickly after firing. Certain spells have had range adjustments to account for these safer cast animations.\ncastspeednl will improve how quickly spells may transition into weapon skills and attacks. This allows for hybrid melee + spell casting builds to benefit more from castspeednl.\nThe castspeednl stat now works on a scale from 1 to 250 instead of the original 10 to 70 points. Mind now governs cast speed instead of Dexterity, up to +125 at 99 Mind. \nPlayers start with 50 castspeednl. \nSome catalysts provide a bonus or penalty to castspeednl when used: \n• Academy Glintstone Staff: +25\n• Azur's Glintstone Staff: +50\n• Clawmark Seal: +25\n• Dryleaf Seal: +25\n• Staff of the Great Beyond: +25\n• Scepter of the All-Knowing: +25\n• Giant's Seal: -25\n• Lusat's Glintstone Staff: -25\n• Rotten Crystal Staff: -25\nThe Radagon Icon talisman provides +100 points.\nThe Faithful/Flock Canvas Talisman give +25/50 points.\nThe Tainted Projection rune also gives up to +50 points.\n=== Healing Decay ===\nThe spells that provide an instantaneous burst of HP are subject to a \"healing decay\" mechanic, wherein repeat usage of these spells progressively reduces their effectiveness until resting at a grace. Healing decay decreases received from affected spells by -1.25% per stack, capping at 40 stacks for -50% healing effectiveness. The following spells are affected:\n• Urgent Heal: 1 stack per cast\n• Heal: 2 stacks per cast\n• Great Heal: 3 stacks per cast\n• Lord's Heal: 4 stacks per cast\n• Order Healing: 2 stacks per cast\n• Erdtree Heal: 5 stacks per cast\n\nGreatly increased the speed of most spell casting animations. Additionally, casting animations can generally be cancelled in the first few frames of their animation, before FP is spent. The animations can also be cancelled more quickly after firing. Certain spells have had range adjustments to account for these safer cast animations.\ncastspeednl will improve how quickly spells may transition into weapon skills and attacks. This allows for hybrid melee + spell casting builds to benefit more from castspeednl.\nThe castspeednl stat now works on a scale from 1 to 250 instead of the original 10 to 70 points. Mind now governs cast speed instead of Dexterity, up to +125 at 99 Mind. \nPlayers start with 50 castspeednl. \nSome catalysts provide a bonus or penalty to castspeednl when used: \n• Academy Glintstone Staff: +25\n• Azur's Glintstone Staff: +50\n• Clawmark Seal: +25\n• Dryleaf Seal: +25\n• Staff of the Great Beyond: +25\n• Scepter of the All-Knowing: +25\n• Giant's Seal: -25\n• Lusat's Glintstone Staff: -25\n• Rotten Crystal Staff: -25\nThe Radagon Icon talisman provides +100 points.\nThe Faithful/Flock Canvas Talisman give +25/50 points.\nThe Tainted Projection rune also gives up to +50 points.\n\nThe spells that provide an instantaneous burst of HP are subject to a \"healing decay\" mechanic, wherein repeat usage of these spells progressively reduces their effectiveness until resting at a grace. Healing decay decreases received from affected spells by -1.25% per stack, capping at 40 stacks for -50% healing effectiveness. The following spells are affected:\n• Urgent Heal: 1 stack per cast\n• Heal: 2 stacks per cast\n• Great Heal: 3 stacks per cast\n• Lord's Heal: 4 stacks per cast\n• Order Healing: 2 stacks per cast\n• Erdtree Heal: 5 stacks per cast",
+          "source": {
+            "label": "ERR wiki - Spells § General Spellcasting Changes",
+            "url": "https://err.fandom.com/wiki/Spells#General_Spellcasting_Changes",
+            "wikiRevision": "2026-11-01T18:20:02Z",
+            "verifiedVia": "Fandom API query 2026-11-02: page exists"
+          }
+        },
+        {
+          "name": "Generator spells",
+          "description": "generatornl spells are a new category of spells that do decreased damage but will generate FP on hit and do not take any memoryslot to equip.\n• These spells allow you to regenerate without using flasks, giving spellcasters more sustainability while fighting.\n• Generators can be recognized by the blue drop in the bottom right corner of their spell icon.\n• Each spell tool has a built-in generator spell that can be accessed by performing a heavy attack. These spells cost zero FP.\nGenerators restore both flat FP and a percentage of your max FP on hit. \n• The exact restoration varies per spell, depending on the attack speed (check the tables below).\n=== Generator Sorceries ===\nName | Spell Type | FP on hit | Effect\nAmbush Shard | Night | 1.02% + 102 | Launches a projectile from a distance removed from the caster, so as to strike the enemy from behind\nBlasphemous Spark (new) | Magma | 1.76% + 176 | Sparks a stream of blasphemous flame to scorch foes\nCarian Slicer | Carian | 0.95% + 95 | Conjures a magic sword and delivers a swift sweeping slash\nGlintstone Pebble | Glintstone | 0.94% + 94 | The glintstone serves as a conduit, launching magical projectiles at foes\nGlintstone Snowdrift (new) | Cold | 1.12% + 112 | The glintstone serves as a conduit, launching a deluge of freezing projectiles at foes\nRancor (new) | Ghostflame | 0.98% + 98 | Summons a vengeful spirit that chases down foes\nStone Sling (new) | Gravity | 1.92% + 192 | Pulls a stone from the earth and sends it flying\n=== Generator Incantations ===\nName | Spell Type | FP on hit | Effect\nBestial Sling | Bestial | 0.96% + 96 | Swiftly flings a number of sharp rock shards\nCatch Flame | Giants' Flame / Godslayer (Godslayer's Seal) | 1.06% + 106 | Momentarily sparks flame from the caster's hand\nDragonrend (new) | Dragon Communion | 1.01% + 101 | Creates dragon claw lacerations to cleave foes\nGolden Star (new) | Erdtree | 1.53% + 153 | Creates a golden shooting star that homes in on targets\nHoned Bolt | Dragon Cult | 1.14% + 114 | Summons a bolt of lightning to strike foes from above\nRetch Gore (new) | Blood Oath | 1.71% + 171 | Ejects a cone of vile blood from the caster's mouth\nScarlet Papillon (new) | Servants of Rot | 1.67% + 167 | Brings forth a swarm of scarlet butterflies. The butterflies descend nearby, inflicting minor scarlet rot buildup",
+          "source": {
+            "label": "ERR wiki - Spells § Generator Spells",
+            "url": "https://err.fandom.com/wiki/Spells#Generator_Spells",
+            "wikiRevision": "2026-11-01T18:20:02Z",
+            "verifiedVia": "Fandom API query 2026-11-02: page exists"
+          }
+        },
+        {
+          "name": "Skill changes (general)",
+          "description": "• Significant action speed increases to nearly all Skills.\n• This allows Skills to be used more opportunistically or as mixups, and further diversifies them from charged attacks.\n• Skill strength is generally increased, but costs greater amounts of FP.\n• This helps to deter skill spamming and is complemented by Elden Ring Reforged's changes to FP recovery.\n• Most Ashes of War base their effect damage on their own scaling, overriding the weapon's.\n• Bows of all types can now generally equip Ashes of War valid for \"All Armaments\". Weapon catalysts can equip Ashes of War valid for their moveset/original armament class.",
+          "source": {
+            "label": "ERR wiki - Skills § General Changes",
+            "url": "https://err.fandom.com/wiki/Skills#General_Changes",
+            "wikiRevision": "2026-11-01T14:08:52Z",
+            "verifiedVia": "Fandom API query 2026-11-02: page exists"
+          }
+        }
+      ]
+    }
+  ],
+  "guides": [
+    {
+      "title": "ELDEN RING Reforged – Nexus Mods page (official, version and changelog)",
+      "url": "https://www.nexusmods.com/eldenring/mods/541",
+      "source": "Nexus Mods",
+      "siteType": "official",
+      "verifiedVia": "WebFetch content read 2026-11-02 (page shows Version 2.3.8.1, last updated 30 Oct 2026)"
+    },
+    {
+      "title": "ERR community wiki (Fandom)",
+      "url": "https://err.fandom.com/wiki/ELDEN_RING_Reforged_Wiki",
+      "source": "ERR wiki",
+      "siteType": "wiki",
+      "verifiedVia": "Fandom API query 2026-11-02: page exists"
+    },
+    {
+      "title": "ERR wiki – Fortunes",
+      "url": "https://err.fandom.com/wiki/Fortunes",
+      "source": "ERR wiki",
+      "siteType": "wiki",
+      "verifiedVia": "Fandom API query 2026-11-02: page exists"
+    },
+    {
+      "title": "ERR wiki – Vanilla Weapons Changes",
+      "url": "https://err.fandom.com/wiki/Vanilla_Weapons_Changes",
+      "source": "ERR wiki",
+      "siteType": "wiki",
+      "verifiedVia": "Fandom API query 2026-11-02: page exists"
+    },
+    {
+      "title": "mandude Elden Ring weapon calculator (has a Reforged mode)",
+      "url": "https://mandude.github.io/elden-ring-weapon-calculator/",
+      "source": "mandude",
+      "siteType": "tool",
+      "verifiedVia": "curl HTTP 200 2026-11-02"
+    },
+    {
+      "title": "mandude calculator source (Reforged regulation data, MIT)",
+      "url": "https://github.com/mandude/elden-ring-weapon-calculator",
+      "source": "GitHub",
+      "siteType": "tool",
+      "verifiedVia": "curl HTTP 200 2026-11-02"
+    },
+    {
+      "title": "tclark Elden Ring weapon calculator – Reforged",
+      "url": "https://eldenring.tclark.io/reforged",
+      "source": "tclark",
+      "siteType": "tool",
+      "verifiedVia": "curl HTTP 200 2026-11-02"
+    }
+  ]
+}

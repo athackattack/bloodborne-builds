@@ -205,6 +205,44 @@ h1 {
 .variant-banner p + p { margin-top: 0.35rem; }
 .variant-banner a { color: var(--s); }
 #tier-banners:empty, #guide-banners:empty { display: none; }
+.origin-badge {
+  display: inline-block;
+  margin: 0 0 0.3rem;
+  padding: 0.05rem 0.45rem;
+  border: 1px solid var(--line-strong);
+  border-radius: 999px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-size: 0.68rem;
+  color: var(--s);
+}
+.origin-badge.is-removed { color: var(--a); }
+.system-block {
+  margin: 0 0 0.7rem;
+  padding: 0.55rem 0.75rem;
+  border: 1px solid var(--line);
+  background: rgba(0, 0, 0, 0.22);
+}
+.system-block summary {
+  cursor: pointer;
+  color: var(--bone);
+}
+.system-title {
+  font-family: var(--display);
+  font-size: 1.35rem;
+  font-weight: 600;
+}
+.system-block summary .muted { margin-left: 0.55rem; }
+.system-name {
+  margin: 0 0 0.35rem;
+  font-family: var(--display);
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+.prose-line { margin: 0.12rem 0; }
+.line-gap { display: block; height: 0.35rem; }
+.incomplete-note { margin: 0.2rem 0 0.45rem; }
+.about-note a, .credit-note a { color: var(--s); }
 .game-row::-webkit-scrollbar { display: none; }
 .game-tab {
   flex: none;
