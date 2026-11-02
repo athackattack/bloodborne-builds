@@ -503,6 +503,29 @@ main.wrap { padding-top: 0.95rem; padding-bottom: calc(2.4rem + env(safe-area-in
   letter-spacing: 0.06em;
   margin-left: 0.35rem;
 }
+.card-hit {
+  display: block;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  text-align: left;
+}
+.card-fortune {
+  margin: 0.35rem 0 0;
+  color: var(--bone-dim);
+  font-size: 0.88rem;
+}
+.fortune-link,
+.equip-link {
+  color: var(--s);
+  text-decoration: underline;
+  text-underline-offset: 0.12em;
+}
+.disposition-reason { margin: 0.15rem 0 0.55rem; }
 .card-play {
   display: -webkit-box;
   -webkit-line-clamp: 2;

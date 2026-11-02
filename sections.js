@@ -919,7 +919,9 @@ function renderSystems(panel, ctx) {
   const data = ctx.extra || {};
   const sections = Array.isArray(data.sections) ? data.sections : [];
   const route = ctx.route || parseHash();
-  const openId = route.focus && route.focus.kind === "system-section" ? route.focus.id : "fortunes";
+  const openId = route.focus && route.focus.kind === "system-section"
+    ? String(route.focus.id || "").split("/")[0] || "fortunes"
+    : "fortunes";
   const query = ui().fortuneQuery || "";
   fill(panel,
     ...reforgedBanners(),
@@ -929,7 +931,9 @@ function renderSystems(panel, ctx) {
     el("div", { class: "system-list" }, sections.map((section) => systemBlock(section, section.id === openId, query))),
     guideList(data.guides)
   );
-  const open = panel.querySelector("details[open]");
+  const itemId = route.focus && route.focus.kind === "system-section" ? route.focus.item : "";
+  const target = itemId ? panel.querySelector(`#sys-${itemId}`) : null;
+  const open = target || panel.querySelector("details[open]");
   if (open && route.focus && route.focus.kind === "system-section") {
     const header = document.querySelector("header");
     const top = open.getBoundingClientRect().top + window.scrollY - ((header && header.offsetHeight) || 0) - 8;
@@ -994,7 +998,13 @@ function systemItem(item) {
   if (item.tier) bits.push(item.tier);
   const hay = [item.name, item.tier, item.description, item.effects, item.minorEffects, item.acquisition, item.effectsNote, item.note]
     .filter(Boolean).join("\n").toLowerCase();
-  return el("article", { class: "record", "data-fortune": item.tier ? "1" : "0", "data-hay": hay }, [
+  const slug = String(item.name || "").toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "");
+  return el("article", {
+    class: "record",
+    id: slug ? `sys-${slug}` : "",
+    "data-fortune": item.tier ? "1" : "0",
+    "data-hay": hay
+  }, [
     bits.length ? el("p", { class: "card-kicker", text: bits.join(" · ") }) : null,
     el("h3", { class: "system-name", text: item.name || "Entry" }),
     item.effectsNote ? el("p", { class: "incomplete-note" }, [
