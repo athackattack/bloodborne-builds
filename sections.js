@@ -321,6 +321,7 @@ const SECTION_CAVEATS = {
 };
 
 function aboutNote(section) {
+  if (state.variant && !state.variant.default) return null;
   const pack = caveatsFor(section);
   if (!pack) return null;
   return el("div", { class: "about-note" }, [
@@ -336,6 +337,16 @@ function caveatsFor(section) {
 }
 
 function sectionAboutSheet(data, section) {
+  if (state.variant && !state.variant.default) {
+    const title = section === "equipment" ? "Equipment notes" : section === "map" ? "Map notes" : "Crafting notes";
+    return el("article", {}, [
+      typeof variantBannerNode === "function" ? variantBannerNode() : null,
+      section === "map" && typeof variantMapNote === "function" ? variantMapNote() : null,
+      el("p", { class: "sheet-kicker", text: state.game.name }),
+      el("h2", { id: "sheet-title", text: title }),
+      data && data.meta && data.meta.notes ? el("p", { text: data.meta.notes }) : null
+    ]);
+  }
   const pack = caveatsFor(section);
   if (!pack) return null;
   const title = section === "equipment" ? "Equipment caveats" : section === "map" ? "Map caveats" : "Crafting caveats";
@@ -352,6 +363,19 @@ function sectionAboutSheet(data, section) {
 
 function fill(parent, ...children) {
   parent.replaceChildren(...children.filter((child) => child != null && child !== false));
+}
+
+function reforgedBanners(kind) {
+  const nodes = [];
+  if (typeof variantBannerNode === "function") {
+    const banner = variantBannerNode();
+    if (banner) nodes.push(banner);
+  }
+  if (kind === "map" && typeof variantMapNote === "function") {
+    const note = variantMapNote();
+    if (note) nodes.push(note);
+  }
+  return nodes;
 }
 
 function noteBlock(meta) {
@@ -466,6 +490,7 @@ function renderCrafting(panel, ctx) {
     ...categories.filter((c) => c && c.id).map((c) => chip("data-craft-cat", c.id, c.name || c.id, cat === c.id))
   ]);
   fill(panel, 
+    ...reforgedBanners(),
     sampleBanner(data.meta),
     aboutNote("crafting") || noteBlock(data.meta),
     el("div", { class: "controls" }, [
@@ -504,6 +529,7 @@ function recipeCard(item) {
   return el("article", { class: "record" }, [
     el("button", { type: "button", class: "record-title", "data-item": item.id || "", text: item.name || "Recipe" }),
     item.effect ? el("p", { text: item.effect }) : null,
+    item.yield != null && item.yield !== "" ? el("p", { class: "muted", text: `Yields ${item.yield}` }) : null,
     mats.length ? el("ul", { class: "clean" }, mats) : null,
     item.whereToFind ? el("p", { class: "muted", text: item.whereToFind }) : null
   ]);
@@ -607,8 +633,10 @@ function renderEquipment(panel, ctx) {
     ...types.filter((t) => t && t.id).map((t) => chip("data-equip-type", t.id, t.name || t.id, type === t.id))
   ]);
   fill(panel, 
+    ...reforgedBanners(),
     sampleBanner(data.meta),
     aboutNote("equipment") || noteBlock(data.meta),
+    armorTab && data.meta && data.meta.armorNote ? el("p", { class: "variant-banner", text: data.meta.armorNote }) : null,
     el("div", { class: "chip-row", role: "tablist", "aria-label": "Equipment" }, [
       chip("data-equip-tab", "weapons", "Weapons", !armorTab),
       chip("data-equip-tab", "armor", "Armor", armorTab)
@@ -676,6 +704,7 @@ function weaponSheet(data, id) {
     fieldBlock("Scaling", weapon.scaling),
     fieldBlock("Requirements", weapon.requirements),
     weapon.upgradePath ? el("section", { class: "block" }, [el("h3", { text: "Upgrade path" }), el("p", { text: weapon.upgradePath })]) : null,
+    weapon.notes ? el("section", { class: "block" }, [el("h3", { text: "Notes" }), el("p", { text: weapon.notes })]) : null,
     weapon.location ? el("section", { class: "block" }, [el("h3", { text: "Where to find it" }), el("p", { text: weapon.location })]) : null,
     relatedBlock(weapon.name),
     sourceLine(weapon.source)
@@ -837,6 +866,7 @@ function renderEmbedMap(panel, data, route) {
   const current = selectedMapEntry(entries, route);
   if (!current || !current.embedUrl) {
     fill(panel,
+      ...reforgedBanners("map"),
       el("p", { class: "map-placeholder", text: "This game has no embedded map yet." }),
       mapLinkBlock(data.mapLinks)
     );
@@ -874,6 +904,7 @@ function renderEmbedMap(panel, data, route) {
   frame.addEventListener("error", () => wrap.classList.add("is-failed"));
   const release = el("button", { type: "button", class: "text-btn map-release", "data-map-release": "1", text: "Done" });
   fill(panel,
+    ...reforgedBanners("map"),
     el("div", { class: "map-shell" }, [
       el("div", { class: "map-bar" }, [
         chips,
@@ -948,6 +979,7 @@ function renderImageMap(panel, data, route) {
   const images = mapEntries(data);
   if (!images.length) {
     fill(panel,
+      ...reforgedBanners("map"),
       el("div", { class: "map-shell" }, [
         aboutNote("map"),
         el("p", { class: "map-placeholder", text: "Map pictures for this game are not in this build yet." })
@@ -998,6 +1030,7 @@ function renderImageMap(panel, data, route) {
     attachImageViewer(viewer, img);
   }
   fill(panel,
+    ...reforgedBanners("map"),
     el("div", { class: "map-shell" }, [
       aboutNote("map"),
       picker,

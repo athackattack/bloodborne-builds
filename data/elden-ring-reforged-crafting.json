@@ -1,0 +1,5368 @@
+{
+ "meta": {
+  "notes": "ERR crafting uses 24 base elements in four groups: Alchemics, Substances, Extracts, and Amalgams. Raw materials break down into those elements, and recipes spend the elements. This file has the 171 recipes and 24 breakdown tables parsed from the ERR wiki Crafting/Recipes page, revision 2026-10-12T04:13:31Z, CC BY-SA (Fandom). The wiki table is three columns wide, and the parse stores neighboring column headings in each path, so only the last path entry is the category shown here. Recipe effect text is not in that parse and is left out. Yields are the wiki quantities. Sources: https://err.fandom.com/wiki/Crafting and https://err.fandom.com/wiki/Crafting/Recipes ."
+ },
+ "categories": [
+  {
+   "id": "throwing-pots",
+   "name": "Throwing Pots"
+  },
+  {
+   "id": "hefty-pots",
+   "name": "Hefty Pots"
+  },
+  {
+   "id": "arrows",
+   "name": "Arrows"
+  },
+  {
+   "id": "bolts",
+   "name": "Bolts"
+  },
+  {
+   "id": "throwing-items",
+   "name": "Throwing Items"
+  },
+  {
+   "id": "misc",
+   "name": "Misc"
+  },
+  {
+   "id": "aromatics",
+   "name": "Aromatics"
+  },
+  {
+   "id": "greases",
+   "name": "Greases"
+  },
+  {
+   "id": "raisins",
+   "name": "Raisins"
+  },
+  {
+   "id": "livers",
+   "name": "Livers"
+  },
+  {
+   "id": "cured-meat",
+   "name": "Cured Meat"
+  },
+  {
+   "id": "boluses",
+   "name": "Boluses"
+  }
+ ],
+ "items": [
+  {
+   "id": "fire-pot",
+   "name": "Fire Pot",
+   "category": "throwing-pots",
+   "yield": 1,
+   "materials": [
+    {
+     "name": "Essential Alchemic",
+     "qty": 8
+    },
+    {
+     "name": "Blazing Substance",
+     "qty": 4
+    }
+   ],
+   "source": {
+    "label": "ERR wiki – Crafting/Recipes",
+    "url": "https://err.fandom.com/wiki/Crafting/Recipes",
+    "verifiedVia": "2026-10-12T04:13:31Z",
+    "unverified": false
+   }
+  },
+  {
+   "id": "redmane-fire-pot",
+   "name": "Redmane Fire Pot",
+   "category": "throwing-pots",
+   "yield": 1,
+   "materials": [
+    {
+     "name": "Essential Alchemic",
+     "qty": 8
+    },
+    {
+     "name": "Ingenious Alchemic",
+     "qty": 1
+    },
+    {
+     "name": "Blazing Substance",
+     "qty": 4
+    }
+   ],
+   "source": {
+    "label": "ERR wiki – Crafting/Recipes",
+    "url": "https://err.fandom.com/wiki/Crafting/Recipes",
+    "verifiedVia": "2026-10-12T04:13:31Z",
+    "unverified": false
+   }
+  },
+  {
+   "id": "giantsflame-fire-pot",
+   "name": "Giantsflame Fire Pot",
+   "category": "throwing-pots",
+   "yield": 1,
+   "materials": [
+    {
+     "name": "Essential Alchemic",
+     "qty": 10
+    },
+    {
+     "name": "Ingenious Alchemic",
+     "qty": 2
+    },
+    {
+     "name": "Blazing Substance",
+     "qty": 4
+    }
+   ],
+   "source": {
+    "label": "ERR wiki – Crafting/Recipes",
+    "url": "https://err.fandom.com/wiki/Crafting/Recipes",
+    "verifiedVia": "2026-10-12T04:13:31Z",
+    "unverified": false
+   }
+  },
+  {
+   "id": "lightning-pot",
+   "name": "Lightning Pot",
+   "category": "throwing-pots",
+   "yield": 1,
+   "materials": [
+    {
+     "name": "Essential Alchemic",
+     "qty": 8
+    },
+    {
+     "name": "Crackling Substance",
+     "qty": 4
+    }
+   ],
+   "source": {
+    "label": "ERR wiki – Crafting/Recipes",
+    "url": "https://err.fandom.com/wiki/Crafting/Recipes",
+    "verifiedVia": "2026-10-12T04:13:31Z",
+    "unverified": false
+   }
+  },
+  {
+   "id": "ancient-dragonbolt-pot",
+   "name": "Ancient Dragonbolt Pot",
+   "category": "throwing-pots",
+   "yield": 1,
+   "materials": [
+    {
+     "name": "Essential Alchemic",
+     "qty": 8
+    },
+    {
+     "name": "Ingenious Alchemic",
+     "qty": 1
+    },
+    {
+     "name": "Draconic Amalgam",
+     "qty": 4
+    }
+   ],
+   "source": {
+    "label": "ERR wiki – Crafting/Recipes",
+    "url": "https://err.fandom.com/wiki/Crafting/Recipes",
+    "verifiedVia": "2026-10-12T04:13:31Z",
+    "unverified": false
+   }
+  },
+  {
+   "id": "fetid-pot",
+   "name": "Fetid Pot",
+   "category": "throwing-pots",
+   "yield": 1,
+   "materials": [
+    {
+     "name": "Essential Alchemic",
+     "qty": 8
+    },
+    {
+     "name": "Noxious Extract",
+     "qty": 4
+    }
+   ],
+   "source": {
+    "label": "ERR wiki – Crafting/Recipes",
+    "url": "https://err.fandom.com/wiki/Crafting/Recipes",
+    "verifiedVia": "2026-10-12T04:13:31Z",
+    "unverified": false
+   }
+  },
+  {
+   "id": "swarm-pot",
+   "name": "Swarm Pot",
+   "category": "throwing-pots",
+   "yield": 1,
+   "materials": [
+    {
+     "name": "Essential Alchemic",
+     "qty": 8
+    },
+    {
+     "name": "Bloody Extract",
+     "qty": 4
+    }
+   ],
+   "source": {
+    "label": "ERR wiki – Crafting/Recipes",
+    "url": "https://err.fandom.com/wiki/Crafting/Recipes",
+    "verifiedVia": "2026-10-12T04:13:31Z",
+    "unverified": false
+   }
+  },
+  {
+   "id": "holy-water-pot",
+   "name": "Holy Water Pot",
+   "category": "throwing-pots",
+   "yield": 1,
+   "materials": [
+    {
+     "name": "Essential Alchemic",
+     "qty": 8
+    },
+    {
+     "name": "Blessed Substance",
+     "qty": 4
+    }
+   ],
+   "source": {
+    "label": "ERR wiki – Crafting/Recipes",
+    "url": "https://err.fandom.com/wiki/Crafting/Recipes",
+    "verifiedVia": "2026-10-12T04:13:31Z",
+    "unverified": false
+   }
+  },
+  {
+   "id": "sacred-order-pot",
+   "name": "Sacred Order Pot",
+   "category": "throwing-pots",
+   "yield": 1,
+   "materials": [
+    {
+     "name": "Essential Alchemic",
+     "qty": 10
+    },
+    {
+     "name": "Ingenious Alchemic",
+     "qty": 2
+    },
+    {
+     "name": "Blessed Substance",
+     "qty": 4
+    }
+   ],
+   "source": {
+    "label": "ERR wiki – Crafting/Recipes",
+    "url": "https://err.fandom.com/wiki/Crafting/Recipes",
+    "verifiedVia": "2026-10-12T04:13:31Z",
+    "unverified": false
+   }
+  },
+  {
+   "id": "freezing-pot",
+   "name": "Freezing Pot",
+   "category": "throwing-pots",
+   "yield": 1,
+   "materials": [
+    {
+     "name": "Essential Alchemic",
+     "qty": 10
+    },
+    {
+     "name": "Ingenious Alchemic",
+     "qty": 2
+    },
+    {
+     "name": "Rimed Extract",
+     "qty": 4
+    }
+   ],
+   "source": {
+    "label": "ERR wiki – Crafting/Recipes",
+    "url": "https://err.fandom.com/wiki/Crafting/Recipes",
+    "verifiedVia": "2026-10-12T04:13:31Z",
+    "unverified": false
+   }
+  },
+  {
+   "id": "poison-pot",
+   "name": "Poison Pot",
+   "category": "throwing-pots",
+   "yield": 1,
+   "materials": [
+    {
+     "name": "Essential Alchemic",
+     "qty": 8
+    },
+    {
+     "name": "Noxious Extract",
+     "qty": 4
+    }
+   ],
+   "source": {
+    "label": "ERR wiki – Crafting/Recipes",
+    "url": "https://err.fandom.com/wiki/Crafting/Recipes",
+    "verifiedVia": "2026-10-12T04:13:31Z",
+    "unverified": false
+   }
+  },
+  {
+   "id": "oil-pot",
+   "name": "Oil Pot",
+   "category": "throwing-pots",
+   "yield": 1,
+   "materials": [
+    {
+     "name": "Essential Alchemic",
+     "qty": 8
+    },
+    {
+     "name": "Starry Amalgam",
+     "qty": 4
+    }
+   ],
+   "source": {
+    "label": "ERR wiki – Crafting/Recipes",
+    "url": "https://err.fandom.com/wiki/Crafting/Recipes",
+    "verifiedVia": "2026-10-12T04:13:31Z",
+    "unverified": false
+   }
+  },
+  {
+   "id": "alluring-pot",
+   "name": "Alluring Pot",
+   "category": "throwing-pots",
+   "yield": 1,
+   "materials": [
+    {
+     "name": "Essential Alchemic",
+     "qty": 6
+    },
+    {
+     "name": "Ingenious Alchemic",
+     "qty": 1
+    },
+    {
+     "name": "Silvery Amalgam",
+     "qty": 4
+    }
+   ],
+   "source": {
+    "label": "ERR wiki – Crafting/Recipes",
+    "url": "https://err.fandom.com/wiki/Crafting/Recipes",
+    "verifiedVia": "2026-10-12T04:13:31Z",
+    "unverified": false
+   }
+  },
+  {
+   "id": "beastlure-pot",
+   "name": "Beastlure Pot",
+   "category": "throwing-pots",
+   "yield": 1,
+   "materials": [
+    {
+     "name": "Essential Alchemic",
+     "qty": 6
+    },
+    {
+     "name": "Ingenious Alchemic",
+     "qty": 1
+    },
+    {
+     "name": "Gory Amalgam",
+     "qty": 4
+    }
+   ],
+   "source": {
+    "label": "ERR wiki – Crafting/Recipes",
+    "url": "https://err.fandom.com/wiki/Crafting/Recipes",
+    "verifiedVia": "2026-10-12T04:13:31Z",
+    "unverified": false
+   }
+  },
+  {
+   "id": "rock-pot",
+   "name": "Rock Pot",
+   "category": "throwing-pots",
+   "yield": 1,
+   "materials": [
+    {
+     "name": "Essential Alchemic",
+     "qty": 8
+    },
+    {
+     "name": "Rocky Amalgam",
+     "qty": 4
+    }
+   ],
+   "source": {
+    "label": "ERR wiki – Crafting/Recipes",
+    "url": "https://err.fandom.com/wiki/Crafting/Recipes",
+    "verifiedVia": "2026-10-12T04:13:31Z",
+    "unverified": false
+   }
+  },
+  {
+   "id": "volcano-pot",
+   "name": "Volcano Pot",
+   "category": "throwing-pots",
+   "yield": 1,
+   "materials": [
+    {
+     "name": "Essential Alchemic",
+     "qty": 8
+    },
+    {
+     "name": "Ingenious Alchemic",
+     "qty": 2
+    },
+    {
+     "name": "Blazing Substance",
+     "qty": 4
+    }
+   ],
+   "source": {
+    "label": "ERR wiki – Crafting/Recipes",
+    "url": "https://err.fandom.com/wiki/Crafting/Recipes",
+    "verifiedVia": "2026-10-12T04:13:31Z",
+    "unverified": false
+   }
+  },
+  {
+   "id": "albinauric-pot",
+   "name": "Albinauric Pot",
+   "category": "throwing-pots",
+   "yield": 1,
+   "materials": [
+    {
+     "name": "Essential Alchemic",
+     "qty": 6
+    },
+    {
+     "name": "Ingenious Alchemic",
+     "qty": 1
+    },
+    {
+     "name": "Silvery Amalgam",
+     "qty": 4
+    }
+   ],
+   "source": {
+    "label": "ERR wiki – Crafting/Recipes",
+    "url": "https://err.fandom.com/wiki/Crafting/Recipes",
+    "verifiedVia": "2026-10-12T04:13:31Z",
+    "unverified": false
+   }
+  },
+  {
+   "id": "cursed-blood-pot",
+   "name": "Cursed-Blood Pot",
+   "category": "throwing-pots",
+   "yield": 1,
+   "materials": [
+    {
+     "name": "Essential Alchemic",
+     "qty": 6
+    },
+    {
+     "name": "Ingenious Alchemic",
+     "qty": 1
+    },
+    {
+     "name": "Gory Amalgam",
+     "qty": 4
+    }
+   ],
+   "source": {
+    "label": "ERR wiki – Crafting/Recipes",
+    "url": "https://err.fandom.com/wiki/Crafting/Recipes",
+    "verifiedVia": "2026-10-12T04:13:31Z",
+    "unverified": false
+   }
+  },
+  {
+   "id": "sleep-pot",
+   "name": "Sleep Pot",
+   "category": "throwing-pots",
+   "yield": 1,
+   "materials": [
+    {
+     "name": "Essential Alchemic",
+     "qty": 8
+    },
+    {
+     "name": "Sedative Extract",
+     "qty": 4
+    }
+   ],
+   "source": {
+    "label": "ERR wiki – Crafting/Recipes",
+    "url": "https://err.fandom.com/wiki/Crafting/Recipes",
+    "verifiedVia": "2026-10-12T04:13:31Z",
+    "unverified": false
+   }
+  },
+  {
+   "id": "rancor-pot",
+   "name": "Rancor Pot",
+   "category": "throwing-pots",
+   "yield": 1,
+   "materials": [
+    {
+     "name": "Essential Alchemic",
+     "qty": 8
+    },
+    {
+     "name": "Mildewy Amalgam",
+     "qty": 4
+    }
+   ],
+   "source": {
+    "label": "ERR wiki – Crafting/Recipes",
+    "url": "https://err.fandom.com/wiki/Crafting/Recipes",
+    "verifiedVia": "2026-10-12T04:13:31Z",
+    "unverified": false
+   }
+  },
+  {
+   "id": "magic-pot",
+   "name": "Magic Pot",
+   "category": "throwing-pots",
+   "yield": 1,
+   "materials": [
+    {
+     "name": "Essential Alchemic",
+     "qty": 8
+    },
+    {
+     "name": "Shimmering Substance",
+     "qty": 4
+    }
+   ],
+   "source": {
+    "label": "ERR wiki – Crafting/Recipes",
+    "url": "https://err.fandom.com/wiki/Crafting/Recipes",
+    "verifiedVia": "2026-10-12T04:13:31Z",
+    "unverified": false
+   }
+  },
+  {
+   "id": "academy-magic-pot",
+   "name": "Academy Magic Pot",
+   "category": "throwing-pots",
+   "yield": 1,
+   "materials": [
+    {
+     "name": "Essential Alchemic",
+     "qty": 10
+    },
+    {
+     "name": "Ingenious Alchemic",
+     "qty": 2
+    },
+    {
+     "name": "Shimmering Substance",
+     "qty": 4
+    }
+   ],
+   "source": {
+    "label": "ERR wiki – Crafting/Recipes",
+    "url": "https://err.fandom.com/wiki/Crafting/Recipes",
+    "verifiedVia": "2026-10-12T04:13:31Z",
+    "unverified": false
+   }
+  },
+  {
+   "id": "rot-pot",
+   "name": "Rot Pot",
+   "category": "throwing-pots",
+   "yield": 1,
+   "materials": [
+    {
+     "name": "Essential Alchemic",
+     "qty": 10
+    },
+    {
+     "name": "Ingenious Alchemic",
+     "qty": 2
+    },
+    {
+     "name": "Scarlet Extract",
+     "qty": 4
+    }
+   ],
+   "source": {
+    "label": "ERR wiki – Crafting/Recipes",
+    "url": "https://err.fandom.com/wiki/Crafting/Recipes",
+    "verifiedVia": "2026-10-12T04:13:31Z",
+    "unverified": false
+   }
+  },
+  {
+   "id": "death-lightning-pot",
+   "name": "Death Lightning Pot",
+   "category": "throwing-pots",
+   "yield": 1,
+   "materials": [
+    {
+     "name": "Essential Alchemic",
+     "qty": 8
+    },
+    {
+     "name": "Crackling Substance",
+     "qty": 2
+    },
+    {
+     "name": "Blighted Extract",
+     "qty": 2
+    }
+   ],
+   "source": {
+    "label": "ERR wiki – Crafting/Recipes",
+    "url": "https://err.fandom.com/wiki/Crafting/Recipes",
+    "verifiedVia": "2026-10-12T04:13:31Z",
+    "unverified": false
+   }
+  },
+  {
+   "id": "frenzied-flame-pot",
+   "name": "Frenzied Flame Pot",
+   "category": "throwing-pots",
+   "yield": 1,
+   "materials": [
+    {
+     "name": "Essential Alchemic",
+     "qty": 8
+    },
+    {
+     "name": "Maddening Extract",
+     "qty": 4
+    }
+   ],
+   "source": {
+    "label": "ERR wiki – Crafting/Recipes",
+    "url": "https://err.fandom.com/wiki/Crafting/Recipes",
+    "verifiedVia": "2026-10-12T04:13:31Z",
+    "unverified": false
+   }
+  },
+  {
+   "id": "eternal-sleep-pot",
+   "name": "Eternal Sleep Pot",
+   "category": "throwing-pots",
+   "yield": 1,
+   "materials": [
+    {
+     "name": "Essential Alchemic",
+     "qty": 8
+    },
+    {
+     "name": "Sedative Extract",
+     "qty": 4
+    }
+   ],
+   "source": {
+    "label": "ERR wiki – Crafting/Recipes",
+    "url": "https://err.fandom.com/wiki/Crafting/Recipes",
+    "verifiedVia": "2026-10-12T04:13:31Z",
+    "unverified": false
+   }
+  },
+  {
+   "id": "hefty-fire-pot",
+   "name": "Hefty Fire Pot",
+   "category": "hefty-pots",
+   "yield": 1,
+   "materials": [
+    {
+     "name": "Essential Alchemic",
+     "qty": 14
+    },
+    {
+     "name": "Ingenious Alchemic",
+     "qty": 3
+    },
+    {
+     "name": "Blazing Substance",
+     "qty": 6
+    }
+   ],
+   "source": {
+    "label": "ERR wiki – Crafting/Recipes",
+    "url": "https://err.fandom.com/wiki/Crafting/Recipes",
+    "verifiedVia": "2026-10-12T04:13:31Z",
+    "unverified": false
+   }
+  },
+  {
+   "id": "hefty-magic-pot",
+   "name": "Hefty Magic Pot",
+   "category": "hefty-pots",
+   "yield": 1,
+   "materials": [
+    {
+     "name": "Essential Alchemic",
+     "qty": 14
+    },
+    {
+     "name": "Ingenious Alchemic",
+     "qty": 3
+    },
+    {
+     "name": "Shimmering Substance",
+     "qty": 6
+    }
+   ],
+   "source": {
+    "label": "ERR wiki – Crafting/Recipes",
+    "url": "https://err.fandom.com/wiki/Crafting/Recipes",
+    "verifiedVia": "2026-10-12T04:13:31Z",
+    "unverified": false
+   }
+  },
+  {
+   "id": "hefty-lightning-pot",
+   "name": "Hefty Lightning Pot",
+   "category": "hefty-pots",
+   "yield": 1,
+   "materials": [
+    {
+     "name": "Essential Alchemic",
+     "qty": 14
+    },
+    {
+     "name": "Ingenious Alchemic",
+     "qty": 3
+    },
+    {
+     "name": "Crackling Substance",
+     "qty": 6
+    }
+   ],
+   "source": {
+    "label": "ERR wiki – Crafting/Recipes",
+    "url": "https://err.fandom.com/wiki/Crafting/Recipes",
+    "verifiedVia": "2026-10-12T04:13:31Z",
+    "unverified": false
+   }
+  },
+  {
+   "id": "hefty-holy-water-pot",
+   "name": "Hefty Holy Water Pot",
+   "category": "hefty-pots",
+   "yield": 1,
+   "materials": [
+    {
+     "name": "Essential Alchemic",
+     "qty": 14
+    },
+    {
+     "name": "Ingenious Alchemic",
+     "qty": 3
+    },
+    {
+     "name": "Blessed Substance",
+     "qty": 6
+    }
+   ],
+   "source": {
+    "label": "ERR wiki – Crafting/Recipes",
+    "url": "https://err.fandom.com/wiki/Crafting/Recipes",
+    "verifiedVia": "2026-10-12T04:13:31Z",
+    "unverified": false
+   }
+  },
+  {
+   "id": "hefty-rock-pot",
+   "name": "Hefty Rock Pot",
+   "category": "hefty-pots",
+   "yield": 1,
+   "materials": [
+    {
+     "name": "Essential Alchemic",
+     "qty": 14
+    },
+    {
+     "name": "Ingenious Alchemic",
+     "qty": 3
+    },
+    {
+     "name": "Rocky Amalgam",
+     "qty": 6
+    }
+   ],
+   "source": {
+    "label": "ERR wiki – Crafting/Recipes",
+    "url": "https://err.fandom.com/wiki/Crafting/Recipes",
+    "verifiedVia": "2026-10-12T04:13:31Z",
+    "unverified": false
+   }
+  },
+  {
+   "id": "hefty-poison-pot",
+   "name": "Hefty Poison Pot",
+   "category": "hefty-pots",
+   "yield": 1,
+   "materials": [
+    {
+     "name": "Essential Alchemic",
+     "qty": 14
+    },
+    {
+     "name": "Ingenious Alchemic",
+     "qty": 3
+    },
+    {
+     "name": "Noxious Extract",
+     "qty": 6
+    }
+   ],
+   "source": {
+    "label": "ERR wiki – Crafting/Recipes",
+    "url": "https://err.fandom.com/wiki/Crafting/Recipes",
+    "verifiedVia": "2026-10-12T04:13:31Z",
+    "unverified": false
+   }
+  },
+  {
+   "id": "hefty-rot-pot",
+   "name": "Hefty Rot Pot",
+   "category": "hefty-pots",
+   "yield": 1,
+   "materials": [
+    {
+     "name": "Essential Alchemic",
+     "qty": 14
+    },
+    {
+     "name": "Ingenious Alchemic",
+     "qty": 3
+    },
+    {
+     "name": "Scarlet Extract",
+     "qty": 6
+    }
+   ],
+   "source": {
+    "label": "ERR wiki – Crafting/Recipes",
+    "url": "https://err.fandom.com/wiki/Crafting/Recipes",
+    "verifiedVia": "2026-10-12T04:13:31Z",
+    "unverified": false
+   }
+  },
+  {
+   "id": "hefty-swarm-pot",
+   "name": "Hefty Swarm Pot",
+   "category": "hefty-pots",
+   "yield": 1,
+   "materials": [
+    {
+     "name": "Essential Alchemic",
+     "qty": 14
+    },
+    {
+     "name": "Ingenious Alchemic",
+     "qty": 3
+    },
+    {
+     "name": "Bloody Extract",
+     "qty": 6
+    }
+   ],
+   "source": {
+    "label": "ERR wiki – Crafting/Recipes",
+    "url": "https://err.fandom.com/wiki/Crafting/Recipes",
+    "verifiedVia": "2026-10-12T04:13:31Z",
+    "unverified": false
+   }
+  },
+  {
+   "id": "hefty-freezing-pot",
+   "name": "Hefty Freezing Pot",
+   "category": "hefty-pots",
+   "yield": 1,
+   "materials": [
+    {
+     "name": "Essential Alchemic",
+     "qty": 14
+    },
+    {
+     "name": "Ingenious Alchemic",
+     "qty": 3
+    },
+    {
+     "name": "Rimed Extract",
+     "qty": 6
+    }
+   ],
+   "source": {
+    "label": "ERR wiki – Crafting/Recipes",
+    "url": "https://err.fandom.com/wiki/Crafting/Recipes",
+    "verifiedVia": "2026-10-12T04:13:31Z",
+    "unverified": false
+   }
+  },
+  {
+   "id": "hefty-sleep-pot",
+   "name": "Hefty Sleep Pot",
+   "category": "hefty-pots",
+   "yield": 1,
+   "materials": [
+    {
+     "name": "Essential Alchemic",
+     "qty": 14
+    },
+    {
+     "name": "Ingenious Alchemic",
+     "qty": 3
+    },
+    {
+     "name": "Sedative Extract",
+     "qty": 6
+    }
+   ],
+   "source": {
+    "label": "ERR wiki – Crafting/Recipes",
+    "url": "https://err.fandom.com/wiki/Crafting/Recipes",
+    "verifiedVia": "2026-10-12T04:13:31Z",
+    "unverified": false
+   }
+  },
+  {
+   "id": "hefty-frenzied-flame-pot",
+   "name": "Hefty Frenzied Flame Pot",
+   "category": "hefty-pots",
+   "yield": 1,
+   "materials": [
+    {
+     "name": "Essential Alchemic",
+     "qty": 14
+    },
+    {
+     "name": "Ingenious Alchemic",
+     "qty": 3
+    },
+    {
+     "name": "Maddening Extract",
+     "qty": 6
+    }
+   ],
+   "source": {
+    "label": "ERR wiki – Crafting/Recipes",
+    "url": "https://err.fandom.com/wiki/Crafting/Recipes",
+    "verifiedVia": "2026-10-12T04:13:31Z",
+    "unverified": false
+   }
+  },
+  {
+   "id": "hefty-fetid-pot",
+   "name": "Hefty Fetid Pot",
+   "category": "hefty-pots",
+   "yield": 1,
+   "materials": [
+    {
+     "name": "Essential Alchemic",
+     "qty": 14
+    },
+    {
+     "name": "Ingenious Alchemic",
+     "qty": 3
+    },
+    {
+     "name": "Noxious Extract",
+     "qty": 6
+    }
+   ],
+   "source": {
+    "label": "ERR wiki – Crafting/Recipes",
+    "url": "https://err.fandom.com/wiki/Crafting/Recipes",
+    "verifiedVia": "2026-10-12T04:13:31Z",
+    "unverified": false
+   }
+  },
+  {
+   "id": "hefty-oil-pot",
+   "name": "Hefty Oil Pot",
+   "category": "hefty-pots",
+   "yield": 1,
+   "materials": [
+    {
+     "name": "Essential Alchemic",
+     "qty": 14
+    },
+    {
+     "name": "Ingenious Alchemic",
+     "qty": 3
+    },
+    {
+     "name": "Starry Amalgam",
+     "qty": 6
+    }
+   ],
+   "source": {
+    "label": "ERR wiki – Crafting/Recipes",
+    "url": "https://err.fandom.com/wiki/Crafting/Recipes",
+    "verifiedVia": "2026-10-12T04:13:31Z",
+    "unverified": false
+   }
+  },
+  {
+   "id": "hefty-volcano-pot",
+   "name": "Hefty Volcano Pot",
+   "category": "hefty-pots",
+   "yield": 1,
+   "materials": [
+    {
+     "name": "Essential Alchemic",
+     "qty": 14
+    },
+    {
+     "name": "Ingenious Alchemic",
+     "qty": 3
+    },
+    {
+     "name": "Blazing Substance",
+     "qty": 6
+    }
+   ],
+   "source": {
+    "label": "ERR wiki – Crafting/Recipes",
+    "url": "https://err.fandom.com/wiki/Crafting/Recipes",
+    "verifiedVia": "2026-10-12T04:13:31Z",
+    "unverified": false
+   }
+  },
+  {
+   "id": "hefty-rancor-pot",
+   "name": "Hefty Rancor Pot",
+   "category": "hefty-pots",
+   "yield": 1,
+   "materials": [
+    {
+     "name": "Essential Alchemic",
+     "qty": 14
+    },
+    {
+     "name": "Ingenious Alchemic",
+     "qty": 3
+    },
+    {
+     "name": "Mildewy Amalgam",
+     "qty": 6
+    }
+   ],
+   "source": {
+    "label": "ERR wiki – Crafting/Recipes",
+    "url": "https://err.fandom.com/wiki/Crafting/Recipes",
+    "verifiedVia": "2026-10-12T04:13:31Z",
+    "unverified": false
+   }
+  },
+  {
+   "id": "hefty-ancient-dragonbolt-pot",
+   "name": "Hefty Ancient Dragonbolt Pot",
+   "category": "hefty-pots",
+   "yield": 1,
+   "materials": [
+    {
+     "name": "Essential Alchemic",
+     "qty": 14
+    },
+    {
+     "name": "Ingenious Alchemic",
+     "qty": 3
+    },
+    {
+     "name": "Draconic Amalgam",
+     "qty": 6
+    }
+   ],
+   "source": {
+    "label": "ERR wiki – Crafting/Recipes",
+    "url": "https://err.fandom.com/wiki/Crafting/Recipes",
+    "verifiedVia": "2026-10-12T04:13:31Z",
+    "unverified": false
+   }
+  },
+  {
+   "id": "hefty-furnace-pot",
+   "name": "Hefty Furnace Pot",
+   "category": "hefty-pots",
+   "yield": 1,
+   "materials": [
+    {
+     "name": "Ingenious Alchemic",
+     "qty": 3
+    },
+    {
+     "name": "Miraculous Alchemic",
+     "qty": 1
+    },
+    {
+     "name": "Blazing Substance",
+     "qty": 8
+    }
+   ],
+   "source": {
+    "label": "ERR wiki – Crafting/Recipes",
+    "url": "https://err.fandom.com/wiki/Crafting/Recipes",
+    "verifiedVia": "2026-10-12T04:13:31Z",
+    "unverified": false
+   }
+  },
+  {
+   "id": "bone-arrow",
+   "name": "Bone Arrow",
+   "category": "arrows",
+   "yield": 50,
+   "materials": [
+    {
+     "name": "Thin Beast Bones",
+     "qty": 3
+    },
+    {
+     "name": "Flight Pinion",
+     "qty": 1
+    }
+   ],
+   "source": {
+    "label": "ERR wiki – Crafting/Recipes",
+    "url": "https://err.fandom.com/wiki/Crafting/Recipes",
+    "verifiedVia": "2026-10-12T04:13:31Z",
+    "unverified": false
+   }
+  },
+  {
+   "id": "firebone-arrow",
+   "name": "Firebone Arrow",
+   "category": "arrows",
+   "yield": 30,
+   "materials": [
+    {
+     "name": "Thin Beast Bones",
+     "qty": 3
+    },
+    {
+     "name": "Blazing Substance",
+     "qty": 8
+    },
+    {
+     "name": "Flight Pinion",
+     "qty": 1
+    }
+   ],
+   "source": {
+    "label": "ERR wiki – Crafting/Recipes",
+    "url": "https://err.fandom.com/wiki/Crafting/Recipes",
+    "verifiedVia": "2026-10-12T04:13:31Z",
+    "unverified": false
+   }
+  },
+  {
+   "id": "poisonbone-arrow",
+   "name": "Poisonbone Arrow",
+   "category": "arrows",
+   "yield": 30,
+   "materials": [
+    {
+     "name": "Thin Beast Bones",
+     "qty": 3
+    },
+    {
+     "name": "Noxious Extract",
+     "qty": 8
+    },
+    {
+     "name": "Flight Pinion",
+     "qty": 1
+    }
+   ],
+   "source": {
+    "label": "ERR wiki – Crafting/Recipes",
+    "url": "https://err.fandom.com/wiki/Crafting/Recipes",
+    "verifiedVia": "2026-10-12T04:13:31Z",
+    "unverified": false
+   }
+  },
+  {
+   "id": "sleepbone-arrow",
+   "name": "Sleepbone Arrow",
+   "category": "arrows",
+   "yield": 30,
+   "materials": [
+    {
+     "name": "Thin Beast Bones",
+     "qty": 3
+    },
+    {
+     "name": "Sedative Extract",
+     "qty": 8
+    },
+    {
+     "name": "Flight Pinion",
+     "qty": 1
+    }
+   ],
+   "source": {
+    "label": "ERR wiki – Crafting/Recipes",
+    "url": "https://err.fandom.com/wiki/Crafting/Recipes",
+    "verifiedVia": "2026-10-12T04:13:31Z",
+    "unverified": false
+   }
+  },
+  {
+   "id": "stormwing-bone-arrow",
+   "name": "Stormwing Bone Arrow",
+   "category": "arrows",
+   "yield": 10,
+   "materials": [
+    {
+     "name": "Thin Beast Bones",
+     "qty": 3
+    },
+    {
+     "name": "Stormhawk Feather",
+     "qty": 1
+    }
+   ],
+   "source": {
+    "label": "ERR wiki – Crafting/Recipes",
+    "url": "https://err.fandom.com/wiki/Crafting/Recipes",
+    "verifiedVia": "2026-10-12T04:13:31Z",
+    "unverified": false
+   }
+  },
+  {
+   "id": "lightning-arrow",
+   "name": "Lightning Arrow",
+   "category": "arrows",
+   "yield": 20,
+   "materials": [
+    {
+     "name": "Thin Beast Bones",
+     "qty": 3
+    },
+    {
+     "name": "Crackling Substance",
+     "qty": 8
+    },
+    {
+     "name": "Flight Pinion",
+     "qty": 1
+    }
+   ],
+   "source": {
+    "label": "ERR wiki – Crafting/Recipes",
+    "url": "https://err.fandom.com/wiki/Crafting/Recipes",
+    "verifiedVia": "2026-10-12T04:13:31Z",
+    "unverified": false
+   }
+  },
+  {
+   "id": "lightningbone-arrow",
+   "name": "Lightningbone Arrow",
+   "category": "arrows",
+   "yield": 30,
+   "materials": [
+    {
+     "name": "Thin Beast Bones",
+     "qty": 3
+    },
+    {
+     "name": "Crackling Substance",
+     "qty": 8
+    },
+    {
+     "name": "Flight Pinion",
+     "qty": 1
+    }
+   ],
+   "source": {
+    "label": "ERR wiki – Crafting/Recipes",
+    "url": "https://err.fandom.com/wiki/Crafting/Recipes",
+    "verifiedVia": "2026-10-12T04:13:31Z",
+    "unverified": false
+   }
+  },
+  {
+   "id": "rainbow-stone-arrow",
+   "name": "Rainbow Stone Arrow",
+   "category": "arrows",
+   "yield": 40,
+   "materials": [
+    {
+     "name": "Thin Beast Bones",
+     "qty": 3
+    },
+    {
+     "name": "Rainbow Stone",
+     "qty": 2
+    },
+    {
+     "name": "Flight Pinion",
+     "qty": 1
+    }
+   ],
+   "source": {
+    "label": "ERR wiki – Crafting/Recipes",
+    "url": "https://err.fandom.com/wiki/Crafting/Recipes",
+    "verifiedVia": "2026-10-12T04:13:31Z",
+    "unverified": false
+   }
+  },
+  {
+   "id": "shattershard-arrow",
+   "name": "Shattershard Arrow",
+   "category": "arrows",
+   "yield": 40,
+   "materials": [
+    {
+     "name": "Thin Beast Bones",
+     "qty": 3
+    },
+    {
+     "name": "Crystalline Amalgam",
+     "qty": 6
+    },
+    {
+     "name": "Flight Pinion",
+     "qty": 1
+    }
+   ],
+   "source": {
+    "label": "ERR wiki – Crafting/Recipes",
+    "url": "https://err.fandom.com/wiki/Crafting/Recipes",
+    "verifiedVia": "2026-10-12T04:13:31Z",
+    "unverified": false
+   }
+  },
+  {
+   "id": "magicbone-arrow",
+   "name": "Magicbone Arrow",
+   "category": "arrows",
+   "yield": 30,
+   "materials": [
+    {
+     "name": "Thin Beast Bones",
+     "qty": 3
+    },
+    {
+     "name": "Shimmering Substance",
+     "qty": 8
+    },
+    {
+     "name": "Flight Pinion",
+     "qty": 1
+    }
+   ],
+   "source": {
+    "label": "ERR wiki – Crafting/Recipes",
+    "url": "https://err.fandom.com/wiki/Crafting/Recipes",
+    "verifiedVia": "2026-10-12T04:13:31Z",
+    "unverified": false
+   }
+  },
+  {
+   "id": "haligbone-arrow",
+   "name": "Haligbone Arrow",
+   "category": "arrows",
+   "yield": 30,
+   "materials": [
+    {
+     "name": "Thin Beast Bones",
+     "qty": 3
+    },
+    {
+     "name": "Blessed Substance",
+     "qty": 8
+    },
+    {
+     "name": "Flight Pinion",
+     "qty": 1
+    }
+   ],
+   "source": {
+    "label": "ERR wiki – Crafting/Recipes",
+    "url": "https://err.fandom.com/wiki/Crafting/Recipes",
+    "verifiedVia": "2026-10-12T04:13:31Z",
+    "unverified": false
+   }
+  },
+  {
+   "id": "bloodbone-arrow",
+   "name": "Bloodbone Arrow",
+   "category": "arrows",
+   "yield": 30,
+   "materials": [
+    {
+     "name": "Thin Beast Bones",
+     "qty": 3
+    },
+    {
+     "name": "Bloody Extract",
+     "qty": 8
+    },
+    {
+     "name": "Flight Pinion",
+     "qty": 1
+    }
+   ],
+   "source": {
+    "label": "ERR wiki – Crafting/Recipes",
+    "url": "https://err.fandom.com/wiki/Crafting/Recipes",
+    "verifiedVia": "2026-10-12T04:13:31Z",
+    "unverified": false
+   }
+  },
+  {
+   "id": "blightbone-arrow",
+   "name": "Blightbone Arrow",
+   "category": "arrows",
+   "yield": 30,
+   "materials": [
+    {
+     "name": "Thin Beast Bones",
+     "qty": 3
+    },
+    {
+     "name": "Blighted Extract",
+     "qty": 8
+    },
+    {
+     "name": "Flight Pinion",
+     "qty": 1
+    }
+   ],
+   "source": {
+    "label": "ERR wiki – Crafting/Recipes",
+    "url": "https://err.fandom.com/wiki/Crafting/Recipes",
+    "verifiedVia": "2026-10-12T04:13:31Z",
+    "unverified": false
+   }
+  },
+  {
+   "id": "coldbone-arrow",
+   "name": "Coldbone Arrow",
+   "category": "arrows",
+   "yield": 30,
+   "materials": [
+    {
+     "name": "Thin Beast Bones",
+     "qty": 3
+    },
+    {
+     "name": "Rimed Extract",
+     "qty": 8
+    },
+    {
+     "name": "Flight Pinion",
+     "qty": 1
+    }
+   ],
+   "source": {
+    "label": "ERR wiki – Crafting/Recipes",
+    "url": "https://err.fandom.com/wiki/Crafting/Recipes",
+    "verifiedVia": "2026-10-12T04:13:31Z",
+    "unverified": false
+   }
+  },
+  {
+   "id": "frenzybone-arrow",
+   "name": "Frenzybone Arrow",
+   "category": "arrows",
+   "yield": 30,
+   "materials": [
+    {
+     "name": "Thin Beast Bones",
+     "qty": 3
+    },
+    {
+     "name": "Maddening Extract",
+     "qty": 8
+    },
+    {
+     "name": "Flight Pinion",
+     "qty": 1
+    }
+   ],
+   "source": {
+    "label": "ERR wiki – Crafting/Recipes",
+    "url": "https://err.fandom.com/wiki/Crafting/Recipes",
+    "verifiedVia": "2026-10-12T04:13:31Z",
+    "unverified": false
+   }
+  },
+  {
+   "id": "rotbone-arrow",
+   "name": "Rotbone Arrow",
+   "category": "arrows",
+   "yield": 30,
+   "materials": [
+    {
+     "name": "Thin Beast Bones",
+     "qty": 3
+    },
+    {
+     "name": "Scarlet Extract",
+     "qty": 8
+    },
+    {
+     "name": "Flight Pinion",
+     "qty": 1
+    }
+   ],
+   "source": {
+    "label": "ERR wiki – Crafting/Recipes",
+    "url": "https://err.fandom.com/wiki/Crafting/Recipes",
+    "verifiedVia": "2026-10-12T04:13:31Z",
+    "unverified": false
+   }
+  },
+  {
+   "id": "bone-great-arrow",
+   "name": "Bone Great Arrow",
+   "category": "arrows",
+   "yield": 10,
+   "materials": [
+    {
+     "name": "Hefty Beast Bone",
+     "qty": 1
+    },
+    {
+     "name": "Flight Pinion",
+     "qty": 1
+    }
+   ],
+   "source": {
+    "label": "ERR wiki – Crafting/Recipes",
+    "url": "https://err.fandom.com/wiki/Crafting/Recipes",
+    "verifiedVia": "2026-10-12T04:13:31Z",
+    "unverified": false
+   }
+  },
+  {
+   "id": "piquebone-arrow",
+   "name": "Piquebone Arrow",
+   "category": "arrows",
+   "yield": 30,
+   "materials": [
+    {
+     "name": "Thin Beast Bones",
+     "qty": 3
+    },
+    {
+     "name": "Mildewy Amalgam",
+     "qty": 8
+    },
+    {
+     "name": "Flight Pinion",
+     "qty": 1
+    }
+   ],
+   "source": {
+    "label": "ERR wiki – Crafting/Recipes",
+    "url": "https://err.fandom.com/wiki/Crafting/Recipes",
+    "verifiedVia": "2026-10-12T04:13:31Z",
+    "unverified": false
+   }
+  },
+  {
+   "id": "bone-bolt",
+   "name": "Bone Bolt",
+   "category": "bolts",
+   "yield": 50,
+   "materials": [
+    {
+     "name": "Thin Beast Bones",
+     "qty": 3
+    }
+   ],
+   "source": {
+    "label": "ERR wiki – Crafting/Recipes",
+    "url": "https://err.fandom.com/wiki/Crafting/Recipes",
+    "verifiedVia": "2026-10-12T04:13:31Z",
+    "unverified": false
+   }
+  },
+  {
+   "id": "firebone-bolt",
+   "name": "Firebone Bolt",
+   "category": "bolts",
+   "yield": 30,
+   "materials": [
+    {
+     "name": "Thin Beast Bones",
+     "qty": 3
+    },
+    {
+     "name": "Blazing Substance",
+     "qty": 8
+    }
+   ],
+   "source": {
+    "label": "ERR wiki – Crafting/Recipes",
+    "url": "https://err.fandom.com/wiki/Crafting/Recipes",
+    "verifiedVia": "2026-10-12T04:13:31Z",
+    "unverified": false
+   }
+  },
+  {
+   "id": "lightningbone-bolt",
+   "name": "Lightningbone Bolt",
+   "category": "bolts",
+   "yield": 30,
+   "materials": [
+    {
+     "name": "Thin Beast Bones",
+     "qty": 3
+    },
+    {
+     "name": "Crackling Substance",
+     "qty": 8
+    }
+   ],
+   "source": {
+    "label": "ERR wiki – Crafting/Recipes",
+    "url": "https://err.fandom.com/wiki/Crafting/Recipes",
+    "verifiedVia": "2026-10-12T04:13:31Z",
+    "unverified": false
+   }
+  },
+  {
+   "id": "magicbone-bolt",
+   "name": "Magicbone Bolt",
+   "category": "bolts",
+   "yield": 30,
+   "materials": [
+    {
+     "name": "Thin Beast Bones",
+     "qty": 3
+    },
+    {
+     "name": "Shimmering Substance",
+     "qty": 8
+    }
+   ],
+   "source": {
+    "label": "ERR wiki – Crafting/Recipes",
+    "url": "https://err.fandom.com/wiki/Crafting/Recipes",
+    "verifiedVia": "2026-10-12T04:13:31Z",
+    "unverified": false
+   }
+  },
+  {
+   "id": "haligbone-bolt",
+   "name": "Haligbone Bolt",
+   "category": "bolts",
+   "yield": 30,
+   "materials": [
+    {
+     "name": "Thin Beast Bones",
+     "qty": 3
+    },
+    {
+     "name": "Blessed Substance",
+     "qty": 8
+    }
+   ],
+   "source": {
+    "label": "ERR wiki – Crafting/Recipes",
+    "url": "https://err.fandom.com/wiki/Crafting/Recipes",
+    "verifiedVia": "2026-10-12T04:13:31Z",
+    "unverified": false
+   }
+  },
+  {
+   "id": "poisonbone-bolt",
+   "name": "Poisonbone Bolt",
+   "category": "bolts",
+   "yield": 30,
+   "materials": [
+    {
+     "name": "Thin Beast Bones",
+     "qty": 3
+    },
+    {
+     "name": "Noxious Extract",
+     "qty": 8
+    }
+   ],
+   "source": {
+    "label": "ERR wiki – Crafting/Recipes",
+    "url": "https://err.fandom.com/wiki/Crafting/Recipes",
+    "verifiedVia": "2026-10-12T04:13:31Z",
+    "unverified": false
+   }
+  },
+  {
+   "id": "bloodbone-bolt",
+   "name": "Bloodbone Bolt",
+   "category": "bolts",
+   "yield": 30,
+   "materials": [
+    {
+     "name": "Thin Beast Bones",
+     "qty": 3
+    },
+    {
+     "name": "Bloody Extract",
+     "qty": 8
+    }
+   ],
+   "source": {
+    "label": "ERR wiki – Crafting/Recipes",
+    "url": "https://err.fandom.com/wiki/Crafting/Recipes",
+    "verifiedVia": "2026-10-12T04:13:31Z",
+    "unverified": false
+   }
+  },
+  {
+   "id": "coldbone-bolt",
+   "name": "Coldbone Bolt",
+   "category": "bolts",
+   "yield": 30,
+   "materials": [
+    {
+     "name": "Thin Beast Bones",
+     "qty": 3
+    },
+    {
+     "name": "Rimed Extract",
+     "qty": 8
+    }
+   ],
+   "source": {
+    "label": "ERR wiki – Crafting/Recipes",
+    "url": "https://err.fandom.com/wiki/Crafting/Recipes",
+    "verifiedVia": "2026-10-12T04:13:31Z",
+    "unverified": false
+   }
+  },
+  {
+   "id": "rotbone-bolt",
+   "name": "Rotbone Bolt",
+   "category": "bolts",
+   "yield": 30,
+   "materials": [
+    {
+     "name": "Thin Beast Bones",
+     "qty": 3
+    },
+    {
+     "name": "Scarlet Extract",
+     "qty": 8
+    }
+   ],
+   "source": {
+    "label": "ERR wiki – Crafting/Recipes",
+    "url": "https://err.fandom.com/wiki/Crafting/Recipes",
+    "verifiedVia": "2026-10-12T04:13:31Z",
+    "unverified": false
+   }
+  },
+  {
+   "id": "sleepbone-bolt",
+   "name": "Sleepbone Bolt",
+   "category": "bolts",
+   "yield": 30,
+   "materials": [
+    {
+     "name": "Thin Beast Bones",
+     "qty": 3
+    },
+    {
+     "name": "Sedative Extract",
+     "qty": 8
+    }
+   ],
+   "source": {
+    "label": "ERR wiki – Crafting/Recipes",
+    "url": "https://err.fandom.com/wiki/Crafting/Recipes",
+    "verifiedVia": "2026-10-12T04:13:31Z",
+    "unverified": false
+   }
+  },
+  {
+   "id": "bone-ballista-bolt",
+   "name": "Bone Ballista Bolt",
+   "category": "bolts",
+   "yield": 10,
+   "materials": [
+    {
+     "name": "Hefty Beast Bone",
+     "qty": 1
+    }
+   ],
+   "source": {
+    "label": "ERR wiki – Crafting/Recipes",
+    "url": "https://err.fandom.com/wiki/Crafting/Recipes",
+    "verifiedVia": "2026-10-12T04:13:31Z",
+    "unverified": false
+   }
+  },
+  {
+   "id": "piquebone-bolt",
+   "name": "Piquebone Bolt",
+   "category": "bolts",
+   "yield": 30,
+   "materials": [
+    {
+     "name": "Thin Beast Bones",
+     "qty": 3
+    },
+    {
+     "name": "Mildewy Amalgam",
+     "qty": 8
+    }
+   ],
+   "source": {
+    "label": "ERR wiki – Crafting/Recipes",
+    "url": "https://err.fandom.com/wiki/Crafting/Recipes",
+    "verifiedVia": "2026-10-12T04:13:31Z",
+    "unverified": false
+   }
+  },
+  {
+   "id": "bone-dart",
+   "name": "Bone Dart",
+   "category": "throwing-items",
+   "yield": 8,
+   "materials": [
+    {
+     "name": "Thin Beast Bones",
+     "qty": 1
+    }
+   ],
+   "source": {
+    "label": "ERR wiki – Crafting/Recipes",
+    "url": "https://err.fandom.com/wiki/Crafting/Recipes",
+    "verifiedVia": "2026-10-12T04:13:31Z",
+    "unverified": false
+   }
+  },
+  {
+   "id": "poisonbone-dart",
+   "name": "Poisonbone Dart",
+   "category": "throwing-items",
+   "yield": 4,
+   "materials": [
+    {
+     "name": "Bone Dart",
+     "qty": 4
+    },
+    {
+     "name": "Noxious Extract",
+     "qty": 2
+    }
+   ],
+   "source": {
+    "label": "ERR wiki – Crafting/Recipes",
+    "url": "https://err.fandom.com/wiki/Crafting/Recipes",
+    "verifiedVia": "2026-10-12T04:13:31Z",
+    "unverified": false
+   }
+  },
+  {
+   "id": "crystal-dart",
+   "name": "Crystal Dart",
+   "category": "throwing-items",
+   "yield": 4,
+   "materials": [
+    {
+     "name": "Bone Dart",
+     "qty": 4
+    },
+    {
+     "name": "Crystalline Amalgam",
+     "qty": 2
+    }
+   ],
+   "source": {
+    "label": "ERR wiki – Crafting/Recipes",
+    "url": "https://err.fandom.com/wiki/Crafting/Recipes",
+    "verifiedVia": "2026-10-12T04:13:31Z",
+    "unverified": false
+   }
+  },
+  {
+   "id": "azula-throwing-chakram",
+   "name": "Azula Throwing Chakram",
+   "category": "throwing-items",
+   "yield": 4,
+   "materials": [
+    {
+     "name": "Essential Alchemic",
+     "qty": 4
+    },
+    {
+     "name": "Draconic Amalgam",
+     "qty": 1
+    }
+   ],
+   "source": {
+    "label": "ERR wiki – Crafting/Recipes",
+    "url": "https://err.fandom.com/wiki/Crafting/Recipes",
+    "verifiedVia": "2026-10-12T04:13:31Z",
+    "unverified": false
+   }
+  },
+  {
+   "id": "azula-lightning-chakram",
+   "name": "Azula Lightning Chakram",
+   "category": "throwing-items",
+   "yield": 2,
+   "materials": [
+    {
+     "name": "Azula Throwing Chakram",
+     "qty": 2
+    },
+    {
+     "name": "Draconic Amalgam",
+     "qty": 2
+    }
+   ],
+   "source": {
+    "label": "ERR wiki – Crafting/Recipes",
+    "url": "https://err.fandom.com/wiki/Crafting/Recipes",
+    "verifiedVia": "2026-10-12T04:13:31Z",
+    "unverified": false
+   }
+  },
+  {
+   "id": "crystal-chakram",
+   "name": "Crystal Chakram",
+   "category": "throwing-items",
+   "yield": 2,
+   "materials": [
+    {
+     "name": "Essential Alchemic",
+     "qty": 4
+    },
+    {
+     "name": "Crystalline Amalgam",
+     "qty": 2
+    }
+   ],
+   "source": {
+    "label": "ERR wiki – Crafting/Recipes",
+    "url": "https://err.fandom.com/wiki/Crafting/Recipes",
+    "verifiedVia": "2026-10-12T04:13:31Z",
+    "unverified": false
+   }
+  },
+  {
+   "id": "putrid-crystal-chakram",
+   "name": "Putrid Crystal Chakram",
+   "category": "throwing-items",
+   "yield": 1,
+   "materials": [
+    {
+     "name": "Crystal Chakram",
+     "qty": 1
+    },
+    {
+     "name": "Scarlet Extract",
+     "qty": 2
+    }
+   ],
+   "source": {
+    "label": "ERR wiki – Crafting/Recipes",
+    "url": "https://err.fandom.com/wiki/Crafting/Recipes",
+    "verifiedVia": "2026-10-12T04:13:31Z",
+    "unverified": false
+   }
+  },
+  {
+   "id": "dragon-communion-harpoon",
+   "name": "Dragon Communion Harpoon",
+   "category": "throwing-items",
+   "yield": 1,
+   "materials": [
+    {
+     "name": "Hefty Beast Bone",
+     "qty": 2
+    },
+    {
+     "name": "Draconic Amalgam",
+     "qty": 3
+    },
+    {
+     "name": "Gory Amalgam",
+     "qty": 3
+    }
+   ],
+   "source": {
+    "label": "ERR wiki – Crafting/Recipes",
+    "url": "https://err.fandom.com/wiki/Crafting/Recipes",
+    "verifiedVia": "2026-10-12T04:13:31Z",
+    "unverified": false
+   }
+  },
+  {
+   "id": "surging-frenzied-flame",
+   "name": "Surging Frenzied Flame",
+   "category": "misc",
+   "yield": 1,
+   "materials": [
+    {
+     "name": "Ingenious Alchemic",
+     "qty": 1
+    },
+    {
+     "name": "Maddening Extract",
+     "qty": 9
+    }
+   ],
+   "source": {
+    "label": "ERR wiki – Crafting/Recipes",
+    "url": "https://err.fandom.com/wiki/Crafting/Recipes",
+    "verifiedVia": "2026-10-12T04:13:31Z",
+    "unverified": false
+   }
+  },
+  {
+   "id": "spritestone",
+   "name": "Spritestone",
+   "category": "misc",
+   "yield": 1,
+   "materials": [
+    {
+     "name": "Ingenious Alchemic",
+     "qty": 2
+    },
+    {
+     "name": "Rocky Amalgam",
+     "qty": 6
+    }
+   ],
+   "source": {
+    "label": "ERR wiki – Crafting/Recipes",
+    "url": "https://err.fandom.com/wiki/Crafting/Recipes",
+    "verifiedVia": "2026-10-12T04:13:31Z",
+    "unverified": false
+   }
+  },
+  {
+   "id": "fire-spritestone",
+   "name": "Fire Spritestone",
+   "category": "misc",
+   "yield": 1,
+   "materials": [
+    {
+     "name": "Ingenious Alchemic",
+     "qty": 1
+    },
+    {
+     "name": "Blazing Substance",
+     "qty": 3
+    },
+    {
+     "name": "Rocky Amalgam",
+     "qty": 6
+    }
+   ],
+   "source": {
+    "label": "ERR wiki – Crafting/Recipes",
+    "url": "https://err.fandom.com/wiki/Crafting/Recipes",
+    "verifiedVia": "2026-10-12T04:13:31Z",
+    "unverified": false
+   }
+  },
+  {
+   "id": "fire-coil",
+   "name": "Fire Coil",
+   "category": "misc",
+   "yield": 1,
+   "materials": [
+    {
+     "name": "Ingenious Alchemic",
+     "qty": 1
+    },
+    {
+     "name": "Blazing Substance",
+     "qty": 9
+    }
+   ],
+   "source": {
+    "label": "ERR wiki – Crafting/Recipes",
+    "url": "https://err.fandom.com/wiki/Crafting/Recipes",
+    "verifiedVia": "2026-10-12T04:13:31Z",
+    "unverified": false
+   }
+  },
+  {
+   "id": "glinting-nail",
+   "name": "Glinting Nail",
+   "category": "misc",
+   "yield": 1,
+   "materials": [
+    {
+     "name": "Ingenious Alchemic",
+     "qty": 1
+    },
+    {
+     "name": "Golden Amalgam",
+     "qty": 2
+    },
+    {
+     "name": "Starry Amalgam",
+     "qty": 2
+    }
+   ],
+   "source": {
+    "label": "ERR wiki – Crafting/Recipes",
+    "url": "https://err.fandom.com/wiki/Crafting/Recipes",
+    "verifiedVia": "2026-10-12T04:13:31Z",
+    "unverified": false
+   }
+  },
+  {
+   "id": "call-of-tibia",
+   "name": "Call of Tibia",
+   "category": "misc",
+   "yield": 1,
+   "materials": [
+    {
+     "name": "Ingenious Alchemic",
+     "qty": 2
+    },
+    {
+     "name": "Mildewy Amalgam",
+     "qty": 5
+    },
+    {
+     "name": "Rimed Extract",
+     "qty": 5
+    }
+   ],
+   "source": {
+    "label": "ERR wiki – Crafting/Recipes",
+    "url": "https://err.fandom.com/wiki/Crafting/Recipes",
+    "verifiedVia": "2026-10-12T04:13:31Z",
+    "unverified": false
+   }
+  },
+  {
+   "id": "bewitching-branch",
+   "name": "Bewitching Branch",
+   "category": "misc",
+   "yield": 1,
+   "materials": [
+    {
+     "name": "Miraculous Alchemic",
+     "qty": 6
+    },
+    {
+     "name": "Golden Amalgam",
+     "qty": 12
+    },
+    {
+     "name": "Bloody Extract",
+     "qty": 12
+    }
+   ],
+   "source": {
+    "label": "ERR wiki – Crafting/Recipes",
+    "url": "https://err.fandom.com/wiki/Crafting/Recipes",
+    "verifiedVia": "2026-10-12T04:13:31Z",
+    "unverified": false
+   }
+  },
+  {
+   "id": "lulling-branch",
+   "name": "Lulling Branch",
+   "category": "misc",
+   "yield": 1,
+   "materials": [
+    {
+     "name": "Miraculous Alchemic",
+     "qty": 4
+    },
+    {
+     "name": "Sedative Extract",
+     "qty": 12
+    },
+    {
+     "name": "Noxious Extract",
+     "qty": 12
+    }
+   ],
+   "source": {
+    "label": "ERR wiki – Crafting/Recipes",
+    "url": "https://err.fandom.com/wiki/Crafting/Recipes",
+    "verifiedVia": "2026-10-12T04:13:31Z",
+    "unverified": false
+   }
+  },
+  {
+   "id": "charming-branch",
+   "name": "Charming Branch",
+   "category": "misc",
+   "yield": 1,
+   "materials": [
+    {
+     "name": "Miraculous Alchemic",
+     "qty": 6
+    },
+    {
+     "name": "Golden Amalgam",
+     "qty": 18
+    },
+    {
+     "name": "Bloody Extract",
+     "qty": 14
+    }
+   ],
+   "source": {
+    "label": "ERR wiki – Crafting/Recipes",
+    "url": "https://err.fandom.com/wiki/Crafting/Recipes",
+    "verifiedVia": "2026-10-12T04:13:31Z",
+    "unverified": false
+   }
+  },
+  {
+   "id": "sanctified-stone",
+   "name": "Sanctified Stone",
+   "category": "misc",
+   "yield": 5,
+   "materials": [
+    {
+     "name": "Rocky Amalgam",
+     "qty": 3
+    },
+    {
+     "name": "Golden Amalgam",
+     "qty": 1
+    }
+   ],
+   "source": {
+    "label": "ERR wiki – Crafting/Recipes",
+    "url": "https://err.fandom.com/wiki/Crafting/Recipes",
+    "verifiedVia": "2026-10-12T04:13:31Z",
+    "unverified": false
+   }
+  },
+  {
+   "id": "weighty-stone",
+   "name": "Weighty Stone",
+   "category": "misc",
+   "yield": 5,
+   "materials": [
+    {
+     "name": "Rocky Amalgam",
+     "qty": 3
+    }
+   ],
+   "source": {
+    "label": "ERR wiki – Crafting/Recipes",
+    "url": "https://err.fandom.com/wiki/Crafting/Recipes",
+    "verifiedVia": "2026-10-12T04:13:31Z",
+    "unverified": false
+   }
+  },
+  {
+   "id": "cuckoo-glintstone",
+   "name": "Cuckoo Glintstone",
+   "category": "misc",
+   "yield": 1,
+   "materials": [
+    {
+     "name": "Essential Alchemic",
+     "qty": 4
+    },
+    {
+     "name": "Shimmering Substance",
+     "qty": 2
+    }
+   ],
+   "source": {
+    "label": "ERR wiki – Crafting/Recipes",
+    "url": "https://err.fandom.com/wiki/Crafting/Recipes",
+    "verifiedVia": "2026-10-12T04:13:31Z",
+    "unverified": false
+   }
+  },
+  {
+   "id": "uplifting-aromatic",
+   "name": "Uplifting Aromatic",
+   "category": "aromatics",
+   "yield": 1,
+   "materials": [
+    {
+     "name": "Miraculous Alchemic",
+     "qty": 1
+    },
+    {
+     "name": "Fragrant Amalgam",
+     "qty": 4
+    },
+    {
+     "name": "Silvery Amalgam",
+     "qty": 3
+    }
+   ],
+   "source": {
+    "label": "ERR wiki – Crafting/Recipes",
+    "url": "https://err.fandom.com/wiki/Crafting/Recipes",
+    "verifiedVia": "2026-10-12T04:13:31Z",
+    "unverified": false
+   }
+  },
+  {
+   "id": "spark-aromatic",
+   "name": "Spark Aromatic",
+   "category": "aromatics",
+   "yield": 1,
+   "materials": [
+    {
+     "name": "Ingenious Alchemic",
+     "qty": 2
+    },
+    {
+     "name": "Blazing Substance",
+     "qty": 3
+    },
+    {
+     "name": "Fragrant Amalgam",
+     "qty": 4
+    }
+   ],
+   "source": {
+    "label": "ERR wiki – Crafting/Recipes",
+    "url": "https://err.fandom.com/wiki/Crafting/Recipes",
+    "verifiedVia": "2026-10-12T04:13:31Z",
+    "unverified": false
+   }
+  },
+  {
+   "id": "ironjar-elixir",
+   "name": "Ironjar Elixir",
+   "category": "aromatics",
+   "yield": 1,
+   "materials": [
+    {
+     "name": "Ingenious Alchemic",
+     "qty": 2
+    },
+    {
+     "name": "Fragrant Amalgam",
+     "qty": 4
+    },
+    {
+     "name": "Mildewy Amalgam",
+     "qty": 3
+    }
+   ],
+   "source": {
+    "label": "ERR wiki – Crafting/Recipes",
+    "url": "https://err.fandom.com/wiki/Crafting/Recipes",
+    "verifiedVia": "2026-10-12T04:13:31Z",
+    "unverified": false
+   }
+  },
+  {
+   "id": "bloodboil-elixir",
+   "name": "Bloodboil Elixir",
+   "category": "aromatics",
+   "yield": 1,
+   "materials": [
+    {
+     "name": "Miraculous Alchemic",
+     "qty": 1
+    },
+    {
+     "name": "Bloody Extract",
+     "qty": 2
+    },
+    {
+     "name": "Fragrant Amalgam",
+     "qty": 4
+    }
+   ],
+   "source": {
+    "label": "ERR wiki – Crafting/Recipes",
+    "url": "https://err.fandom.com/wiki/Crafting/Recipes",
+    "verifiedVia": "2026-10-12T04:13:31Z",
+    "unverified": false
+   }
+  },
+  {
+   "id": "poison-spraymist",
+   "name": "Poison Spraymist",
+   "category": "aromatics",
+   "yield": 1,
+   "materials": [
+    {
+     "name": "Ingenious Alchemic",
+     "qty": 2
+    },
+    {
+     "name": "Noxious Extract",
+     "qty": 3
+    },
+    {
+     "name": "Fragrant Amalgam",
+     "qty": 4
+    }
+   ],
+   "source": {
+    "label": "ERR wiki – Crafting/Recipes",
+    "url": "https://err.fandom.com/wiki/Crafting/Recipes",
+    "verifiedVia": "2026-10-12T04:13:31Z",
+    "unverified": false
+   }
+  },
+  {
+   "id": "acid-spraymist",
+   "name": "Acid Spraymist",
+   "category": "aromatics",
+   "yield": 1,
+   "materials": [
+    {
+     "name": "Ingenious Alchemic",
+     "qty": 2
+    },
+    {
+     "name": "Scarlet Extract",
+     "qty": 3
+    },
+    {
+     "name": "Fragrant Amalgam",
+     "qty": 4
+    }
+   ],
+   "source": {
+    "label": "ERR wiki – Crafting/Recipes",
+    "url": "https://err.fandom.com/wiki/Crafting/Recipes",
+    "verifiedVia": "2026-10-12T04:13:31Z",
+    "unverified": false
+   }
+  },
+  {
+   "id": "wraithflame-spraymist",
+   "name": "Wraithflame Spraymist",
+   "category": "aromatics",
+   "yield": 1,
+   "materials": [
+    {
+     "name": "Ingenious Alchemic",
+     "qty": 2
+    },
+    {
+     "name": "Blessed Substance",
+     "qty": 3
+    },
+    {
+     "name": "Fragrant Amalgam",
+     "qty": 4
+    }
+   ],
+   "source": {
+    "label": "ERR wiki – Crafting/Recipes",
+    "url": "https://err.fandom.com/wiki/Crafting/Recipes",
+    "verifiedVia": "2026-10-12T04:13:31Z",
+    "unverified": false
+   }
+  },
+  {
+   "id": "galvanizing-elixir",
+   "name": "Galvanizing Elixir",
+   "category": "aromatics",
+   "yield": 1,
+   "materials": [
+    {
+     "name": "Ingenious Alchemic",
+     "qty": 2
+    },
+    {
+     "name": "Crackling Substance",
+     "qty": 3
+    },
+    {
+     "name": "Fragrant Amalgam",
+     "qty": 4
+    }
+   ],
+   "source": {
+    "label": "ERR wiki – Crafting/Recipes",
+    "url": "https://err.fandom.com/wiki/Crafting/Recipes",
+    "verifiedVia": "2026-10-12T04:13:31Z",
+    "unverified": false
+   }
+  },
+  {
+   "id": "rimed-spraymist",
+   "name": "Rimed Spraymist",
+   "category": "aromatics",
+   "yield": 1,
+   "materials": [
+    {
+     "name": "Ingenious Alchemic",
+     "qty": 2
+    },
+    {
+     "name": "Rimed Extract",
+     "qty": 3
+    },
+    {
+     "name": "Fragrant Amalgam",
+     "qty": 4
+    }
+   ],
+   "source": {
+    "label": "ERR wiki – Crafting/Recipes",
+    "url": "https://err.fandom.com/wiki/Crafting/Recipes",
+    "verifiedVia": "2026-10-12T04:13:31Z",
+    "unverified": false
+   }
+  },
+  {
+   "id": "stardust-elixir",
+   "name": "Stardust Elixir",
+   "category": "aromatics",
+   "yield": 1,
+   "materials": [
+    {
+     "name": "Ingenious Alchemic",
+     "qty": 2
+    },
+    {
+     "name": "Shimmering Substance",
+     "qty": 2
+    },
+    {
+     "name": "Crackling Substance",
+     "qty": 2
+    },
+    {
+     "name": "Fragrant Amalgam",
+     "qty": 4
+    }
+   ],
+   "source": {
+    "label": "ERR wiki – Crafting/Recipes",
+    "url": "https://err.fandom.com/wiki/Crafting/Recipes",
+    "verifiedVia": "2026-10-12T04:13:31Z",
+    "unverified": false
+   }
+  },
+  {
+   "id": "concealing-aromatic",
+   "name": "Concealing Aromatic",
+   "category": "aromatics",
+   "yield": 1,
+   "materials": [
+    {
+     "name": "Ingenious Alchemic",
+     "qty": 2
+    },
+    {
+     "name": "Fragrant Amalgam",
+     "qty": 4
+    },
+    {
+     "name": "Starry Amalgam",
+     "qty": 3
+    }
+   ],
+   "source": {
+    "label": "ERR wiki – Crafting/Recipes",
+    "url": "https://err.fandom.com/wiki/Crafting/Recipes",
+    "verifiedVia": "2026-10-12T04:13:31Z",
+    "unverified": false
+   }
+  },
+  {
+   "id": "rupturing-aromatic",
+   "name": "Rupturing Aromatic",
+   "category": "aromatics",
+   "yield": 1,
+   "materials": [
+    {
+     "name": "Ingenious Alchemic",
+     "qty": 2
+    },
+    {
+     "name": "Bloody Extract",
+     "qty": 3
+    },
+    {
+     "name": "Fragrant Amalgam",
+     "qty": 4
+    }
+   ],
+   "source": {
+    "label": "ERR wiki – Crafting/Recipes",
+    "url": "https://err.fandom.com/wiki/Crafting/Recipes",
+    "verifiedVia": "2026-10-12T04:13:31Z",
+    "unverified": false
+   }
+  },
+  {
+   "id": "feverish-aromatic",
+   "name": "Feverish Aromatic",
+   "category": "aromatics",
+   "yield": 1,
+   "materials": [
+    {
+     "name": "Ingenious Alchemic",
+     "qty": 2
+    },
+    {
+     "name": "Maddening Extract",
+     "qty": 3
+    },
+    {
+     "name": "Fragrant Amalgam",
+     "qty": 4
+    }
+   ],
+   "source": {
+    "label": "ERR wiki – Crafting/Recipes",
+    "url": "https://err.fandom.com/wiki/Crafting/Recipes",
+    "verifiedVia": "2026-10-12T04:13:31Z",
+    "unverified": false
+   }
+  },
+  {
+   "id": "afflicting-aromatic",
+   "name": "Afflicting Aromatic",
+   "category": "aromatics",
+   "yield": 1,
+   "materials": [
+    {
+     "name": "Ingenious Alchemic",
+     "qty": 2
+    },
+    {
+     "name": "Blighted Extract",
+     "qty": 3
+    },
+    {
+     "name": "Fragrant Amalgam",
+     "qty": 4
+    }
+   ],
+   "source": {
+    "label": "ERR wiki – Crafting/Recipes",
+    "url": "https://err.fandom.com/wiki/Crafting/Recipes",
+    "verifiedVia": "2026-10-12T04:13:31Z",
+    "unverified": false
+   }
+  },
+  {
+   "id": "fire-grease",
+   "name": "Fire Grease",
+   "category": "greases",
+   "yield": 1,
+   "materials": [
+    {
+     "name": "Essential Alchemic",
+     "qty": 5
+    },
+    {
+     "name": "Blazing Substance",
+     "qty": 4
+    },
+    {
+     "name": "Adhesive Amalgam",
+     "qty": 2
+    }
+   ],
+   "source": {
+    "label": "ERR wiki – Crafting/Recipes",
+    "url": "https://err.fandom.com/wiki/Crafting/Recipes",
+    "verifiedVia": "2026-10-12T04:13:31Z",
+    "unverified": false
+   }
+  },
+  {
+   "id": "lightning-grease",
+   "name": "Lightning Grease",
+   "category": "greases",
+   "yield": 1,
+   "materials": [
+    {
+     "name": "Essential Alchemic",
+     "qty": 5
+    },
+    {
+     "name": "Crackling Substance",
+     "qty": 4
+    },
+    {
+     "name": "Adhesive Amalgam",
+     "qty": 2
+    }
+   ],
+   "source": {
+    "label": "ERR wiki – Crafting/Recipes",
+    "url": "https://err.fandom.com/wiki/Crafting/Recipes",
+    "verifiedVia": "2026-10-12T04:13:31Z",
+    "unverified": false
+   }
+  },
+  {
+   "id": "magic-grease",
+   "name": "Magic Grease",
+   "category": "greases",
+   "yield": 1,
+   "materials": [
+    {
+     "name": "Essential Alchemic",
+     "qty": 5
+    },
+    {
+     "name": "Shimmering Substance",
+     "qty": 4
+    },
+    {
+     "name": "Adhesive Amalgam",
+     "qty": 2
+    }
+   ],
+   "source": {
+    "label": "ERR wiki – Crafting/Recipes",
+    "url": "https://err.fandom.com/wiki/Crafting/Recipes",
+    "verifiedVia": "2026-10-12T04:13:31Z",
+    "unverified": false
+   }
+  },
+  {
+   "id": "holy-grease",
+   "name": "Holy Grease",
+   "category": "greases",
+   "yield": 1,
+   "materials": [
+    {
+     "name": "Essential Alchemic",
+     "qty": 5
+    },
+    {
+     "name": "Blessed Substance",
+     "qty": 4
+    },
+    {
+     "name": "Adhesive Amalgam",
+     "qty": 2
+    }
+   ],
+   "source": {
+    "label": "ERR wiki – Crafting/Recipes",
+    "url": "https://err.fandom.com/wiki/Crafting/Recipes",
+    "verifiedVia": "2026-10-12T04:13:31Z",
+    "unverified": false
+   }
+  },
+  {
+   "id": "blood-grease",
+   "name": "Blood Grease",
+   "category": "greases",
+   "yield": 1,
+   "materials": [
+    {
+     "name": "Essential Alchemic",
+     "qty": 5
+    },
+    {
+     "name": "Bloody Extract",
+     "qty": 4
+    },
+    {
+     "name": "Adhesive Amalgam",
+     "qty": 2
+    }
+   ],
+   "source": {
+    "label": "ERR wiki – Crafting/Recipes",
+    "url": "https://err.fandom.com/wiki/Crafting/Recipes",
+    "verifiedVia": "2026-10-12T04:13:31Z",
+    "unverified": false
+   }
+  },
+  {
+   "id": "soporific-grease",
+   "name": "Soporific Grease",
+   "category": "greases",
+   "yield": 1,
+   "materials": [
+    {
+     "name": "Essential Alchemic",
+     "qty": 5
+    },
+    {
+     "name": "Sedative Extract",
+     "qty": 4
+    },
+    {
+     "name": "Adhesive Amalgam",
+     "qty": 2
+    }
+   ],
+   "source": {
+    "label": "ERR wiki – Crafting/Recipes",
+    "url": "https://err.fandom.com/wiki/Crafting/Recipes",
+    "verifiedVia": "2026-10-12T04:13:31Z",
+    "unverified": false
+   }
+  },
+  {
+   "id": "poison-grease",
+   "name": "Poison Grease",
+   "category": "greases",
+   "yield": 1,
+   "materials": [
+    {
+     "name": "Essential Alchemic",
+     "qty": 5
+    },
+    {
+     "name": "Noxious Extract",
+     "qty": 4
+    },
+    {
+     "name": "Adhesive Amalgam",
+     "qty": 2
+    }
+   ],
+   "source": {
+    "label": "ERR wiki – Crafting/Recipes",
+    "url": "https://err.fandom.com/wiki/Crafting/Recipes",
+    "verifiedVia": "2026-10-12T04:13:31Z",
+    "unverified": false
+   }
+  },
+  {
+   "id": "freezing-grease",
+   "name": "Freezing Grease",
+   "category": "greases",
+   "yield": 1,
+   "materials": [
+    {
+     "name": "Essential Alchemic",
+     "qty": 5
+    },
+    {
+     "name": "Rimed Extract",
+     "qty": 4
+    },
+    {
+     "name": "Adhesive Amalgam",
+     "qty": 2
+    }
+   ],
+   "source": {
+    "label": "ERR wiki – Crafting/Recipes",
+    "url": "https://err.fandom.com/wiki/Crafting/Recipes",
+    "verifiedVia": "2026-10-12T04:13:31Z",
+    "unverified": false
+   }
+  },
+  {
+   "id": "dragonwound-grease",
+   "name": "Dragonwound Grease",
+   "category": "greases",
+   "yield": 1,
+   "materials": [
+    {
+     "name": "Essential Alchemic",
+     "qty": 5
+    },
+    {
+     "name": "Draconic Amalgam",
+     "qty": 4
+    },
+    {
+     "name": "Adhesive Amalgam",
+     "qty": 2
+    }
+   ],
+   "source": {
+    "label": "ERR wiki – Crafting/Recipes",
+    "url": "https://err.fandom.com/wiki/Crafting/Recipes",
+    "verifiedVia": "2026-10-12T04:13:31Z",
+    "unverified": false
+   }
+  },
+  {
+   "id": "rot-grease",
+   "name": "Rot Grease",
+   "category": "greases",
+   "yield": 1,
+   "materials": [
+    {
+     "name": "Essential Alchemic",
+     "qty": 5
+    },
+    {
+     "name": "Scarlet Extract",
+     "qty": 4
+    },
+    {
+     "name": "Adhesive Amalgam",
+     "qty": 2
+    }
+   ],
+   "source": {
+    "label": "ERR wiki – Crafting/Recipes",
+    "url": "https://err.fandom.com/wiki/Crafting/Recipes",
+    "verifiedVia": "2026-10-12T04:13:31Z",
+    "unverified": false
+   }
+  },
+  {
+   "id": "shield-grease",
+   "name": "Shield Grease",
+   "category": "greases",
+   "yield": 1,
+   "materials": [
+    {
+     "name": "Adhesive Amalgam",
+     "qty": 2
+    },
+    {
+     "name": "Shimmering Substance",
+     "qty": 4
+    },
+    {
+     "name": "Silvery Amalgam",
+     "qty": 3
+    }
+   ],
+   "source": {
+    "label": "ERR wiki – Crafting/Recipes",
+    "url": "https://err.fandom.com/wiki/Crafting/Recipes",
+    "verifiedVia": "2026-10-12T04:13:31Z",
+    "unverified": false
+   }
+  },
+  {
+   "id": "frenzyflame-grease",
+   "name": "Frenzyflame Grease",
+   "category": "greases",
+   "yield": 1,
+   "materials": [
+    {
+     "name": "Essential Alchemic",
+     "qty": 5
+    },
+    {
+     "name": "Maddening Extract",
+     "qty": 4
+    },
+    {
+     "name": "Adhesive Amalgam",
+     "qty": 2
+    }
+   ],
+   "source": {
+    "label": "ERR wiki – Crafting/Recipes",
+    "url": "https://err.fandom.com/wiki/Crafting/Recipes",
+    "verifiedVia": "2026-10-12T04:13:31Z",
+    "unverified": false
+   }
+  },
+  {
+   "id": "blighted-grease",
+   "name": "Blighted Grease",
+   "category": "greases",
+   "yield": 1,
+   "materials": [
+    {
+     "name": "Essential Alchemic",
+     "qty": 5
+    },
+    {
+     "name": "Blighted Extract",
+     "qty": 4
+    },
+    {
+     "name": "Adhesive Amalgam",
+     "qty": 2
+    }
+   ],
+   "source": {
+    "label": "ERR wiki – Crafting/Recipes",
+    "url": "https://err.fandom.com/wiki/Crafting/Recipes",
+    "verifiedVia": "2026-10-12T04:13:31Z",
+    "unverified": false
+   }
+  },
+  {
+   "id": "messmerfire-grease",
+   "name": "Messmerfire Grease",
+   "category": "greases",
+   "yield": 1,
+   "materials": [
+    {
+     "name": "Ingenious Alchemic",
+     "qty": 1
+    },
+    {
+     "name": "Blazing Substance",
+     "qty": 6
+    },
+    {
+     "name": "Adhesive Amalgam",
+     "qty": 3
+    }
+   ],
+   "source": {
+    "label": "ERR wiki – Crafting/Recipes",
+    "url": "https://err.fandom.com/wiki/Crafting/Recipes",
+    "verifiedVia": "2026-10-12T04:13:31Z",
+    "unverified": false
+   }
+  },
+  {
+   "id": "dragonbolt-grease",
+   "name": "Dragonbolt Grease",
+   "category": "greases",
+   "yield": 1,
+   "materials": [
+    {
+     "name": "Ingenious Alchemic",
+     "qty": 1
+    },
+    {
+     "name": "Crackling Substance",
+     "qty": 4
+    },
+    {
+     "name": "Draconic Amalgam",
+     "qty": 2
+    },
+    {
+     "name": "Adhesive Amalgam",
+     "qty": 3
+    }
+   ],
+   "source": {
+    "label": "ERR wiki – Crafting/Recipes",
+    "url": "https://err.fandom.com/wiki/Crafting/Recipes",
+    "verifiedVia": "2026-10-12T04:13:31Z",
+    "unverified": false
+   }
+  },
+  {
+   "id": "royal-magic-grease",
+   "name": "Royal Magic Grease",
+   "category": "greases",
+   "yield": 1,
+   "materials": [
+    {
+     "name": "Ingenious Alchemic",
+     "qty": 1
+    },
+    {
+     "name": "Shimmering Substance",
+     "qty": 6
+    },
+    {
+     "name": "Adhesive Amalgam",
+     "qty": 3
+    }
+   ],
+   "source": {
+    "label": "ERR wiki – Crafting/Recipes",
+    "url": "https://err.fandom.com/wiki/Crafting/Recipes",
+    "verifiedVia": "2026-10-12T04:13:31Z",
+    "unverified": false
+   }
+  },
+  {
+   "id": "golden-grease",
+   "name": "Golden Grease",
+   "category": "greases",
+   "yield": 1,
+   "materials": [
+    {
+     "name": "Ingenious Alchemic",
+     "qty": 1
+    },
+    {
+     "name": "Blessed Substance",
+     "qty": 6
+    },
+    {
+     "name": "Adhesive Amalgam",
+     "qty": 3
+    }
+   ],
+   "source": {
+    "label": "ERR wiki – Crafting/Recipes",
+    "url": "https://err.fandom.com/wiki/Crafting/Recipes",
+    "verifiedVia": "2026-10-12T04:13:31Z",
+    "unverified": false
+   }
+  },
+  {
+   "id": "eternal-sleep-grease",
+   "name": "Eternal Sleep Grease",
+   "category": "greases",
+   "yield": 1,
+   "materials": [
+    {
+     "name": "Ingenious Alchemic",
+     "qty": 1
+    },
+    {
+     "name": "Sedative Extract",
+     "qty": 6
+    },
+    {
+     "name": "Adhesive Amalgam",
+     "qty": 3
+    }
+   ],
+   "source": {
+    "label": "ERR wiki – Crafting/Recipes",
+    "url": "https://err.fandom.com/wiki/Crafting/Recipes",
+    "verifiedVia": "2026-10-12T04:13:31Z",
+    "unverified": false
+   }
+  },
+  {
+   "id": "dragon-communion-grease",
+   "name": "Dragon Communion Grease",
+   "category": "greases",
+   "yield": 1,
+   "materials": [
+    {
+     "name": "Ingenious Alchemic",
+     "qty": 1
+    },
+    {
+     "name": "Draconic Amalgam",
+     "qty": 6
+    },
+    {
+     "name": "Adhesive Amalgam",
+     "qty": 3
+    }
+   ],
+   "source": {
+    "label": "ERR wiki – Crafting/Recipes",
+    "url": "https://err.fandom.com/wiki/Crafting/Recipes",
+    "verifiedVia": "2026-10-12T04:13:31Z",
+    "unverified": false
+   }
+  },
+  {
+   "id": "festive-grease",
+   "name": "Festive Grease",
+   "category": "greases",
+   "yield": 1,
+   "materials": [
+    {
+     "name": "Ingenious Alchemic",
+     "qty": 1
+    },
+    {
+     "name": "Golden Amalgam",
+     "qty": 3
+    },
+    {
+     "name": "Fragrant Amalgam",
+     "qty": 3
+    },
+    {
+     "name": "Adhesive Amalgam",
+     "qty": 3
+    }
+   ],
+   "source": {
+    "label": "ERR wiki – Crafting/Recipes",
+    "url": "https://err.fandom.com/wiki/Crafting/Recipes",
+    "verifiedVia": "2026-10-12T04:13:31Z",
+    "unverified": false
+   }
+  },
+  {
+   "id": "rowa-raisin",
+   "name": "Rowa Raisin",
+   "category": "raisins",
+   "yield": 1,
+   "materials": [
+    {
+     "name": "Rowa Fruit",
+     "qty": 1
+    }
+   ],
+   "source": {
+    "label": "ERR wiki – Crafting/Recipes",
+    "url": "https://err.fandom.com/wiki/Crafting/Recipes",
+    "verifiedVia": "2026-10-12T04:13:31Z",
+    "unverified": false
+   }
+  },
+  {
+   "id": "sweet-raisin",
+   "name": "Sweet Raisin",
+   "category": "raisins",
+   "yield": 1,
+   "materials": [
+    {
+     "name": "Golden Rowa",
+     "qty": 1
+    }
+   ],
+   "source": {
+    "label": "ERR wiki – Crafting/Recipes",
+    "url": "https://err.fandom.com/wiki/Crafting/Recipes",
+    "verifiedVia": "2026-10-12T04:13:31Z",
+    "unverified": false
+   }
+  },
+  {
+   "id": "frozen-raisin",
+   "name": "Frozen Raisin",
+   "category": "raisins",
+   "yield": 1,
+   "materials": [
+    {
+     "name": "Rimed Rowa",
+     "qty": 1
+    }
+   ],
+   "source": {
+    "label": "ERR wiki – Crafting/Recipes",
+    "url": "https://err.fandom.com/wiki/Crafting/Recipes",
+    "verifiedVia": "2026-10-12T04:13:31Z",
+    "unverified": false
+   }
+  },
+  {
+   "id": "stormhoof-raisin",
+   "name": "Stormhoof Raisin",
+   "category": "raisins",
+   "yield": 1,
+   "materials": [
+    {
+     "name": "Rowa Fruit",
+     "qty": 1
+    },
+    {
+     "name": "Essential Alchemic",
+     "qty": 8
+    },
+    {
+     "name": "Ingenious Alchemic",
+     "qty": 2
+    },
+    {
+     "name": "Crackling Substance",
+     "qty": 4
+    }
+   ],
+   "source": {
+    "label": "ERR wiki – Crafting/Recipes",
+    "url": "https://err.fandom.com/wiki/Crafting/Recipes",
+    "verifiedVia": "2026-10-12T04:13:31Z",
+    "unverified": false
+   }
+  },
+  {
+   "id": "erdbark-raisin",
+   "name": "Erdbark Raisin",
+   "category": "raisins",
+   "yield": 1,
+   "materials": [
+    {
+     "name": "Rowa Fruit",
+     "qty": 1
+    },
+    {
+     "name": "Ingenious Alchemic",
+     "qty": 4
+    },
+    {
+     "name": "Blessed Substance",
+     "qty": 8
+    },
+    {
+     "name": "Golden Amalgam",
+     "qty": 6
+    }
+   ],
+   "source": {
+    "label": "ERR wiki – Crafting/Recipes",
+    "url": "https://err.fandom.com/wiki/Crafting/Recipes",
+    "verifiedVia": "2026-10-12T04:13:31Z",
+    "unverified": false
+   }
+  },
+  {
+   "id": "spirit-raisin",
+   "name": "Spirit Raisin",
+   "category": "raisins",
+   "yield": 1,
+   "materials": [
+    {
+     "name": "Rada Fruit",
+     "qty": 1
+    }
+   ],
+   "source": {
+    "label": "ERR wiki – Crafting/Recipes",
+    "url": "https://err.fandom.com/wiki/Crafting/Recipes",
+    "verifiedVia": "2026-10-12T04:13:31Z",
+    "unverified": false
+   }
+  },
+  {
+   "id": "spellproof-dried-liver",
+   "name": "Spellproof Dried Liver",
+   "category": "livers",
+   "yield": 1,
+   "materials": [
+    {
+     "name": "Essential Alchemic",
+     "qty": 12
+    },
+    {
+     "name": "Shimmering Substance",
+     "qty": 4
+    },
+    {
+     "name": "Gory Amalgam",
+     "qty": 10
+    }
+   ],
+   "source": {
+    "label": "ERR wiki – Crafting/Recipes",
+    "url": "https://err.fandom.com/wiki/Crafting/Recipes",
+    "verifiedVia": "2026-10-12T04:13:31Z",
+    "unverified": false
+   }
+  },
+  {
+   "id": "fireproof-dried-liver",
+   "name": "Fireproof Dried Liver",
+   "category": "livers",
+   "yield": 1,
+   "materials": [
+    {
+     "name": "Essential Alchemic",
+     "qty": 12
+    },
+    {
+     "name": "Blazing Substance",
+     "qty": 4
+    },
+    {
+     "name": "Gory Amalgam",
+     "qty": 10
+    }
+   ],
+   "source": {
+    "label": "ERR wiki – Crafting/Recipes",
+    "url": "https://err.fandom.com/wiki/Crafting/Recipes",
+    "verifiedVia": "2026-10-12T04:13:31Z",
+    "unverified": false
+   }
+  },
+  {
+   "id": "lightningproof-dried-liver",
+   "name": "Lightningproof Dried Liver",
+   "category": "livers",
+   "yield": 1,
+   "materials": [
+    {
+     "name": "Essential Alchemic",
+     "qty": 12
+    },
+    {
+     "name": "Crackling Substance",
+     "qty": 4
+    },
+    {
+     "name": "Gory Amalgam",
+     "qty": 10
+    }
+   ],
+   "source": {
+    "label": "ERR wiki – Crafting/Recipes",
+    "url": "https://err.fandom.com/wiki/Crafting/Recipes",
+    "verifiedVia": "2026-10-12T04:13:31Z",
+    "unverified": false
+   }
+  },
+  {
+   "id": "holyproof-dried-liver",
+   "name": "Holyproof Dried Liver",
+   "category": "livers",
+   "yield": 1,
+   "materials": [
+    {
+     "name": "Essential Alchemic",
+     "qty": 12
+    },
+    {
+     "name": "Blessed Substance",
+     "qty": 4
+    },
+    {
+     "name": "Gory Amalgam",
+     "qty": 10
+    }
+   ],
+   "source": {
+    "label": "ERR wiki – Crafting/Recipes",
+    "url": "https://err.fandom.com/wiki/Crafting/Recipes",
+    "verifiedVia": "2026-10-12T04:13:31Z",
+    "unverified": false
+   }
+  },
+  {
+   "id": "spellproof-pickled-liver",
+   "name": "Spellproof Pickled Liver",
+   "category": "livers",
+   "yield": 1,
+   "materials": [
+    {
+     "name": "Essential Alchemic",
+     "qty": 12
+    },
+    {
+     "name": "Ingenious Alchemic",
+     "qty": 1
+    },
+    {
+     "name": "Shimmering Substance",
+     "qty": 6
+    },
+    {
+     "name": "Gory Amalgam",
+     "qty": 12
+    }
+   ],
+   "source": {
+    "label": "ERR wiki – Crafting/Recipes",
+    "url": "https://err.fandom.com/wiki/Crafting/Recipes",
+    "verifiedVia": "2026-10-12T04:13:31Z",
+    "unverified": false
+   }
+  },
+  {
+   "id": "fireproof-pickled-liver",
+   "name": "Fireproof Pickled Liver",
+   "category": "livers",
+   "yield": 1,
+   "materials": [
+    {
+     "name": "Essential Alchemic",
+     "qty": 12
+    },
+    {
+     "name": "Ingenious Alchemic",
+     "qty": 1
+    },
+    {
+     "name": "Blazing Substance",
+     "qty": 6
+    },
+    {
+     "name": "Gory Amalgam",
+     "qty": 12
+    }
+   ],
+   "source": {
+    "label": "ERR wiki – Crafting/Recipes",
+    "url": "https://err.fandom.com/wiki/Crafting/Recipes",
+    "verifiedVia": "2026-10-12T04:13:31Z",
+    "unverified": false
+   }
+  },
+  {
+   "id": "lightningproof-pickled-liver",
+   "name": "Lightningproof Pickled Liver",
+   "category": "livers",
+   "yield": 1,
+   "materials": [
+    {
+     "name": "Essential Alchemic",
+     "qty": 12
+    },
+    {
+     "name": "Ingenious Alchemic",
+     "qty": 1
+    },
+    {
+     "name": "Crackling Substance",
+     "qty": 6
+    },
+    {
+     "name": "Gory Amalgam",
+     "qty": 12
+    }
+   ],
+   "source": {
+    "label": "ERR wiki – Crafting/Recipes",
+    "url": "https://err.fandom.com/wiki/Crafting/Recipes",
+    "verifiedVia": "2026-10-12T04:13:31Z",
+    "unverified": false
+   }
+  },
+  {
+   "id": "holyproof-pickled-liver",
+   "name": "Holyproof Pickled Liver",
+   "category": "livers",
+   "yield": 1,
+   "materials": [
+    {
+     "name": "Essential Alchemic",
+     "qty": 12
+    },
+    {
+     "name": "Ingenious Alchemic",
+     "qty": 1
+    },
+    {
+     "name": "Blessed Substance",
+     "qty": 6
+    },
+    {
+     "name": "Gory Amalgam",
+     "qty": 12
+    }
+   ],
+   "source": {
+    "label": "ERR wiki – Crafting/Recipes",
+    "url": "https://err.fandom.com/wiki/Crafting/Recipes",
+    "verifiedVia": "2026-10-12T04:13:31Z",
+    "unverified": false
+   }
+  },
+  {
+   "id": "opaline-pickled-liver",
+   "name": "Opaline Pickled Liver",
+   "category": "livers",
+   "yield": 1,
+   "materials": [
+    {
+     "name": "Essential Alchemic",
+     "qty": 12
+    },
+    {
+     "name": "Miraculous Alchemic",
+     "qty": 2
+    },
+    {
+     "name": "Gory Amalgam",
+     "qty": 12
+    }
+   ],
+   "source": {
+    "label": "ERR wiki – Crafting/Recipes",
+    "url": "https://err.fandom.com/wiki/Crafting/Recipes",
+    "verifiedVia": "2026-10-12T04:13:31Z",
+    "unverified": false
+   }
+  },
+  {
+   "id": "immunizing-cured-meat",
+   "name": "Immunizing Cured Meat",
+   "category": "cured-meat",
+   "yield": 1,
+   "materials": [
+    {
+     "name": "Essential Alchemic",
+     "qty": 12
+    },
+    {
+     "name": "Ingenious Alchemic",
+     "qty": 2
+    },
+    {
+     "name": "Noxious Extract",
+     "qty": 10
+    },
+    {
+     "name": "Gory Amalgam",
+     "qty": 10
+    }
+   ],
+   "source": {
+    "label": "ERR wiki – Crafting/Recipes",
+    "url": "https://err.fandom.com/wiki/Crafting/Recipes",
+    "verifiedVia": "2026-10-12T04:13:31Z",
+    "unverified": false
+   }
+  },
+  {
+   "id": "invigorating-cured-meat",
+   "name": "Invigorating Cured Meat",
+   "category": "cured-meat",
+   "yield": 1,
+   "materials": [
+    {
+     "name": "Essential Alchemic",
+     "qty": 12
+    },
+    {
+     "name": "Ingenious Alchemic",
+     "qty": 2
+    },
+    {
+     "name": "Bloody Extract",
+     "qty": 10
+    },
+    {
+     "name": "Gory Amalgam",
+     "qty": 10
+    }
+   ],
+   "source": {
+    "label": "ERR wiki – Crafting/Recipes",
+    "url": "https://err.fandom.com/wiki/Crafting/Recipes",
+    "verifiedVia": "2026-10-12T04:13:31Z",
+    "unverified": false
+   }
+  },
+  {
+   "id": "clarifying-cured-meat",
+   "name": "Clarifying Cured Meat",
+   "category": "cured-meat",
+   "yield": 1,
+   "materials": [
+    {
+     "name": "Essential Alchemic",
+     "qty": 12
+    },
+    {
+     "name": "Ingenious Alchemic",
+     "qty": 2
+    },
+    {
+     "name": "Sedative Extract",
+     "qty": 10
+    },
+    {
+     "name": "Gory Amalgam",
+     "qty": 10
+    }
+   ],
+   "source": {
+    "label": "ERR wiki – Crafting/Recipes",
+    "url": "https://err.fandom.com/wiki/Crafting/Recipes",
+    "verifiedVia": "2026-10-12T04:13:31Z",
+    "unverified": false
+   }
+  },
+  {
+   "id": "dappled-cured-meat",
+   "name": "Dappled Cured Meat",
+   "category": "cured-meat",
+   "yield": 1,
+   "materials": [
+    {
+     "name": "Essential Alchemic",
+     "qty": 18
+    },
+    {
+     "name": "Ingenious Alchemic",
+     "qty": 3
+    },
+    {
+     "name": "Miraculous Alchemic",
+     "qty": 1
+    },
+    {
+     "name": "Gory Amalgam",
+     "qty": 10
+    }
+   ],
+   "source": {
+    "label": "ERR wiki – Crafting/Recipes",
+    "url": "https://err.fandom.com/wiki/Crafting/Recipes",
+    "verifiedVia": "2026-10-12T04:13:31Z",
+    "unverified": false
+   }
+  },
+  {
+   "id": "immunizing-white-cured-meat",
+   "name": "Immunizing White Cured Meat",
+   "category": "cured-meat",
+   "yield": 1,
+   "materials": [
+    {
+     "name": "Essential Alchemic",
+     "qty": 12
+    },
+    {
+     "name": "Ingenious Alchemic",
+     "qty": 2
+    },
+    {
+     "name": "Scarlet Extract",
+     "qty": 10
+    },
+    {
+     "name": "Gory Amalgam",
+     "qty": 10
+    }
+   ],
+   "source": {
+    "label": "ERR wiki – Crafting/Recipes",
+    "url": "https://err.fandom.com/wiki/Crafting/Recipes",
+    "verifiedVia": "2026-10-12T04:13:31Z",
+    "unverified": false
+   }
+  },
+  {
+   "id": "invigorating-white-cured-meat",
+   "name": "Invigorating White Cured Meat",
+   "category": "cured-meat",
+   "yield": 1,
+   "materials": [
+    {
+     "name": "Essential Alchemic",
+     "qty": 12
+    },
+    {
+     "name": "Ingenious Alchemic",
+     "qty": 2
+    },
+    {
+     "name": "Rimed Extract",
+     "qty": 10
+    },
+    {
+     "name": "Gory Amalgam",
+     "qty": 10
+    }
+   ],
+   "source": {
+    "label": "ERR wiki – Crafting/Recipes",
+    "url": "https://err.fandom.com/wiki/Crafting/Recipes",
+    "verifiedVia": "2026-10-12T04:13:31Z",
+    "unverified": false
+   }
+  },
+  {
+   "id": "clarifying-white-cured-meat",
+   "name": "Clarifying White Cured Meat",
+   "category": "cured-meat",
+   "yield": 1,
+   "materials": [
+    {
+     "name": "Essential Alchemic",
+     "qty": 12
+    },
+    {
+     "name": "Ingenious Alchemic",
+     "qty": 2
+    },
+    {
+     "name": "Maddening Extract",
+     "qty": 10
+    },
+    {
+     "name": "Gory Amalgam",
+     "qty": 10
+    }
+   ],
+   "source": {
+    "label": "ERR wiki – Crafting/Recipes",
+    "url": "https://err.fandom.com/wiki/Crafting/Recipes",
+    "verifiedVia": "2026-10-12T04:13:31Z",
+    "unverified": false
+   }
+  },
+  {
+   "id": "dappled-white-cured-meat",
+   "name": "Dappled White Cured Meat",
+   "category": "cured-meat",
+   "yield": 1,
+   "materials": [
+    {
+     "name": "Essential Alchemic",
+     "qty": 18
+    },
+    {
+     "name": "Ingenious Alchemic",
+     "qty": 3
+    },
+    {
+     "name": "Miraculous Alchemic",
+     "qty": 1
+    },
+    {
+     "name": "Gory Amalgam",
+     "qty": 10
+    }
+   ],
+   "source": {
+    "label": "ERR wiki – Crafting/Recipes",
+    "url": "https://err.fandom.com/wiki/Crafting/Recipes",
+    "verifiedVia": "2026-10-12T04:13:31Z",
+    "unverified": false
+   }
+  },
+  {
+   "id": "revitalizing-cured-meat",
+   "name": "Revitalizing Cured Meat",
+   "category": "cured-meat",
+   "yield": 1,
+   "materials": [
+    {
+     "name": "Essential Alchemic",
+     "qty": 15
+    },
+    {
+     "name": "Ingenious Alchemic",
+     "qty": 2
+    },
+    {
+     "name": "Blighted Extract",
+     "qty": 10
+    },
+    {
+     "name": "Gory Amalgam",
+     "qty": 10
+    }
+   ],
+   "source": {
+    "label": "ERR wiki – Crafting/Recipes",
+    "url": "https://err.fandom.com/wiki/Crafting/Recipes",
+    "verifiedVia": "2026-10-12T04:13:31Z",
+    "unverified": false
+   }
+  },
+  {
+   "id": "revitalizing-white-cured-meat",
+   "name": "Revitalizing White Cured Meat",
+   "category": "cured-meat",
+   "yield": 1,
+   "materials": [
+    {
+     "name": "Essential Alchemic",
+     "qty": 15
+    },
+    {
+     "name": "Ingenious Alchemic",
+     "qty": 2
+    },
+    {
+     "name": "Blighted Extract",
+     "qty": 10
+    },
+    {
+     "name": "Gory Amalgam",
+     "qty": 10
+    }
+   ],
+   "source": {
+    "label": "ERR wiki – Crafting/Recipes",
+    "url": "https://err.fandom.com/wiki/Crafting/Recipes",
+    "verifiedVia": "2026-10-12T04:13:31Z",
+    "unverified": false
+   }
+  },
+  {
+   "id": "neutralizing-boluses",
+   "name": "Neutralizing Boluses",
+   "category": "boluses",
+   "yield": 1,
+   "materials": [
+    {
+     "name": "Essential Alchemic",
+     "qty": 15
+    },
+    {
+     "name": "Noxious Extract",
+     "qty": 10
+    },
+    {
+     "name": "Mildewy Amalgam",
+     "qty": 10
+    }
+   ],
+   "source": {
+    "label": "ERR wiki – Crafting/Recipes",
+    "url": "https://err.fandom.com/wiki/Crafting/Recipes",
+    "verifiedVia": "2026-10-12T04:13:31Z",
+    "unverified": false
+   }
+  },
+  {
+   "id": "stanching-boluses",
+   "name": "Stanching Boluses",
+   "category": "boluses",
+   "yield": 1,
+   "materials": [
+    {
+     "name": "Essential Alchemic",
+     "qty": 15
+    },
+    {
+     "name": "Bloody Extract",
+     "qty": 10
+    },
+    {
+     "name": "Mildewy Amalgam",
+     "qty": 10
+    }
+   ],
+   "source": {
+    "label": "ERR wiki – Crafting/Recipes",
+    "url": "https://err.fandom.com/wiki/Crafting/Recipes",
+    "verifiedVia": "2026-10-12T04:13:31Z",
+    "unverified": false
+   }
+  },
+  {
+   "id": "thawfrost-boluses",
+   "name": "Thawfrost Boluses",
+   "category": "boluses",
+   "yield": 1,
+   "materials": [
+    {
+     "name": "Essential Alchemic",
+     "qty": 15
+    },
+    {
+     "name": "Rimed Extract",
+     "qty": 10
+    },
+    {
+     "name": "Mildewy Amalgam",
+     "qty": 10
+    },
+    {
+     "name": "Starry Amalgam",
+     "qty": 10
+    }
+   ],
+   "source": {
+    "label": "ERR wiki – Crafting/Recipes",
+    "url": "https://err.fandom.com/wiki/Crafting/Recipes",
+    "verifiedVia": "2026-10-12T04:13:31Z",
+    "unverified": false
+   }
+  },
+  {
+   "id": "stimulating-boluses",
+   "name": "Stimulating Boluses",
+   "category": "boluses",
+   "yield": 1,
+   "materials": [
+    {
+     "name": "Essential Alchemic",
+     "qty": 15
+    },
+    {
+     "name": "Ingenious Alchemic",
+     "qty": 3
+    },
+    {
+     "name": "Sedative Extract",
+     "qty": 10
+    },
+    {
+     "name": "Mildewy Amalgam",
+     "qty": 10
+    }
+   ],
+   "source": {
+    "label": "ERR wiki – Crafting/Recipes",
+    "url": "https://err.fandom.com/wiki/Crafting/Recipes",
+    "verifiedVia": "2026-10-12T04:13:31Z",
+    "unverified": false
+   }
+  },
+  {
+   "id": "preserving-boluses",
+   "name": "Preserving Boluses",
+   "category": "boluses",
+   "yield": 1,
+   "materials": [
+    {
+     "name": "Essential Alchemic",
+     "qty": 15
+    },
+    {
+     "name": "Ingenious Alchemic",
+     "qty": 3
+    },
+    {
+     "name": "Scarlet Extract",
+     "qty": 10
+    },
+    {
+     "name": "Mildewy Amalgam",
+     "qty": 10
+    }
+   ],
+   "source": {
+    "label": "ERR wiki – Crafting/Recipes",
+    "url": "https://err.fandom.com/wiki/Crafting/Recipes",
+    "verifiedVia": "2026-10-12T04:13:31Z",
+    "unverified": false
+   }
+  },
+  {
+   "id": "rejuvenating-boluses",
+   "name": "Rejuvenating Boluses",
+   "category": "boluses",
+   "yield": 1,
+   "materials": [
+    {
+     "name": "Essential Alchemic",
+     "qty": 15
+    },
+    {
+     "name": "Ingenious Alchemic",
+     "qty": 3
+    },
+    {
+     "name": "Blighted Extract",
+     "qty": 10
+    },
+    {
+     "name": "Mildewy Amalgam",
+     "qty": 10
+    }
+   ],
+   "source": {
+    "label": "ERR wiki – Crafting/Recipes",
+    "url": "https://err.fandom.com/wiki/Crafting/Recipes",
+    "verifiedVia": "2026-10-12T04:13:31Z",
+    "unverified": false
+   }
+  },
+  {
+   "id": "clarifying-boluses",
+   "name": "Clarifying Boluses",
+   "category": "boluses",
+   "yield": 1,
+   "materials": [
+    {
+     "name": "Essential Alchemic",
+     "qty": 15
+    },
+    {
+     "name": "Maddening Extract",
+     "qty": 10
+    },
+    {
+     "name": "Mildewy Amalgam",
+     "qty": 10
+    },
+    {
+     "name": "Starry Amalgam",
+     "qty": 10
+    }
+   ],
+   "source": {
+    "label": "ERR wiki – Crafting/Recipes",
+    "url": "https://err.fandom.com/wiki/Crafting/Recipes",
+    "verifiedVia": "2026-10-12T04:13:31Z",
+    "unverified": false
+   }
+  },
+  {
+   "id": "larval-tear",
+   "name": "Larval Tear",
+   "category": "misc",
+   "yield": 1,
+   "materials": [
+    {
+     "name": "Miraculous Alchemic",
+     "qty": 3
+    },
+    {
+     "name": "Silvery Amalgam",
+     "qty": 24
+    }
+   ],
+   "source": {
+    "label": "ERR wiki – Crafting/Recipes",
+    "url": "https://err.fandom.com/wiki/Crafting/Recipes",
+    "verifiedVia": "2026-10-12T04:13:31Z",
+    "unverified": false
+   }
+  },
+  {
+   "id": "raw-meat-dumpling",
+   "name": "Raw Meat Dumpling",
+   "category": "misc",
+   "yield": 1,
+   "materials": [
+    {
+     "name": "Essential Alchemic",
+     "qty": 24
+    },
+    {
+     "name": "Miraculous Alchemic",
+     "qty": 1
+    },
+    {
+     "name": "Noxious Extract",
+     "qty": 12
+    },
+    {
+     "name": "Gory Amalgam",
+     "qty": 16
+    }
+   ],
+   "source": {
+    "label": "ERR wiki – Crafting/Recipes",
+    "url": "https://err.fandom.com/wiki/Crafting/Recipes",
+    "verifiedVia": "2026-10-12T04:13:31Z",
+    "unverified": false
+   }
+  },
+  {
+   "id": "withered-twig",
+   "name": "Withered Twig",
+   "category": "misc",
+   "yield": 1,
+   "materials": [
+    {
+     "name": "Miraculous Alchemic",
+     "qty": 1
+    },
+    {
+     "name": "Blighted Extract",
+     "qty": 18
+    }
+   ],
+   "source": {
+    "label": "ERR wiki – Crafting/Recipes",
+    "url": "https://err.fandom.com/wiki/Crafting/Recipes",
+    "verifiedVia": "2026-10-12T04:13:31Z",
+    "unverified": false
+   }
+  },
+  {
+   "id": "rainbow-stone",
+   "name": "Rainbow Stone",
+   "category": "misc",
+   "yield": 1,
+   "materials": [
+    {
+     "name": "Rocky Amalgam",
+     "qty": 2
+    }
+   ],
+   "source": {
+    "label": "ERR wiki – Crafting/Recipes",
+    "url": "https://err.fandom.com/wiki/Crafting/Recipes",
+    "verifiedVia": "2026-10-12T04:13:31Z",
+    "unverified": false
+   }
+  },
+  {
+   "id": "glowstone",
+   "name": "Glowstone",
+   "category": "misc",
+   "yield": 1,
+   "materials": [
+    {
+     "name": "Rocky Amalgam",
+     "qty": 3
+    },
+    {
+     "name": "Starry Amalgam",
+     "qty": 6
+    }
+   ],
+   "source": {
+    "label": "ERR wiki – Crafting/Recipes",
+    "url": "https://err.fandom.com/wiki/Crafting/Recipes",
+    "verifiedVia": "2026-10-12T04:13:31Z",
+    "unverified": false
+   }
+  },
+  {
+   "id": "grace-mimic",
+   "name": "Grace Mimic",
+   "category": "misc",
+   "yield": 1,
+   "materials": [
+    {
+     "name": "Essential Alchemic",
+     "qty": 10
+    },
+    {
+     "name": "Ingenious Alchemic",
+     "qty": 2
+    }
+   ],
+   "source": {
+    "label": "ERR wiki – Crafting/Recipes",
+    "url": "https://err.fandom.com/wiki/Crafting/Recipes",
+    "verifiedVia": "2026-10-12T04:13:31Z",
+    "unverified": false
+   }
+  },
+  {
+   "id": "soft-cotton",
+   "name": "Soft Cotton",
+   "category": "misc",
+   "yield": 1,
+   "materials": [
+    {
+     "name": "Essential Alchemic",
+     "qty": 10
+    },
+    {
+     "name": "Blazing Substance",
+     "qty": 2
+    }
+   ],
+   "source": {
+    "label": "ERR wiki – Crafting/Recipes",
+    "url": "https://err.fandom.com/wiki/Crafting/Recipes",
+    "verifiedVia": "2026-10-12T04:13:31Z",
+    "unverified": false
+   }
+  },
+  {
+   "id": "soap",
+   "name": "Soap",
+   "category": "misc",
+   "yield": 1,
+   "materials": [
+    {
+     "name": "Starry Amalgam",
+     "qty": 12
+    }
+   ],
+   "source": {
+    "label": "ERR wiki – Crafting/Recipes",
+    "url": "https://err.fandom.com/wiki/Crafting/Recipes",
+    "verifiedVia": "2026-10-12T04:13:31Z",
+    "unverified": false
+   }
+  },
+  {
+   "id": "lamp-oil",
+   "name": "Lamp Oil",
+   "category": "misc",
+   "yield": 1,
+   "materials": [
+    {
+     "name": "Essential Alchemic",
+     "qty": 2
+    },
+    {
+     "name": "Blazing Substance",
+     "qty": 2
+    }
+   ],
+   "source": {
+    "label": "ERR wiki – Crafting/Recipes",
+    "url": "https://err.fandom.com/wiki/Crafting/Recipes",
+    "verifiedVia": "2026-10-12T04:13:31Z",
+    "unverified": false
+   }
+  },
+  {
+   "id": "scriptstone",
+   "name": "Scriptstone",
+   "category": "misc",
+   "yield": 1,
+   "materials": [
+    {
+     "name": "Ingenious Alchemic",
+     "qty": 2
+    },
+    {
+     "name": "Rocky Amalgam",
+     "qty": 2
+    }
+   ],
+   "source": {
+    "label": "ERR wiki – Crafting/Recipes",
+    "url": "https://err.fandom.com/wiki/Crafting/Recipes",
+    "verifiedVia": "2026-10-12T04:13:31Z",
+    "unverified": false
+   }
+  },
+  {
+   "id": "sign-of-the-all-knowing",
+   "name": "Sign of the All-Knowing",
+   "category": "misc",
+   "yield": 1,
+   "materials": [
+    {
+     "name": "Shimmering Substance",
+     "qty": 1
+    },
+    {
+     "name": "Blazing Substance",
+     "qty": 1
+    },
+    {
+     "name": "Crackling Substance",
+     "qty": 1
+    },
+    {
+     "name": "Blessed Substance",
+     "qty": 1
+    }
+   ],
+   "source": {
+    "label": "ERR wiki – Crafting/Recipes",
+    "url": "https://err.fandom.com/wiki/Crafting/Recipes",
+    "verifiedVia": "2026-10-12T04:13:31Z",
+    "unverified": false
+   }
+  },
+  {
+   "id": "polter-stone",
+   "name": "Polter Stone",
+   "category": "misc",
+   "yield": 1,
+   "materials": [
+    {
+     "name": "Ingenious Alchemic",
+     "qty": 1
+    },
+    {
+     "name": "Mildewy Amalgam",
+     "qty": 7
+    },
+    {
+     "name": "Rocky Amalgam",
+     "qty": 3
+    }
+   ],
+   "source": {
+    "label": "ERR wiki – Crafting/Recipes",
+    "url": "https://err.fandom.com/wiki/Crafting/Recipes",
+    "verifiedVia": "2026-10-12T04:13:31Z",
+    "unverified": false
+   }
+  }
+ ],
+ "materials": [
+  {
+   "id": "essential-alchemic",
+   "name": "Essential Alchemic",
+   "type": "Alchemics",
+   "description": "Alchemics base element. Raw materials break down into base elements, and recipes spend the elements. The lines under where to find it are the wiki breakdown table.",
+   "whereToFind": "Rowa Fruit ×1 yields 2. Dewkissed Herba ×1 yields 2. Herba ×1 yields 3. Erdleaf Flower ×1 yields 3. Rada Fruit ×1 yields 3. Faded Erdleaf Flower ×1 yields 4. Golden Rowa ×1 yields 4. Dewgem ×1 yields 4. Grave Cricket ×1 yields 4. Rimed Rowa ×1 yields 5. Mushroom ×1 yields 5. Rauh Burrow ×1 yields 5. Finger Mimic ×1 yields 9. Ingenious Alchemic ×1 yields 8.",
+   "usedFor": [
+    "Fire Pot",
+    "Redmane Fire Pot",
+    "Giantsflame Fire Pot",
+    "Lightning Pot",
+    "Ancient Dragonbolt Pot",
+    "Fetid Pot",
+    "Swarm Pot",
+    "Holy Water Pot",
+    "Sacred Order Pot",
+    "Freezing Pot",
+    "Poison Pot",
+    "Oil Pot",
+    "Alluring Pot",
+    "Beastlure Pot",
+    "Rock Pot",
+    "Volcano Pot",
+    "Albinauric Pot",
+    "Cursed-Blood Pot",
+    "Sleep Pot",
+    "Rancor Pot",
+    "Magic Pot",
+    "Academy Magic Pot",
+    "Rot Pot",
+    "Death Lightning Pot",
+    "Frenzied Flame Pot",
+    "Eternal Sleep Pot",
+    "Hefty Fire Pot",
+    "Hefty Magic Pot",
+    "Hefty Lightning Pot",
+    "Hefty Holy Water Pot",
+    "Hefty Rock Pot",
+    "Hefty Poison Pot",
+    "Hefty Rot Pot",
+    "Hefty Swarm Pot",
+    "Hefty Freezing Pot",
+    "Hefty Sleep Pot",
+    "Hefty Frenzied Flame Pot",
+    "Hefty Fetid Pot",
+    "Hefty Oil Pot",
+    "Hefty Volcano Pot",
+    "Hefty Rancor Pot",
+    "Hefty Ancient Dragonbolt Pot",
+    "Azula Throwing Chakram",
+    "Crystal Chakram",
+    "Cuckoo Glintstone",
+    "Fire Grease",
+    "Lightning Grease",
+    "Magic Grease",
+    "Holy Grease",
+    "Blood Grease",
+    "Soporific Grease",
+    "Poison Grease",
+    "Freezing Grease",
+    "Dragonwound Grease",
+    "Rot Grease",
+    "Frenzyflame Grease",
+    "Blighted Grease",
+    "Stormhoof Raisin",
+    "Spellproof Dried Liver",
+    "Fireproof Dried Liver",
+    "Lightningproof Dried Liver",
+    "Holyproof Dried Liver",
+    "Spellproof Pickled Liver",
+    "Fireproof Pickled Liver",
+    "Lightningproof Pickled Liver",
+    "Holyproof Pickled Liver",
+    "Opaline Pickled Liver",
+    "Immunizing Cured Meat",
+    "Invigorating Cured Meat",
+    "Clarifying Cured Meat",
+    "Dappled Cured Meat",
+    "Immunizing White Cured Meat",
+    "Invigorating White Cured Meat",
+    "Clarifying White Cured Meat",
+    "Dappled White Cured Meat",
+    "Revitalizing Cured Meat",
+    "Revitalizing White Cured Meat",
+    "Neutralizing Boluses",
+    "Stanching Boluses",
+    "Thawfrost Boluses",
+    "Stimulating Boluses",
+    "Preserving Boluses",
+    "Rejuvenating Boluses",
+    "Clarifying Boluses",
+    "Raw Meat Dumpling",
+    "Grace Mimic",
+    "Soft Cotton",
+    "Lamp Oil"
+   ],
+   "source": {
+    "label": "ERR wiki – Crafting/Recipes",
+    "url": "https://err.fandom.com/wiki/Crafting/Recipes",
+    "verifiedVia": "2026-10-12T04:13:31Z",
+    "unverified": false
+   }
+  },
+  {
+   "id": "ingenious-alchemic",
+   "name": "Ingenious Alchemic",
+   "type": "Alchemics",
+   "description": "Alchemics base element. Raw materials break down into base elements, and recipes spend the elements. The lines under where to find it are the wiki breakdown table.",
+   "whereToFind": "Essential Alchemic ×16 yields 1. Human Bone Shard ×1 yields 2. Great Dragonfly Head ×1 yields 2. Living Jar Shard ×1 yields 2. Pearlescent Scale ×1 yields 2. Winter-Lantern Fly ×1 yields 2. Budding Beast Horn ×1 yields 3. Old Fang ×1 yields 3. Crab Eggs ×1 yields 3. Land Octopus Ovary ×1 yields 3. Scorpion Liver ×1 yields 3. Miranda Powder ×1 yields 4. Formic Rock ×1 yields 5. Blessed Bone Shard ×1 yields 5. Trina's Lily ×1 yields 6. Spirit Calculus ×1 yields 6. Sacramental Burgeon ×1 yields 6. Deep-Purple Lily ×1 yields 7. Nascent Butterfly ×1 yields 8. Miraculous Alchemic ×1 yields 8.",
+   "usedFor": [
+    "Redmane Fire Pot",
+    "Giantsflame Fire Pot",
+    "Ancient Dragonbolt Pot",
+    "Sacred Order Pot",
+    "Freezing Pot",
+    "Alluring Pot",
+    "Beastlure Pot",
+    "Volcano Pot",
+    "Albinauric Pot",
+    "Cursed-Blood Pot",
+    "Academy Magic Pot",
+    "Rot Pot",
+    "Hefty Fire Pot",
+    "Hefty Magic Pot",
+    "Hefty Lightning Pot",
+    "Hefty Holy Water Pot",
+    "Hefty Rock Pot",
+    "Hefty Poison Pot",
+    "Hefty Rot Pot",
+    "Hefty Swarm Pot",
+    "Hefty Freezing Pot",
+    "Hefty Sleep Pot",
+    "Hefty Frenzied Flame Pot",
+    "Hefty Fetid Pot",
+    "Hefty Oil Pot",
+    "Hefty Volcano Pot",
+    "Hefty Rancor Pot",
+    "Hefty Ancient Dragonbolt Pot",
+    "Hefty Furnace Pot",
+    "Surging Frenzied Flame",
+    "Spritestone",
+    "Fire Spritestone",
+    "Fire Coil",
+    "Glinting Nail",
+    "Call of Tibia",
+    "Spark Aromatic",
+    "Ironjar Elixir",
+    "Poison Spraymist",
+    "Acid Spraymist",
+    "Wraithflame Spraymist",
+    "Galvanizing Elixir",
+    "Rimed Spraymist",
+    "Stardust Elixir",
+    "Concealing Aromatic",
+    "Rupturing Aromatic",
+    "Feverish Aromatic",
+    "Afflicting Aromatic",
+    "Messmerfire Grease",
+    "Dragonbolt Grease",
+    "Royal Magic Grease",
+    "Golden Grease",
+    "Eternal Sleep Grease",
+    "Dragon Communion Grease",
+    "Festive Grease",
+    "Stormhoof Raisin",
+    "Erdbark Raisin",
+    "Spellproof Pickled Liver",
+    "Fireproof Pickled Liver",
+    "Lightningproof Pickled Liver",
+    "Holyproof Pickled Liver",
+    "Immunizing Cured Meat",
+    "Invigorating Cured Meat",
+    "Clarifying Cured Meat",
+    "Dappled Cured Meat",
+    "Immunizing White Cured Meat",
+    "Invigorating White Cured Meat",
+    "Clarifying White Cured Meat",
+    "Dappled White Cured Meat",
+    "Revitalizing Cured Meat",
+    "Revitalizing White Cured Meat",
+    "Stimulating Boluses",
+    "Preserving Boluses",
+    "Rejuvenating Boluses",
+    "Grace Mimic",
+    "Scriptstone",
+    "Polter Stone"
+   ],
+   "source": {
+    "label": "ERR wiki – Crafting/Recipes",
+    "url": "https://err.fandom.com/wiki/Crafting/Recipes",
+    "verifiedVia": "2026-10-12T04:13:31Z",
+    "unverified": false
+   }
+  },
+  {
+   "id": "miraculous-alchemic",
+   "name": "Miraculous Alchemic",
+   "type": "Alchemics",
+   "description": "Alchemics base element. Raw materials break down into base elements, and recipes spend the elements. The lines under where to find it are the wiki breakdown table.",
+   "whereToFind": "Ingenious Alchemic ×16 yields 1. Miquella's Lily ×1 yields 1. Nectarblood Burgeon ×1 yields 2. Arteria Leaf ×1 yields 2. Swollen Grape ×1 yields 2. Furnace Visage ×1 yields 3.",
+   "usedFor": [
+    "Hefty Furnace Pot",
+    "Bewitching Branch",
+    "Lulling Branch",
+    "Charming Branch",
+    "Uplifting Aromatic",
+    "Bloodboil Elixir",
+    "Opaline Pickled Liver",
+    "Dappled Cured Meat",
+    "Dappled White Cured Meat",
+    "Larval Tear",
+    "Raw Meat Dumpling",
+    "Withered Twig"
+   ],
+   "source": {
+    "label": "ERR wiki – Crafting/Recipes",
+    "url": "https://err.fandom.com/wiki/Crafting/Recipes",
+    "verifiedVia": "2026-10-12T04:13:31Z",
+    "unverified": false
+   }
+  },
+  {
+   "id": "shimmering-substance",
+   "name": "Shimmering Substance",
+   "type": "Substances",
+   "description": "Substances base element. Raw materials break down into base elements, and recipes spend the elements. The lines under where to find it are the wiki breakdown table.",
+   "whereToFind": "Cracked Crystal ×1 yields 1. Glintstone Firefly ×1 yields 3. Dewgem ×1 yields 3. Magnetic Ore ×1 yields 4. Grave Blossom ×1 yields 5. Crystal Bud ×1 yields 8.",
+   "usedFor": [
+    "Magic Pot",
+    "Academy Magic Pot",
+    "Hefty Magic Pot",
+    "Magicbone Arrow",
+    "Magicbone Bolt",
+    "Cuckoo Glintstone",
+    "Stardust Elixir",
+    "Magic Grease",
+    "Shield Grease",
+    "Royal Magic Grease",
+    "Spellproof Dried Liver",
+    "Spellproof Pickled Liver",
+    "Sign of the All-Knowing"
+   ],
+   "source": {
+    "label": "ERR wiki – Crafting/Recipes",
+    "url": "https://err.fandom.com/wiki/Crafting/Recipes",
+    "verifiedVia": "2026-10-12T04:13:31Z",
+    "unverified": false
+   }
+  },
+  {
+   "id": "blazing-substance",
+   "name": "Blazing Substance",
+   "type": "Substances",
+   "description": "Substances base element. Raw materials break down into base elements, and recipes spend the elements. The lines under where to find it are the wiki breakdown table.",
+   "whereToFind": "Gaseous Stone ×1 yields 2. Fire Blossom ×1 yields 3. Smoldering Butterfly ×1 yields 8. Black Pyrefly ×1 yields 8.",
+   "usedFor": [
+    "Fire Pot",
+    "Redmane Fire Pot",
+    "Giantsflame Fire Pot",
+    "Volcano Pot",
+    "Hefty Fire Pot",
+    "Hefty Volcano Pot",
+    "Hefty Furnace Pot",
+    "Firebone Arrow",
+    "Firebone Bolt",
+    "Fire Spritestone",
+    "Fire Coil",
+    "Spark Aromatic",
+    "Fire Grease",
+    "Messmerfire Grease",
+    "Fireproof Dried Liver",
+    "Fireproof Pickled Liver",
+    "Soft Cotton",
+    "Lamp Oil",
+    "Sign of the All-Knowing"
+   ],
+   "source": {
+    "label": "ERR wiki – Crafting/Recipes",
+    "url": "https://err.fandom.com/wiki/Crafting/Recipes",
+    "verifiedVia": "2026-10-12T04:13:31Z",
+    "unverified": false
+   }
+  },
+  {
+   "id": "crackling-substance",
+   "name": "Crackling Substance",
+   "type": "Substances",
+   "description": "Substances base element. Raw materials break down into base elements, and recipes spend the elements. The lines under where to find it are the wiki breakdown table.",
+   "whereToFind": "Magnetic Ore ×1 yields 3. Fulgurbloom ×1 yields 6. Red Fulgurbloom ×1 yields 7. Gravel Stone ×1 yields 10.",
+   "usedFor": [
+    "Lightning Pot",
+    "Death Lightning Pot",
+    "Hefty Lightning Pot",
+    "Lightning Arrow",
+    "Lightningbone Arrow",
+    "Lightningbone Bolt",
+    "Galvanizing Elixir",
+    "Stardust Elixir",
+    "Lightning Grease",
+    "Dragonbolt Grease",
+    "Stormhoof Raisin",
+    "Lightningproof Dried Liver",
+    "Lightningproof Pickled Liver",
+    "Sign of the All-Knowing"
+   ],
+   "source": {
+    "label": "ERR wiki – Crafting/Recipes",
+    "url": "https://err.fandom.com/wiki/Crafting/Recipes",
+    "verifiedVia": "2026-10-12T04:13:31Z",
+    "unverified": false
+   }
+  },
+  {
+   "id": "blessed-substance",
+   "name": "Blessed Substance",
+   "type": "Substances",
+   "description": "Substances base element. Raw materials break down into base elements, and recipes spend the elements. The lines under where to find it are the wiki breakdown table.",
+   "whereToFind": "Erdleaf Flower ×1 yields 1. Tarnished Golden Sunflower ×1 yields 2. Golden Sunflower ×1 yields 3. Shadow Sunflower ×1 yields 5. Golden Centipede ×1 yields 8. Blessed Bone Shard ×1 yields 9.",
+   "usedFor": [
+    "Holy Water Pot",
+    "Sacred Order Pot",
+    "Hefty Holy Water Pot",
+    "Haligbone Arrow",
+    "Haligbone Bolt",
+    "Wraithflame Spraymist",
+    "Holy Grease",
+    "Golden Grease",
+    "Erdbark Raisin",
+    "Holyproof Dried Liver",
+    "Holyproof Pickled Liver",
+    "Sign of the All-Knowing"
+   ],
+   "source": {
+    "label": "ERR wiki – Crafting/Recipes",
+    "url": "https://err.fandom.com/wiki/Crafting/Recipes",
+    "verifiedVia": "2026-10-12T04:13:31Z",
+    "unverified": false
+   }
+  },
+  {
+   "id": "noxious-extract",
+   "name": "Noxious Extract",
+   "type": "Extracts",
+   "description": "Extracts base element. Raw materials break down into base elements, and recipes spend the elements. The lines under where to find it are the wiki breakdown table.",
+   "whereToFind": "Gold-Tinged Excrement ×1 yields 5. Fly Mold ×1 yields 5. Poisonbloom ×1 yields 6. Toxic Mossling ×1 yields 8. Great Dragonfly Head ×1 yields 10. Nectarblood Burgeon ×1 yields 11.",
+   "usedFor": [
+    "Fetid Pot",
+    "Poison Pot",
+    "Hefty Poison Pot",
+    "Hefty Fetid Pot",
+    "Poisonbone Arrow",
+    "Poisonbone Bolt",
+    "Poisonbone Dart",
+    "Lulling Branch",
+    "Poison Spraymist",
+    "Poison Grease",
+    "Immunizing Cured Meat",
+    "Neutralizing Boluses",
+    "Raw Meat Dumpling"
+   ],
+   "source": {
+    "label": "ERR wiki – Crafting/Recipes",
+    "url": "https://err.fandom.com/wiki/Crafting/Recipes",
+    "verifiedVia": "2026-10-12T04:13:31Z",
+    "unverified": false
+   }
+  },
+  {
+   "id": "scarlet-extract",
+   "name": "Scarlet Extract",
+   "type": "Extracts",
+   "description": "Extracts base element. Raw materials break down into base elements, and recipes spend the elements. The lines under where to find it are the wiki breakdown table.",
+   "whereToFind": "Faded Erdleaf Flower ×1 yields 3. Toxic Mushroom ×1 yields 4. Scarlet Bud ×1 yields 5. Formic Rock ×1 yields 8. Aeonian Butterfly ×1 yields 12.",
+   "usedFor": [
+    "Rot Pot",
+    "Hefty Rot Pot",
+    "Rotbone Arrow",
+    "Rotbone Bolt",
+    "Putrid Crystal Chakram",
+    "Acid Spraymist",
+    "Rot Grease",
+    "Immunizing White Cured Meat",
+    "Preserving Boluses"
+   ],
+   "source": {
+    "label": "ERR wiki – Crafting/Recipes",
+    "url": "https://err.fandom.com/wiki/Crafting/Recipes",
+    "verifiedVia": "2026-10-12T04:13:31Z",
+    "unverified": false
+   }
+  },
+  {
+   "id": "bloody-extract",
+   "name": "Bloody Extract",
+   "type": "Extracts",
+   "description": "Extracts base element. Raw materials break down into base elements, and recipes spend the elements. The lines under where to find it are the wiki breakdown table.",
+   "whereToFind": "Bloodrose ×1 yields 4. Sanguine Amaryllis ×1 yields 5. Land Octopus Ovary ×1 yields 6. Sacramental Burgeon ×1 yields 8. Blood-Tainted Excrement ×1 yields 8. Beast Blood ×1 yields 8.",
+   "usedFor": [
+    "Swarm Pot",
+    "Hefty Swarm Pot",
+    "Bloodbone Arrow",
+    "Bloodbone Bolt",
+    "Bewitching Branch",
+    "Charming Branch",
+    "Bloodboil Elixir",
+    "Rupturing Aromatic",
+    "Blood Grease",
+    "Invigorating Cured Meat",
+    "Stanching Boluses"
+   ],
+   "source": {
+    "label": "ERR wiki – Crafting/Recipes",
+    "url": "https://err.fandom.com/wiki/Crafting/Recipes",
+    "verifiedVia": "2026-10-12T04:13:31Z",
+    "unverified": false
+   }
+  },
+  {
+   "id": "blighted-extract",
+   "name": "Blighted Extract",
+   "type": "Extracts",
+   "description": "Extracts base element. Raw materials break down into base elements, and recipes spend the elements. The lines under where to find it are the wiki breakdown table.",
+   "whereToFind": "Human Bone Shard ×1 yields 6. Eye of Death ×1 yields 9.",
+   "usedFor": [
+    "Death Lightning Pot",
+    "Blightbone Arrow",
+    "Afflicting Aromatic",
+    "Blighted Grease",
+    "Revitalizing Cured Meat",
+    "Revitalizing White Cured Meat",
+    "Rejuvenating Boluses",
+    "Withered Twig"
+   ],
+   "source": {
+    "label": "ERR wiki – Crafting/Recipes",
+    "url": "https://err.fandom.com/wiki/Crafting/Recipes",
+    "verifiedVia": "2026-10-12T04:13:31Z",
+    "unverified": false
+   }
+  },
+  {
+   "id": "rimed-extract",
+   "name": "Rimed Extract",
+   "type": "Extracts",
+   "description": "Extracts base element. Raw materials break down into base elements, and recipes spend the elements. The lines under where to find it are the wiki breakdown table.",
+   "whereToFind": "Dewkissed Herba ×1 yields 2. Rimed Rowa ×1 yields 3. Frozen Maggot ×1 yields 5. Rimed Crystal Bud ×1 yields 6. Grave Keeper's Brainpan ×1 yields 7.",
+   "usedFor": [
+    "Freezing Pot",
+    "Hefty Freezing Pot",
+    "Coldbone Arrow",
+    "Coldbone Bolt",
+    "Call of Tibia",
+    "Rimed Spraymist",
+    "Freezing Grease",
+    "Invigorating White Cured Meat",
+    "Thawfrost Boluses"
+   ],
+   "source": {
+    "label": "ERR wiki – Crafting/Recipes",
+    "url": "https://err.fandom.com/wiki/Crafting/Recipes",
+    "verifiedVia": "2026-10-12T04:13:31Z",
+    "unverified": false
+   }
+  },
+  {
+   "id": "sedative-extract",
+   "name": "Sedative Extract",
+   "type": "Extracts",
+   "description": "Extracts base element. Raw materials break down into base elements, and recipes spend the elements. The lines under where to find it are the wiki breakdown table.",
+   "whereToFind": "Slumbering Egg ×1 yields 7. Trina's Lily ×1 yields 10. Deep-Purple Lily ×1 yields 10. Nectarblood Burgeon ×1 yields 11.",
+   "usedFor": [
+    "Sleep Pot",
+    "Eternal Sleep Pot",
+    "Hefty Sleep Pot",
+    "Sleepbone Arrow",
+    "Sleepbone Bolt",
+    "Lulling Branch",
+    "Soporific Grease",
+    "Eternal Sleep Grease",
+    "Clarifying Cured Meat",
+    "Stimulating Boluses"
+   ],
+   "source": {
+    "label": "ERR wiki – Crafting/Recipes",
+    "url": "https://err.fandom.com/wiki/Crafting/Recipes",
+    "verifiedVia": "2026-10-12T04:13:31Z",
+    "unverified": false
+   }
+  },
+  {
+   "id": "maddening-extract",
+   "name": "Maddening Extract",
+   "type": "Extracts",
+   "description": "Extracts base element. Raw materials break down into base elements, and recipes spend the elements. The lines under where to find it are the wiki breakdown table.",
+   "whereToFind": "Yellow Ember ×1 yields 4. Winter-Lantern Fly ×1 yields 6. Eye of Yelough ×1 yields 7. Swollen Grape ×1 yields 12.",
+   "usedFor": [
+    "Frenzied Flame Pot",
+    "Hefty Frenzied Flame Pot",
+    "Frenzybone Arrow",
+    "Surging Frenzied Flame",
+    "Feverish Aromatic",
+    "Frenzyflame Grease",
+    "Clarifying White Cured Meat",
+    "Clarifying Boluses"
+   ],
+   "source": {
+    "label": "ERR wiki – Crafting/Recipes",
+    "url": "https://err.fandom.com/wiki/Crafting/Recipes",
+    "verifiedVia": "2026-10-12T04:13:31Z",
+    "unverified": false
+   }
+  },
+  {
+   "id": "gory-amalgam",
+   "name": "Gory Amalgam",
+   "type": "Amalgams",
+   "description": "Amalgams base element. Raw materials break down into base elements, and recipes spend the elements. The lines under where to find it are the wiki breakdown table.",
+   "whereToFind": "Sliver of Meat ×1 yields 3. Beast Liver ×1 yields 3. Strip of White Flesh ×1 yields 3. Frozen Maggot ×1 yields 4. Turtle Neck Meat ×1 yields 5. Lump of Flesh ×1 yields 6. Scorpion Liver ×1 yields 6. Dragon's Calorbloom ×1 yields 10. Beast Blood ×1 yields 12.",
+   "usedFor": [
+    "Beastlure Pot",
+    "Cursed-Blood Pot",
+    "Dragon Communion Harpoon",
+    "Spellproof Dried Liver",
+    "Fireproof Dried Liver",
+    "Lightningproof Dried Liver",
+    "Holyproof Dried Liver",
+    "Spellproof Pickled Liver",
+    "Fireproof Pickled Liver",
+    "Lightningproof Pickled Liver",
+    "Holyproof Pickled Liver",
+    "Opaline Pickled Liver",
+    "Immunizing Cured Meat",
+    "Invigorating Cured Meat",
+    "Clarifying Cured Meat",
+    "Dappled Cured Meat",
+    "Immunizing White Cured Meat",
+    "Invigorating White Cured Meat",
+    "Clarifying White Cured Meat",
+    "Dappled White Cured Meat",
+    "Revitalizing Cured Meat",
+    "Revitalizing White Cured Meat",
+    "Raw Meat Dumpling"
+   ],
+   "source": {
+    "label": "ERR wiki – Crafting/Recipes",
+    "url": "https://err.fandom.com/wiki/Crafting/Recipes",
+    "verifiedVia": "2026-10-12T04:13:31Z",
+    "unverified": false
+   }
+  },
+  {
+   "id": "adhesive-amalgam",
+   "name": "Adhesive Amalgam",
+   "type": "Amalgams",
+   "description": "Amalgams base element. Raw materials break down into base elements, and recipes spend the elements. The lines under where to find it are the wiki breakdown table.",
+   "whereToFind": "Gold-Tinged Excrement ×1 yields 4. Root Resin ×1 yields 5. Albinauric Bloodclot ×1 yields 6. Congealed Putrescence ×1 yields 6.",
+   "usedFor": [
+    "Fire Grease",
+    "Lightning Grease",
+    "Magic Grease",
+    "Holy Grease",
+    "Blood Grease",
+    "Soporific Grease",
+    "Poison Grease",
+    "Freezing Grease",
+    "Dragonwound Grease",
+    "Rot Grease",
+    "Shield Grease",
+    "Frenzyflame Grease",
+    "Blighted Grease",
+    "Messmerfire Grease",
+    "Dragonbolt Grease",
+    "Royal Magic Grease",
+    "Golden Grease",
+    "Eternal Sleep Grease",
+    "Dragon Communion Grease",
+    "Festive Grease"
+   ],
+   "source": {
+    "label": "ERR wiki – Crafting/Recipes",
+    "url": "https://err.fandom.com/wiki/Crafting/Recipes",
+    "verifiedVia": "2026-10-12T04:13:31Z",
+    "unverified": false
+   }
+  },
+  {
+   "id": "fragrant-amalgam",
+   "name": "Fragrant Amalgam",
+   "type": "Amalgams",
+   "description": "Amalgams base element. Raw materials break down into base elements, and recipes spend the elements. The lines under where to find it are the wiki breakdown table.",
+   "whereToFind": "Sanguine Amaryllis ×1 yields 3. Scarlet Bud ×1 yields 3. Altus Bloom ×1 yields 4. Toxic Mossling ×1 yields 6. Budding Moss ×1 yields 7. Miranda Powder ×1 yields 12.",
+   "usedFor": [
+    "Uplifting Aromatic",
+    "Spark Aromatic",
+    "Ironjar Elixir",
+    "Bloodboil Elixir",
+    "Poison Spraymist",
+    "Acid Spraymist",
+    "Wraithflame Spraymist",
+    "Galvanizing Elixir",
+    "Rimed Spraymist",
+    "Stardust Elixir",
+    "Concealing Aromatic",
+    "Rupturing Aromatic",
+    "Feverish Aromatic",
+    "Afflicting Aromatic",
+    "Festive Grease"
+   ],
+   "source": {
+    "label": "ERR wiki – Crafting/Recipes",
+    "url": "https://err.fandom.com/wiki/Crafting/Recipes",
+    "verifiedVia": "2026-10-12T04:13:31Z",
+    "unverified": false
+   }
+  },
+  {
+   "id": "starry-amalgam",
+   "name": "Starry Amalgam",
+   "type": "Amalgams",
+   "description": "Amalgams base element. Raw materials break down into base elements, and recipes spend the elements. The lines under where to find it are the wiki breakdown table.",
+   "whereToFind": "Melted Mushroom ×1 yields 2. Nailstone ×1 yields 3. Dewkissed Herba ×1 yields 4. Pearlescent Scale ×1 yields 9.",
+   "usedFor": [
+    "Oil Pot",
+    "Hefty Oil Pot",
+    "Glinting Nail",
+    "Concealing Aromatic",
+    "Thawfrost Boluses",
+    "Clarifying Boluses",
+    "Glowstone",
+    "Soap"
+   ],
+   "source": {
+    "label": "ERR wiki – Crafting/Recipes",
+    "url": "https://err.fandom.com/wiki/Crafting/Recipes",
+    "verifiedVia": "2026-10-12T04:13:31Z",
+    "unverified": false
+   }
+  },
+  {
+   "id": "silvery-amalgam",
+   "name": "Silvery Amalgam",
+   "type": "Amalgams",
+   "description": "Amalgams base element. Raw materials break down into base elements, and recipes spend the elements. The lines under where to find it are the wiki breakdown table.",
+   "whereToFind": "Melted Mushroom ×1 yields 3. Silver Firefly ×1 yields 4. Silver Tear Husk ×1 yields 4. Albinauric Bloodclot ×1 yields 8.",
+   "usedFor": [
+    "Alluring Pot",
+    "Albinauric Pot",
+    "Uplifting Aromatic",
+    "Shield Grease",
+    "Larval Tear"
+   ],
+   "source": {
+    "label": "ERR wiki – Crafting/Recipes",
+    "url": "https://err.fandom.com/wiki/Crafting/Recipes",
+    "verifiedVia": "2026-10-12T04:13:31Z",
+    "unverified": false
+   }
+  },
+  {
+   "id": "mildewy-amalgam",
+   "name": "Mildewy Amalgam",
+   "type": "Amalgams",
+   "description": "Amalgams base element. Raw materials break down into base elements, and recipes spend the elements. The lines under where to find it are the wiki breakdown table.",
+   "whereToFind": "Medicinal Moss ×1 yields 3. Spiritgrave Stone ×1 yields 3. Crystal Moss ×1 yields 4. Budding Moss ×1 yields 4. Congealed Putrescence ×1 yields 4. Grave Cricket ×1 yields 5. Grave Blossom ×1 yields 6. Grave Keeper's Brainpan ×1 yields 8.",
+   "usedFor": [
+    "Rancor Pot",
+    "Hefty Rancor Pot",
+    "Piquebone Arrow",
+    "Piquebone Bolt",
+    "Call of Tibia",
+    "Ironjar Elixir",
+    "Neutralizing Boluses",
+    "Stanching Boluses",
+    "Thawfrost Boluses",
+    "Stimulating Boluses",
+    "Preserving Boluses",
+    "Rejuvenating Boluses",
+    "Clarifying Boluses",
+    "Polter Stone"
+   ],
+   "source": {
+    "label": "ERR wiki – Crafting/Recipes",
+    "url": "https://err.fandom.com/wiki/Crafting/Recipes",
+    "verifiedVia": "2026-10-12T04:13:31Z",
+    "unverified": false
+   }
+  },
+  {
+   "id": "golden-amalgam",
+   "name": "Golden Amalgam",
+   "type": "Amalgams",
+   "description": "Amalgams base element. Raw materials break down into base elements, and recipes spend the elements. The lines under where to find it are the wiki breakdown table.",
+   "whereToFind": "Nailstone ×1 yields 3. Sanctuary Stone ×1 yields 3. Gold Firefly ×1 yields 4. Gold-Tinged Excrement ×1 yields 6. Finger Mimic ×1 yields 7. Sacramental Burgeon ×1 yields 8. Golden Centipede ×1 yields 9.",
+   "usedFor": [
+    "Glinting Nail",
+    "Bewitching Branch",
+    "Charming Branch",
+    "Sanctified Stone",
+    "Festive Grease",
+    "Erdbark Raisin"
+   ],
+   "source": {
+    "label": "ERR wiki – Crafting/Recipes",
+    "url": "https://err.fandom.com/wiki/Crafting/Recipes",
+    "verifiedVia": "2026-10-12T04:13:31Z",
+    "unverified": false
+   }
+  },
+  {
+   "id": "crystalline-amalgam",
+   "name": "Crystalline Amalgam",
+   "type": "Amalgams",
+   "description": "Amalgams base element. Raw materials break down into base elements, and recipes spend the elements. The lines under where to find it are the wiki breakdown table.",
+   "whereToFind": "Cracked Crystal ×1 yields 2. Crystal Moss ×1 yields 6. Crystal Bud ×1 yields 7.",
+   "usedFor": [
+    "Shattershard Arrow",
+    "Crystal Dart",
+    "Crystal Chakram"
+   ],
+   "source": {
+    "label": "ERR wiki – Crafting/Recipes",
+    "url": "https://err.fandom.com/wiki/Crafting/Recipes",
+    "verifiedVia": "2026-10-12T04:13:31Z",
+    "unverified": false
+   }
+  },
+  {
+   "id": "rocky-amalgam",
+   "name": "Rocky Amalgam",
+   "type": "Amalgams",
+   "description": "Amalgams base element. Raw materials break down into base elements, and recipes spend the elements. The lines under where to find it are the wiki breakdown table.",
+   "whereToFind": "Ruin Fragment ×1 yields 3. Gaseous Stone ×1 yields 4. Spiritgrave Stone ×1 yields 4. Roundrock ×1 yields 5. Sanctuary Stone ×1 yields 6.",
+   "usedFor": [
+    "Rock Pot",
+    "Hefty Rock Pot",
+    "Spritestone",
+    "Fire Spritestone",
+    "Sanctified Stone",
+    "Weighty Stone",
+    "Rainbow Stone",
+    "Glowstone",
+    "Scriptstone",
+    "Polter Stone"
+   ],
+   "source": {
+    "label": "ERR wiki – Crafting/Recipes",
+    "url": "https://err.fandom.com/wiki/Crafting/Recipes",
+    "verifiedVia": "2026-10-12T04:13:31Z",
+    "unverified": false
+   }
+  },
+  {
+   "id": "draconic-amalgam",
+   "name": "Draconic Amalgam",
+   "type": "Amalgams",
+   "description": "Amalgams base element. Raw materials break down into base elements, and recipes spend the elements. The lines under where to find it are the wiki breakdown table.",
+   "whereToFind": "Ruin Fragment ×1 yields 2. Red Fulgurbloom ×1 yields 7. Gravel Stone ×1 yields 10. Dragon's Calorbloom ×1 yields 12.",
+   "usedFor": [
+    "Ancient Dragonbolt Pot",
+    "Hefty Ancient Dragonbolt Pot",
+    "Azula Throwing Chakram",
+    "Azula Lightning Chakram",
+    "Dragon Communion Harpoon",
+    "Dragonwound Grease",
+    "Dragonbolt Grease",
+    "Dragon Communion Grease"
+   ],
+   "source": {
+    "label": "ERR wiki – Crafting/Recipes",
+    "url": "https://err.fandom.com/wiki/Crafting/Recipes",
+    "verifiedVia": "2026-10-12T04:13:31Z",
+    "unverified": false
+   }
+  },
+  {
+   "id": "thin-beast-bones",
+   "name": "Thin Beast Bones",
+   "type": "Not a base element",
+   "description": "Used by a recipe in this file. The 24 breakdown tables do not list it as a base element, so no breakdown is shown.",
+   "usedFor": [
+    "Bone Arrow",
+    "Firebone Arrow",
+    "Poisonbone Arrow",
+    "Sleepbone Arrow",
+    "Stormwing Bone Arrow",
+    "Lightning Arrow",
+    "Lightningbone Arrow",
+    "Rainbow Stone Arrow",
+    "Shattershard Arrow",
+    "Magicbone Arrow",
+    "Haligbone Arrow",
+    "Bloodbone Arrow",
+    "Blightbone Arrow",
+    "Coldbone Arrow",
+    "Frenzybone Arrow",
+    "Rotbone Arrow",
+    "Piquebone Arrow",
+    "Bone Bolt",
+    "Firebone Bolt",
+    "Lightningbone Bolt",
+    "Magicbone Bolt",
+    "Haligbone Bolt",
+    "Poisonbone Bolt",
+    "Bloodbone Bolt",
+    "Coldbone Bolt",
+    "Rotbone Bolt",
+    "Sleepbone Bolt",
+    "Piquebone Bolt",
+    "Bone Dart"
+   ],
+   "source": {
+    "label": "ERR wiki – Crafting/Recipes",
+    "url": "https://err.fandom.com/wiki/Crafting/Recipes",
+    "verifiedVia": "2026-10-12T04:13:31Z",
+    "unverified": false
+   }
+  },
+  {
+   "id": "flight-pinion",
+   "name": "Flight Pinion",
+   "type": "Not a base element",
+   "description": "Used by a recipe in this file. The 24 breakdown tables do not list it as a base element, so no breakdown is shown.",
+   "usedFor": [
+    "Bone Arrow",
+    "Firebone Arrow",
+    "Poisonbone Arrow",
+    "Sleepbone Arrow",
+    "Lightning Arrow",
+    "Lightningbone Arrow",
+    "Rainbow Stone Arrow",
+    "Shattershard Arrow",
+    "Magicbone Arrow",
+    "Haligbone Arrow",
+    "Bloodbone Arrow",
+    "Blightbone Arrow",
+    "Coldbone Arrow",
+    "Frenzybone Arrow",
+    "Rotbone Arrow",
+    "Bone Great Arrow",
+    "Piquebone Arrow"
+   ],
+   "source": {
+    "label": "ERR wiki – Crafting/Recipes",
+    "url": "https://err.fandom.com/wiki/Crafting/Recipes",
+    "verifiedVia": "2026-10-12T04:13:31Z",
+    "unverified": false
+   }
+  },
+  {
+   "id": "stormhawk-feather",
+   "name": "Stormhawk Feather",
+   "type": "Not a base element",
+   "description": "Used by a recipe in this file. The 24 breakdown tables do not list it as a base element, so no breakdown is shown.",
+   "usedFor": [
+    "Stormwing Bone Arrow"
+   ],
+   "source": {
+    "label": "ERR wiki – Crafting/Recipes",
+    "url": "https://err.fandom.com/wiki/Crafting/Recipes",
+    "verifiedVia": "2026-10-12T04:13:31Z",
+    "unverified": false
+   }
+  },
+  {
+   "id": "rainbow-stone",
+   "name": "Rainbow Stone",
+   "type": "Not a base element",
+   "description": "Used by a recipe in this file. The 24 breakdown tables do not list it as a base element, so no breakdown is shown.",
+   "usedFor": [
+    "Rainbow Stone Arrow"
+   ],
+   "source": {
+    "label": "ERR wiki – Crafting/Recipes",
+    "url": "https://err.fandom.com/wiki/Crafting/Recipes",
+    "verifiedVia": "2026-10-12T04:13:31Z",
+    "unverified": false
+   }
+  },
+  {
+   "id": "hefty-beast-bone",
+   "name": "Hefty Beast Bone",
+   "type": "Not a base element",
+   "description": "Used by a recipe in this file. The 24 breakdown tables do not list it as a base element, so no breakdown is shown.",
+   "usedFor": [
+    "Bone Great Arrow",
+    "Bone Ballista Bolt",
+    "Dragon Communion Harpoon"
+   ],
+   "source": {
+    "label": "ERR wiki – Crafting/Recipes",
+    "url": "https://err.fandom.com/wiki/Crafting/Recipes",
+    "verifiedVia": "2026-10-12T04:13:31Z",
+    "unverified": false
+   }
+  },
+  {
+   "id": "bone-dart",
+   "name": "Bone Dart",
+   "type": "Not a base element",
+   "description": "Used by a recipe in this file. The 24 breakdown tables do not list it as a base element, so no breakdown is shown.",
+   "usedFor": [
+    "Poisonbone Dart",
+    "Crystal Dart"
+   ],
+   "source": {
+    "label": "ERR wiki – Crafting/Recipes",
+    "url": "https://err.fandom.com/wiki/Crafting/Recipes",
+    "verifiedVia": "2026-10-12T04:13:31Z",
+    "unverified": false
+   }
+  },
+  {
+   "id": "azula-throwing-chakram",
+   "name": "Azula Throwing Chakram",
+   "type": "Not a base element",
+   "description": "Used by a recipe in this file. The 24 breakdown tables do not list it as a base element, so no breakdown is shown.",
+   "usedFor": [
+    "Azula Lightning Chakram"
+   ],
+   "source": {
+    "label": "ERR wiki – Crafting/Recipes",
+    "url": "https://err.fandom.com/wiki/Crafting/Recipes",
+    "verifiedVia": "2026-10-12T04:13:31Z",
+    "unverified": false
+   }
+  },
+  {
+   "id": "crystal-chakram",
+   "name": "Crystal Chakram",
+   "type": "Not a base element",
+   "description": "Used by a recipe in this file. The 24 breakdown tables do not list it as a base element, so no breakdown is shown.",
+   "usedFor": [
+    "Putrid Crystal Chakram"
+   ],
+   "source": {
+    "label": "ERR wiki – Crafting/Recipes",
+    "url": "https://err.fandom.com/wiki/Crafting/Recipes",
+    "verifiedVia": "2026-10-12T04:13:31Z",
+    "unverified": false
+   }
+  },
+  {
+   "id": "rowa-fruit",
+   "name": "Rowa Fruit",
+   "type": "Not a base element",
+   "description": "Used by a recipe in this file. The 24 breakdown tables do not list it as a base element, so no breakdown is shown.",
+   "usedFor": [
+    "Rowa Raisin",
+    "Stormhoof Raisin",
+    "Erdbark Raisin"
+   ],
+   "source": {
+    "label": "ERR wiki – Crafting/Recipes",
+    "url": "https://err.fandom.com/wiki/Crafting/Recipes",
+    "verifiedVia": "2026-10-12T04:13:31Z",
+    "unverified": false
+   }
+  },
+  {
+   "id": "golden-rowa",
+   "name": "Golden Rowa",
+   "type": "Not a base element",
+   "description": "Used by a recipe in this file. The 24 breakdown tables do not list it as a base element, so no breakdown is shown.",
+   "usedFor": [
+    "Sweet Raisin"
+   ],
+   "source": {
+    "label": "ERR wiki – Crafting/Recipes",
+    "url": "https://err.fandom.com/wiki/Crafting/Recipes",
+    "verifiedVia": "2026-10-12T04:13:31Z",
+    "unverified": false
+   }
+  },
+  {
+   "id": "rimed-rowa",
+   "name": "Rimed Rowa",
+   "type": "Not a base element",
+   "description": "Used by a recipe in this file. The 24 breakdown tables do not list it as a base element, so no breakdown is shown.",
+   "usedFor": [
+    "Frozen Raisin"
+   ],
+   "source": {
+    "label": "ERR wiki – Crafting/Recipes",
+    "url": "https://err.fandom.com/wiki/Crafting/Recipes",
+    "verifiedVia": "2026-10-12T04:13:31Z",
+    "unverified": false
+   }
+  },
+  {
+   "id": "rada-fruit",
+   "name": "Rada Fruit",
+   "type": "Not a base element",
+   "description": "Used by a recipe in this file. The 24 breakdown tables do not list it as a base element, so no breakdown is shown.",
+   "usedFor": [
+    "Spirit Raisin"
+   ],
+   "source": {
+    "label": "ERR wiki – Crafting/Recipes",
+    "url": "https://err.fandom.com/wiki/Crafting/Recipes",
+    "verifiedVia": "2026-10-12T04:13:31Z",
+    "unverified": false
+   }
+  }
+ ],
+ "guides": [
+  {
+   "title": "Crafting (ERR wiki, CC BY-SA)",
+   "url": "https://err.fandom.com/wiki/Crafting",
+   "source": "ERR wiki"
+  },
+  {
+   "title": "Crafting recipes and element breakdowns (ERR wiki, CC BY-SA)",
+   "url": "https://err.fandom.com/wiki/Crafting/Recipes",
+   "source": "ERR wiki"
+  }
+ ]
+}

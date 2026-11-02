@@ -40,6 +40,23 @@
       "map": "data/elden-ring-map.json",
       "crafting": "data/elden-ring-crafting.json",
       "equipment": "data/elden-ring-equipment.json",
+      "variants": [
+        { "id": "vanilla", "label": "Vanilla", "default": true },
+        {
+          "id": "reforged",
+          "label": "Reforged",
+          "crafting": "data/elden-ring-reforged-crafting.json",
+          "equipment": "data/elden-ring-reforged-equipment.json",
+          "banner": "Data: ERR 2.3.5.3 to 2.3.7.1 sources. You're on 2.3.8.1, so a few values may differ.",
+          "buildsNote": "Builds below are vanilla and have not been updated for Reforged yet",
+          "mapNote": "MapGenie does not show ERR's new areas, Rune Pieces or camps.",
+          "sources": [
+            { "label": "ERR wiki (Fandom, CC BY-SA)", "url": "https://err.fandom.com/wiki/ELDEN_RING_Reforged_Wiki" },
+            { "label": "mandude calculator (MIT)", "url": "https://mandude.github.io/elden-ring-weapon-calculator/" },
+            { "label": "tclark calculator (MIT)", "url": "https://eldenring.tclark.io/reforged" }
+          ]
+        }
+      ],
       "accent": "#c6a15a",
       "accentDeep": "#a86b3c",
       "levelPrefix": "RL",
