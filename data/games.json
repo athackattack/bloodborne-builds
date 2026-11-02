@@ -51,9 +51,12 @@
           "buildsNote": "Builds below are vanilla and have not been updated for Reforged yet",
           "mapNote": "MapGenie does not show ERR's new areas, Rune Pieces or camps.",
           "sources": [
-            { "label": "ERR wiki (Fandom, CC BY-SA)", "url": "https://err.fandom.com/wiki/ELDEN_RING_Reforged_Wiki" },
+            { "label": "ERR community wiki (CC BY-SA 3.0)", "url": "https://err.fandom.com/wiki/ELDEN_RING_Reforged_Wiki" },
             { "label": "mandude calculator (MIT)", "url": "https://mandude.github.io/elden-ring-weapon-calculator/" },
             { "label": "tclark calculator (MIT)", "url": "https://eldenring.tclark.io/reforged" }
+          ],
+          "sections": [
+            { "id": "systems", "label": "Systems", "file": "data/elden-ring-reforged-systems.json" }
           ]
         }
       ],

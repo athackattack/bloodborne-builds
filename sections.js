@@ -70,13 +70,17 @@ function startEmbers() {
 function render(ctx) {
   bindOnce();
   const panel = document.getElementById(
-    ctx.section === "map" ? "panel-map" : ctx.section === "crafting" ? "panel-crafting" : "panel-equipment"
+    ctx.section === "map" ? "panel-map"
+      : ctx.section === "crafting" ? "panel-crafting"
+      : ctx.section === "equipment" ? "panel-equipment"
+      : "panel-extra"
   );
   if (!panel) return;
   if (ctx.section !== "map") closeEmbed();
   if (ctx.section === "crafting") renderCrafting(panel, ctx);
   else if (ctx.section === "equipment") renderEquipment(panel, ctx);
-  else renderMap(panel, ctx);
+  else if (ctx.section === "map") renderMap(panel, ctx);
+  else renderSystems(panel, ctx);
 }
 
 function focusSheet(route, extra) {
@@ -85,6 +89,7 @@ function focusSheet(route, extra) {
   if (route.focus.kind === "material") return materialSheet(extra, route.focus.id);
   if (route.focus.kind === "weapon") return weaponSheet(extra, route.focus.id);
   if (route.focus.kind === "armor") return armorSheet(extra, route.focus.id);
+  if (route.focus.kind === "talisman") return talismanSheet(extra, route.focus.id);
   if (route.focus.kind === "section-about") return sectionAboutSheet(extra, route.focus.id);
   return null;
 }
@@ -99,6 +104,11 @@ function bindOnce() {
   document.getElementById("panel-equipment").addEventListener("input", onEquipInput);
   document.getElementById("panel-equipment").addEventListener("change", onEquipChange);
   document.getElementById("panel-map").addEventListener("click", onMapClick);
+  const extra = document.getElementById("panel-extra");
+  if (extra) {
+    extra.addEventListener("click", onSystemsClick);
+    extra.addEventListener("input", onSystemsInput);
+  }
   document.getElementById("sheet").addEventListener("click", (event) => {
     const material = event.target.closest("[data-material]");
     if (material && material.dataset.material) {
@@ -166,7 +176,16 @@ function onEquipClick(event) {
   }
   const tab = event.target.closest("[data-equip-tab]");
   if (tab) {
-    setHash(hashFor(state.game.id, tab.dataset.equipTab === "armor" ? "armor" : "weapons"));
+    const name = tab.dataset.equipTab;
+    const view = name === "armor" ? "armor" : name === "talismans" ? "talismans" : "weapons";
+    setHash(hashFor(state.game.id, view));
+    return;
+  }
+  const origin = event.target.closest("[data-equip-origin]");
+  if (origin) {
+    ui().equipOrigin = origin.dataset.equipOrigin || "";
+    ui().weaponLimit = PAGE_SIZE;
+    render({ section: "equipment", extra: state.extra, route: parseHash() });
     return;
   }
   const type = event.target.closest("[data-equip-type]");
@@ -182,7 +201,12 @@ function onEquipClick(event) {
     return;
   }
   const armor = event.target.closest("[data-armor]");
-  if (armor) setHash(hashFor(state.game.id, "armor", armor.dataset.armor));
+  if (armor) {
+    setHash(hashFor(state.game.id, "armor", armor.dataset.armor));
+    return;
+  }
+  const talisman = event.target.closest("[data-talisman]");
+  if (talisman) setHash(hashFor(state.game.id, "talismans", talisman.dataset.talisman));
 }
 
 function onEquipInput(event) {
@@ -190,6 +214,7 @@ function onEquipInput(event) {
   ui().equipQuery = event.target.value;
   ui().weaponLimit = PAGE_SIZE;
   ui().armorLimit = PAGE_SIZE;
+  ui().talismanLimit = PAGE_SIZE;
   render({ section: "equipment", extra: state.extra, route: parseHash() });
   const box = document.getElementById("equip-q");
   if (box) {
@@ -338,10 +363,11 @@ function caveatsFor(section) {
 
 function sectionAboutSheet(data, section) {
   if (state.variant && !state.variant.default) {
-    const title = section === "equipment" ? "Equipment notes" : section === "map" ? "Map notes" : "Crafting notes";
+    const title = section === "equipment" ? "Equipment notes" : section === "map" ? "Map notes" : section === "crafting" ? "Crafting notes" : "Notes";
     return el("article", {}, [
       typeof variantBannerNode === "function" ? variantBannerNode() : null,
       section === "map" && typeof variantMapNote === "function" ? variantMapNote() : null,
+      typeof reforgedCreditNode === "function" ? reforgedCreditNode() : null,
       el("p", { class: "sheet-kicker", text: state.game.name }),
       el("h2", { id: "sheet-title", text: title }),
       data && data.meta && data.meta.notes ? el("p", { text: data.meta.notes }) : null
@@ -463,6 +489,52 @@ function settlePage(panel, listId) {
   if (last) last.scrollIntoView({ block: "nearest" });
 }
 
+const ORIGIN_BADGE = {
+  "new-in-err": "New in Reforged",
+  "renamed-vanilla": "Probably renamed",
+  "removed-in-err": "Removed"
+};
+
+function originBadge(origin) {
+  const label = ORIGIN_BADGE[origin];
+  if (!label) return null;
+  return el("p", {
+    class: origin === "removed-in-err" ? "origin-badge is-removed" : "origin-badge",
+    text: label
+  });
+}
+
+function lineIncomplete(line) {
+  if (/\bx\?/.test(line)) return true;
+  const body = String(line).replace(/^[\s•*\-–—]+/, "").trim();
+  return /^[x×]\d+(?:\.\d+)?$/.test(body) || /^[+\-]\d+(?:\.\d+)?$/.test(body);
+}
+
+function annotatedBlock(text) {
+  if (text == null || text === "") return null;
+  const lines = String(text).replace(/\r/g, "").split("\n");
+  return el("div", { class: "prose-lines" }, lines.map((line) => {
+    if (!line) return el("span", { class: "line-gap" });
+    const row = el("p", { class: "prose-line" });
+    row.append(document.createTextNode(line));
+    if (lineIncomplete(line)) row.append(el("span", { class: "flag", text: "source incomplete" }));
+    return row;
+  }));
+}
+
+function creditNote() {
+  return typeof reforgedCreditNode === "function" ? reforgedCreditNode() : null;
+}
+
+function passiveText(set) {
+  const passive = set && set.errSetPassive;
+  if (!passive) return "";
+  if (typeof passive === "string") return passive;
+  const effect = passive.effectPerPiece || passive.effect || "";
+  const category = passive.category ? `${passive.category}: ` : "";
+  return `${category}${effect}`.trim();
+}
+
 function renderCrafting(panel, ctx) {
   const data = ctx.extra || {};
   const items = Array.isArray(data.items) ? data.items : [];
@@ -511,6 +583,8 @@ function renderCrafting(panel, ctx) {
     el("p", { class: "section-count", text: `${matShown.length} ${matShown.length === 1 ? "material" : "materials"}` }),
     el("div", { class: "record-list", id: "craft-materials" }, matPage.rows.length ? matPage.rows.map(materialCard) : [el("p", { class: "empty", text: "No materials match." })]),
     moreButton("matLimit", matPage.limit, matPage.total),
+    craftingRules(data.system),
+    creditNote(),
     guideList(data.guides)
   );
   settlePage(panel, pendingPage === "matLimit" ? "#craft-materials" : "#craft-recipes");
@@ -557,7 +631,11 @@ function itemSheet(data, id) {
     el("p", { class: "sheet-kicker", text: categoryName(data, item.category) }),
     el("h2", { id: "sheet-title", text: item.name || "Recipe" }),
     item.description ? el("p", { text: item.description }) : null,
-    item.effect ? el("section", { class: "block" }, [el("h3", { text: "Effect" }), el("p", { text: item.effect })]) : null,
+    item.effect ? el("section", { class: "block" }, [
+      el("h3", { text: "Effect" }),
+      el("p", { text: item.effect }),
+      item.effectNote ? el("p", { class: "muted", text: item.effectNote }) : null
+    ]) : null,
     mats.length ? el("section", { class: "block" }, [
       el("h3", { text: "Materials" }),
       el("ul", { class: "clean" }, mats.map((mat) => {
@@ -608,66 +686,91 @@ function formatMat(mat) {
 function renderEquipment(panel, ctx) {
   const data = ctx.extra || {};
   const route = ctx.route || parseHash();
+  const talismans = Array.isArray(data.talismans) ? data.talismans : [];
+  const hasTalismans = talismans.length > 0;
   const armorTab = route.view === "armor";
+  const talismanTab = hasTalismans && route.view === "talismans";
   const weapons = Array.isArray(data.weapons) ? data.weapons : [];
   const sets = Array.isArray(data.armorSets) ? data.armorSets : [];
   const types = Array.isArray(data.weaponTypes) ? data.weaponTypes : [];
   const prefs = ui();
   const q = (prefs.equipQuery || "").trim().toLowerCase();
   const type = prefs.equipType || "";
-  let rows = armorTab ? sets.slice() : weapons.slice();
-  if (!armorTab && type) rows = rows.filter((row) => sameWeaponType(row.type, type, types));
+  const origin = prefs.equipOrigin || "";
+  const originsPresent = weapons.some((row) => ORIGIN_BADGE[row.origin]);
+  let rows = talismanTab ? talismans.slice() : armorTab ? sets.slice() : weapons.slice();
+  if (!armorTab && !talismanTab && type) rows = rows.filter((row) => sameWeaponType(row.type, type, types));
+  if (!armorTab && !talismanTab && origin) rows = rows.filter((row) => row.origin === origin);
   if (q) {
     rows = rows.filter((row) => {
-      const hay = [row.name, row.description, row.location, row.upgradePath, row.notes, ...(row.pieces || []).map((p) => p && (p.name || p.slot))]
+      const renamed = (row.renamedFrom || []).map((item) => item && item.name);
+      const hay = [row.name, row.description, row.location, row.upgradePath, row.notes, row.errChanges, row.effect, passiveText(row), ...renamed, ...(row.pieces || []).map((piece) => piece && (piece.name || piece.slot))]
         .filter(Boolean).join("\n").toLowerCase();
       return hay.includes(q);
     });
   }
   const sort = prefs.equipSort || "listed";
   if (sort === "name") rows.sort((a, b) => String(a.name || "").localeCompare(String(b.name || "")));
-  else if (sort === "type" && !armorTab) rows.sort((a, b) => String(a.type || "").localeCompare(String(b.type || "")) || String(a.name || "").localeCompare(String(b.name || "")));
-  const equipPage = pageOf(rows, armorTab ? "armorLimit" : "weaponLimit");
-  const chips = armorTab ? null : el("div", { class: "chip-row" }, [
+  else if (sort === "type" && !armorTab && !talismanTab) rows.sort((a, b) => String(a.type || "").localeCompare(String(b.type || "")) || String(a.name || "").localeCompare(String(b.name || "")));
+  const pageKey = talismanTab ? "talismanLimit" : armorTab ? "armorLimit" : "weaponLimit";
+  const equipPage = pageOf(rows, pageKey);
+  const noun = talismanTab ? "talismans" : armorTab ? "sets" : "weapons";
+  const chips = armorTab || talismanTab ? null : el("div", { class: "chip-row" }, [
     chip("data-equip-type", "", "All", !type),
-    ...types.filter((t) => t && t.id).map((t) => chip("data-equip-type", t.id, t.name || t.id, type === t.id))
+    ...types.filter((entry) => entry && entry.id).map((entry) => chip("data-equip-type", entry.id, entry.name || entry.id, type === entry.id))
   ]);
-  fill(panel, 
+  const originChips = !armorTab && !talismanTab && originsPresent ? el("div", { class: "chip-row", "aria-label": "Origin" }, [
+    chip("data-equip-origin", "", "All origins", !origin),
+    ...Object.entries(ORIGIN_BADGE).map(([id, label]) => chip("data-equip-origin", id, label, origin === id))
+  ]) : null;
+  fill(panel,
     ...reforgedBanners(),
     sampleBanner(data.meta),
     aboutNote("equipment") || noteBlock(data.meta),
+    creditNote(),
     armorTab && data.meta && data.meta.armorNote ? el("p", { class: "variant-banner", text: data.meta.armorNote }) : null,
     el("div", { class: "chip-row", role: "tablist", "aria-label": "Equipment" }, [
-      chip("data-equip-tab", "weapons", "Weapons", !armorTab),
-      chip("data-equip-tab", "armor", "Armor", armorTab)
+      chip("data-equip-tab", "weapons", "Weapons", !armorTab && !talismanTab),
+      chip("data-equip-tab", "armor", "Armor", armorTab),
+      hasTalismans ? chip("data-equip-tab", "talismans", "Talismans", talismanTab) : null
     ]),
+    talismanTab && data.talismanGeneral ? el("p", { class: "section-note", text: data.talismanGeneral }) : null,
     el("div", { class: "controls" }, [
       el("div", { class: "search" }, [
         el("label", { class: "visually-hidden", for: "equip-q", text: "Search equipment" }),
         (() => {
-          const input = el("input", { id: "equip-q", type: "search", placeholder: armorTab ? "Search armor sets" : "Search weapons", autocomplete: "off" });
+          const input = el("input", {
+            id: "equip-q",
+            type: "search",
+            placeholder: talismanTab ? "Search talismans" : armorTab ? "Search armor sets" : "Search weapons",
+            autocomplete: "off"
+          });
           input.value = prefs.equipQuery || "";
           return input;
         })()
       ]),
+      originChips,
       chips,
       el("div", { class: "toolbar" }, [
-        el("p", { class: "section-count", text: `${rows.length} ${armorTab ? "sets" : "weapons"}` }),
+        el("p", { class: "section-count", text: `${rows.length} ${noun}` }),
         el("label", { class: "sort", text: "Sort " }, [
           (() => {
             const select = el("select", { id: "equip-sort" }, [
               el("option", { value: "listed", text: "Listed order" }),
               el("option", { value: "name", text: "Name" }),
-              armorTab ? null : el("option", { value: "type", text: "Type" })
+              armorTab || talismanTab ? null : el("option", { value: "type", text: "Type" })
             ]);
-            select.value = sort === "type" && armorTab ? "listed" : sort;
+            select.value = sort === "type" && (armorTab || talismanTab) ? "listed" : sort;
             return select;
           })()
         ])
       ])
     ]),
-    el("div", { class: "record-list", id: "equip-records" }, equipPage.rows.length ? equipPage.rows.map((row) => armorTab ? armorCard(row) : weaponCard(row, types)) : [el("p", { class: "empty", text: "Nothing matches." })]),
-    moreButton(armorTab ? "armorLimit" : "weaponLimit", equipPage.limit, equipPage.total),
+    el("div", { class: "record-list", id: "equip-records" }, equipPage.rows.length
+      ? equipPage.rows.map((row) => talismanTab ? talismanCard(row) : armorTab ? armorCard(row) : weaponCard(row, types))
+      : [el("p", { class: "empty", text: "Nothing matches." })]),
+    moreButton(pageKey, equipPage.limit, equipPage.total),
+    equipmentNotes(data),
     guideList(data.guides)
   );
   settlePage(panel, "#equip-records");
@@ -676,19 +779,31 @@ function renderEquipment(panel, ctx) {
 function weaponCard(weapon, types) {
   const type = typeEntry(types, weapon.type);
   return el("article", { class: "record" }, [
-    type ? el("p", { class: "card-kicker", text: type.name || weapon.type }) : null,
+    originBadge(weapon.origin),
+    type && type.name !== "-" ? el("p", { class: "card-kicker", text: type.name || weapon.type }) : null,
     el("button", { type: "button", class: "record-title", "data-weapon": weapon.id || "", text: weapon.name || "Weapon" }),
+    weapon.errChanges ? el("p", { class: "muted", text: weapon.errChanges }) : null,
     weapon.location ? el("p", { class: "muted", text: weapon.location }) : null
   ]);
 }
 
 function armorCard(set) {
+  const passive = passiveText(set);
   return el("article", { class: "record" }, [
     el("button", { type: "button", class: "record-title", "data-armor": set.id || "", text: set.name || "Armor" }),
+    passive ? el("p", { class: "muted", text: passive }) : (set.errSetPassive === null || (set && "errSetPassive" in set && !passive) ? el("p", { class: "muted", text: "No ERR set passive listed." }) : null),
     set.location ? el("p", { class: "muted", text: set.location }) : null,
     Array.isArray(set.pieces) && set.pieces.length
       ? el("p", { class: "muted", text: set.pieces.map((piece) => piece && (piece.name || piece.slot)).filter(Boolean).join(" · ") })
       : null
+  ]);
+}
+
+function talismanCard(item) {
+  return el("article", { class: "record" }, [
+    originBadge(item.origin),
+    el("button", { type: "button", class: "record-title", "data-talisman": item.id || "", text: item.name || "Talisman" }),
+    item.effect ? el("p", { class: "muted", text: item.effect }) : null
   ]);
 }
 
@@ -697,11 +812,20 @@ function weaponSheet(data, id) {
   if (!weapon) return null;
   const type = typeEntry(data.weaponTypes, weapon.type);
   return el("article", {}, [
-    el("p", { class: "sheet-kicker", text: (type && type.name) || weapon.type || "Weapon" }),
+    originBadge(weapon.origin),
+    el("p", { class: "sheet-kicker", text: (type && type.name && type.name !== "-" ? type.name : "") || (weapon.type && weapon.type !== "-" ? weapon.type : "Weapon") }),
     el("h2", { id: "sheet-title", text: weapon.name || "Weapon" }),
     weapon.description ? el("p", { text: weapon.description }) : null,
+    weapon.errChanges ? el("section", { class: "block" }, [el("h3", { text: "Reforged changes" }), annotatedBlock(weapon.errChanges)]) : null,
+    Array.isArray(weapon.renamedFrom) && weapon.renamedFrom.length ? el("section", { class: "block" }, [
+      el("h3", { text: "Probably renamed from" }),
+      el("ul", { class: "clean" }, weapon.renamedFrom.map((item) => el("li", { text: [item && item.name, item && item.evidence].filter(Boolean).join(" — ") })))
+    ]) : null,
     fieldBlock("Stats", weapon.stats),
     fieldBlock("Scaling", weapon.scaling),
+    fieldBlock("Scaling at +0", weapon.scalingAtPlus0),
+    fieldBlock("Scaling values", weapon.scalingValues),
+    fieldBlock("Damage scales with", weapon.damageScalesWith),
     fieldBlock("Requirements", weapon.requirements),
     weapon.upgradePath ? el("section", { class: "block" }, [el("h3", { text: "Upgrade path" }), el("p", { text: weapon.upgradePath })]) : null,
     weapon.notes ? el("section", { class: "block" }, [el("h3", { text: "Notes" }), el("p", { text: weapon.notes })]) : null,
@@ -723,12 +847,192 @@ function armorSheet(data, id) {
       el("h3", { text: "Pieces" }),
       el("ul", { class: "clean" }, pieces.map((piece) => el("li", { text: [piece.slot, piece.name, piece.location].filter(Boolean).join(" — ") })))
     ]) : null,
+    passiveText(set) ? el("section", { class: "block" }, [el("h3", { text: "Reforged set passive" }), el("p", { text: passiveText(set) })]) : ("errSetPassive" in set ? el("section", { class: "block" }, [el("h3", { text: "Reforged set passive" }), el("p", { text: "No ERR set passive listed." })]) : null),
     set.weight ? el("section", { class: "block" }, [el("h3", { text: "Weight" }), el("p", { text: String(set.weight) })]) : null,
     set.location ? el("section", { class: "block" }, [el("h3", { text: "Where to find it" }), el("p", { text: set.location })]) : null,
     set.notes ? el("section", { class: "block" }, [el("h3", { text: "Notes" }), el("p", { text: set.notes })]) : null,
     relatedBlock([set.name, ...pieces.map((piece) => piece.name)].filter(Boolean).join("\n")),
     sourceLine(set.source)
   ]);
+}
+
+function talismanSheet(data, id) {
+  const item = (data.talismans || []).find((entry) => entry.id === id);
+  if (!item) return null;
+  return el("article", {}, [
+    originBadge(item.origin),
+    el("p", { class: "sheet-kicker", text: "Talisman" }),
+    el("h2", { id: "sheet-title", text: item.name || "Talisman" }),
+    item.effect ? el("section", { class: "block" }, [el("h3", { text: "Effect" }), annotatedBlock(item.effect)]) : null,
+    item.weight != null && item.weight !== "" ? el("section", { class: "block" }, [el("h3", { text: "Weight" }), el("p", { text: String(item.weight) })]) : null,
+    item.location ? el("section", { class: "block" }, [el("h3", { text: "Where to find it" }), el("p", { text: item.location })]) : null,
+    sourceLine(item.source)
+  ]);
+}
+
+function equipmentNotes(data) {
+  if (!data) return null;
+  const nodes = [];
+  if (typeof data.generalWeaponChanges === "string" && data.generalWeaponChanges.trim()) {
+    const details = el("details", { class: "system-block" });
+    details.append(el("summary", { text: "General weapon changes" }), annotatedBlock(data.generalWeaponChanges));
+    nodes.push(details);
+  }
+  if (Array.isArray(data.keyChanges) && data.keyChanges.length) {
+    const details = el("details", { class: "system-block" });
+    details.append(
+      el("summary", { text: "Key weapon changes" }),
+      el("div", { class: "record-list" }, data.keyChanges.map((row) => el("article", { class: "record" }, [
+        el("h3", { class: "system-name", text: row.title || "Change" }),
+        row.description ? annotatedBlock(row.description) : null,
+        sourceLine(row.source)
+      ])))
+    );
+    nodes.push(details);
+  }
+  if (!nodes.length) return null;
+  return el("div", { class: "system-list" }, nodes);
+}
+
+function craftingRules(system) {
+  if (!system || typeof system !== "object") return null;
+  const materialChanges = Array.isArray(system.materialChanges) ? system.materialChanges : [];
+  const cookbookChanges = Array.isArray(system.cookbookChanges) ? system.cookbookChanges : [];
+  return el("section", { class: "block", id: "crafting-rules" }, [
+    el("h2", { class: "section-title", text: "Crafting rules" }),
+    system.overview ? annotatedBlock(system.overview) : null,
+    system.progressionCrafting ? el("section", { class: "block" }, [el("h3", { text: "Progression crafting" }), annotatedBlock(system.progressionCrafting)]) : null,
+    system.arrowsAndBolts ? el("section", { class: "block" }, [el("h3", { text: "Arrows and bolts" }), annotatedBlock(system.arrowsAndBolts)]) : null,
+    materialChanges.length ? el("section", { class: "block" }, [
+      el("h3", { text: "Material changes" }),
+      el("ul", { class: "clean" }, materialChanges.map((row) => el("li", { text: [row.material, row.change].filter(Boolean).join(": ") })))
+    ]) : null,
+    cookbookChanges.length ? el("section", { class: "block" }, [
+      el("h3", { text: "Cookbook changes" }),
+      el("ul", { class: "clean" }, cookbookChanges.map((row) => el("li", { text: [row.cookbook, row.change].filter(Boolean).join(": ") })))
+    ]) : null,
+    sourceLine(system.source)
+  ]);
+}
+
+function renderSystems(panel, ctx) {
+  const data = ctx.extra || {};
+  const sections = Array.isArray(data.sections) ? data.sections : [];
+  const route = ctx.route || parseHash();
+  const openId = route.focus && route.focus.kind === "system-section" ? route.focus.id : "fortunes";
+  const query = ui().fortuneQuery || "";
+  fill(panel,
+    ...reforgedBanners(),
+    sampleBanner(data.meta),
+    noteBlock(data.meta),
+    creditNote(),
+    el("div", { class: "system-list" }, sections.map((section) => systemBlock(section, section.id === openId, query))),
+    guideList(data.guides)
+  );
+  const open = panel.querySelector("details[open]");
+  if (open && route.focus && route.focus.kind === "system-section") {
+    const header = document.querySelector("header");
+    const top = open.getBoundingClientRect().top + window.scrollY - ((header && header.offsetHeight) || 0) - 8;
+    window.scrollTo(0, Math.max(0, top));
+  }
+}
+
+function systemBlock(section, open, query) {
+  const details = el("details", { class: "system-block", id: `system-${section.id || ""}` });
+  if (open) details.open = true;
+  const items = Array.isArray(section.items) ? section.items : [];
+  const fortunes = items.filter((item) => item && item.tier);
+  const rules = items.filter((item) => item && !item.tier);
+  const shownFortunes = section.id === "fortunes" && String(query || "").trim() ? fortunes.filter((item) => fortuneMatch(item, query)) : fortunes;
+  const shownRules = section.id === "fortunes" && String(query || "").trim() ? rules.filter((item) => fortuneMatch(item, query)) : rules;
+  const shown = section.id === "fortunes" ? shownRules.concat(shownFortunes) : items;
+  const summary = el("summary", {}, [
+    el("span", { class: "system-title", text: section.title || section.id || "Section" }),
+    el("span", { class: "muted", text: section.id === "fortunes" ? `${fortuneCount(items)} fortunes` : `${items.length} entries` })
+  ]);
+  details.append(...[
+    summary,
+    section.summary ? annotatedBlock(section.summary) : null,
+    section.id === "fortunes" ? fortuneSearch(query, shownFortunes.length, fortunes.length) : null,
+    el("div", { class: "record-list" }, shown.length ? shown.map(systemItem) : [el("p", { class: "empty", text: "Nothing matches." })])
+  ].filter(Boolean));
+  return details;
+}
+
+function fortuneCount(items) {
+  return items.filter((item) => item && item.tier).length;
+}
+
+function fortuneMatch(item, query) {
+  const q = String(query || "").trim().toLowerCase();
+  if (!q) return true;
+  const hay = [item.name, item.tier, item.description, item.effects, item.minorEffects, item.acquisition, item.effectsNote, item.note]
+    .filter(Boolean).join("\n").toLowerCase();
+  return hay.includes(q);
+}
+
+function fortuneSearch(query, shown, total) {
+  const input = el("input", {
+    id: "fortune-q",
+    type: "search",
+    placeholder: "Search fortunes",
+    autocomplete: "off"
+  });
+  input.value = query || "";
+  return el("div", { class: "controls" }, [
+    el("div", { class: "search" }, [
+      el("label", { class: "visually-hidden", for: "fortune-q", text: "Search fortunes" }),
+      input
+    ]),
+    el("p", { class: "section-count", text: `${shown} of ${total} fortunes` })
+  ]);
+}
+
+function systemItem(item) {
+  const bits = [];
+  if (item.kind) bits.push(item.kind);
+  if (item.tier) bits.push(item.tier);
+  const hay = [item.name, item.tier, item.description, item.effects, item.minorEffects, item.acquisition, item.effectsNote, item.note]
+    .filter(Boolean).join("\n").toLowerCase();
+  return el("article", { class: "record", "data-fortune": item.tier ? "1" : "0", "data-hay": hay }, [
+    bits.length ? el("p", { class: "card-kicker", text: bits.join(" · ") }) : null,
+    el("h3", { class: "system-name", text: item.name || "Entry" }),
+    item.effectsNote ? el("p", { class: "incomplete-note" }, [
+      el("span", { class: "flag", text: "source incomplete" }),
+      document.createTextNode(` ${item.effectsNote}`)
+    ]) : null,
+    item.description ? annotatedBlock(item.description) : null,
+    item.effects ? el("section", { class: "block" }, [el("h3", { text: "Effects" }), annotatedBlock(item.effects)]) : null,
+    item.minorEffects ? el("section", { class: "block" }, [el("h3", { text: "Minor fortune" }), annotatedBlock(item.minorEffects)]) : null,
+    item.acquisition ? el("p", { class: "muted", text: `Found: ${item.acquisition}` }) : null,
+    item.location ? el("p", { class: "muted", text: item.location }) : null,
+    item.hp ? el("p", { text: `HP: ${item.hp}` }) : null,
+    item.drops ? el("p", { text: `Drops: ${item.drops}` }) : null,
+    item.note ? annotatedBlock(item.note) : null,
+    sourceLine(item.source)
+  ]);
+}
+
+function onSystemsClick() {
+  /* Details open and close on their own. The hash still chooses the section that starts open. */
+}
+
+function onSystemsInput(event) {
+  if (event.target.id !== "fortune-q") return;
+  const q = event.target.value.trim().toLowerCase();
+  ui().fortuneQuery = event.target.value;
+  const cards = document.querySelectorAll("#system-fortunes .record");
+  let shown = 0;
+  let total = 0;
+  cards.forEach((card) => {
+    const fortune = card.dataset.fortune === "1";
+    if (fortune) total += 1;
+    const match = !q || String(card.dataset.hay || "").includes(q);
+    card.hidden = !match;
+    if (fortune && match) shown += 1;
+  });
+  const count = document.querySelector("#system-fortunes .section-count");
+  if (count) count.textContent = `${shown} of ${total} fortunes`;
 }
 
 function typeEntry(types, value) {
