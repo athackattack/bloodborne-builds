@@ -1,0 +1,1978 @@
+{
+  "meta": {
+    "generatedDate": "2026-11-02",
+    "game": "ELDEN RING Reforged (mod)",
+    "dataVersion": "ERR 2.3.5.3 (mandude calculator regulation data) + ERR community wiki revisions up to 2026-11-01",
+    "targetVersion": "ERR 2.3.8.1 / Elden Ring 1.17.2",
+    "caveat": "Public machine-readable ERR data stops at roughly 2.3.5.3-2.3.7.1; the mod is at 2.3.8.1 (Nexus, updated 30 Oct 2026). Numbers may have shifted in later patches. Treat values as close, not exact, and check in game.",
+    "license": "Text from the ELDEN RING Reforged community wiki (err.fandom.com) is CC BY-SA 3.0; attribute and share alike. Weapon numbers come from mandude/elden-ring-weapon-calculator (MIT). No ERR icons, images or other mod assets are included (the Nexus page forbids asset reuse).",
+    "mode": "reforged",
+    "title": "ELDEN RING Reforged builds (RL150 reference)",
+    "statOrder": [
+      "VIG",
+      "MND",
+      "END",
+      "STR",
+      "DEX",
+      "INT",
+      "FTH",
+      "ARC"
+    ],
+    "fieldLabels": {
+      "firearm": "Ash of War / Spells / Spirit Ash",
+      "runesGear": "Talismans / Armor / Physick",
+      "weapons": "Weapons / Catalysts",
+      "fortune": "Major / Minor Fortune"
+    },
+    "levelConventions": "ERR level = sum of the 8 stats - 79; max level is 200 (stat sum 279). All spreads here are at RL150 (sum 229). Two-handing gives +8% damage, not 1.5x STR damage (the 1.5x still counts for requirements). Spreads labelled 'synthesized' come from ERR calculator requirements plus ERR wiki fortune advice, not a published template.",
+    "tierScale": {
+      "S": "(unused) No ERR build has community consensus as top-tier; the mod is designed so none dominates",
+      "A": "community-derived: several independent ERR players report it as strong and the fortune's wiki advice supports it",
+      "B": "community-derived: viable per ERR wiki advice and data, with thin or no community reports",
+      "C": "(unused)"
+    },
+    "tierLabel": "community-derived (not consensus; ERR build discussion is thin)",
+    "patchInfo": "Fortunes, weapon numbers and requirements reflect ERR 2.3.5.3 data and wiki revisions to 2026-11-01. The mod is at 2.3.8.1; check numbers in game.",
+    "notes": "21 builds, one per fortune theme. Built for Adam's Vanilla | Reforged switch. Every build names a major Fortune; minor Fortunes are given only where the wiki suggests a pairing. Builds with Bold or Wise (err-strength-colossal-heavy, err-fury-of-azash, err-blasphemous-int) use fortunes I picked; no source pairs them.",
+    "verification": "Each source carries verifiedVia: Fandom API (page exists), curl HTTP 200, WebFetch content read, or a WebSearch snippet for reddit (which blocks direct fetches from the box). Sources that couldn't be checked carry unverified:true.",
+    "vanillaDisposition": [
+      {
+        "vanillaId": "str-faith-blasphemous-blade",
+        "vanillaName": "Blasphemous Blade Str/Faith (Taker's Flame)",
+        "disposition": "rewritten",
+        "errBuildId": "err-blasphemous-int",
+        "reason": "ERR data scales Blasphemous Blade with INT (STR D / DEX D / INT B), not Faith; rebuilt as an INT build."
+      },
+      {
+        "vanillaId": "pure-strength-colossal",
+        "vanillaName": "Pure Strength Colossal (Giant-Crusher / Greatsword)",
+        "disposition": "rewritten",
+        "errBuildId": "err-strength-colossal-heavy",
+        "reason": "Kept the idea; ERR removes the 1.5x two-hand STR damage (now +8% for any two-handing), so the spread and tier changed."
+      },
+      {
+        "vanillaId": "arcane-bleed-katana",
+        "vanillaName": "Arcane Bleed Katana (Nagakiba / Uchigatana + Seppuku)",
+        "disposition": "not-ported",
+        "errBuildId": null,
+        "reason": "No ERR-specific source found. Vanilla tiers and numbers don't transfer to ERR (balance, scaling and two-handing all changed), so it was left out rather than guessed."
+      },
+      {
+        "vanillaId": "str-arc-bloodfiends-arm",
+        "vanillaName": "Bloodfiend's Arm Str/Arcane (DLC)",
+        "disposition": "dropped",
+        "errBuildId": null,
+        "reason": "ERR removes Bloodfiend's Arm's Arcane scaling, so a Str/Arc build no longer works."
+      },
+      {
+        "vanillaId": "moonveil-int-dex",
+        "vanillaName": "Moonveil Int/Dex Spellblade",
+        "disposition": "rewritten",
+        "errBuildId": "err-spellsword-moonveil",
+        "reason": "Moonveil still DEX/INT; rebuilt around Fortune of the Spellsword."
+      },
+      {
+        "vanillaId": "pure-sorcery-comet-azur",
+        "vanillaName": "Pure Sorcery (Comet Azur / Stars of Ruin)",
+        "disposition": "rewritten",
+        "errBuildId": "err-sorcerer-academy",
+        "reason": "Pure sorcery rebuilt around Fortune of the Sorcerer with ERR staff data."
+      },
+      {
+        "vanillaId": "thrusting-shield-poke",
+        "vanillaName": "Shield Poke / Carian Thrusting Shield",
+        "disposition": "not-ported",
+        "errBuildId": null,
+        "reason": "No ERR-specific source found. Vanilla tiers and numbers don't transfer to ERR (balance, scaling and two-handing all changed), so it was left out rather than guessed."
+      },
+      {
+        "vanillaId": "dragon-communion-faith-arc",
+        "vanillaName": "Dragon Lightning Priest (Dragon Communion / Ancient Dragon incants)",
+        "disposition": "not-ported",
+        "errBuildId": null,
+        "reason": "No ERR-specific source found. Vanilla tiers and numbers don't transfer to ERR (balance, scaling and two-handing all changed), so it was left out rather than guessed."
+      },
+      {
+        "vanillaId": "milady-wing-stance",
+        "vanillaName": "Milady Wing Stance Dex/Faith (DLC)",
+        "disposition": "not-ported",
+        "errBuildId": null,
+        "reason": "No ERR-specific source found. Vanilla tiers and numbers don't transfer to ERR (balance, scaling and two-handing all changed), so it was left out rather than guessed."
+      },
+      {
+        "vanillaId": "backhand-blade-bleed",
+        "vanillaName": "Backhand Blade Dex/Arcane Bleed (DLC)",
+        "disposition": "not-ported",
+        "errBuildId": null,
+        "reason": "No ERR-specific source found. Vanilla tiers and numbers don't transfer to ERR (balance, scaling and two-handing all changed), so it was left out rather than guessed."
+      },
+      {
+        "vanillaId": "dark-moon-greatsword-int",
+        "vanillaName": "Dark Moon Greatsword Int",
+        "disposition": "not-ported",
+        "errBuildId": null,
+        "reason": "No ERR-specific source found. Vanilla tiers and numbers don't transfer to ERR (balance, scaling and two-handing all changed), so it was left out rather than guessed."
+      },
+      {
+        "vanillaId": "impenetrable-thorns-arcane",
+        "vanillaName": "Impenetrable Thorns Bleed Sorcery (DLC)",
+        "disposition": "not-ported",
+        "errBuildId": null,
+        "reason": "No ERR-specific source found. Vanilla tiers and numbers don't transfer to ERR (balance, scaling and two-handing all changed), so it was left out rather than guessed."
+      },
+      {
+        "vanillaId": "rivers-of-blood-arcane",
+        "vanillaName": "Rivers of Blood Arcane (Corpse Piler)",
+        "disposition": "dropped",
+        "errBuildId": null,
+        "reason": "ERR raises Rivers of Blood's ARC requirement 20->27 and Corpse Piler inflicts self-bleed; the vanilla build no longer applies."
+      },
+      {
+        "vanillaId": "black-flame-faith",
+        "vanillaName": "Black Flame Faith (Godslayer's Seal / Scythe)",
+        "disposition": "rewritten",
+        "errBuildId": "err-godslayers-black-flame",
+        "reason": "Rebuilt around Fortune of the Godslayers (design only; the wiki's advice section for it is empty)."
+      },
+      {
+        "vanillaId": "spirit-summoner-mimic",
+        "vanillaName": "Spirit Ash Summoner (Mimic Tear / Black Knife Tiche)",
+        "disposition": "not-ported",
+        "errBuildId": null,
+        "reason": "No ERR-specific source found. Vanilla tiers and numbers don't transfer to ERR (balance, scaling and two-handing all changed), so it was left out rather than guessed."
+      },
+      {
+        "vanillaId": "sword-of-night-and-flame",
+        "vanillaName": "Sword of Night and Flame Int/Faith hybrid",
+        "disposition": "not-ported",
+        "errBuildId": null,
+        "reason": "No ERR-specific source found. Vanilla tiers and numbers don't transfer to ERR (balance, scaling and two-handing all changed), so it was left out rather than guessed."
+      },
+      {
+        "vanillaId": "mohgwyn-sacred-spear",
+        "vanillaName": "Mohgwyn's Sacred Spear Bleed (Bloodboon)",
+        "disposition": "dropped",
+        "errBuildId": null,
+        "reason": "Bloodboon is FTH+ARC in ERR; the vanilla pure-Arcane spread breaks. Bleed is covered by err-dynasts-bloody-helice."
+      },
+      {
+        "vanillaId": "frost-bleed-dual-katana",
+        "vanillaName": "Frost + Bleed Dual Katana ('Let Me Solo Her')",
+        "disposition": "not-ported",
+        "errBuildId": null,
+        "reason": "No ERR-specific source found. Vanilla tiers and numbers don't transfer to ERR (balance, scaling and two-handing all changed), so it was left out rather than guessed."
+      },
+      {
+        "vanillaId": "bloodhounds-fang-quality",
+        "vanillaName": "Bloodhound's Fang Str/Dex (beginner)",
+        "disposition": "not-ported",
+        "errBuildId": null,
+        "reason": "No ERR-specific source found. Vanilla tiers and numbers don't transfer to ERR (balance, scaling and two-handing all changed), so it was left out rather than guessed."
+      },
+      {
+        "vanillaId": "dryleaf-arts-frost-monk",
+        "vanillaName": "Dryleaf Arts Frost Monk (DLC)",
+        "disposition": "not-ported",
+        "errBuildId": null,
+        "reason": "No ERR-specific source found. Vanilla tiers and numbers don't transfer to ERR (balance, scaling and two-handing all changed), so it was left out rather than guessed."
+      },
+      {
+        "vanillaId": "black-steel-greathammer-guard",
+        "vanillaName": "Black Steel Greathammer Guard Counter (DLC)",
+        "disposition": "dropped",
+        "errBuildId": null,
+        "reason": "Black Steel Greathammer loses Faith scaling in ERR."
+      },
+      {
+        "vanillaId": "frenzied-flame-madness",
+        "vanillaName": "Frenzied Flame Madness (gimmick)",
+        "disposition": "not-ported",
+        "errBuildId": null,
+        "reason": "No ERR-specific source found. Vanilla tiers and numbers don't transfer to ERR (balance, scaling and two-handing all changed), so it was left out rather than guessed."
+      },
+      {
+        "vanillaId": "fire-knights-greatsword-faith",
+        "vanillaName": "Fire Knight's Greatsword Flame Art/Faith (DLC)",
+        "disposition": "dropped",
+        "errBuildId": null,
+        "reason": "Fire Knight's Greatsword loses Faith scaling in ERR."
+      },
+      {
+        "vanillaId": "ancient-meteoric-ore-greatsword",
+        "vanillaName": "Ancient Meteoric Ore Greatsword (White Light Charge, DLC)",
+        "disposition": "not-ported",
+        "errBuildId": null,
+        "reason": "No ERR-specific source found. Vanilla tiers and numbers don't transfer to ERR (balance, scaling and two-handing all changed), so it was left out rather than guessed."
+      },
+      {
+        "vanillaId": "rellanas-twin-blades",
+        "vanillaName": "Rellana's Twin Blades Moon-and-Fire (DLC)",
+        "disposition": "not-ported",
+        "errBuildId": null,
+        "reason": "No ERR-specific source found. Vanilla tiers and numbers don't transfer to ERR (balance, scaling and two-handing all changed), so it was left out rather than guessed."
+      },
+      {
+        "vanillaId": "obsidian-lamina-bleed",
+        "vanillaName": "Obsidian Lamina Reaper Bleed (DLC)",
+        "disposition": "not-ported",
+        "errBuildId": null,
+        "reason": "No ERR-specific source found. Vanilla tiers and numbers don't transfer to ERR (balance, scaling and two-handing all changed), so it was left out rather than guessed."
+      },
+      {
+        "vanillaId": "greatsword-of-radahn-gravity",
+        "vanillaName": "Greatsword of Radahn (Lord) + Gravity (Promised Consort)",
+        "disposition": "not-ported",
+        "errBuildId": null,
+        "reason": "No ERR-specific source found. Vanilla tiers and numbers don't transfer to ERR (balance, scaling and two-handing all changed), so it was left out rather than guessed."
+      },
+      {
+        "vanillaId": "lightning-perfume-bottle",
+        "vanillaName": "Lightning Perfume Bottle Rolling Sparks (post-nerf)",
+        "disposition": "dropped",
+        "errBuildId": null,
+        "reason": "Lightning Perfume scales with ARC instead of FTH in ERR; perfume play is covered by err-apothecary-perfumer."
+      },
+      {
+        "vanillaId": "flamberge-storm-blade",
+        "vanillaName": "Flamberge Storm Blade Dexterity",
+        "disposition": "not-ported",
+        "errBuildId": null,
+        "reason": "No ERR-specific source found. Vanilla tiers and numbers don't transfer to ERR (balance, scaling and two-handing all changed), so it was left out rather than guessed."
+      },
+      {
+        "vanillaId": "pure-dex-nagakiba-unsheathe",
+        "vanillaName": "Pure Dex (Nagakiba Unsheathe / Bolt of Gransax)",
+        "disposition": "not-ported",
+        "errBuildId": null,
+        "reason": "No ERR-specific source found. Vanilla tiers and numbers don't transfer to ERR (balance, scaling and two-handing all changed), so it was left out rather than guessed."
+      },
+      {
+        "vanillaId": "eleonora-poleblade-bleed",
+        "vanillaName": "Eleonora's Poleblade Powerstance Bleed",
+        "disposition": "not-ported",
+        "errBuildId": null,
+        "reason": "No ERR-specific source found. Vanilla tiers and numbers don't transfer to ERR (balance, scaling and two-handing all changed), so it was left out rather than guessed."
+      },
+      {
+        "vanillaId": "wing-of-astel-nebula",
+        "vanillaName": "Wing of Astel Nebula Spellblade",
+        "disposition": "not-ported",
+        "errBuildId": null,
+        "reason": "No ERR-specific source found. Vanilla tiers and numbers don't transfer to ERR (balance, scaling and two-handing all changed), so it was left out rather than guessed."
+      },
+      {
+        "vanillaId": "star-lined-sword",
+        "vanillaName": "Star-Lined Sword Dex/Int Katana (DLC)",
+        "disposition": "dropped",
+        "errBuildId": null,
+        "reason": "Star-Lined Sword is a DEX/INT frost weapon in ERR; vanilla advice doesn't carry over and no ERR source covers it."
+      },
+      {
+        "vanillaId": "hand-of-malenia-waterfowl",
+        "vanillaName": "Hand of Malenia Waterfowl Dance",
+        "disposition": "dropped",
+        "errBuildId": null,
+        "reason": "Hand of Malenia needs FTH 24 and adds rot in ERR; the vanilla Dex build breaks."
+      },
+      {
+        "vanillaId": "poleblade-of-the-bud-rot",
+        "vanillaName": "Poleblade of the Bud Scarlet Rot (DLC)",
+        "disposition": "dropped",
+        "errBuildId": null,
+        "reason": "Poleblade of the Bud switches ARC to FTH in ERR."
+      },
+      {
+        "vanillaId": "rakshasa-great-katana",
+        "vanillaName": "Rakshasa's Great Katana Weed Cutter (DLC)",
+        "disposition": "not-ported",
+        "errBuildId": null,
+        "reason": "No ERR-specific source found. Vanilla tiers and numbers don't transfer to ERR (balance, scaling and two-handing all changed), so it was left out rather than guessed."
+      },
+      {
+        "vanillaId": "pyromancer-giantsflame",
+        "vanillaName": "Pyromancer Fire Faith (Giantsflame Take Thee)",
+        "disposition": "dropped",
+        "errBuildId": null,
+        "reason": "Magma Blade scales with INT in ERR, which breaks the vanilla Faith spread; no ERR source covers this build."
+      },
+      {
+        "vanillaId": "beast-claw-bleed",
+        "vanillaName": "Beast Claw / Red Bear's Claw Berserker (DLC)",
+        "disposition": "rewritten",
+        "errBuildId": "err-beasts-red-bear",
+        "reason": "Rebuilt around Fortune of the Beasts with Red Bear's Claw (STR A in ERR data)."
+      },
+      {
+        "vanillaId": "sacred-relic-sword",
+        "vanillaName": "Sacred Relic Sword Wave of Gold (Dex/Faith)",
+        "disposition": "not-ported",
+        "errBuildId": null,
+        "reason": "No ERR-specific source found. Vanilla tiers and numbers don't transfer to ERR (balance, scaling and two-handing all changed), so it was left out rather than guessed."
+      },
+      {
+        "vanillaId": "spear-of-the-impaler",
+        "vanillaName": "Spear of the Impaler Messmer's Assault (DLC)",
+        "disposition": "not-ported",
+        "errBuildId": null,
+        "reason": "No ERR-specific source found. Vanilla tiers and numbers don't transfer to ERR (balance, scaling and two-handing all changed), so it was left out rather than guessed."
+      }
+    ],
+    "counts": {
+      "builds": 21,
+      "vanillaRewritten": 6,
+      "vanillaDropped": 10,
+      "vanillaNotPorted": 24
+    }
+  },
+  "builds": [
+    {
+      "id": "err-reeds-suncatcher",
+      "name": "Suncatcher Deflect Samurai (Fortune of the Reeds)",
+      "archetype": "Dexterity/Arcane",
+      "fortune": {
+        "major": "Fortune of the Reeds",
+        "majorTier": "Legendary",
+        "source": "https://err.fandom.com/wiki/Fortune_of_the_Reeds",
+        "minor": "Fortune of the Dancer",
+        "minorNote": "The Reeds wiki page says minor Dancer adds small attack and stamina boosts to Reeds.",
+        "sourceVerifiedVia": "Fandom API query 2026-11-02: page exists"
+      },
+      "tier": "A",
+      "tierLabel": "community-derived",
+      "tierReason": "Community-derived. Two separate r/EldenRingMods commenters run Suncatcher with Reeds for a Sekiro-style game, and one says Reeds is so strong for stance breaks that they don't notice its drawbacks. A Sep 2026 Reeds showcase was well received. The wiki says Reeds' damage multipliers stay strong even with few deflects. The cost: you take x1.1 damage and lose 2 dodge i-frames.",
+      "weapons": [
+        "Suncatcher (new in ERR; DEX A / ARC A, holy scales with ARC; req STR16 DEX27 ARC27; skill Cursed Blade; perfect deflects empower the next attack and restore HP)",
+        "Uchigatana, Poison affinity (alt, as one commenter uses it)",
+        "Nagakiba, Quality (alt the same commenter is weighing)"
+      ],
+      "firearm": "Ash of War: Suncatcher's own skill, Cursed Blade. Use skills, charged heavies and guard counters after deflects, as the Reeds advice suggests. Spirit Ash: any aggressive ash.",
+      "stats": {
+        "spread": {
+          "VIG": 50,
+          "MND": 20,
+          "END": 40,
+          "STR": 16,
+          "DEX": 45,
+          "INT": 9,
+          "FTH": 9,
+          "ARC": 40
+        },
+        "label": "synthesized (requirements from calculator data plus Reeds advice: high Endurance)",
+        "altSpreads": [
+          "Endurance-heavier variant: 45/15/50/16/45/9/9/40 (RL150)"
+        ],
+        "level": 150
+      },
+      "ngNotes": "Suncatcher lies on a bed on the first floor of the Fortified Manor in Leyndell (ERR wiki), so this is a mid-game build. Reeds drops from the Bell Bearing Hunter at the Isolated Merchant's Shack in Dragonbarrow.",
+      "playstyle": "Two-hand the katana: Reeds' Snow, Moon, and Flowers multipliers apply only when two-handing a light sword or great katana. Keep your guard raised (Reeds makes raising it free). Deflect, then punish with guard counters, charged heavies or Cursed Blade, which all get the fortune's damage multipliers. Roll only for attacks you can't deflect. Nimble frame gives back dodge frames, per the wiki.",
+      "bestFor": [
+        "Sekiro-style players",
+        "Boss fights",
+        "Stance breaking"
+      ],
+      "pros": [
+        "Deflects deal poise damage",
+        "Free guard raising",
+        "High-scaling new katana"
+      ],
+      "cons": [
+        "x1.1 damage taken and fewer dodge i-frames",
+        "Unforgiving when you misread an attack",
+        "Needs Leyndell access for Suncatcher"
+      ],
+      "runesGear": [
+        "Rellana's Cameo",
+        "Shard of Alexander",
+        "Curved Sword Talisman",
+        "Axe Talisman (if you use many charged heavies)",
+        "Armor: White Reed Set (ERR passive: -2% stamina cost of deflecting per piece)"
+      ],
+      "sources": [
+        {
+          "title": "ERR wiki – Fortune of the Reeds",
+          "url": "https://err.fandom.com/wiki/Fortune_of_the_Reeds",
+          "siteType": "wiki",
+          "verifiedVia": "Fandom API query 2026-11-02: page exists"
+        },
+        {
+          "title": "ERR wiki – Suncatcher",
+          "url": "https://err.fandom.com/wiki/Suncatcher",
+          "siteType": "wiki",
+          "verifiedVia": "Fandom API query 2026-11-02: page exists"
+        },
+        {
+          "title": "Reddit r/EldenRingMods – 'reforged is terrible' thread (comments on Godrick's axe + Barbarian/Brave, Suncatcher + Reeds, Apr 2026)",
+          "url": "https://www.reddit.com/r/EldenRingMods/comments/1sibvyl/",
+          "siteType": "forum",
+          "verifiedVia": "WebSearch result snippet 2026-11-02 (comment text read via search index; reddit.com blocks direct fetch from the box)"
+        },
+        {
+          "title": "Reddit r/EldenRingMods – Best deflect build with katanas? (Suncatcher + Poison Uchigatana + Reeds)",
+          "url": "https://www.reddit.com/r/EldenRingMods/comments/1ublppx/",
+          "siteType": "forum",
+          "verifiedVia": "WebFetch post body read 2026-11-02"
+        },
+        {
+          "title": "Reddit r/EldenRingMods – Carian swordsman build with Reeds + minor Haima (Sep 2026)",
+          "url": "https://www.reddit.com/r/EldenRingMods/comments/1w7o89j/",
+          "siteType": "forum",
+          "verifiedVia": "WebSearch result snippet 2026-11-02 (comment text read via search index; reddit.com blocks direct fetch from the box)"
+        },
+        {
+          "title": "mandude ELDEN RING Weapon Calculator data – Reforged v2.3.5.3 (MIT)",
+          "url": "https://raw.githubusercontent.com/mandude/elden-ring-weapon-calculator/master/public/regulation-reforged-v2.3.5.3.js",
+          "siteType": "data",
+          "verifiedVia": "curl HTTP 200 2026-11-02"
+        }
+      ],
+      "mode": "reforged"
+    },
+    {
+      "id": "err-dancer-katana",
+      "name": "Ebb and Flow Duelist (Fortune of the Dancer)",
+      "archetype": "Strength/Dexterity (Quality)",
+      "fortune": {
+        "major": "Fortune of the Dancer",
+        "majorTier": "Common",
+        "source": "https://err.fandom.com/wiki/Fortune_of_the_Dancer",
+        "minor": "Fortune of the Reeds",
+        "minorNote": "The wiki says minor Reeds gives Dancer steady poise pressure.",
+        "sourceVerifiedVia": "Fandom API query 2026-11-02: page exists"
+      },
+      "tier": "B",
+      "tierLabel": "community-derived",
+      "tierReason": "Community-derived. A 2026 Reddit tips thread recommends Dancer as 'very rewarding once you get good at deflects'. The wiki calls it one of the most skill-intensive fortunes, and its damage buff (Ebb and Flow) only switches on after a perfect deflect. Very strong in skilled hands, but a weak pick for most players.",
+      "weapons": [
+        "Uchigatana (STR C- / DEX B standard; req STR11 DEX15)",
+        "Gracebound Katana (new; DEX B+; req STR11 DEX17)",
+        "Nagakiba (DEX A-; skill changed to Piercing Fang)"
+      ],
+      "firearm": "Low-cost skills (Dancer gives -25% skill FP cost). Guard counters after perfect deflects keep the buff going.",
+      "stats": {
+        "spread": {
+          "VIG": 55,
+          "MND": 19,
+          "END": 45,
+          "STR": 30,
+          "DEX": 55,
+          "INT": 9,
+          "FTH": 9,
+          "ARC": 7
+        },
+        "label": "synthesized (calculator requirements; the wiki advises stamina regen)",
+        "altSpreads": [],
+        "level": 150
+      },
+      "ngNotes": "Dancer is a Common fortune and can be unlocked early. Quality affinity suits a STR/DEX split. Affinities change scaling in ERR, so check the affinity table.",
+      "playstyle": "Weapon with good guard boost and attack speed. Perfect-deflect to start Ebb and Flow, then extend it with attacks and guard counters. Avoid medium shields and greatshields, which cost far more stamina to block with under this fortune.",
+      "bestFor": [
+        "Skilled players",
+        "Deflect practice"
+      ],
+      "pros": [
+        "Cheap skills",
+        "Big payoff when deflects land"
+      ],
+      "cons": [
+        "-25% max FP",
+        "-5% damage on unboosted attacks",
+        "Shield blocking is penalized"
+      ],
+      "runesGear": [
+        "Rellana's Cameo",
+        "Shard of Alexander",
+        "Green Turtle Talisman (stamina regen)",
+        "Curved Sword Talisman"
+      ],
+      "sources": [
+        {
+          "title": "ERR wiki – Fortune of the Dancer",
+          "url": "https://err.fandom.com/wiki/Fortune_of_the_Dancer",
+          "siteType": "wiki",
+          "verifiedVia": "Fandom API query 2026-11-02: page exists"
+        },
+        {
+          "title": "Reddit r/EldenRingMods – tips for fun classes (Dynasts / Sentinel / Spellsword / Dancer suggestions, May 2026)",
+          "url": "https://www.reddit.com/r/EldenRingMods/comments/1t5vskd/",
+          "siteType": "forum",
+          "verifiedVia": "WebSearch result snippet 2026-11-02 (comment text read via search index; reddit.com blocks direct fetch from the box)"
+        },
+        {
+          "title": "mandude ELDEN RING Weapon Calculator data – Reforged v2.3.5.3 (MIT)",
+          "url": "https://raw.githubusercontent.com/mandude/elden-ring-weapon-calculator/master/public/regulation-reforged-v2.3.5.3.js",
+          "siteType": "data",
+          "verifiedVia": "curl HTTP 200 2026-11-02"
+        }
+      ],
+      "mode": "reforged"
+    },
+    {
+      "id": "err-reeds-dual-dagger",
+      "name": "Scorpion's Stinger Dual Daggers (Reeds, status)",
+      "archetype": "Dexterity (status)",
+      "fortune": {
+        "major": "Fortune of the Reeds",
+        "majorTier": "Legendary",
+        "source": "https://err.fandom.com/wiki/Fortune_of_the_Reeds",
+        "minor": "Fortune of the Dancer",
+        "minorNote": "Recommended in the Reeds wiki advice.",
+        "sourceVerifiedVia": "Fandom API query 2026-11-02: page exists"
+      },
+      "tier": "B",
+      "tierLabel": "community-derived",
+      "tierReason": "Community-derived from a single Reddit thread. It calls dual Scorpion's Stinger with Reeds viable: deflects deal poise damage and daggers build status on crits. It also warns that missed deflects hurt because daggers have low stability, and that large mobs and kiting bosses are hard. Carry Nagakiba and a bow for those.",
+      "weapons": [
+        "Scorpion's Stinger ×2 (DEX A+; req STR6 DEX12; Scarlet Rot 50→63 and Poison 38→47 buildup, +0→max)",
+        "Night's Edge (new dagger; DEX S; req STR9 DEX24) as an alternative",
+        "Nagakiba plus a bow for mobs and kiting bosses (backup, per the thread)"
+      ],
+      "firearm": "A fast Enkindled Ash of War on one dagger (thread suggestion). Throwing knives for poise pressure.",
+      "stats": {
+        "spread": {
+          "VIG": 50,
+          "MND": 15,
+          "END": 45,
+          "STR": 18,
+          "DEX": 54,
+          "INT": 9,
+          "FTH": 9,
+          "ARC": 29
+        },
+        "label": "synthesized (DEX main; Arcane raises status buildup in ERR)",
+        "altSpreads": [],
+        "level": 150
+      },
+      "ngNotes": "ERR status buildup rises 50% by full upgrade to match the 50% resistance of endgame enemies (wiki, Armament Upgrading).",
+      "playstyle": "Deflect, then flurry. Rot and poison tick while you play defensively. Caveat: the Reeds page counts only curved swords, katanas, light greatswords, straight swords and thrusting swords as 'light swords'. Its two-handed damage multipliers therefore don't apply to daggers; the deflect poise damage does.",
+      "bestFor": [
+        "Status lovers",
+        "Deflect players"
+      ],
+      "pros": [
+        "Two statuses on one weapon",
+        "Light and fast"
+      ],
+      "cons": [
+        "Low stability when deflects fail",
+        "Bad against mobs and kiting bosses"
+      ],
+      "runesGear": [
+        "Rellana's Cameo",
+        "Shard of Alexander",
+        "Kindred of Rot's Exultation",
+        "Lord of Blood's Exultation (if you swap to bleed)"
+      ],
+      "sources": [
+        {
+          "title": "ERR wiki – Fortune of the Reeds",
+          "url": "https://err.fandom.com/wiki/Fortune_of_the_Reeds",
+          "siteType": "wiki",
+          "verifiedVia": "Fandom API query 2026-11-02: page exists"
+        },
+        {
+          "title": "Reddit r/EldenRingMods – Is a dual dagger deflect build viable?",
+          "url": "https://www.reddit.com/r/EldenRingMods/comments/1qn8zhy/",
+          "siteType": "forum",
+          "verifiedVia": "WebSearch result snippet 2026-11-02 (comment text read via search index; reddit.com blocks direct fetch from the box)"
+        },
+        {
+          "title": "ERR wiki – Armament Upgrading",
+          "url": "https://err.fandom.com/wiki/Armament_Upgrading",
+          "siteType": "wiki",
+          "verifiedVia": "Fandom API query 2026-11-02: page exists"
+        },
+        {
+          "title": "mandude ELDEN RING Weapon Calculator data – Reforged v2.3.5.3 (MIT)",
+          "url": "https://raw.githubusercontent.com/mandude/elden-ring-weapon-calculator/master/public/regulation-reforged-v2.3.5.3.js",
+          "siteType": "data",
+          "verifiedVia": "curl HTTP 200 2026-11-02"
+        }
+      ],
+      "mode": "reforged"
+    },
+    {
+      "id": "err-dynasts-bloody-helice",
+      "name": "Bloody Helice Blood Noble (Fortune of the Dynasts)",
+      "archetype": "Arcane bleed hybrid",
+      "fortune": {
+        "major": "Fortune of the Dynasts",
+        "majorTier": "Legendary",
+        "source": "https://err.fandom.com/wiki/Fortune_of_the_Dynasts",
+        "sourceVerifiedVia": "Fandom API query 2026-11-02: page exists"
+      },
+      "tier": "A",
+      "tierLabel": "community-derived",
+      "tierReason": "Community-derived. Recommended in a May 2026 Reddit tips thread as a bleed hybrid: Arcane drives both the spells and the weapon, and in ERR Arcane raises all status buildup. The wiki warns that sanguine pools give you hidden bleed buildup, which leaves you weak to enemies that also bleed. The commenter also warns that Mohg himself is hard with it.",
+      "weapons": [
+        "Bloody Helice (STR F / DEX C / ARC B; req STR16 DEX19 ARC22; Bleed 58 base)",
+        "Dragon Communion Seal (FTH C- / ARC A-; req FTH18 ARC24)",
+        "Mohgwyn's Sacred Seal (new in ERR; FTH B- / ARC B-; req FTH27 ARC23) later, the 'Mogh's seal' in the thread"
+      ],
+      "firearm": "Incantations: Bloodflame Talons, Bloodflame Blade, Dragonclaw.",
+      "stats": {
+        "spread": {
+          "VIG": 50,
+          "MND": 25,
+          "END": 25,
+          "STR": 16,
+          "DEX": 19,
+          "INT": 9,
+          "FTH": 27,
+          "ARC": 58
+        },
+        "label": "synthesized (requirements for Mohgwyn's Sacred Seal and Bloody Helice; Arcane main)",
+        "altSpreads": [],
+        "level": 150
+      },
+      "ngNotes": "Dynasts is Legendary. Check its How to Acquire section. Pierce attack power x1.05 suits the thrusting Helice.",
+      "playstyle": "Build bleed with the Helice to spawn sanguine pools, fight inside them for their buffs, and cast blood incantations. Against bleed-immune enemies, the wiki suggests bleeding yourself to keep the pool buffs.",
+      "bestFor": [
+        "Bleed fans",
+        "Hybrid casters"
+      ],
+      "pros": [
+        "Arcane powers both spells and weapon",
+        "+60 bleed and frostbite resistance"
+      ],
+      "cons": [
+        "x0.9 magic, lightning and holy attack power",
+        "Flasks heal 20% less outside the pool",
+        "Hidden self-bleed from pools"
+      ],
+      "runesGear": [
+        "Lord of Blood's Exultation",
+        "Ansbach's Set (ERR passive: +2.5% Blood Oath and dynastic skills per piece)"
+      ],
+      "sources": [
+        {
+          "title": "ERR wiki – Fortune of the Dynasts",
+          "url": "https://err.fandom.com/wiki/Fortune_of_the_Dynasts",
+          "siteType": "wiki",
+          "verifiedVia": "Fandom API query 2026-11-02: page exists"
+        },
+        {
+          "title": "Reddit r/EldenRingMods – tips for fun classes (Dynasts / Sentinel / Spellsword / Dancer suggestions, May 2026)",
+          "url": "https://www.reddit.com/r/EldenRingMods/comments/1t5vskd/",
+          "siteType": "forum",
+          "verifiedVia": "WebSearch result snippet 2026-11-02 (comment text read via search index; reddit.com blocks direct fetch from the box)"
+        },
+        {
+          "title": "mandude ELDEN RING Weapon Calculator data – Reforged v2.3.5.3 (MIT)",
+          "url": "https://raw.githubusercontent.com/mandude/elden-ring-weapon-calculator/master/public/regulation-reforged-v2.3.5.3.js",
+          "siteType": "data",
+          "verifiedVia": "curl HTTP 200 2026-11-02"
+        }
+      ],
+      "mode": "reforged"
+    },
+    {
+      "id": "err-sentinel-weapon-catalyst",
+      "name": "Troll Knight Paladin (Fortune of the Sentinel, weapon catalyst + shield)",
+      "archetype": "Strength/Intelligence",
+      "fortune": {
+        "major": "Fortune of the Sentinel",
+        "majorTier": "Common",
+        "source": "https://err.fandom.com/wiki/Fortune_of_the_Sentinel",
+        "sourceVerifiedVia": "Fandom API query 2026-11-02: page exists"
+      },
+      "tier": "A",
+      "tierLabel": "community-derived",
+      "tierReason": "Community-derived. The May 2026 tips thread suggests a 'paladin type' build: a weapon catalyst of your choice with a shield, self-buffing and casting. The wiki's Weapon Catalyst page lists Troll Knight's Sword (colossal sword moveset) and Carian Knight's Sword (straight sword moveset). A second thread recommends Troll Knight's Sword for Str/Int. Sentinel adds +5% spell attack power and better shield blocking.",
+      "weapons": [
+        "Troll Knight's Sword (weapon catalyst; STR C / DEX E / INT C; req STR20 DEX12 INT22)",
+        "Carian Knight's Sword (lighter alt; DEX C / INT C; req STR9 DEX18 INT22)",
+        "Carian Knight's Shield (INT A-; req STR10 DEX10 INT15) or Brass Shield (STR B+)"
+      ],
+      "firearm": "Cast sorceries with the weapon (Guard + Light Attack). Carian sorceries get x1.1 from both swords. Weapon catalysts can only take certain Legendary Ashes of War (see the wiki list).",
+      "stats": {
+        "spread": {
+          "VIG": 50,
+          "MND": 30,
+          "END": 35,
+          "STR": 34,
+          "DEX": 18,
+          "INT": 45,
+          "FTH": 9,
+          "ARC": 8
+        },
+        "label": "synthesized (calculator requirements; the Sentinel advice wants high Vigor, Mind and Endurance)",
+        "altSpreads": [
+          "Sentinel lowers Arcane by 3; that doesn't matter for this build"
+        ],
+        "level": 150
+      },
+      "ngNotes": "Carian sorceries get x1.1 from both swords (wiki Weapon Catalyst table).",
+      "playstyle": "Sword and board. Block (Sentinel restores FP when you block or take damage), then punish with melee or quick sorceries. Shield Grease helps.",
+      "bestFor": [
+        "First ERR run",
+        "Defensive players",
+        "Hybrid melee casting"
+      ],
+      "pros": [
+        "One weapon does melee and casting",
+        "Elemental defense x1.1 + 10",
+        "Very forgiving"
+      ],
+      "cons": [
+        "-20 stamina regen",
+        "x0.9 movement speed in combat",
+        "Weapon catalysts deal slightly less than a pure weapon or catalyst"
+      ],
+      "runesGear": [
+        "Carian Filigreed Crest",
+        "Graven-School Talisman",
+        "Dragoncrest Shield Talisman",
+        "Armor: Carian Knight Set (ERR passive: +2% Carian sorceries per piece)"
+      ],
+      "sources": [
+        {
+          "title": "ERR wiki – Fortune of the Sentinel",
+          "url": "https://err.fandom.com/wiki/Fortune_of_the_Sentinel",
+          "siteType": "wiki",
+          "verifiedVia": "Fandom API query 2026-11-02: page exists"
+        },
+        {
+          "title": "ERR wiki – Weapon Catalyst",
+          "url": "https://err.fandom.com/wiki/Weapon_Catalyst",
+          "siteType": "wiki",
+          "verifiedVia": "Fandom API query 2026-11-02: page exists"
+        },
+        {
+          "title": "Reddit r/EldenRingMods – tips for fun classes (Dynasts / Sentinel / Spellsword / Dancer suggestions, May 2026)",
+          "url": "https://www.reddit.com/r/EldenRingMods/comments/1t5vskd/",
+          "siteType": "forum",
+          "verifiedVia": "WebSearch result snippet 2026-11-02 (comment text read via search index; reddit.com blocks direct fetch from the box)"
+        },
+        {
+          "title": "Reddit r/EldenRingMods – Is a Dex/Int/Str split too thin for Reforged?",
+          "url": "https://www.reddit.com/r/EldenRingMods/comments/1t5hcqo/",
+          "siteType": "forum",
+          "verifiedVia": "WebSearch result snippet 2026-11-02 (comment text read via search index; reddit.com blocks direct fetch from the box)"
+        },
+        {
+          "title": "mandude ELDEN RING Weapon Calculator data – Reforged v2.3.5.3 (MIT)",
+          "url": "https://raw.githubusercontent.com/mandude/elden-ring-weapon-calculator/master/public/regulation-reforged-v2.3.5.3.js",
+          "siteType": "data",
+          "verifiedVia": "curl HTTP 200 2026-11-02"
+        }
+      ],
+      "mode": "reforged"
+    },
+    {
+      "id": "err-spellsword-moonveil",
+      "name": "Moonveil Spellsword (Fortune of the Spellsword)",
+      "archetype": "Dexterity/Intelligence",
+      "fortune": {
+        "major": "Fortune of the Spellsword",
+        "majorTier": "Common",
+        "source": "https://err.fandom.com/wiki/Fortune_of_the_Spellsword",
+        "sourceVerifiedVia": "Fandom API query 2026-11-02: page exists"
+      },
+      "tier": "B",
+      "tierLabel": "community-derived",
+      "tierReason": "Community-derived. The tips thread describes Spellsword (any weapon plus a staff or seal) as a high-damage glass cannon that alternates casting and melee. The wiki warns it is FP-hungry, and its buff only builds from weapon-contact hits, so projectile skills like Moonveil's are less effective unless used in melee.",
+      "weapons": [
+        "Moonveil (DEX B- / INT B; req STR12 DEX18 INT27)",
+        "Academy Glintstone Staff (INT S at +25, B- at +0; req INT30)"
+      ],
+      "firearm": "Sorceries chosen by slot count, since the Spellsword buff scales with a spell's slots, not its FP cost. Use a generator before switching modes (generators don't feed the mechanic).",
+      "stats": {
+        "spread": {
+          "VIG": 50,
+          "MND": 30,
+          "END": 30,
+          "STR": 12,
+          "DEX": 30,
+          "INT": 60,
+          "FTH": 9,
+          "ARC": 8
+        },
+        "label": "synthesized (calculator requirements; Spellsword gives +6 Mind)",
+        "altSpreads": [],
+        "level": 150
+      },
+      "ngNotes": "Generators and FP sustain matter. The wiki names Storied Glintstone Amulet and Ancestral Spirit's Horn.",
+      "playstyle": "Modal: cast until the buff timer is up, then melee, and swap back. Carry spells for every range plus a gap-closing skill.",
+      "bestFor": [
+        "Aggressive casters"
+      ],
+      "pros": [
+        "+50 cast speed and +6 Mind",
+        "Big alternating buffs"
+      ],
+      "cons": [
+        "Unboosted attacks deal x0.92",
+        "Non-flask healing x0.65",
+        "x1.1 status buildup taken"
+      ],
+      "runesGear": [
+        "Storied Glintstone Amulet",
+        "Ancestral Spirit's Horn",
+        "Graven-School Talisman"
+      ],
+      "sources": [
+        {
+          "title": "ERR wiki – Fortune of the Spellsword",
+          "url": "https://err.fandom.com/wiki/Fortune_of_the_Spellsword",
+          "siteType": "wiki",
+          "verifiedVia": "Fandom API query 2026-11-02: page exists"
+        },
+        {
+          "title": "Reddit r/EldenRingMods – tips for fun classes (Dynasts / Sentinel / Spellsword / Dancer suggestions, May 2026)",
+          "url": "https://www.reddit.com/r/EldenRingMods/comments/1t5vskd/",
+          "siteType": "forum",
+          "verifiedVia": "WebSearch result snippet 2026-11-02 (comment text read via search index; reddit.com blocks direct fetch from the box)"
+        },
+        {
+          "title": "mandude ELDEN RING Weapon Calculator data – Reforged v2.3.5.3 (MIT)",
+          "url": "https://raw.githubusercontent.com/mandude/elden-ring-weapon-calculator/master/public/regulation-reforged-v2.3.5.3.js",
+          "siteType": "data",
+          "verifiedVia": "curl HTTP 200 2026-11-02"
+        }
+      ],
+      "mode": "reforged"
+    },
+    {
+      "id": "err-sorcerer-academy",
+      "name": "Academy Brilliance Sorcerer (Fortune of the Sorcerer)",
+      "archetype": "Pure Intelligence",
+      "fortune": {
+        "major": "Fortune of the Sorcerer",
+        "majorTier": "Common",
+        "source": "https://err.fandom.com/wiki/Fortune_of_the_Sorcerer",
+        "sourceVerifiedVia": "Fandom API query 2026-11-02: page exists"
+      },
+      "tier": "B",
+      "tierLabel": "community-derived",
+      "tierReason": "Community-derived, mostly from the wiki advice: build Academy Brilliance with cheap generators, then spend it on a big spell (the wiki discusses saving the boost for after 9 casts; I didn't pull the exact multiplier). A 2026 Reddit thread asks whether pure INT is weak in Reforged, and players there note casting needs buff and gear stacking. So this is not rated A.",
+      "weapons": [
+        "Academy Glintstone Staff (INT S at +25; req INT30)",
+        "Azur's Glintstone Staff (INT S+; req INT52; +50 cast speed, x1.125 FP cost)",
+        "Lusat's Glintstone Staff (INT S+; req INT52; x1.25 FP cost, -25 cast speed)"
+      ],
+      "firearm": "Generators: Glintstone Pebble, Carian Slicer, Ambush Shard. Payoff: Comet (52 INT), Crystal Torrent (held spells keep the buff). Terra Magica.",
+      "stats": {
+        "spread": {
+          "VIG": 50,
+          "MND": 40,
+          "END": 20,
+          "STR": 10,
+          "DEX": 12,
+          "INT": 80,
+          "FTH": 9,
+          "ARC": 8
+        },
+        "label": "synthesized (staff and spell requirements from the calculator and wiki)",
+        "altSpreads": [],
+        "level": 150
+      },
+      "ngNotes": "Remember that ERR catalyst scaling still rises with upgrades (B- at +0 to S at +25 on the Academy staff).",
+      "playstyle": "Chain cheap casts to build stacks, then save the boosted spell for a poise break or a large opening. Staff R2 can hold pressure without spending casts.",
+      "bestFor": [
+        "Pure casters"
+      ],
+      "pros": [
+        "Cheaper sorceries, +1 memory slot",
+        "Huge payoff spell"
+      ],
+      "cons": [
+        "x0.83 poise",
+        "Buffs last x0.8 as long",
+        "Pure INT reported as weaker without buff stacking"
+      ],
+      "runesGear": [
+        "Graven-School Talisman",
+        "Storied Glintstone Amulet",
+        "Armor: Azur's Glintstone Set if casting Azur spells (+2% per piece)"
+      ],
+      "sources": [
+        {
+          "title": "ERR wiki – Fortune of the Sorcerer",
+          "url": "https://err.fandom.com/wiki/Fortune_of_the_Sorcerer",
+          "siteType": "wiki",
+          "verifiedVia": "Fandom API query 2026-11-02: page exists"
+        },
+        {
+          "title": "Reddit r/EldenRingMods – pure INT builds in Reforged kinda weak?",
+          "url": "https://www.reddit.com/r/EldenRingMods/comments/1s43t6m/",
+          "siteType": "forum",
+          "verifiedVia": "WebSearch result snippet 2026-11-02 (comment text read via search index; reddit.com blocks direct fetch from the box)"
+        },
+        {
+          "title": "mandude ELDEN RING Weapon Calculator data – Reforged v2.3.5.3 (MIT)",
+          "url": "https://raw.githubusercontent.com/mandude/elden-ring-weapon-calculator/master/public/regulation-reforged-v2.3.5.3.js",
+          "siteType": "data",
+          "verifiedVia": "curl HTTP 200 2026-11-02"
+        }
+      ],
+      "mode": "reforged"
+    },
+    {
+      "id": "err-haima-hammer",
+      "name": "Haima Battlemage Hammer (Fortune of Haima)",
+      "archetype": "Strength/Intelligence",
+      "fortune": {
+        "major": "Fortune of Haima",
+        "majorTier": "Rare",
+        "source": "https://err.fandom.com/wiki/Fortune_of_Haima",
+        "sourceVerifiedVia": "Fandom API query 2026-11-02: page exists"
+      },
+      "tier": "B",
+      "tierLabel": "community-derived",
+      "tierReason": "Derived from the wiki advice, which sets out three ways to play Haima. This is the second: Academy sorceries break stance, then a strike weapon bursts in the nine-second window (+5% strike attack power). One Reddit Reeds build uses minor Haima, but no community build was found for this exact setup.",
+      "weapons": [
+        "Gracebound Mace (new; STR S / DEX D; req STR21 DEX13)",
+        "Mace (STR B / DEX C) early alternative",
+        "Academy Glintstone Staff (req INT30)"
+      ],
+      "firearm": "Academy sorceries for poise: Glintstone Pebble, Gavel of Haima, Cannon of Haima, plus Terra Magica.",
+      "stats": {
+        "spread": {
+          "VIG": 50,
+          "MND": 25,
+          "END": 25,
+          "STR": 40,
+          "DEX": 13,
+          "INT": 60,
+          "FTH": 9,
+          "ARC": 7
+        },
+        "label": "synthesized (calculator requirements; Haima advice)",
+        "altSpreads": [],
+        "level": 150
+      },
+      "ngNotes": "Haima cuts max FP by 20% and generator FP by 30. Bring Cerulean flasks.",
+      "playstyle": "Break posture with Academy spells, then switch to the mace for the window. Don't land a riposte, since Haima gives x0.8 crit damage. Hit during the stagger instead.",
+      "bestFor": [
+        "Spell/melee hybrids"
+      ],
+      "pros": [
+        "Cheaper sorceries",
+        "Strike bonus"
+      ],
+      "cons": [
+        "x0.8 max FP and crit damage",
+        "Needs knowledge of enemy poise"
+      ],
+      "runesGear": [
+        "Hammer Talisman",
+        "Graven-School Talisman"
+      ],
+      "sources": [
+        {
+          "title": "ERR wiki – Fortune of Haima",
+          "url": "https://err.fandom.com/wiki/Fortune_of_Haima",
+          "siteType": "wiki",
+          "verifiedVia": "Fandom API query 2026-11-02: page exists"
+        },
+        {
+          "title": "Reddit r/EldenRingMods – Carian swordsman build with Reeds + minor Haima (Sep 2026)",
+          "url": "https://www.reddit.com/r/EldenRingMods/comments/1w7o89j/",
+          "siteType": "forum",
+          "verifiedVia": "WebSearch result snippet 2026-11-02 (comment text read via search index; reddit.com blocks direct fetch from the box)"
+        },
+        {
+          "title": "mandude ELDEN RING Weapon Calculator data – Reforged v2.3.5.3 (MIT)",
+          "url": "https://raw.githubusercontent.com/mandude/elden-ring-weapon-calculator/master/public/regulation-reforged-v2.3.5.3.js",
+          "siteType": "data",
+          "verifiedVia": "curl HTTP 200 2026-11-02"
+        }
+      ],
+      "mode": "reforged"
+    },
+    {
+      "id": "err-houses-dual-caster",
+      "name": "Royal Marriage Dual Caster (Fortune of the Houses)",
+      "archetype": "Intelligence/Faith",
+      "fortune": {
+        "major": "Fortune of the Houses",
+        "majorTier": "Rare",
+        "source": "https://err.fandom.com/wiki/Fortune_of_the_Houses",
+        "sourceVerifiedVia": "Fandom API query 2026-11-02: page exists"
+      },
+      "tier": "B",
+      "tierLabel": "community-derived",
+      "tierReason": "Community-derived. There is a YouTube playlist of a Pure INT/FTH Houses caster, and the wiki gives detailed chaining advice. It works best in long fights, because the first spells of a chain cost 25% more. Strong but intricate.",
+      "weapons": [
+        "Gracebound Staff (new dual catalyst; INT C+ / FTH C+; req INT17 FTH17)",
+        "Scepter of the All-Knowing (dual catalyst; INT B- / FTH B-; req INT30 FTH30)",
+        "Glintstone Kris (weapon catalyst for both schools)"
+      ],
+      "firearm": "Alternate schools: Carian Slicer, Catch Flame, Golden Star to start chains. Put an expensive spell in slot 7, since it gets the big cost cut after six chained spells.",
+      "stats": {
+        "spread": {
+          "VIG": 45,
+          "MND": 40,
+          "END": 15,
+          "STR": 10,
+          "DEX": 12,
+          "INT": 48,
+          "FTH": 50,
+          "ARC": 9
+        },
+        "label": "synthesized (dual-catalyst requirements; Houses gives +2 INT/FTH and -3 STR/DEX)",
+        "altSpreads": [],
+        "level": 150
+      },
+      "ngNotes": "Houses drops from the Bell Bearing Hunter of the Church of Vows. A dual catalyst saves you swapping between a staff and a seal (wiki).",
+      "playstyle": "Strict sorcery/incantation alternation. Once the chain is going, keep it going.",
+      "bestFor": [
+        "Spell nerds",
+        "Long boss fights"
+      ],
+      "pros": [
+        "+2 memory slots",
+        "Very cheap 7th cast"
+      ],
+      "cons": [
+        "x1.25 FP cost on unboosted spells",
+        "Weak in short trash fights"
+      ],
+      "runesGear": [
+        "Graven-School Talisman",
+        "Radagon Icon",
+        "Storied Glintstone Amulet"
+      ],
+      "sources": [
+        {
+          "title": "ERR wiki – Fortune of the Houses",
+          "url": "https://err.fandom.com/wiki/Fortune_of_the_Houses",
+          "siteType": "wiki",
+          "verifiedVia": "Fandom API query 2026-11-02: page exists"
+        },
+        {
+          "title": "YouTube playlist – Elden Ring Reforged | Fortune of the Houses | Pure INT/FTH Caster",
+          "url": "https://www.youtube.com/playlist?list=PLq6Xpz9BzcUnVyt1lJyY9c9ukHVr5cSek",
+          "siteType": "video",
+          "verifiedVia": "curl HTTP 200 2026-11-02"
+        },
+        {
+          "title": "mandude ELDEN RING Weapon Calculator data – Reforged v2.3.5.3 (MIT)",
+          "url": "https://raw.githubusercontent.com/mandude/elden-ring-weapon-calculator/master/public/regulation-reforged-v2.3.5.3.js",
+          "siteType": "data",
+          "verifiedVia": "curl HTTP 200 2026-11-02"
+        }
+      ],
+      "mode": "reforged"
+    },
+    {
+      "id": "err-latenna-horn-bow",
+      "name": "Horn Bow Moonlight Archer (Fortune of Latenna)",
+      "archetype": "Intelligence archer",
+      "fortune": {
+        "major": "Fortune of Latenna",
+        "majorTier": "Legendary",
+        "source": "https://err.fandom.com/wiki/Fortune_of_Latenna",
+        "sourceVerifiedVia": "Fandom API query 2026-11-02: page exists"
+      },
+      "tier": "B",
+      "tierLabel": "community-derived",
+      "tierReason": "Derived from the wiki advice, which names the Horn Bow (INT magic scaling, boosts Dwelling Arrows) as an ideal match for Latenna's charged shots and its +20 magic damage on bows. It relies on spirit ashes and patience. No independent community write-up was found.",
+      "weapons": [
+        "Horn Bow (INT A- / DEX C; req STR10 DEX12 INT14)"
+      ],
+      "firearm": "Dwelling Arrows. Aggressive, durable Spirit Ashes enraged with Spirit Fury (FP). A utility Ash of War.",
+      "stats": {
+        "spread": {
+          "VIG": 45,
+          "MND": 36,
+          "END": 40,
+          "STR": 10,
+          "DEX": 20,
+          "INT": 60,
+          "FTH": 9,
+          "ARC": 9
+        },
+        "label": "synthesized (requirements; Latenna advice: Endurance and Mind)",
+        "altSpreads": [],
+        "level": 150
+      },
+      "ngNotes": "Latenna is Legendary. Spells deal x0.9.",
+      "playstyle": "Let a spirit ash hold aggro and fire charged shots into openings. Manage stamina (dashing and jumping cost more).",
+      "bestFor": [
+        "Ranged players",
+        "Spirit ash fans"
+      ],
+      "pros": [
+        "High single-hit damage",
+        "+30 bow range"
+      ],
+      "cons": [
+        "Stamina penalties",
+        "Slow, patient play"
+      ],
+      "runesGear": [
+        "Arrow's Sting Talisman",
+        "Ritual Sword Talisman",
+        "Arrow's Reach Talisman"
+      ],
+      "sources": [
+        {
+          "title": "ERR wiki – Fortune of Latenna",
+          "url": "https://err.fandom.com/wiki/Fortune_of_Latenna",
+          "siteType": "wiki",
+          "verifiedVia": "Fandom API query 2026-11-02: page exists"
+        },
+        {
+          "title": "mandude ELDEN RING Weapon Calculator data – Reforged v2.3.5.3 (MIT)",
+          "url": "https://raw.githubusercontent.com/mandude/elden-ring-weapon-calculator/master/public/regulation-reforged-v2.3.5.3.js",
+          "siteType": "data",
+          "verifiedVia": "curl HTTP 200 2026-11-02"
+        }
+      ],
+      "mode": "reforged"
+    },
+    {
+      "id": "err-apothecary-perfumer",
+      "name": "Perfumer Alchemist (Fortune of the Apothecary)",
+      "archetype": "Arcane consumables",
+      "fortune": {
+        "major": "Fortune of the Apothecary",
+        "majorTier": "Common",
+        "source": "https://err.fandom.com/wiki/Fortune_of_the_Apothecary",
+        "sourceVerifiedVia": "Fandom API query 2026-11-02: page exists"
+      },
+      "tier": "B",
+      "tierLabel": "community-derived",
+      "tierReason": "Community-derived. In a Reddit answer for the Perfumer class, Arcane is the main stat and Dexterity secondary; it names Reduvia, Regalia of Eochaid and Magma Wyrm's Scalesword, and calls Apothecary great. That thread is from Mar 2024 (an older ERR version). The wiki confirms most pots and aromatics scale with Arcane.",
+      "weapons": [
+        "Reduvia (DEX C / ARC B; req DEX13 ARC19)",
+        "Regalia of Eochaid (DEX C / ARC C; req STR12 DEX18 ARC16)",
+        "Magma Wyrm's Scalesword (STR B- / ARC B-, fire scales with Arcane; req STR24 DEX16 ARC18)"
+      ],
+      "firearm": "Pots and aromatics (Spark Aromatic, Volcano Pot, Poison Spraymist). Avoid multi-hit pots for Jarwright's Collection stacks (wiki).",
+      "stats": {
+        "spread": {
+          "VIG": 50,
+          "MND": 30,
+          "END": 25,
+          "STR": 24,
+          "DEX": 18,
+          "INT": 9,
+          "FTH": 9,
+          "ARC": 64
+        },
+        "label": "synthesized (requirements; Apothecary +3 Arcane on top)",
+        "altSpreads": [],
+        "level": 150
+      },
+      "ngNotes": "ERR reworked crafting (see the crafting file). Plan for the base-element supply.",
+      "playstyle": "Attack with the weapon to build Jarwright's Collection stacks, then throw boosted consumables.",
+      "bestFor": [
+        "Item users",
+        "Perfumer class"
+      ],
+      "pros": [
+        "+3 Arcane",
+        "Cheaper consumables"
+      ],
+      "cons": [
+        "+5% attack stamina cost",
+        "Worse blocking",
+        "Material grind"
+      ],
+      "runesGear": [
+        "Perfumer's Talisman",
+        "Lord of Blood's Exultation (with Reduvia)"
+      ],
+      "sources": [
+        {
+          "title": "ERR wiki – Fortune of the Apothecary",
+          "url": "https://err.fandom.com/wiki/Fortune_of_the_Apothecary",
+          "siteType": "wiki",
+          "verifiedVia": "Fandom API query 2026-11-02: page exists"
+        },
+        {
+          "title": "Reddit r/EldenRingMods – Perfumer build advice (Mar 2024 – older ERR version)",
+          "url": "https://www.reddit.com/r/EldenRingMods/comments/1bm1bgb/",
+          "siteType": "forum",
+          "verifiedVia": "WebSearch result snippet 2026-11-02 (comment text read via search index; reddit.com blocks direct fetch from the box)"
+        },
+        {
+          "title": "mandude ELDEN RING Weapon Calculator data – Reforged v2.3.5.3 (MIT)",
+          "url": "https://raw.githubusercontent.com/mandude/elden-ring-weapon-calculator/master/public/regulation-reforged-v2.3.5.3.js",
+          "siteType": "data",
+          "verifiedVia": "curl HTTP 200 2026-11-02"
+        }
+      ],
+      "mode": "reforged"
+    },
+    {
+      "id": "err-barbarian-godrick-axe",
+      "name": "Godrick's Axe Juggernaut (Barbarian + minor Brave)",
+      "archetype": "Strength/Dexterity heavy",
+      "fortune": {
+        "major": "Fortune of the Barbarian",
+        "majorTier": "Common",
+        "source": "https://err.fandom.com/wiki/Fortune_of_the_Barbarian",
+        "minor": "Fortune of the Brave",
+        "minorNote": "Combination described by a Reddit commenter.",
+        "sourceVerifiedVia": "Fandom API query 2026-11-02: page exists"
+      },
+      "tier": "B",
+      "tierLabel": "community-derived",
+      "tierReason": "Community-derived and contested. One April 2026 commenter says Godrick's axe with full heavy armor (Verdigris), Bull-Goat's Talisman, Barbarian and minor Brave 'break any semblance of balance'. A July 2025 review comment argues Barbarian is a poor fortune because of the equip-load trade-off. The wiki itself says the equip-load penalty makes heavy armor hard. Treat this as high-variance.",
+      "weapons": [
+        "Axe of Godrick (STR B / DEX B; req STR32 DEX26; Heavy and Keen affinity effects added; heals 8% + 80 HP when a stance break happens nearby)"
+      ],
+      "firearm": "High-commitment charged heavies and skills with hyper armor (the wiki mentions Lion's Claw).",
+      "stats": {
+        "spread": {
+          "VIG": 60,
+          "MND": 15,
+          "END": 43,
+          "STR": 60,
+          "DEX": 26,
+          "INT": 9,
+          "FTH": 9,
+          "ARC": 7
+        },
+        "label": "synthesized (requirements; Barbarian advice: high Vigor and Endurance)",
+        "altSpreads": [],
+        "level": 150
+      },
+      "ngNotes": "Equip load in ERR is a flat 100 and Barbarian reduces it by 15%, so heavy armor puts you in high load states.",
+      "playstyle": "Trade blows on purpose. Barbarian's healing is mostly percentage-based and comes from aggressive, high-commitment attacks (wiki advice). The fortune also cancels most counter damage you take (x0.92 while vulnerable). Blocked hits do NOT trigger its healing buff. Respect status effects: +100% sleep and +50% frostbite damage, among others.",
+      "bestFor": [
+        "Aggressive players"
+      ],
+      "pros": [
+        "Percentage-based healing from aggression",
+        "+15 poise, +15% max stamina"
+      ],
+      "cons": [
+        "-15% equip load and -15% max FP",
+        "Very weak to status effects"
+      ],
+      "runesGear": [
+        "Bull-Goat's Talisman",
+        "Axe Talisman",
+        "Crimson Amber Medallion",
+        "Armor: Verdigris Set (ERR passive: -2.5% status buildup while blocking per piece)"
+      ],
+      "sources": [
+        {
+          "title": "ERR wiki – Fortune of the Barbarian",
+          "url": "https://err.fandom.com/wiki/Fortune_of_the_Barbarian",
+          "siteType": "wiki",
+          "verifiedVia": "Fandom API query 2026-11-02: page exists"
+        },
+        {
+          "title": "Reddit r/EldenRingMods – 'reforged is terrible' thread (comments on Godrick's axe + Barbarian/Brave, Suncatcher + Reeds, Apr 2026)",
+          "url": "https://www.reddit.com/r/EldenRingMods/comments/1sibvyl/",
+          "siteType": "forum",
+          "verifiedVia": "WebSearch result snippet 2026-11-02 (comment text read via search index; reddit.com blocks direct fetch from the box)"
+        },
+        {
+          "title": "Reddit r/EldenRingMods – A Comprehensive Review (critical comment on Barbarian, Jul 2025)",
+          "url": "https://www.reddit.com/r/EldenRingMods/comments/1m5pj3x/",
+          "siteType": "forum",
+          "verifiedVia": "WebSearch result snippet 2026-11-02 (comment text read via search index; reddit.com blocks direct fetch from the box)"
+        },
+        {
+          "title": "mandude ELDEN RING Weapon Calculator data – Reforged v2.3.5.3 (MIT)",
+          "url": "https://raw.githubusercontent.com/mandude/elden-ring-weapon-calculator/master/public/regulation-reforged-v2.3.5.3.js",
+          "siteType": "data",
+          "verifiedVia": "curl HTTP 200 2026-11-02"
+        }
+      ],
+      "mode": "reforged"
+    },
+    {
+      "id": "err-strength-colossal-heavy",
+      "name": "Heavy Colossal Poise Breaker (Cragblade)",
+      "archetype": "Pure Strength",
+      "fortune": {
+        "major": "Fortune of the Bold",
+        "majorTier": "Basic",
+        "source": "https://err.fandom.com/wiki/Fortune_of_the_Bold",
+        "sourceVerifiedVia": "Fandom API query 2026-11-02: page exists"
+      },
+      "tier": "B",
+      "tierLabel": "community-derived",
+      "tierReason": "Community-derived and caveated. In a Jan 2026 Reddit thread, one player says bosses have far more poise in ERR. Another reports a 99 STR Greatsword with Cragblade and the poise-break tear breaking Morgott's stance in about 3 charged hits, while a Heavy Zweihänder didn't after 6. Strength works, but plan around poise. The Bold fortune is a choice of mine: the wiki describes it as the low-penalty general melee pick.",
+      "weapons": [
+        "Greatsword (STR A- / DEX D; req STR31 DEX12; two-handed light attacks now Fume Ultra Greatsword-style)",
+        "Ambassador's Greatsword (new; STR A; req STR30 DEX15)",
+        "Giant-Crusher (STR S; req STR60)"
+      ],
+      "firearm": "Ash of War: Cragblade. Physick: the poise-break-boosting tear the commenter mentions (not named in the thread).",
+      "stats": {
+        "spread": {
+          "VIG": 59,
+          "MND": 15,
+          "END": 34,
+          "STR": 80,
+          "DEX": 15,
+          "INT": 9,
+          "FTH": 9,
+          "ARC": 8
+        },
+        "label": "synthesized (requirements; STR high per the Reddit report of 99 STR)",
+        "altSpreads": [
+          "Commenter's variant: 99 STR"
+        ],
+        "level": 150
+      },
+      "ngNotes": "Two-handing in ERR gives +8% damage instead of 1.5x STR (wiki). The 1.5x still counts toward requirements.",
+      "playstyle": "Cragblade, then two-handed charged heavies to break stance, then a critical hit. Stagger normal enemies freely.",
+      "bestFor": [
+        "Classic STR players"
+      ],
+      "pros": [
+        "Staggers most normal enemies",
+        "Simple"
+      ],
+      "cons": [
+        "Boss poise is much higher than vanilla",
+        "Slow"
+      ],
+      "runesGear": [
+        "Two-Handed Sword Talisman",
+        "Godfrey Icon",
+        "Bull-Goat's Talisman"
+      ],
+      "sources": [
+        {
+          "title": "Reddit r/EldenRingMods – Don't play strength in Reforged (boss poise discussion)",
+          "url": "https://www.reddit.com/r/EldenRingMods/comments/1pxv01q/",
+          "siteType": "forum",
+          "verifiedVia": "WebSearch result snippet 2026-11-02 (comment text read via search index; reddit.com blocks direct fetch from the box)"
+        },
+        {
+          "title": "ERR wiki – Fortune of the Bold",
+          "url": "https://err.fandom.com/wiki/Fortune_of_the_Bold",
+          "siteType": "wiki",
+          "verifiedVia": "Fandom API query 2026-11-02: page exists"
+        },
+        {
+          "title": "ERR wiki – Weapons",
+          "url": "https://err.fandom.com/wiki/Weapons",
+          "siteType": "wiki",
+          "verifiedVia": "Fandom API query 2026-11-02: page exists"
+        },
+        {
+          "title": "mandude ELDEN RING Weapon Calculator data – Reforged v2.3.5.3 (MIT)",
+          "url": "https://raw.githubusercontent.com/mandude/elden-ring-weapon-calculator/master/public/regulation-reforged-v2.3.5.3.js",
+          "siteType": "data",
+          "verifiedVia": "curl HTTP 200 2026-11-02"
+        }
+      ],
+      "mode": "reforged"
+    },
+    {
+      "id": "err-fury-of-azash",
+      "name": "Fury of Azash Lion's Flame (new ERR weapon)",
+      "archetype": "Strength (fire)",
+      "fortune": {
+        "major": "Fortune of the Bold",
+        "majorTier": "Basic",
+        "source": "https://err.fandom.com/wiki/Fortune_of_the_Bold",
+        "sourceVerifiedVia": "Fandom API query 2026-11-02: page exists"
+      },
+      "tier": "B",
+      "tierLabel": "community-derived",
+      "tierReason": "Thin support: one Reddit commenter (Mar 2026) calls Fury of Azash their go-to for boss fights. The numbers come from the calculator data: its fire damage scales with Strength, so a pure STR build covers both damage types. The fortune is my pick.",
+      "weapons": [
+        "Fury of Azash (new; curved greatsword; STR B / DEX D; req STR27 DEX13; physical and fire both scale with STR; skill Lion's Flame)"
+      ],
+      "firearm": "Unique skill: Lion's Flame.",
+      "stats": {
+        "spread": {
+          "VIG": 60,
+          "MND": 20,
+          "END": 41,
+          "STR": 70,
+          "DEX": 13,
+          "INT": 9,
+          "FTH": 9,
+          "ARC": 7
+        },
+        "label": "synthesized (calculator requirements)",
+        "altSpreads": [],
+        "level": 150
+      },
+      "ngNotes": "Dropped by Azash, Pride of the Redmanes, in Redmane Castle (ERR wiki), a new boss.",
+      "playstyle": "Mid-range curved greatsword pressure, with Lion's Flame for burst against bosses.",
+      "bestFor": [
+        "STR players wanting elemental damage"
+      ],
+      "pros": [
+        "Fire and physical from one stat"
+      ],
+      "cons": [
+        "Fire-resistant enemies",
+        "Little community data"
+      ],
+      "runesGear": [
+        "Fire Scorpion Charm",
+        "Flamedrake Talisman (defense)"
+      ],
+      "sources": [
+        {
+          "title": "Reddit r/EldenRingMods – Strongest build? (Fury of Azash mention, Mar 2026)",
+          "url": "https://www.reddit.com/r/EldenRingMods/comments/1rti6ye/",
+          "siteType": "forum",
+          "verifiedVia": "WebSearch result snippet 2026-11-02 (comment text read via search index; reddit.com blocks direct fetch from the box)"
+        },
+        {
+          "title": "ERR wiki – Fury of Azash",
+          "url": "https://err.fandom.com/wiki/Fury_of_Azash",
+          "siteType": "wiki",
+          "verifiedVia": "Fandom API query 2026-11-02: page exists"
+        },
+        {
+          "title": "mandude ELDEN RING Weapon Calculator data – Reforged v2.3.5.3 (MIT)",
+          "url": "https://raw.githubusercontent.com/mandude/elden-ring-weapon-calculator/master/public/regulation-reforged-v2.3.5.3.js",
+          "siteType": "data",
+          "verifiedVia": "curl HTTP 200 2026-11-02"
+        }
+      ],
+      "mode": "reforged"
+    },
+    {
+      "id": "err-blasphemous-int",
+      "name": "Blasphemous Blade Str/Int (rewrite of the vanilla Str/Faith build)",
+      "archetype": "Strength/Intelligence",
+      "fortune": {
+        "major": "Fortune of the Wise",
+        "majorTier": "Basic",
+        "source": "https://err.fandom.com/wiki/Fortune_of_the_Wise",
+        "sourceVerifiedVia": "Fandom API query 2026-11-02: page exists"
+      },
+      "tier": "B",
+      "tierLabel": "community-derived",
+      "tierReason": "Data-derived rewrite, with no ERR community source found. The vanilla S-tier Str/Faith build breaks in ERR: the calculator data and Vanilla Weapons Changes page show its fire now scales with INT (req STR19 DEX15 INT22, INT B). The 2.3.5.3 data doesn't confirm whether Taker's Flames still heals on hit; ERR lists a heal on kill (2% + 20).",
+      "weapons": [
+        "Blasphemous Blade (STR D / DEX D / INT B; Magma and Occult affinity effects added)"
+      ],
+      "firearm": "Skill: Taker's Flames (ERR wording). Sorceries for support, e.g. Terra Magica.",
+      "stats": {
+        "spread": {
+          "VIG": 55,
+          "MND": 25,
+          "END": 30,
+          "STR": 30,
+          "DEX": 15,
+          "INT": 60,
+          "FTH": 9,
+          "ARC": 5
+        },
+        "label": "synthesized (calculator requirements)",
+        "altSpreads": [],
+        "level": 150
+      },
+      "ngNotes": "Fire damage is INT-driven, so the stat priority moves from Faith to Intelligence.",
+      "playstyle": "Two-hand (+8% in ERR) and use Taker's Flames at range.",
+      "bestFor": [
+        "Players porting the vanilla build"
+      ],
+      "pros": [
+        "Familiar weapon"
+      ],
+      "cons": [
+        "Unknown how strong it is in ERR",
+        "No community confirmation"
+      ],
+      "runesGear": [
+        "Fire Scorpion Charm",
+        "Shard of Alexander"
+      ],
+      "sources": [
+        {
+          "title": "ERR wiki – Vanilla Weapons Changes",
+          "url": "https://err.fandom.com/wiki/Vanilla_Weapons_Changes",
+          "siteType": "wiki",
+          "verifiedVia": "Fandom API query 2026-11-02: page exists"
+        },
+        {
+          "title": "mandude ELDEN RING Weapon Calculator data – Reforged v2.3.5.3 (MIT)",
+          "url": "https://raw.githubusercontent.com/mandude/elden-ring-weapon-calculator/master/public/regulation-reforged-v2.3.5.3.js",
+          "siteType": "data",
+          "verifiedVia": "curl HTTP 200 2026-11-02"
+        }
+      ],
+      "mode": "reforged"
+    },
+    {
+      "id": "err-cleric-support",
+      "name": "Golden Halberd Cleric (Fortune of the Cleric)",
+      "archetype": "Strength/Faith support",
+      "fortune": {
+        "major": "Fortune of the Cleric",
+        "majorTier": "Common",
+        "source": "https://err.fandom.com/wiki/Fortune_of_the_Cleric",
+        "sourceVerifiedVia": "Fandom API query 2026-11-02: page exists"
+      },
+      "tier": "B",
+      "tierLabel": "community-derived",
+      "tierReason": "Derived from the wiki advice: very strong in co-op (allies share support-spell buffs), good for expensive incantations, and good with spirit ashes. Weapon damage is -5%, offset by buffs. The Golden Halberd fits because ERR gives it Prayerful Strike by default and Golden Vow-style buffs on skill hits.",
+      "weapons": [
+        "Golden Halberd (STR C+ / FTH C+; req STR28 DEX14 FTH16; default skill Prayerful Strike; x1.05 Erdtree incantations)",
+        "Finger Seal (FTH S; req FTH10)",
+        "Erdtree Seal (FTH S; req FTH45; x1.1 Erdtree incantations)"
+      ],
+      "firearm": "Healing and support incantations (Heal, Blessing's Boon, Golden Vow). Spirit Ashes.",
+      "stats": {
+        "spread": {
+          "VIG": 50,
+          "MND": 40,
+          "END": 20,
+          "STR": 28,
+          "DEX": 14,
+          "INT": 9,
+          "FTH": 60,
+          "ARC": 8
+        },
+        "label": "synthesized (requirements)",
+        "altSpreads": [],
+        "level": 150
+      },
+      "ngNotes": "Cleric: +10% max HP, +2 memory slots, -10% max stamina.",
+      "playstyle": "Buff, heal allies or your spirit ash, then poke with Prayerful Strike.",
+      "bestFor": [
+        "Co-op (Seamless)",
+        "Support players"
+      ],
+      "pros": [
+        "Cheap incantations",
+        "Sturdy"
+      ],
+      "cons": [
+        "-5% weapon damage",
+        "Sorceries and skills cost +10% FP"
+      ],
+      "runesGear": [
+        "Radagon Icon",
+        "Faithful's Canvas Talisman",
+        "Armor: Tree Sentinel Set (ERR passive: -1.5% FP cost of area healing and support incantations per piece)"
+      ],
+      "sources": [
+        {
+          "title": "ERR wiki – Fortune of the Cleric",
+          "url": "https://err.fandom.com/wiki/Fortune_of_the_Cleric",
+          "siteType": "wiki",
+          "verifiedVia": "Fandom API query 2026-11-02: page exists"
+        },
+        {
+          "title": "mandude ELDEN RING Weapon Calculator data – Reforged v2.3.5.3 (MIT)",
+          "url": "https://raw.githubusercontent.com/mandude/elden-ring-weapon-calculator/master/public/regulation-reforged-v2.3.5.3.js",
+          "siteType": "data",
+          "verifiedVia": "curl HTTP 200 2026-11-02"
+        }
+      ],
+      "mode": "reforged"
+    },
+    {
+      "id": "err-adherent-dragon-cult",
+      "name": "Dragon Cult Lightning Zealot (Fortune of the Adherent)",
+      "archetype": "Dexterity/Faith",
+      "fortune": {
+        "major": "Fortune of the Adherent",
+        "majorTier": "Common",
+        "source": "https://err.fandom.com/wiki/Fortune_of_the_Adherent",
+        "sourceVerifiedVia": "Fandom API query 2026-11-02: page exists"
+      },
+      "tier": "B",
+      "tierLabel": "community-derived",
+      "tierReason": "Data-derived. The Adherent rewards sticking to one incantation school, so I paired it with ERR's Dragon Cult boosts in the calculator data: Gravel Stone Seal x1.1, Bolt of Gransax and Dragon King's Cragblade x1.05, both now FTH-driven lightning. No community post was found for this exact setup.",
+      "weapons": [
+        "Gravel Stone Seal (DEX B- / FTH B-; req DEX18 FTH20; x1.1 Dragon Cult incantations)",
+        "Bolt of Gransax (DEX C / FTH B; req STR15 DEX25 FTH20)",
+        "Dragon King's Cragblade (DEX C+ / FTH C+; req STR17 DEX28 FTH16)"
+      ],
+      "firearm": "Dragon Cult incantations (e.g. Lightning Spear, Frozen Lightning Spear). Use a cheap same-school spell to build Corrupting Zeal before big casts (wiki tip).",
+      "stats": {
+        "spread": {
+          "VIG": 50,
+          "MND": 35,
+          "END": 20,
+          "STR": 17,
+          "DEX": 40,
+          "INT": 9,
+          "FTH": 50,
+          "ARC": 8
+        },
+        "label": "synthesized (requirements; Adherent +2 Faith)",
+        "altSpreads": [],
+        "level": 150
+      },
+      "ngNotes": "Corrupting Zeal's self-damage is Holy, so Holy negation helps.",
+      "playstyle": "Ramp Corrupting Zeal with cheap Dragon Cult spells, then cast big ones. Melee with the DEX/FTH lightning weapons.",
+      "bestFor": [
+        "Incantation specialists"
+      ],
+      "pros": [
+        "+1 memory slot, +2 Faith",
+        "Stacking school buff"
+      ],
+      "cons": [
+        "Takes x1.05 elemental damage",
+        "-8 poise"
+      ],
+      "runesGear": [
+        "Lightning Scorpion Charm",
+        "Boltdrake Talisman (defense)",
+        "Armor: Leyndell Knight Set (+2% lightning weapon attack power per piece)"
+      ],
+      "sources": [
+        {
+          "title": "ERR wiki – Fortune of the Adherent",
+          "url": "https://err.fandom.com/wiki/Fortune_of_the_Adherent",
+          "siteType": "wiki",
+          "verifiedVia": "Fandom API query 2026-11-02: page exists"
+        },
+        {
+          "title": "mandude ELDEN RING Weapon Calculator data – Reforged v2.3.5.3 (MIT)",
+          "url": "https://raw.githubusercontent.com/mandude/elden-ring-weapon-calculator/master/public/regulation-reforged-v2.3.5.3.js",
+          "siteType": "data",
+          "verifiedVia": "curl HTTP 200 2026-11-02"
+        }
+      ],
+      "mode": "reforged"
+    },
+    {
+      "id": "err-heretic-status",
+      "name": "Ripple Blade Status Heretic (Fortune of the Heretic)",
+      "archetype": "Arcane multi-status",
+      "fortune": {
+        "major": "Fortune of the Heretic",
+        "majorTier": "Common",
+        "source": "https://err.fandom.com/wiki/Fortune_of_the_Heretic",
+        "sourceVerifiedVia": "Fandom API query 2026-11-02: page exists"
+      },
+      "tier": "B",
+      "tierLabel": "community-derived",
+      "tierReason": "Derived from the wiki advice (FP cuts and regen effects grow with each status applied) and the calculator data. Ripple Blade (ARC S+) gains +12% physical attack power for 60s when a status triggers nearby, and Coilheart adds poison. ERR Arcane raises all status buildup (wiki, Character Changes). No community build was found.",
+      "weapons": [
+        "Ripple Blade (ARC S+; req STR11 DEX11 ARC22; can now take Ashes of War)",
+        "Coilheart (new; poison 71; req STR23 DEX22 ARC30)",
+        "Bloody Helice (bleed) as a swap"
+      ],
+      "firearm": "Status Ashes of War, plus Seppuku or Raw Meat Dumpling to self-apply against status-immune bosses (wiki).",
+      "stats": {
+        "spread": {
+          "VIG": 50,
+          "MND": 20,
+          "END": 25,
+          "STR": 23,
+          "DEX": 22,
+          "INT": 9,
+          "FTH": 9,
+          "ARC": 71
+        },
+        "label": "synthesized (requirements; Arcane main)",
+        "altSpreads": [],
+        "level": 150
+      },
+      "ngNotes": "Heretic: x1.05 status buildup, +1 memory slot, -3 Vigor.",
+      "playstyle": "Apply two or more statuses to trigger the regen and FP-cost effects, then spend FP on skills.",
+      "bestFor": [
+        "Status stackers"
+      ],
+      "pros": [
+        "Strong regen with 2 or more statuses"
+      ],
+      "cons": [
+        "x0.8 innate status resistance",
+        "-3 Vigor"
+      ],
+      "runesGear": [
+        "Lord of Blood's Exultation",
+        "Kindred of Rot's Exultation",
+        "Mausoleum Knight Set (-2.4% status buildup received per piece)"
+      ],
+      "sources": [
+        {
+          "title": "ERR wiki – Fortune of the Heretic",
+          "url": "https://err.fandom.com/wiki/Fortune_of_the_Heretic",
+          "siteType": "wiki",
+          "verifiedVia": "Fandom API query 2026-11-02: page exists"
+        },
+        {
+          "title": "ERR wiki – Character Changes",
+          "url": "https://err.fandom.com/wiki/Character_Changes",
+          "siteType": "wiki",
+          "verifiedVia": "Fandom API query 2026-11-02: page exists"
+        },
+        {
+          "title": "mandude ELDEN RING Weapon Calculator data – Reforged v2.3.5.3 (MIT)",
+          "url": "https://raw.githubusercontent.com/mandude/elden-ring-weapon-calculator/master/public/regulation-reforged-v2.3.5.3.js",
+          "siteType": "data",
+          "verifiedVia": "curl HTTP 200 2026-11-02"
+        }
+      ],
+      "mode": "reforged"
+    },
+    {
+      "id": "err-assassin-nights-edge",
+      "name": "Night's Edge Crit Assassin (Fortune of the Assassin)",
+      "archetype": "Pure Dexterity",
+      "fortune": {
+        "major": "Fortune of the Assassin",
+        "majorTier": "Common",
+        "source": "https://err.fandom.com/wiki/Fortune_of_the_Assassin",
+        "sourceVerifiedVia": "Fandom API query 2026-11-02: page exists"
+      },
+      "tier": "B",
+      "tierLabel": "community-derived",
+      "tierReason": "Derived from the wiki advice (high-crit weapons, crit talismans and Dexterity work well with Exploit Weakness; crits restore FP) and ERR data. Night's Edge is a new DEX S dagger. Per its wiki page, every hit restores 0.4% + 8 stamina to you and drains 2% + 10 stamina from the target. ERR Dexterity also raises crit damage by up to 50% (Character Changes).",
+      "weapons": [
+        "Night's Edge (new; DEX S; req STR9 DEX24; drops from Nox Nightmaiden)",
+        "Scorpion's Stinger or any light weapon (Assassin adds flat poise damage to light weapons)"
+      ],
+      "firearm": "A mobility or fast Ash of War (the default skill isn't in the data I parsed). Throwing knives get +50% poise damage under this fortune.",
+      "stats": {
+        "spread": {
+          "VIG": 55,
+          "MND": 20,
+          "END": 40,
+          "STR": 9,
+          "DEX": 80,
+          "INT": 9,
+          "FTH": 9,
+          "ARC": 7
+        },
+        "label": "synthesized (requirements; DEX for crit)",
+        "altSpreads": [],
+        "level": 150
+      },
+      "ngNotes": "The crit value in the data is the regulation offset. The equipment file reports 100+offset, which is assumed.",
+      "playstyle": "Fast hits to break stance, a critical, FP back, repeat. Lower aggro lets spirit ashes or co-op partners tank.",
+      "bestFor": [
+        "Fast-weapon players"
+      ],
+      "pros": [
+        "+25 stamina regen",
+        "Frequent crits"
+      ],
+      "cons": [
+        "-9% max HP, -18% defense",
+        "+9% status buildup taken"
+      ],
+      "runesGear": [
+        "Dagger Talisman",
+        "Assassin's Crimson Dagger",
+        "Assassin's Cerulean Dagger",
+        "Armor: Black Knife Set"
+      ],
+      "sources": [
+        {
+          "title": "ERR wiki – Fortune of the Assassin",
+          "url": "https://err.fandom.com/wiki/Fortune_of_the_Assassin",
+          "siteType": "wiki",
+          "verifiedVia": "Fandom API query 2026-11-02: page exists"
+        },
+        {
+          "title": "ERR wiki – Night's Edge",
+          "url": "https://err.fandom.com/wiki/Night%27s_Edge",
+          "siteType": "wiki",
+          "verifiedVia": "Fandom API query 2026-11-02: page exists"
+        },
+        {
+          "title": "ERR wiki – Character Changes",
+          "url": "https://err.fandom.com/wiki/Character_Changes",
+          "siteType": "wiki",
+          "verifiedVia": "Fandom API query 2026-11-02: page exists"
+        },
+        {
+          "title": "mandude ELDEN RING Weapon Calculator data – Reforged v2.3.5.3 (MIT)",
+          "url": "https://raw.githubusercontent.com/mandude/elden-ring-weapon-calculator/master/public/regulation-reforged-v2.3.5.3.js",
+          "siteType": "data",
+          "verifiedVia": "curl HTTP 200 2026-11-02"
+        }
+      ],
+      "mode": "reforged"
+    },
+    {
+      "id": "err-beasts-red-bear",
+      "name": "Red Bear Beasthood Brawler (Fortune of the Beasts)",
+      "archetype": "Strength/Faith",
+      "fortune": {
+        "major": "Fortune of the Beasts",
+        "majorTier": "Legendary",
+        "source": "https://err.fandom.com/wiki/Fortune_of_the_Beasts",
+        "sourceVerifiedVia": "Fandom API query 2026-11-02: page exists"
+      },
+      "tier": "B",
+      "tierLabel": "community-derived",
+      "tierReason": "Derived from the wiki advice: very effective with Bestial affinity weapons, open with Bestial Constitution, keep Vigor high. ERR gives Red Bear's Claw the Bestial affinity effect, and Clawmark Seal grants x1.1 to Bestial incantations (calculator data). No community build was found.",
+      "weapons": [
+        "Red Bear's Claw (STR A / DEX D; req STR22 DEX11; Bestial affinity effect added)",
+        "Clawmark Seal (STR B- / FTH B-; req STR18 FTH20; x1.1 Bestial incantations)"
+      ],
+      "firearm": "Bestial Constitution at the start of a fight. Bestial Sling, Beast Claw incantations.",
+      "stats": {
+        "spread": {
+          "VIG": 55,
+          "MND": 25,
+          "END": 30,
+          "STR": 50,
+          "DEX": 12,
+          "INT": 9,
+          "FTH": 40,
+          "ARC": 8
+        },
+        "label": "synthesized (requirements)",
+        "altSpreads": [],
+        "level": 150
+      },
+      "ngNotes": "Beasts is Legendary. You take more damage at high Beasthood, so save the top tiers for fights you're sure of.",
+      "playstyle": "Stay aggressive to build Beasthood. Switch to spells when it wears off.",
+      "bestFor": [
+        "Aggressive melee players"
+      ],
+      "pros": [
+        "x1.1 movement speed",
+        "Big physical and elemental scaling"
+      ],
+      "cons": [
+        "-20 poise",
+        "x1.5 FP cost of consumables"
+      ],
+      "runesGear": [
+        "Claw Talisman",
+        "Roar Medallion",
+        "Beast Champion Set (-1.75% skill FP cost per piece)"
+      ],
+      "sources": [
+        {
+          "title": "ERR wiki – Fortune of the Beasts",
+          "url": "https://err.fandom.com/wiki/Fortune_of_the_Beasts",
+          "siteType": "wiki",
+          "verifiedVia": "Fandom API query 2026-11-02: page exists"
+        },
+        {
+          "title": "mandude ELDEN RING Weapon Calculator data – Reforged v2.3.5.3 (MIT)",
+          "url": "https://raw.githubusercontent.com/mandude/elden-ring-weapon-calculator/master/public/regulation-reforged-v2.3.5.3.js",
+          "siteType": "data",
+          "verifiedVia": "curl HTTP 200 2026-11-02"
+        }
+      ],
+      "mode": "reforged"
+    },
+    {
+      "id": "err-godslayers-black-flame",
+      "name": "One-Handed Black Flame Godslayer (Fortune of the Godslayers)",
+      "archetype": "Dexterity/Faith",
+      "fortune": {
+        "major": "Fortune of the Godslayers",
+        "majorTier": "Rare",
+        "source": "https://err.fandom.com/wiki/Fortune_of_the_Godslayers",
+        "sourceVerifiedVia": "Fandom API query 2026-11-02: page exists"
+      },
+      "tier": "B",
+      "tierLabel": "community-derived",
+      "tierReason": "Derived from the fortune design alone. The wiki page says it is built around Black Flame and one-handed weapons (two-handed x0.93, powerstance x0.87), and its Fortune Advice section is empty. Weapon choices come from the calculator data.",
+      "weapons": [
+        "Godslayer's Seal (FTH S; req FTH27; Occult affinity effect added)",
+        "Black Knife (DEX B / FTH C; req STR8 DEX12 FTH20; crits apply Destined Death)"
+      ],
+      "firearm": "Black Flame incantations: Black Flame, Black Flame Blade, Scouring Black Flame.",
+      "stats": {
+        "spread": {
+          "VIG": 50,
+          "MND": 35,
+          "END": 25,
+          "STR": 9,
+          "DEX": 32,
+          "INT": 9,
+          "FTH": 60,
+          "ARC": 9
+        },
+        "label": "synthesized (requirements; Godslayers +2 DEX)",
+        "altSpreads": [],
+        "level": 150
+      },
+      "ngNotes": "Godslayers drops from the Godskin Noble at the Divine Tower of Liurnia (wiki).",
+      "playstyle": "Apply Black Flame early. With Black Flame present you get +75 cast speed, x0.75 stamina cost and x0.867 damage taken. Fight one-handed.",
+      "bestFor": [
+        "Faith casters who melee"
+      ],
+      "pros": [
+        "Strong buffs while Black Flame is up"
+      ],
+      "cons": [
+        "Flasks heal 25% less",
+        "Weak without Black Flame up"
+      ],
+      "runesGear": [
+        "Armor: Blackflame Monk Set (+2% Godslayer incantations per piece)",
+        "Godskin Swaddling Cloth"
+      ],
+      "sources": [
+        {
+          "title": "ERR wiki – Fortune of the Godslayers",
+          "url": "https://err.fandom.com/wiki/Fortune_of_the_Godslayers",
+          "siteType": "wiki",
+          "verifiedVia": "Fandom API query 2026-11-02: page exists"
+        },
+        {
+          "title": "mandude ELDEN RING Weapon Calculator data – Reforged v2.3.5.3 (MIT)",
+          "url": "https://raw.githubusercontent.com/mandude/elden-ring-weapon-calculator/master/public/regulation-reforged-v2.3.5.3.js",
+          "siteType": "data",
+          "verifiedVia": "curl HTTP 200 2026-11-02"
+        }
+      ],
+      "mode": "reforged"
+    }
+  ],
+  "guides": [
+    {
+      "title": "ELDEN RING Reforged – Nexus Mods page (official, version and changelog)",
+      "url": "https://www.nexusmods.com/eldenring/mods/541",
+      "source": "Nexus Mods",
+      "siteType": "official",
+      "verifiedVia": "WebFetch content read 2026-11-02 (page shows Version 2.3.8.1, last updated 30 Oct 2026)"
+    },
+    {
+      "title": "ERR community wiki (Fandom)",
+      "url": "https://err.fandom.com/wiki/ELDEN_RING_Reforged_Wiki",
+      "source": "ERR wiki",
+      "siteType": "wiki",
+      "verifiedVia": "Fandom API query 2026-11-02: page exists"
+    },
+    {
+      "title": "ERR wiki – Fortunes",
+      "url": "https://err.fandom.com/wiki/Fortunes",
+      "source": "ERR wiki",
+      "siteType": "wiki",
+      "verifiedVia": "Fandom API query 2026-11-02: page exists"
+    },
+    {
+      "title": "ERR wiki – Vanilla Weapons Changes",
+      "url": "https://err.fandom.com/wiki/Vanilla_Weapons_Changes",
+      "source": "ERR wiki",
+      "siteType": "wiki",
+      "verifiedVia": "Fandom API query 2026-11-02: page exists"
+    },
+    {
+      "title": "mandude Elden Ring weapon calculator (has a Reforged mode)",
+      "url": "https://mandude.github.io/elden-ring-weapon-calculator/",
+      "source": "mandude",
+      "siteType": "tool",
+      "verifiedVia": "curl HTTP 200 2026-11-02"
+    },
+    {
+      "title": "mandude calculator source (Reforged regulation data, MIT)",
+      "url": "https://github.com/mandude/elden-ring-weapon-calculator",
+      "source": "GitHub",
+      "siteType": "tool",
+      "verifiedVia": "curl HTTP 200 2026-11-02"
+    },
+    {
+      "title": "tclark Elden Ring weapon calculator – Reforged",
+      "url": "https://eldenring.tclark.io/reforged",
+      "source": "tclark",
+      "siteType": "tool",
+      "verifiedVia": "curl HTTP 200 2026-11-02"
+    },
+    {
+      "title": "r/EldenRingMods – first-time Reforged tips thread",
+      "url": "https://www.reddit.com/r/EldenRingMods/comments/1t5vskd/",
+      "source": "Reddit",
+      "siteType": "forum",
+      "verifiedVia": "WebSearch result snippet 2026-11-02 (comment text read via search index; reddit.com blocks direct fetch from the box)"
+    }
+  ]
+}

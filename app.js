@@ -7,7 +7,10 @@ const SITE_LABEL = {
   reddit: "Reddit",
   forum: "Forum",
   guide: "Guide",
-  video: "Video"
+  video: "Video",
+  data: "Data",
+  tool: "Tool",
+  official: "Official"
 };
 const FIELD_DEFAULTS = {
   weapons: "Weapons",
@@ -187,7 +190,7 @@ function reforgedCreditNode() {
 function variantBuildsNote() {
   const variant = state.variant;
   if (!variant || variant.default || !variant.buildsNote) return null;
-  return el("p", { class: "variant-banner", text: variant.buildsNote });
+  return el("div", { class: "variant-banner" }, [el("p", { text: variant.buildsNote })]);
 }
 
 function variantMapNote() {
@@ -341,7 +344,8 @@ function bestForMatch(build, spec) {
 function queryMatch(build, query) {
   const q = query.trim().toLowerCase();
   if (!q) return true;
-  const hay = [build.name, build.archetype, build.playstyle, build.firearm, ...(build.weapons || []), ...(build.bestFor || [])]
+  const fortune = build.fortune || {};
+  const hay = [build.name, build.archetype, build.playstyle, build.firearm, fortune.major, fortune.minor, ...(build.weapons || []), ...(build.bestFor || [])]
     .join("\n")
     .toLowerCase();
   return hay.includes(q);
@@ -416,7 +420,7 @@ function parseHash() {
     route.section = head;
     route.view = head;
     if (rest[1] === "about") route.focus = { kind: "section-about", id: head };
-    else if (rest[1]) route.focus = { kind: "system-section", id: rest.slice(1).join("/") };
+    else if (rest[1]) route.focus = { kind: "system-section", id: rest[1], item: rest[2] || "" };
   }
   return route;
 }
@@ -452,7 +456,10 @@ function hashFor(gameId, view, id) {
   if (view === "talismans") return id ? `${root}/equipment/talismans/${encodeURIComponent(id)}` : `${root}/equipment/talismans`;
   if (view === "equipment") return `${root}/equipment/weapons`;
   const extra = extraSectionById(gameId, view);
-  if (extra) return id ? `${root}/${extra.id}/${encodeURIComponent(id)}` : `${root}/${extra.id}`;
+  if (extra) {
+    if (!id) return `${root}/${extra.id}`;
+    return `${root}/${extra.id}/${String(id).split("/").map((part) => encodeURIComponent(part)).join("/")}`;
+  }
   return root;
 }
 
@@ -475,7 +482,10 @@ function scopedHash(gameId, route) {
     if (route.focus.kind === "weapon") return hashFor(gameId, "weapons", route.focus.id);
     if (route.focus.kind === "armor") return hashFor(gameId, "armor", route.focus.id);
     if (route.focus.kind === "talisman") return hashFor(gameId, "talismans", route.focus.id);
-    if (route.focus.kind === "system-section") return hashFor(gameId, route.section, route.focus.id);
+    if (route.focus.kind === "system-section") {
+      const tail = route.focus.item ? `${route.focus.id}/${route.focus.item}` : route.focus.id;
+      return hashFor(gameId, route.section, tail);
+    }
     if (route.focus.kind === "section-about") {
       const view = route.focus.id === "equipment" ? "equip-about" : route.focus.id === "map" ? "map-about" : "craft-about";
       return hashFor(gameId, view);
@@ -684,15 +694,49 @@ function renderVariantSwitch() {
 
 function renderCard(build) {
   const extra = build.weapons.length > 1 ? build.weapons.length - 1 : 0;
-  return el("button", { type: "button", class: "card", "data-tier": build.tier, "data-id": build.id }, [
-    el("span", { class: "card-kicker" }, [build.archetype, platformBadge(build)]),
+  const body = [
+    el("span", { class: "card-kicker" }, [
+      build.archetype,
+      platformBadge(build),
+      build.tierLabel ? el("span", { class: "platform", text: build.tierLabel }) : null
+    ]),
     el("span", { class: "card-name", text: build.name }),
     el("span", { class: "card-weapon" }, [
       build.weapons[0] || "",
       extra ? el("em", { text: `+${extra} more` }) : null
     ]),
     el("span", { class: "card-play", text: build.playstyle })
+  ];
+  if (!build.fortune) {
+    return el("button", { type: "button", class: "card", "data-tier": build.tier, "data-id": build.id }, body);
+  }
+  return el("article", { class: "card", "data-tier": build.tier }, [
+    el("button", { type: "button", class: "card-hit", "data-id": build.id }, body),
+    fortuneLine(build.fortune)
   ]);
+}
+
+function slugify(value) {
+  return String(value || "").toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "");
+}
+
+function fortuneAnchor(name) {
+  const link = document.createElement("a");
+  link.className = "fortune-link";
+  link.href = `#${hashFor(state.game.id, "systems", `fortunes/${slugify(name)}`)}`;
+  link.textContent = name;
+  return link;
+}
+
+function fortuneLine(fortune) {
+  const line = el("p", { class: "card-fortune" });
+  line.append(fortuneAnchor(fortune.major));
+  if (fortune.majorTier) line.append(el("span", { class: "platform", text: fortune.majorTier }));
+  if (fortune.minor) {
+    line.append(document.createTextNode(" · "));
+    line.append(fortuneAnchor(fortune.minor));
+  }
+  return line;
 }
 
 function renderList() {
@@ -735,7 +779,7 @@ function renderList() {
       el("small", { class: "tier-count", "aria-hidden": "true", text: String(items.length) })
     );
     const cards = el("div", { class: "tier-cards" }, items.map(renderCard));
-    cards.querySelectorAll(".card").forEach((card) => {
+    cards.querySelectorAll("[data-id]").forEach((card) => {
       card.addEventListener("click", () => setHash(hashFor(gameId, "tiers", card.dataset.id)));
     });
     host.append(el("section", { class: "tier", "data-tier": tier }, [heading, cards]));
@@ -815,6 +859,9 @@ function sourceList(sources) {
         ])
       );
       if (source.note) link.append(el("span", { class: "source-note", text: source.note }));
+      if (state.data && state.data.meta && state.data.meta.mode === "reforged" && source.verifiedVia) {
+        link.append(el("span", { class: "source-note", text: source.verifiedVia }));
+      }
       group.append(link);
     }
     wrap.append(group);
@@ -822,25 +869,106 @@ function sourceList(sources) {
   return wrap;
 }
 
-function renderBuild(build) {
+function equipmentCatalog(data) {
+  if (!data) return [];
+  const rows = [];
+  (data.weapons || []).forEach((item) => {
+    if (item && item.name && item.id) rows.push({ kind: "weapons", name: item.name, id: item.id });
+  });
+  (data.talismans || []).forEach((item) => {
+    if (item && item.name && item.id) rows.push({ kind: "talismans", name: item.name, id: item.id });
+  });
+  (data.armorSets || []).forEach((item) => {
+    if (item && item.name && item.id) rows.push({ kind: "armor", name: item.name, id: item.id });
+  });
+  rows.sort((a, b) => b.name.length - a.name.length);
+  return rows;
+}
+
+function escapeReg(value) {
+  return String(value).replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+}
+
+function linkedGear(text, catalog) {
+  const value = String(text || "");
+  if (!catalog || !catalog.length || !value) return el("span", { text: value });
+  const lower = value.toLowerCase();
+  const hits = [];
+  catalog.forEach((item) => {
+    const needle = item.name.toLowerCase();
+    if (needle.length < 3) return;
+    const pattern = new RegExp(`(?<![a-z0-9])${escapeReg(needle)}(?![a-z0-9])`, "g");
+    let match;
+    while ((match = pattern.exec(lower))) {
+      hits.push({ start: match.index, end: match.index + needle.length, item });
+    }
+  });
+  hits.sort((a, b) => a.start - b.start || b.end - a.end);
+  const kept = [];
+  let cursor = 0;
+  hits.forEach((hit) => {
+    if (hit.start < cursor) return;
+    kept.push(hit);
+    cursor = hit.end;
+  });
+  if (!kept.length) return el("span", { text: value });
+  const node = el("span");
+  let at = 0;
+  kept.forEach((hit) => {
+    if (hit.start > at) node.append(document.createTextNode(value.slice(at, hit.start)));
+    const link = document.createElement("a");
+    link.className = "equip-link";
+    link.href = `#${hashFor(state.game.id, hit.item.kind, hit.item.id)}`;
+    link.textContent = value.slice(hit.start, hit.end);
+    node.append(link);
+    at = hit.end;
+  });
+  if (at < value.length) node.append(document.createTextNode(value.slice(at)));
+  return node;
+}
+
+function fortuneBlock(fortune) {
+  if (!fortune) return null;
+  const source = fortune.source ? externalLink(fortune.source) : null;
+  if (source) source.textContent = fortune.major;
+  return el("section", { class: "block" }, [
+    el("h3", { text: "Fortune" }),
+    el("p", { class: "card-fortune" }, [
+      fortuneAnchor(fortune.major),
+      fortune.majorTier ? el("span", { class: "platform", text: fortune.majorTier }) : null
+    ]),
+    fortune.minor ? el("p", { class: "card-fortune" }, [
+      document.createTextNode("Minor "),
+      fortuneAnchor(fortune.minor)
+    ]) : null,
+    fortune.minorNote ? el("p", { text: fortune.minorNote }) : null,
+    source ? el("p", {}, [document.createTextNode("Source "), source]) : null,
+    fortune.sourceVerifiedVia ? el("p", { class: "muted", text: fortune.sourceVerifiedVia }) : null
+  ]);
+}
+
+function renderBuild(build, catalog) {
   const meta = state.data.meta;
   const alts = build.stats.altSpreads || [];
   const order = statOrder(meta, state.game);
   const prefix = state.game.levelPrefix;
   const level = prefix ? `${prefix} ${build.stats.level}` : `Level ${build.stats.level}`;
+  const gear = catalog && build.mode === "reforged" ? catalog : null;
   const root = el("article", {}, [
     el("p", { class: "tier-pill", "data-tier": build.tier, text: `Tier ${build.tier}` }),
+    build.tierLabel ? el("p", { class: "muted", text: build.tierLabel }) : null,
     el("p", { class: "sheet-kicker" }, [build.archetype, platformBadge(build)]),
     el("h2", { id: "sheet-title", text: build.name }),
     el("p", { class: "play-full", text: build.playstyle }),
     el("hr", { class: "rule" }),
+    fortuneBlock(build.fortune),
     el("section", { class: "block" }, [
       el("h3", { text: "Why this tier" }),
       el("p", { class: "reason", text: build.tierReason })
     ]),
     el("section", { class: "block" }, [
       el("h3", { text: fieldLabel(meta, "weapons") }),
-      el("ul", { class: "clean" }, build.weapons.map((weapon) => el("li", { text: weapon }))),
+      el("ul", { class: "clean" }, build.weapons.map((weapon) => el("li", {}, [linkedGear(weapon, gear)]))),
       el("h3", { text: fieldLabel(meta, "firearm") }),
       el("p", { text: build.firearm })
     ]),
@@ -857,7 +985,7 @@ function renderBuild(build) {
     ]),
     el("section", { class: "block" }, [
       el("h3", { text: fieldLabel(meta, "runesGear") }),
-      el("ul", { class: "clean" }, build.runesGear.map((item) => el("li", { text: item })))
+      el("ul", { class: "clean" }, build.runesGear.map((item) => el("li", {}, [linkedGear(item, gear)])))
     ]),
     el("div", { class: "split" }, [
       el("section", { class: "block" }, [
@@ -885,6 +1013,56 @@ function renderBuild(build) {
   ]);
   root.querySelector(".tier-pill").style.setProperty("--tier", `var(--${build.tier.toLowerCase()})`);
   return root;
+}
+
+function renderDisposition() {
+  const host = document.getElementById("vanilla-fate");
+  if (!host) return;
+  const rows = (state.data && state.data.meta && state.data.meta.vanillaDisposition) || [];
+  if (!Array.isArray(rows) || !rows.length) {
+    host.hidden = true;
+    host.replaceChildren();
+    return;
+  }
+  host.hidden = false;
+  const groups = [
+    ["rewritten", "Rewritten"],
+    ["dropped", "Dropped"],
+    ["not-ported", "Not ported"]
+  ];
+  const details = el("details", { class: "system-block", id: "vanilla-disposition" });
+  details.append(el("summary", { text: "What happened to my vanilla builds" }));
+  groups.forEach(([id, label]) => {
+    const items = rows.filter((row) => row && row.disposition === id);
+    if (!items.length) return;
+    details.append(el("h3", { class: "system-name", text: `${label} (${items.length})` }));
+    if (id === "not-ported") {
+      const reason = items[0] && items[0].reason;
+      if (reason) details.append(el("p", { class: "disposition-reason", text: reason }));
+    }
+    details.append(el("ul", { class: "clean" }, items.map((row) => {
+      const line = el("li");
+      line.append(document.createTextNode(row.vanillaName || row.vanillaId || "Build"));
+      if (row.errBuildId) {
+        const found = (state.data.builds || []).find((build) => build.id === row.errBuildId);
+        line.append(document.createTextNode(" → "));
+        if (found) {
+          const link = document.createElement("a");
+          link.className = "fortune-link";
+          link.href = `#${hashFor(state.game.id, "tiers", found.id)}`;
+          link.textContent = found.name;
+          line.append(link);
+        } else {
+          line.append(document.createTextNode(row.errBuildId));
+        }
+      }
+      if (id !== "not-ported" && row.reason) {
+        line.append(el("span", { class: "muted", text: ` — ${row.reason}` }));
+      }
+      return line;
+    })));
+  });
+  host.replaceChildren(details);
 }
 
 function renderAbout() {
@@ -940,12 +1118,18 @@ function showSheet(node) {
   }
 }
 
-async function loadGame(game) {
-  if (loaded.has(game.id)) return loaded.get(game.id);
-  const response = await fetch(`./${game.file}`);
+function buildsPath(game, variant) {
+  if (variant && variant.builds) return variant.builds;
+  return game.file;
+}
+
+async function loadGame(game, variant) {
+  const file = buildsPath(game, variant);
+  if (loaded.has(file)) return loaded.get(file);
+  const response = await fetch(`./${file}`);
   if (!response.ok) throw new Error(String(response.status));
   const data = await response.json();
-  loaded.set(game.id, data);
+  loaded.set(file, data);
   return data;
 }
 
@@ -964,18 +1148,17 @@ async function render() {
   if (!state.games.length) return;
   const route = parseHash();
   const game = gameById(route.gameId) || state.games[0];
+  state.game = game;
+  state.variant = resolveVariant(game, route);
   let data;
   try {
-    data = await loadGame(game);
+    data = await loadGame(game, state.variant);
   } catch (error) {
     if (token !== renderToken) return;
     document.getElementById("tier-list").replaceChildren(el("p", { class: "empty", text: "The build list could not be loaded." }));
     return;
   }
   if (token !== renderToken) return;
-
-  state.game = game;
-  state.variant = resolveVariant(game, route);
   if (game.variants && game.variants.length) {
     rememberVariant(game.id, state.variant && !state.variant.default ? state.variant.id : "");
   }
@@ -1021,7 +1204,17 @@ async function render() {
   renderSectionNav(route);
   const tierBanners = document.getElementById("tier-banners");
   const guideBanners = document.getElementById("guide-banners");
-  if (tierBanners) tierBanners.replaceChildren(...[variantBuildsNote(), variantBannerNode()].filter(Boolean));
+  if (tierBanners) {
+    const note = variantBuildsNote();
+    const banner = variantBannerNode();
+    if (note && banner) {
+      const sources = banner.querySelector(".variant-sources");
+      if (sources) note.append(sources);
+      tierBanners.replaceChildren(note);
+    } else {
+      tierBanners.replaceChildren(...[note, banner].filter(Boolean));
+    }
+  }
   if (guideBanners) guideBanners.replaceChildren(...[variantBannerNode()].filter(Boolean));
 
   if (route.section !== "map" && typeof SoulsSections !== "undefined") SoulsSections.closeEmbed();
@@ -1036,6 +1229,7 @@ async function render() {
     renderFilterChips();
     renderGuideChips();
     renderList();
+    renderDisposition();
     renderGuides();
   } else {
     const path = sectionFile(game, route.section);
@@ -1067,10 +1261,20 @@ async function render() {
     }
   }
 
+  let gearCatalog = null;
+  if (route.build && state.variant && state.variant.equipment) {
+    try {
+      gearCatalog = equipmentCatalog(await loadExtra(state.variant.equipment));
+    } catch (error) {
+      gearCatalog = null;
+    }
+    if (token !== renderToken) return;
+  }
+
   if (route.about) showSheet(renderAbout());
   else if (route.build) {
     const build = data.builds.find((item) => item.id === route.build);
-    if (build) showSheet(renderBuild(build));
+    if (build) showSheet(renderBuild(build, gearCatalog));
     else if (sheet.open) sheet.close();
   } else if (route.focus && state.extra && typeof SoulsSections !== "undefined") {
     const node = SoulsSections.sheet(route, state.extra);
