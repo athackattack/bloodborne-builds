@@ -1,0 +1,748 @@
+[
+  {
+    "id": "phalanx",
+    "name": "Phalanx",
+    "category": "1 – Boletarian Palace",
+    "required": "main-path",
+    "location": "1-1 Boletarian Palace",
+    "dlc": false,
+    "hp": 1150,
+    "hp_text": null,
+    "weak_to": [
+      "Fire"
+    ],
+    "resists": [
+      "Blunt"
+    ],
+    "immune": [
+      "Poison",
+      "Plague"
+    ],
+    "weak_source": "weak/resist from wiki infobox defense values + wiki strategy/notes text",
+    "strengths": [
+      "Core blob shielded by a wall of spear-wielding hoplites",
+      "Hoplites form shield walls"
+    ],
+    "strategy": [
+      "Fire is extremely effective (firebombs, Turpentine)",
+      "Break the shield wall, then hit the core",
+      "Fight near the edge to thin hoplites"
+    ],
+    "rewards": [
+      "Lead Demon's Soul"
+    ],
+    "note": null,
+    "image": "images/bosses/demons-souls/phalanx.webp",
+    "image_credit": "Fandom wiki, fair use, personal use, © FromSoftware/Bandai Namco/SIE",
+    "source_url": "https://demonssouls.fandom.com/wiki/Phalanx"
+  },
+  {
+    "id": "tower-knight",
+    "name": "Tower Knight",
+    "category": "1 – Boletarian Palace",
+    "required": "main-path",
+    "location": "1-2 Boletarian Palace",
+    "dlc": false,
+    "hp": 1365,
+    "hp_text": null,
+    "weak_to": [
+      "Magic",
+      "Fire"
+    ],
+    "resists": [
+      "Poison",
+      "Plague"
+    ],
+    "immune": [
+      "Bleed"
+    ],
+    "weak_source": "weak/resist from wiki infobox defense values + wiki strategy/notes text",
+    "strengths": [
+      "Giant knight with a huge shield and spear",
+      "Archers fire from the walls"
+    ],
+    "strategy": [
+      "Kill the archers on the walls first",
+      "Hit his ankles to make him kneel",
+      "Then attack the exposed head"
+    ],
+    "rewards": [
+      "Iron Demon's Soul"
+    ],
+    "note": null,
+    "image": "images/bosses/demons-souls/tower-knight.webp",
+    "image_credit": "Fandom wiki, fair use, personal use, © FromSoftware/Bandai Namco/SIE",
+    "source_url": "https://demonssouls.fandom.com/wiki/Tower_Knight"
+  },
+  {
+    "id": "penetrator",
+    "name": "Penetrator",
+    "category": "1 – Boletarian Palace",
+    "required": "main-path",
+    "location": "1-3 Boletarian Palace",
+    "dlc": false,
+    "hp": 2960,
+    "hp_text": null,
+    "weak_to": [
+      "Magic",
+      "Blunt"
+    ],
+    "resists": [],
+    "immune": [
+      "Plague",
+      "Bleed"
+    ],
+    "weak_source": "weak/resist from wiki infobox defense values + wiki strategy/notes text",
+    "strengths": [
+      "Long, fast rapier thrusts",
+      "Charged piercing attack"
+    ],
+    "strategy": [
+      "Summon Biorr of the Twin Fangs to help",
+      "Magic and blunt are effective",
+      "Punish after his long combos"
+    ],
+    "rewards": [
+      "Silver Demon's Soul"
+    ],
+    "note": null,
+    "image": "images/bosses/demons-souls/penetrator.webp",
+    "image_credit": "Fandom wiki, fair use, personal use, © FromSoftware/Bandai Namco/SIE",
+    "source_url": "https://demonssouls.fandom.com/wiki/Penetrator"
+  },
+  {
+    "id": "old-king-allant",
+    "name": "Old King Allant",
+    "category": "1 – Boletarian Palace",
+    "required": "main-path",
+    "location": "1-4 Boletarian Palace",
+    "dlc": false,
+    "hp": 5967,
+    "hp_text": null,
+    "weak_to": [],
+    "resists": [
+      "Poison",
+      "Plague",
+      "Bleed"
+    ],
+    "immune": [],
+    "weak_source": "weak/resist from wiki infobox defense values",
+    "strengths": [
+      "False King with soul drain",
+      "Long sword combos"
+    ],
+    "strategy": [
+      "Stay close and punish after combos",
+      "Avoid his soul drain grab",
+      "Physical damage works well"
+    ],
+    "rewards": [
+      "False King's Demon's Soul"
+    ],
+    "note": null,
+    "image": "images/bosses/demons-souls/old-king-allant.webp",
+    "image_credit": "Fandom wiki, fair use, personal use, © FromSoftware/Bandai Namco/SIE",
+    "source_url": "https://demonssouls.fandom.com/wiki/Old_King_Allant"
+  },
+  {
+    "id": "armor-spider",
+    "name": "Armor Spider",
+    "category": "2 – Stonefang Tunnel",
+    "required": "main-path",
+    "location": "2-1 Stonefang Tunnel",
+    "dlc": false,
+    "hp": 1732,
+    "hp_text": null,
+    "weak_to": [
+      "Magic",
+      "Pierce"
+    ],
+    "resists": [
+      "Fire"
+    ],
+    "immune": [
+      "Poison",
+      "Plague",
+      "Bleed"
+    ],
+    "weak_source": "weak/resist from wiki infobox defense values + wiki strategy/notes text",
+    "strengths": [
+      "Fire breath sweeps across the tunnel",
+      "Spits fireballs"
+    ],
+    "strategy": [
+      "Use the tunnel pillars as cover",
+      "Advance between fire bursts",
+      "Magic and pierce are effective"
+    ],
+    "rewards": [
+      "Hard Demon's Soul"
+    ],
+    "note": null,
+    "image": "images/bosses/demons-souls/armor-spider.webp",
+    "image_credit": "Fandom wiki, fair use, personal use, © FromSoftware/Bandai Namco/SIE",
+    "source_url": "https://demonssouls.fandom.com/wiki/Armor_Spider"
+  },
+  {
+    "id": "flamelurker",
+    "name": "Flamelurker",
+    "category": "2 – Stonefang Tunnel",
+    "required": "main-path",
+    "location": "2-2 Stonefang Tunnel",
+    "dlc": false,
+    "hp": 3720,
+    "hp_text": null,
+    "weak_to": [
+      "Magic"
+    ],
+    "resists": [
+      "Slash",
+      "Pierce",
+      "Fire",
+      "Poison",
+      "Plague",
+      "Bleed"
+    ],
+    "immune": [],
+    "weak_source": "weak/resist from wiki infobox defense values + wiki strategy/notes text",
+    "strengths": [
+      "Fast fire slams and explosions",
+      "Resists slash, pierce and fire"
+    ],
+    "strategy": [
+      "Magic is the best damage type",
+      "Fire resistance gear helps",
+      "Punish after his ground pounds"
+    ],
+    "rewards": [
+      "Red Hot Demon's Soul"
+    ],
+    "note": null,
+    "image": "images/bosses/demons-souls/flamelurker.webp",
+    "image_credit": "Fandom wiki, fair use, personal use, © FromSoftware/Bandai Namco/SIE",
+    "source_url": "https://demonssouls.fandom.com/wiki/Flamelurker"
+  },
+  {
+    "id": "dragon-god",
+    "name": "Dragon God",
+    "category": "2 – Stonefang Tunnel",
+    "required": "main-path",
+    "location": "2-3 Stonefang Tunnel",
+    "dlc": false,
+    "hp": 4340,
+    "hp_text": null,
+    "weak_to": [],
+    "resists": [
+      "Fire"
+    ],
+    "immune": [
+      "Poison",
+      "Plague",
+      "Bleed"
+    ],
+    "weak_source": "weak/resist from wiki infobox defense values",
+    "strengths": [
+      "Enormous, near-invulnerable dragon",
+      "Crushing hand grabs and roars"
+    ],
+    "strategy": [
+      "Sneak between the statues",
+      "Use the ballistas to pin its hands",
+      "Strike when it's pinned"
+    ],
+    "rewards": [
+      "Dragon Demon's Soul"
+    ],
+    "note": null,
+    "image": "images/bosses/demons-souls/dragon-god.webp",
+    "image_credit": "Fandom wiki, fair use, personal use, © FromSoftware/Bandai Namco/SIE",
+    "source_url": "https://demonssouls.fandom.com/wiki/Dragon_God"
+  },
+  {
+    "id": "fools-idol",
+    "name": "Fool's Idol",
+    "category": "3 – Tower of Latria",
+    "required": "main-path",
+    "location": "3-1 Tower of Latria",
+    "dlc": false,
+    "hp": 1863,
+    "hp_text": null,
+    "weak_to": [],
+    "resists": [
+      "Magic"
+    ],
+    "immune": [
+      "Poison",
+      "Plague",
+      "Bleed"
+    ],
+    "weak_source": "weak/resist from wiki infobox defense values + wiki strategy/notes text",
+    "strengths": [
+      "Doll that casts magic and revives",
+      "Spawns illusionary copies"
+    ],
+    "strategy": [
+      "Kill the prayer maiden in the tower first",
+      "Then defeat the idol",
+      "Magic is resisted; use physical"
+    ],
+    "rewards": [
+      "Doll Demon's Soul"
+    ],
+    "note": null,
+    "image": "images/bosses/demons-souls/fools-idol.webp",
+    "image_credit": "Fandom wiki, fair use, personal use, © FromSoftware/Bandai Namco/SIE",
+    "source_url": "https://demonssouls.fandom.com/wiki/Fool's_Idol"
+  },
+  {
+    "id": "maneater",
+    "name": "Maneater",
+    "category": "3 – Tower of Latria",
+    "required": "main-path",
+    "location": "3-2 Tower of Latria",
+    "dlc": false,
+    "hp": 2790,
+    "hp_text": "2,790 (each)",
+    "weak_to": [
+      "Fire"
+    ],
+    "resists": [
+      "Poison",
+      "Plague",
+      "Bleed"
+    ],
+    "immune": [],
+    "weak_source": "weak/resist from wiki infobox defense values",
+    "strengths": [
+      "Two winged maneaters at once",
+      "Fast tail swipes and grabs"
+    ],
+    "strategy": [
+      "Kill one before the second arrives",
+      "Fire is effective",
+      "Stay off the bridge edges"
+    ],
+    "rewards": [
+      "Mixed Soul"
+    ],
+    "note": "Two Maneaters (second joins mid-fight).",
+    "image": "images/bosses/demons-souls/maneater.webp",
+    "image_credit": "Fandom wiki, fair use, personal use, © FromSoftware/Bandai Namco/SIE",
+    "source_url": "https://demonssouls.fandom.com/wiki/Maneater"
+  },
+  {
+    "id": "old-monk",
+    "name": "Old Monk",
+    "category": "3 – Tower of Latria",
+    "required": "main-path",
+    "location": "3-3 Tower of Latria",
+    "dlc": false,
+    "hp": null,
+    "hp_text": null,
+    "weak_to": [],
+    "resists": [],
+    "immune": [],
+    "weak_source": null,
+    "strengths": [
+      "Another player (or AI) fights as the boss",
+      "Homing soul arrows"
+    ],
+    "strategy": [
+      "Close distance fast",
+      "Dodge homing magic",
+      "Physical damage works well"
+    ],
+    "rewards": [
+      "Yellow Demon's Soul"
+    ],
+    "note": null,
+    "image": "images/bosses/demons-souls/old-monk.webp",
+    "image_credit": "Fandom wiki, fair use, personal use, © FromSoftware/Bandai Namco/SIE",
+    "source_url": "https://demonssouls.fandom.com/wiki/Old_Monk"
+  },
+  {
+    "id": "adjudicator",
+    "name": "Adjudicator",
+    "category": "4 – Shrine of Storms",
+    "required": "main-path",
+    "location": "4-1 Shrine of Storms",
+    "dlc": false,
+    "hp": 1306,
+    "hp_text": null,
+    "weak_to": [],
+    "resists": [
+      "Magic"
+    ],
+    "immune": [
+      "Poison",
+      "Plague",
+      "Bleed"
+    ],
+    "weak_source": "weak/resist from wiki infobox defense values",
+    "strengths": [
+      "Massive bloated demon with a cleaver",
+      "Slow but heavy"
+    ],
+    "strategy": [
+      "Stab the knife wound in its belly",
+      "Punish after each slam",
+      "Stay behind its cleaver arm"
+    ],
+    "rewards": [
+      "Swollen Demon's Soul"
+    ],
+    "note": null,
+    "image": "images/bosses/demons-souls/adjudicator.webp",
+    "image_credit": "Fandom wiki, fair use, personal use, © FromSoftware/Bandai Namco/SIE",
+    "source_url": "https://demonssouls.fandom.com/wiki/Adjudicator"
+  },
+  {
+    "id": "old-hero",
+    "name": "Old Hero",
+    "category": "4 – Shrine of Storms",
+    "required": "main-path",
+    "location": "4-2 Shrine of Storms",
+    "dlc": false,
+    "hp": 4410,
+    "hp_text": null,
+    "weak_to": [
+      "Fire"
+    ],
+    "resists": [
+      "Poison"
+    ],
+    "immune": [
+      "Plague",
+      "Bleed"
+    ],
+    "weak_source": "weak/resist from wiki infobox defense values",
+    "strengths": [
+      "Blind; hunts by sound",
+      "Heavy greatsword slams"
+    ],
+    "strategy": [
+      "Walk slowly to stay quiet",
+      "Attack his back",
+      "Fire is effective"
+    ],
+    "rewards": [
+      "Hero Demon's Soul"
+    ],
+    "note": null,
+    "image": "images/bosses/demons-souls/old-hero.webp",
+    "image_credit": "Fandom wiki, fair use, personal use, © FromSoftware/Bandai Namco/SIE",
+    "source_url": "https://demonssouls.fandom.com/wiki/Old_Hero"
+  },
+  {
+    "id": "storm-king",
+    "name": "Storm King",
+    "category": "4 – Shrine of Storms",
+    "required": "main-path",
+    "location": "4-3 Shrine of Storms",
+    "dlc": false,
+    "hp": 1172,
+    "hp_text": null,
+    "weak_to": [
+      "Magic"
+    ],
+    "resists": [
+      "Poison",
+      "Plague",
+      "Bleed"
+    ],
+    "immune": [],
+    "weak_source": "weak/resist from wiki infobox defense values",
+    "strengths": [
+      "Flying manta that rains stingrays",
+      "Wide aerial attacks"
+    ],
+    "strategy": [
+      "Pick up the Storm Ruler and use its skill",
+      "Fire from the cliffs when it's in range",
+      "Use pillars for cover"
+    ],
+    "rewards": [
+      "Storm Demon's Soul"
+    ],
+    "note": null,
+    "image": "images/bosses/demons-souls/storm-king.webp",
+    "image_credit": "Fandom wiki, fair use, personal use, © FromSoftware/Bandai Namco/SIE",
+    "source_url": "https://demonssouls.fandom.com/wiki/Storm_King"
+  },
+  {
+    "id": "leechmonger",
+    "name": "Leechmonger",
+    "category": "5 – Valley of Defilement",
+    "required": "main-path",
+    "location": "5-1 Valley of Defilement",
+    "dlc": false,
+    "hp": 2047,
+    "hp_text": null,
+    "weak_to": [
+      "Fire"
+    ],
+    "resists": [
+      "Blunt"
+    ],
+    "immune": [
+      "Poison",
+      "Plague",
+      "Bleed"
+    ],
+    "weak_source": "weak/resist from wiki infobox defense values",
+    "strengths": [
+      "Leech blob that heals itself",
+      "Vomits leeches"
+    ],
+    "strategy": [
+      "Fire is extremely effective",
+      "Avoid getting surrounded by leeches",
+      "Kill the leeches quickly"
+    ],
+    "rewards": [
+      "Wriggling Demon's Soul"
+    ],
+    "note": null,
+    "image": "images/bosses/demons-souls/leechmonger.webp",
+    "image_credit": "Fandom wiki, fair use, personal use, © FromSoftware/Bandai Namco/SIE",
+    "source_url": "https://demonssouls.fandom.com/wiki/Leechmonger"
+  },
+  {
+    "id": "dirty-colossus",
+    "name": "Dirty Colossus",
+    "category": "5 – Valley of Defilement",
+    "required": "main-path",
+    "location": "5-2 Valley of Defilement",
+    "dlc": false,
+    "hp": 3367,
+    "hp_text": "3,367 (NG) / 4,714 (max NG+)",
+    "weak_to": [
+      "Fire"
+    ],
+    "resists": [
+      "Pierce"
+    ],
+    "immune": [
+      "Poison",
+      "Plague",
+      "Bleed"
+    ],
+    "weak_source": "weak/resist from wiki infobox defense values",
+    "strengths": [
+      "Swarm of flies and bugs",
+      "Spits swarms that cause damage over time"
+    ],
+    "strategy": [
+      "Fire is very effective",
+      "Stay at its side",
+      "Fight at a distance with fire"
+    ],
+    "rewards": [
+      "Eroded Demon's Soul"
+    ],
+    "note": null,
+    "image": "images/bosses/demons-souls/dirty-colossus.webp",
+    "image_credit": "Fandom wiki, fair use, personal use, © FromSoftware/Bandai Namco/SIE",
+    "source_url": "https://demonssouls.fandom.com/wiki/Dirty_Colossus"
+  },
+  {
+    "id": "maiden-astraea",
+    "name": "Maiden Astraea",
+    "category": "5 – Valley of Defilement",
+    "required": "main-path",
+    "location": "5-3 Valley of Defilement",
+    "dlc": false,
+    "hp": 3055,
+    "hp_text": null,
+    "weak_to": [
+      "Fire"
+    ],
+    "resists": [
+      "Bleed"
+    ],
+    "immune": [
+      "Poison",
+      "Plague"
+    ],
+    "weak_source": "weak/resist from wiki infobox defense values",
+    "strengths": [
+      "Guarded by Garl Vinland",
+      "Plague nearby"
+    ],
+    "strategy": [
+      "Defeat Garl Vinland first",
+      "Astraea doesn't fight back",
+      "Use plague resistance"
+    ],
+    "rewards": [
+      "Pureblood Demon's Soul"
+    ],
+    "note": null,
+    "image": "images/bosses/demons-souls/maiden-astraea.webp",
+    "image_credit": "Fandom wiki, fair use, personal use, © FromSoftware/Bandai Namco/SIE",
+    "source_url": "https://demonssouls.fandom.com/wiki/Maiden_Astraea"
+  },
+  {
+    "id": "king-allant",
+    "name": "King Allant (True King Allant)",
+    "category": "Nexus & endgame",
+    "required": "main-path",
+    "location": "Below the Nexus (final boss)",
+    "dlc": false,
+    "hp": null,
+    "hp_text": null,
+    "weak_to": [],
+    "resists": [],
+    "immune": [],
+    "weak_source": null,
+    "strengths": [
+      "Final boss; weak as you approach",
+      "Soul drain"
+    ],
+    "strategy": [
+      "Walk up and finish him",
+      "No real threat",
+      "Physical damage works well"
+    ],
+    "rewards": [
+      "Soulbrandt"
+    ],
+    "note": null,
+    "image": "images/bosses/demons-souls/king-allant.webp",
+    "image_credit": "Fandom wiki, fair use, personal use, © FromSoftware/Bandai Namco/SIE",
+    "source_url": "https://demonssouls.fandom.com/wiki/King_Allant_XII"
+  },
+  {
+    "id": "vanguard",
+    "name": "Vanguard",
+    "category": "Optional",
+    "required": "optional",
+    "location": "Tutorial; 4-1 Shrine of Storms",
+    "dlc": false,
+    "hp": 2970,
+    "hp_text": null,
+    "weak_to": [
+      "Magic"
+    ],
+    "resists": [
+      "Blunt",
+      "Pierce",
+      "Plague"
+    ],
+    "immune": [],
+    "weak_source": "weak/resist from wiki infobox defense values",
+    "strengths": [
+      "Huge demon with a massive club",
+      "Wide sweeping slams"
+    ],
+    "strategy": [
+      "Tutorial fight; expected to lose on first visit",
+      "Later, hit its legs and avoid frontal slams",
+      "Magic is effective"
+    ],
+    "rewards": [
+      "Grey Demon's Soul"
+    ],
+    "note": null,
+    "image": "images/bosses/demons-souls/vanguard.webp",
+    "image_credit": "Fandom wiki, fair use, personal use, © FromSoftware/Bandai Namco/SIE",
+    "source_url": "https://demonssouls.fandom.com/wiki/Vanguard"
+  },
+  {
+    "id": "red-dragon",
+    "name": "Red Dragon",
+    "category": "Optional",
+    "required": "optional",
+    "location": "1-1 / 1-2 Boletarian Palace",
+    "dlc": false,
+    "hp": 1340,
+    "hp_text": null,
+    "weak_to": [
+      "Magic"
+    ],
+    "resists": [
+      "Fire",
+      "Poison",
+      "Plague",
+      "Bleed"
+    ],
+    "immune": [],
+    "weak_source": "weak/resist from wiki infobox defense values + wiki strategy/notes text",
+    "strengths": [
+      "Flies and breathes fire",
+      "Covers the palace in flame"
+    ],
+    "strategy": [
+      "Use cover when it passes",
+      "Shoot it with arrows from cover",
+      "Fire resistance gear helps"
+    ],
+    "rewards": [
+      "Small Flame Scale Demon's Soul"
+    ],
+    "note": null,
+    "image": "images/bosses/demons-souls/red-dragon.webp",
+    "image_credit": "Fandom wiki, fair use, personal use, © FromSoftware/Bandai Namco/SIE",
+    "source_url": "https://demonssouls.fandom.com/wiki/Red_Dragon"
+  },
+  {
+    "id": "blue-dragon",
+    "name": "Blue Dragon",
+    "category": "Optional",
+    "required": "optional",
+    "location": "1-3 / 1-4 Boletarian Palace",
+    "dlc": false,
+    "hp": null,
+    "hp_text": null,
+    "weak_to": [],
+    "resists": [],
+    "immune": [],
+    "weak_source": null,
+    "strengths": [
+      "Flies and breathes fire",
+      "Patrols the upper palace"
+    ],
+    "strategy": [
+      "Use cover when it passes",
+      "Wait out its patrols",
+      "Shoot it from range"
+    ],
+    "rewards": [
+      "Large Flame Scale Demon's Soul"
+    ],
+    "note": null,
+    "image": null,
+    "image_credit": null,
+    "source_url": "https://demonssouls.fandom.com/wiki/Blue_Dragon"
+  },
+  {
+    "id": "old-king-doran",
+    "name": "Old King Doran",
+    "category": "Optional",
+    "required": "optional",
+    "location": "1-1 Boletarian Palace (Pure White tendency)",
+    "dlc": false,
+    "hp": 2446,
+    "hp_text": null,
+    "weak_to": [],
+    "resists": [
+      "Fire"
+    ],
+    "immune": [],
+    "weak_source": "wiki strategy/notes text",
+    "strengths": [
+      "Legendary warrior with fast combos",
+      "Very aggressive"
+    ],
+    "strategy": [
+      "Fire is resisted",
+      "Punish after combos",
+      "Keep stamina for dodges"
+    ],
+    "rewards": [],
+    "note": null,
+    "image": "images/bosses/demons-souls/old-king-doran.webp",
+    "image_credit": "Fandom wiki, fair use, personal use, © FromSoftware/Bandai Namco/SIE",
+    "source_url": "https://demonssouls.fandom.com/wiki/Old_King_Doran"
+  }
+]

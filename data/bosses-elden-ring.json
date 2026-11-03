@@ -1,0 +1,5423 @@
+[
+  {
+    "id": "grafted-scion",
+    "name": "Grafted Scion",
+    "category": "Story bosses",
+    "required": "optional",
+    "location": "Chapel of Anticipation (tutorial)",
+    "dlc": false,
+    "hp": 2596,
+    "hp_text": null,
+    "runes": 3200,
+    "weak_to": [],
+    "resists": [],
+    "immune": [],
+    "weak_source": null,
+    "strengths": [
+      "Fast multi-arm combos with long reach",
+      "Jumping slams that cover the arena"
+    ],
+    "strategy": [
+      "Expect to lose this as a tutorial; it's optional to win",
+      "Stay close behind it and punish after long combos",
+      "Dodge forward through slams rather than back"
+    ],
+    "rewards": [
+      "Ornamental Straight Sword",
+      "Golden Beast Crest Shield"
+    ],
+    "note": "Designed as a loss; beatable for its drops.",
+    "image": "images/bosses/elden-ring/grafted-scion.webp",
+    "image_credit": "Fandom wiki, fair use, personal use, © FromSoftware/Bandai Namco/SIE",
+    "source_url": "https://eldenring.fandom.com/wiki/Grafted_Scion"
+  },
+  {
+    "id": "margit-the-fell-omen",
+    "name": "Margit, the Fell Omen",
+    "category": "Story bosses",
+    "required": "main-path",
+    "location": "Stormveil Castle gate, Limgrave",
+    "dlc": false,
+    "hp": 4174,
+    "hp_text": "4,174 (Limgrave) / 8,193 (Capital Outskirts)",
+    "runes": 12000,
+    "weak_to": [
+      "Slash",
+      "Fire",
+      "Poison",
+      "Bleed"
+    ],
+    "resists": [],
+    "immune": [],
+    "weak_source": "wiki text",
+    "strengths": [
+      "Delayed staff swings that bait early rolls",
+      "Holy daggers and a golden hammer that can't be parried",
+      "Hard-hitting for an early boss"
+    ],
+    "strategy": [
+      "Summon spirit ashes and use Margit's Shackle to pin him twice",
+      "Roll late into his swings; wait out the delays",
+      "Poison and bleed both work; slash weapons do extra",
+      "Punish after hammer slams and dagger throws"
+    ],
+    "rewards": [
+      "Talisman Pouch (Limgrave)",
+      "Viridian Amber Medallion +1 (Capital Outskirts)"
+    ],
+    "note": "Margit's moveset returns in the Morgott fight.",
+    "image": "images/bosses/elden-ring/margit-the-fell-omen.webp",
+    "image_credit": "Fandom wiki, fair use, personal use, © FromSoftware/Bandai Namco/SIE",
+    "source_url": "https://eldenring.fandom.com/wiki/Margit,_the_Fell_Omen"
+  },
+  {
+    "id": "godrick-the-grafted",
+    "name": "Godrick the Grafted",
+    "category": "Shardbearers & Demigods",
+    "required": "main-path",
+    "location": "Stormveil Castle",
+    "dlc": false,
+    "hp": 6080,
+    "hp_text": null,
+    "runes": 20000,
+    "weak_to": [],
+    "resists": [
+      "Holy"
+    ],
+    "immune": [
+      "Madness",
+      "Death Blight"
+    ],
+    "weak_source": "infobox",
+    "strengths": [
+      "Wide axe sweeps and ground-shaking stomps",
+      "Phase 2 dragon-head arm breathes fire in cones"
+    ],
+    "strategy": [
+      "Stick to his left side behind the axe arm",
+      "Roll through sweeps and stay close to avoid wind gusts",
+      "Spread out from the fire breath by circling behind him",
+      "Spirit ashes and Nepheli (summon sign) make this easier"
+    ],
+    "rewards": [
+      "Remembrance of the Grafted",
+      "Godrick's Great Rune"
+    ],
+    "note": "Shardbearer: any two shardbearers unlock Leyndell.",
+    "image": "images/bosses/elden-ring/godrick-the-grafted.webp",
+    "image_credit": "Fandom wiki, fair use, personal use, © FromSoftware/Bandai Namco/SIE",
+    "source_url": "https://eldenring.fandom.com/wiki/Godrick_the_Grafted"
+  },
+  {
+    "id": "red-wolf-of-radagon",
+    "name": "Red Wolf of Radagon",
+    "category": "Story bosses",
+    "required": "optional",
+    "location": "Academy of Raya Lucaria",
+    "dlc": false,
+    "hp": 2204,
+    "hp_text": null,
+    "runes": 14000,
+    "weak_to": [],
+    "resists": [],
+    "immune": [],
+    "weak_source": null,
+    "strengths": [
+      "Very fast lunges and bites",
+      "Glintstone magic: homing blades and a lunging sword"
+    ],
+    "strategy": [
+      "Dodge sideways into its lunges, then counter",
+      "Stay mid-range only briefly; it punishes distance with spells",
+      "Use pillars to break magic sightlines",
+      "A shield with magic negation helps"
+    ],
+    "rewards": [
+      "Memory Stone"
+    ],
+    "note": null,
+    "image": "images/bosses/elden-ring/red-wolf-of-radagon.webp",
+    "image_credit": "Fandom wiki, fair use, personal use, © FromSoftware/Bandai Namco/SIE",
+    "source_url": "https://eldenring.fandom.com/wiki/Red_Wolf_of_Radagon"
+  },
+  {
+    "id": "rennala-queen-of-the-full-moon",
+    "name": "Rennala, Queen of the Full Moon",
+    "category": "Shardbearers & Demigods",
+    "required": "optional",
+    "location": "Raya Lucaria Grand Library",
+    "dlc": false,
+    "hp": 3493,
+    "hp_text": "3,493 (Phase 1) / 4,097 (Phase 2)",
+    "runes": 40000,
+    "weak_to": [
+      "Standard",
+      "Slash",
+      "Pierce",
+      "Bleed"
+    ],
+    "resists": [
+      "Magic",
+      "Fire",
+      "Lightning",
+      "Holy"
+    ],
+    "immune": [
+      "Sleep",
+      "Madness",
+      "Death Blight"
+    ],
+    "weak_source": "infobox",
+    "strengths": [
+      "Phase 1 barrier from floating students",
+      "Phase 2 big glintstone sorceries and summoned spirits",
+      "Full Moon spell that tracks and lingers"
+    ],
+    "strategy": [
+      "Phase 1: hit the glowing students to drop her shield, then strike her",
+      "Phase 2: rush her down; she is fragile up close",
+      "Dodge the full moon through its edge and keep moving",
+      "Kill or outrun her summoned spirits before they swarm"
+    ],
+    "rewards": [
+      "Remembrance of the Full Moon Queen",
+      "Great Rune of The Unborn"
+    ],
+    "note": "Shardbearer; offers rebirth after defeat.",
+    "image": "images/bosses/elden-ring/rennala-queen-of-the-full-moon.webp",
+    "image_credit": "Fandom wiki, fair use, personal use, © FromSoftware/Bandai Namco/SIE",
+    "source_url": "https://eldenring.fandom.com/wiki/Rennala,_Queen_of_the_Full_Moon"
+  },
+  {
+    "id": "starscourge-radahn",
+    "name": "Starscourge Radahn",
+    "category": "Shardbearers & Demigods",
+    "required": "optional",
+    "location": "Wailing Dunes, Caelid (Radahn Festival)",
+    "dlc": false,
+    "hp": 9572,
+    "hp_text": null,
+    "runes": 70000,
+    "weak_to": [],
+    "resists": [],
+    "immune": [],
+    "weak_source": null,
+    "strengths": [
+      "Massive gravity magic and arrows from range",
+      "Meteor dive at the start of phase 2",
+      "Huge HP pool"
+    ],
+    "strategy": [
+      "Use the festival's NPC summons to split his attention",
+      "Ride Torrent to close distance; sprint sideways from arrows",
+      "Watch for the meteor; ride away from the impact point",
+      "Bleed and frost stack well with summons tanking"
+    ],
+    "rewards": [
+      "Remembrance of the Starscourge",
+      "Radahn's Great Rune"
+    ],
+    "note": "Shardbearer; required to access the DLC.",
+    "image": "images/bosses/elden-ring/starscourge-radahn.webp",
+    "image_credit": "Fandom wiki, fair use, personal use, © FromSoftware/Bandai Namco/SIE",
+    "source_url": "https://eldenring.fandom.com/wiki/Starscourge_Radahn"
+  },
+  {
+    "id": "rykard-lord-of-blasphemy",
+    "name": "Rykard, Lord of Blasphemy",
+    "category": "Shardbearers & Demigods",
+    "required": "optional",
+    "location": "Volcano Manor",
+    "dlc": false,
+    "hp": 30439,
+    "hp_text": "30,439 (phase 1) / 59,174 (phase 2)",
+    "runes": 130000,
+    "weak_to": [
+      "Frostbite"
+    ],
+    "resists": [],
+    "immune": [
+      "Sleep",
+      "Madness",
+      "Death Blight"
+    ],
+    "weak_source": "infobox",
+    "strengths": [
+      "Serpent body with sweeping bites and lava",
+      "Phase 2 magma waves and skull projectiles",
+      "Huge HP"
+    ],
+    "strategy": [
+      "Use the Serpent-Hunter spear found in the arena; its weapon art hits hard",
+      "Stay at mid-range and poke with the spear's long reach",
+      "Run sideways from lava waves and skull swarms",
+      "Frostbite procs are useful"
+    ],
+    "rewards": [
+      "Remembrance of the Blasphemous",
+      "Rykard's Great Rune"
+    ],
+    "note": "Phase 1 is the God-Devouring Serpent; Serpent-Hunter spear is found in the arena.",
+    "image": "images/bosses/elden-ring/rykard-lord-of-blasphemy.webp",
+    "image_credit": "Fandom wiki, fair use, personal use, © FromSoftware/Bandai Namco/SIE",
+    "source_url": "https://eldenring.fandom.com/wiki/Rykard,_Lord_of_Blasphemy"
+  },
+  {
+    "id": "morgott-the-omen-king",
+    "name": "Morgott, the Omen King",
+    "category": "Shardbearers & Demigods",
+    "required": "main-path",
+    "location": "Leyndell, Royal Capital (Elden Throne)",
+    "dlc": false,
+    "hp": 10399,
+    "hp_text": null,
+    "runes": 120000,
+    "weak_to": [],
+    "resists": [],
+    "immune": [],
+    "weak_source": null,
+    "strengths": [
+      "Margit's moveset plus holy weapons",
+      "Holy dagger rain and spear volleys",
+      "Long phase 2 combos"
+    ],
+    "strategy": [
+      "Roll late into his delayed swings",
+      "Strafe away from holy spear volleys",
+      "Punish after hammer slams; keep your stamina up",
+      "Spirit ashes and summons help a lot"
+    ],
+    "rewards": [
+      "Remembrance of the Omen King",
+      "Morgott's Great Rune",
+      "Talisman Pouch (if Margit not defeated)"
+    ],
+    "note": null,
+    "image": "images/bosses/elden-ring/morgott-the-omen-king.webp",
+    "image_credit": "Fandom wiki, fair use, personal use, © FromSoftware/Bandai Namco/SIE",
+    "source_url": "https://eldenring.fandom.com/wiki/Morgott,_the_Omen_King"
+  },
+  {
+    "id": "mohg-lord-of-blood",
+    "name": "Mohg, Lord of Blood",
+    "category": "Shardbearers & Demigods",
+    "required": "optional",
+    "location": "Mohgwyn Palace",
+    "dlc": false,
+    "hp": 18389,
+    "hp_text": null,
+    "runes": 420000,
+    "weak_to": [],
+    "resists": [],
+    "immune": [],
+    "weak_source": null,
+    "strengths": [
+      "Nihil curse drains HP heavily at phase 2",
+      "Blood flames that linger on the ground",
+      "Trident sweeps with long reach"
+    ],
+    "strategy": [
+      "Use the Purifying Crystal Tear in your flask to survive Nihil",
+      "Avoid the bloodflame puddles; strike his sides",
+      "Mimic Tear or strong summons draw aggro",
+      "Heal through Nihil only after the ritual ends"
+    ],
+    "rewards": [
+      "Remembrance of the Blood Lord",
+      "Mohg's Great Rune"
+    ],
+    "note": null,
+    "image": "images/bosses/elden-ring/mohg-lord-of-blood.webp",
+    "image_credit": "Fandom wiki, fair use, personal use, © FromSoftware/Bandai Namco/SIE",
+    "source_url": "https://eldenring.fandom.com/wiki/Mohg,_Lord_of_Blood"
+  },
+  {
+    "id": "malenia-blade-of-miquella",
+    "name": "Malenia, Blade of Miquella",
+    "category": "Shardbearers & Demigods",
+    "required": "optional",
+    "location": "Elphael, Haligtree roots",
+    "dlc": false,
+    "hp": 18473,
+    "hp_text": "18,473 (phase 1) / 14,778 (phase 2)",
+    "runes": 480000,
+    "weak_to": [
+      "Fire",
+      "Bleed",
+      "Frostbite"
+    ],
+    "resists": [
+      "Holy",
+      "Poison",
+      "Scarlet Rot"
+    ],
+    "immune": [
+      "Madness",
+      "Death Blight"
+    ],
+    "weak_source": "infobox",
+    "strengths": [
+      "Waterfowl Dance: near-unavoidable flurry",
+      "Heals on every hit, even on shields",
+      "Scarlet Aeonia rot bloom in phase 2"
+    ],
+    "strategy": [
+      "Learn to dodge Waterfowl Dance: run away then roll through the last flurry",
+      "Avoid blocking; her hits heal her",
+      "Bleed, frost and fire all work",
+      "Run sideways from the Aeonia flower and its rot cloud"
+    ],
+    "rewards": [
+      "Malenia's Great Rune",
+      "Remembrance of the Rot Goddess"
+    ],
+    "note": null,
+    "image": "images/bosses/elden-ring/malenia-blade-of-miquella.webp",
+    "image_credit": "Fandom wiki, fair use, personal use, © FromSoftware/Bandai Namco/SIE",
+    "source_url": "https://eldenring.fandom.com/wiki/Malenia,_Blade_of_Miquella"
+  },
+  {
+    "id": "godfrey-first-elden-lord-golden-shade",
+    "name": "Godfrey, First Elden Lord (Golden Shade)",
+    "category": "Story bosses",
+    "required": "main-path",
+    "location": "Leyndell, Royal Capital (Erdtree Sanctuary approach)",
+    "dlc": false,
+    "hp": 7099,
+    "hp_text": null,
+    "runes": 80000,
+    "weak_to": [],
+    "resists": [],
+    "immune": [],
+    "weak_source": null,
+    "strengths": [
+      "Big axe slams with shockwaves",
+      "Golden shade version of Godfrey"
+    ],
+    "strategy": [
+      "Dodge to the side of shockwaves",
+      "Stay close and punish recoveries",
+      "Bring summons if needed"
+    ],
+    "rewards": [
+      "Talisman Pouch"
+    ],
+    "note": null,
+    "image": "images/bosses/elden-ring/godfrey-first-elden-lord-golden-shade.webp",
+    "image_credit": "Fandom wiki, fair use, personal use, © FromSoftware/Bandai Namco/SIE",
+    "source_url": "https://eldenring.fandom.com/wiki/Godfrey,_First_Elden_Lord"
+  },
+  {
+    "id": "draconic-tree-sentinel",
+    "name": "Draconic Tree Sentinel",
+    "category": "Story bosses",
+    "required": "main-path",
+    "location": "Capital Outskirts (Leyndell gate); Farum Azula",
+    "dlc": false,
+    "hp": null,
+    "hp_text": null,
+    "runes": null,
+    "weak_to": [],
+    "resists": [],
+    "immune": [],
+    "weak_source": null,
+    "strengths": [
+      "Lightning and fire halberd combos",
+      "Horse charges with wide reach",
+      "Very tanky"
+    ],
+    "strategy": [
+      "Fight on Torrent or on foot behind the horse",
+      "Roll toward the halberd side",
+      "Punish after the slow wind-up slams",
+      "Fire and lightning negation gear helps"
+    ],
+    "rewards": [
+      "Dragonclaw Shield",
+      "Dragon Greatclaw",
+      "Malformed Dragon Set"
+    ],
+    "note": "The Fia's Champions route can bypass the Outskirts fight.",
+    "image": "images/bosses/elden-ring/draconic-tree-sentinel.webp",
+    "image_credit": "Fandom wiki, fair use, personal use, © FromSoftware/Bandai Namco/SIE",
+    "source_url": "https://eldenring.fandom.com/wiki/Draconic_Tree_Sentinel"
+  },
+  {
+    "id": "fias-champions",
+    "name": "Fia's Champions",
+    "category": "Story bosses",
+    "required": "optional",
+    "location": "Deeproot Depths",
+    "dlc": false,
+    "hp": null,
+    "hp_text": null,
+    "runes": 40000,
+    "weak_to": [],
+    "resists": [],
+    "immune": [],
+    "weak_source": null,
+    "strengths": [
+      "Three waves of player-like spirits",
+      "Lionel the Lionhearted is very tanky with a greatshield"
+    ],
+    "strategy": [
+      "Separate the waves and focus one at a time",
+      "Use guard-break or bleed on Lionel",
+      "Spirit ashes are useful to split attention"
+    ],
+    "rewards": [
+      "Fia's Mist"
+    ],
+    "note": "Waves of spirit champions; Lionel is the last.",
+    "image": "images/bosses/elden-ring/fias-champions.webp",
+    "image_credit": "Fandom wiki, fair use, personal use, © FromSoftware/Bandai Namco/SIE",
+    "source_url": "https://eldenring.fandom.com/wiki/Fia's_Champions"
+  },
+  {
+    "id": "fire-giant",
+    "name": "Fire Giant",
+    "category": "Story bosses",
+    "required": "main-path",
+    "location": "Flame Peak, Mountaintops of the Giants",
+    "dlc": false,
+    "hp": 43263,
+    "hp_text": null,
+    "runes": 180000,
+    "weak_to": [
+      "Slash"
+    ],
+    "resists": [
+      "Fire",
+      "Holy",
+      "Frostbite"
+    ],
+    "immune": [
+      "Madness",
+      "Death Blight"
+    ],
+    "weak_source": "infobox",
+    "strengths": [
+      "Huge stomps, fire rolls and magma",
+      "Phase 2 fire whip and ranged blasts",
+      "Massive HP"
+    ],
+    "strategy": [
+      "Target the left ankle with the shackle to break his stance",
+      "Ride Torrent to dodge rolling and fire blasts",
+      "Stay under him and behind the legs",
+      "Slash damage works well"
+    ],
+    "rewards": [
+      "Remembrance of the Fire Giant"
+    ],
+    "note": null,
+    "image": "images/bosses/elden-ring/fire-giant.webp",
+    "image_credit": "Fandom wiki, fair use, personal use, © FromSoftware/Bandai Namco/SIE",
+    "source_url": "https://eldenring.fandom.com/wiki/Fire_Giant"
+  },
+  {
+    "id": "godskin-duo",
+    "name": "Godskin Duo",
+    "category": "Story bosses",
+    "required": "main-path",
+    "location": "Crumbling Farum Azula",
+    "dlc": false,
+    "hp": null,
+    "hp_text": "6,668 (Apostle) / 8,000 (Noble) / 26,350 (shared pool)",
+    "runes": null,
+    "weak_to": [
+      "Sleep"
+    ],
+    "resists": [],
+    "immune": [],
+    "weak_source": "wiki text",
+    "strengths": [
+      "Two godskins with a shared HP pool",
+      "They revive each other until the pool is empty",
+      "Black flames that deal % damage"
+    ],
+    "strategy": [
+      "Focus one target at a time; keep both in view",
+      "Sleep is very effective on both",
+      "Use pillars and hit-and-run play",
+      "Spirit ashes help a lot"
+    ],
+    "rewards": [
+      "Smithing-Stone Miner's Bell Bearing [4]",
+      "Ash of War: Black Flame Tornado"
+    ],
+    "note": null,
+    "image": "images/bosses/elden-ring/godskin-duo.webp",
+    "image_credit": "Fandom wiki, fair use, personal use, © FromSoftware/Bandai Namco/SIE",
+    "source_url": "https://eldenring.fandom.com/wiki/Godskin_Duo"
+  },
+  {
+    "id": "maliketh-the-black-blade",
+    "name": "Maliketh, the Black Blade",
+    "category": "Story bosses",
+    "required": "main-path",
+    "location": "Crumbling Farum Azula",
+    "dlc": false,
+    "hp": 10620,
+    "hp_text": null,
+    "runes": 220000,
+    "weak_to": [],
+    "resists": [],
+    "immune": [],
+    "weak_source": null,
+    "strengths": [
+      "Destined Death blade reduces your max HP",
+      "Extremely aggressive, fast leaps",
+      "Beast Clergyman phase with rock slings"
+    ],
+    "strategy": [
+      "Phase 1: punish after rock slings and slams",
+      "Phase 2: stay close and roll into his leaps",
+      "Avoid getting hit by Destined Death; it caps HP",
+      "Bring a shield or summons to split focus"
+    ],
+    "rewards": [
+      "Remembrance of the Black Blade"
+    ],
+    "note": "Phase 1 is the Beast Clergyman.",
+    "image": "images/bosses/elden-ring/maliketh-the-black-blade.webp",
+    "image_credit": "Fandom wiki, fair use, personal use, © FromSoftware/Bandai Namco/SIE",
+    "source_url": "https://eldenring.fandom.com/wiki/Maliketh,_the_Black_Blade"
+  },
+  {
+    "id": "sir-gideon-ofnir",
+    "name": "Sir Gideon Ofnir, the All-Knowing",
+    "category": "Story bosses",
+    "required": "main-path",
+    "location": "Leyndell, Ashen Capital",
+    "dlc": false,
+    "hp": null,
+    "hp_text": null,
+    "runes": null,
+    "weak_to": [],
+    "resists": [],
+    "immune": [],
+    "weak_source": null,
+    "strengths": [
+      "Mage-type fighter with many spells",
+      "Rock Sling, Comet, Black Flame and more"
+    ],
+    "strategy": [
+      "Close distance fast; he is fragile up close",
+      "Weave between his spell casts and pillars",
+      "Interrupt casts with quick attacks"
+    ],
+    "rewards": [],
+    "note": null,
+    "image": "images/bosses/elden-ring/sir-gideon-ofnir.webp",
+    "image_credit": "Fandom wiki, fair use, personal use, © FromSoftware/Bandai Namco/SIE",
+    "source_url": "https://eldenring.fandom.com/wiki/Sir_Gideon_Ofnir,_the_All-Knowing"
+  },
+  {
+    "id": "godfrey-hoarah-loux",
+    "name": "Godfrey, First Elden Lord / Hoarah Loux",
+    "category": "Story bosses",
+    "required": "main-path",
+    "location": "Leyndell, Ashen Capital",
+    "dlc": false,
+    "hp": 21903,
+    "hp_text": null,
+    "runes": 300000,
+    "weak_to": [],
+    "resists": [],
+    "immune": [],
+    "weak_source": null,
+    "strengths": [
+      "Phase 2 grabs and suplex",
+      "Ground stomps that shake the arena"
+    ],
+    "strategy": [
+      "Phase 1: same as his golden shade; stay to his side",
+      "Phase 2: dodge the grab; watch the shoulder wind-up",
+      "Punish after big slams"
+    ],
+    "rewards": [
+      "Remembrance of Hoarah Loux"
+    ],
+    "note": null,
+    "image": "images/bosses/elden-ring/godfrey-hoarah-loux.webp",
+    "image_credit": "Fandom wiki, fair use, personal use, © FromSoftware/Bandai Namco/SIE",
+    "source_url": "https://eldenring.fandom.com/wiki/Godfrey,_First_Elden_Lord"
+  },
+  {
+    "id": "radagon-of-the-golden-order",
+    "name": "Radagon of the Golden Order",
+    "category": "Story bosses",
+    "required": "main-path",
+    "location": "Inside the Erdtree (Fractured Marika)",
+    "dlc": false,
+    "hp": 13339,
+    "hp_text": null,
+    "runes": 500000,
+    "weak_to": [
+      "Strike",
+      "Fire"
+    ],
+    "resists": [
+      "Holy"
+    ],
+    "immune": [
+      "Bleed",
+      "Sleep",
+      "Madness"
+    ],
+    "weak_source": "infobox",
+    "strengths": [
+      "Holy hammer combos and teleports",
+      "Holy explosions and golden spears"
+    ],
+    "strategy": [
+      "Stay close and roll through hammer swings",
+      "Watch for teleport + explosion; dodge late",
+      "Strike and fire are effective"
+    ],
+    "rewards": [
+      "Elden Remembrance (after defeating Elden Beast)"
+    ],
+    "note": "Followed immediately by the Elden Beast.",
+    "image": "images/bosses/elden-ring/radagon-of-the-golden-order.webp",
+    "image_credit": "Fandom wiki, fair use, personal use, © FromSoftware/Bandai Namco/SIE",
+    "source_url": "https://eldenring.fandom.com/wiki/Radagon_of_the_Golden_Order"
+  },
+  {
+    "id": "elden-beast",
+    "name": "Elden Beast",
+    "category": "Story bosses",
+    "required": "main-path",
+    "location": "Inside the Erdtree",
+    "dlc": false,
+    "hp": 22127,
+    "hp_text": null,
+    "runes": 500000,
+    "weak_to": [],
+    "resists": [
+      "Holy"
+    ],
+    "immune": [
+      "Poison",
+      "Scarlet Rot",
+      "Bleed",
+      "Frostbite",
+      "Sleep",
+      "Madness",
+      "Death Blight"
+    ],
+    "weak_source": "infobox",
+    "strengths": [
+      "Holy lasers and huge AoE",
+      "Elden Stars spell sweeps the arena",
+      "Constantly moves around the arena"
+    ],
+    "strategy": [
+      "Chase it and hit its back legs and tail",
+      "Ride Torrent to keep pace when it relocates",
+      "Dodge through holy swords and lasers",
+      "Mimic Tear or strong summons help"
+    ],
+    "rewards": [
+      "Elden Remembrance"
+    ],
+    "note": null,
+    "image": "images/bosses/elden-ring/elden-beast.webp",
+    "image_credit": "Fandom wiki, fair use, personal use, © FromSoftware/Bandai Namco/SIE",
+    "source_url": "https://eldenring.fandom.com/wiki/Elden_Beast"
+  },
+  {
+    "id": "leonine-misbegotten",
+    "name": "Leonine Misbegotten",
+    "category": "Great Enemies (optional)",
+    "required": "optional",
+    "location": "Castle Morne, Weeping Peninsula",
+    "dlc": false,
+    "hp": 2199,
+    "hp_text": null,
+    "runes": 3800,
+    "weak_to": [
+      "Slash",
+      "Fire"
+    ],
+    "resists": [],
+    "immune": [
+      "Madness",
+      "Death Blight"
+    ],
+    "weak_source": "infobox",
+    "strengths": [
+      "Aggressive jumps and sword combos",
+      "Fast for an early boss"
+    ],
+    "strategy": [
+      "Stay close and roll into its lunges",
+      "Punish after its slow recoveries",
+      "Slash and fire do extra; bleed works"
+    ],
+    "rewards": [
+      "Grafted Blade Greatsword"
+    ],
+    "note": null,
+    "image": "images/bosses/elden-ring/leonine-misbegotten.webp",
+    "image_credit": "Fandom wiki, fair use, personal use, © FromSoftware/Bandai Namco/SIE",
+    "source_url": "https://eldenring.fandom.com/wiki/Leonine_Misbegotten"
+  },
+  {
+    "id": "royal-knight-loretta",
+    "name": "Royal Knight Loretta",
+    "category": "Great Enemies (optional)",
+    "required": "optional",
+    "location": "Caria Manor, Liurnia",
+    "dlc": false,
+    "hp": 4214,
+    "hp_text": null,
+    "runes": 10000,
+    "weak_to": [],
+    "resists": [],
+    "immune": [],
+    "weak_source": null,
+    "strengths": [
+      "Glintstone arrows and polearm spins",
+      "Mounted mobility"
+    ],
+    "strategy": [
+      "Close in on Torrent; she is weaker up close",
+      "Roll to the side of her arrows",
+      "Hit her horse's flank to stagger"
+    ],
+    "rewards": [
+      "Loretta's Greatbow",
+      "Ash of War: Loretta's Slash"
+    ],
+    "note": null,
+    "image": "images/bosses/elden-ring/royal-knight-loretta.webp",
+    "image_credit": "Fandom wiki, fair use, personal use, © FromSoftware/Bandai Namco/SIE",
+    "source_url": "https://eldenring.fandom.com/wiki/Loretta"
+  },
+  {
+    "id": "loretta-knight-of-the-haligtree",
+    "name": "Loretta, Knight of the Haligtree",
+    "category": "Great Enemies (optional)",
+    "required": "optional",
+    "location": "Miquella's Haligtree",
+    "dlc": false,
+    "hp": 13397,
+    "hp_text": null,
+    "runes": 200000,
+    "weak_to": [],
+    "resists": [],
+    "immune": [],
+    "weak_source": null,
+    "strengths": [
+      "Long polearm reach and wide spins",
+      "Magic arrows and a glintstone swarm"
+    ],
+    "strategy": [
+      "Stay close and roll toward her strikes",
+      "Dodge arrow volleys sideways",
+      "Punish after spins and leaps"
+    ],
+    "rewards": [
+      "Loretta's Mastery",
+      "Loretta's War Sickle"
+    ],
+    "note": null,
+    "image": "images/bosses/elden-ring/loretta-knight-of-the-haligtree.webp",
+    "image_credit": "Fandom wiki, fair use, personal use, © FromSoftware/Bandai Namco/SIE",
+    "source_url": "https://eldenring.fandom.com/wiki/Loretta"
+  },
+  {
+    "id": "elemer-of-the-briar",
+    "name": "Elemer of the Briar",
+    "category": "Great Enemies (optional)",
+    "required": "optional",
+    "location": "The Shaded Castle, Altus",
+    "dlc": false,
+    "hp": 4897,
+    "hp_text": null,
+    "runes": 24000,
+    "weak_to": [
+      "Pierce",
+      "Lightning"
+    ],
+    "resists": [
+      "Bleed",
+      "Frostbite"
+    ],
+    "immune": [
+      "Madness",
+      "Death Blight"
+    ],
+    "weak_source": "infobox",
+    "strengths": [
+      "Heavy greatsword combos",
+      "Briar thorns that cause bleed"
+    ],
+    "strategy": [
+      "Wait for the long combos, then counter",
+      "Punish after his slams",
+      "Pierce and lightning do extra"
+    ],
+    "rewards": [
+      "Marais Executioner's Sword",
+      "Briar Greatshield"
+    ],
+    "note": null,
+    "image": "images/bosses/elden-ring/elemer-of-the-briar.webp",
+    "image_credit": "Fandom wiki, fair use, personal use, © FromSoftware/Bandai Namco/SIE",
+    "source_url": "https://eldenring.fandom.com/wiki/Elemer_of_the_Briar"
+  },
+  {
+    "id": "godskin-apostle",
+    "name": "Godskin Apostle",
+    "category": "Great Enemies (optional)",
+    "required": "optional",
+    "location": "Dominula Windmill Village; Divine Tower of Caelid; Spiritcaller Cave",
+    "dlc": false,
+    "hp": 7528,
+    "hp_text": "7,528 / 13,596 / 9,847",
+    "runes": 14000,
+    "weak_to": [
+      "Sleep"
+    ],
+    "resists": [],
+    "immune": [],
+    "weak_source": "wiki text",
+    "strengths": [
+      "Black flames that chip % damage",
+      "Long reach with a stretching body"
+    ],
+    "strategy": [
+      "Sleep is highly effective",
+      "Stay mid-close and punish slow attacks",
+      "Dodge through black-flame waves"
+    ],
+    "rewards": [
+      "Godskin Peeler",
+      "Scouring Black Flame",
+      "Godskin Apostle Hood",
+      "Godskin Apostle Robe",
+      "Godskin Apostle Bracelets",
+      "Godskin Apostle Trousers"
+    ],
+    "note": null,
+    "image": "images/bosses/elden-ring/godskin-apostle.webp",
+    "image_credit": "Fandom wiki, fair use, personal use, © FromSoftware/Bandai Namco/SIE",
+    "source_url": "https://eldenring.fandom.com/wiki/Godskin_Apostle"
+  },
+  {
+    "id": "godskin-noble",
+    "name": "Godskin Noble",
+    "category": "Great Enemies (optional)",
+    "required": "optional",
+    "location": "Volcano Manor; Divine Tower of Liurnia",
+    "dlc": false,
+    "hp": 10060,
+    "hp_text": "10,060 / 9,031",
+    "runes": 50000,
+    "weak_to": [
+      "Sleep"
+    ],
+    "resists": [],
+    "immune": [],
+    "weak_source": "wiki text",
+    "strengths": [
+      "Rolling body slams",
+      "Black flame spells and flame pillars"
+    ],
+    "strategy": [
+      "Sleep is highly effective",
+      "Dodge through rolls and attack his sides",
+      "Stay out of black flame zones"
+    ],
+    "rewards": [
+      "Godskin Stitcher",
+      "Noble Presence",
+      "Godskin Noble Set"
+    ],
+    "note": null,
+    "image": "images/bosses/elden-ring/godskin-noble.webp",
+    "image_credit": "Fandom wiki, fair use, personal use, © FromSoftware/Bandai Namco/SIE",
+    "source_url": "https://eldenring.fandom.com/wiki/Godskin_Noble"
+  },
+  {
+    "id": "fell-twins",
+    "name": "Fell Twins",
+    "category": "Great Enemies (optional)",
+    "required": "optional",
+    "location": "Divine Tower of East Altus",
+    "dlc": false,
+    "hp": 6539,
+    "hp_text": "6,539 (Axe) / 7,871 (Cleaver)",
+    "runes": 29000,
+    "weak_to": [],
+    "resists": [],
+    "immune": [],
+    "weak_source": null,
+    "strengths": [
+      "Two giant omens that deal heavy physical damage",
+      "Shared fog-gate fight with heavy slams"
+    ],
+    "strategy": [
+      "Use spirit ashes to split their attention",
+      "Stay between their legs and hit their heels",
+      "Focus one twin at a time"
+    ],
+    "rewards": [
+      "Omenkiller Rollo"
+    ],
+    "note": null,
+    "image": "images/bosses/elden-ring/fell-twins.webp",
+    "image_credit": "Fandom wiki, fair use, personal use, © FromSoftware/Bandai Namco/SIE",
+    "source_url": "https://eldenring.fandom.com/wiki/Fell_Twins"
+  },
+  {
+    "id": "mimic-tear",
+    "name": "Mimic Tear",
+    "category": "Great Enemies (optional)",
+    "required": "optional",
+    "location": "Nokron, Eternal City",
+    "dlc": false,
+    "hp": 19536,
+    "hp_text": null,
+    "runes": 10000,
+    "weak_to": [
+      "Madness"
+    ],
+    "resists": [],
+    "immune": [
+      "Death Blight"
+    ],
+    "weak_source": "wiki text",
+    "strengths": [
+      "Copies your build and gear",
+      "Matches your spells and items"
+    ],
+    "strategy": [
+      "Swap to a weak loadout before entering, then re-equip",
+      "Use attacks it can't punish easily",
+      "Madness can work; it is immune to death blight"
+    ],
+    "rewards": [
+      "Larval Tear x2",
+      "Silver Tear Mask"
+    ],
+    "note": null,
+    "image": "images/bosses/elden-ring/mimic-tear.webp",
+    "image_credit": "Fandom wiki, fair use, personal use, © FromSoftware/Bandai Namco/SIE",
+    "source_url": "https://eldenring.fandom.com/wiki/Mimic_Tear"
+  },
+  {
+    "id": "valiant-gargoyles",
+    "name": "Valiant Gargoyles",
+    "category": "Great Enemies (optional)",
+    "required": "optional",
+    "location": "Siofra Aqueduct (Nokron)",
+    "dlc": false,
+    "hp": null,
+    "hp_text": null,
+    "runes": null,
+    "weak_to": [
+      "Strike"
+    ],
+    "resists": [],
+    "immune": [
+      "Poison",
+      "Frostbite",
+      "Sleep",
+      "Madness",
+      "Death Blight",
+      "Scarlet Rot",
+      "Bleed"
+    ],
+    "weak_source": "infobox",
+    "strengths": [
+      "Two gargoyles with poison breath",
+      "Large weapon arcs"
+    ],
+    "strategy": [
+      "Kill the first quickly before the second arrives",
+      "Strike damage works well",
+      "Use pillars to split them"
+    ],
+    "rewards": [],
+    "note": "Duo fight; the second gargoyle joins partway.",
+    "image": "images/bosses/elden-ring/valiant-gargoyles.webp",
+    "image_credit": "Fandom wiki, fair use, personal use, © FromSoftware/Bandai Namco/SIE",
+    "source_url": "https://eldenring.fandom.com/wiki/Valiant_Gargoyle"
+  },
+  {
+    "id": "ancestor-spirit",
+    "name": "Ancestor Spirit",
+    "category": "Great Enemies (optional)",
+    "required": "optional",
+    "location": "Siofra River (Hallowhorn Grounds)",
+    "dlc": false,
+    "hp": 4393,
+    "hp_text": null,
+    "runes": 13000,
+    "weak_to": [
+      "Fire",
+      "Holy"
+    ],
+    "resists": [
+      "Magic"
+    ],
+    "immune": [
+      "Sleep",
+      "Madness",
+      "Death Blight"
+    ],
+    "weak_source": "infobox",
+    "strengths": [
+      "Antlers and leaping attacks with holy light",
+      "Large hitboxes"
+    ],
+    "strategy": [
+      "Punish after its leaps",
+      "Fire and holy are effective",
+      "Stay close to avoid charge attacks"
+    ],
+    "rewards": [
+      "Ancestral Follower Ashes"
+    ],
+    "note": null,
+    "image": "images/bosses/elden-ring/ancestor-spirit.webp",
+    "image_credit": "Fandom wiki, fair use, personal use, © FromSoftware/Bandai Namco/SIE",
+    "source_url": "https://eldenring.fandom.com/wiki/Ancestor_Spirit"
+  },
+  {
+    "id": "regal-ancestor-spirit",
+    "name": "Regal Ancestor Spirit",
+    "category": "Great Enemies (optional)",
+    "required": "optional",
+    "location": "Nokron, Night's Sacred Ground",
+    "dlc": false,
+    "hp": 6301,
+    "hp_text": null,
+    "runes": 24000,
+    "weak_to": [
+      "Slash"
+    ],
+    "resists": [
+      "Magic",
+      "Poison",
+      "Scarlet Rot",
+      "Bleed",
+      "Frostbite"
+    ],
+    "immune": [
+      "Sleep",
+      "Madness",
+      "Death Blight"
+    ],
+    "weak_source": "infobox",
+    "strengths": [
+      "Teleports and healing via wall braziers",
+      "Antler beams"
+    ],
+    "strategy": [
+      "Pressure it to prevent healing",
+      "Dodge its leaps; hit after landing",
+      "Slash is effective"
+    ],
+    "rewards": [
+      "Remembrance of the Regal Ancestor"
+    ],
+    "note": null,
+    "image": "images/bosses/elden-ring/regal-ancestor-spirit.webp",
+    "image_credit": "Fandom wiki, fair use, personal use, © FromSoftware/Bandai Namco/SIE",
+    "source_url": "https://eldenring.fandom.com/wiki/Regal_Ancestor_Spirit"
+  },
+  {
+    "id": "dragonkin-soldier",
+    "name": "Dragonkin Soldier",
+    "category": "Great Enemies (optional)",
+    "required": "optional",
+    "location": "Ainsel River (Nokstella); Siofra River; Lake of Rot",
+    "dlc": false,
+    "hp": 4372,
+    "hp_text": "4,372 / 5,758 / 7,655",
+    "runes": 12000,
+    "weak_to": [],
+    "resists": [],
+    "immune": [],
+    "weak_source": null,
+    "strengths": [
+      "Lightning attacks and heavy slams",
+      "Large reach and stomps"
+    ],
+    "strategy": [
+      "Stay under its arms and behind it",
+      "Dodge lightning lines sideways",
+      "Punish after slams"
+    ],
+    "rewards": [
+      "Frozen Lightning Spear",
+      "Dragon Halberd",
+      "Dragonscale Blade"
+    ],
+    "note": null,
+    "image": "images/bosses/elden-ring/dragonkin-soldier.webp",
+    "image_credit": "Fandom wiki, fair use, personal use, © FromSoftware/Bandai Namco/SIE",
+    "source_url": "https://eldenring.fandom.com/wiki/Dragonkin_Soldier"
+  },
+  {
+    "id": "mohg-the-omen",
+    "name": "Mohg, the Omen",
+    "category": "Great Enemies (optional)",
+    "required": "optional",
+    "location": "Subterranean Shunning-Grounds (Leyndell sewers)",
+    "dlc": false,
+    "hp": 14000,
+    "hp_text": null,
+    "runes": 100000,
+    "weak_to": [],
+    "resists": [],
+    "immune": [],
+    "weak_source": null,
+    "strengths": [
+      "Blood flame trident and curses",
+      "Tanky Omen boss"
+    ],
+    "strategy": [
+      "Stay close and roll through trident swings",
+      "Avoid blood flame puddles",
+      "Bleed builds work well"
+    ],
+    "rewards": [
+      "Bloodflame Talons"
+    ],
+    "note": null,
+    "image": "images/bosses/elden-ring/mohg-the-omen.webp",
+    "image_credit": "Fandom wiki, fair use, personal use, © FromSoftware/Bandai Namco/SIE",
+    "source_url": "https://eldenring.fandom.com/wiki/Mohg,_Lord_of_Blood"
+  },
+  {
+    "id": "astel-naturalborn-of-the-void",
+    "name": "Astel, Naturalborn of the Void",
+    "category": "Great Enemies (optional)",
+    "required": "optional",
+    "location": "Grand Cloister, Lake of Rot",
+    "dlc": false,
+    "hp": 11170,
+    "hp_text": null,
+    "runes": 80000,
+    "weak_to": [],
+    "resists": [
+      "Magic",
+      "Fire",
+      "Lightning",
+      "Holy"
+    ],
+    "immune": [
+      "Frostbite",
+      "Sleep",
+      "Madness",
+      "Death Blight"
+    ],
+    "weak_source": "infobox",
+    "strengths": [
+      "Gravity and void magic",
+      "Teleports and grabbing"
+    ],
+    "strategy": [
+      "Hit its body and stay to the side",
+      "Dodge laser blasts and meteors",
+      "Ranged attacks help in openings"
+    ],
+    "rewards": [
+      "Remembrance of the Naturalborn"
+    ],
+    "note": null,
+    "image": "images/bosses/elden-ring/astel-naturalborn-of-the-void.webp",
+    "image_credit": "Fandom wiki, fair use, personal use, © FromSoftware/Bandai Namco/SIE",
+    "source_url": "https://eldenring.fandom.com/wiki/Astel,_Naturalborn_of_the_Void"
+  },
+  {
+    "id": "commander-oneil",
+    "name": "Commander O'Neil",
+    "category": "Great Enemies (optional)",
+    "required": "optional",
+    "location": "Swamp of Aeonia, Caelid",
+    "dlc": false,
+    "hp": 9210,
+    "hp_text": null,
+    "runes": 12000,
+    "weak_to": [],
+    "resists": [],
+    "immune": [],
+    "weak_source": null,
+    "strengths": [
+      "Rot-spreading spear and soldier spirits",
+      "Scarlet Rot attacks"
+    ],
+    "strategy": [
+      "Kill him quickly; summons swarm",
+      "Use rot resistance gear",
+      "Punish after his spear combos"
+    ],
+    "rewards": [
+      "Commander's Standard",
+      "Unalloyed Gold Needle"
+    ],
+    "note": null,
+    "image": "images/bosses/elden-ring/commander-oneil.webp",
+    "image_credit": "Fandom wiki, fair use, personal use, © FromSoftware/Bandai Namco/SIE",
+    "source_url": "https://eldenring.fandom.com/wiki/Commander_O'Neil"
+  },
+  {
+    "id": "commander-niall",
+    "name": "Commander Niall",
+    "category": "Great Enemies (optional)",
+    "required": "optional",
+    "location": "Castle Sol, Mountaintops",
+    "dlc": false,
+    "hp": 15541,
+    "hp_text": null,
+    "runes": 90000,
+    "weak_to": [],
+    "resists": [],
+    "immune": [],
+    "weak_source": null,
+    "strengths": [
+      "Frost and lightning attacks",
+      "Summons two spirit knights"
+    ],
+    "strategy": [
+      "Kill the spirit knights first",
+      "Keep distance from frost bursts",
+      "Punish after his leg kicks"
+    ],
+    "rewards": [
+      "Veteran's Prosthesis"
+    ],
+    "note": null,
+    "image": "images/bosses/elden-ring/commander-niall.webp",
+    "image_credit": "Fandom wiki, fair use, personal use, © FromSoftware/Bandai Namco/SIE",
+    "source_url": "https://eldenring.fandom.com/wiki/Commander_Niall"
+  },
+  {
+    "id": "black-blade-kindred",
+    "name": "Black Blade Kindred",
+    "category": "Great Enemies (optional)",
+    "required": "optional",
+    "location": "Bestial Sanctum; Forbidden Lands",
+    "dlc": false,
+    "hp": 12297,
+    "hp_text": "12,297 / 8,452",
+    "runes": 88000,
+    "weak_to": [],
+    "resists": [],
+    "immune": [],
+    "weak_source": null,
+    "strengths": [
+      "Huge skeletal gargoyle with a black greataxe",
+      "Leaping slams and wide sweeps"
+    ],
+    "strategy": [
+      "Stay beside it and hit after combos",
+      "Use pillars to block its leaps",
+      "Strike damage works well"
+    ],
+    "rewards": [
+      "Gargoyle's Blackblade",
+      "Gargoyle's Black Halberd",
+      "Gargoyle's Black Blades",
+      "Gargoyle's Black Axe"
+    ],
+    "note": null,
+    "image": "images/bosses/elden-ring/black-blade-kindred.webp",
+    "image_credit": "Fandom wiki, fair use, personal use, © FromSoftware/Bandai Namco/SIE",
+    "source_url": "https://eldenring.fandom.com/wiki/Black_Blade_Kindred"
+  },
+  {
+    "id": "flying-dragon-agheel",
+    "name": "Flying Dragon Agheel",
+    "category": "Dragons & Wyrms",
+    "required": "optional",
+    "location": "Dragon-Burnt Ruins, Limgrave",
+    "dlc": false,
+    "hp": 3200,
+    "hp_text": null,
+    "runes": 5000,
+    "weak_to": [
+      "Pierce"
+    ],
+    "resists": [],
+    "immune": [
+      "Sleep",
+      "Madness",
+      "Death Blight"
+    ],
+    "weak_source": "infobox",
+    "strengths": [
+      "Fire breath from the air",
+      "Bites and tail swipes"
+    ],
+    "strategy": [
+      "Ride Torrent to dodge breath",
+      "Hit the head when it lands",
+      "Pierce damage is effective"
+    ],
+    "rewards": [
+      "Dragon Heart",
+      "Unlocks Agheel's Flame"
+    ],
+    "note": null,
+    "image": "images/bosses/elden-ring/flying-dragon-agheel.webp",
+    "image_credit": "Fandom wiki, fair use, personal use, © FromSoftware/Bandai Namco/SIE",
+    "source_url": "https://eldenring.fandom.com/wiki/Flying_Dragon_Agheel"
+  },
+  {
+    "id": "glintstone-dragon-smarag",
+    "name": "Glintstone Dragon Smarag",
+    "category": "Dragons & Wyrms",
+    "required": "optional",
+    "location": "Crystalline Woods, Liurnia",
+    "dlc": false,
+    "hp": 6069,
+    "hp_text": null,
+    "runes": 14000,
+    "weak_to": [
+      "Pierce"
+    ],
+    "resists": [],
+    "immune": [
+      "Sleep",
+      "Madness",
+      "Death Blight"
+    ],
+    "weak_source": "infobox",
+    "strengths": [
+      "Glintstone breath and magic bolts",
+      "Bites and charges"
+    ],
+    "strategy": [
+      "Stay under the dragon at its legs",
+      "Hit the head when it lowers it",
+      "Pierce damage is effective"
+    ],
+    "rewards": [
+      "Dragon Heart",
+      "Unlocks Smarag's Glintstone Breath"
+    ],
+    "note": null,
+    "image": "images/bosses/elden-ring/glintstone-dragon-smarag.webp",
+    "image_credit": "Fandom wiki, fair use, personal use, © FromSoftware/Bandai Namco/SIE",
+    "source_url": "https://eldenring.fandom.com/wiki/Glintstone_Dragon_Smarag"
+  },
+  {
+    "id": "glintstone-dragon-adula",
+    "name": "Glintstone Dragon Adula",
+    "category": "Dragons & Wyrms",
+    "required": "optional",
+    "location": "Three Sisters; Cathedral of Manus Celes",
+    "dlc": false,
+    "hp": 4405,
+    "hp_text": "4,405 / 11,550",
+    "runes": 120000,
+    "weak_to": [
+      "Pierce"
+    ],
+    "resists": [],
+    "immune": [
+      "Sleep",
+      "Madness",
+      "Death Blight"
+    ],
+    "weak_source": "infobox",
+    "strengths": [
+      "Glintstone breath and sorcery",
+      "Very aggressive"
+    ],
+    "strategy": [
+      "Stay near the legs and attack the head",
+      "Avoid breath by circling behind",
+      "Pierce damage is effective"
+    ],
+    "rewards": [
+      "Adula's Moonblade (Cathedral of Manus Celes)",
+      "Dragon Heart x3"
+    ],
+    "note": null,
+    "image": "images/bosses/elden-ring/glintstone-dragon-adula.webp",
+    "image_credit": "Fandom wiki, fair use, personal use, © FromSoftware/Bandai Namco/SIE",
+    "source_url": "https://eldenring.fandom.com/wiki/Glintstone_Dragon_Adula"
+  },
+  {
+    "id": "flying-dragon-greyll",
+    "name": "Flying Dragon Greyll",
+    "category": "Dragons & Wyrms",
+    "required": "optional",
+    "location": "Farum Greatbridge, Dragonbarrow",
+    "dlc": false,
+    "hp": 11550,
+    "hp_text": null,
+    "runes": 80000,
+    "weak_to": [
+      "Pierce"
+    ],
+    "resists": [],
+    "immune": [
+      "Sleep",
+      "Madness",
+      "Death Blight"
+    ],
+    "weak_source": "infobox",
+    "strengths": [
+      "Fire breath and swooping bites",
+      "Large health pool"
+    ],
+    "strategy": [
+      "Ride Torrent and attack the head",
+      "Avoid the fire breath by circling",
+      "Pierce works well"
+    ],
+    "rewards": [
+      "Dragon Heart"
+    ],
+    "note": null,
+    "image": "images/bosses/elden-ring/flying-dragon-greyll.webp",
+    "image_credit": "Fandom wiki, fair use, personal use, © FromSoftware/Bandai Namco/SIE",
+    "source_url": "https://eldenring.fandom.com/wiki/Flying_Dragon_Greyll"
+  },
+  {
+    "id": "elder-dragon-greyoll",
+    "name": "Elder Dragon Greyoll",
+    "category": "Dragons & Wyrms",
+    "required": "optional",
+    "location": "Greyoll's Dragonbarrow, Caelid",
+    "dlc": false,
+    "hp": 87664,
+    "hp_text": null,
+    "runes": 50000,
+    "weak_to": [
+      "Pierce"
+    ],
+    "resists": [],
+    "immune": [
+      "Sleep",
+      "Madness",
+      "Death Blight"
+    ],
+    "weak_source": "infobox",
+    "strengths": [
+      "Huge size and HP",
+      "Stomps and fire breath"
+    ],
+    "strategy": [
+      "Hit the legs and stay under her",
+      "Avoid breath and her roar",
+      "Pierce damage is effective"
+    ],
+    "rewards": [
+      "Dragon Heart x5",
+      "Unlocks Greyoll's Roar"
+    ],
+    "note": null,
+    "image": "images/bosses/elden-ring/elder-dragon-greyoll.webp",
+    "image_credit": "Fandom wiki, fair use, personal use, © FromSoftware/Bandai Namco/SIE",
+    "source_url": "https://eldenring.fandom.com/wiki/Elder_Dragon_Greyoll"
+  },
+  {
+    "id": "decaying-ekzykes",
+    "name": "Decaying Ekzykes",
+    "category": "Dragons & Wyrms",
+    "required": "optional",
+    "location": "Cathedral of Dragon Communion, Caelid",
+    "dlc": false,
+    "hp": 23731,
+    "hp_text": null,
+    "runes": 38000,
+    "weak_to": [
+      "Bleed",
+      "Fire",
+      "Frostbite"
+    ],
+    "resists": [],
+    "immune": [
+      "Sleep",
+      "Madness",
+      "Death Blight"
+    ],
+    "weak_source": "infobox",
+    "strengths": [
+      "Scarlet rot breath",
+      "Fast movement"
+    ],
+    "strategy": [
+      "Use rot resistance gear",
+      "Hit the head when it lands",
+      "Fire, bleed and frost all work"
+    ],
+    "rewards": [
+      "Dragon Heart",
+      "Unlocks Ekzykes's Decay"
+    ],
+    "note": null,
+    "image": "images/bosses/elden-ring/decaying-ekzykes.webp",
+    "image_credit": "Fandom wiki, fair use, personal use, © FromSoftware/Bandai Namco/SIE",
+    "source_url": "https://eldenring.fandom.com/wiki/Decaying_Ekzykes"
+  },
+  {
+    "id": "ancient-dragon-lansseax",
+    "name": "Ancient Dragon Lansseax",
+    "category": "Dragons & Wyrms",
+    "required": "optional",
+    "location": "Altus Plateau (Rampartside Path / Abandoned Coffin)",
+    "dlc": false,
+    "hp": 9087,
+    "hp_text": null,
+    "runes": 60000,
+    "weak_to": [],
+    "resists": [],
+    "immune": [],
+    "weak_source": null,
+    "strengths": [
+      "Lightning attacks and dragon breath",
+      "Flies off and relocates mid-fight"
+    ],
+    "strategy": [
+      "Ride Torrent to keep up",
+      "Avoid lightning strikes by moving",
+      "Strike the head when grounded"
+    ],
+    "rewards": [
+      "Lansseax's Glaive"
+    ],
+    "note": null,
+    "image": "images/bosses/elden-ring/ancient-dragon-lansseax.webp",
+    "image_credit": "Fandom wiki, fair use, personal use, © FromSoftware/Bandai Namco/SIE",
+    "source_url": "https://eldenring.fandom.com/wiki/Ancient_Dragon_Lansseax"
+  },
+  {
+    "id": "magma-wyrm-makar",
+    "name": "Magma Wyrm Makar",
+    "category": "Dragons & Wyrms",
+    "required": "optional",
+    "location": "Ruin-Strewn Precipice, Liurnia",
+    "dlc": false,
+    "hp": 7141,
+    "hp_text": null,
+    "runes": 24000,
+    "weak_to": [],
+    "resists": [],
+    "immune": [],
+    "weak_source": null,
+    "strengths": [
+      "Fire breath and lava pools",
+      "Massive sword slams"
+    ],
+    "strategy": [
+      "Stay close behind its arm",
+      "Avoid the lava pools",
+      "Use fire resistance gear"
+    ],
+    "rewards": [
+      "Magma Wyrm's Scalesword",
+      "Dragon Heart"
+    ],
+    "note": null,
+    "image": "images/bosses/elden-ring/magma-wyrm-makar.webp",
+    "image_credit": "Fandom wiki, fair use, personal use, © FromSoftware/Bandai Namco/SIE",
+    "source_url": "https://eldenring.fandom.com/wiki/Magma_Wyrm"
+  },
+  {
+    "id": "magma-wyrm",
+    "name": "Magma Wyrm",
+    "category": "Dragons & Wyrms",
+    "required": "optional",
+    "location": "Mt. Gelmir; Gael Tunnel",
+    "dlc": false,
+    "hp": 12243,
+    "hp_text": "12,243 / 7,141",
+    "runes": 19000,
+    "weak_to": [],
+    "resists": [],
+    "immune": [],
+    "weak_source": null,
+    "strengths": [
+      "Fire breath and lava",
+      "Large sword sweeps"
+    ],
+    "strategy": [
+      "Stay behind its arm and attack",
+      "Dodge sword sweeps by rolling in",
+      "Fire resistance gear helps"
+    ],
+    "rewards": [
+      "Dragon Heart",
+      "Moonveil"
+    ],
+    "note": null,
+    "image": "images/bosses/elden-ring/magma-wyrm.webp",
+    "image_credit": "Fandom wiki, fair use, personal use, © FromSoftware/Bandai Namco/SIE",
+    "source_url": "https://eldenring.fandom.com/wiki/Magma_Wyrm"
+  },
+  {
+    "id": "great-wyrm-theodorix",
+    "name": "Great Wyrm Theodorix",
+    "category": "Dragons & Wyrms",
+    "required": "optional",
+    "location": "Consecrated Snowfield",
+    "dlc": false,
+    "hp": 25649,
+    "hp_text": null,
+    "runes": 180000,
+    "weak_to": [],
+    "resists": [],
+    "immune": [],
+    "weak_source": null,
+    "strengths": [
+      "Huge HP pool and powerful magma breath",
+      "Heavy body slams and bites"
+    ],
+    "strategy": [
+      "Fire negation gear and boluses help",
+      "Stay at its flank away from the breath",
+      "Hit the head when it lowers after a slam"
+    ],
+    "rewards": [
+      "Dragon Heart x3"
+    ],
+    "note": null,
+    "image": "images/bosses/elden-ring/great-wyrm-theodorix.webp",
+    "image_credit": "Fandom wiki, fair use, personal use, © FromSoftware/Bandai Namco/SIE",
+    "source_url": "https://eldenring.fandom.com/wiki/Magma_Wyrm"
+  },
+  {
+    "id": "lichdragon-fortissax",
+    "name": "Lichdragon Fortissax",
+    "category": "Dragons & Wyrms",
+    "required": "optional",
+    "location": "Deeproot Depths (Fia questline)",
+    "dlc": false,
+    "hp": 12903,
+    "hp_text": null,
+    "runes": 90000,
+    "weak_to": [],
+    "resists": [],
+    "immune": [],
+    "weak_source": null,
+    "strengths": [
+      "Death lightning that inflicts death blight",
+      "Large HP and aggressive attacks"
+    ],
+    "strategy": [
+      "Fia fights alongside you; let her draw aggro",
+      "Run from the red death lightning to avoid death blight",
+      "Strike the head and legs when it lands"
+    ],
+    "rewards": [
+      "Remembrance of the Lichdragon"
+    ],
+    "note": null,
+    "image": "images/bosses/elden-ring/lichdragon-fortissax.webp",
+    "image_credit": "Fandom wiki, fair use, personal use, © FromSoftware/Bandai Namco/SIE",
+    "source_url": "https://eldenring.fandom.com/wiki/Lichdragon_Fortissax"
+  },
+  {
+    "id": "borealis-the-freezing-fog",
+    "name": "Borealis the Freezing Fog",
+    "category": "Dragons & Wyrms",
+    "required": "optional",
+    "location": "Freezing Lake, Mountaintops",
+    "dlc": false,
+    "hp": 11268,
+    "hp_text": null,
+    "runes": 100000,
+    "weak_to": [
+      "Standard",
+      "Strike"
+    ],
+    "resists": [
+      "Slash",
+      "Pierce",
+      "Magic",
+      "Fire",
+      "Lightning",
+      "Holy",
+      "Frostbite"
+    ],
+    "immune": [
+      "Sleep",
+      "Madness",
+      "Death Blight"
+    ],
+    "weak_source": "infobox",
+    "strengths": [
+      "Ice breath and frostbite",
+      "Fog that slows and blinds"
+    ],
+    "strategy": [
+      "Use Torrent and stay mobile",
+      "Hit the head when grounded",
+      "Strike damage works well"
+    ],
+    "rewards": [
+      "Dragon Heart",
+      "Unlocks Borealis's Mist"
+    ],
+    "note": null,
+    "image": "images/bosses/elden-ring/borealis-the-freezing-fog.webp",
+    "image_credit": "Fandom wiki, fair use, personal use, © FromSoftware/Bandai Namco/SIE",
+    "source_url": "https://eldenring.fandom.com/wiki/Borealis_the_Freezing_Fog"
+  },
+  {
+    "id": "dragonlord-placidusax",
+    "name": "Dragonlord Placidusax",
+    "category": "Dragons & Wyrms",
+    "required": "optional",
+    "location": "Crumbling Farum Azula (hidden)",
+    "dlc": false,
+    "hp": 26651,
+    "hp_text": null,
+    "runes": 280000,
+    "weak_to": [
+      "Pierce"
+    ],
+    "resists": [
+      "Magic",
+      "Fire",
+      "Lightning",
+      "Holy",
+      "Poison",
+      "Scarlet Rot",
+      "Bleed",
+      "Frostbite"
+    ],
+    "immune": [
+      "Sleep",
+      "Madness"
+    ],
+    "weak_source": "infobox",
+    "strengths": [
+      "Teleports and lightning breath",
+      "Multiple heads attack at once"
+    ],
+    "strategy": [
+      "Stay at its side and attack the legs",
+      "Watch for teleport and lightning strikes",
+      "Pierce works well"
+    ],
+    "rewards": [
+      "Remembrance of the Dragonlord"
+    ],
+    "note": null,
+    "image": "images/bosses/elden-ring/dragonlord-placidusax.webp",
+    "image_credit": "Fandom wiki, fair use, personal use, © FromSoftware/Bandai Namco/SIE",
+    "source_url": "https://eldenring.fandom.com/wiki/Dragonlord_Placidusax"
+  },
+  {
+    "id": "tree-sentinel",
+    "name": "Tree Sentinel",
+    "category": "Field bosses",
+    "required": "optional",
+    "location": "Church of Elleh, Limgrave; Altus Plateau (duo)",
+    "dlc": false,
+    "hp": 2889,
+    "hp_text": "2,889 / 6,461",
+    "runes": 3200,
+    "weak_to": [
+      "Lightning"
+    ],
+    "resists": [
+      "Fire",
+      "Holy"
+    ],
+    "immune": [
+      "Madness",
+      "Death Blight"
+    ],
+    "weak_source": "infobox",
+    "strengths": [
+      "Mounted knight with a heavy halberd",
+      "Charges and shield bash"
+    ],
+    "strategy": [
+      "Fight on Torrent; circle behind",
+      "Punish after its charges",
+      "Lightning is effective"
+    ],
+    "rewards": [
+      "Golden Halberd",
+      "Erdtree Greatshield",
+      "Hero's Rune [1]"
+    ],
+    "note": null,
+    "image": "images/bosses/elden-ring/tree-sentinel.webp",
+    "image_credit": "Fandom wiki, fair use, personal use, © FromSoftware/Bandai Namco/SIE",
+    "source_url": "https://eldenring.fandom.com/wiki/Tree_Sentinel"
+  },
+  {
+    "id": "bell-bearing-hunter",
+    "name": "Bell Bearing Hunter",
+    "category": "Night bosses",
+    "required": "optional",
+    "location": "Merchant shacks at night (Limgrave, Liurnia, Altus, Dragonbarrow)",
+    "dlc": false,
+    "hp": 2495,
+    "hp_text": "2,495 / 4,050 / 6,216 / 10,619",
+    "runes": 2700,
+    "weak_to": [],
+    "resists": [],
+    "immune": [],
+    "weak_source": null,
+    "strengths": [
+      "Aggressive greatsword and bleed",
+      "Night-only, warps you in"
+    ],
+    "strategy": [
+      "Watch his telegraphed combos",
+      "Punish after his big swings",
+      "Avoid prolonged blocking"
+    ],
+    "rewards": [
+      "Bone Peddler's Bell Bearing",
+      "Meat Peddler's Bell Bearing",
+      "Medicine Peddler's Bell Bearing",
+      "Gravity Stone Peddler's Bell Bearing"
+    ],
+    "note": null,
+    "image": "images/bosses/elden-ring/bell-bearing-hunter.webp",
+    "image_credit": "Fandom wiki, fair use, personal use, © FromSoftware/Bandai Namco/SIE",
+    "source_url": "https://eldenring.fandom.com/wiki/Elemer_of_the_Briar"
+  },
+  {
+    "id": "nights-cavalry",
+    "name": "Night's Cavalry",
+    "category": "Night bosses",
+    "required": "optional",
+    "location": "Roads across the map at night (10 encounters)",
+    "dlc": false,
+    "hp": 1665,
+    "hp_text": "1,665 / 1,823 / 2,704 / 2,704 / 3,269 / 7,089 / 3,725 / 6,602 / 7,246",
+    "runes": 2400,
+    "weak_to": [
+      "Pierce",
+      "Lightning",
+      "Poison",
+      "Scarlet Rot"
+    ],
+    "resists": [
+      "Bleed",
+      "Frostbite"
+    ],
+    "immune": [],
+    "weak_source": "infobox",
+    "strengths": [
+      "Mounted flail or glaive attacks",
+      "Night-only field boss"
+    ],
+    "strategy": [
+      "Hit the horse to knock him down",
+      "Punish after charges",
+      "Pierce and lightning are effective"
+    ],
+    "rewards": [
+      "Varies by location: an Ash of War or Nightrider weapon/armor"
+    ],
+    "note": null,
+    "image": "images/bosses/elden-ring/nights-cavalry.webp",
+    "image_credit": "Fandom wiki, fair use, personal use, © FromSoftware/Bandai Namco/SIE",
+    "source_url": "https://eldenring.fandom.com/wiki/Night's_Cavalry"
+  },
+  {
+    "id": "deathbird",
+    "name": "Deathbird",
+    "category": "Night bosses",
+    "required": "optional",
+    "location": "Stormhill; Weeping Peninsula; Liurnia; Capital Outskirts (night)",
+    "dlc": false,
+    "hp": 3442,
+    "hp_text": "3,442 / 3,769 / 5,588 / 8,575",
+    "runes": 2800,
+    "weak_to": [
+      "Strike",
+      "Holy"
+    ],
+    "resists": [],
+    "immune": [
+      "Poison",
+      "Bleed",
+      "Frostbite",
+      "Sleep",
+      "Madness"
+    ],
+    "weak_source": "infobox",
+    "strengths": [
+      "Large flying bird with heavy cane attacks",
+      "Night-only field boss"
+    ],
+    "strategy": [
+      "Holy and strike are effective",
+      "Stay close and roll through its attacks",
+      "Punish after its slam attacks"
+    ],
+    "rewards": [
+      "Blue-Feathered Branchsword",
+      "Sacrificial Axe",
+      "Red-Feathered Branchsword",
+      "Twinbird Kite Shield"
+    ],
+    "note": null,
+    "image": "images/bosses/elden-ring/deathbird.webp",
+    "image_credit": "Fandom wiki, fair use, personal use, © FromSoftware/Bandai Namco/SIE",
+    "source_url": "https://eldenring.fandom.com/wiki/Deathbird"
+  },
+  {
+    "id": "death-rite-bird",
+    "name": "Death Rite Bird",
+    "category": "Night bosses",
+    "required": "optional",
+    "location": "Liurnia; Caelid; Mountaintops; Consecrated Snowfield (night)",
+    "dlc": false,
+    "hp": 6577,
+    "hp_text": "6,577 / 7,952 / 16,059 / 17,625",
+    "runes": 7800,
+    "weak_to": [
+      "Holy"
+    ],
+    "resists": [],
+    "immune": [],
+    "weak_source": "wiki text",
+    "strengths": [
+      "Ghostflame frost attacks",
+      "Large and tanky"
+    ],
+    "strategy": [
+      "Holy is effective",
+      "Avoid ghostflame pools",
+      "Stay under the bird when possible"
+    ],
+    "rewards": [
+      "Ancient Death Rancor",
+      "Death's Poker",
+      "Death Ritual Spear",
+      "Explosive Ghostflame"
+    ],
+    "note": null,
+    "image": "images/bosses/elden-ring/death-rite-bird.webp",
+    "image_credit": "Fandom wiki, fair use, personal use, © FromSoftware/Bandai Namco/SIE",
+    "source_url": "https://eldenring.fandom.com/wiki/Death_Rite_Bird"
+  },
+  {
+    "id": "tibia-mariner",
+    "name": "Tibia Mariner",
+    "category": "Field bosses",
+    "required": "optional",
+    "location": "Summonwater Village; East Liurnia; Wyndham Ruins",
+    "dlc": false,
+    "hp": 3176,
+    "hp_text": "3,176 / 5,155 / 7,911",
+    "runes": 2400,
+    "weak_to": [
+      "Holy"
+    ],
+    "resists": [],
+    "immune": [
+      "Poison",
+      "Bleed",
+      "Frostbite",
+      "Sleep",
+      "Madness",
+      "Death Blight"
+    ],
+    "weak_source": "infobox",
+    "strengths": [
+      "Summons skeleton minions",
+      "Teleports via boat"
+    ],
+    "strategy": [
+      "Kill it while the skeletons respawn",
+      "Holy works well",
+      "Use Torrent to reach it quickly"
+    ],
+    "rewards": [
+      "Deathroot",
+      "Skeletal Militiaman Ashes",
+      "Skeletal Bandit Ashes",
+      "Tibia's Summons"
+    ],
+    "note": null,
+    "image": "images/bosses/elden-ring/tibia-mariner.webp",
+    "image_credit": "Fandom wiki, fair use, personal use, © FromSoftware/Bandai Namco/SIE",
+    "source_url": "https://eldenring.fandom.com/wiki/Tibia_Mariner"
+  },
+  {
+    "id": "erdtree-avatar",
+    "name": "Erdtree Avatar",
+    "category": "Field bosses",
+    "required": "optional",
+    "location": "Minor Erdtrees (Weeping Peninsula, Liurnia x2, Mountaintops)",
+    "dlc": false,
+    "hp": 3163,
+    "hp_text": "3,163 / 4,690 / 4,690 / 11,452",
+    "runes": 3600,
+    "weak_to": [],
+    "resists": [],
+    "immune": [],
+    "weak_source": null,
+    "strengths": [
+      "Large hammer swings and holy beams",
+      "Heals using sacred light"
+    ],
+    "strategy": [
+      "Stay under its hammer",
+      "Attack the knees",
+      "Punish after hammer slams"
+    ],
+    "rewards": [
+      "Opaline Bubbletear",
+      "Crimsonburst Crystal Tear",
+      "Holy-Shrouding Cracked Tear",
+      "Lightning-Shrouding Cracked Tear",
+      "Magic-Shrouding Cracked Tear",
+      "Cerulean Crystal Tear"
+    ],
+    "note": null,
+    "image": "images/bosses/elden-ring/erdtree-avatar.webp",
+    "image_credit": "Fandom wiki, fair use, personal use, © FromSoftware/Bandai Namco/SIE",
+    "source_url": "https://eldenring.fandom.com/wiki/Erdtree_Avatar"
+  },
+  {
+    "id": "putrid-avatar",
+    "name": "Putrid Avatar",
+    "category": "Field bosses",
+    "required": "optional",
+    "location": "Minor Erdtrees (Caelid, Dragonbarrow, Consecrated Snowfield)",
+    "dlc": false,
+    "hp": 5671,
+    "hp_text": "5,671 / 12,297 / 12,569",
+    "runes": 9600,
+    "weak_to": [],
+    "resists": [],
+    "immune": [],
+    "weak_source": null,
+    "strengths": [
+      "Scarlet rot attacks",
+      "Large hammer slams"
+    ],
+    "strategy": [
+      "Use rot resistance gear",
+      "Stay behind it",
+      "Punish after slams"
+    ],
+    "rewards": [
+      "Greenburst Crystal Tear",
+      "Flame-Shrouding Cracked Tear",
+      "Opaline Hardtear",
+      "Stonebarb Cracked Tear",
+      "Ruptured Crystal Tear",
+      "Thorny Cracked Tear"
+    ],
+    "note": null,
+    "image": "images/bosses/elden-ring/putrid-avatar.webp",
+    "image_credit": "Fandom wiki, fair use, personal use, © FromSoftware/Bandai Namco/SIE",
+    "source_url": "https://eldenring.fandom.com/wiki/Erdtree_Avatar"
+  },
+  {
+    "id": "fallingstar-beast",
+    "name": "Fallingstar Beast",
+    "category": "Field bosses",
+    "required": "optional",
+    "location": "Altus Plateau (South of Lux Ruins); Sellia Crystal Tunnel",
+    "dlc": false,
+    "hp": 7009,
+    "hp_text": "7,009 / 4,554",
+    "runes": 11000,
+    "weak_to": [],
+    "resists": [],
+    "immune": [],
+    "weak_source": null,
+    "strengths": [
+      "Gravity rock attacks and a crushing pincer tail",
+      "Fast charges across the arena"
+    ],
+    "strategy": [
+      "Avoid its charges by rolling sideways",
+      "Hit its tail when it slams",
+      "Use physical damage"
+    ],
+    "rewards": [
+      "Somber Smithing Stone 5",
+      "Smithing Stone 6 x5",
+      "Gravity Stone Fan",
+      "Gravity Stone Chunk",
+      "Somberstone Miner's Bell Bearing 1",
+      "Smithing Stone 7 x5"
+    ],
+    "note": null,
+    "image": "images/bosses/elden-ring/fallingstar-beast.webp",
+    "image_credit": "Fandom wiki, fair use, personal use, © FromSoftware/Bandai Namco/SIE",
+    "source_url": "https://eldenring.fandom.com/wiki/Fallingstar_Beast"
+  },
+  {
+    "id": "full-grown-fallingstar-beast",
+    "name": "Full-Grown Fallingstar Beast",
+    "category": "Field bosses",
+    "required": "optional",
+    "location": "Mt. Gelmir crater",
+    "dlc": false,
+    "hp": 13010,
+    "hp_text": null,
+    "runes": 21000,
+    "weak_to": [],
+    "resists": [],
+    "immune": [],
+    "weak_source": null,
+    "strengths": [
+      "Very large with strong gravity magic",
+      "Charges and tail slams"
+    ],
+    "strategy": [
+      "Dodge charges sideways; never stand in front",
+      "Hit the tail when grounded",
+      "Physical damage is effective"
+    ],
+    "rewards": [
+      "Somber Smithing Stone 6",
+      "Smithing Stone 6 x5",
+      "Fallingstar Beast Jaw"
+    ],
+    "note": null,
+    "image": "images/bosses/elden-ring/full-grown-fallingstar-beast.webp",
+    "image_credit": "Fandom wiki, fair use, personal use, © FromSoftware/Bandai Namco/SIE",
+    "source_url": "https://eldenring.fandom.com/wiki/Fallingstar_Beast"
+  },
+  {
+    "id": "omenkiller",
+    "name": "Omenkiller",
+    "category": "Field bosses",
+    "required": "optional",
+    "location": "Village of the Albinaurics, Liurnia",
+    "dlc": false,
+    "hp": 2306,
+    "hp_text": null,
+    "runes": 4900,
+    "weak_to": [],
+    "resists": [],
+    "immune": [],
+    "weak_source": null,
+    "strengths": [
+      "Heavy cleaver attacks",
+      "Fast lunges"
+    ],
+    "strategy": [
+      "Stay close and punish after combos",
+      "Use strong poise to trade",
+      "Roll into its lunges"
+    ],
+    "rewards": [
+      "Crucible Knot Talisman"
+    ],
+    "note": "Also fought with Miranda the Blighted Bloom in Perfumer's Grotto.",
+    "image": "images/bosses/elden-ring/omenkiller.webp",
+    "image_credit": "Fandom wiki, fair use, personal use, © FromSoftware/Bandai Namco/SIE",
+    "source_url": "https://eldenring.fandom.com/wiki/Omenkiller"
+  },
+  {
+    "id": "royal-revenant",
+    "name": "Royal Revenant",
+    "category": "Field bosses",
+    "required": "optional",
+    "location": "Kingsrealm Ruins, Liurnia",
+    "dlc": false,
+    "hp": 3077,
+    "hp_text": null,
+    "runes": 3100,
+    "weak_to": [
+      "Holy"
+    ],
+    "resists": [],
+    "immune": [],
+    "weak_source": "wiki text",
+    "strengths": [
+      "Aggressive grab and poison",
+      "Heals and leaps"
+    ],
+    "strategy": [
+      "Holy is very effective",
+      "Use heal spells to damage it",
+      "Dodge leaps and punish recoveries"
+    ],
+    "rewards": [],
+    "note": null,
+    "image": "images/bosses/elden-ring/royal-revenant.webp",
+    "image_credit": "Fandom wiki, fair use, personal use, © FromSoftware/Bandai Namco/SIE",
+    "source_url": "https://eldenring.fandom.com/wiki/Royal_Revenant"
+  },
+  {
+    "id": "nox-swordstress-and-nox-priest",
+    "name": "Nox Swordstress & Nox Priest",
+    "category": "Field bosses",
+    "required": "optional",
+    "location": "Sellia, Town of Sorcery (Caelid)",
+    "dlc": false,
+    "hp": null,
+    "hp_text": null,
+    "runes": 391,
+    "weak_to": [],
+    "resists": [],
+    "immune": [],
+    "weak_source": null,
+    "strengths": [
+      "Two-enemy fight with swords and magic",
+      "Fast teleporting combos"
+    ],
+    "strategy": [
+      "Focus one at a time",
+      "Punish after their teleport strikes",
+      "Use summons to split"
+    ],
+    "rewards": [
+      "Nox Swordstress Set"
+    ],
+    "note": null,
+    "image": "images/bosses/elden-ring/nox-swordstress-and-nox-priest.webp",
+    "image_credit": "Fandom wiki, fair use, personal use, © FromSoftware/Bandai Namco/SIE",
+    "source_url": "https://eldenring.fandom.com/wiki/Nox_Swordstress"
+  },
+  {
+    "id": "demi-human-queen-maggie",
+    "name": "Demi-Human Queen Maggie",
+    "category": "Field bosses",
+    "required": "optional",
+    "location": "Hermit Village, Mt. Gelmir",
+    "dlc": false,
+    "hp": 7515,
+    "hp_text": null,
+    "runes": 13000,
+    "weak_to": [],
+    "resists": [],
+    "immune": [],
+    "weak_source": null,
+    "strengths": [
+      "Large demi-human with magic",
+      "Glintstone spells"
+    ],
+    "strategy": [
+      "Stay close and attack",
+      "Avoid magic blasts",
+      "Punish after slams"
+    ],
+    "rewards": [
+      "Memory Stone",
+      "Golden Rune 1"
+    ],
+    "note": null,
+    "image": "images/bosses/elden-ring/demi-human-queen-maggie.webp",
+    "image_credit": "Fandom wiki, fair use, personal use, © FromSoftware/Bandai Namco/SIE",
+    "source_url": "https://eldenring.fandom.com/wiki/Demi-Human_Queen_Maggie"
+  },
+  {
+    "id": "wormface",
+    "name": "Wormface",
+    "category": "Field bosses",
+    "required": "optional",
+    "location": "Altus Plateau (Writheblood area woods)",
+    "dlc": false,
+    "hp": 5876,
+    "hp_text": null,
+    "runes": 10000,
+    "weak_to": [
+      "Slash"
+    ],
+    "resists": [],
+    "immune": [
+      "Madness",
+      "Death Blight"
+    ],
+    "weak_source": "infobox",
+    "strengths": [
+      "Death blight mist",
+      "Grabs and slams"
+    ],
+    "strategy": [
+      "Avoid the death mist",
+      "Slash is effective",
+      "Fight from mid-range"
+    ],
+    "rewards": [
+      "Crimsonspill Crystal Tear",
+      "Speckled Hardtear"
+    ],
+    "note": null,
+    "image": "images/bosses/elden-ring/wormface.webp",
+    "image_credit": "Fandom wiki, fair use, personal use, © FromSoftware/Bandai Namco/SIE",
+    "source_url": "https://eldenring.fandom.com/wiki/Wormface_(boss)"
+  },
+  {
+    "id": "crucible-knight-siluria",
+    "name": "Crucible Knight Siluria",
+    "category": "Field bosses",
+    "required": "optional",
+    "location": "Deeproot Depths",
+    "dlc": false,
+    "hp": 4606,
+    "hp_text": null,
+    "runes": 25000,
+    "weak_to": [],
+    "resists": [
+      "Magic",
+      "Holy"
+    ],
+    "immune": [
+      "Bleed",
+      "Madness",
+      "Death Blight"
+    ],
+    "weak_source": "infobox",
+    "strengths": [
+      "Tree-spear attacks",
+      "Crucible abilities"
+    ],
+    "strategy": [
+      "Roll through spear lunges",
+      "Punish after slams",
+      "Watch for crucible horns"
+    ],
+    "rewards": [
+      "Siluria's Tree"
+    ],
+    "note": null,
+    "image": "images/bosses/elden-ring/crucible-knight-siluria.webp",
+    "image_credit": "Fandom wiki, fair use, personal use, © FromSoftware/Bandai Namco/SIE",
+    "source_url": "https://eldenring.fandom.com/wiki/Crucible_Knight_Siluria"
+  },
+  {
+    "id": "misbegotten-warrior-and-crucible-knight",
+    "name": "Misbegotten Warrior & Crucible Knight",
+    "category": "Field bosses",
+    "required": "optional",
+    "location": "Redmane Castle (after the Radahn festival)",
+    "dlc": false,
+    "hp": 3569,
+    "hp_text": null,
+    "runes": 16000,
+    "weak_to": [
+      "Slash",
+      "Fire"
+    ],
+    "resists": [],
+    "immune": [],
+    "weak_source": "infobox",
+    "strengths": [
+      "Two-enemy duo with a crucible knight",
+      "Heavy hits"
+    ],
+    "strategy": [
+      "Kill the misbegotten first",
+      "Use summons to split",
+      "Slash and fire do extra on the warrior"
+    ],
+    "rewards": [
+      "Ruins Greatsword"
+    ],
+    "note": null,
+    "image": "images/bosses/elden-ring/misbegotten-warrior-and-crucible-knight.webp",
+    "image_credit": "Fandom wiki, fair use, personal use, © FromSoftware/Bandai Namco/SIE",
+    "source_url": "https://eldenring.fandom.com/wiki/Misbegotten_Warrior"
+  },
+  {
+    "id": "bloodhound-knight-darriwil",
+    "name": "Bloodhound Knight Darriwil",
+    "category": "Evergaol bosses",
+    "required": "optional",
+    "location": "Forlorn Hound Evergaol, Limgrave",
+    "dlc": false,
+    "hp": 1450,
+    "hp_text": null,
+    "runes": 1900,
+    "weak_to": [],
+    "resists": [],
+    "immune": [],
+    "weak_source": null,
+    "strengths": [
+      "Fast curved sword combos",
+      "Bleed attacks"
+    ],
+    "strategy": [
+      "Dodge his lunges",
+      "Punish after combos",
+      "Use a shield for bleed"
+    ],
+    "rewards": [
+      "Bloodhound's Fang"
+    ],
+    "note": null,
+    "image": "images/bosses/elden-ring/bloodhound-knight-darriwil.webp",
+    "image_credit": "Fandom wiki, fair use, personal use, © FromSoftware/Bandai Namco/SIE",
+    "source_url": "https://eldenring.fandom.com/wiki/Bloodhound_Knight_Darriwil"
+  },
+  {
+    "id": "crucible-knight",
+    "name": "Crucible Knight",
+    "category": "Evergaol bosses",
+    "required": "optional",
+    "location": "Stormhill Evergaol; Road's End Catacombs (with Spiritcaller Snail)",
+    "dlc": false,
+    "hp": 1391,
+    "hp_text": "1,391 / 2,625",
+    "runes": 2100,
+    "weak_to": [],
+    "resists": [],
+    "immune": [],
+    "weak_source": null,
+    "strengths": [
+      "Crucible tail and horn attacks",
+      "High poise and armor"
+    ],
+    "strategy": [
+      "Watch for tail sweeps",
+      "Punish after shield bashes",
+      "Guard counter when he swings"
+    ],
+    "rewards": [
+      "Aspects of the Crucible: Tail"
+    ],
+    "note": "Also appears at Redmane Castle with a Misbegotten Warrior, and as Tanith's Knight at Volcano Manor.",
+    "image": "images/bosses/elden-ring/crucible-knight.webp",
+    "image_credit": "Fandom wiki, fair use, personal use, © FromSoftware/Bandai Namco/SIE",
+    "source_url": "https://eldenring.fandom.com/wiki/Crucible_Knight"
+  },
+  {
+    "id": "ancient-hero-of-zamor",
+    "name": "Ancient Hero of Zamor",
+    "category": "Evergaol bosses",
+    "required": "optional",
+    "location": "Weeping Evergaol; Sainted Hero's Grave; Giant-Conquering Hero's Grave",
+    "dlc": false,
+    "hp": 2570,
+    "hp_text": "2,570 / 3,811 / 4,122",
+    "runes": 5400,
+    "weak_to": [],
+    "resists": [],
+    "immune": [],
+    "weak_source": null,
+    "strengths": [
+      "Frost and curved sword combos",
+      "Leaps and ice storms"
+    ],
+    "strategy": [
+      "Stay out of the ice storm",
+      "Punish after leaps",
+      "Frost negation gear and a fire-damage weapon help"
+    ],
+    "rewards": [
+      "Radagon's Scarseal",
+      "Ancient Dragon Knight Kristoff Ashes",
+      "Zamor Curved Sword",
+      "Zamor Set"
+    ],
+    "note": null,
+    "image": "images/bosses/elden-ring/ancient-hero-of-zamor.webp",
+    "image_credit": "Fandom wiki, fair use, personal use, © FromSoftware/Bandai Namco/SIE",
+    "source_url": "https://eldenring.fandom.com/wiki/Ancient_Hero_of_Zamor"
+  },
+  {
+    "id": "adan-thief-of-fire",
+    "name": "Adan, Thief of Fire",
+    "category": "Evergaol bosses",
+    "required": "optional",
+    "location": "Malefactor's Evergaol, Liurnia",
+    "dlc": false,
+    "hp": 1717,
+    "hp_text": null,
+    "runes": 3800,
+    "weak_to": [],
+    "resists": [],
+    "immune": [],
+    "weak_source": null,
+    "strengths": [
+      "Fire spells and fireballs",
+      "Fast casting"
+    ],
+    "strategy": [
+      "Close distance quickly",
+      "Interrupt his casts",
+      "Use fire resistance gear"
+    ],
+    "rewards": [
+      "Flame of the Fell God"
+    ],
+    "note": null,
+    "image": "images/bosses/elden-ring/adan-thief-of-fire.webp",
+    "image_credit": "Fandom wiki, fair use, personal use, © FromSoftware/Bandai Namco/SIE",
+    "source_url": "https://eldenring.fandom.com/wiki/Adan,_Thief_of_Fire"
+  },
+  {
+    "id": "bols-carian-knight",
+    "name": "Bols, Carian Knight",
+    "category": "Evergaol bosses",
+    "required": "optional",
+    "location": "Cuckoo's Evergaol, Liurnia",
+    "dlc": false,
+    "hp": 5109,
+    "hp_text": null,
+    "runes": 184600,
+    "weak_to": [
+      "Slash",
+      "Poison",
+      "Scarlet Rot",
+      "Bleed"
+    ],
+    "resists": [
+      "Magic",
+      "Frostbite"
+    ],
+    "immune": [
+      "Madness",
+      "Death Blight"
+    ],
+    "weak_source": "infobox",
+    "strengths": [
+      "Glintstone greatsword and phalanx",
+      "Magic attacks"
+    ],
+    "strategy": [
+      "Slash and status effects are effective",
+      "Punish after his casts",
+      "Dodge glintstone blades"
+    ],
+    "rewards": [
+      "Greatblade Phalanx"
+    ],
+    "note": null,
+    "image": "images/bosses/elden-ring/bols-carian-knight.webp",
+    "image_credit": "Fandom wiki, fair use, personal use, © FromSoftware/Bandai Namco/SIE",
+    "source_url": "https://eldenring.fandom.com/wiki/Bols,_Carian_Knight"
+  },
+  {
+    "id": "alecto-black-knife-ringleader",
+    "name": "Alecto, Black Knife Ringleader",
+    "category": "Evergaol bosses",
+    "required": "optional",
+    "location": "Ringleader's Evergaol, Moonlight Altar",
+    "dlc": false,
+    "hp": 17482,
+    "hp_text": null,
+    "runes": 80000,
+    "weak_to": [],
+    "resists": [],
+    "immune": [],
+    "weak_source": null,
+    "strengths": [
+      "Fast assassin dagger combos",
+      "Invisibility and ghostflame"
+    ],
+    "strategy": [
+      "Stay close and punish after combos",
+      "Watch for her stealth",
+      "Use fast weapons"
+    ],
+    "rewards": [
+      "Black Knife Tiche"
+    ],
+    "note": null,
+    "image": "images/bosses/elden-ring/alecto-black-knife-ringleader.webp",
+    "image_credit": "Fandom wiki, fair use, personal use, © FromSoftware/Bandai Namco/SIE",
+    "source_url": "https://eldenring.fandom.com/wiki/Alecto,_Black_Knife_Ringleader"
+  },
+  {
+    "id": "onyx-lord",
+    "name": "Onyx Lord",
+    "category": "Evergaol bosses",
+    "required": "optional",
+    "location": "Royal Grave Evergaol (Liurnia); Sealed Tunnel (Altus)",
+    "dlc": false,
+    "hp": 4058,
+    "hp_text": "4,058 / 4,907",
+    "runes": 3600,
+    "weak_to": [],
+    "resists": [],
+    "immune": [],
+    "weak_source": null,
+    "strengths": [
+      "Gravity magic and greatsword",
+      "Teleport and gravity well"
+    ],
+    "strategy": [
+      "Close distance and attack",
+      "Dodge gravity pulls",
+      "Punish after slams"
+    ],
+    "rewards": [
+      "Meteorite",
+      "Onyx Lord's Greatsword"
+    ],
+    "note": null,
+    "image": "images/bosses/elden-ring/onyx-lord.webp",
+    "image_credit": "Fandom wiki, fair use, personal use, © FromSoftware/Bandai Namco/SIE",
+    "source_url": "https://eldenring.fandom.com/wiki/Onyx_Lord"
+  },
+  {
+    "id": "battlemage-hugues",
+    "name": "Battlemage Hugues",
+    "category": "Evergaol bosses",
+    "required": "optional",
+    "location": "Sellia Evergaol, Caelid",
+    "dlc": false,
+    "hp": 4095,
+    "hp_text": null,
+    "runes": 7800,
+    "weak_to": [],
+    "resists": [],
+    "immune": [],
+    "weak_source": null,
+    "strengths": [
+      "Glintstone spells and magic",
+      "Ranged caster"
+    ],
+    "strategy": [
+      "Close distance fast",
+      "Interrupt casts",
+      "Use pillars to dodge"
+    ],
+    "rewards": [
+      "Battlemage Hugues Ashes"
+    ],
+    "note": null,
+    "image": "images/bosses/elden-ring/battlemage-hugues.webp",
+    "image_credit": "Fandom wiki, fair use, personal use, © FromSoftware/Bandai Namco/SIE",
+    "source_url": "https://eldenring.fandom.com/wiki/Battlemage"
+  },
+  {
+    "id": "godefroy-the-grafted",
+    "name": "Godefroy the Grafted",
+    "category": "Evergaol bosses",
+    "required": "optional",
+    "location": "Golden Lineage Evergaol, Altus",
+    "dlc": false,
+    "hp": null,
+    "hp_text": null,
+    "runes": 26000,
+    "weak_to": [],
+    "resists": [],
+    "immune": [],
+    "weak_source": null,
+    "strengths": [
+      "Grafted arms like Godrick",
+      "Big axe sweeps and grafted-arm slams"
+    ],
+    "strategy": [
+      "Stay at his side",
+      "Punish after combos",
+      "Use summons"
+    ],
+    "rewards": [
+      "Godfrey Icon"
+    ],
+    "note": null,
+    "image": "images/bosses/elden-ring/godefroy-the-grafted.webp",
+    "image_credit": "Fandom wiki, fair use, personal use, © FromSoftware/Bandai Namco/SIE",
+    "source_url": "https://eldenring.fandom.com/wiki/Godefroy_the_Grafted"
+  },
+  {
+    "id": "roundtable-knight-vyke",
+    "name": "Roundtable Knight Vyke",
+    "category": "Evergaol bosses",
+    "required": "optional",
+    "location": "Lord Contender's Evergaol, Mountaintops",
+    "dlc": false,
+    "hp": null,
+    "hp_text": null,
+    "runes": null,
+    "weak_to": [],
+    "resists": [],
+    "immune": [],
+    "weak_source": null,
+    "strengths": [
+      "Frenzied flame spear and madness",
+      "Fast and aggressive"
+    ],
+    "strategy": [
+      "Use madness resistance gear",
+      "Punish after his combos",
+      "Dodge spear lunges"
+    ],
+    "rewards": [
+      "Vyke's Dragonbolt",
+      "Fingerprint Helm",
+      "Fingerprint Armor",
+      "Fingerprint Gauntlets",
+      "Fingerprint Greaves"
+    ],
+    "note": null,
+    "image": "images/bosses/elden-ring/roundtable-knight-vyke.webp",
+    "image_credit": "Fandom wiki, fair use, personal use, © FromSoftware/Bandai Namco/SIE",
+    "source_url": "https://eldenring.fandom.com/wiki/Vyke"
+  },
+  {
+    "id": "soldier-of-godrick",
+    "name": "Soldier of Godrick",
+    "category": "Dungeon bosses",
+    "required": "optional",
+    "location": "Cave of Knowledge, Stranded Graveyard (tutorial)",
+    "dlc": false,
+    "hp": 384,
+    "hp_text": null,
+    "runes": 400,
+    "weak_to": [
+      "Pierce",
+      "Holy"
+    ],
+    "resists": [
+      "Slash"
+    ],
+    "immune": [
+      "Madness"
+    ],
+    "weak_source": "infobox",
+    "strengths": [
+      "Weak tutorial boss with simple sword swings",
+      "Fought alongside a few weak enemies"
+    ],
+    "strategy": [
+      "Clear the side enemies first",
+      "Punish after each slow swing",
+      "Pierce and holy deal extra"
+    ],
+    "rewards": [],
+    "note": null,
+    "image": "images/bosses/elden-ring/soldier-of-godrick.webp",
+    "image_credit": "Fandom wiki, fair use, personal use, © FromSoftware/Bandai Namco/SIE",
+    "source_url": "https://eldenring.fandom.com/wiki/Soldier_of_Godrick"
+  },
+  {
+    "id": "ulcerated-tree-spirit",
+    "name": "Ulcerated Tree Spirit",
+    "category": "Dungeon bosses",
+    "required": "optional",
+    "location": "Fringefolk Hero's Grave; Mt. Gelmir Minor Erdtree; Giants' Mountaintop Catacombs",
+    "dlc": false,
+    "hp": 6147,
+    "hp_text": "6,147 / 11,191 / 13,141",
+    "runes": 15000,
+    "weak_to": [
+      "Fire"
+    ],
+    "resists": [
+      "Holy"
+    ],
+    "immune": [
+      "Sleep",
+      "Madness",
+      "Death Blight",
+      "Poison"
+    ],
+    "weak_source": "infobox",
+    "strengths": [
+      "Long serpent body with lunging bites",
+      "Fiery explosions when it rears up"
+    ],
+    "strategy": [
+      "Attack its sides, never the face",
+      "Back off when it glows before exploding",
+      "Fire is effective"
+    ],
+    "rewards": [
+      "Golden Seed",
+      "Banished Knight Oleg Ashes",
+      "Leaden Hardtear",
+      "Cerulean Hidden Tear",
+      "Glovewort Picker's Bell Bearing [2]"
+    ],
+    "note": "Also a regular enemy in Stormveil and Leyndell.",
+    "image": "images/bosses/elden-ring/ulcerated-tree-spirit.webp",
+    "image_credit": "Fandom wiki, fair use, personal use, © FromSoftware/Bandai Namco/SIE",
+    "source_url": "https://eldenring.fandom.com/wiki/Ulcerated_Tree_Spirit"
+  },
+  {
+    "id": "beastman-of-farum-azula",
+    "name": "Beastman of Farum Azula",
+    "category": "Dungeon bosses",
+    "required": "optional",
+    "location": "Groveside Cave (Limgrave); Dragonbarrow Cave (duo)",
+    "dlc": false,
+    "hp": 1417,
+    "hp_text": "1,417 / 3,344",
+    "runes": 1000,
+    "weak_to": [],
+    "resists": [],
+    "immune": [],
+    "weak_source": null,
+    "strengths": [
+      "Fast curved-sword combos",
+      "Often in pairs or with adds"
+    ],
+    "strategy": [
+      "Fight in a corridor to avoid being flanked",
+      "Roll into combos and punish the end",
+      "Guard counters work well"
+    ],
+    "rewards": [
+      "Flamedrake Talisman",
+      "Flamedrake Talisman +2"
+    ],
+    "note": null,
+    "image": "images/bosses/elden-ring/beastman-of-farum-azula.webp",
+    "image_credit": "Fandom wiki, fair use, personal use, © FromSoftware/Bandai Namco/SIE",
+    "source_url": "https://eldenring.fandom.com/wiki/Beastman_of_Farum_Azula"
+  },
+  {
+    "id": "black-knife-assassin",
+    "name": "Black Knife Assassin",
+    "category": "Dungeon bosses",
+    "required": "optional",
+    "location": "Deathtouched Catacombs; Black Knife Catacombs; Sage's Cave; Sainted Hero's Grave",
+    "dlc": false,
+    "hp": 1668,
+    "hp_text": "1,668 / 3,312 / 3,929 / 5,413",
+    "runes": 1600,
+    "weak_to": [],
+    "resists": [
+      "Pierce",
+      "Holy"
+    ],
+    "immune": [
+      "Poison",
+      "Scarlet Rot",
+      "Bleed",
+      "Sleep",
+      "Madness"
+    ],
+    "weak_source": "infobox",
+    "strengths": [
+      "Very fast dagger combos",
+      "Turns invisible between attacks"
+    ],
+    "strategy": [
+      "Watch for footprints/dust when it's invisible",
+      "Punish its short recoveries with quick weapons",
+      "Stay close; it backsteps a lot"
+    ],
+    "rewards": [
+      "Assassin's Crimson Dagger",
+      "Assassin's Cerulean Dagger",
+      "Black Knifeprint",
+      "Concealing Veil",
+      "Black Knife"
+    ],
+    "note": null,
+    "image": "images/bosses/elden-ring/black-knife-assassin.webp",
+    "image_credit": "Fandom wiki, fair use, personal use, © FromSoftware/Bandai Namco/SIE",
+    "source_url": "https://eldenring.fandom.com/wiki/Black_Knife_Assassin"
+  },
+  {
+    "id": "demi-human-chiefs",
+    "name": "Demi-Human Chiefs",
+    "category": "Dungeon bosses",
+    "required": "optional",
+    "location": "Coastal Cave, Weeping Peninsula",
+    "dlc": false,
+    "hp": 1215,
+    "hp_text": "1,215 (each)",
+    "runes": 1200,
+    "weak_to": [],
+    "resists": [],
+    "immune": [],
+    "weak_source": null,
+    "strengths": [
+      "Two chiefs with wide club sweeps",
+      "Lots of small demi-human adds"
+    ],
+    "strategy": [
+      "Thin out the adds early",
+      "Use a choke point to keep both chiefs in front",
+      "Punish after their jump attacks"
+    ],
+    "rewards": [
+      "Tailoring Tools",
+      "Sewing Needle"
+    ],
+    "note": null,
+    "image": "images/bosses/elden-ring/demi-human-chiefs.webp",
+    "image_credit": "Fandom wiki, fair use, personal use, © FromSoftware/Bandai Namco/SIE",
+    "source_url": "https://eldenring.fandom.com/wiki/Demi-Human_Chief"
+  },
+  {
+    "id": "erdtree-burial-watchdog",
+    "name": "Erdtree Burial Watchdog",
+    "category": "Dungeon bosses",
+    "required": "optional",
+    "location": "Stormfoot, Impaler's and Wyndham Catacombs; Minor Erdtree Catacombs (duo)",
+    "dlc": false,
+    "hp": 1200,
+    "hp_text": "1,200 / 1,347 / 2,531 / 3,419",
+    "runes": 1300,
+    "weak_to": [],
+    "resists": [],
+    "immune": [],
+    "weak_source": null,
+    "strengths": [
+      "Stone cat with long sword combos",
+      "Fire breath and jumping slams"
+    ],
+    "strategy": [
+      "Roll through sword swings toward its side",
+      "Back away from the fire breath",
+      "Punish after the slow jump slam"
+    ],
+    "rewards": [
+      "Noble Sorcerer Ashes",
+      "Demi-Human Ashes",
+      "Mad Pumpkin Head Ashes",
+      "Glovewort Picker's Bell Bearing 1"
+    ],
+    "note": null,
+    "image": "images/bosses/elden-ring/erdtree-burial-watchdog.webp",
+    "image_credit": "Fandom wiki, fair use, personal use, © FromSoftware/Bandai Namco/SIE",
+    "source_url": "https://eldenring.fandom.com/wiki/Erdtree_Burial_Watchdog"
+  },
+  {
+    "id": "grave-warden-duelist",
+    "name": "Grave Warden Duelist",
+    "category": "Dungeon bosses",
+    "required": "optional",
+    "location": "Murkwater Catacombs; Auriza Side Tomb",
+    "dlc": false,
+    "hp": 2190,
+    "hp_text": "2,190 / 6,240",
+    "runes": 1700,
+    "weak_to": [],
+    "resists": [],
+    "immune": [],
+    "weak_source": null,
+    "strengths": [
+      "Heavy hammer combos",
+      "Some variants buff themselves"
+    ],
+    "strategy": [
+      "Roll late into his swings",
+      "Punish after the overhead slam",
+      "Keep stamina for long strings"
+    ],
+    "rewards": [
+      "Banished Knight Engvall Ashes",
+      "Soldjars of Fortune Ashes"
+    ],
+    "note": null,
+    "image": "images/bosses/elden-ring/grave-warden-duelist.webp",
+    "image_credit": "Fandom wiki, fair use, personal use, © FromSoftware/Bandai Namco/SIE",
+    "source_url": "https://eldenring.fandom.com/wiki/Grave_Warden_Duelist"
+  },
+  {
+    "id": "frenzied-duelist",
+    "name": "Frenzied Duelist",
+    "category": "Dungeon bosses",
+    "required": "optional",
+    "location": "Gaol Cave, Caelid",
+    "dlc": false,
+    "hp": 3079,
+    "hp_text": null,
+    "runes": 6700,
+    "weak_to": [],
+    "resists": [],
+    "immune": [],
+    "weak_source": null,
+    "strengths": [
+      "Frenzied flame madness buildup",
+      "Heavy hammer combos"
+    ],
+    "strategy": [
+      "Wear madness resistance gear",
+      "Stay close and punish recoveries",
+      "Don't stand in his flame aura"
+    ],
+    "rewards": [
+      "Putrid Corpse Ashes"
+    ],
+    "note": null,
+    "image": "images/bosses/elden-ring/frenzied-duelist.webp",
+    "image_credit": "Fandom wiki, fair use, personal use, © FromSoftware/Bandai Namco/SIE",
+    "source_url": "https://eldenring.fandom.com/wiki/Grave_Warden_Duelist"
+  },
+  {
+    "id": "putrid-grave-warden-duelist",
+    "name": "Putrid Grave Warden Duelist",
+    "category": "Dungeon bosses",
+    "required": "optional",
+    "location": "Consecrated Snowfield Catacombs",
+    "dlc": false,
+    "hp": 8800,
+    "hp_text": null,
+    "runes": 78000,
+    "weak_to": [],
+    "resists": [],
+    "immune": [],
+    "weak_source": null,
+    "strengths": [
+      "Scarlet rot buildup on hits",
+      "Heavy hammer combos"
+    ],
+    "strategy": [
+      "Bring preserving boluses and rot gear",
+      "Punish after slow slams",
+      "Watch for the delayed chain swing"
+    ],
+    "rewards": [
+      "Rotten Gravekeeper Cloak",
+      "Great Grave Glovewort x2"
+    ],
+    "note": null,
+    "image": "images/bosses/elden-ring/putrid-grave-warden-duelist.webp",
+    "image_credit": "Fandom wiki, fair use, personal use, © FromSoftware/Bandai Namco/SIE",
+    "source_url": "https://eldenring.fandom.com/wiki/Grave_Warden_Duelist"
+  },
+  {
+    "id": "guardian-golem",
+    "name": "Guardian Golem",
+    "category": "Dungeon bosses",
+    "required": "optional",
+    "location": "Highroad Cave, Limgrave",
+    "dlc": false,
+    "hp": 5974,
+    "hp_text": null,
+    "runes": 1700,
+    "weak_to": [
+      "Strike"
+    ],
+    "resists": [
+      "Fire",
+      "Lightning",
+      "Holy"
+    ],
+    "immune": [
+      "Poison",
+      "Scarlet Rot",
+      "Bleed",
+      "Frostbite",
+      "Sleep",
+      "Madness"
+    ],
+    "weak_source": "wiki text",
+    "strengths": [
+      "Big stone golem with slow, heavy slams",
+      "Immune to status effects",
+      "Resists fire, lightning and holy"
+    ],
+    "strategy": [
+      "Hit its legs to topple it, then crit",
+      "Strike weapons are effective",
+      "Stay behind its legs; avoid the stomp"
+    ],
+    "rewards": [
+      "Blue Dancer Charm"
+    ],
+    "note": null,
+    "image": "images/bosses/elden-ring/guardian-golem.webp",
+    "image_credit": "Fandom wiki, fair use, personal use, © FromSoftware/Bandai Namco/SIE",
+    "source_url": "https://eldenring.fandom.com/wiki/Guardian_Golem_(boss)"
+  },
+  {
+    "id": "mad-pumpkin-head",
+    "name": "Mad Pumpkin Head",
+    "category": "Dungeon bosses",
+    "required": "optional",
+    "location": "Waypoint Ruins cellar; Caelem Ruins (duo)",
+    "dlc": false,
+    "hp": 1328,
+    "hp_text": "1,328 / 2,800",
+    "runes": 1100,
+    "weak_to": [],
+    "resists": [],
+    "immune": [],
+    "weak_source": null,
+    "strengths": [
+      "Heavy flail with wide sweeps",
+      "Armored head shrugs off hits"
+    ],
+    "strategy": [
+      "Go for its body and back, not the helmet",
+      "Roll through flail swings",
+      "Punish after the slam"
+    ],
+    "rewards": [],
+    "note": null,
+    "image": "images/bosses/elden-ring/mad-pumpkin-head.webp",
+    "image_credit": "Fandom wiki, fair use, personal use, © FromSoftware/Bandai Namco/SIE",
+    "source_url": "https://eldenring.fandom.com/wiki/Mad_Pumpkin_Head"
+  },
+  {
+    "id": "patches",
+    "name": "Patches",
+    "category": "Dungeon bosses",
+    "required": "optional",
+    "location": "Murkwater Cave, Limgrave",
+    "dlc": false,
+    "hp": 1191,
+    "hp_text": "1,191 / 1,547 / 2,260 / 2,876",
+    "runes": 800,
+    "weak_to": [],
+    "resists": [],
+    "immune": [],
+    "weak_source": null,
+    "strengths": [
+      "Spear thrusts and poison",
+      "Pretends to give up mid-fight"
+    ],
+    "strategy": [
+      "Punish after his lunges",
+      "Accept his surrender to keep his shop",
+      "Stay out of poison patches"
+    ],
+    "rewards": [
+      "Spear +7",
+      "Leather Armor",
+      "Leather Boots",
+      "Leather Gloves",
+      "Golden Rune 1",
+      "Patches' Bell Bearing"
+    ],
+    "note": "Yield to spare him and unlock his shop.",
+    "image": "images/bosses/elden-ring/patches.webp",
+    "image_credit": "Fandom wiki, fair use, personal use, © FromSoftware/Bandai Namco/SIE",
+    "source_url": "https://eldenring.fandom.com/wiki/Patches"
+  },
+  {
+    "id": "cemetery-shade",
+    "name": "Cemetery Shade",
+    "category": "Dungeon bosses",
+    "required": "optional",
+    "location": "Tombsward Catacombs; Black Knife Catacombs; Caelid Catacombs",
+    "dlc": false,
+    "hp": 781,
+    "hp_text": "781 / 691 / 1,467",
+    "runes": 2200,
+    "weak_to": [],
+    "resists": [],
+    "immune": [],
+    "weak_source": null,
+    "strengths": [
+      "Ghostly attacker that teleports",
+      "Often with skeleton adds"
+    ],
+    "strategy": [
+      "Clear adds that revive with holy or by finishing them",
+      "Keep it in view when it vanishes",
+      "Punish after its grab attempt"
+    ],
+    "rewards": [
+      "Lhutel the Headless",
+      "Twinsage Sorcerer Ashes",
+      "Kindred of Rot Ashes"
+    ],
+    "note": null,
+    "image": "images/bosses/elden-ring/cemetery-shade.webp",
+    "image_credit": "Fandom wiki, fair use, personal use, © FromSoftware/Bandai Namco/SIE",
+    "source_url": "https://eldenring.fandom.com/wiki/Cemetery_Shade"
+  },
+  {
+    "id": "miranda-blossom",
+    "name": "Miranda Blossom",
+    "category": "Dungeon bosses",
+    "required": "optional",
+    "location": "Tombsward Cave, Weeping Peninsula",
+    "dlc": false,
+    "hp": 2483,
+    "hp_text": null,
+    "runes": 2100,
+    "weak_to": [
+      "Fire"
+    ],
+    "resists": [],
+    "immune": [
+      "Madness",
+      "Death Blight"
+    ],
+    "weak_source": "infobox",
+    "strengths": [
+      "Poison spray cone",
+      "Stationary flower"
+    ],
+    "strategy": [
+      "Stay behind it and hack away",
+      "Fire is effective",
+      "Avoid the poison mist"
+    ],
+    "rewards": [
+      "Viridian Amber Medallion"
+    ],
+    "note": null,
+    "image": "images/bosses/elden-ring/miranda-blossom.webp",
+    "image_credit": "Fandom wiki, fair use, personal use, © FromSoftware/Bandai Namco/SIE",
+    "source_url": "https://eldenring.fandom.com/wiki/Miranda_Blossom"
+  },
+  {
+    "id": "runebear",
+    "name": "Runebear",
+    "category": "Dungeon bosses",
+    "required": "optional",
+    "location": "Earthbore Cave, Weeping Peninsula",
+    "dlc": false,
+    "hp": 3311,
+    "hp_text": null,
+    "runes": 2600,
+    "weak_to": [],
+    "resists": [],
+    "immune": [],
+    "weak_source": null,
+    "strengths": [
+      "Fast claws and body slams",
+      "Big health for its size"
+    ],
+    "strategy": [
+      "Dodge sideways into its slams",
+      "Punish after its grab",
+      "Fight in open space"
+    ],
+    "rewards": [
+      "Spelldrake Talisman"
+    ],
+    "note": null,
+    "image": "images/bosses/elden-ring/runebear.webp",
+    "image_credit": "Fandom wiki, fair use, personal use, © FromSoftware/Bandai Namco/SIE",
+    "source_url": "https://eldenring.fandom.com/wiki/Runebear"
+  },
+  {
+    "id": "scaly-misbegotten",
+    "name": "Scaly Misbegotten",
+    "category": "Dungeon bosses",
+    "required": "optional",
+    "location": "Morne Tunnel, Weeping Peninsula",
+    "dlc": false,
+    "hp": 1360,
+    "hp_text": null,
+    "runes": 2000,
+    "weak_to": [],
+    "resists": [],
+    "immune": [],
+    "weak_source": null,
+    "strengths": [
+      "Anchor swings with long reach",
+      "Fast lunges"
+    ],
+    "strategy": [
+      "Roll into swings and attack after the slam",
+      "Watch for jump attacks",
+      "Bleed works"
+    ],
+    "rewards": [
+      "Rusted Anchor"
+    ],
+    "note": null,
+    "image": "images/bosses/elden-ring/scaly-misbegotten.webp",
+    "image_credit": "Fandom wiki, fair use, personal use, © FromSoftware/Bandai Namco/SIE",
+    "source_url": "https://eldenring.fandom.com/wiki/Misbegotten"
+  },
+  {
+    "id": "stonedigger-troll",
+    "name": "Stonedigger Troll",
+    "category": "Dungeon bosses",
+    "required": "optional",
+    "location": "Limgrave Tunnels; Old Altus Tunnel",
+    "dlc": false,
+    "hp": 1295,
+    "hp_text": "1,295 / 3,050",
+    "runes": 1800,
+    "weak_to": [
+      "Strike",
+      "Sleep"
+    ],
+    "resists": [
+      "Poison"
+    ],
+    "immune": [
+      "Madness",
+      "Death Blight"
+    ],
+    "weak_source": "infobox",
+    "strengths": [
+      "Club smashes and body slams",
+      "Slow but heavy hits"
+    ],
+    "strategy": [
+      "Strike weapons and sleep are effective",
+      "Stay at its heels",
+      "Punish after its slam"
+    ],
+    "rewards": [
+      "Roar Medallion",
+      "Great Club"
+    ],
+    "note": null,
+    "image": "images/bosses/elden-ring/stonedigger-troll.webp",
+    "image_credit": "Fandom wiki, fair use, personal use, © FromSoftware/Bandai Namco/SIE",
+    "source_url": "https://eldenring.fandom.com/wiki/Stonedigger_Troll"
+  },
+  {
+    "id": "bloodhound-knight",
+    "name": "Bloodhound Knight",
+    "category": "Dungeon bosses",
+    "required": "optional",
+    "location": "Lakeside Crystal Cave, Liurnia",
+    "dlc": false,
+    "hp": 1985,
+    "hp_text": null,
+    "runes": 3600,
+    "weak_to": [],
+    "resists": [],
+    "immune": [],
+    "weak_source": null,
+    "strengths": [
+      "Fast dodges and curved sword combos",
+      "Inflicts bleed"
+    ],
+    "strategy": [
+      "Wait out its dodges, then strike",
+      "Use bleed resistance gear",
+      "Punish after lunges"
+    ],
+    "rewards": [
+      "Cerulean Amber Medallion"
+    ],
+    "note": null,
+    "image": "images/bosses/elden-ring/bloodhound-knight.webp",
+    "image_credit": "Fandom wiki, fair use, personal use, © FromSoftware/Bandai Namco/SIE",
+    "source_url": "https://eldenring.fandom.com/wiki/Bloodhound_Knight"
+  },
+  {
+    "id": "cleanrot-knight",
+    "name": "Cleanrot Knight",
+    "category": "Dungeon bosses",
+    "required": "optional",
+    "location": "Stillwater Cave (Liurnia); Abandoned Cave (Caelid, duo)",
+    "dlc": false,
+    "hp": 2000,
+    "hp_text": "2,000 / 2,000",
+    "runes": 3300,
+    "weak_to": [
+      "Pierce",
+      "Fire"
+    ],
+    "resists": [
+      "Holy"
+    ],
+    "immune": [
+      "Madness",
+      "Death Blight"
+    ],
+    "weak_source": "infobox",
+    "strengths": [
+      "Scarlet rot spear thrusts",
+      "Summons insects"
+    ],
+    "strategy": [
+      "Use rot resistance gear",
+      "Fire and pierce are effective",
+      "Punish after combos"
+    ],
+    "rewards": [
+      "Winged Sword Insignia",
+      "Gold Scarab"
+    ],
+    "note": null,
+    "image": "images/bosses/elden-ring/cleanrot-knight.webp",
+    "image_credit": "Fandom wiki, fair use, personal use, © FromSoftware/Bandai Namco/SIE",
+    "source_url": "https://eldenring.fandom.com/wiki/Cleanrot_Knight"
+  },
+  {
+    "id": "crystalian",
+    "name": "Crystalian",
+    "category": "Dungeon bosses",
+    "required": "optional",
+    "location": "Raya Lucaria Crystal Tunnel; Academy Crystal Cave (duo); Altus Tunnel (duo)",
+    "dlc": false,
+    "hp": 1595,
+    "hp_text": "1,595 / 1,595 / 1,892",
+    "runes": 3000,
+    "weak_to": [],
+    "resists": [],
+    "immune": [],
+    "weak_source": null,
+    "strengths": [
+      "Hard crystal armor that blocks damage",
+      "Ring blades and spears"
+    ],
+    "strategy": [
+      "Strike damage or a jump attack breaks the crystal",
+      "Punish after combos",
+      "Avoid getting cornered"
+    ],
+    "rewards": [
+      "Smithing-Stone Miner's Bell Bearing",
+      "Crystal Release",
+      "Somberstone Miner's Bell Bearing [2]"
+    ],
+    "note": null,
+    "image": "images/bosses/elden-ring/crystalian.webp",
+    "image_credit": "Fandom wiki, fair use, personal use, © FromSoftware/Bandai Namco/SIE",
+    "source_url": "https://eldenring.fandom.com/wiki/Crystalian"
+  },
+  {
+    "id": "putrid-crystalians",
+    "name": "Putrid Crystalians",
+    "category": "Dungeon bosses",
+    "required": "optional",
+    "location": "Sellia Hideaway, Caelid (trio)",
+    "dlc": false,
+    "hp": 3358,
+    "hp_text": "3,358 (each)",
+    "runes": 7100,
+    "weak_to": [],
+    "resists": [],
+    "immune": [],
+    "weak_source": null,
+    "strengths": [
+      "Three crystalians that spread rot",
+      "Hard crystal armor"
+    ],
+    "strategy": [
+      "Bring rot resistance",
+      "Use strike damage to break armor",
+      "Focus one at a time"
+    ],
+    "rewards": [
+      "Crystal Torrent"
+    ],
+    "note": null,
+    "image": "images/bosses/elden-ring/putrid-crystalians.webp",
+    "image_credit": "Fandom wiki, fair use, personal use, © FromSoftware/Bandai Namco/SIE",
+    "source_url": "https://eldenring.fandom.com/wiki/Crystalian"
+  },
+  {
+    "id": "spiritcaller-snail",
+    "name": "Spiritcaller Snail",
+    "category": "Dungeon bosses",
+    "required": "optional",
+    "location": "Road's End Catacombs (Crucible Knight); Spiritcaller Cave (Godskin pair)",
+    "dlc": false,
+    "hp": 1722,
+    "hp_text": "1,722 / 1,840",
+    "runes": 3000,
+    "weak_to": [],
+    "resists": [],
+    "immune": [],
+    "weak_source": null,
+    "strengths": [
+      "Summons other spirits to fight",
+      "Weak itself"
+    ],
+    "strategy": [
+      "Find and kill the snail first",
+      "Use AoE attacks on summons",
+      "Look for its glow"
+    ],
+    "rewards": [
+      "Glintstone Sorcerer Ashes",
+      "Black Flame Ritual",
+      "Godskin Swaddling Cloth"
+    ],
+    "note": null,
+    "image": "images/bosses/elden-ring/spiritcaller-snail.webp",
+    "image_credit": "Fandom wiki, fair use, personal use, © FromSoftware/Bandai Namco/SIE",
+    "source_url": "https://eldenring.fandom.com/wiki/Spiritcaller_Snail"
+  },
+  {
+    "id": "misbegotten-warrior-and-perfumer-tricia",
+    "name": "Perfumer Tricia & Misbegotten Warrior",
+    "category": "Dungeon bosses",
+    "required": "optional",
+    "location": "Unsightly Catacombs, Mt. Gelmir",
+    "dlc": false,
+    "hp": 988,
+    "hp_text": null,
+    "runes": 9400,
+    "weak_to": [
+      "Standard",
+      "Slash",
+      "Pierce",
+      "Holy",
+      "Bleed",
+      "Frostbite"
+    ],
+    "resists": [
+      "Magic",
+      "Fire",
+      "Lightning",
+      "Poison",
+      "Scarlet Rot"
+    ],
+    "immune": [
+      "Madness"
+    ],
+    "weak_source": "infobox",
+    "strengths": [
+      "Two-enemy fight: brute plus caster",
+      "Tricia throws fire and buffs"
+    ],
+    "strategy": [
+      "Kill Tricia first; she is fragile",
+      "Kite the misbegotten around her",
+      "Interrupt her casts"
+    ],
+    "rewards": [
+      "Perfumer Tricia"
+    ],
+    "note": null,
+    "image": "images/bosses/elden-ring/misbegotten-warrior-and-perfumer-tricia.webp",
+    "image_credit": "Fandom wiki, fair use, personal use, © FromSoftware/Bandai Namco/SIE",
+    "source_url": "https://eldenring.fandom.com/wiki/Perfumer_Tricia"
+  },
+  {
+    "id": "demi-human-queen-gilika",
+    "name": "Demi-Human Queen Gilika",
+    "category": "Dungeon bosses",
+    "required": "optional",
+    "location": "Lux Ruins cellar, Altus",
+    "dlc": false,
+    "hp": 3284,
+    "hp_text": null,
+    "runes": 8500,
+    "weak_to": [],
+    "resists": [],
+    "immune": [],
+    "weak_source": null,
+    "strengths": [
+      "Glintstone magic",
+      "Large demi-human with swings"
+    ],
+    "strategy": [
+      "Close distance and stay aggressive",
+      "Avoid magic projectiles",
+      "Punish after slams"
+    ],
+    "rewards": [],
+    "note": null,
+    "image": "images/bosses/elden-ring/demi-human-queen-gilika.webp",
+    "image_credit": "Fandom wiki, fair use, personal use, © FromSoftware/Bandai Namco/SIE",
+    "source_url": "https://eldenring.fandom.com/wiki/Demi-Human_Queen_Gilika"
+  },
+  {
+    "id": "necromancer-garris",
+    "name": "Necromancer Garris",
+    "category": "Dungeon bosses",
+    "required": "optional",
+    "location": "Sage's Cave, Altus",
+    "dlc": false,
+    "hp": 3202,
+    "hp_text": null,
+    "runes": 9000,
+    "weak_to": [],
+    "resists": [],
+    "immune": [],
+    "weak_source": null,
+    "strengths": [
+      "Flail and hammer combos",
+      "Can cast spells from range"
+    ],
+    "strategy": [
+      "Stay close; he is frail like most casters",
+      "Punish after his flail combos",
+      "Dodge late into hammer swings"
+    ],
+    "rewards": [
+      "Family Heads"
+    ],
+    "note": null,
+    "image": "images/bosses/elden-ring/necromancer-garris.webp",
+    "image_credit": "Fandom wiki, fair use, personal use, © FromSoftware/Bandai Namco/SIE",
+    "source_url": "https://eldenring.fandom.com/wiki/Necromancer_Garris"
+  },
+  {
+    "id": "miranda-the-blighted-bloom",
+    "name": "Omenkiller & Miranda the Blighted Bloom",
+    "category": "Dungeon bosses",
+    "required": "optional",
+    "location": "Perfumer's Grotto, Altus",
+    "dlc": false,
+    "hp": 5212,
+    "hp_text": null,
+    "runes": 8400,
+    "weak_to": [
+      "Fire"
+    ],
+    "resists": [],
+    "immune": [
+      "Madness",
+      "Death Blight"
+    ],
+    "weak_source": "infobox",
+    "strengths": [
+      "Large poison flower",
+      "Fought with Omenkiller"
+    ],
+    "strategy": [
+      "Kill the Omenkiller first",
+      "Fire is effective",
+      "Avoid poison spray"
+    ],
+    "rewards": [
+      "Great Omenkiller Cleaver"
+    ],
+    "note": null,
+    "image": "images/bosses/elden-ring/miranda-the-blighted-bloom.webp",
+    "image_credit": "Fandom wiki, fair use, personal use, © FromSoftware/Bandai Namco/SIE",
+    "source_url": "https://eldenring.fandom.com/wiki/Miranda_the_Blighted_Bloom"
+  },
+  {
+    "id": "sanguine-noble",
+    "name": "Sanguine Noble",
+    "category": "Dungeon bosses",
+    "required": "optional",
+    "location": "Writheblood Ruins, Altus",
+    "dlc": false,
+    "hp": 3128,
+    "hp_text": null,
+    "runes": 8800,
+    "weak_to": [
+      "Bleed"
+    ],
+    "resists": [],
+    "immune": [],
+    "weak_source": "wiki text",
+    "strengths": [
+      "Bloody spells and fast attacks",
+      "Gets stronger near bleed"
+    ],
+    "strategy": [
+      "Inflict bleed on it; it's very weak to it",
+      "Punish after spell casts",
+      "Stay close"
+    ],
+    "rewards": [],
+    "note": null,
+    "image": "images/bosses/elden-ring/sanguine-noble.webp",
+    "image_credit": "Fandom wiki, fair use, personal use, © FromSoftware/Bandai Namco/SIE",
+    "source_url": "https://eldenring.fandom.com/wiki/Sanguine_Noble"
+  },
+  {
+    "id": "crucible-knight-ordovis",
+    "name": "Crucible Knight Ordovis",
+    "category": "Dungeon bosses",
+    "required": "optional",
+    "location": "Auriza Hero's Grave, Altus",
+    "dlc": false,
+    "hp": 2730,
+    "hp_text": "2,730 (x2)",
+    "runes": 28000,
+    "weak_to": [],
+    "resists": [],
+    "immune": [],
+    "weak_source": null,
+    "strengths": [
+      "Two crucible knights at once",
+      "Heavy armor and crucible attacks"
+    ],
+    "strategy": [
+      "Split the two knights with summons",
+      "Watch for the crucible horn charges",
+      "Punish after combos"
+    ],
+    "rewards": [
+      "Crucible Axe Armor",
+      "Ordovis's Greatsword"
+    ],
+    "note": null,
+    "image": "images/bosses/elden-ring/crucible-knight-ordovis.webp",
+    "image_credit": "Fandom wiki, fair use, personal use, © FromSoftware/Bandai Namco/SIE",
+    "source_url": "https://eldenring.fandom.com/wiki/Crucible_Knight_Ordovis"
+  },
+  {
+    "id": "abductor-virgins",
+    "name": "Abductor Virgins",
+    "category": "Dungeon bosses",
+    "required": "optional",
+    "location": "Subterranean Inquisition Chamber, Volcano Manor",
+    "dlc": false,
+    "hp": 3811,
+    "hp_text": null,
+    "runes": 10000,
+    "weak_to": [
+      "Lightning"
+    ],
+    "resists": [],
+    "immune": [],
+    "weak_source": "wiki text",
+    "strengths": [
+      "Grab attacks that carry you off",
+      "Spinning blades"
+    ],
+    "strategy": [
+      "Lightning is effective",
+      "Hit them when their chest opens",
+      "Avoid getting grabbed"
+    ],
+    "rewards": [
+      "Inquisitor's Girandole"
+    ],
+    "note": null,
+    "image": "images/bosses/elden-ring/abductor-virgins.webp",
+    "image_credit": "Fandom wiki, fair use, personal use, © FromSoftware/Bandai Namco/SIE",
+    "source_url": "https://eldenring.fandom.com/wiki/Abductor_Virgin"
+  },
+  {
+    "id": "demi-human-queen-margot",
+    "name": "Demi-Human Queen Margot",
+    "category": "Dungeon bosses",
+    "required": "optional",
+    "location": "Volcano Cave, Mt. Gelmir",
+    "dlc": false,
+    "hp": 3971,
+    "hp_text": null,
+    "runes": 11000,
+    "weak_to": [],
+    "resists": [],
+    "immune": [],
+    "weak_source": null,
+    "strengths": [
+      "Large demi-human with glintstone magic",
+      "Club swings"
+    ],
+    "strategy": [
+      "Stay close",
+      "Punish after slams",
+      "Avoid magic blasts"
+    ],
+    "rewards": [
+      "Jar Cannon"
+    ],
+    "note": null,
+    "image": "images/bosses/elden-ring/demi-human-queen-margot.webp",
+    "image_credit": "Fandom wiki, fair use, personal use, © FromSoftware/Bandai Namco/SIE",
+    "source_url": "https://eldenring.fandom.com/wiki/Demi-Human_Queen_Margot"
+  },
+  {
+    "id": "kindred-of-rot",
+    "name": "Kindred of Rot",
+    "category": "Dungeon bosses",
+    "required": "optional",
+    "location": "Seethewater Cave, Mt. Gelmir (duo)",
+    "dlc": false,
+    "hp": 2034,
+    "hp_text": "2,034 (each)",
+    "runes": 10000,
+    "weak_to": [
+      "Fire"
+    ],
+    "resists": [
+      "Slash"
+    ],
+    "immune": [
+      "Madness",
+      "Death Blight"
+    ],
+    "weak_source": "infobox",
+    "strengths": [
+      "Rot spears and lunges",
+      "Fought in pairs"
+    ],
+    "strategy": [
+      "Use rot resistance gear",
+      "Fire is effective",
+      "Focus one at a time"
+    ],
+    "rewards": [
+      "Kindred of Rot's Exultation"
+    ],
+    "note": null,
+    "image": "images/bosses/elden-ring/kindred-of-rot.webp",
+    "image_credit": "Fandom wiki, fair use, personal use, © FromSoftware/Bandai Namco/SIE",
+    "source_url": "https://eldenring.fandom.com/wiki/Kindred_of_Rot_(boss)"
+  },
+  {
+    "id": "red-wolf-of-the-champion",
+    "name": "Red Wolf of the Champion",
+    "category": "Dungeon bosses",
+    "required": "optional",
+    "location": "Gelmir Hero's Grave",
+    "dlc": false,
+    "hp": 3162,
+    "hp_text": null,
+    "runes": 21000,
+    "weak_to": [],
+    "resists": [],
+    "immune": [],
+    "weak_source": null,
+    "strengths": [
+      "Fast lunges and bites",
+      "Glintstone sword magic"
+    ],
+    "strategy": [
+      "Dodge sideways into lunges",
+      "Punish after combos",
+      "Avoid magic swords"
+    ],
+    "rewards": [
+      "Bloodhound Knight Floh"
+    ],
+    "note": null,
+    "image": "images/bosses/elden-ring/red-wolf-of-the-champion.webp",
+    "image_credit": "Fandom wiki, fair use, personal use, © FromSoftware/Bandai Namco/SIE",
+    "source_url": "https://eldenring.fandom.com/wiki/Red_Wolf_of_the_Champion"
+  },
+  {
+    "id": "putrid-tree-spirit",
+    "name": "Putrid Tree Spirit",
+    "category": "Dungeon bosses",
+    "required": "optional",
+    "location": "War-Dead Catacombs, Caelid",
+    "dlc": false,
+    "hp": 18144,
+    "hp_text": null,
+    "runes": 64000,
+    "weak_to": [
+      "Fire"
+    ],
+    "resists": [
+      "Holy"
+    ],
+    "immune": [
+      "Sleep",
+      "Madness",
+      "Death Blight",
+      "Scarlet Rot"
+    ],
+    "weak_source": "infobox",
+    "strengths": [
+      "Rot explosions",
+      "Long serpent body"
+    ],
+    "strategy": [
+      "Use rot resistance gear",
+      "Fire is effective",
+      "Avoid its explosions"
+    ],
+    "rewards": [
+      "Golden Seed",
+      "Redmane Knight Ogha"
+    ],
+    "note": null,
+    "image": "images/bosses/elden-ring/putrid-tree-spirit.webp",
+    "image_credit": "Fandom wiki, fair use, personal use, © FromSoftware/Bandai Namco/SIE",
+    "source_url": "https://eldenring.fandom.com/wiki/Putrid_Tree_Spirit"
+  },
+  {
+    "id": "stray-mimic-tear",
+    "name": "Stray Mimic Tear",
+    "category": "Dungeon bosses",
+    "required": "optional",
+    "location": "Hidden Path to the Haligtree",
+    "dlc": false,
+    "hp": null,
+    "hp_text": null,
+    "runes": 50000,
+    "weak_to": [],
+    "resists": [],
+    "immune": [],
+    "weak_source": null,
+    "strengths": [
+      "Copies your build",
+      "Fought in a hidden arena"
+    ],
+    "strategy": [
+      "Use a weaker gear setup",
+      "Stay mobile",
+      "Punish after its attacks"
+    ],
+    "rewards": [
+      "Blackflame Monk Amon"
+    ],
+    "note": null,
+    "image": "images/bosses/elden-ring/stray-mimic-tear.webp",
+    "image_credit": "Fandom wiki, fair use, personal use, © FromSoftware/Bandai Namco/SIE",
+    "source_url": "https://eldenring.fandom.com/wiki/Stray_Mimic_Tear"
+  },
+  {
+    "id": "esgar-priest-of-blood",
+    "name": "Esgar, Priest of Blood",
+    "category": "Dungeon bosses",
+    "required": "optional",
+    "location": "Leyndell Catacombs (Subterranean Shunning-Grounds)",
+    "dlc": false,
+    "hp": 3511,
+    "hp_text": null,
+    "runes": 30000,
+    "weak_to": [],
+    "resists": [],
+    "immune": [],
+    "weak_source": null,
+    "strengths": [
+      "Bloodflame attacks that build bleed",
+      "Fast bloody slashes and backsteps"
+    ],
+    "strategy": [
+      "Wear bleed resistance gear",
+      "Punish after his longer combos",
+      "Stay close to limit his ranged flames"
+    ],
+    "rewards": [
+      "Lord of Blood's Exultation"
+    ],
+    "note": null,
+    "image": "images/bosses/elden-ring/esgar-priest-of-blood.webp",
+    "image_credit": "Fandom wiki, fair use, personal use, © FromSoftware/Bandai Namco/SIE",
+    "source_url": "https://eldenring.fandom.com/wiki/Esgar,_Priest_of_Blood"
+  },
+  {
+    "id": "astel-stars-of-darkness",
+    "name": "Astel, Stars of Darkness",
+    "category": "Dungeon bosses",
+    "required": "optional",
+    "location": "Yelough Anix Tunnel, Consecrated Snowfield",
+    "dlc": false,
+    "hp": 18617,
+    "hp_text": null,
+    "runes": 120000,
+    "weak_to": [],
+    "resists": [
+      "Magic",
+      "Fire",
+      "Lightning",
+      "Holy"
+    ],
+    "immune": [
+      "Frostbite",
+      "Sleep",
+      "Madness",
+      "Death Blight"
+    ],
+    "weak_source": "infobox",
+    "strengths": [
+      "Gravity magic and meteors",
+      "Teleports and grabbing"
+    ],
+    "strategy": [
+      "Stay close to its body",
+      "Dodge meteor blasts sideways",
+      "Ranged damage in openings"
+    ],
+    "rewards": [
+      "Meteorite of Astel"
+    ],
+    "note": null,
+    "image": "images/bosses/elden-ring/astel-stars-of-darkness.webp",
+    "image_credit": "Fandom wiki, fair use, personal use, © FromSoftware/Bandai Namco/SIE",
+    "source_url": "https://eldenring.fandom.com/wiki/Astel,_Stars_of_Darkness"
+  },
+  {
+    "id": "misbegotten-crusader",
+    "name": "Misbegotten Crusader",
+    "category": "Dungeon bosses",
+    "required": "optional",
+    "location": "Cave of the Forlorn, Consecrated Snowfield",
+    "dlc": false,
+    "hp": 9130,
+    "hp_text": null,
+    "runes": 93000,
+    "weak_to": [
+      "Slash",
+      "Fire"
+    ],
+    "resists": [],
+    "immune": [
+      "Madness",
+      "Death Blight"
+    ],
+    "weak_source": "infobox",
+    "strengths": [
+      "Holy greatsword combos",
+      "Fast lunges and golden spells"
+    ],
+    "strategy": [
+      "Stay close and roll into combos",
+      "Slash and fire are effective",
+      "Avoid holy shockwaves"
+    ],
+    "rewards": [
+      "Golden Order Greatsword"
+    ],
+    "note": null,
+    "image": "images/bosses/elden-ring/misbegotten-crusader.webp",
+    "image_credit": "Fandom wiki, fair use, personal use, © FromSoftware/Bandai Namco/SIE",
+    "source_url": "https://eldenring.fandom.com/wiki/Misbegotten_Crusader"
+  },
+  {
+    "id": "divine-beast-dancing-lion",
+    "name": "Divine Beast Dancing Lion",
+    "category": "SotE: Story & Remembrance",
+    "required": "main-path",
+    "location": "Belurat, Tower Settlement",
+    "dlc": true,
+    "hp": 22571,
+    "hp_text": null,
+    "runes": 180000,
+    "weak_to": [
+      "Pierce",
+      "Fire"
+    ],
+    "resists": [
+      "Magic",
+      "Lightning",
+      "Holy",
+      "Frostbite"
+    ],
+    "immune": [
+      "Sleep",
+      "Madness",
+      "Death Blight"
+    ],
+    "weak_source": "infobox",
+    "strengths": [
+      "Big leaping slams and grabs",
+      "Cycles frost, lightning and wind elements later",
+      "Resists magic, lightning, holy and frost"
+    ],
+    "strategy": [
+      "Stay at its flank and hit the legs",
+      "Back off when it rears for a jump",
+      "Pierce and fire do extra damage"
+    ],
+    "rewards": [
+      "Remembrance of the Dancing Lion",
+      "Divine Beast Head"
+    ],
+    "note": "A second Dancing Lion appears in the Ancient Ruins of Rauh.",
+    "image": "images/bosses/elden-ring/divine-beast-dancing-lion.webp",
+    "image_credit": "Fandom wiki, fair use, personal use, © FromSoftware/Bandai Namco/SIE",
+    "source_url": "https://eldenring.fandom.com/wiki/Divine_Beast_Dancing_Lion"
+  },
+  {
+    "id": "rellana-twin-moon-knight",
+    "name": "Rellana, Twin Moon Knight",
+    "category": "SotE: Story & Remembrance",
+    "required": "optional",
+    "location": "Castle Ensis",
+    "dlc": true,
+    "hp": 29723,
+    "hp_text": null,
+    "runes": 240000,
+    "weak_to": [],
+    "resists": [],
+    "immune": [],
+    "weak_source": null,
+    "strengths": [
+      "Long sword combos mixing magic and fire",
+      "Twin-moon sorcery in phase two"
+    ],
+    "strategy": [
+      "Stay close and roll into her strings",
+      "Sprint sideways out of the twin-moon impacts",
+      "Punish after her longer combos"
+    ],
+    "rewards": [
+      "Remembrance of the Twin Moon Knight"
+    ],
+    "note": null,
+    "image": "images/bosses/elden-ring/rellana-twin-moon-knight.webp",
+    "image_credit": "Fandom wiki, fair use, personal use, © FromSoftware/Bandai Namco/SIE",
+    "source_url": "https://eldenring.fandom.com/wiki/Rellana,_Twin_Moon_Knight"
+  },
+  {
+    "id": "messmer-the-impaler",
+    "name": "Messmer the Impaler",
+    "category": "SotE: Story & Remembrance",
+    "required": "main-path",
+    "location": "Shadow Keep",
+    "dlc": true,
+    "hp": 38981,
+    "hp_text": null,
+    "runes": 400000,
+    "weak_to": [
+      "Slash",
+      "Frostbite"
+    ],
+    "resists": [
+      "Fire",
+      "Holy"
+    ],
+    "immune": [
+      "Sleep",
+      "Madness"
+    ],
+    "weak_source": "infobox",
+    "strengths": [
+      "Fast spear lunges wreathed in Messmerfire",
+      "Serpent attacks in phase two",
+      "Resists fire and holy"
+    ],
+    "strategy": [
+      "Fire negation gear helps a lot",
+      "Roll toward him through lunges",
+      "Slash damage and frostbite are effective"
+    ],
+    "rewards": [
+      "Remembrance of the Impaler",
+      "Messmer's Kindling"
+    ],
+    "note": null,
+    "image": "images/bosses/elden-ring/messmer-the-impaler.webp",
+    "image_credit": "Fandom wiki, fair use, personal use, © FromSoftware/Bandai Namco/SIE",
+    "source_url": "https://eldenring.fandom.com/wiki/Messmer_the_Impaler"
+  },
+  {
+    "id": "romina-saint-of-the-bud",
+    "name": "Romina, Saint of the Bud",
+    "category": "SotE: Story & Remembrance",
+    "required": "main-path",
+    "location": "Church of the Bud, Ancient Ruins of Rauh",
+    "dlc": true,
+    "hp": 35798,
+    "hp_text": null,
+    "runes": 380000,
+    "weak_to": [],
+    "resists": [],
+    "immune": [],
+    "weak_source": null,
+    "strengths": [
+      "Scarlet rot buildup from glaive and bug swarms",
+      "Wide sweeping glaive attacks"
+    ],
+    "strategy": [
+      "Wear rot resistance and bring boluses",
+      "Stay at her side or rear",
+      "Punish after her slams"
+    ],
+    "rewards": [
+      "Remembrance of the Saint of the Bud"
+    ],
+    "note": null,
+    "image": "images/bosses/elden-ring/romina-saint-of-the-bud.webp",
+    "image_credit": "Fandom wiki, fair use, personal use, © FromSoftware/Bandai Namco/SIE",
+    "source_url": "https://eldenring.fandom.com/wiki/Romina,_Saint_of_the_Bud"
+  },
+  {
+    "id": "promised-consort-radahn",
+    "name": "Promised Consort Radahn",
+    "category": "SotE: Story & Remembrance",
+    "required": "main-path",
+    "location": "Enir-Ilim (Gate of Divinity)",
+    "dlc": true,
+    "hp": 46134,
+    "hp_text": null,
+    "runes": 500000,
+    "weak_to": [],
+    "resists": [],
+    "immune": [],
+    "weak_source": null,
+    "strengths": [
+      "Extremely fast, long combos",
+      "Holy light explosions in phase two",
+      "Very high damage"
+    ],
+    "strategy": [
+      "Max out Scadutree blessings first",
+      "Spirit ashes or co-op split his attention",
+      "Only punish after a full string ends"
+    ],
+    "rewards": [
+      "Remembrance of a God and a Lord",
+      "Circlet of Light"
+    ],
+    "note": "Final boss of the DLC; Miquella joins in phase 2.",
+    "image": "images/bosses/elden-ring/promised-consort-radahn.webp",
+    "image_credit": "Fandom wiki, fair use, personal use, © FromSoftware/Bandai Namco/SIE",
+    "source_url": "https://eldenring.fandom.com/wiki/Starscourge_Radahn"
+  },
+  {
+    "id": "midra-lord-of-frenzied-flame",
+    "name": "Midra, Lord of Frenzied Flame",
+    "category": "SotE: Story & Remembrance",
+    "required": "optional",
+    "location": "Midra's Manse, Abyssal Woods",
+    "dlc": true,
+    "hp": 47171,
+    "hp_text": null,
+    "runes": 410000,
+    "weak_to": [],
+    "resists": [],
+    "immune": [],
+    "weak_source": null,
+    "strengths": [
+      "Frenzied flame inflicts madness",
+      "Huge flame bursts in phase two"
+    ],
+    "strategy": [
+      "Wear madness resistance and bring clarifying boluses",
+      "Stay close and roll through slams",
+      "Keep out of his line of sight during frenzy beams"
+    ],
+    "rewards": [
+      "Remembrance of the Lord of Frenzied Flame"
+    ],
+    "note": null,
+    "image": "images/bosses/elden-ring/midra-lord-of-frenzied-flame.webp",
+    "image_credit": "Fandom wiki, fair use, personal use, © FromSoftware/Bandai Namco/SIE",
+    "source_url": "https://eldenring.fandom.com/wiki/Midra,_Lord_of_Frenzied_Flame"
+  },
+  {
+    "id": "scadutree-avatar",
+    "name": "Scadutree Avatar",
+    "category": "SotE: Story & Remembrance",
+    "required": "optional",
+    "location": "Scadutree Base, Scaduview",
+    "dlc": true,
+    "hp": null,
+    "hp_text": null,
+    "runes": null,
+    "weak_to": [],
+    "resists": [],
+    "immune": [],
+    "weak_source": null,
+    "strengths": [
+      "Multi-phase fight that resurfaces",
+      "Wide staff sweeps and area attacks"
+    ],
+    "strategy": [
+      "Stay near its body and attack between swings",
+      "Spirit ashes help with pressure",
+      "Bring healing; the fight is long"
+    ],
+    "rewards": [],
+    "note": null,
+    "image": null,
+    "image_credit": null,
+    "source_url": "https://eldenring.fandom.com/wiki/Scadutree_Avatar"
+  },
+  {
+    "id": "metyr-mother-of-fingers",
+    "name": "Metyr, Mother of Fingers",
+    "category": "SotE: Story & Remembrance",
+    "required": "optional",
+    "location": "Cathedral of Manus Metyr, Finger Ruins of Miyr",
+    "dlc": true,
+    "hp": 43296,
+    "hp_text": null,
+    "runes": 420000,
+    "weak_to": [
+      "Slash",
+      "Bleed"
+    ],
+    "resists": [
+      "Magic",
+      "Fire",
+      "Lightning",
+      "Holy"
+    ],
+    "immune": [
+      "Sleep",
+      "Madness",
+      "Death Blight"
+    ],
+    "weak_source": "wiki text",
+    "strengths": [
+      "Huge magic beams and projectiles",
+      "Resists magic, fire, lightning and holy"
+    ],
+    "strategy": [
+      "Slash damage and bleed are effective",
+      "Close distance and hit the belly weak spot",
+      "Dodge beams sideways, not backward"
+    ],
+    "rewards": [
+      "Remembrance of the Mother of Fingers"
+    ],
+    "note": null,
+    "image": "images/bosses/elden-ring/metyr-mother-of-fingers.webp",
+    "image_credit": "Fandom wiki, fair use, personal use, © FromSoftware/Bandai Namco/SIE",
+    "source_url": "https://eldenring.fandom.com/wiki/Metyr,_Mother_of_Fingers"
+  },
+  {
+    "id": "bayle-the-dread",
+    "name": "Bayle the Dread",
+    "category": "SotE: Story & Remembrance",
+    "required": "optional",
+    "location": "Jagged Peak summit",
+    "dlc": true,
+    "hp": 41612,
+    "hp_text": null,
+    "runes": 490000,
+    "weak_to": [
+      "Pierce"
+    ],
+    "resists": [
+      "Magic",
+      "Fire",
+      "Lightning",
+      "Holy"
+    ],
+    "immune": [
+      "Sleep",
+      "Madness",
+      "Death Blight"
+    ],
+    "weak_source": "infobox",
+    "strengths": [
+      "Flame lightning breath and strikes",
+      "Heavy stomps and bites",
+      "Resists most elements"
+    ],
+    "strategy": [
+      "Summon Igon when offered",
+      "Stay at his side away from the head",
+      "Pierce damage is effective"
+    ],
+    "rewards": [
+      "Heart of Bayle"
+    ],
+    "note": null,
+    "image": "images/bosses/elden-ring/bayle-the-dread.webp",
+    "image_credit": "Fandom wiki, fair use, personal use, © FromSoftware/Bandai Namco/SIE",
+    "source_url": "https://eldenring.fandom.com/wiki/Bayle_the_Dread"
+  },
+  {
+    "id": "commander-gaius",
+    "name": "Commander Gaius",
+    "category": "SotE: Story & Remembrance",
+    "required": "optional",
+    "location": "Scaduview (near Shadow Keep back gate)",
+    "dlc": true,
+    "hp": 33871,
+    "hp_text": null,
+    "runes": 230000,
+    "weak_to": [
+      "Holy"
+    ],
+    "resists": [
+      "Strike",
+      "Magic"
+    ],
+    "immune": [
+      "Sleep",
+      "Madness",
+      "Death Blight"
+    ],
+    "weak_source": "infobox",
+    "strengths": [
+      "Gravity magic and boar charges",
+      "Heavy hits that knock you down"
+    ],
+    "strategy": [
+      "Dodge sideways from charges",
+      "Holy damage is effective",
+      "Punish after his slams"
+    ],
+    "rewards": [
+      "Remembrance of the Wild Boar Rider"
+    ],
+    "note": null,
+    "image": "images/bosses/elden-ring/commander-gaius.webp",
+    "image_credit": "Fandom wiki, fair use, personal use, © FromSoftware/Bandai Namco/SIE",
+    "source_url": "https://eldenring.fandom.com/wiki/Commander_Gaius"
+  },
+  {
+    "id": "putrescent-knight",
+    "name": "Putrescent Knight",
+    "category": "SotE: Story & Remembrance",
+    "required": "optional",
+    "location": "Stone Coffin Fissure",
+    "dlc": true,
+    "hp": 20612,
+    "hp_text": null,
+    "runes": 220000,
+    "weak_to": [
+      "Holy",
+      "Scarlet Rot"
+    ],
+    "resists": [
+      "Slash",
+      "Pierce"
+    ],
+    "immune": [
+      "Poison",
+      "Bleed",
+      "Frostbite",
+      "Sleep",
+      "Madness",
+      "Death Blight"
+    ],
+    "weak_source": "infobox",
+    "strengths": [
+      "Mixed standard, slash and magic damage",
+      "Frostbite buildup",
+      "Resists slash and pierce"
+    ],
+    "strategy": [
+      "Holy and scarlet rot are effective",
+      "Watch for frost gusts and back off",
+      "Strike between its combos"
+    ],
+    "rewards": [
+      "Remembrance of Putrescence"
+    ],
+    "note": null,
+    "image": "images/bosses/elden-ring/putrescent-knight.webp",
+    "image_credit": "Fandom wiki, fair use, personal use, © FromSoftware/Bandai Namco/SIE",
+    "source_url": "https://eldenring.fandom.com/wiki/Putrescent_Knight"
+  },
+  {
+    "id": "chief-bloodfiend",
+    "name": "Chief Bloodfiend",
+    "category": "SotE: Dungeon & Gaol bosses",
+    "required": "optional",
+    "location": "Rivermouth Cave",
+    "dlc": true,
+    "hp": 10974,
+    "hp_text": null,
+    "runes": 80000,
+    "weak_to": [],
+    "resists": [],
+    "immune": [],
+    "weak_source": null,
+    "strengths": [
+      "Giant bloodfiend swinging a huge arm club",
+      "Wide, heavy sweeps"
+    ],
+    "strategy": [
+      "Stay close behind its swinging arm",
+      "Punish after slams",
+      "Fight away from walls to avoid getting pinned"
+    ],
+    "rewards": [
+      "Bloodfiend Hexer's Ashes"
+    ],
+    "note": null,
+    "image": "images/bosses/elden-ring/chief-bloodfiend.webp",
+    "image_credit": "Fandom wiki, fair use, personal use, © FromSoftware/Bandai Namco/SIE",
+    "source_url": "https://eldenring.fandom.com/wiki/Chief_Bloodfiend"
+  },
+  {
+    "id": "demi-human-swordmaster-onze",
+    "name": "Demi-Human Swordmaster Onze",
+    "category": "SotE: Dungeon & Gaol bosses",
+    "required": "optional",
+    "location": "Belurat Gaol",
+    "dlc": true,
+    "hp": 7441,
+    "hp_text": null,
+    "runes": 80000,
+    "weak_to": [
+      "Strike",
+      "Fire"
+    ],
+    "resists": [],
+    "immune": [
+      "Sleep",
+      "Madness",
+      "Death Blight"
+    ],
+    "weak_source": "infobox",
+    "strengths": [
+      "Glintstone-encrusted sword techniques",
+      "Quick and agile"
+    ],
+    "strategy": [
+      "Strike and fire are effective",
+      "Punish after combos",
+      "Stay close"
+    ],
+    "rewards": [
+      "Demi-Human Swordsman Yosh"
+    ],
+    "note": null,
+    "image": "images/bosses/elden-ring/demi-human-swordmaster-onze.webp",
+    "image_credit": "Fandom wiki, fair use, personal use, © FromSoftware/Bandai Namco/SIE",
+    "source_url": "https://eldenring.fandom.com/wiki/Demi-Human_Swordmaster_Onze"
+  },
+  {
+    "id": "furnace-golem",
+    "name": "Furnace Golem",
+    "category": "SotE: Field bosses",
+    "required": "optional",
+    "location": "Scorched Ruins; Rauh Base; Gravesite Plain",
+    "dlc": true,
+    "hp": 90200,
+    "hp_text": "90,200–210,500",
+    "runes": 9524,
+    "weak_to": [
+      "Standard",
+      "Strike"
+    ],
+    "resists": [
+      "Fire",
+      "Holy"
+    ],
+    "immune": [
+      "Poison",
+      "Frostbite",
+      "Sleep",
+      "Madness",
+      "Death Blight",
+      "Scarlet Rot",
+      "Bleed"
+    ],
+    "weak_source": "infobox",
+    "strengths": [
+      "Grab drops you into its forge",
+      "Fiery stomps, jump shockwaves and fire vortex",
+      "Immune to status effects"
+    ],
+    "strategy": [
+      "Hefty Furnace Pots break the legs open",
+      "Jump over stomp shockwaves",
+      "Fight on Torrent and target the legs"
+    ],
+    "rewards": [
+      "Crystal Tear",
+      "Furnace Visage"
+    ],
+    "note": null,
+    "image": "images/bosses/elden-ring/furnace-golem.webp",
+    "image_credit": "Fandom wiki, fair use, personal use, © FromSoftware/Bandai Namco/SIE",
+    "source_url": "https://eldenring.fandom.com/wiki/Furnace_Golem"
+  },
+  {
+    "id": "ghostflame-dragon",
+    "name": "Ghostflame Dragon",
+    "category": "SotE: Field bosses",
+    "required": "optional",
+    "location": "Gravesite Plain; Cerulean Coast; Moorth Highway",
+    "dlc": true,
+    "hp": 31518,
+    "hp_text": "31,518–41,929",
+    "runes": 100000,
+    "weak_to": [
+      "Holy"
+    ],
+    "resists": [],
+    "immune": [
+      "Poison",
+      "Bleed",
+      "Frostbite",
+      "Sleep",
+      "Madness",
+      "Death Blight"
+    ],
+    "weak_source": "infobox",
+    "strengths": [
+      "Ghostflame breath builds frostbite",
+      "One version summons skeletons",
+      "Immune to most status"
+    ],
+    "strategy": [
+      "Holy damage is effective",
+      "Stay under its body and hit the legs",
+      "Avoid lingering ghostflame"
+    ],
+    "rewards": [
+      "Dragon Heart",
+      "Somber Ancient Dragon Smithing Stone"
+    ],
+    "note": null,
+    "image": "images/bosses/elden-ring/ghostflame-dragon.webp",
+    "image_credit": "Fandom wiki, fair use, personal use, © FromSoftware/Bandai Namco/SIE",
+    "source_url": "https://eldenring.fandom.com/wiki/Ghostflame_Dragon"
+  },
+  {
+    "id": "knight-of-the-solitary-gaol",
+    "name": "Knight of the Solitary Gaol",
+    "category": "SotE: Dungeon & Gaol bosses",
+    "required": "optional",
+    "location": "Lamenter's Gaol area / Western Nameless Mausoleum gaol (Gravesite Plain)",
+    "dlc": true,
+    "hp": 14129,
+    "hp_text": null,
+    "runes": 70000,
+    "weak_to": [],
+    "resists": [],
+    "immune": [],
+    "weak_source": null,
+    "strengths": [
+      "Greatsword combos",
+      "Repeating crossbow at range"
+    ],
+    "strategy": [
+      "Close distance to stop crossbow fire",
+      "Roll into greatsword strings",
+      "Punish the recovery"
+    ],
+    "rewards": [
+      "Greatsword of Solitude",
+      "Solitude set"
+    ],
+    "note": null,
+    "image": "images/bosses/elden-ring/knight-of-the-solitary-gaol.webp",
+    "image_credit": "Fandom wiki, fair use, personal use, © FromSoftware/Bandai Namco/SIE",
+    "source_url": "https://eldenring.fandom.com/wiki/Knight_of_the_Solitary_Gaol"
+  },
+  {
+    "id": "red-bear",
+    "name": "Red Bear",
+    "category": "SotE: Field bosses",
+    "required": "optional",
+    "location": "Northern Nameless Mausoleum (Scadu Altus)",
+    "dlc": true,
+    "hp": 16365,
+    "hp_text": null,
+    "runes": 80000,
+    "weak_to": [],
+    "resists": [],
+    "immune": [],
+    "weak_source": null,
+    "strengths": [
+      "Feral man fighting like a bear",
+      "Aggressive pressure"
+    ],
+    "strategy": [
+      "Dodge sideways through rushes",
+      "Punish after combos",
+      "Use space to reset"
+    ],
+    "rewards": [
+      "Red Bear's Claw",
+      "Iron Rivet set"
+    ],
+    "note": null,
+    "image": "images/bosses/elden-ring/red-bear.webp",
+    "image_credit": "Fandom wiki, fair use, personal use, © FromSoftware/Bandai Namco/SIE",
+    "source_url": "https://eldenring.fandom.com/wiki/Red_Bear"
+  },
+  {
+    "id": "black-knight-edredd",
+    "name": "Black Knight Edredd",
+    "category": "SotE: Field bosses",
+    "required": "optional",
+    "location": "Fort of Reprimand, Scadu Altus",
+    "dlc": true,
+    "hp": 9792,
+    "hp_text": null,
+    "runes": 80000,
+    "weak_to": [],
+    "resists": [],
+    "immune": [
+      "Madness",
+      "Death Blight"
+    ],
+    "weak_source": "infobox",
+    "strengths": [
+      "Black steel twinblade spins",
+      "Golden Erdtree incantations"
+    ],
+    "strategy": [
+      "Punish after twinblade strings",
+      "Back off from incantation buildups",
+      "Stay close"
+    ],
+    "rewards": [
+      "Ash of War: Aspects of the Crucible: Wings"
+    ],
+    "note": null,
+    "image": "images/bosses/elden-ring/black-knight-edredd.webp",
+    "image_credit": "Fandom wiki, fair use, personal use, © FromSoftware/Bandai Namco/SIE",
+    "source_url": "https://eldenring.fandom.com/wiki/Black_Knight_Edredd"
+  },
+  {
+    "id": "black-knight-garrew",
+    "name": "Black Knight Garrew",
+    "category": "SotE: Field bosses",
+    "required": "optional",
+    "location": "Fog Rift Fort, Gravesite Plain",
+    "dlc": true,
+    "hp": 9792,
+    "hp_text": null,
+    "runes": 80000,
+    "weak_to": [],
+    "resists": [],
+    "immune": [
+      "Madness",
+      "Death Blight"
+    ],
+    "weak_source": "infobox",
+    "strengths": [
+      "Greathammer and greatshield",
+      "Golden Erdtree incantations"
+    ],
+    "strategy": [
+      "Get behind the shield or guard-break",
+      "Punish after slams",
+      "Back off from incantation buildups"
+    ],
+    "rewards": [
+      "Black Steel Greatshield"
+    ],
+    "note": null,
+    "image": "images/bosses/elden-ring/black-knight-garrew.webp",
+    "image_credit": "Fandom wiki, fair use, personal use, © FromSoftware/Bandai Namco/SIE",
+    "source_url": "https://eldenring.fandom.com/wiki/Black_Knight_Garrew"
+  },
+  {
+    "id": "count-ymir-mother-of-fingers",
+    "name": "Count Ymir, Mother of Fingers",
+    "category": "SotE: Field bosses",
+    "required": "optional",
+    "location": "Cathedral of Manus Metyr",
+    "dlc": true,
+    "hp": 11147,
+    "hp_text": null,
+    "runes": 210000,
+    "weak_to": [],
+    "resists": [],
+    "immune": [],
+    "weak_source": null,
+    "strengths": [
+      "Glintstone sorcerer",
+      "Calls on finger creatures"
+    ],
+    "strategy": [
+      "Close the gap fast",
+      "Dodge sorceries sideways",
+      "Deal with adds quickly"
+    ],
+    "rewards": [
+      "High Priest Set",
+      "Maternal Staff",
+      "Ymir's Bell Bearing"
+    ],
+    "note": null,
+    "image": "images/bosses/elden-ring/count-ymir-mother-of-fingers.webp",
+    "image_credit": "Fandom wiki, fair use, personal use, © FromSoftware/Bandai Namco/SIE",
+    "source_url": "https://eldenring.fandom.com/wiki/Count_Ymir"
+  },
+  {
+    "id": "curseblade-labirith",
+    "name": "Curseblade Labirith",
+    "category": "SotE: Dungeon & Gaol bosses",
+    "required": "optional",
+    "location": "Bonny Gaol, Scadu Altus",
+    "dlc": true,
+    "hp": 8426,
+    "hp_text": null,
+    "runes": 100000,
+    "weak_to": [],
+    "resists": [],
+    "immune": [],
+    "weak_source": null,
+    "strengths": [
+      "Fast curseblade attacks",
+      "Agile dashes"
+    ],
+    "strategy": [
+      "Wait for a combo to end",
+      "Stay close",
+      "Dodge sideways"
+    ],
+    "rewards": [
+      "Curseblade Meera"
+    ],
+    "note": null,
+    "image": "images/bosses/elden-ring/curseblade-labirith.webp",
+    "image_credit": "Fandom wiki, fair use, personal use, © FromSoftware/Bandai Namco/SIE",
+    "source_url": "https://eldenring.fandom.com/wiki/Curseblade_Labirith"
+  },
+  {
+    "id": "death-knight",
+    "name": "Death Knight",
+    "category": "SotE: Dungeon & Gaol bosses",
+    "required": "optional",
+    "location": "Fog Rift Catacombs; Scorpion River Catacombs",
+    "dlc": true,
+    "hp": 19285,
+    "hp_text": "19,285-24,080",
+    "runes": 110000,
+    "weak_to": [
+      "Pierce",
+      "Holy"
+    ],
+    "resists": [
+      "Magic",
+      "Lightning"
+    ],
+    "immune": [
+      "Bleed",
+      "Madness",
+      "Death Blight"
+    ],
+    "weak_source": "infobox",
+    "strengths": [
+      "Twin axes or longhaft axe",
+      "Dragon cult lightning incantations",
+      "Resists magic and lightning"
+    ],
+    "strategy": [
+      "Pierce and holy are effective",
+      "Lightning negation gear helps",
+      "Punish after axe combos"
+    ],
+    "rewards": [],
+    "note": null,
+    "image": "images/bosses/elden-ring/death-knight.webp",
+    "image_credit": "Fandom wiki, fair use, personal use, © FromSoftware/Bandai Namco/SIE",
+    "source_url": "https://eldenring.fandom.com/wiki/Death_Knight"
+  },
+  {
+    "id": "dryleaf-dane",
+    "name": "Dryleaf Dane",
+    "category": "SotE: Field bosses",
+    "required": "optional",
+    "location": "Moorth Ruins, Scadu Altus",
+    "dlc": true,
+    "hp": null,
+    "hp_text": null,
+    "runes": null,
+    "weak_to": [],
+    "resists": [],
+    "immune": [],
+    "weak_source": null,
+    "strengths": [
+      "Fast kick-based martial arts",
+      "Hard to read rapid strings"
+    ],
+    "strategy": [
+      "Stay patient and punish short recoveries",
+      "Fast weapons work well",
+      "Keep stamina for dodges"
+    ],
+    "rewards": [],
+    "note": null,
+    "image": null,
+    "image_credit": null,
+    "source_url": "https://eldenring.fandom.com/wiki/Dryleaf_Dane"
+  },
+  {
+    "id": "jori-elder-inquisitor",
+    "name": "Jori, Elder Inquisitor",
+    "category": "SotE: Field bosses",
+    "required": "optional",
+    "location": "Abyssal Woods (Church Ruins)",
+    "dlc": true,
+    "hp": 30506,
+    "hp_text": null,
+    "runes": 260000,
+    "weak_to": [],
+    "resists": [],
+    "immune": [],
+    "weak_source": null,
+    "strengths": [
+      "Summons Inquisitor spirits and a Large Inquisitor",
+      "Fights at range"
+    ],
+    "strategy": [
+      "Rush Jori himself",
+      "Kill adds only when blocking you",
+      "Use pillars to block sightlines"
+    ],
+    "rewards": [
+      "Barbed Staff-Spear"
+    ],
+    "note": null,
+    "image": "images/bosses/elden-ring/jori-elder-inquisitor.webp",
+    "image_credit": "Fandom wiki, fair use, personal use, © FromSoftware/Bandai Namco/SIE",
+    "source_url": "https://eldenring.fandom.com/wiki/Jori,_Elder_Inquisitor"
+  },
+  {
+    "id": "rakshasa",
+    "name": "Rakshasa",
+    "category": "SotE: Dungeon & Gaol bosses",
+    "required": "optional",
+    "location": "Eastern Nameless Mausoleum, Gravesite Plain",
+    "dlc": true,
+    "hp": 20235,
+    "hp_text": null,
+    "runes": 90000,
+    "weak_to": [
+      "Lightning"
+    ],
+    "resists": [
+      "Fire"
+    ],
+    "immune": [],
+    "weak_source": "infobox",
+    "strengths": [
+      "Berserker with a great katana",
+      "Long sweeping combos",
+      "Takes extra damage"
+    ],
+    "strategy": [
+      "Lightning is effective",
+      "Burst him down; he is fragile",
+      "Dodge late and punish"
+    ],
+    "rewards": [
+      "Rakshasa's Great Katana",
+      "Rakshasa's Set"
+    ],
+    "note": null,
+    "image": "images/bosses/elden-ring/rakshasa.webp",
+    "image_credit": "Fandom wiki, fair use, personal use, © FromSoftware/Bandai Namco/SIE",
+    "source_url": "https://eldenring.fandom.com/wiki/Rakshasa"
+  },
+  {
+    "id": "ralva-the-great-red-bear",
+    "name": "Ralva the Great Red Bear",
+    "category": "SotE: Field bosses",
+    "required": "optional",
+    "location": "Scadu Altus (Highroad Cross area)",
+    "dlc": true,
+    "hp": 29606,
+    "hp_text": null,
+    "runes": 180000,
+    "weak_to": [],
+    "resists": [],
+    "immune": [],
+    "weak_source": null,
+    "strengths": [
+      "Big horned bear with heavy swipes",
+      "Charges and grabs"
+    ],
+    "strategy": [
+      "Fight on Torrent in open ground",
+      "Dodge sideways from charges",
+      "Punish after slams"
+    ],
+    "rewards": [
+      "Pelt of Ralva"
+    ],
+    "note": null,
+    "image": "images/bosses/elden-ring/ralva-the-great-red-bear.webp",
+    "image_credit": "Fandom wiki, fair use, personal use, © FromSoftware/Bandai Namco/SIE",
+    "source_url": "https://eldenring.fandom.com/wiki/Ralva_the_Great_Red_Bear"
+  },
+  {
+    "id": "dancer-of-ranah",
+    "name": "Dancer of Ranah",
+    "category": "SotE: Field bosses",
+    "required": "optional",
+    "location": "Southern Nameless Mausoleum, Cerulean Coast",
+    "dlc": true,
+    "hp": 14046,
+    "hp_text": null,
+    "runes": 88000,
+    "weak_to": [],
+    "resists": [],
+    "immune": [],
+    "weak_source": null,
+    "strengths": [
+      "Flaming paired swords",
+      "Dancing combos ending in fire explosions"
+    ],
+    "strategy": [
+      "Fire negation helps",
+      "Back off when she ignites",
+      "Punish after a full dance"
+    ],
+    "rewards": [
+      "Dancer's Set",
+      "Dancing Blade of Ranah"
+    ],
+    "note": null,
+    "image": "images/bosses/elden-ring/dancer-of-ranah.webp",
+    "image_credit": "Fandom wiki, fair use, personal use, © FromSoftware/Bandai Namco/SIE",
+    "source_url": "https://eldenring.fandom.com/wiki/Dancer_of_Ranah"
+  },
+  {
+    "id": "demi-human-queen-marigga",
+    "name": "Demi-Human Queen Marigga",
+    "category": "SotE: Field bosses",
+    "required": "optional",
+    "location": "Cerulean Coast",
+    "dlc": true,
+    "hp": 9793,
+    "hp_text": null,
+    "runes": 100000,
+    "weak_to": [],
+    "resists": [],
+    "immune": [],
+    "weak_source": null,
+    "strengths": [
+      "Large demi-human queen",
+      "Glintstone sorcery"
+    ],
+    "strategy": [
+      "Stay close",
+      "Dodge spells sideways",
+      "Punish after slams"
+    ],
+    "rewards": [
+      "Star-Lined Sword"
+    ],
+    "note": null,
+    "image": "images/bosses/elden-ring/demi-human-queen-marigga.webp",
+    "image_credit": "Fandom wiki, fair use, personal use, © FromSoftware/Bandai Namco/SIE",
+    "source_url": "https://eldenring.fandom.com/wiki/Demi-Human_Queen_Marigga"
+  },
+  {
+    "id": "lamenter",
+    "name": "Lamenter",
+    "category": "SotE: Dungeon & Gaol bosses",
+    "required": "optional",
+    "location": "Lamenter's Gaol, Gravesite Plain",
+    "dlc": true,
+    "hp": 12249,
+    "hp_text": null,
+    "runes": 160000,
+    "weak_to": [],
+    "resists": [],
+    "immune": [],
+    "weak_source": null,
+    "strengths": [
+      "Gaol boss with a lament curse effect",
+      "Unpredictable movement"
+    ],
+    "strategy": [
+      "Stay aggressive",
+      "Punish recoveries",
+      "Use spirit ashes for pressure"
+    ],
+    "rewards": [
+      "Lamenter's Mask"
+    ],
+    "note": null,
+    "image": "images/bosses/elden-ring/lamenter.webp",
+    "image_credit": "Fandom wiki, fair use, personal use, © FromSoftware/Bandai Namco/SIE",
+    "source_url": "https://eldenring.fandom.com/wiki/Lamenter"
+  },
+  {
+    "id": "ancient-dragon-man",
+    "name": "Ancient Dragon-Man",
+    "category": "SotE: Dungeon & Gaol bosses",
+    "required": "optional",
+    "location": "Dragon's Pit, Gravesite Plain",
+    "dlc": true,
+    "hp": 19097,
+    "hp_text": null,
+    "runes": 130000,
+    "weak_to": [],
+    "resists": [],
+    "immune": [
+      "Death Blight"
+    ],
+    "weak_source": "infobox",
+    "strengths": [
+      "Great katana jumping attacks",
+      "Magma breath and Dragonmaw",
+      "Zero poise"
+    ],
+    "strategy": [
+      "Constant pressure staggers him",
+      "He has only one heal flask",
+      "Dodge into jumping attacks"
+    ],
+    "rewards": [
+      "Dragon-Hunter's Great Katana"
+    ],
+    "note": null,
+    "image": "images/bosses/elden-ring/ancient-dragon-man.webp",
+    "image_credit": "Fandom wiki, fair use, personal use, © FromSoftware/Bandai Namco/SIE",
+    "source_url": "https://eldenring.fandom.com/wiki/Ancient_Dragon-Man"
+  },
+  {
+    "id": "jagged-peak-drake",
+    "name": "Jagged Peak Drake",
+    "category": "SotE: Field bosses",
+    "required": "optional",
+    "location": "Jagged Peak Foothills (two encounters)",
+    "dlc": true,
+    "hp": 31941,
+    "hp_text": "31,941 / 38,109 / 39,377",
+    "runes": 90000,
+    "weak_to": [
+      "Pierce"
+    ],
+    "resists": [
+      "Magic",
+      "Fire",
+      "Lightning",
+      "Holy"
+    ],
+    "immune": [
+      "Sleep",
+      "Madness",
+      "Death Blight"
+    ],
+    "weak_source": "infobox",
+    "strengths": [
+      "Flame lightning strikes",
+      "Fire breath and forelimb slams",
+      "Resists most elements"
+    ],
+    "strategy": [
+      "Pierce is effective",
+      "Stay at its side or under the tail",
+      "Watch the sky for lightning"
+    ],
+    "rewards": [
+      "Dragon Heart",
+      "Dragonscale Flesh"
+    ],
+    "note": null,
+    "image": "images/bosses/elden-ring/jagged-peak-drake.webp",
+    "image_credit": "Fandom wiki, fair use, personal use, © FromSoftware/Bandai Namco/SIE",
+    "source_url": "https://eldenring.fandom.com/wiki/Jagged_Peak_Drake"
+  },
+  {
+    "id": "ancient-dragon-senessax",
+    "name": "Ancient Dragon Senessax",
+    "category": "SotE: Field bosses",
+    "required": "optional",
+    "location": "Jagged Peak (Grand Altar of Dragon Communion)",
+    "dlc": true,
+    "hp": 45551,
+    "hp_text": null,
+    "runes": 200000,
+    "weak_to": [],
+    "resists": [],
+    "immune": [],
+    "weak_source": null,
+    "strengths": [
+      "Branching red lightning",
+      "Huge size and HP"
+    ],
+    "strategy": [
+      "Lightning negation gear helps",
+      "Stay at its side and hit legs",
+      "Dodge strikes as they land"
+    ],
+    "rewards": [
+      "Ancient Dragon Smithing Stone",
+      "Somber Ancient Dragon Smithing Stone"
+    ],
+    "note": null,
+    "image": "images/bosses/elden-ring/ancient-dragon-senessax.webp",
+    "image_credit": "Fandom wiki, fair use, personal use, © FromSoftware/Bandai Namco/SIE",
+    "source_url": "https://eldenring.fandom.com/wiki/Ancient_Dragon_Senessax"
+  },
+  {
+    "id": "rugalea-the-great-red-bear",
+    "name": "Rugalea the Great Red Bear",
+    "category": "SotE: Field bosses",
+    "required": "optional",
+    "location": "Rauh Base (Scorpion River area)",
+    "dlc": true,
+    "hp": 30535,
+    "hp_text": null,
+    "runes": 210000,
+    "weak_to": [],
+    "resists": [],
+    "immune": [],
+    "weak_source": null,
+    "strengths": [
+      "Big horned bear with heavy swipes",
+      "Charges and grabs"
+    ],
+    "strategy": [
+      "Fight on Torrent in open ground",
+      "Dodge sideways from charges",
+      "Punish after slams"
+    ],
+    "rewards": [
+      "Roar of Rugalea"
+    ],
+    "note": null,
+    "image": "images/bosses/elden-ring/rugalea-the-great-red-bear.webp",
+    "image_credit": "Fandom wiki, fair use, personal use, © FromSoftware/Bandai Namco/SIE",
+    "source_url": "https://eldenring.fandom.com/wiki/Rugalea_the_Great_Red_Bear"
+  },
+  {
+    "id": "golden-hippopotamus",
+    "name": "Golden Hippopotamus",
+    "category": "SotE: Story & Remembrance",
+    "required": "optional",
+    "location": "Shadow Keep (Main Gate plaza)",
+    "dlc": true,
+    "hp": null,
+    "hp_text": null,
+    "runes": null,
+    "weak_to": [],
+    "resists": [],
+    "immune": [],
+    "weak_source": null,
+    "strengths": [
+      "Heavy charges and bites",
+      "Grows thorny fur at half HP"
+    ],
+    "strategy": [
+      "Dodge sideways from charges",
+      "Hit the flank, not the face",
+      "Bring a stronger build for phase two"
+    ],
+    "rewards": [
+      "Scadutree Fragment",
+      "Aspects of the Crucible: Thorns"
+    ],
+    "note": null,
+    "image": "images/bosses/elden-ring/golden-hippopotamus.webp",
+    "image_credit": "Fandom wiki, fair use, personal use, © FromSoftware/Bandai Namco/SIE",
+    "source_url": "https://eldenring.fandom.com/wiki/Golden_Hippopotamus"
+  },
+  {
+    "id": "tree-sentinel-scaduview",
+    "name": "Tree Sentinel Duo (Scaduview)",
+    "category": "SotE: Field bosses",
+    "required": "optional",
+    "location": "Hinterland, Scaduview",
+    "dlc": true,
+    "hp": 24594,
+    "hp_text": "24,594 (Shield) / 20,492 (Torch)",
+    "runes": 20000,
+    "weak_to": [
+      "Lightning"
+    ],
+    "resists": [
+      "Fire",
+      "Holy"
+    ],
+    "immune": [
+      "Madness",
+      "Death Blight"
+    ],
+    "weak_source": "infobox",
+    "strengths": [
+      "Two mounted sentinels: one shield, one torch",
+      "Charges and wide halberd sweeps"
+    ],
+    "strategy": [
+      "Lightning is effective",
+      "Fight on Torrent",
+      "Focus one knight at a time"
+    ],
+    "rewards": [
+      "Blessing of Marika (1 each)"
+    ],
+    "note": null,
+    "image": "images/bosses/elden-ring/tree-sentinel-scaduview.webp",
+    "image_credit": "Fandom wiki, fair use, personal use, © FromSoftware/Bandai Namco/SIE",
+    "source_url": "https://eldenring.fandom.com/wiki/Tree_Sentinel"
+  },
+  {
+    "id": "death-rite-bird-charos",
+    "name": "Death Rite Bird (Charo's Hidden Grave)",
+    "category": "SotE: Field bosses",
+    "required": "optional",
+    "location": "Charo's Hidden Grave",
+    "dlc": true,
+    "hp": 28905,
+    "hp_text": null,
+    "runes": 230000,
+    "weak_to": [
+      "Holy"
+    ],
+    "resists": [],
+    "immune": [],
+    "weak_source": "wiki text",
+    "strengths": [
+      "Ghostflame frost attacks",
+      "Cane slams"
+    ],
+    "strategy": [
+      "Holy is effective",
+      "Avoid ghostflame pools",
+      "Attack the legs"
+    ],
+    "rewards": [
+      "Ash of War: Ghostflame Call"
+    ],
+    "note": null,
+    "image": "images/bosses/elden-ring/death-rite-bird-charos.webp",
+    "image_credit": "Fandom wiki, fair use, personal use, © FromSoftware/Bandai Namco/SIE",
+    "source_url": "https://eldenring.fandom.com/wiki/Death_Rite_Bird"
+  },
+  {
+    "id": "tibia-mariner-charos",
+    "name": "Tibia Mariner (Charo's Hidden Grave)",
+    "category": "SotE: Field bosses",
+    "required": "optional",
+    "location": "Charo's Hidden Grave",
+    "dlc": true,
+    "hp": 20618,
+    "hp_text": null,
+    "runes": 9959,
+    "weak_to": [
+      "Strike",
+      "Holy"
+    ],
+    "resists": [
+      "Pierce",
+      "Lightning"
+    ],
+    "immune": [
+      "Poison",
+      "Bleed",
+      "Frostbite",
+      "Sleep",
+      "Madness",
+      "Death Blight"
+    ],
+    "weak_source": "infobox",
+    "strengths": [
+      "Summons skeleton adds",
+      "Drifts on its boat"
+    ],
+    "strategy": [
+      "Strike and holy are effective",
+      "Kill it fast to stop summons",
+      "Fight on Torrent"
+    ],
+    "rewards": [
+      "Tibia's Cookbook"
+    ],
+    "note": null,
+    "image": "images/bosses/elden-ring/tibia-mariner-charos.webp",
+    "image_credit": "Fandom wiki, fair use, personal use, © FromSoftware/Bandai Namco/SIE",
+    "source_url": "https://eldenring.fandom.com/wiki/Tibia_Mariner"
+  },
+  {
+    "id": "fallingstar-beast-dheo",
+    "name": "Fallingstar Beast (Finger Ruins of Dheo)",
+    "category": "SotE: Field bosses",
+    "required": "optional",
+    "location": "Finger Ruins of Dheo, Cerulean Coast",
+    "dlc": true,
+    "hp": 26679,
+    "hp_text": null,
+    "runes": 170000,
+    "weak_to": [],
+    "resists": [],
+    "immune": [],
+    "weak_source": null,
+    "strengths": [
+      "Gravity magic and crystal attacks",
+      "Charges and tail"
+    ],
+    "strategy": [
+      "Dodge charges sideways",
+      "Hit the tail",
+      "Stay close"
+    ],
+    "rewards": [
+      "Gravitational Missile"
+    ],
+    "note": null,
+    "image": "images/bosses/elden-ring/fallingstar-beast-dheo.webp",
+    "image_credit": "Fandom wiki, fair use, personal use, © FromSoftware/Bandai Namco/SIE",
+    "source_url": "https://eldenring.fandom.com/wiki/Fallingstar_Beast"
+  },
+  {
+    "id": "misbegotten-warrior-stone-coffin",
+    "name": "Misbegotten Warrior (Stone Coffin Fissure)",
+    "category": "SotE: Dungeon & Gaol bosses",
+    "required": "optional",
+    "location": "Stone Coffin Fissure (with Crucible Knight Devonia)",
+    "dlc": true,
+    "hp": null,
+    "hp_text": null,
+    "runes": null,
+    "weak_to": [
+      "Slash",
+      "Fire"
+    ],
+    "resists": [],
+    "immune": [],
+    "weak_source": "infobox",
+    "strengths": [
+      "Iron greatsword swings and leaps",
+      "Fought with Crucible Knight Devonia",
+      "Roar buffs it"
+    ],
+    "strategy": [
+      "Slash and fire are effective",
+      "Split the two if you can",
+      "Punish after leaps"
+    ],
+    "rewards": [
+      "Multilayered Ring of Light"
+    ],
+    "note": null,
+    "image": "images/bosses/elden-ring/misbegotten-warrior-stone-coffin.webp",
+    "image_credit": "Fandom wiki, fair use, personal use, © FromSoftware/Bandai Namco/SIE",
+    "source_url": "https://eldenring.fandom.com/wiki/Misbegotten_Warrior"
+  }
+]

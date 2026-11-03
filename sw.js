@@ -1,5 +1,5 @@
 // Network-first shell. CACHE is the version string: bump it when shipped assets change.
-const CACHE = "souls-builds-v15-20261103061500";
+const CACHE = "souls-builds-v16-20261103070000";
 const SHELL = [
   "./",
   "./index.html",
@@ -36,6 +36,10 @@ const SECTION = [
   "./data/elden-ring-reforged.json",
   "./data/demons-souls-crafting.json",
   "./data/demons-souls-equipment.json",
+  "./data/bosses-elden-ring.json",
+  "./data/bosses-bloodborne.json",
+  "./data/bosses-demons-souls.json",
+  "./data/talisman-acquisition.json",
   "./images/items/index.json"
 ];
 const PRECACHE = SHELL.filter((item) => item !== "./").concat(SECTION);
@@ -53,6 +57,11 @@ function viewedMap(url) {
 function viewedItem(url) {
   const path = decodeURIComponent(url.pathname);
   return /\/images\/items\/[^/]+\/[^/]+\/[^/]+\.webp$/.test(path);
+}
+
+function viewedBoss(url) {
+  const path = decodeURIComponent(url.pathname);
+  return /\/images\/bosses\/[^/]+\/[^/]+\.webp$/.test(path);
 }
 
 self.addEventListener("install", (event) => {
@@ -80,7 +89,7 @@ self.addEventListener("fetch", (event) => {
   event.respondWith(
     fetch(request)
       .then((response) => {
-        if (response.ok && !url.search && (listed(url) || viewedMap(url) || viewedItem(url) || request.mode === "navigate")) {
+        if (response.ok && !url.search && (listed(url) || viewedMap(url) || viewedItem(url) || viewedBoss(url) || request.mode === "navigate")) {
           const copy = response.clone();
           caches.open(CACHE).then((cache) => cache.put(request, copy));
         }

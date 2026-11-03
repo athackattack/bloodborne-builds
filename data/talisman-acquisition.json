@@ -1,0 +1,3442 @@
+{
+  "meta": {
+    "generated": "2026-11-03",
+    "err_data_version": "2.3.5.3 + wiki (target 2.3.8.1)",
+    "sources": [
+      "eldenring.fandom.com (vanilla ER/SotE)",
+      "err.fandom.com (Elden Ring Reforged)"
+    ],
+    "license_note": "Summaries written in our own words from CC BY-SA wiki pages; attribute the wikis.",
+    "fields": "how, where, type (drop|chest|merchant|quest|world pickup|crafting|other), dlc, source_url, confidence (verified|partial|unknown), vanilla_based (ERR only), optional tiers[] for merged ERR entries, optional note",
+    "not_covered": [
+      "bloodborne",
+      "demons-souls: repo has no talisman/ring/rune lists, so no ids to key on"
+    ]
+  },
+  "elden-ring-reforged": {
+    "aged-ones-exultation": {
+      "name": "Aged One's Exultation",
+      "how": "Dropped by that Aging Untouchable; it can only be hurt after you parry it.",
+      "where": "Abyssal Woods, the Aging Untouchable nearest the Abandoned Church",
+      "type": "drop",
+      "dlc": true,
+      "source_url": "https://eldenring.fandom.com/wiki/Aged_One's_Exultation",
+      "confidence": "verified",
+      "vanilla_based": true,
+      "err_checked_url": "https://err.fandom.com/wiki/Talismans"
+    },
+    "ailment-talisman": {
+      "name": "Ailment Talisman",
+      "how": "On a corpse at the edge of an unfinished wooden bridge in the village.",
+      "where": "Gravesite Plain, Abandoned Ailing Village",
+      "type": "world pickup",
+      "dlc": true,
+      "source_url": "https://eldenring.fandom.com/wiki/Ailment_Talisman",
+      "confidence": "verified",
+      "vanilla_based": true,
+      "err_checked_url": "https://err.fandom.com/wiki/Talismans"
+    },
+    "ancestral-spirits-horn": {
+      "name": "Ancestral Spirit's Horn",
+      "how": "Trade the Remembrance of the Regal Ancestor (from Regal Ancestor Spirit) to Enia, or duplicate it at a Walking Mausoleum. One per playthrough.",
+      "where": "Roundtable Hold (Finger Reader Enia)",
+      "type": "other",
+      "dlc": false,
+      "source_url": "https://eldenring.fandom.com/wiki/Ancestral_Spirit's_Horn",
+      "confidence": "verified",
+      "vanilla_based": true,
+      "err_checked_url": "https://err.fandom.com/wiki/Talismans"
+    },
+    "arrows-reach-talisman": {
+      "name": "Arrow's Reach Talisman",
+      "how": "Chest on the bridge above Stormgate; reach it from the southwest tower after clearing the guards.",
+      "where": "Stormhill, Stormgate (bridge over the gate)",
+      "type": "chest",
+      "dlc": false,
+      "source_url": "https://eldenring.fandom.com/wiki/Arrow's_Reach_Talisman",
+      "confidence": "verified",
+      "vanilla_based": true,
+      "err_checked_url": "https://err.fandom.com/wiki/Talismans"
+    },
+    "arrows-soaring-sting-talisman": {
+      "name": "Arrow's Soaring Sting Talisman",
+      "how": "Squeeze past the tower by the rock wall, follow the wooden walkway and ladders to the top of the tower.",
+      "where": "Fog Rift Fort, top of a tower (near Black Knight Garrew's tower)",
+      "type": "world pickup",
+      "dlc": true,
+      "source_url": "https://eldenring.fandom.com/wiki/Arrow's_Soaring_Sting_Talisman",
+      "confidence": "verified",
+      "vanilla_based": true,
+      "err_checked_url": "https://err.fandom.com/wiki/Talismans"
+    },
+    "arrows-sting-talisman": {
+      "name": "Arrow's Sting Talisman",
+      "how": "Chest on top of the wooden siege tower.",
+      "where": "Caelid, siege tower next to the Impassable Greatbridge (near Redmane Castle)",
+      "type": "chest",
+      "dlc": false,
+      "source_url": "https://eldenring.fandom.com/wiki/Arrow's_Sting_Talisman",
+      "confidence": "verified",
+      "vanilla_based": true,
+      "err_checked_url": "https://err.fandom.com/wiki/Talismans"
+    },
+    "arsenal-charm": {
+      "name": "Arsenal Charm",
+      "how": "Given by Nepheli Loux after you meet her in Stormveil Castle and defeat Godrick.",
+      "where": "Roundtable Hold",
+      "type": "quest",
+      "dlc": false,
+      "source_url": "https://eldenring.fandom.com/wiki/Arsenal_Charm",
+      "confidence": "verified",
+      "vanilla_based": true,
+      "err_checked_url": "https://err.fandom.com/wiki/Talismans",
+      "tiers": [
+        {
+          "name": "Arsenal Charm",
+          "how": "Given by Nepheli Loux after you meet her in Stormveil Castle and defeat Godrick.",
+          "where": "Roundtable Hold",
+          "type": "quest",
+          "dlc": false,
+          "source_url": "https://eldenring.fandom.com/wiki/Arsenal_Charm",
+          "confidence": "verified",
+          "vanilla_based": true
+        },
+        {
+          "name": "Arsenal Charm +1",
+          "how": "On a corpse on a wooden balcony above the pit with the gravity-throwing enemy; climb a root from the entrance drop to reach it.",
+          "where": "Altus Tunnel (Altus Plateau)",
+          "type": "world pickup",
+          "dlc": false,
+          "source_url": "https://eldenring.fandom.com/wiki/Arsenal_Charm_+1",
+          "confidence": "verified",
+          "vanilla_based": true
+        },
+        {
+          "name": "Great-Jar's Arsenal",
+          "how": "Talk to the Great Jar and beat its three Great Jar's Warrior duelists in a row.",
+          "where": "Great Jar, Greyoll's Dragonbarrow (via Deep Siofra Well area)",
+          "type": "quest",
+          "dlc": false,
+          "source_url": "https://eldenring.fandom.com/wiki/Great-Jar's_Arsenal",
+          "confidence": "verified",
+          "vanilla_based": true
+        }
+      ]
+    },
+    "assassins-cerulean-dagger": {
+      "name": "Assassin's Cerulean Dagger",
+      "how": "Dropped by the Black Knife Assassin boss.",
+      "where": "Black Knife Catacombs, NE Liurnia of the Lakes",
+      "type": "drop",
+      "dlc": false,
+      "source_url": "https://eldenring.fandom.com/wiki/Assassin's_Cerulean_Dagger",
+      "confidence": "verified",
+      "vanilla_based": true,
+      "err_checked_url": "https://err.fandom.com/wiki/Talismans"
+    },
+    "assassins-crimson-dagger": {
+      "name": "Assassin's Crimson Dagger",
+      "how": "Dropped by the Black Knife Assassin boss.",
+      "where": "Deathtouched Catacombs, northern Limgrave (Stormhill)",
+      "type": "drop",
+      "dlc": false,
+      "source_url": "https://eldenring.fandom.com/wiki/Assassin's_Crimson_Dagger",
+      "confidence": "verified",
+      "vanilla_based": true,
+      "err_checked_url": "https://err.fandom.com/wiki/Talismans"
+    },
+    "assassins-viridian-dagger": {
+      "name": "Assassin's Viridian Dagger",
+      "how": "Dropped by an invisible Black Knife Assassin.",
+      "where": "Leyndell, Royal Capital, just outside the Queen's Bedchamber grace",
+      "type": "drop",
+      "dlc": false,
+      "source_url": "https://err.fandom.com/wiki/Assassin's_Viridian_Dagger",
+      "confidence": "verified",
+      "vanilla_based": false
+    },
+    "axe-talisman": {
+      "name": "Axe Talisman",
+      "how": "Chest in the cellar; a Runebear roams near the ruins.",
+      "where": "Mistwood Ruins cellar, eastern Limgrave",
+      "type": "chest",
+      "dlc": false,
+      "source_url": "https://eldenring.fandom.com/wiki/Axe_Talisman",
+      "confidence": "verified",
+      "vanilla_based": true,
+      "err_checked_url": "https://err.fandom.com/wiki/Talismans"
+    },
+    "beloved-stardust": {
+      "name": "Beloved Stardust",
+      "how": "Reward from Count Ymir after ringing the first Finger Ruins bell with the Hole-Laden Necklace.",
+      "where": "Cathedral of Manus Metyr (Count Ymir)",
+      "type": "quest",
+      "dlc": true,
+      "source_url": "https://eldenring.fandom.com/wiki/Beloved_Stardust",
+      "confidence": "verified",
+      "vanilla_based": true,
+      "err_checked_url": "https://err.fandom.com/wiki/Talismans"
+    },
+    "blade-of-mercy": {
+      "name": "Blade of Mercy",
+      "how": "Chest at the top of the Scorched Ruins.",
+      "where": "Scorched Ruins (top)",
+      "type": "chest",
+      "dlc": true,
+      "source_url": "https://eldenring.fandom.com/wiki/Blade_of_Mercy",
+      "confidence": "verified",
+      "vanilla_based": true,
+      "err_checked_url": "https://err.fandom.com/wiki/Talismans"
+    },
+    "blasphemous-crest": {
+      "name": "Blasphemous Crest",
+      "how": "Reward for joining Volcano Manor; added automatically if you had already joined.",
+      "where": "Volcano Manor, Mt. Gelmir",
+      "type": "quest",
+      "dlc": false,
+      "source_url": "https://err.fandom.com/wiki/Blasphemous_Crest",
+      "confidence": "verified",
+      "vanilla_based": false,
+      "note": "Carries the old Talisman of the Dread effect."
+    },
+    "blessed-blue-dew-talisman": {
+      "name": "Blessed Blue Dew Talisman",
+      "how": "Found at the Church of Benediction.",
+      "where": "Church of Benediction",
+      "type": "world pickup",
+      "dlc": true,
+      "source_url": "https://eldenring.fandom.com/wiki/Blessed_Blue_Dew_Talisman",
+      "confidence": "verified",
+      "vanilla_based": true,
+      "err_checked_url": "https://err.fandom.com/wiki/Talismans"
+    },
+    "blessed-dew-talisman": {
+      "name": "Blessed Dew Talisman",
+      "how": "Chest west of the Divine Bridge; reach it via the Fortified Manor courtyard lift or the Tower of Return sending gate.",
+      "where": "Leyndell, Royal Capital, west of the Divine Bridge",
+      "type": "chest",
+      "dlc": false,
+      "source_url": "https://eldenring.fandom.com/wiki/Blessed_Dew_Talisman",
+      "confidence": "verified",
+      "vanilla_based": true,
+      "err_checked_url": "https://err.fandom.com/wiki/Talismans"
+    },
+    "blue-dancer-charm": {
+      "name": "Blue Dancer Charm",
+      "how": "Dropped by the Guardian Golem boss.",
+      "where": "Highroad Cave, northern Limgrave",
+      "type": "drop",
+      "dlc": false,
+      "source_url": "https://eldenring.fandom.com/wiki/Blue_Dancer_Charm",
+      "confidence": "verified",
+      "vanilla_based": true,
+      "err_checked_url": "https://err.fandom.com/wiki/Talismans"
+    },
+    "blue-feathered-branchsword": {
+      "name": "Blue-Feathered Branchsword",
+      "how": "Dropped by the Deathbird that spawns at night by the ruin of fallen Farum Azula stones.",
+      "where": "Stormhill, east of Warmaster's Shack (night)",
+      "type": "drop",
+      "dlc": false,
+      "source_url": "https://eldenring.fandom.com/wiki/Blue-Feathered_Branchsword",
+      "confidence": "verified",
+      "vanilla_based": true,
+      "err_checked_url": "https://err.fandom.com/wiki/Talismans"
+    },
+    "boltdrake-talisman": {
+      "name": "Boltdrake Talisman",
+      "how": "On a corpse just before the east bridge.",
+      "where": "Stormveil Castle, before the bridge to the Divine Tower of Limgrave",
+      "type": "world pickup",
+      "dlc": false,
+      "source_url": "https://eldenring.fandom.com/wiki/Boltdrake_Talisman",
+      "confidence": "partial",
+      "vanilla_based": true,
+      "err_checked_url": "https://err.fandom.com/wiki/Talismans",
+      "tiers": [
+        {
+          "name": "Boltdrake Talisman",
+          "how": "On a corpse just before the east bridge.",
+          "where": "Stormveil Castle, before the bridge to the Divine Tower of Limgrave",
+          "type": "world pickup",
+          "dlc": false,
+          "source_url": "https://eldenring.fandom.com/wiki/Boltdrake_Talisman",
+          "confidence": "verified",
+          "vanilla_based": true
+        },
+        {
+          "name": "Boltdrake Talisman +1",
+          "how": "On a corpse in a wooden shed guarded by dogs.",
+          "where": "Old Altus Tunnel, Altus Plateau",
+          "type": "world pickup",
+          "dlc": false,
+          "source_url": "https://eldenring.fandom.com/wiki/Boltdrake_Talisman_+1",
+          "confidence": "verified",
+          "vanilla_based": true
+        },
+        {
+          "name": "Boltdrake Talisman +2",
+          "how": "Past the Ancient Dragon arena, drop down platforms to an isolated building and climb inside to the corpse.",
+          "where": "Crumbling Farum Azula, near Dragon Temple Rooftop grace",
+          "type": "world pickup",
+          "dlc": false,
+          "source_url": "https://eldenring.fandom.com/wiki/Boltdrake_Talisman_+2",
+          "confidence": "verified",
+          "vanilla_based": true
+        },
+        {
+          "name": "Boltdrake Talisman +3",
+          "how": "Hidden room off the second floor past the shade protectors; a lever bookcase leads back to the grace.",
+          "where": "Shadow Keep, Storehouse (near Storehouse, First Floor grace)",
+          "type": "world pickup",
+          "dlc": true,
+          "source_url": "https://eldenring.fandom.com/wiki/Boltdrake_Talisman_+3",
+          "confidence": "partial",
+          "vanilla_based": true,
+          "note": "ERR's Talismans page labels the fourth tier 'Greatshield'; mapped here to the vanilla +3 (SotE) item. Confirm in game."
+        }
+      ]
+    },
+    "bull-goats-talisman": {
+      "name": "Bull-Goat's Talisman",
+      "how": "On a corpse to the left after entering the Runebear's room.",
+      "where": "Dragonbarrow Cave, Greyoll's Dragonbarrow",
+      "type": "world pickup",
+      "dlc": false,
+      "source_url": "https://eldenring.fandom.com/wiki/Bull-Goat's_Talisman",
+      "confidence": "verified",
+      "vanilla_based": true,
+      "err_checked_url": "https://err.fandom.com/wiki/Talismans"
+    },
+    "carian-filigreed-crest": {
+      "name": "Carian Filigreed Crest",
+      "how": "Sold by Smithing Master Iji for 5,000 runes once unlocked during Blaidd's quest.",
+      "where": "Western Liurnia, Smithing Master Iji (Road to the Manor grace)",
+      "type": "merchant",
+      "dlc": false,
+      "source_url": "https://err.fandom.com/wiki/Merchants",
+      "confidence": "verified",
+      "vanilla_based": false,
+      "err_checked_url": "https://err.fandom.com/wiki/Talismans"
+    },
+    "cerulean-amber-medallion": {
+      "name": "Cerulean Amber Medallion",
+      "how": "Dropped by the Bloodhound Knight boss.",
+      "where": "Lakeside Crystal Cave, southern Liurnia",
+      "type": "drop",
+      "dlc": false,
+      "source_url": "https://eldenring.fandom.com/wiki/Cerulean_Amber_Medallion",
+      "confidence": "partial",
+      "vanilla_based": false,
+      "err_checked_url": "https://err.fandom.com/wiki/Talismans",
+      "tiers": [
+        {
+          "name": "Cerulean Amber Medallion",
+          "how": "Dropped by the Bloodhound Knight boss.",
+          "where": "Lakeside Crystal Cave, southern Liurnia",
+          "type": "drop",
+          "dlc": false,
+          "source_url": "https://eldenring.fandom.com/wiki/Cerulean_Amber_Medallion",
+          "confidence": "verified",
+          "vanilla_based": true
+        },
+        {
+          "name": "Cerulean Amber Medallion +1",
+          "how": "On a corpse hanging from a wooden platform on the castle's southern wall.",
+          "where": "Castle Sol south wall, Mountaintops of the Giants (from Church of the Eclipse grace)",
+          "type": "world pickup",
+          "dlc": false,
+          "source_url": "https://eldenring.fandom.com/wiki/Cerulean_Amber_Medallion_+1",
+          "confidence": "verified",
+          "vanilla_based": true
+        },
+        {
+          "name": "Cerulean Amber Medallion +2",
+          "how": "Moved by ERR to the Moonfolk Ruins; exact spot not described.",
+          "where": "Moonfolk Ruins, Moonlight Altar (Liurnia)",
+          "type": "other",
+          "dlc": false,
+          "source_url": "https://err.fandom.com/wiki/Talismans",
+          "confidence": "partial",
+          "vanilla_based": false
+        },
+        {
+          "name": "Cerulean Amber Medallion +3",
+          "how": "Reward for defeating the Death Knight.",
+          "where": "Scorpion River Catacombs",
+          "type": "drop",
+          "dlc": true,
+          "source_url": "https://eldenring.fandom.com/wiki/Cerulean_Amber_Medallion_+3",
+          "confidence": "verified",
+          "vanilla_based": true
+        }
+      ]
+    },
+    "cerulean-seed-talisman": {
+      "name": "Cerulean Seed Talisman",
+      "how": "On a corpse on the top rafters, before placing the Carian Inverted Statue.",
+      "where": "Carian Study Hall, eastern Liurnia",
+      "type": "world pickup",
+      "dlc": false,
+      "source_url": "https://eldenring.fandom.com/wiki/Cerulean_Seed_Talisman",
+      "confidence": "verified",
+      "vanilla_based": true,
+      "err_checked_url": "https://err.fandom.com/wiki/Talismans",
+      "tiers": [
+        {
+          "name": "Cerulean Seed Talisman",
+          "how": "On a corpse on the top rafters, before placing the Carian Inverted Statue.",
+          "where": "Carian Study Hall, eastern Liurnia",
+          "type": "world pickup",
+          "dlc": false,
+          "source_url": "https://eldenring.fandom.com/wiki/Cerulean_Seed_Talisman",
+          "confidence": "verified",
+          "vanilla_based": true
+        },
+        {
+          "name": "Cerulean Seed Talisman +1",
+          "how": "Ring the bell inside the ring of stone fingers with the Hole-Laden Necklace (shown on Ymir's second ruins map).",
+          "where": "Finger Ruins of Dheo",
+          "type": "quest",
+          "dlc": true,
+          "source_url": "https://eldenring.fandom.com/wiki/Cerulean_Seed_Talisman_+1",
+          "confidence": "verified",
+          "vanilla_based": true
+        }
+      ]
+    },
+    "clarifying-horn-charm": {
+      "name": "Clarifying Horn Charm",
+      "how": "On a corpse on the stairs in northern Siofra River (the Deep Siofra Well entrance).",
+      "where": "Siofra River, near the Beneath the Well grace",
+      "type": "world pickup",
+      "dlc": false,
+      "source_url": "https://eldenring.fandom.com/wiki/Clarifying_Horn_Charm",
+      "confidence": "verified",
+      "vanilla_based": true,
+      "err_checked_url": "https://err.fandom.com/wiki/Talismans",
+      "tiers": [
+        {
+          "name": "Clarifying Horn Charm",
+          "how": "On a corpse on the stairs in northern Siofra River (the Deep Siofra Well entrance).",
+          "where": "Siofra River, near the Beneath the Well grace",
+          "type": "world pickup",
+          "dlc": false,
+          "source_url": "https://eldenring.fandom.com/wiki/Clarifying_Horn_Charm",
+          "confidence": "verified",
+          "vanilla_based": true
+        },
+        {
+          "name": "Clarifying Horn Charm +1",
+          "how": "On a corpse at the end of the lower aqueduct northeast of the Mimic Tear.",
+          "where": "Siofra River aqueduct, reached from Nokron (Mimic Tear area)",
+          "type": "world pickup",
+          "dlc": false,
+          "source_url": "https://eldenring.fandom.com/wiki/Clarifying_Horn_Charm_+1",
+          "confidence": "verified",
+          "vanilla_based": true
+        },
+        {
+          "name": "Clarifying Horn Charm +2",
+          "how": "On a corpse on the right in the area past the rat-infested drop.",
+          "where": "Lamenter's Gaol",
+          "type": "world pickup",
+          "dlc": true,
+          "source_url": "https://eldenring.fandom.com/wiki/Clarifying_Horn_Charm_+2",
+          "confidence": "verified",
+          "vanilla_based": true
+        }
+      ]
+    },
+    "claw-talisman": {
+      "name": "Claw Talisman",
+      "how": "On a corpse on top of a watchtower, reached via rooftops and the wall from the spiral stairs.",
+      "where": "Stormveil Castle watchtower (from Rampart Tower grace)",
+      "type": "world pickup",
+      "dlc": false,
+      "source_url": "https://eldenring.fandom.com/wiki/Claw_Talisman",
+      "confidence": "verified",
+      "vanilla_based": true,
+      "err_checked_url": "https://err.fandom.com/wiki/Talismans"
+    },
+    "companion-jar": {
+      "name": "Companion Jar",
+      "how": "Given by Jar Bairn after you hand over Alexander's Innards.",
+      "where": "Jarburg (Jar Bairn)",
+      "type": "quest",
+      "dlc": false,
+      "source_url": "https://eldenring.fandom.com/wiki/Companion_Jar",
+      "confidence": "verified",
+      "vanilla_based": true,
+      "err_checked_url": "https://err.fandom.com/wiki/Talismans"
+    },
+    "concealing-veil": {
+      "name": "Concealing Veil",
+      "how": "Dropped by the Black Knife Assassin boss.",
+      "where": "Sage's Cave, western Altus Plateau",
+      "type": "drop",
+      "dlc": false,
+      "source_url": "https://eldenring.fandom.com/wiki/Concealing_Veil",
+      "confidence": "verified",
+      "vanilla_based": true,
+      "err_checked_url": "https://err.fandom.com/wiki/Talismans"
+    },
+    "crepuss-vial": {
+      "name": "Crepus's Vial",
+      "how": "Dropped by Rileigh the Idle when you invade for the second Volcano Manor assassination.",
+      "where": "Altus Plateau (Volcano Manor target)",
+      "type": "drop",
+      "dlc": false,
+      "source_url": "https://eldenring.fandom.com/wiki/Crepus's_Vial",
+      "confidence": "verified",
+      "vanilla_based": true,
+      "err_checked_url": "https://err.fandom.com/wiki/Talismans"
+    },
+    "crimson-amber-medallion": {
+      "name": "Crimson Amber Medallion",
+      "how": "Buy for 1,500 runes from the Nomadic Merchant (ERR Merchants page); also a starting keepsake in vanilla.",
+      "where": "Weeping Peninsula, Nomadic Merchant at Castle Morne Rampart grace",
+      "type": "merchant",
+      "dlc": false,
+      "source_url": "https://err.fandom.com/wiki/Merchants",
+      "confidence": "verified",
+      "vanilla_based": false,
+      "err_checked_url": "https://err.fandom.com/wiki/Talismans",
+      "tiers": [
+        {
+          "name": "Crimson Amber Medallion",
+          "how": "Buy for 1,500 runes from the Nomadic Merchant (ERR Merchants page); also a starting keepsake in vanilla.",
+          "where": "Weeping Peninsula, Nomadic Merchant at Castle Morne Rampart grace",
+          "type": "merchant",
+          "dlc": false,
+          "source_url": "https://err.fandom.com/wiki/Merchants",
+          "confidence": "verified",
+          "vanilla_based": false
+        },
+        {
+          "name": "Crimson Amber Medallion +1",
+          "how": "On a corpse behind a fog-locked door in the town's brick courtyard.",
+          "where": "Volcano Manor, Prison Town (from Prison Town Church grace)",
+          "type": "world pickup",
+          "dlc": false,
+          "source_url": "https://eldenring.fandom.com/wiki/Crimson_Amber_Medallion_+1",
+          "confidence": "verified",
+          "vanilla_based": true
+        },
+        {
+          "name": "Crimson Amber Medallion +2",
+          "how": "On a corpse down a sewer hole that only opens in Leyndell, Ashen Capital.",
+          "where": "Subterranean Shunning-Grounds (after Maliketh)",
+          "type": "world pickup",
+          "dlc": false,
+          "source_url": "https://eldenring.fandom.com/wiki/Crimson_Amber_Medallion_+2",
+          "confidence": "verified",
+          "vanilla_based": true
+        },
+        {
+          "name": "Crimson Amber Medallion +3",
+          "how": "Reward for defeating the Death Knight.",
+          "where": "Fog Rift Catacombs",
+          "type": "drop",
+          "dlc": true,
+          "source_url": "https://eldenring.fandom.com/wiki/Crimson_Amber_Medallion_+3",
+          "confidence": "verified",
+          "vanilla_based": true
+        }
+      ]
+    },
+    "crimson-seed-talisman": {
+      "name": "Crimson Seed Talisman",
+      "how": "On a corpse behind a 1-Stonesword-Key fog wall near the start of the dungeon.",
+      "where": "Sainted Hero's Grave, central Altus Plateau",
+      "type": "world pickup",
+      "dlc": false,
+      "source_url": "https://eldenring.fandom.com/wiki/Crimson_Seed_Talisman",
+      "confidence": "verified",
+      "vanilla_based": true,
+      "err_checked_url": "https://err.fandom.com/wiki/Talismans",
+      "tiers": [
+        {
+          "name": "Crimson Seed Talisman",
+          "how": "On a corpse behind a 1-Stonesword-Key fog wall near the start of the dungeon.",
+          "where": "Sainted Hero's Grave, central Altus Plateau",
+          "type": "world pickup",
+          "dlc": false,
+          "source_url": "https://eldenring.fandom.com/wiki/Crimson_Seed_Talisman",
+          "confidence": "verified",
+          "vanilla_based": true
+        },
+        {
+          "name": "Crimson Seed Talisman +1",
+          "how": "Ring the bell inside the ring of stone fingers with the Hole-Laden Necklace.",
+          "where": "Finger Ruins of Rhia",
+          "type": "quest",
+          "dlc": true,
+          "source_url": "https://eldenring.fandom.com/wiki/Crimson_Seed_Talisman_+1",
+          "confidence": "verified",
+          "vanilla_based": true
+        }
+      ]
+    },
+    "crucible-feather-talisman": {
+      "name": "Crucible Feather Talisman",
+      "how": "On a corpse at the bottom of the chariot slope; drop into the pit below to reach it.",
+      "where": "Auriza Hero's Grave, Leyndell region",
+      "type": "world pickup",
+      "dlc": false,
+      "source_url": "https://eldenring.fandom.com/wiki/Crucible_Feather_Talisman",
+      "confidence": "verified",
+      "vanilla_based": true,
+      "err_checked_url": "https://err.fandom.com/wiki/Talismans"
+    },
+    "crucible-knot-talisman": {
+      "name": "Crucible Knot Talisman",
+      "how": "Dropped by the Omenkiller boss.",
+      "where": "Village of the Albinaurics, southern Liurnia",
+      "type": "drop",
+      "dlc": false,
+      "source_url": "https://eldenring.fandom.com/wiki/Crucible_Knot_Talisman",
+      "confidence": "verified",
+      "vanilla_based": true,
+      "err_checked_url": "https://err.fandom.com/wiki/Talismans"
+    },
+    "crucible-scale-talisman": {
+      "name": "Crucible Scale Talisman",
+      "how": "On a corpse guarded by an Omen on the upper level; ride a fire pillar up.",
+      "where": "Leyndell Catacombs",
+      "type": "world pickup",
+      "dlc": false,
+      "source_url": "https://eldenring.fandom.com/wiki/Crucible_Scale_Talisman",
+      "confidence": "verified",
+      "vanilla_based": true,
+      "err_checked_url": "https://err.fandom.com/wiki/Talismans"
+    },
+    "crusade-insignia": {
+      "name": "Crusade Insignia",
+      "how": "Reward for the first defeat of Fire Knight Queelign.",
+      "where": "Belurat Tower Settlement or Church of the Crusade",
+      "type": "drop",
+      "dlc": true,
+      "source_url": "https://eldenring.fandom.com/wiki/Crusade_Insignia",
+      "confidence": "verified",
+      "vanilla_based": true,
+      "err_checked_url": "https://err.fandom.com/wiki/Talismans"
+    },
+    "curved-sword-talisman": {
+      "name": "Curved Sword Talisman",
+      "how": "Chest in the room where you get locked in with a Banished Knight, on Gostoc's side route.",
+      "where": "Stormveil Castle, Banished Knight lock-in room (side path)",
+      "type": "chest",
+      "dlc": false,
+      "source_url": "https://eldenring.fandom.com/wiki/Curved_Sword_Talisman",
+      "confidence": "verified",
+      "vanilla_based": true,
+      "err_checked_url": "https://err.fandom.com/wiki/Talismans"
+    },
+    "daedicars-woe": {
+      "name": "Daedicar's Woe",
+      "how": "From Rya near the end of her quest, dropped if she is killed, or left on the floor after she leaves.",
+      "where": "Volcano Manor (Rya)",
+      "type": "quest",
+      "dlc": false,
+      "source_url": "https://eldenring.fandom.com/wiki/Daedicar's_Woe",
+      "confidence": "verified",
+      "vanilla_based": true,
+      "err_checked_url": "https://err.fandom.com/wiki/Talismans"
+    },
+    "dagger-talisman": {
+      "name": "Dagger Talisman",
+      "how": "On a corpse behind a 2-Stonesword-Key fog wall up the stairs west of the throne room.",
+      "where": "Volcano Manor, near the Audience Pathway waygate",
+      "type": "world pickup",
+      "dlc": false,
+      "source_url": "https://eldenring.fandom.com/wiki/Dagger_Talisman",
+      "confidence": "verified",
+      "vanilla_based": true,
+      "err_checked_url": "https://err.fandom.com/wiki/Talismans"
+    },
+    "dancers-castanets": {
+      "name": "Dancer's Castanets",
+      "how": "After Rykard, talk to Patches in Volcano Manor, meet him again in Shaded Castle before Elemer for a key item, then offer it to Tanith in Rykard's arena; she declines and you get the talisman.",
+      "where": "Volcano Manor / Shaded Castle (Altus Plateau)",
+      "type": "quest",
+      "dlc": false,
+      "source_url": "https://err.fandom.com/wiki/Dancer's_Castanets",
+      "confidence": "verified",
+      "vanilla_based": false
+    },
+    "death-princes-exultation": {
+      "name": "Death-Prince's Exultation",
+      "how": "Chest past the first elevator, a ladder and a ledge jump.",
+      "where": "Darklight Catacombs (Realm of Shadow)",
+      "type": "chest",
+      "dlc": true,
+      "source_url": "https://err.fandom.com/wiki/Death-Prince's_Exultation",
+      "confidence": "verified",
+      "vanilla_based": false
+    },
+    "dragoncrest-shield-talisman": {
+      "name": "Dragoncrest Shield Talisman",
+      "how": "ERR swaps base and +1: the base talisman now sits where vanilla +1 was.",
+      "where": "Sainted Hero's Grave, Altus Plateau (vanilla +1 spot)",
+      "type": "world pickup",
+      "dlc": false,
+      "source_url": "https://err.fandom.com/wiki/Talismans",
+      "confidence": "verified",
+      "vanilla_based": false,
+      "err_checked_url": "https://err.fandom.com/wiki/Talismans",
+      "tiers": [
+        {
+          "name": "Dragoncrest Shield Talisman",
+          "how": "ERR swaps base and +1: the base talisman now sits where vanilla +1 was.",
+          "where": "Sainted Hero's Grave, Altus Plateau (vanilla +1 spot)",
+          "type": "world pickup",
+          "dlc": false,
+          "source_url": "https://err.fandom.com/wiki/Talismans",
+          "confidence": "verified",
+          "vanilla_based": false
+        },
+        {
+          "name": "Dragoncrest Shield Talisman +1",
+          "how": "ERR swaps base and +1: the +1 now sits where the vanilla base was.",
+          "where": "Bottom of the Bestial Sanctum drops, Greyoll's Dragonbarrow (vanilla base spot)",
+          "type": "world pickup",
+          "dlc": false,
+          "source_url": "https://err.fandom.com/wiki/Talismans",
+          "confidence": "verified",
+          "vanilla_based": false
+        },
+        {
+          "name": "Dragoncrest Shield Talisman +2",
+          "how": "On a corpse past a series of drops, a window and a floating floor chunk north of the grace.",
+          "where": "Crumbling Farum Azula, north (from Dragon Temple Altar grace)",
+          "type": "world pickup",
+          "dlc": false,
+          "source_url": "https://eldenring.fandom.com/wiki/Dragoncrest_Shield_Talisman_+2",
+          "confidence": "verified",
+          "vanilla_based": true
+        },
+        {
+          "name": "Dragoncrest Greatshield Talisman",
+          "how": "Chest reached by climbing roots to the roof of the pest-filled church and dropping in.",
+          "where": "Elphael, Brace of the Haligtree (from Drainage Channel grace)",
+          "type": "chest",
+          "dlc": false,
+          "source_url": "https://eldenring.fandom.com/wiki/Dragoncrest_Greatshield_Talisman",
+          "confidence": "verified",
+          "vanilla_based": true
+        }
+      ]
+    },
+    "dreaming-saints-exultation": {
+      "name": "Dreaming Saint's Exultation",
+      "how": "Reward for defeating Thiollier's invasion during step 2 of his quest (per the Thiollier page).",
+      "where": "Thiollier's questline (location of the invasion not given)",
+      "type": "quest",
+      "dlc": true,
+      "source_url": "https://eldenring.fandom.com/wiki/Thiollier",
+      "confidence": "partial",
+      "vanilla_based": true,
+      "err_checked_url": "https://err.fandom.com/wiki/Talismans",
+      "note": "ERR name for St. Trina's Smile."
+    },
+    "dried-bouquet": {
+      "name": "Dried Bouquet",
+      "how": "Two pickups in Belurat: a debris-hidden room in the Man-Fly area, and near the Bone Bow.",
+      "where": "Belurat, Tower Settlement",
+      "type": "world pickup",
+      "dlc": true,
+      "source_url": "https://eldenring.fandom.com/wiki/Dried_Bouquet",
+      "confidence": "verified",
+      "vanilla_based": true,
+      "err_checked_url": "https://err.fandom.com/wiki/Talismans"
+    },
+    "enraged-divine-beast": {
+      "name": "Enraged Divine Beast",
+      "how": "Trade the Remembrance of the Dancing Lion to Enia.",
+      "where": "Roundtable Hold (Finger Reader Enia)",
+      "type": "other",
+      "dlc": true,
+      "source_url": "https://eldenring.fandom.com/wiki/Enraged_Divine_Beast",
+      "confidence": "verified",
+      "vanilla_based": true,
+      "err_checked_url": "https://err.fandom.com/wiki/Talismans"
+    },
+    "erdhewn-medallion": {
+      "name": "Erdhewn Medallion",
+      "how": "On a corpse on a rock behind the Minor Erdtree, guarded by two Guardians.",
+      "where": "Weeping Peninsula Minor Erdtree",
+      "type": "world pickup",
+      "dlc": false,
+      "source_url": "https://err.fandom.com/wiki/Erdhewn_Medallion",
+      "confidence": "verified",
+      "vanilla_based": false
+    },
+    "erdtrees-favor": {
+      "name": "Erdtree's Favor",
+      "how": "On an altar in the dungeon behind the 2-Stonesword-Key fog wall.",
+      "where": "Fringefolk Hero's Grave, Stranded Graveyard",
+      "type": "world pickup",
+      "dlc": false,
+      "source_url": "https://eldenring.fandom.com/wiki/Erdtree's_Favor",
+      "confidence": "verified",
+      "vanilla_based": true,
+      "err_checked_url": "https://err.fandom.com/wiki/Talismans",
+      "tiers": [
+        {
+          "name": "Erdtree's Favor",
+          "how": "On an altar in the dungeon behind the 2-Stonesword-Key fog wall.",
+          "where": "Fringefolk Hero's Grave, Stranded Graveyard",
+          "type": "world pickup",
+          "dlc": false,
+          "source_url": "https://eldenring.fandom.com/wiki/Erdtree's_Favor",
+          "confidence": "verified",
+          "vanilla_based": true
+        },
+        {
+          "name": "Erdtree's Favor +1",
+          "how": "Chest in Mohg, the Omen's arena after the fight.",
+          "where": "Cathedral of the Forsaken, Subterranean Shunning-Grounds",
+          "type": "chest",
+          "dlc": false,
+          "source_url": "https://eldenring.fandom.com/wiki/Erdtree's_Favor_+1",
+          "confidence": "verified",
+          "vanilla_based": true
+        },
+        {
+          "name": "Erdtree's Favor +2",
+          "how": "On a corpse west of the Grand Lift of Rold approach into the ashen capital.",
+          "where": "Leyndell, Ashen Capital (after Maliketh)",
+          "type": "world pickup",
+          "dlc": false,
+          "source_url": "https://eldenring.fandom.com/wiki/Erdtree's_Favor_+2",
+          "confidence": "verified",
+          "vanilla_based": true
+        }
+      ]
+    },
+    "execrable-serpents-exultation": {
+      "name": "Execrable Serpent's Exultation",
+      "how": "Reward for clearing the colosseum camp of two Grave Warden Duelists. Missable: not available after Maliketh.",
+      "where": "Leyndell, Royal Capital, Colosseum",
+      "type": "other",
+      "dlc": false,
+      "source_url": "https://err.fandom.com/wiki/Execrable_Serpent's_Exultation",
+      "confidence": "verified",
+      "vanilla_based": false,
+      "camp_url": "https://err.fandom.com/wiki/Camps#Leyndell_Colosseum"
+    },
+    "faithfuls-canvas-talisman": {
+      "name": "Faithful's Canvas Talisman",
+      "how": "On a corpse to the right of the main path, guarded by two Pests.",
+      "where": "Sellia Crystal Tunnel, central Caelid",
+      "type": "world pickup",
+      "dlc": false,
+      "source_url": "https://eldenring.fandom.com/wiki/Faithful's_Canvas_Talisman",
+      "confidence": "verified",
+      "vanilla_based": true,
+      "err_checked_url": "https://err.fandom.com/wiki/Talismans"
+    },
+    "fine-crucible-feather-talisman": {
+      "name": "Fine Crucible Feather Talisman",
+      "how": null,
+      "where": null,
+      "type": "other",
+      "dlc": true,
+      "source_url": "https://eldenring.fandom.com/wiki/Fine_Crucible_Feather_Talisman",
+      "confidence": "unknown",
+      "note": "Fandom page has no acquisition info.",
+      "vanilla_based": true,
+      "err_checked_url": "https://err.fandom.com/wiki/Talismans"
+    },
+    "fire-scorpion-charm": {
+      "name": "Fire Scorpion Charm",
+      "how": "On a wooden catwalk hanging off the fort's rampart.",
+      "where": "Fort Laiedd, western Mt. Gelmir",
+      "type": "world pickup",
+      "dlc": false,
+      "source_url": "https://eldenring.fandom.com/wiki/Fire_Scorpion_Charm",
+      "confidence": "verified",
+      "vanilla_based": true,
+      "err_checked_url": "https://err.fandom.com/wiki/Talismans"
+    },
+    "flamedrake-talisman": {
+      "name": "Flamedrake Talisman",
+      "how": "Dropped by the Beastman of Farum Azula boss.",
+      "where": "Groveside Cave, NW Limgrave",
+      "type": "drop",
+      "dlc": false,
+      "source_url": "https://eldenring.fandom.com/wiki/Flamedrake_Talisman",
+      "confidence": "partial",
+      "vanilla_based": true,
+      "err_checked_url": "https://err.fandom.com/wiki/Talismans",
+      "tiers": [
+        {
+          "name": "Flamedrake Talisman",
+          "how": "Dropped by the Beastman of Farum Azula boss.",
+          "where": "Groveside Cave, NW Limgrave",
+          "type": "drop",
+          "dlc": false,
+          "source_url": "https://eldenring.fandom.com/wiki/Flamedrake_Talisman",
+          "confidence": "verified",
+          "vanilla_based": true
+        },
+        {
+          "name": "Flamedrake Talisman +1",
+          "how": "On a corpse in front of a pillar on the eastern road out of the capital.",
+          "where": "Eastern Leyndell, Royal Capital (road to the Grand Lift of Rold)",
+          "type": "world pickup",
+          "dlc": false,
+          "source_url": "https://eldenring.fandom.com/wiki/Flamedrake_Talisman_+1",
+          "confidence": "verified",
+          "vanilla_based": true
+        },
+        {
+          "name": "Flamedrake Talisman +2",
+          "how": "Reward for defeating the Beastman of Farum Azula duo.",
+          "where": "Dragonbarrow Cave, Greyoll's Dragonbarrow",
+          "type": "drop",
+          "dlc": false,
+          "source_url": "https://eldenring.fandom.com/wiki/Flamedrake_Talisman_+2",
+          "confidence": "verified",
+          "vanilla_based": true
+        },
+        {
+          "name": "Flamedrake Talisman +3",
+          "how": "Chest down the back-right staircase from the front gate, past two soldiers.",
+          "where": "Fort of Reprimand",
+          "type": "chest",
+          "dlc": true,
+          "source_url": "https://eldenring.fandom.com/wiki/Flamedrake_Talisman_+3",
+          "confidence": "partial",
+          "vanilla_based": true,
+          "note": "ERR's Talismans page labels the fourth tier 'Greatshield'; mapped here to the vanilla +3 (SotE) item. Confirm in game."
+        }
+      ]
+    },
+    "flocks-canvas-talisman": {
+      "name": "Flock's Canvas Talisman",
+      "how": "On Gowry's corpse after Millicent's quest ends (help her then kill him, or kill her and return).",
+      "where": "Gowry (Caelid), end of Millicent's quest",
+      "type": "quest",
+      "dlc": false,
+      "source_url": "https://eldenring.fandom.com/wiki/Flock's_Canvas_Talisman",
+      "confidence": "verified",
+      "vanilla_based": true,
+      "err_checked_url": "https://err.fandom.com/wiki/Talismans"
+    },
+    "godfrey-icon": {
+      "name": "Godfrey Icon",
+      "how": "Dropped by Godefroy the Grafted.",
+      "where": "Golden Lineage Evergaol, southern Altus Plateau",
+      "type": "drop",
+      "dlc": false,
+      "source_url": "https://eldenring.fandom.com/wiki/Godfrey_Icon",
+      "confidence": "verified",
+      "vanilla_based": true,
+      "err_checked_url": "https://err.fandom.com/wiki/Talismans"
+    },
+    "godskin-swaddling-cloth": {
+      "name": "Godskin Swaddling Cloth",
+      "how": "Reward for beating the bosses at the end of the cave.",
+      "where": "Spiritcaller's Cave, NE Mountaintops of the Giants",
+      "type": "drop",
+      "dlc": false,
+      "source_url": "https://eldenring.fandom.com/wiki/Godskin_Swaddling_Cloth",
+      "confidence": "verified",
+      "vanilla_based": true,
+      "err_checked_url": "https://err.fandom.com/wiki/Talismans"
+    },
+    "gold-scarab": {
+      "name": "Gold Scarab",
+      "how": "ERR swaps the scarabs: Gold Scarab is now in the Silver Scarab's vanilla chest behind the illusory wall.",
+      "where": "Hidden Path to the Haligtree, Forbidden Lands (vanilla Silver Scarab spot)",
+      "type": "chest",
+      "dlc": false,
+      "source_url": "https://err.fandom.com/wiki/Talismans",
+      "confidence": "verified",
+      "vanilla_based": false,
+      "err_checked_url": "https://err.fandom.com/wiki/Talismans"
+    },
+    "graven-mass-talisman": {
+      "name": "Graven-Mass Talisman",
+      "how": "Chest at the top of the rise.",
+      "where": "Albinauric Rise, eastern Consecrated Snowfield",
+      "type": "chest",
+      "dlc": false,
+      "source_url": "https://eldenring.fandom.com/wiki/Graven-Mass_Talisman",
+      "confidence": "verified",
+      "vanilla_based": true,
+      "err_checked_url": "https://err.fandom.com/wiki/Talismans"
+    },
+    "graven-school-talisman": {
+      "name": "Graven-School Talisman",
+      "how": "In a crystal pile behind an empty bookshelf in the room west of the Debate Parlor.",
+      "where": "Raya Lucaria Academy, room before the Red Wolf of Radagon (from Debate Parlor)",
+      "type": "world pickup",
+      "dlc": false,
+      "source_url": "https://eldenring.fandom.com/wiki/Graven-School_Talisman",
+      "confidence": "verified",
+      "vanilla_based": true,
+      "err_checked_url": "https://err.fandom.com/wiki/Talismans"
+    },
+    "greatshield-talisman": {
+      "name": "Greatshield Talisman",
+      "how": "Chest in a black carriage ESE of Lux Ruins, north of the Grand Lift of Dectus.",
+      "where": "Western Altus Plateau, east of Erdtree-Gazing Hill grace",
+      "type": "chest",
+      "dlc": false,
+      "source_url": "https://eldenring.fandom.com/wiki/Greatshield_Talisman",
+      "confidence": "verified",
+      "vanilla_based": true,
+      "err_checked_url": "https://err.fandom.com/wiki/Talismans"
+    },
+    "green-turtle-talisman": {
+      "name": "Green Turtle Talisman",
+      "how": "Chest behind a 1-Stonesword-Key fog wall.",
+      "where": "Summonwater Village cellar, northern Limgrave",
+      "type": "chest",
+      "dlc": false,
+      "source_url": "https://eldenring.fandom.com/wiki/Green_Turtle_Talisman",
+      "confidence": "verified",
+      "vanilla_based": true,
+      "err_checked_url": "https://err.fandom.com/wiki/Talismans",
+      "tiers": [
+        {
+          "name": "Green Turtle Talisman",
+          "how": "Chest behind a 1-Stonesword-Key fog wall.",
+          "where": "Summonwater Village cellar, northern Limgrave",
+          "type": "chest",
+          "dlc": false,
+          "source_url": "https://eldenring.fandom.com/wiki/Green_Turtle_Talisman",
+          "confidence": "verified",
+          "vanilla_based": true
+        },
+        {
+          "name": "Two-Headed Turtle Talisman",
+          "how": "Inside the guarded cave beneath the waterfall.",
+          "where": "Cave under a waterfall east of Rivermouth Cave",
+          "type": "world pickup",
+          "dlc": true,
+          "source_url": "https://eldenring.fandom.com/wiki/Two-Headed_Turtle_Talisman",
+          "confidence": "verified",
+          "vanilla_based": true
+        }
+      ]
+    },
+    "haligdrake-talisman-golden-braid": {
+      "name": "Haligdrake Talisman/Golden Braid",
+      "how": "On a corpse on the cliff behind the starting area; reached from outside the graveyard, not from inside.",
+      "where": "Stranded Graveyard cliff, western Limgrave",
+      "type": "world pickup",
+      "dlc": false,
+      "source_url": "https://eldenring.fandom.com/wiki/Haligdrake_Talisman",
+      "confidence": "verified",
+      "vanilla_based": true,
+      "err_checked_url": "https://err.fandom.com/wiki/Talismans",
+      "tiers": [
+        {
+          "name": "Haligdrake Talisman",
+          "how": "On a corpse on the cliff behind the starting area; reached from outside the graveyard, not from inside.",
+          "where": "Stranded Graveyard cliff, western Limgrave",
+          "type": "world pickup",
+          "dlc": false,
+          "source_url": "https://eldenring.fandom.com/wiki/Haligdrake_Talisman",
+          "confidence": "verified",
+          "vanilla_based": true
+        },
+        {
+          "name": "Haligdrake Talisman +1",
+          "how": "Through illusory walls in the room with three phantoms, up the lift southeast of the grace.",
+          "where": "Leyndell Catacombs",
+          "type": "world pickup",
+          "dlc": false,
+          "source_url": "https://eldenring.fandom.com/wiki/Haligdrake_Talisman_+1",
+          "confidence": "verified",
+          "vanilla_based": true
+        },
+        {
+          "name": "Haligdrake Talisman +2",
+          "how": "On a corpse in the graveyard below the Mohgwyn Dynasty Mausoleum.",
+          "where": "Mohgwyn Palace, SW graveyard by the blood lake",
+          "type": "world pickup",
+          "dlc": false,
+          "source_url": "https://eldenring.fandom.com/wiki/Haligdrake_Talisman_+2",
+          "confidence": "verified",
+          "vanilla_based": true
+        },
+        {
+          "name": "Golden Braid",
+          "how": "In front of the Grandmother inside the decayed tree trunk on the hill.",
+          "where": "Shaman Village (Grandmother's tree)",
+          "type": "world pickup",
+          "dlc": true,
+          "source_url": "https://eldenring.fandom.com/wiki/Golden_Braid",
+          "confidence": "verified",
+          "vanilla_based": true
+        }
+      ]
+    },
+    "hammer-talisman": {
+      "name": "Hammer Talisman",
+      "how": "Dropped by invader Recusant Henricus; the invasion can disappear after major Limgrave bosses. ERR: if you already joined Volcano Manor, it is on the corpse holding the Eye Surcoat in Rykard's arena.",
+      "where": "Northern Stormhill near the colosseum, north of Stormhill Shack",
+      "type": "drop",
+      "dlc": false,
+      "source_url": "https://err.fandom.com/wiki/Talismans",
+      "confidence": "verified",
+      "vanilla_based": false,
+      "err_checked_url": "https://err.fandom.com/wiki/Talismans"
+    },
+    "heavenly-brew-talisman": {
+      "name": "Heavenly Brew Talisman",
+      "how": "Given by an NPC at the shack; the ERR page links it to Trina's follower quest.",
+      "where": "Liurnia of the Lakes, Shack of the Reeling",
+      "type": "quest",
+      "dlc": false,
+      "source_url": "https://err.fandom.com/wiki/Heavenly_Brew_Talisman",
+      "confidence": "partial",
+      "vanilla_based": false,
+      "note": "NPC not named and quest requirements not spelled out on the ERR page; may require Shadow of the Erdtree content."
+    },
+    "immunizing-horn-charm": {
+      "name": "Immunizing Horn Charm",
+      "how": "On a corpse in an ant nest in the southwest.",
+      "where": "Ainsel River, near Ainsel River Downstream grace",
+      "type": "world pickup",
+      "dlc": false,
+      "source_url": "https://eldenring.fandom.com/wiki/Immunizing_Horn_Charm",
+      "confidence": "verified",
+      "vanilla_based": true,
+      "err_checked_url": "https://err.fandom.com/wiki/Talismans",
+      "tiers": [
+        {
+          "name": "Immunizing Horn Charm",
+          "how": "On a corpse in an ant nest in the southwest.",
+          "where": "Ainsel River, near Ainsel River Downstream grace",
+          "type": "world pickup",
+          "dlc": false,
+          "source_url": "https://eldenring.fandom.com/wiki/Immunizing_Horn_Charm",
+          "confidence": "verified",
+          "vanilla_based": true
+        },
+        {
+          "name": "Immunizing Horn Charm +1",
+          "how": "Dropped by an Ancestral Follower near the lake.",
+          "where": "Lake of Rot, SE of Lake of Rot Shoreside grace",
+          "type": "drop",
+          "dlc": false,
+          "source_url": "https://eldenring.fandom.com/wiki/Immunizing_Horn_Charm_+1",
+          "confidence": "verified",
+          "vanilla_based": true
+        },
+        {
+          "name": "Immunizing Horn Charm +2",
+          "how": "Reward for defeating the Ulcerated Tree Spirit.",
+          "where": "Belurat sewers / swamp (needs Well Depths Key)",
+          "type": "drop",
+          "dlc": true,
+          "source_url": "https://eldenring.fandom.com/wiki/Immunizing_Horn_Charm_+2",
+          "confidence": "verified",
+          "vanilla_based": true
+        }
+      ]
+    },
+    "kindred-of-rots-exultation": {
+      "name": "Kindred of Rot's Exultation",
+      "how": "Dropped by the Kindred of Rot boss.",
+      "where": "Seethewater Cave, central Mt. Gelmir",
+      "type": "drop",
+      "dlc": false,
+      "source_url": "https://eldenring.fandom.com/wiki/Kindred_of_Rot's_Exultation",
+      "confidence": "verified",
+      "vanilla_based": true,
+      "err_checked_url": "https://err.fandom.com/wiki/Talismans"
+    },
+    "lacerating-crossed-tree": {
+      "name": "Lacerating Crossed-Tree",
+      "how": "Help Leda defeat Hornsent when she targets him, then talk to her at Highroad Cross. Locks out Retaliatory Crossed-Tree.",
+      "where": "Highroad Cross grace (Needle Knight Leda)",
+      "type": "quest",
+      "dlc": true,
+      "source_url": "https://eldenring.fandom.com/wiki/Lacerating_Crossed-Tree",
+      "confidence": "verified",
+      "vanilla_based": true,
+      "err_checked_url": "https://err.fandom.com/wiki/Talismans"
+    },
+    "lance-talisman": {
+      "name": "Lance Talisman",
+      "how": "Lying at the northeastern tip of Stormhill.",
+      "where": "Far NE tip of Stormhill, west of the Divine Tower of Limgrave",
+      "type": "world pickup",
+      "dlc": false,
+      "source_url": "https://eldenring.fandom.com/wiki/Lance_Talisman",
+      "confidence": "verified",
+      "vanilla_based": true,
+      "err_checked_url": "https://err.fandom.com/wiki/Talismans"
+    },
+    "lightning-scorpion-charm": {
+      "name": "Lightning Scorpion Charm",
+      "how": "On a corpse behind a coffin in the room behind the mid-dungeon 1-key fog wall.",
+      "where": "Wyndham Catacombs, eastern Mt. Gelmir",
+      "type": "world pickup",
+      "dlc": false,
+      "source_url": "https://eldenring.fandom.com/wiki/Lightning_Scorpion_Charm",
+      "confidence": "verified",
+      "vanilla_based": true,
+      "err_checked_url": "https://err.fandom.com/wiki/Talismans"
+    },
+    "longtail-cat-talisman": {
+      "name": "Longtail Cat Talisman",
+      "how": "On a corpse at the bottom; hop off the lift near the bottom to avoid fall damage.",
+      "where": "Raya Lucaria Academy, bottom of the lift (from Schoolhouse Classroom grace)",
+      "type": "world pickup",
+      "dlc": false,
+      "source_url": "https://eldenring.fandom.com/wiki/Longtail_Cat_Talisman",
+      "confidence": "verified",
+      "vanilla_based": true,
+      "err_checked_url": "https://err.fandom.com/wiki/Talismans"
+    },
+    "lord-of-bloods-exultation": {
+      "name": "Lord of Blood's Exultation",
+      "how": "Dropped by Esgar, Priest of Blood.",
+      "where": "Leyndell Catacombs",
+      "type": "drop",
+      "dlc": false,
+      "source_url": "https://eldenring.fandom.com/wiki/Lord_of_Blood's_Exultation",
+      "confidence": "verified",
+      "vanilla_based": true,
+      "err_checked_url": "https://err.fandom.com/wiki/Talismans"
+    },
+    "lunar-princess-exultation": {
+      "name": "Lunar Princess' Exultation",
+      "how": "Carry Miniature Ranni, collect all 13 Starlight Shards from Stone Astrolabes, then use the large astrolabe at the top of the stairs.",
+      "where": "Caria Manor, Royal Knight Loretta's arena (Liurnia)",
+      "type": "quest",
+      "dlc": false,
+      "source_url": "https://err.fandom.com/wiki/Lunar_Princess'_Exultation",
+      "confidence": "verified",
+      "vanilla_based": false
+    },
+    "magic-scorpion-charm": {
+      "name": "Magic Scorpion Charm",
+      "how": "Given by Preceptor Seluvis after you hand him the Amber Starlight; do it before giving Ranni the Fingerslayer Blade.",
+      "where": "Seluvis's Rise, NW Liurnia",
+      "type": "quest",
+      "dlc": false,
+      "source_url": "https://eldenring.fandom.com/wiki/Magic_Scorpion_Charm",
+      "confidence": "verified",
+      "vanilla_based": true,
+      "err_checked_url": "https://err.fandom.com/wiki/Talismans"
+    },
+    "marikas-scarseal-soreseal": {
+      "name": "Marika's Scarseal/Soreseal",
+      "how": "On a corpse at the base of a waterfall behind the boss arena.",
+      "where": "Siofra River, NW, behind the Dragonkin Soldier arena",
+      "type": "world pickup",
+      "dlc": false,
+      "source_url": "https://eldenring.fandom.com/wiki/Marika's_Scarseal",
+      "confidence": "verified",
+      "vanilla_based": true,
+      "err_checked_url": "https://err.fandom.com/wiki/Talismans",
+      "tiers": [
+        {
+          "name": "Marika's Scarseal",
+          "how": "On a corpse at the base of a waterfall behind the boss arena.",
+          "where": "Siofra River, NW, behind the Dragonkin Soldier arena",
+          "type": "world pickup",
+          "dlc": false,
+          "source_url": "https://eldenring.fandom.com/wiki/Marika's_Scarseal",
+          "confidence": "verified",
+          "vanilla_based": true
+        },
+        {
+          "name": "Marika's Soreseal",
+          "how": "On a chalice in a room behind a 1-Stonesword-Key fog wall in SE Elphael.",
+          "where": "Elphael, Brace of the Haligtree (from Elphael Inner Wall grace)",
+          "type": "world pickup",
+          "dlc": false,
+          "source_url": "https://eldenring.fandom.com/wiki/Marika's_Soreseal",
+          "confidence": "verified",
+          "vanilla_based": true
+        }
+      ]
+    },
+    "millicents-prosthesis": {
+      "name": "Millicent's Prosthesis",
+      "how": "Dropped by Millicent if you kill her after she starts using the Valkyrie's Prosthesis.",
+      "where": "First spot: Windmill Heights grace, Dominula",
+      "type": "quest",
+      "dlc": false,
+      "source_url": "https://eldenring.fandom.com/wiki/Millicent's_Prosthesis",
+      "confidence": "verified",
+      "vanilla_based": true,
+      "err_checked_url": "https://err.fandom.com/wiki/Talismans"
+    },
+    "moon-of-nokstella": {
+      "name": "Moon of Nokstella",
+      "how": "End-of-dungeon chest at the base of a chair-crypt.",
+      "where": "Nokstella, Eternal City, NW cathedral",
+      "type": "chest",
+      "dlc": false,
+      "source_url": "https://eldenring.fandom.com/wiki/Moon_of_Nokstella",
+      "confidence": "verified",
+      "vanilla_based": true,
+      "err_checked_url": "https://err.fandom.com/wiki/Talismans"
+    },
+    "mottled-necklace": {
+      "name": "Mottled Necklace",
+      "how": "Reached only through a Four Belfries waygate ('Night Sky Unceasing').",
+      "where": "Siofra River, end of a broken bridge toward Nokron",
+      "type": "world pickup",
+      "dlc": false,
+      "source_url": "https://eldenring.fandom.com/wiki/Mottled_Necklace",
+      "confidence": "verified",
+      "vanilla_based": true,
+      "err_checked_url": "https://err.fandom.com/wiki/Talismans",
+      "tiers": [
+        {
+          "name": "Mottled Necklace",
+          "how": "Reached only through a Four Belfries waygate ('Night Sky Unceasing').",
+          "where": "Siofra River, end of a broken bridge toward Nokron",
+          "type": "world pickup",
+          "dlc": false,
+          "source_url": "https://eldenring.fandom.com/wiki/Mottled_Necklace",
+          "confidence": "verified",
+          "vanilla_based": true
+        },
+        {
+          "name": "Mottled Necklace +1",
+          "how": "On a corpse on top of the pillars; climb the terrain on the left.",
+          "where": "Nokron, above Hallowhorn Grounds",
+          "type": "world pickup",
+          "dlc": false,
+          "source_url": "https://eldenring.fandom.com/wiki/Mottled_Necklace_+1",
+          "confidence": "verified",
+          "vanilla_based": true
+        },
+        {
+          "name": "Mottled Necklace +2",
+          "how": "Use the spiritspring to reach a raised area; it sits at the top of a staircase.",
+          "where": "Ancient Ruins of Rauh",
+          "type": "world pickup",
+          "dlc": true,
+          "source_url": "https://eldenring.fandom.com/wiki/Mottled_Necklace_+2",
+          "confidence": "verified",
+          "vanilla_based": true
+        }
+      ]
+    },
+    "old-lords-talisman": {
+      "name": "Old Lord's Talisman",
+      "how": "Chest guarded by Recusant Bernahl's invasion and three Azula Beastmen.",
+      "where": "Crumbling Farum Azula (from Beside the Great Bridge grace)",
+      "type": "chest",
+      "dlc": false,
+      "source_url": "https://eldenring.fandom.com/wiki/Old_Lord's_Talisman",
+      "confidence": "verified",
+      "vanilla_based": true,
+      "err_checked_url": "https://err.fandom.com/wiki/Talismans"
+    },
+    "outer-god-heirloom": {
+      "name": "Outer God Heirloom",
+      "how": "Chest in a small building at the top of town.",
+      "where": "Prospect Town, SW Gravesite Plain",
+      "type": "chest",
+      "dlc": true,
+      "source_url": "https://eldenring.fandom.com/wiki/Outer_God_Heirloom",
+      "confidence": "verified",
+      "vanilla_based": true,
+      "err_checked_url": "https://err.fandom.com/wiki/Talismans"
+    },
+    "pearl-shield-talisman": {
+      "name": "Pearl Shield Talisman",
+      "how": "Chest in the small soldier camp.",
+      "where": "Messmer Soldier camp SW of Taylew's Ruined Forge grace",
+      "type": "chest",
+      "dlc": true,
+      "source_url": "https://eldenring.fandom.com/wiki/Pearl_Shield_Talisman",
+      "confidence": "verified",
+      "vanilla_based": true,
+      "err_checked_url": "https://err.fandom.com/wiki/Talismans"
+    },
+    "pearldrake-talisman": {
+      "name": "Pearldrake Talisman",
+      "how": "Reached early via a Four Belfries waygate ('Crumbling Lands'); corpse on the north end.",
+      "where": "Crumbling Farum Azula, isolated western platform",
+      "type": "world pickup",
+      "dlc": false,
+      "source_url": "https://eldenring.fandom.com/wiki/Pearldrake_Talisman",
+      "confidence": "partial",
+      "vanilla_based": true,
+      "err_checked_url": "https://err.fandom.com/wiki/Talismans",
+      "tiers": [
+        {
+          "name": "Pearldrake Talisman",
+          "how": "Reached early via a Four Belfries waygate ('Crumbling Lands'); corpse on the north end.",
+          "where": "Crumbling Farum Azula, isolated western platform",
+          "type": "world pickup",
+          "dlc": false,
+          "source_url": "https://eldenring.fandom.com/wiki/Pearldrake_Talisman",
+          "confidence": "verified",
+          "vanilla_based": true
+        },
+        {
+          "name": "Pearldrake Talisman +1",
+          "how": "Chest behind a 1-Stonesword-Key fog wall.",
+          "where": "Wyndham Ruins cellar, central Mt. Gelmir",
+          "type": "chest",
+          "dlc": false,
+          "source_url": "https://eldenring.fandom.com/wiki/Pearldrake_Talisman_+1",
+          "confidence": "verified",
+          "vanilla_based": true
+        },
+        {
+          "name": "Pearldrake Talisman +2",
+          "how": "On a corpse at a statue base guarded by a Misbegotten Warrior, past a ladder and a backward jump.",
+          "where": "Miquella's Haligtree, central (from Haligtree Town)",
+          "type": "world pickup",
+          "dlc": false,
+          "source_url": "https://eldenring.fandom.com/wiki/Pearldrake_Talisman_+2",
+          "confidence": "verified",
+          "vanilla_based": true
+        },
+        {
+          "name": "Pearldrake Talisman +3",
+          "how": "After pulling the seventh-floor lever, go back to the third floor and take it from a statue head's beard.",
+          "where": "Shadow Keep, Specimen Storehouse",
+          "type": "other",
+          "dlc": true,
+          "source_url": "https://eldenring.fandom.com/wiki/Pearldrake_Talisman_+3",
+          "confidence": "partial",
+          "vanilla_based": true,
+          "note": "ERR's Talismans page labels the fourth tier 'Greatshield'; mapped here to the vanilla +3 (SotE) item. Confirm in game."
+        }
+      ]
+    },
+    "perfumers-talisman": {
+      "name": "Perfumer's Talisman",
+      "how": "Chest in the cellar.",
+      "where": "Perfumer's Ruins cellar, SW Mt. Gelmir",
+      "type": "chest",
+      "dlc": false,
+      "source_url": "https://eldenring.fandom.com/wiki/Perfumer's_Talisman",
+      "confidence": "verified",
+      "vanilla_based": true,
+      "err_checked_url": "https://err.fandom.com/wiki/Talismans"
+    },
+    "primal-glintstone-blade": {
+      "name": "Primal Glintstone Blade",
+      "how": "Chest behind a seal dispelled by summoning Spirit Jellyfish Ashes near the talking jellyfish.",
+      "where": "Stargazer's Ruins cellar, central Mountaintops",
+      "type": "chest",
+      "dlc": false,
+      "source_url": "https://eldenring.fandom.com/wiki/Primal_Glintstone_Blade",
+      "confidence": "verified",
+      "vanilla_based": true,
+      "err_checked_url": "https://err.fandom.com/wiki/Talismans"
+    },
+    "prince-of-deaths-pustule-cyst": {
+      "name": "Prince of Death's Pustule/Cyst",
+      "how": "On a corpse next to the root-like face.",
+      "where": "Under Stormveil Castle, by the giant root face",
+      "type": "world pickup",
+      "dlc": false,
+      "source_url": "https://eldenring.fandom.com/wiki/Prince_of_Death's_Pustule",
+      "confidence": "verified",
+      "vanilla_based": true,
+      "err_checked_url": "https://err.fandom.com/wiki/Talismans",
+      "tiers": [
+        {
+          "name": "Prince of Death's Pustule",
+          "how": "On a corpse next to the root-like face.",
+          "where": "Under Stormveil Castle, by the giant root face",
+          "type": "world pickup",
+          "dlc": false,
+          "source_url": "https://eldenring.fandom.com/wiki/Prince_of_Death's_Pustule",
+          "confidence": "verified",
+          "vanilla_based": true
+        },
+        {
+          "name": "Prince of Death's Cyst",
+          "how": "Dropped by the Runebear.",
+          "where": "Deeproot Depths, cave behind waterfall NE of Deeproot Depths grace",
+          "type": "drop",
+          "dlc": false,
+          "source_url": "https://eldenring.fandom.com/wiki/Prince_of_Death's_Cyst",
+          "confidence": "verified",
+          "vanilla_based": true
+        }
+      ]
+    },
+    "prodigy-crown-pendant": {
+      "name": "Prodigy Crown Pendant",
+      "how": "Dropped by the Graven-School enemy in the bottom room.",
+      "where": "Lenne's Rise, Greyoll's Dragonbarrow",
+      "type": "drop",
+      "dlc": false,
+      "source_url": "https://err.fandom.com/wiki/Prodigy_Crown_Pendant",
+      "confidence": "verified",
+      "vanilla_based": false,
+      "note": "Called 'Prodigious Crown Pendant' before 2.3.5.0."
+    },
+    "prosthesis-wearer-heirloom": {
+      "name": "Prosthesis-Wearer Heirloom",
+      "how": "Given by Millicent after you bring the repaired Unalloyed Gold Needle and she recovers.",
+      "where": "Church of the Plague, eastern Caelid",
+      "type": "quest",
+      "dlc": false,
+      "source_url": "https://eldenring.fandom.com/wiki/Prosthesis-Wearer_Heirloom",
+      "confidence": "verified",
+      "vanilla_based": true,
+      "err_checked_url": "https://err.fandom.com/wiki/Talismans"
+    },
+    "radagon-icon": {
+      "name": "Radagon Icon",
+      "how": "Chest on an upper landing through a broken window, around the courtyard building.",
+      "where": "Raya Lucaria Academy (from Debate Parlor grace)",
+      "type": "chest",
+      "dlc": false,
+      "source_url": "https://eldenring.fandom.com/wiki/Radagon_Icon",
+      "confidence": "verified",
+      "vanilla_based": true,
+      "err_checked_url": "https://err.fandom.com/wiki/Talismans"
+    },
+    "radagons-scarseal-soreseal": {
+      "name": "Radagon's Scarseal/Soreseal",
+      "how": "Dropped by the Ancient Hero of Zamor.",
+      "where": "Weeping Evergaol, Weeping Peninsula",
+      "type": "drop",
+      "dlc": false,
+      "source_url": "https://eldenring.fandom.com/wiki/Radagon's_Scarseal",
+      "confidence": "verified",
+      "vanilla_based": true,
+      "err_checked_url": "https://err.fandom.com/wiki/Talismans",
+      "tiers": [
+        {
+          "name": "Radagon's Scarseal",
+          "how": "Dropped by the Ancient Hero of Zamor.",
+          "where": "Weeping Evergaol, Weeping Peninsula",
+          "type": "drop",
+          "dlc": false,
+          "source_url": "https://eldenring.fandom.com/wiki/Radagon's_Scarseal",
+          "confidence": "verified",
+          "vanilla_based": true
+        },
+        {
+          "name": "Radagon's Soreseal",
+          "how": "On a corpse in the barn near the rats.",
+          "where": "Fort Faroth, Caelid",
+          "type": "world pickup",
+          "dlc": false,
+          "source_url": "https://eldenring.fandom.com/wiki/Radagon's_Soreseal",
+          "confidence": "verified",
+          "vanilla_based": true
+        }
+      ]
+    },
+    "red-feathered-branchsword": {
+      "name": "Red-Feathered Branchsword",
+      "how": "Dropped by the Deathbird at the fallen ruin at night.",
+      "where": "Central Liurnia, NE of Scenic Isle grace (night)",
+      "type": "drop",
+      "dlc": false,
+      "source_url": "https://eldenring.fandom.com/wiki/Red-Feathered_Branchsword",
+      "confidence": "verified",
+      "vanilla_based": true,
+      "err_checked_url": "https://err.fandom.com/wiki/Talismans"
+    },
+    "rellanas-cameo": {
+      "name": "Rellana's Cameo",
+      "how": "On an altar beside Moonrithyll, Carian Knight.",
+      "where": "Castle Ensis",
+      "type": "world pickup",
+      "dlc": true,
+      "source_url": "https://eldenring.fandom.com/wiki/Rellana's_Cameo",
+      "confidence": "verified",
+      "vanilla_based": true,
+      "err_checked_url": "https://err.fandom.com/wiki/Talismans"
+    },
+    "retaliatory-crossed-tree": {
+      "name": "Retaliatory Crossed-Tree",
+      "how": "Given by Leda at a grace as she says farewell after you invade Sir Ansbach for her; lost if you helped against Hornsent.",
+      "where": "Needle Knight Leda's questline",
+      "type": "quest",
+      "dlc": true,
+      "source_url": "https://eldenring.fandom.com/wiki/Retaliatory_Crossed-Tree",
+      "confidence": "verified",
+      "vanilla_based": true,
+      "err_checked_url": "https://err.fandom.com/wiki/Talismans"
+    },
+    "ritual-shield-talisman": {
+      "name": "Ritual Shield Talisman",
+      "how": "On a corpse in front of the colosseum.",
+      "where": "Leyndell, Royal Capital, in front of the colosseum (south)",
+      "type": "world pickup",
+      "dlc": false,
+      "source_url": "https://eldenring.fandom.com/wiki/Ritual_Shield_Talisman",
+      "confidence": "verified",
+      "vanilla_based": true,
+      "err_checked_url": "https://err.fandom.com/wiki/Talismans"
+    },
+    "ritual-sword-talisman": {
+      "name": "Ritual Sword Talisman",
+      "how": "Chest guarded by Demi-Human Queen Gilika.",
+      "where": "Lux Ruins cellar (Fandom: SE Mt. Gelmir region)",
+      "type": "chest",
+      "dlc": false,
+      "source_url": "https://eldenring.fandom.com/wiki/Ritual_Sword_Talisman",
+      "confidence": "verified",
+      "vanilla_based": true,
+      "err_checked_url": "https://err.fandom.com/wiki/Talismans"
+    },
+    "roar-medallion": {
+      "name": "Roar Medallion",
+      "how": "Dropped by the Stonedigger Troll.",
+      "where": "Limgrave Tunnels, central Limgrave",
+      "type": "drop",
+      "dlc": false,
+      "source_url": "https://eldenring.fandom.com/wiki/Roar_Medallion",
+      "confidence": "verified",
+      "vanilla_based": true,
+      "err_checked_url": "https://err.fandom.com/wiki/Talismans"
+    },
+    "rotten-winged-sword-insignia": {
+      "name": "Rotten Winged Sword Insignia",
+      "how": "Reward from Millicent if you help her against her sisters.",
+      "where": "Millicent's questline (final step)",
+      "type": "quest",
+      "dlc": false,
+      "source_url": "https://eldenring.fandom.com/wiki/Rotten_Winged_Sword_Insignia",
+      "confidence": "verified",
+      "vanilla_based": true,
+      "err_checked_url": "https://err.fandom.com/wiki/Talismans"
+    },
+    "sacred-scorpion-charm": {
+      "name": "Sacred Scorpion Charm",
+      "how": "Dropped by invader Anastasia, Tarnished-Eater.",
+      "where": "Near Smoldering Church, NW Caelid",
+      "type": "drop",
+      "dlc": false,
+      "source_url": "https://eldenring.fandom.com/wiki/Sacred_Scorpion_Charm",
+      "confidence": "verified",
+      "vanilla_based": true,
+      "err_checked_url": "https://err.fandom.com/wiki/Talismans"
+    },
+    "sacrificial-twig": {
+      "name": "Sacrificial Twig",
+      "how": "Sold by several merchants for 3,000 (up to 3) and by Patches for 5,000 (ERR Merchants page); some copies also lie on corpses (vanilla).",
+      "where": "Several: Patches (Murkwater Cave, later Volcano Manor), Isolated Merchant (Weeping Peninsula), and world pickups",
+      "type": "merchant",
+      "dlc": false,
+      "source_url": "https://eldenring.fandom.com/wiki/Sacrificial_Twig",
+      "confidence": "verified",
+      "vanilla_based": true,
+      "err_checked_url": "https://err.fandom.com/wiki/Talismans",
+      "err_merchant_url": "https://err.fandom.com/wiki/Merchants"
+    },
+    "shabriris-woe": {
+      "name": "Shabriri's Woe",
+      "how": "On a corpse on a building's steps; also a starting keepsake.",
+      "where": "Frenzied Flame Village, NE Liurnia",
+      "type": "world pickup",
+      "dlc": false,
+      "source_url": "https://eldenring.fandom.com/wiki/Shabriri's_Woe",
+      "confidence": "verified",
+      "vanilla_based": true,
+      "err_checked_url": "https://err.fandom.com/wiki/Talismans"
+    },
+    "shard-of-alexander": {
+      "name": "Shard of Alexander",
+      "how": "Talk to Iron Fist Alexander after beating him at the end of his questline.",
+      "where": "Crumbling Farum Azula, NW",
+      "type": "quest",
+      "dlc": false,
+      "source_url": "https://eldenring.fandom.com/wiki/Shard_of_Alexander",
+      "confidence": "verified",
+      "vanilla_based": true,
+      "err_checked_url": "https://err.fandom.com/wiki/Talismans"
+    },
+    "sharpshot-talisman": {
+      "name": "Sharpshot Talisman",
+      "how": "Inside the shack.",
+      "where": "Albinauric's Shack, Scaduview",
+      "type": "world pickup",
+      "dlc": true,
+      "source_url": "https://eldenring.fandom.com/wiki/Sharpshot_Talisman",
+      "confidence": "verified",
+      "vanilla_based": true,
+      "err_checked_url": "https://err.fandom.com/wiki/Talismans"
+    },
+    "shattered-stone-talisman": {
+      "name": "Shattered Stone Talisman",
+      "how": "Head SE through the stone arch into a house ruin, onto the roof, and around the corner to a corpse.",
+      "where": "Moorth Ruins (from Moorth Ruins grace)",
+      "type": "world pickup",
+      "dlc": true,
+      "source_url": "https://eldenring.fandom.com/wiki/Shattered_Stone_Talisman",
+      "confidence": "verified",
+      "vanilla_based": true,
+      "err_checked_url": "https://err.fandom.com/wiki/Talismans"
+    },
+    "silver-scarab": {
+      "name": "Silver Scarab",
+      "how": "ERR swaps the scarabs: Silver Scarab is now the Abandoned Cave reward (Cleanrot Knight duo).",
+      "where": "Abandoned Cave (ERR lists it as Dragonbarrow/Caelid; vanilla Gold Scarab spot)",
+      "type": "drop",
+      "dlc": false,
+      "source_url": "https://err.fandom.com/wiki/Talismans",
+      "confidence": "verified",
+      "vanilla_based": false,
+      "err_checked_url": "https://err.fandom.com/wiki/Talismans"
+    },
+    "smithing-talisman": {
+      "name": "Smithing Talisman",
+      "how": "On a corpse in a room full of Magma Tears at the top of the forge.",
+      "where": "Ruined Forge of Starfall Past (top level)",
+      "type": "world pickup",
+      "dlc": true,
+      "source_url": "https://eldenring.fandom.com/wiki/Smithing_Talisman",
+      "confidence": "verified",
+      "vanilla_based": true,
+      "err_checked_url": "https://err.fandom.com/wiki/Talismans"
+    },
+    "spear-talisman": {
+      "name": "Spear Talisman",
+      "how": "Chest in a demi-human camp at the back of the cave if you stay on the upper path.",
+      "where": "Lakeside Crystal Cave, southern Liurnia",
+      "type": "chest",
+      "dlc": false,
+      "source_url": "https://eldenring.fandom.com/wiki/Spear_Talisman",
+      "confidence": "verified",
+      "vanilla_based": true,
+      "err_checked_url": "https://err.fandom.com/wiki/Talismans"
+    },
+    "spelldrake-talisman": {
+      "name": "Spelldrake Talisman",
+      "how": "Dropped by the Runebear.",
+      "where": "Earthbore Cave, northern Weeping Peninsula",
+      "type": "drop",
+      "dlc": false,
+      "source_url": "https://eldenring.fandom.com/wiki/Spelldrake_Talisman",
+      "confidence": "partial",
+      "vanilla_based": true,
+      "err_checked_url": "https://err.fandom.com/wiki/Talismans",
+      "tiers": [
+        {
+          "name": "Spelldrake Talisman",
+          "how": "Dropped by the Runebear.",
+          "where": "Earthbore Cave, northern Weeping Peninsula",
+          "type": "drop",
+          "dlc": false,
+          "source_url": "https://eldenring.fandom.com/wiki/Spelldrake_Talisman",
+          "confidence": "verified",
+          "vanilla_based": true
+        },
+        {
+          "name": "Spelldrake Talisman +1",
+          "how": "Chest behind a seal opened by lighting the SW candle tower.",
+          "where": "Sellia, Town of Sorcery, NW alcove",
+          "type": "chest",
+          "dlc": false,
+          "source_url": "https://eldenring.fandom.com/wiki/Spelldrake_Talisman_+1",
+          "confidence": "verified",
+          "vanilla_based": true
+        },
+        {
+          "name": "Spelldrake Talisman +2",
+          "how": "From the central room drop onto the invisible platform, go north then west to a corpse.",
+          "where": "Hidden Path to the Haligtree",
+          "type": "world pickup",
+          "dlc": false,
+          "source_url": "https://eldenring.fandom.com/wiki/Spelldrake_Talisman_+2",
+          "confidence": "verified",
+          "vanilla_based": true
+        },
+        {
+          "name": "Spelldrake Talisman +3",
+          "how": "Drop off the cliff north of the grace and head east into a storeroom.",
+          "where": "Castle Ensis (from Castle Front grace)",
+          "type": "world pickup",
+          "dlc": true,
+          "source_url": "https://eldenring.fandom.com/wiki/Spelldrake_Talisman_+3",
+          "confidence": "partial",
+          "vanilla_based": true,
+          "note": "ERR's Talismans page labels the fourth tier 'Greatshield'; mapped here to the vanilla +3 (SotE) item. Confirm in game."
+        }
+      ]
+    },
+    "stalwart-horn-charm": {
+      "name": "Stalwart Horn Charm",
+      "how": "Below a natural rock archway SW of the compound; drop from the ledge to reach the corpse.",
+      "where": "Eastern Liurnia, near Mausoleum Compound",
+      "type": "world pickup",
+      "dlc": false,
+      "source_url": "https://eldenring.fandom.com/wiki/Stalwart_Horn_Charm",
+      "confidence": "verified",
+      "vanilla_based": true,
+      "err_checked_url": "https://err.fandom.com/wiki/Talismans",
+      "tiers": [
+        {
+          "name": "Stalwart Horn Charm",
+          "how": "Below a natural rock archway SW of the compound; drop from the ledge to reach the corpse.",
+          "where": "Eastern Liurnia, near Mausoleum Compound",
+          "type": "world pickup",
+          "dlc": false,
+          "source_url": "https://eldenring.fandom.com/wiki/Stalwart_Horn_Charm",
+          "confidence": "verified",
+          "vanilla_based": true
+        },
+        {
+          "name": "Stalwart Horn Charm +1",
+          "how": "On a corpse over a log between two dead trees, guarded by two Ancestral Followers.",
+          "where": "SW Consecrated Snowfield",
+          "type": "world pickup",
+          "dlc": false,
+          "source_url": "https://eldenring.fandom.com/wiki/Stalwart_Horn_Charm_+1",
+          "confidence": "verified",
+          "vanilla_based": true
+        },
+        {
+          "name": "Stalwart Horn Charm +2",
+          "how": "Drop down the hole, climb the east ladder past rats; in the room with jar innards.",
+          "where": "Bonny Gaol",
+          "type": "world pickup",
+          "dlc": true,
+          "source_url": "https://eldenring.fandom.com/wiki/Stalwart_Horn_Charm_+2",
+          "confidence": "verified",
+          "vanilla_based": true
+        }
+      ]
+    },
+    "stargazer-heirloom": {
+      "name": "Stargazer Heirloom",
+      "how": "Taken from Ranni's charred body at the top of the tower.",
+      "where": "Divine Tower of Liurnia (top)",
+      "type": "world pickup",
+      "dlc": false,
+      "source_url": "https://eldenring.fandom.com/wiki/Stargazer_Heirloom",
+      "confidence": "verified",
+      "vanilla_based": true,
+      "err_checked_url": "https://err.fandom.com/wiki/Talismans"
+    },
+    "starscourge-heirloom": {
+      "name": "Starscourge Heirloom",
+      "how": "Chest under a canopy on the fort's upper platform.",
+      "where": "Fort Gael, western Caelid",
+      "type": "chest",
+      "dlc": false,
+      "source_url": "https://eldenring.fandom.com/wiki/Starscourge_Heirloom",
+      "confidence": "verified",
+      "vanilla_based": true,
+      "err_checked_url": "https://err.fandom.com/wiki/Talismans"
+    },
+    "storied-glintstone-amulet": {
+      "name": "Storied Glintstone Amulet",
+      "how": "In a crashed carriage at the end of the collapsed bridge.",
+      "where": "Altus Plateau, NE of Bower of Bounty grace",
+      "type": "world pickup",
+      "dlc": false,
+      "source_url": "https://err.fandom.com/wiki/Storied_Glintstone_Amulet",
+      "confidence": "verified",
+      "vanilla_based": false,
+      "note": "ERR merchant data ties this to 'Gilded Note: Golden Cargo' sold by the Nomadic Merchant at Central Altus Plateau (Forest-Spanning Greatbridge grace)."
+    },
+    "takers-cameo": {
+      "name": "Taker's Cameo",
+      "how": "Given by Tanith after the third assassination (Juno Hoslow, near Shack of the Lofty).",
+      "where": "Volcano Manor (Tanith)",
+      "type": "quest",
+      "dlc": false,
+      "source_url": "https://eldenring.fandom.com/wiki/Taker's_Cameo",
+      "confidence": "verified",
+      "vanilla_based": true,
+      "err_checked_url": "https://err.fandom.com/wiki/Talismans"
+    },
+    "talisman-of-all-crucibles": {
+      "name": "Talisman of All Crucibles",
+      "how": "Chest reached via the nearby lift and a Torrent double jump into a passage to the south.",
+      "where": "Western Ancient Ruins of Rauh (from Ancient Ruins, Grand Stairway grace)",
+      "type": "chest",
+      "dlc": true,
+      "source_url": "https://eldenring.fandom.com/wiki/Talisman_of_All_Crucibles",
+      "confidence": "verified",
+      "vanilla_based": true,
+      "err_checked_url": "https://err.fandom.com/wiki/Talismans"
+    },
+    "talisman-of-lords-bestowal": {
+      "name": "Talisman of Lord's Bestowal",
+      "how": "Beside the large golden tree in Shadow Keep.",
+      "where": "Shadow Keep, by the large golden tree",
+      "type": "world pickup",
+      "dlc": true,
+      "source_url": "https://eldenring.fandom.com/wiki/Talisman_of_Lord's_Bestowal",
+      "confidence": "verified",
+      "vanilla_based": true,
+      "err_checked_url": "https://err.fandom.com/wiki/Talismans"
+    },
+    "talisman-of-the-dread": {
+      "name": "Talisman of the Dread",
+      "how": "Inside the hovel.",
+      "where": "Elder's Hovel, Gravesite Plain",
+      "type": "world pickup",
+      "dlc": true,
+      "source_url": "https://eldenring.fandom.com/wiki/Talisman_of_the_Dread",
+      "confidence": "verified",
+      "vanilla_based": true,
+      "err_checked_url": "https://err.fandom.com/wiki/Talismans",
+      "note": "ERR moved this talisman's old effect to Blasphemous Crest; no location change noted."
+    },
+    "thread-pullers-relic": {
+      "name": "Thread-Puller's Relic",
+      "how": null,
+      "where": null,
+      "type": "other",
+      "dlc": false,
+      "source_url": "https://err.fandom.com/wiki/Thread-Puller's_Relic",
+      "confidence": "unknown",
+      "vanilla_based": false,
+      "note": "Added in 2.3; ERR wiki acquisition section is empty. No other allowed source found."
+    },
+    "thunderous-beast-charm": {
+      "name": "Thunderous Beast Charm",
+      "how": "Dropped by the Fulminating Runebear.",
+      "where": "Liurnia of the Lakes, NE of Tetsu's Rise",
+      "type": "drop",
+      "dlc": false,
+      "source_url": "https://err.fandom.com/wiki/Thunderous_Beast_Charm",
+      "confidence": "verified",
+      "vanilla_based": false
+    },
+    "tribal-keepsake": {
+      "name": "Tribal Keepsake",
+      "how": "Don't drop to the first silver tear before the Mimic Mad Pumpkin Head; go on to the second silver tear. It rests on a building attachment on the opposite side, near a Wailing Shade.",
+      "where": "Black Cradle, from the Anchorite Quarter grace",
+      "type": "world pickup",
+      "dlc": null,
+      "source_url": "https://err.fandom.com/wiki/Tribal_Keepsake",
+      "confidence": "partial",
+      "vanilla_based": false,
+      "note": "ERR page does not say whether The Black Cradle is base game or DLC; dlc left null."
+    },
+    "twinblade-talisman": {
+      "name": "Twinblade Talisman",
+      "how": "Chest atop the western corner tower, up a ladder.",
+      "where": "Castle Morne (from Behind the Castle grace)",
+      "type": "chest",
+      "dlc": false,
+      "source_url": "https://eldenring.fandom.com/wiki/Twinblade_Talisman",
+      "confidence": "verified",
+      "vanilla_based": true,
+      "err_checked_url": "https://err.fandom.com/wiki/Talismans"
+    },
+    "two-fingers-heirloom": {
+      "name": "Two Fingers Heirloom",
+      "how": "Chest in a cellar whose stairs are hidden under breakable planks.",
+      "where": "Purified Ruins cellar, near Stormveil/Liurnia",
+      "type": "chest",
+      "dlc": false,
+      "source_url": "https://eldenring.fandom.com/wiki/Two_Fingers_Heirloom",
+      "confidence": "verified",
+      "vanilla_based": true,
+      "err_checked_url": "https://err.fandom.com/wiki/Talismans"
+    },
+    "two-handed-sword-talisman": {
+      "name": "Two-Handed Sword Talisman",
+      "how": "Chest just past the Horned Warrior fight, up the stairs.",
+      "where": "Temple Town Ruins, top structure",
+      "type": "chest",
+      "dlc": true,
+      "source_url": "https://eldenring.fandom.com/wiki/Two-Handed_Sword_Talisman",
+      "confidence": "verified",
+      "vanilla_based": true,
+      "err_checked_url": "https://err.fandom.com/wiki/Talismans",
+      "note": "ERR wiki says it is renamed 'Curved Greatsword Talisman'; no location change noted."
+    },
+    "verdigris-discus": {
+      "name": "Verdigris Discus",
+      "how": "Reach via the Imbued-Sword-Key sending gate near Highroad Cross grace, then uphill.",
+      "where": "Ancient Ruins of Rauh, before a giant goddess statue",
+      "type": "world pickup",
+      "dlc": true,
+      "source_url": "https://eldenring.fandom.com/wiki/Verdigris_Discus",
+      "confidence": "verified",
+      "vanilla_based": true,
+      "err_checked_url": "https://err.fandom.com/wiki/Talismans"
+    },
+    "viridian-amber-medallion": {
+      "name": "Viridian Amber Medallion",
+      "how": "Dropped by the Miranda Blossom boss.",
+      "where": "Tombsward Cave, western Weeping Peninsula",
+      "type": "drop",
+      "dlc": false,
+      "source_url": "https://eldenring.fandom.com/wiki/Viridian_Amber_Medallion",
+      "confidence": "verified",
+      "vanilla_based": true,
+      "err_checked_url": "https://err.fandom.com/wiki/Talismans",
+      "tiers": [
+        {
+          "name": "Viridian Amber Medallion",
+          "how": "Dropped by the Miranda Blossom boss.",
+          "where": "Tombsward Cave, western Weeping Peninsula",
+          "type": "drop",
+          "dlc": false,
+          "source_url": "https://eldenring.fandom.com/wiki/Viridian_Amber_Medallion",
+          "confidence": "verified",
+          "vanilla_based": true
+        },
+        {
+          "name": "Viridian Amber Medallion +1",
+          "how": "Dropped by Margit, the Fell Omen after he drops a commoner disguise.",
+          "where": "NW Leyndell, south of Outer Wall Battleground grace",
+          "type": "drop",
+          "dlc": false,
+          "source_url": "https://eldenring.fandom.com/wiki/Viridian_Amber_Medallion_+1",
+          "confidence": "verified",
+          "vanilla_based": true
+        },
+        {
+          "name": "Viridian Amber Medallion +2",
+          "how": "Chest reached by rooftop running jumps past Summoning Snails to the SE.",
+          "where": "Miquella's Haligtree (from Haligtree Town Plaza grace)",
+          "type": "chest",
+          "dlc": false,
+          "source_url": "https://eldenring.fandom.com/wiki/Viridian_Amber_Medallion_+2",
+          "confidence": "verified",
+          "vanilla_based": true
+        },
+        {
+          "name": "Viridian Amber Medallion +3",
+          "how": "Right after the first cannon imp, jump onto a ledge and drop under an archway.",
+          "where": "Darklight Catacombs",
+          "type": "world pickup",
+          "dlc": true,
+          "source_url": "https://eldenring.fandom.com/wiki/Viridian_Amber_Medallion_+3",
+          "confidence": "verified",
+          "vanilla_based": true
+        }
+      ]
+    },
+    "warrior-jar-shard": {
+      "name": "Warrior Jar Shard",
+      "how": "Kill Iron Fist Alexander before his quest ends, or (ERR) beat Radahn with Alexander's help and talk to him afterwards.",
+      "where": "Alexander's locations",
+      "type": "drop",
+      "dlc": false,
+      "source_url": "https://err.fandom.com/wiki/Talismans",
+      "confidence": "verified",
+      "vanilla_based": false,
+      "err_checked_url": "https://err.fandom.com/wiki/Talismans"
+    },
+    "whirling-blades-charm": {
+      "name": "Whirling Blades Charm",
+      "how": "Dropped by a Cemetery Shade under a big tree.",
+      "where": "West Cerulean Coast, above the hole to the Southern Nameless Mausoleum",
+      "type": "drop",
+      "dlc": true,
+      "source_url": "https://err.fandom.com/wiki/Whirling_Blades_Charm",
+      "confidence": "verified",
+      "vanilla_based": false
+    },
+    "winged-sword-insignia": {
+      "name": "Winged Sword Insignia",
+      "how": "Dropped by the Cleanrot Knight boss.",
+      "where": "Stillwater Cave, southern Liurnia",
+      "type": "drop",
+      "dlc": false,
+      "source_url": "https://eldenring.fandom.com/wiki/Winged_Sword_Insignia",
+      "confidence": "verified",
+      "vanilla_based": true,
+      "err_checked_url": "https://err.fandom.com/wiki/Talismans"
+    }
+  },
+  "elden-ring": {
+    "aged-ones-exultation": {
+      "name": "Aged One's Exultation",
+      "how": "Dropped by that Aging Untouchable; it can only be hurt after you parry it.",
+      "where": "Abyssal Woods, the Aging Untouchable nearest the Abandoned Church",
+      "type": "drop",
+      "dlc": true,
+      "source_url": "https://eldenring.fandom.com/wiki/Aged_One's_Exultation",
+      "confidence": "verified"
+    },
+    "ailment-talisman": {
+      "name": "Ailment Talisman",
+      "how": "On a corpse at the edge of an unfinished wooden bridge in the village.",
+      "where": "Gravesite Plain, Abandoned Ailing Village",
+      "type": "world pickup",
+      "dlc": true,
+      "source_url": "https://eldenring.fandom.com/wiki/Ailment_Talisman",
+      "confidence": "verified"
+    },
+    "ancestral-spirits-horn": {
+      "name": "Ancestral Spirit's Horn",
+      "how": "Trade the Remembrance of the Regal Ancestor (from Regal Ancestor Spirit) to Enia, or duplicate it at a Walking Mausoleum. One per playthrough.",
+      "where": "Roundtable Hold (Finger Reader Enia)",
+      "type": "other",
+      "dlc": false,
+      "source_url": "https://eldenring.fandom.com/wiki/Ancestral_Spirit's_Horn",
+      "confidence": "verified"
+    },
+    "arrows-reach-talisman": {
+      "name": "Arrow's Reach Talisman",
+      "how": "Chest on the bridge above Stormgate; reach it from the southwest tower after clearing the guards.",
+      "where": "Stormhill, Stormgate (bridge over the gate)",
+      "type": "chest",
+      "dlc": false,
+      "source_url": "https://eldenring.fandom.com/wiki/Arrow's_Reach_Talisman",
+      "confidence": "verified"
+    },
+    "arrows-soaring-sting-talisman": {
+      "name": "Arrow's Soaring Sting Talisman",
+      "how": "Squeeze past the tower by the rock wall, follow the wooden walkway and ladders to the top of the tower.",
+      "where": "Fog Rift Fort, top of a tower (near Black Knight Garrew's tower)",
+      "type": "world pickup",
+      "dlc": true,
+      "source_url": "https://eldenring.fandom.com/wiki/Arrow's_Soaring_Sting_Talisman",
+      "confidence": "verified"
+    },
+    "arrows-sting-talisman": {
+      "name": "Arrow's Sting Talisman",
+      "how": "Chest on top of the wooden siege tower.",
+      "where": "Caelid, siege tower next to the Impassable Greatbridge (near Redmane Castle)",
+      "type": "chest",
+      "dlc": false,
+      "source_url": "https://eldenring.fandom.com/wiki/Arrow's_Sting_Talisman",
+      "confidence": "verified"
+    },
+    "arsenal-charm": {
+      "name": "Arsenal Charm",
+      "how": "Given by Nepheli Loux after you meet her in Stormveil Castle and defeat Godrick.",
+      "where": "Roundtable Hold",
+      "type": "quest",
+      "dlc": false,
+      "source_url": "https://eldenring.fandom.com/wiki/Arsenal_Charm",
+      "confidence": "verified"
+    },
+    "arsenal-charm-1": {
+      "name": "Arsenal Charm +1",
+      "how": "On a corpse on a wooden balcony above the pit with the gravity-throwing enemy; climb a root from the entrance drop to reach it.",
+      "where": "Altus Tunnel (Altus Plateau)",
+      "type": "world pickup",
+      "dlc": false,
+      "source_url": "https://eldenring.fandom.com/wiki/Arsenal_Charm_+1",
+      "confidence": "verified"
+    },
+    "assassins-cerulean-dagger": {
+      "name": "Assassin's Cerulean Dagger",
+      "how": "Dropped by the Black Knife Assassin boss.",
+      "where": "Black Knife Catacombs, NE Liurnia of the Lakes",
+      "type": "drop",
+      "dlc": false,
+      "source_url": "https://eldenring.fandom.com/wiki/Assassin's_Cerulean_Dagger",
+      "confidence": "verified"
+    },
+    "assassins-crimson-dagger": {
+      "name": "Assassin's Crimson Dagger",
+      "how": "Dropped by the Black Knife Assassin boss.",
+      "where": "Deathtouched Catacombs, northern Limgrave (Stormhill)",
+      "type": "drop",
+      "dlc": false,
+      "source_url": "https://eldenring.fandom.com/wiki/Assassin's_Crimson_Dagger",
+      "confidence": "verified"
+    },
+    "axe-talisman": {
+      "name": "Axe Talisman",
+      "how": "Chest in the cellar; a Runebear roams near the ruins.",
+      "where": "Mistwood Ruins cellar, eastern Limgrave",
+      "type": "chest",
+      "dlc": false,
+      "source_url": "https://eldenring.fandom.com/wiki/Axe_Talisman",
+      "confidence": "verified"
+    },
+    "beloved-stardust": {
+      "name": "Beloved Stardust",
+      "how": "Reward from Count Ymir after ringing the first Finger Ruins bell with the Hole-Laden Necklace.",
+      "where": "Cathedral of Manus Metyr (Count Ymir)",
+      "type": "quest",
+      "dlc": true,
+      "source_url": "https://eldenring.fandom.com/wiki/Beloved_Stardust",
+      "confidence": "verified"
+    },
+    "blade-of-mercy": {
+      "name": "Blade of Mercy",
+      "how": "Chest at the top of the Scorched Ruins.",
+      "where": "Scorched Ruins (top)",
+      "type": "chest",
+      "dlc": true,
+      "source_url": "https://eldenring.fandom.com/wiki/Blade_of_Mercy",
+      "confidence": "verified"
+    },
+    "blessed-blue-dew-talisman": {
+      "name": "Blessed Blue Dew Talisman",
+      "how": "Found at the Church of Benediction.",
+      "where": "Church of Benediction",
+      "type": "world pickup",
+      "dlc": true,
+      "source_url": "https://eldenring.fandom.com/wiki/Blessed_Blue_Dew_Talisman",
+      "confidence": "verified"
+    },
+    "blessed-dew-talisman": {
+      "name": "Blessed Dew Talisman",
+      "how": "Chest west of the Divine Bridge; reach it via the Fortified Manor courtyard lift or the Tower of Return sending gate.",
+      "where": "Leyndell, Royal Capital, west of the Divine Bridge",
+      "type": "chest",
+      "dlc": false,
+      "source_url": "https://eldenring.fandom.com/wiki/Blessed_Dew_Talisman",
+      "confidence": "verified"
+    },
+    "blue-dancer-charm": {
+      "name": "Blue Dancer Charm",
+      "how": "Dropped by the Guardian Golem boss.",
+      "where": "Highroad Cave, northern Limgrave",
+      "type": "drop",
+      "dlc": false,
+      "source_url": "https://eldenring.fandom.com/wiki/Blue_Dancer_Charm",
+      "confidence": "verified"
+    },
+    "blue-feathered-branchsword": {
+      "name": "Blue-Feathered Branchsword",
+      "how": "Dropped by the Deathbird that spawns at night by the ruin of fallen Farum Azula stones.",
+      "where": "Stormhill, east of Warmaster's Shack (night)",
+      "type": "drop",
+      "dlc": false,
+      "source_url": "https://eldenring.fandom.com/wiki/Blue-Feathered_Branchsword",
+      "confidence": "verified"
+    },
+    "boltdrake-talisman": {
+      "name": "Boltdrake Talisman",
+      "how": "On a corpse just before the east bridge.",
+      "where": "Stormveil Castle, before the bridge to the Divine Tower of Limgrave",
+      "type": "world pickup",
+      "dlc": false,
+      "source_url": "https://eldenring.fandom.com/wiki/Boltdrake_Talisman",
+      "confidence": "verified"
+    },
+    "boltdrake-talisman-1": {
+      "name": "Boltdrake Talisman +1",
+      "how": "On a corpse in a wooden shed guarded by dogs.",
+      "where": "Old Altus Tunnel, Altus Plateau",
+      "type": "world pickup",
+      "dlc": false,
+      "source_url": "https://eldenring.fandom.com/wiki/Boltdrake_Talisman_+1",
+      "confidence": "verified"
+    },
+    "boltdrake-talisman-2": {
+      "name": "Boltdrake Talisman +2",
+      "how": "Past the Ancient Dragon arena, drop down platforms to an isolated building and climb inside to the corpse.",
+      "where": "Crumbling Farum Azula, near Dragon Temple Rooftop grace",
+      "type": "world pickup",
+      "dlc": false,
+      "source_url": "https://eldenring.fandom.com/wiki/Boltdrake_Talisman_+2",
+      "confidence": "verified"
+    },
+    "boltdrake-talisman-3": {
+      "name": "Boltdrake Talisman +3",
+      "how": "Hidden room off the second floor past the shade protectors; a lever bookcase leads back to the grace.",
+      "where": "Shadow Keep, Storehouse (near Storehouse, First Floor grace)",
+      "type": "world pickup",
+      "dlc": true,
+      "source_url": "https://eldenring.fandom.com/wiki/Boltdrake_Talisman_+3",
+      "confidence": "verified"
+    },
+    "bull-goats-talisman": {
+      "name": "Bull-Goat's Talisman",
+      "how": "On a corpse to the left after entering the Runebear's room.",
+      "where": "Dragonbarrow Cave, Greyoll's Dragonbarrow",
+      "type": "world pickup",
+      "dlc": false,
+      "source_url": "https://eldenring.fandom.com/wiki/Bull-Goat's_Talisman",
+      "confidence": "verified"
+    },
+    "carian-filigreed-crest": {
+      "name": "Carian Filigreed Crest",
+      "how": "Sold by Iji once Blaidd's quest step with Bloodhound Knight Darriwil is done.",
+      "where": "Western Liurnia, Smithing Master Iji (Road to the Manor grace)",
+      "type": "merchant",
+      "dlc": false,
+      "source_url": "https://eldenring.fandom.com/wiki/Carian_Filigreed_Crest",
+      "confidence": "verified"
+    },
+    "cerulean-amber-medallion": {
+      "name": "Cerulean Amber Medallion",
+      "how": "Dropped by the Bloodhound Knight boss.",
+      "where": "Lakeside Crystal Cave, southern Liurnia",
+      "type": "drop",
+      "dlc": false,
+      "source_url": "https://eldenring.fandom.com/wiki/Cerulean_Amber_Medallion",
+      "confidence": "verified"
+    },
+    "cerulean-amber-medallion-1": {
+      "name": "Cerulean Amber Medallion +1",
+      "how": "On a corpse hanging from a wooden platform on the castle's southern wall.",
+      "where": "Castle Sol south wall, Mountaintops of the Giants (from Church of the Eclipse grace)",
+      "type": "world pickup",
+      "dlc": false,
+      "source_url": "https://eldenring.fandom.com/wiki/Cerulean_Amber_Medallion_+1",
+      "confidence": "verified"
+    },
+    "cerulean-amber-medallion-2": {
+      "name": "Cerulean Amber Medallion +2",
+      "how": "Chest behind an illusory floor and a 1-Stonesword-Key imp statue; this part of Liurnia is reached after Grand Cloister.",
+      "where": "Lunar Estate Ruins cellar, southern Liurnia (Moonlight Altar)",
+      "type": "chest",
+      "dlc": false,
+      "source_url": "https://eldenring.fandom.com/wiki/Cerulean_Amber_Medallion_+2",
+      "confidence": "verified"
+    },
+    "cerulean-amber-medallion-3": {
+      "name": "Cerulean Amber Medallion +3",
+      "how": "Reward for defeating the Death Knight.",
+      "where": "Scorpion River Catacombs",
+      "type": "drop",
+      "dlc": true,
+      "source_url": "https://eldenring.fandom.com/wiki/Cerulean_Amber_Medallion_+3",
+      "confidence": "verified"
+    },
+    "cerulean-seed-talisman": {
+      "name": "Cerulean Seed Talisman",
+      "how": "On a corpse on the top rafters, before placing the Carian Inverted Statue.",
+      "where": "Carian Study Hall, eastern Liurnia",
+      "type": "world pickup",
+      "dlc": false,
+      "source_url": "https://eldenring.fandom.com/wiki/Cerulean_Seed_Talisman",
+      "confidence": "verified"
+    },
+    "cerulean-seed-talisman-1": {
+      "name": "Cerulean Seed Talisman +1",
+      "how": "Ring the bell inside the ring of stone fingers with the Hole-Laden Necklace (shown on Ymir's second ruins map).",
+      "where": "Finger Ruins of Dheo",
+      "type": "quest",
+      "dlc": true,
+      "source_url": "https://eldenring.fandom.com/wiki/Cerulean_Seed_Talisman_+1",
+      "confidence": "verified"
+    },
+    "clarifying-horn-charm": {
+      "name": "Clarifying Horn Charm",
+      "how": "On a corpse on the stairs in northern Siofra River (the Deep Siofra Well entrance).",
+      "where": "Siofra River, near the Beneath the Well grace",
+      "type": "world pickup",
+      "dlc": false,
+      "source_url": "https://eldenring.fandom.com/wiki/Clarifying_Horn_Charm",
+      "confidence": "verified"
+    },
+    "clarifying-horn-charm-1": {
+      "name": "Clarifying Horn Charm +1",
+      "how": "On a corpse at the end of the lower aqueduct northeast of the Mimic Tear.",
+      "where": "Siofra River aqueduct, reached from Nokron (Mimic Tear area)",
+      "type": "world pickup",
+      "dlc": false,
+      "source_url": "https://eldenring.fandom.com/wiki/Clarifying_Horn_Charm_+1",
+      "confidence": "verified"
+    },
+    "clarifying-horn-charm-2": {
+      "name": "Clarifying Horn Charm +2",
+      "how": "On a corpse on the right in the area past the rat-infested drop.",
+      "where": "Lamenter's Gaol",
+      "type": "world pickup",
+      "dlc": true,
+      "source_url": "https://eldenring.fandom.com/wiki/Clarifying_Horn_Charm_+2",
+      "confidence": "verified"
+    },
+    "claw-talisman": {
+      "name": "Claw Talisman",
+      "how": "On a corpse on top of a watchtower, reached via rooftops and the wall from the spiral stairs.",
+      "where": "Stormveil Castle watchtower (from Rampart Tower grace)",
+      "type": "world pickup",
+      "dlc": false,
+      "source_url": "https://eldenring.fandom.com/wiki/Claw_Talisman",
+      "confidence": "verified"
+    },
+    "companion-jar": {
+      "name": "Companion Jar",
+      "how": "Given by Jar Bairn after you hand over Alexander's Innards.",
+      "where": "Jarburg (Jar Bairn)",
+      "type": "quest",
+      "dlc": false,
+      "source_url": "https://eldenring.fandom.com/wiki/Companion_Jar",
+      "confidence": "verified"
+    },
+    "concealing-veil": {
+      "name": "Concealing Veil",
+      "how": "Dropped by the Black Knife Assassin boss.",
+      "where": "Sage's Cave, western Altus Plateau",
+      "type": "drop",
+      "dlc": false,
+      "source_url": "https://eldenring.fandom.com/wiki/Concealing_Veil",
+      "confidence": "verified"
+    },
+    "crepuss-vial": {
+      "name": "Crepus's Vial",
+      "how": "Dropped by Rileigh the Idle when you invade for the second Volcano Manor assassination.",
+      "where": "Altus Plateau (Volcano Manor target)",
+      "type": "drop",
+      "dlc": false,
+      "source_url": "https://eldenring.fandom.com/wiki/Crepus's_Vial",
+      "confidence": "verified"
+    },
+    "crimson-amber-medallion": {
+      "name": "Crimson Amber Medallion",
+      "how": "Buy for 1,500 runes; also a starting keepsake.",
+      "where": "Weeping Peninsula, Nomadic Merchant at Castle Morne Rampart grace",
+      "type": "merchant",
+      "dlc": false,
+      "source_url": "https://eldenring.fandom.com/wiki/Crimson_Amber_Medallion",
+      "confidence": "verified"
+    },
+    "crimson-amber-medallion-1": {
+      "name": "Crimson Amber Medallion +1",
+      "how": "On a corpse behind a fog-locked door in the town's brick courtyard.",
+      "where": "Volcano Manor, Prison Town (from Prison Town Church grace)",
+      "type": "world pickup",
+      "dlc": false,
+      "source_url": "https://eldenring.fandom.com/wiki/Crimson_Amber_Medallion_+1",
+      "confidence": "verified"
+    },
+    "crimson-amber-medallion-2": {
+      "name": "Crimson Amber Medallion +2",
+      "how": "On a corpse down a sewer hole that only opens in Leyndell, Ashen Capital.",
+      "where": "Subterranean Shunning-Grounds (after Maliketh)",
+      "type": "world pickup",
+      "dlc": false,
+      "source_url": "https://eldenring.fandom.com/wiki/Crimson_Amber_Medallion_+2",
+      "confidence": "verified"
+    },
+    "crimson-amber-medallion-3": {
+      "name": "Crimson Amber Medallion +3",
+      "how": "Reward for defeating the Death Knight.",
+      "where": "Fog Rift Catacombs",
+      "type": "drop",
+      "dlc": true,
+      "source_url": "https://eldenring.fandom.com/wiki/Crimson_Amber_Medallion_+3",
+      "confidence": "verified"
+    },
+    "crimson-seed-talisman": {
+      "name": "Crimson Seed Talisman",
+      "how": "On a corpse behind a 1-Stonesword-Key fog wall near the start of the dungeon.",
+      "where": "Sainted Hero's Grave, central Altus Plateau",
+      "type": "world pickup",
+      "dlc": false,
+      "source_url": "https://eldenring.fandom.com/wiki/Crimson_Seed_Talisman",
+      "confidence": "verified"
+    },
+    "crimson-seed-talisman-1": {
+      "name": "Crimson Seed Talisman +1",
+      "how": "Ring the bell inside the ring of stone fingers with the Hole-Laden Necklace.",
+      "where": "Finger Ruins of Rhia",
+      "type": "quest",
+      "dlc": true,
+      "source_url": "https://eldenring.fandom.com/wiki/Crimson_Seed_Talisman_+1",
+      "confidence": "verified"
+    },
+    "crucible-feather-talisman": {
+      "name": "Crucible Feather Talisman",
+      "how": "On a corpse at the bottom of the chariot slope; drop into the pit below to reach it.",
+      "where": "Auriza Hero's Grave, Leyndell region",
+      "type": "world pickup",
+      "dlc": false,
+      "source_url": "https://eldenring.fandom.com/wiki/Crucible_Feather_Talisman",
+      "confidence": "verified"
+    },
+    "crucible-knot-talisman": {
+      "name": "Crucible Knot Talisman",
+      "how": "Dropped by the Omenkiller boss.",
+      "where": "Village of the Albinaurics, southern Liurnia",
+      "type": "drop",
+      "dlc": false,
+      "source_url": "https://eldenring.fandom.com/wiki/Crucible_Knot_Talisman",
+      "confidence": "verified"
+    },
+    "crucible-scale-talisman": {
+      "name": "Crucible Scale Talisman",
+      "how": "On a corpse guarded by an Omen on the upper level; ride a fire pillar up.",
+      "where": "Leyndell Catacombs",
+      "type": "world pickup",
+      "dlc": false,
+      "source_url": "https://eldenring.fandom.com/wiki/Crucible_Scale_Talisman",
+      "confidence": "verified"
+    },
+    "crusade-insignia": {
+      "name": "Crusade Insignia",
+      "how": "Reward for the first defeat of Fire Knight Queelign.",
+      "where": "Belurat Tower Settlement or Church of the Crusade",
+      "type": "drop",
+      "dlc": true,
+      "source_url": "https://eldenring.fandom.com/wiki/Crusade_Insignia",
+      "confidence": "verified"
+    },
+    "curved-sword-talisman": {
+      "name": "Curved Sword Talisman",
+      "how": "Chest in the room where you get locked in with a Banished Knight, on Gostoc's side route.",
+      "where": "Stormveil Castle, Banished Knight lock-in room (side path)",
+      "type": "chest",
+      "dlc": false,
+      "source_url": "https://eldenring.fandom.com/wiki/Curved_Sword_Talisman",
+      "confidence": "verified"
+    },
+    "daedicars-woe": {
+      "name": "Daedicar's Woe",
+      "how": "From Rya near the end of her quest, dropped if she is killed, or left on the floor after she leaves.",
+      "where": "Volcano Manor (Rya)",
+      "type": "quest",
+      "dlc": false,
+      "source_url": "https://eldenring.fandom.com/wiki/Daedicar's_Woe",
+      "confidence": "verified"
+    },
+    "dagger-talisman": {
+      "name": "Dagger Talisman",
+      "how": "On a corpse behind a 2-Stonesword-Key fog wall up the stairs west of the throne room.",
+      "where": "Volcano Manor, near the Audience Pathway waygate",
+      "type": "world pickup",
+      "dlc": false,
+      "source_url": "https://eldenring.fandom.com/wiki/Dagger_Talisman",
+      "confidence": "verified"
+    },
+    "dragoncrest-greatshield-talisman": {
+      "name": "Dragoncrest Greatshield Talisman",
+      "how": "Chest reached by climbing roots to the roof of the pest-filled church and dropping in.",
+      "where": "Elphael, Brace of the Haligtree (from Drainage Channel grace)",
+      "type": "chest",
+      "dlc": false,
+      "source_url": "https://eldenring.fandom.com/wiki/Dragoncrest_Greatshield_Talisman",
+      "confidence": "verified"
+    },
+    "dragoncrest-shield-talisman": {
+      "name": "Dragoncrest Shield Talisman",
+      "how": "On a corpse at the bottom of a series of drops near the Bestial Sanctum.",
+      "where": "Near Bestial Sanctum, Greyoll's Dragonbarrow",
+      "type": "world pickup",
+      "dlc": false,
+      "source_url": "https://eldenring.fandom.com/wiki/Dragoncrest_Shield_Talisman",
+      "confidence": "verified"
+    },
+    "dragoncrest-shield-talisman-1": {
+      "name": "Dragoncrest Shield Talisman +1",
+      "how": "Ride a falling-blade trap up, jump to the left ledge and follow it to a room with fog walls.",
+      "where": "Sainted Hero's Grave, Altus Plateau",
+      "type": "world pickup",
+      "dlc": false,
+      "source_url": "https://eldenring.fandom.com/wiki/Dragoncrest_Shield_Talisman_+1",
+      "confidence": "verified"
+    },
+    "dragoncrest-shield-talisman-2": {
+      "name": "Dragoncrest Shield Talisman +2",
+      "how": "On a corpse past a series of drops, a window and a floating floor chunk north of the grace.",
+      "where": "Crumbling Farum Azula, north (from Dragon Temple Altar grace)",
+      "type": "world pickup",
+      "dlc": false,
+      "source_url": "https://eldenring.fandom.com/wiki/Dragoncrest_Shield_Talisman_+2",
+      "confidence": "verified"
+    },
+    "dried-bouquet": {
+      "name": "Dried Bouquet",
+      "how": "Two pickups in Belurat: a debris-hidden room in the Man-Fly area, and near the Bone Bow.",
+      "where": "Belurat, Tower Settlement",
+      "type": "world pickup",
+      "dlc": true,
+      "source_url": "https://eldenring.fandom.com/wiki/Dried_Bouquet",
+      "confidence": "verified"
+    },
+    "enraged-divine-beast": {
+      "name": "Enraged Divine Beast",
+      "how": "Trade the Remembrance of the Dancing Lion to Enia.",
+      "where": "Roundtable Hold (Finger Reader Enia)",
+      "type": "other",
+      "dlc": true,
+      "source_url": "https://eldenring.fandom.com/wiki/Enraged_Divine_Beast",
+      "confidence": "verified"
+    },
+    "erdtrees-favor": {
+      "name": "Erdtree's Favor",
+      "how": "On an altar in the dungeon behind the 2-Stonesword-Key fog wall.",
+      "where": "Fringefolk Hero's Grave, Stranded Graveyard",
+      "type": "world pickup",
+      "dlc": false,
+      "source_url": "https://eldenring.fandom.com/wiki/Erdtree's_Favor",
+      "confidence": "verified"
+    },
+    "erdtrees-favor-1": {
+      "name": "Erdtree's Favor +1",
+      "how": "Chest in Mohg, the Omen's arena after the fight.",
+      "where": "Cathedral of the Forsaken, Subterranean Shunning-Grounds",
+      "type": "chest",
+      "dlc": false,
+      "source_url": "https://eldenring.fandom.com/wiki/Erdtree's_Favor_+1",
+      "confidence": "verified"
+    },
+    "erdtrees-favor-2": {
+      "name": "Erdtree's Favor +2",
+      "how": "On a corpse west of the Grand Lift of Rold approach into the ashen capital.",
+      "where": "Leyndell, Ashen Capital (after Maliketh)",
+      "type": "world pickup",
+      "dlc": false,
+      "source_url": "https://eldenring.fandom.com/wiki/Erdtree's_Favor_+2",
+      "confidence": "verified"
+    },
+    "faithfuls-canvas-talisman": {
+      "name": "Faithful's Canvas Talisman",
+      "how": "On a corpse to the right of the main path, guarded by two Pests.",
+      "where": "Sellia Crystal Tunnel, central Caelid",
+      "type": "world pickup",
+      "dlc": false,
+      "source_url": "https://eldenring.fandom.com/wiki/Faithful's_Canvas_Talisman",
+      "confidence": "verified"
+    },
+    "fine-crucible-feather-talisman": {
+      "name": "Fine Crucible Feather Talisman",
+      "how": null,
+      "where": null,
+      "type": "other",
+      "dlc": true,
+      "source_url": "https://eldenring.fandom.com/wiki/Fine_Crucible_Feather_Talisman",
+      "confidence": "unknown",
+      "note": "Fandom page has no acquisition info."
+    },
+    "fire-scorpion-charm": {
+      "name": "Fire Scorpion Charm",
+      "how": "On a wooden catwalk hanging off the fort's rampart.",
+      "where": "Fort Laiedd, western Mt. Gelmir",
+      "type": "world pickup",
+      "dlc": false,
+      "source_url": "https://eldenring.fandom.com/wiki/Fire_Scorpion_Charm",
+      "confidence": "verified"
+    },
+    "flamedrake-talisman": {
+      "name": "Flamedrake Talisman",
+      "how": "Dropped by the Beastman of Farum Azula boss.",
+      "where": "Groveside Cave, NW Limgrave",
+      "type": "drop",
+      "dlc": false,
+      "source_url": "https://eldenring.fandom.com/wiki/Flamedrake_Talisman",
+      "confidence": "verified"
+    },
+    "flamedrake-talisman-1": {
+      "name": "Flamedrake Talisman +1",
+      "how": "On a corpse in front of a pillar on the eastern road out of the capital.",
+      "where": "Eastern Leyndell, Royal Capital (road to the Grand Lift of Rold)",
+      "type": "world pickup",
+      "dlc": false,
+      "source_url": "https://eldenring.fandom.com/wiki/Flamedrake_Talisman_+1",
+      "confidence": "verified"
+    },
+    "flamedrake-talisman-2": {
+      "name": "Flamedrake Talisman +2",
+      "how": "Reward for defeating the Beastman of Farum Azula duo.",
+      "where": "Dragonbarrow Cave, Greyoll's Dragonbarrow",
+      "type": "drop",
+      "dlc": false,
+      "source_url": "https://eldenring.fandom.com/wiki/Flamedrake_Talisman_+2",
+      "confidence": "verified"
+    },
+    "flamedrake-talisman-3": {
+      "name": "Flamedrake Talisman +3",
+      "how": "Chest down the back-right staircase from the front gate, past two soldiers.",
+      "where": "Fort of Reprimand",
+      "type": "chest",
+      "dlc": true,
+      "source_url": "https://eldenring.fandom.com/wiki/Flamedrake_Talisman_+3",
+      "confidence": "verified"
+    },
+    "flocks-canvas-talisman": {
+      "name": "Flock's Canvas Talisman",
+      "how": "On Gowry's corpse after Millicent's quest ends (help her then kill him, or kill her and return).",
+      "where": "Gowry (Caelid), end of Millicent's quest",
+      "type": "quest",
+      "dlc": false,
+      "source_url": "https://eldenring.fandom.com/wiki/Flock's_Canvas_Talisman",
+      "confidence": "verified"
+    },
+    "furled-fingers-trick-mirror": {
+      "name": "Furled Finger's Trick-Mirror",
+      "how": "Sold by the Twin Maiden Husks.",
+      "where": "Roundtable Hold, Twin Maiden Husks",
+      "type": "merchant",
+      "dlc": false,
+      "source_url": "https://eldenring.fandom.com/wiki/Furled_Finger's_Trick-Mirror",
+      "confidence": "verified"
+    },
+    "godfrey-icon": {
+      "name": "Godfrey Icon",
+      "how": "Dropped by Godefroy the Grafted.",
+      "where": "Golden Lineage Evergaol, southern Altus Plateau",
+      "type": "drop",
+      "dlc": false,
+      "source_url": "https://eldenring.fandom.com/wiki/Godfrey_Icon",
+      "confidence": "verified"
+    },
+    "godskin-swaddling-cloth": {
+      "name": "Godskin Swaddling Cloth",
+      "how": "Reward for beating the bosses at the end of the cave.",
+      "where": "Spiritcaller's Cave, NE Mountaintops of the Giants",
+      "type": "drop",
+      "dlc": false,
+      "source_url": "https://eldenring.fandom.com/wiki/Godskin_Swaddling_Cloth",
+      "confidence": "verified"
+    },
+    "gold-scarab": {
+      "name": "Gold Scarab",
+      "how": "Dropped by the Cleanrot Knight duo; reach the cave by a big root bridge east of the Smoldering Wall.",
+      "where": "Abandoned Cave, central Caelid",
+      "type": "drop",
+      "dlc": false,
+      "source_url": "https://eldenring.fandom.com/wiki/Gold_Scarab",
+      "confidence": "verified"
+    },
+    "golden-braid": {
+      "name": "Golden Braid",
+      "how": "In front of the Grandmother inside the decayed tree trunk on the hill.",
+      "where": "Shaman Village (Grandmother's tree)",
+      "type": "world pickup",
+      "dlc": true,
+      "source_url": "https://eldenring.fandom.com/wiki/Golden_Braid",
+      "confidence": "verified"
+    },
+    "graven-mass-talisman": {
+      "name": "Graven-Mass Talisman",
+      "how": "Chest at the top of the rise.",
+      "where": "Albinauric Rise, eastern Consecrated Snowfield",
+      "type": "chest",
+      "dlc": false,
+      "source_url": "https://eldenring.fandom.com/wiki/Graven-Mass_Talisman",
+      "confidence": "verified"
+    },
+    "graven-school-talisman": {
+      "name": "Graven-School Talisman",
+      "how": "In a crystal pile behind an empty bookshelf in the room west of the Debate Parlor.",
+      "where": "Raya Lucaria Academy, room before the Red Wolf of Radagon (from Debate Parlor)",
+      "type": "world pickup",
+      "dlc": false,
+      "source_url": "https://eldenring.fandom.com/wiki/Graven-School_Talisman",
+      "confidence": "verified"
+    },
+    "great-jars-arsenal": {
+      "name": "Great-Jar's Arsenal",
+      "how": "Talk to the Great Jar and beat its three Great Jar's Warrior duelists in a row.",
+      "where": "Great Jar, Greyoll's Dragonbarrow (via Deep Siofra Well area)",
+      "type": "quest",
+      "dlc": false,
+      "source_url": "https://eldenring.fandom.com/wiki/Great-Jar's_Arsenal",
+      "confidence": "verified"
+    },
+    "greatshield-talisman": {
+      "name": "Greatshield Talisman",
+      "how": "Chest in a black carriage ESE of Lux Ruins, north of the Grand Lift of Dectus.",
+      "where": "Western Altus Plateau, east of Erdtree-Gazing Hill grace",
+      "type": "chest",
+      "dlc": false,
+      "source_url": "https://eldenring.fandom.com/wiki/Greatshield_Talisman",
+      "confidence": "verified"
+    },
+    "green-turtle-talisman": {
+      "name": "Green Turtle Talisman",
+      "how": "Chest behind a 1-Stonesword-Key fog wall.",
+      "where": "Summonwater Village cellar, northern Limgrave",
+      "type": "chest",
+      "dlc": false,
+      "source_url": "https://eldenring.fandom.com/wiki/Green_Turtle_Talisman",
+      "confidence": "verified"
+    },
+    "haligdrake-talisman": {
+      "name": "Haligdrake Talisman",
+      "how": "On a corpse on the cliff behind the starting area; reached from outside the graveyard, not from inside.",
+      "where": "Stranded Graveyard cliff, western Limgrave",
+      "type": "world pickup",
+      "dlc": false,
+      "source_url": "https://eldenring.fandom.com/wiki/Haligdrake_Talisman",
+      "confidence": "verified"
+    },
+    "haligdrake-talisman-1": {
+      "name": "Haligdrake Talisman +1",
+      "how": "Through illusory walls in the room with three phantoms, up the lift southeast of the grace.",
+      "where": "Leyndell Catacombs",
+      "type": "world pickup",
+      "dlc": false,
+      "source_url": "https://eldenring.fandom.com/wiki/Haligdrake_Talisman_+1",
+      "confidence": "verified"
+    },
+    "haligdrake-talisman-2": {
+      "name": "Haligdrake Talisman +2",
+      "how": "On a corpse in the graveyard below the Mohgwyn Dynasty Mausoleum.",
+      "where": "Mohgwyn Palace, SW graveyard by the blood lake",
+      "type": "world pickup",
+      "dlc": false,
+      "source_url": "https://eldenring.fandom.com/wiki/Haligdrake_Talisman_+2",
+      "confidence": "verified"
+    },
+    "hammer-talisman": {
+      "name": "Hammer Talisman",
+      "how": "Dropped by invader Recusant Henricus; the invasion can disappear after major Limgrave bosses.",
+      "where": "Northern Stormhill near the colosseum, north of Stormhill Shack",
+      "type": "drop",
+      "dlc": false,
+      "source_url": "https://eldenring.fandom.com/wiki/Hammer_Talisman",
+      "confidence": "verified"
+    },
+    "hosts-trick-mirror": {
+      "name": "Host's Trick-Mirror",
+      "how": "Sold by the Twin Maiden Husks.",
+      "where": "Roundtable Hold, Twin Maiden Husks",
+      "type": "merchant",
+      "dlc": false,
+      "source_url": "https://eldenring.fandom.com/wiki/Host's_Trick-Mirror",
+      "confidence": "verified"
+    },
+    "immunizing-horn-charm": {
+      "name": "Immunizing Horn Charm",
+      "how": "On a corpse in an ant nest in the southwest.",
+      "where": "Ainsel River, near Ainsel River Downstream grace",
+      "type": "world pickup",
+      "dlc": false,
+      "source_url": "https://eldenring.fandom.com/wiki/Immunizing_Horn_Charm",
+      "confidence": "verified"
+    },
+    "immunizing-horn-charm-1": {
+      "name": "Immunizing Horn Charm +1",
+      "how": "Dropped by an Ancestral Follower near the lake.",
+      "where": "Lake of Rot, SE of Lake of Rot Shoreside grace",
+      "type": "drop",
+      "dlc": false,
+      "source_url": "https://eldenring.fandom.com/wiki/Immunizing_Horn_Charm_+1",
+      "confidence": "verified"
+    },
+    "immunizing-horn-charm-2": {
+      "name": "Immunizing Horn Charm +2",
+      "how": "Reward for defeating the Ulcerated Tree Spirit.",
+      "where": "Belurat sewers / swamp (needs Well Depths Key)",
+      "type": "drop",
+      "dlc": true,
+      "source_url": "https://eldenring.fandom.com/wiki/Immunizing_Horn_Charm_+2",
+      "confidence": "verified"
+    },
+    "kindred-of-rots-exultation": {
+      "name": "Kindred of Rot's Exultation",
+      "how": "Dropped by the Kindred of Rot boss.",
+      "where": "Seethewater Cave, central Mt. Gelmir",
+      "type": "drop",
+      "dlc": false,
+      "source_url": "https://eldenring.fandom.com/wiki/Kindred_of_Rot's_Exultation",
+      "confidence": "verified"
+    },
+    "lacerating-crossed-tree": {
+      "name": "Lacerating Crossed-Tree",
+      "how": "Help Leda defeat Hornsent when she targets him, then talk to her at Highroad Cross. Locks out Retaliatory Crossed-Tree.",
+      "where": "Highroad Cross grace (Needle Knight Leda)",
+      "type": "quest",
+      "dlc": true,
+      "source_url": "https://eldenring.fandom.com/wiki/Lacerating_Crossed-Tree",
+      "confidence": "verified"
+    },
+    "lance-talisman": {
+      "name": "Lance Talisman",
+      "how": "Lying at the northeastern tip of Stormhill.",
+      "where": "Far NE tip of Stormhill, west of the Divine Tower of Limgrave",
+      "type": "world pickup",
+      "dlc": false,
+      "source_url": "https://eldenring.fandom.com/wiki/Lance_Talisman",
+      "confidence": "verified"
+    },
+    "lightning-scorpion-charm": {
+      "name": "Lightning Scorpion Charm",
+      "how": "On a corpse behind a coffin in the room behind the mid-dungeon 1-key fog wall.",
+      "where": "Wyndham Catacombs, eastern Mt. Gelmir",
+      "type": "world pickup",
+      "dlc": false,
+      "source_url": "https://eldenring.fandom.com/wiki/Lightning_Scorpion_Charm",
+      "confidence": "verified"
+    },
+    "longtail-cat-talisman": {
+      "name": "Longtail Cat Talisman",
+      "how": "On a corpse at the bottom; hop off the lift near the bottom to avoid fall damage.",
+      "where": "Raya Lucaria Academy, bottom of the lift (from Schoolhouse Classroom grace)",
+      "type": "world pickup",
+      "dlc": false,
+      "source_url": "https://eldenring.fandom.com/wiki/Longtail_Cat_Talisman",
+      "confidence": "verified"
+    },
+    "lord-of-bloods-exultation": {
+      "name": "Lord of Blood's Exultation",
+      "how": "Dropped by Esgar, Priest of Blood.",
+      "where": "Leyndell Catacombs",
+      "type": "drop",
+      "dlc": false,
+      "source_url": "https://eldenring.fandom.com/wiki/Lord_of_Blood's_Exultation",
+      "confidence": "verified"
+    },
+    "magic-scorpion-charm": {
+      "name": "Magic Scorpion Charm",
+      "how": "Given by Preceptor Seluvis after you hand him the Amber Starlight; do it before giving Ranni the Fingerslayer Blade.",
+      "where": "Seluvis's Rise, NW Liurnia",
+      "type": "quest",
+      "dlc": false,
+      "source_url": "https://eldenring.fandom.com/wiki/Magic_Scorpion_Charm",
+      "confidence": "verified"
+    },
+    "marikas-scarseal": {
+      "name": "Marika's Scarseal",
+      "how": "On a corpse at the base of a waterfall behind the boss arena.",
+      "where": "Siofra River, NW, behind the Dragonkin Soldier arena",
+      "type": "world pickup",
+      "dlc": false,
+      "source_url": "https://eldenring.fandom.com/wiki/Marika's_Scarseal",
+      "confidence": "verified"
+    },
+    "marikas-soreseal": {
+      "name": "Marika's Soreseal",
+      "how": "On a chalice in a room behind a 1-Stonesword-Key fog wall in SE Elphael.",
+      "where": "Elphael, Brace of the Haligtree (from Elphael Inner Wall grace)",
+      "type": "world pickup",
+      "dlc": false,
+      "source_url": "https://eldenring.fandom.com/wiki/Marika's_Soreseal",
+      "confidence": "verified"
+    },
+    "millicents-prosthesis": {
+      "name": "Millicent's Prosthesis",
+      "how": "Dropped by Millicent if you kill her after she starts using the Valkyrie's Prosthesis.",
+      "where": "First spot: Windmill Heights grace, Dominula",
+      "type": "quest",
+      "dlc": false,
+      "source_url": "https://eldenring.fandom.com/wiki/Millicent's_Prosthesis",
+      "confidence": "verified"
+    },
+    "moon-of-nokstella": {
+      "name": "Moon of Nokstella",
+      "how": "End-of-dungeon chest at the base of a chair-crypt.",
+      "where": "Nokstella, Eternal City, NW cathedral",
+      "type": "chest",
+      "dlc": false,
+      "source_url": "https://eldenring.fandom.com/wiki/Moon_of_Nokstella",
+      "confidence": "verified"
+    },
+    "mottled-necklace": {
+      "name": "Mottled Necklace",
+      "how": "Reached only through a Four Belfries waygate ('Night Sky Unceasing').",
+      "where": "Siofra River, end of a broken bridge toward Nokron",
+      "type": "world pickup",
+      "dlc": false,
+      "source_url": "https://eldenring.fandom.com/wiki/Mottled_Necklace",
+      "confidence": "verified"
+    },
+    "mottled-necklace-1": {
+      "name": "Mottled Necklace +1",
+      "how": "On a corpse on top of the pillars; climb the terrain on the left.",
+      "where": "Nokron, above Hallowhorn Grounds",
+      "type": "world pickup",
+      "dlc": false,
+      "source_url": "https://eldenring.fandom.com/wiki/Mottled_Necklace_+1",
+      "confidence": "verified"
+    },
+    "mottled-necklace-2": {
+      "name": "Mottled Necklace +2",
+      "how": "Use the spiritspring to reach a raised area; it sits at the top of a staircase.",
+      "where": "Ancient Ruins of Rauh",
+      "type": "world pickup",
+      "dlc": true,
+      "source_url": "https://eldenring.fandom.com/wiki/Mottled_Necklace_+2",
+      "confidence": "verified"
+    },
+    "old-lords-talisman": {
+      "name": "Old Lord's Talisman",
+      "how": "Chest guarded by Recusant Bernahl's invasion and three Azula Beastmen.",
+      "where": "Crumbling Farum Azula (from Beside the Great Bridge grace)",
+      "type": "chest",
+      "dlc": false,
+      "source_url": "https://eldenring.fandom.com/wiki/Old_Lord's_Talisman",
+      "confidence": "verified"
+    },
+    "outer-god-heirloom": {
+      "name": "Outer God Heirloom",
+      "how": "Chest in a small building at the top of town.",
+      "where": "Prospect Town, SW Gravesite Plain",
+      "type": "chest",
+      "dlc": true,
+      "source_url": "https://eldenring.fandom.com/wiki/Outer_God_Heirloom",
+      "confidence": "verified"
+    },
+    "pearl-shield-talisman": {
+      "name": "Pearl Shield Talisman",
+      "how": "Chest in the small soldier camp.",
+      "where": "Messmer Soldier camp SW of Taylew's Ruined Forge grace",
+      "type": "chest",
+      "dlc": true,
+      "source_url": "https://eldenring.fandom.com/wiki/Pearl_Shield_Talisman",
+      "confidence": "verified"
+    },
+    "pearldrake-talisman": {
+      "name": "Pearldrake Talisman",
+      "how": "Reached early via a Four Belfries waygate ('Crumbling Lands'); corpse on the north end.",
+      "where": "Crumbling Farum Azula, isolated western platform",
+      "type": "world pickup",
+      "dlc": false,
+      "source_url": "https://eldenring.fandom.com/wiki/Pearldrake_Talisman",
+      "confidence": "verified"
+    },
+    "pearldrake-talisman-1": {
+      "name": "Pearldrake Talisman +1",
+      "how": "Chest behind a 1-Stonesword-Key fog wall.",
+      "where": "Wyndham Ruins cellar, central Mt. Gelmir",
+      "type": "chest",
+      "dlc": false,
+      "source_url": "https://eldenring.fandom.com/wiki/Pearldrake_Talisman_+1",
+      "confidence": "verified"
+    },
+    "pearldrake-talisman-2": {
+      "name": "Pearldrake Talisman +2",
+      "how": "On a corpse at a statue base guarded by a Misbegotten Warrior, past a ladder and a backward jump.",
+      "where": "Miquella's Haligtree, central (from Haligtree Town)",
+      "type": "world pickup",
+      "dlc": false,
+      "source_url": "https://eldenring.fandom.com/wiki/Pearldrake_Talisman_+2",
+      "confidence": "verified"
+    },
+    "pearldrake-talisman-3": {
+      "name": "Pearldrake Talisman +3",
+      "how": "After pulling the seventh-floor lever, go back to the third floor and take it from a statue head's beard.",
+      "where": "Shadow Keep, Specimen Storehouse",
+      "type": "other",
+      "dlc": true,
+      "source_url": "https://eldenring.fandom.com/wiki/Pearldrake_Talisman_+3",
+      "confidence": "verified"
+    },
+    "perfumers-talisman": {
+      "name": "Perfumer's Talisman",
+      "how": "Chest in the cellar.",
+      "where": "Perfumer's Ruins cellar, SW Mt. Gelmir",
+      "type": "chest",
+      "dlc": false,
+      "source_url": "https://eldenring.fandom.com/wiki/Perfumer's_Talisman",
+      "confidence": "verified"
+    },
+    "primal-glintstone-blade": {
+      "name": "Primal Glintstone Blade",
+      "how": "Chest behind a seal dispelled by summoning Spirit Jellyfish Ashes near the talking jellyfish.",
+      "where": "Stargazer's Ruins cellar, central Mountaintops",
+      "type": "chest",
+      "dlc": false,
+      "source_url": "https://eldenring.fandom.com/wiki/Primal_Glintstone_Blade",
+      "confidence": "verified"
+    },
+    "prince-of-deaths-cyst": {
+      "name": "Prince of Death's Cyst",
+      "how": "Dropped by the Runebear.",
+      "where": "Deeproot Depths, cave behind waterfall NE of Deeproot Depths grace",
+      "type": "drop",
+      "dlc": false,
+      "source_url": "https://eldenring.fandom.com/wiki/Prince_of_Death's_Cyst",
+      "confidence": "verified"
+    },
+    "prince-of-deaths-pustule": {
+      "name": "Prince of Death's Pustule",
+      "how": "On a corpse next to the root-like face.",
+      "where": "Under Stormveil Castle, by the giant root face",
+      "type": "world pickup",
+      "dlc": false,
+      "source_url": "https://eldenring.fandom.com/wiki/Prince_of_Death's_Pustule",
+      "confidence": "verified"
+    },
+    "prosthesis-wearer-heirloom": {
+      "name": "Prosthesis-Wearer Heirloom",
+      "how": "Given by Millicent after you bring the repaired Unalloyed Gold Needle and she recovers.",
+      "where": "Church of the Plague, eastern Caelid",
+      "type": "quest",
+      "dlc": false,
+      "source_url": "https://eldenring.fandom.com/wiki/Prosthesis-Wearer_Heirloom",
+      "confidence": "verified"
+    },
+    "radagon-icon": {
+      "name": "Radagon Icon",
+      "how": "Chest on an upper landing through a broken window, around the courtyard building.",
+      "where": "Raya Lucaria Academy (from Debate Parlor grace)",
+      "type": "chest",
+      "dlc": false,
+      "source_url": "https://eldenring.fandom.com/wiki/Radagon_Icon",
+      "confidence": "verified"
+    },
+    "radagons-scarseal": {
+      "name": "Radagon's Scarseal",
+      "how": "Dropped by the Ancient Hero of Zamor.",
+      "where": "Weeping Evergaol, Weeping Peninsula",
+      "type": "drop",
+      "dlc": false,
+      "source_url": "https://eldenring.fandom.com/wiki/Radagon's_Scarseal",
+      "confidence": "verified"
+    },
+    "radagons-soreseal": {
+      "name": "Radagon's Soreseal",
+      "how": "On a corpse in the barn near the rats.",
+      "where": "Fort Faroth, Caelid",
+      "type": "world pickup",
+      "dlc": false,
+      "source_url": "https://eldenring.fandom.com/wiki/Radagon's_Soreseal",
+      "confidence": "verified"
+    },
+    "red-feathered-branchsword": {
+      "name": "Red-Feathered Branchsword",
+      "how": "Dropped by the Deathbird at the fallen ruin at night.",
+      "where": "Central Liurnia, NE of Scenic Isle grace (night)",
+      "type": "drop",
+      "dlc": false,
+      "source_url": "https://eldenring.fandom.com/wiki/Red-Feathered_Branchsword",
+      "confidence": "verified"
+    },
+    "rellanas-cameo": {
+      "name": "Rellana's Cameo",
+      "how": "On an altar beside Moonrithyll, Carian Knight.",
+      "where": "Castle Ensis",
+      "type": "world pickup",
+      "dlc": true,
+      "source_url": "https://eldenring.fandom.com/wiki/Rellana's_Cameo",
+      "confidence": "verified"
+    },
+    "retaliatory-crossed-tree": {
+      "name": "Retaliatory Crossed-Tree",
+      "how": "Given by Leda at a grace as she says farewell after you invade Sir Ansbach for her; lost if you helped against Hornsent.",
+      "where": "Needle Knight Leda's questline",
+      "type": "quest",
+      "dlc": true,
+      "source_url": "https://eldenring.fandom.com/wiki/Retaliatory_Crossed-Tree",
+      "confidence": "verified"
+    },
+    "ritual-shield-talisman": {
+      "name": "Ritual Shield Talisman",
+      "how": "On a corpse in front of the colosseum.",
+      "where": "Leyndell, Royal Capital, in front of the colosseum (south)",
+      "type": "world pickup",
+      "dlc": false,
+      "source_url": "https://eldenring.fandom.com/wiki/Ritual_Shield_Talisman",
+      "confidence": "verified"
+    },
+    "ritual-sword-talisman": {
+      "name": "Ritual Sword Talisman",
+      "how": "Chest guarded by Demi-Human Queen Gilika.",
+      "where": "Lux Ruins cellar (Fandom: SE Mt. Gelmir region)",
+      "type": "chest",
+      "dlc": false,
+      "source_url": "https://eldenring.fandom.com/wiki/Ritual_Sword_Talisman",
+      "confidence": "verified"
+    },
+    "roar-medallion": {
+      "name": "Roar Medallion",
+      "how": "Dropped by the Stonedigger Troll.",
+      "where": "Limgrave Tunnels, central Limgrave",
+      "type": "drop",
+      "dlc": false,
+      "source_url": "https://eldenring.fandom.com/wiki/Roar_Medallion",
+      "confidence": "verified"
+    },
+    "rotten-winged-sword-insignia": {
+      "name": "Rotten Winged Sword Insignia",
+      "how": "Reward from Millicent if you help her against her sisters.",
+      "where": "Millicent's questline (final step)",
+      "type": "quest",
+      "dlc": false,
+      "source_url": "https://eldenring.fandom.com/wiki/Rotten_Winged_Sword_Insignia",
+      "confidence": "verified"
+    },
+    "sacred-scorpion-charm": {
+      "name": "Sacred Scorpion Charm",
+      "how": "Dropped by invader Anastasia, Tarnished-Eater.",
+      "where": "Near Smoldering Church, NW Caelid",
+      "type": "drop",
+      "dlc": false,
+      "source_url": "https://eldenring.fandom.com/wiki/Sacred_Scorpion_Charm",
+      "confidence": "verified"
+    },
+    "sacrificial-twig": {
+      "name": "Sacrificial Twig",
+      "how": "Buy from Patches (5,000) or the Isolated Merchant (3,000, up to 3); some copies also lie on corpses.",
+      "where": "Several: Patches (Murkwater Cave, later Volcano Manor), Isolated Merchant (Weeping Peninsula), and world pickups",
+      "type": "merchant",
+      "dlc": false,
+      "source_url": "https://eldenring.fandom.com/wiki/Sacrificial_Twig",
+      "confidence": "verified"
+    },
+    "shabriris-woe": {
+      "name": "Shabriri's Woe",
+      "how": "On a corpse on a building's steps; also a starting keepsake.",
+      "where": "Frenzied Flame Village, NE Liurnia",
+      "type": "world pickup",
+      "dlc": false,
+      "source_url": "https://eldenring.fandom.com/wiki/Shabriri's_Woe",
+      "confidence": "verified"
+    },
+    "shard-of-alexander": {
+      "name": "Shard of Alexander",
+      "how": "Talk to Iron Fist Alexander after beating him at the end of his questline.",
+      "where": "Crumbling Farum Azula, NW",
+      "type": "quest",
+      "dlc": false,
+      "source_url": "https://eldenring.fandom.com/wiki/Shard_of_Alexander",
+      "confidence": "verified"
+    },
+    "sharpshot-talisman": {
+      "name": "Sharpshot Talisman",
+      "how": "Inside the shack.",
+      "where": "Albinauric's Shack, Scaduview",
+      "type": "world pickup",
+      "dlc": true,
+      "source_url": "https://eldenring.fandom.com/wiki/Sharpshot_Talisman",
+      "confidence": "verified"
+    },
+    "shattered-stone-talisman": {
+      "name": "Shattered Stone Talisman",
+      "how": "Head SE through the stone arch into a house ruin, onto the roof, and around the corner to a corpse.",
+      "where": "Moorth Ruins (from Moorth Ruins grace)",
+      "type": "world pickup",
+      "dlc": true,
+      "source_url": "https://eldenring.fandom.com/wiki/Shattered_Stone_Talisman",
+      "confidence": "verified"
+    },
+    "silver-scarab": {
+      "name": "Silver Scarab",
+      "how": "From the central room, drop onto the invisible platform, go south, and dispel an illusory wall to find the chest.",
+      "where": "Hidden Path to the Haligtree, Forbidden Lands",
+      "type": "chest",
+      "dlc": false,
+      "source_url": "https://eldenring.fandom.com/wiki/Silver_Scarab",
+      "confidence": "verified"
+    },
+    "smithing-talisman": {
+      "name": "Smithing Talisman",
+      "how": "On a corpse in a room full of Magma Tears at the top of the forge.",
+      "where": "Ruined Forge of Starfall Past (top level)",
+      "type": "world pickup",
+      "dlc": true,
+      "source_url": "https://eldenring.fandom.com/wiki/Smithing_Talisman",
+      "confidence": "verified"
+    },
+    "spear-talisman": {
+      "name": "Spear Talisman",
+      "how": "Chest in a demi-human camp at the back of the cave if you stay on the upper path.",
+      "where": "Lakeside Crystal Cave, southern Liurnia",
+      "type": "chest",
+      "dlc": false,
+      "source_url": "https://eldenring.fandom.com/wiki/Spear_Talisman",
+      "confidence": "verified"
+    },
+    "spelldrake-talisman": {
+      "name": "Spelldrake Talisman",
+      "how": "Dropped by the Runebear.",
+      "where": "Earthbore Cave, northern Weeping Peninsula",
+      "type": "drop",
+      "dlc": false,
+      "source_url": "https://eldenring.fandom.com/wiki/Spelldrake_Talisman",
+      "confidence": "verified"
+    },
+    "spelldrake-talisman-1": {
+      "name": "Spelldrake Talisman +1",
+      "how": "Chest behind a seal opened by lighting the SW candle tower.",
+      "where": "Sellia, Town of Sorcery, NW alcove",
+      "type": "chest",
+      "dlc": false,
+      "source_url": "https://eldenring.fandom.com/wiki/Spelldrake_Talisman_+1",
+      "confidence": "verified"
+    },
+    "spelldrake-talisman-2": {
+      "name": "Spelldrake Talisman +2",
+      "how": "From the central room drop onto the invisible platform, go north then west to a corpse.",
+      "where": "Hidden Path to the Haligtree",
+      "type": "world pickup",
+      "dlc": false,
+      "source_url": "https://eldenring.fandom.com/wiki/Spelldrake_Talisman_+2",
+      "confidence": "verified"
+    },
+    "spelldrake-talisman-3": {
+      "name": "Spelldrake Talisman +3",
+      "how": "Drop off the cliff north of the grace and head east into a storeroom.",
+      "where": "Castle Ensis (from Castle Front grace)",
+      "type": "world pickup",
+      "dlc": true,
+      "source_url": "https://eldenring.fandom.com/wiki/Spelldrake_Talisman_+3",
+      "confidence": "verified"
+    },
+    "st-trinas-smile": {
+      "name": "St. Trina's Smile",
+      "how": "Reward for defeating Thiollier's invasion during step 2 of his quest (per the Thiollier page).",
+      "where": "Thiollier's questline (location of the invasion not given)",
+      "type": "quest",
+      "dlc": true,
+      "source_url": "https://eldenring.fandom.com/wiki/Thiollier",
+      "confidence": "partial"
+    },
+    "stalwart-horn-charm": {
+      "name": "Stalwart Horn Charm",
+      "how": "Below a natural rock archway SW of the compound; drop from the ledge to reach the corpse.",
+      "where": "Eastern Liurnia, near Mausoleum Compound",
+      "type": "world pickup",
+      "dlc": false,
+      "source_url": "https://eldenring.fandom.com/wiki/Stalwart_Horn_Charm",
+      "confidence": "verified"
+    },
+    "stalwart-horn-charm-1": {
+      "name": "Stalwart Horn Charm +1",
+      "how": "On a corpse over a log between two dead trees, guarded by two Ancestral Followers.",
+      "where": "SW Consecrated Snowfield",
+      "type": "world pickup",
+      "dlc": false,
+      "source_url": "https://eldenring.fandom.com/wiki/Stalwart_Horn_Charm_+1",
+      "confidence": "verified"
+    },
+    "stalwart-horn-charm-2": {
+      "name": "Stalwart Horn Charm +2",
+      "how": "Drop down the hole, climb the east ladder past rats; in the room with jar innards.",
+      "where": "Bonny Gaol",
+      "type": "world pickup",
+      "dlc": true,
+      "source_url": "https://eldenring.fandom.com/wiki/Stalwart_Horn_Charm_+2",
+      "confidence": "verified"
+    },
+    "stargazer-heirloom": {
+      "name": "Stargazer Heirloom",
+      "how": "Taken from Ranni's charred body at the top of the tower.",
+      "where": "Divine Tower of Liurnia (top)",
+      "type": "world pickup",
+      "dlc": false,
+      "source_url": "https://eldenring.fandom.com/wiki/Stargazer_Heirloom",
+      "confidence": "verified"
+    },
+    "starscourge-heirloom": {
+      "name": "Starscourge Heirloom",
+      "how": "Chest under a canopy on the fort's upper platform.",
+      "where": "Fort Gael, western Caelid",
+      "type": "chest",
+      "dlc": false,
+      "source_url": "https://eldenring.fandom.com/wiki/Starscourge_Heirloom",
+      "confidence": "verified"
+    },
+    "takers-cameo": {
+      "name": "Taker's Cameo",
+      "how": "Given by Tanith after the third assassination (Juno Hoslow, near Shack of the Lofty).",
+      "where": "Volcano Manor (Tanith)",
+      "type": "quest",
+      "dlc": false,
+      "source_url": "https://eldenring.fandom.com/wiki/Taker's_Cameo",
+      "confidence": "verified"
+    },
+    "talisman-of-all-crucibles": {
+      "name": "Talisman of All Crucibles",
+      "how": "Chest reached via the nearby lift and a Torrent double jump into a passage to the south.",
+      "where": "Western Ancient Ruins of Rauh (from Ancient Ruins, Grand Stairway grace)",
+      "type": "chest",
+      "dlc": true,
+      "source_url": "https://eldenring.fandom.com/wiki/Talisman_of_All_Crucibles",
+      "confidence": "verified"
+    },
+    "talisman-of-lords-bestowal": {
+      "name": "Talisman of Lord's Bestowal",
+      "how": "Beside the large golden tree in Shadow Keep.",
+      "where": "Shadow Keep, by the large golden tree",
+      "type": "world pickup",
+      "dlc": true,
+      "source_url": "https://eldenring.fandom.com/wiki/Talisman_of_Lord's_Bestowal",
+      "confidence": "verified"
+    },
+    "talisman-of-the-dread": {
+      "name": "Talisman of the Dread",
+      "how": "Inside the hovel.",
+      "where": "Elder's Hovel, Gravesite Plain",
+      "type": "world pickup",
+      "dlc": true,
+      "source_url": "https://eldenring.fandom.com/wiki/Talisman_of_the_Dread",
+      "confidence": "verified"
+    },
+    "twinblade-talisman": {
+      "name": "Twinblade Talisman",
+      "how": "Chest atop the western corner tower, up a ladder.",
+      "where": "Castle Morne (from Behind the Castle grace)",
+      "type": "chest",
+      "dlc": false,
+      "source_url": "https://eldenring.fandom.com/wiki/Twinblade_Talisman",
+      "confidence": "verified"
+    },
+    "two-fingers-heirloom": {
+      "name": "Two Fingers Heirloom",
+      "how": "Chest in a cellar whose stairs are hidden under breakable planks.",
+      "where": "Purified Ruins cellar, near Stormveil/Liurnia",
+      "type": "chest",
+      "dlc": false,
+      "source_url": "https://eldenring.fandom.com/wiki/Two_Fingers_Heirloom",
+      "confidence": "verified"
+    },
+    "two-handed-sword-talisman": {
+      "name": "Two-Handed Sword Talisman",
+      "how": "Chest just past the Horned Warrior fight, up the stairs.",
+      "where": "Temple Town Ruins, top structure",
+      "type": "chest",
+      "dlc": true,
+      "source_url": "https://eldenring.fandom.com/wiki/Two-Handed_Sword_Talisman",
+      "confidence": "verified"
+    },
+    "two-headed-turtle-talisman": {
+      "name": "Two-Headed Turtle Talisman",
+      "how": "Inside the guarded cave beneath the waterfall.",
+      "where": "Cave under a waterfall east of Rivermouth Cave",
+      "type": "world pickup",
+      "dlc": true,
+      "source_url": "https://eldenring.fandom.com/wiki/Two-Headed_Turtle_Talisman",
+      "confidence": "verified"
+    },
+    "verdigris-discus": {
+      "name": "Verdigris Discus",
+      "how": "Reach via the Imbued-Sword-Key sending gate near Highroad Cross grace, then uphill.",
+      "where": "Ancient Ruins of Rauh, before a giant goddess statue",
+      "type": "world pickup",
+      "dlc": true,
+      "source_url": "https://eldenring.fandom.com/wiki/Verdigris_Discus",
+      "confidence": "verified"
+    },
+    "viridian-amber-medallion": {
+      "name": "Viridian Amber Medallion",
+      "how": "Dropped by the Miranda Blossom boss.",
+      "where": "Tombsward Cave, western Weeping Peninsula",
+      "type": "drop",
+      "dlc": false,
+      "source_url": "https://eldenring.fandom.com/wiki/Viridian_Amber_Medallion",
+      "confidence": "verified"
+    },
+    "viridian-amber-medallion-1": {
+      "name": "Viridian Amber Medallion +1",
+      "how": "Dropped by Margit, the Fell Omen after he drops a commoner disguise.",
+      "where": "NW Leyndell, south of Outer Wall Battleground grace",
+      "type": "drop",
+      "dlc": false,
+      "source_url": "https://eldenring.fandom.com/wiki/Viridian_Amber_Medallion_+1",
+      "confidence": "verified"
+    },
+    "viridian-amber-medallion-2": {
+      "name": "Viridian Amber Medallion +2",
+      "how": "Chest reached by rooftop running jumps past Summoning Snails to the SE.",
+      "where": "Miquella's Haligtree (from Haligtree Town Plaza grace)",
+      "type": "chest",
+      "dlc": false,
+      "source_url": "https://eldenring.fandom.com/wiki/Viridian_Amber_Medallion_+2",
+      "confidence": "verified"
+    },
+    "viridian-amber-medallion-3": {
+      "name": "Viridian Amber Medallion +3",
+      "how": "Right after the first cannon imp, jump onto a ledge and drop under an archway.",
+      "where": "Darklight Catacombs",
+      "type": "world pickup",
+      "dlc": true,
+      "source_url": "https://eldenring.fandom.com/wiki/Viridian_Amber_Medallion_+3",
+      "confidence": "verified"
+    },
+    "warrior-jar-shard": {
+      "name": "Warrior Jar Shard",
+      "how": "Dropped if you kill Iron Fist Alexander before finishing his questline.",
+      "where": "Alexander's locations",
+      "type": "drop",
+      "dlc": false,
+      "source_url": "https://eldenring.fandom.com/wiki/Warrior_Jar_Shard",
+      "confidence": "verified"
+    },
+    "winged-sword-insignia": {
+      "name": "Winged Sword Insignia",
+      "how": "Dropped by the Cleanrot Knight boss.",
+      "where": "Stillwater Cave, southern Liurnia",
+      "type": "drop",
+      "dlc": false,
+      "source_url": "https://eldenring.fandom.com/wiki/Winged_Sword_Insignia",
+      "confidence": "verified"
+    }
+  }
+}

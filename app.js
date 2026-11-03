@@ -79,7 +79,9 @@ function uiFor(id) {
       equipType: "",
       equipSort: "listed",
       mapQuery: "",
-      mapLayers: {}
+      mapLayers: {},
+      bossQuery: "",
+      bossFilter: ""
     };
   }
   return state.ui[id];
@@ -192,6 +194,24 @@ function imageCreditNode() {
     text: "Item images are game art from the Elden Ring, Bloodborne and Demon's Souls wikis on Fandom, used under fair use, personal use. Game art © FromSoftware/Bandai Namco. No Reforged mod assets."
   });
 }
+
+function talismanCreditLine() {
+  const er = externalLink("https://eldenring.fandom.com");
+  er.textContent = "eldenring.fandom.com";
+  const err = externalLink("https://err.fandom.com");
+  err.textContent = "err.fandom.com";
+  const line = el("p");
+  line.append(
+    document.createTextNode("Talisman locations are summarized from "),
+    er,
+    document.createTextNode(" and "),
+    err,
+    document.createTextNode(" (CC BY-SA).")
+  );
+  return line;
+}
+
+const BOSS_CREDIT = "Fandom wiki, fair use, personal use, © FromSoftware/Bandai Namco/SIE";
 
 function variantBuildsNote() {
   const variant = state.variant;
@@ -404,6 +424,10 @@ function parseHash() {
         route.focus = { kind, id: rest.slice(2).join("/") };
       }
     }
+  } else if (head === "bosses") {
+    route.section = "bosses";
+    route.view = "bosses";
+    if (rest[1]) route.focus = { kind: "boss", id: rest.slice(1).join("/") };
   } else if (head && extraSectionById(gameId, head)) {
     route.section = head;
     route.view = head;
@@ -442,6 +466,7 @@ function hashFor(gameId, view, id) {
   if (view === "weapons") return id ? `${root}/equipment/weapons/${encodeURIComponent(id)}` : `${root}/equipment/weapons`;
   if (view === "armor") return id ? `${root}/equipment/armor/${encodeURIComponent(id)}` : `${root}/equipment/armor`;
   if (view === "talismans") return id ? `${root}/equipment/talismans/${encodeURIComponent(id)}` : `${root}/equipment/talismans`;
+  if (view === "bosses") return id ? `${root}/bosses/${encodeURIComponent(id)}` : `${root}/bosses`;
   if (view === "equipment") return `${root}/equipment/weapons`;
   const extra = extraSectionById(gameId, view);
   if (extra) {
@@ -457,6 +482,7 @@ function sectionFile(game, section) {
   if (section === "map") return game.map || "";
   if (section === "crafting") return (variant && variant.crafting) || game.crafting || "";
   if (section === "equipment") return (variant && variant.equipment) || game.equipment || "";
+  if (section === "bosses") return game.bosses || "";
   const extra = (variant && variant.sections || []).find((item) => item.id === section);
   if (extra && extra.file) return extra.file;
   return "";
@@ -470,6 +496,7 @@ function scopedHash(gameId, route) {
     if (route.focus.kind === "weapon") return hashFor(gameId, "weapons", route.focus.id);
     if (route.focus.kind === "armor") return hashFor(gameId, "armor", route.focus.id);
     if (route.focus.kind === "talisman") return hashFor(gameId, "talismans", route.focus.id);
+    if (route.focus.kind === "boss") return hashFor(gameId, "bosses", route.focus.id);
     if (route.focus.kind === "system-section") {
       const tail = route.focus.item ? `${route.focus.id}/${route.focus.item}` : route.focus.id;
       return hashFor(gameId, route.section, tail);
@@ -485,6 +512,7 @@ function scopedHash(gameId, route) {
     const view = route.view === "armor" ? "armor" : route.view === "talismans" ? "talismans" : "weapons";
     return hashFor(gameId, view);
   }
+  if (route.section === "bosses") return hashFor(gameId, "bosses");
   if (extraSectionById(gameId, route.section)) return hashFor(gameId, route.section);
   return hashFor(gameId, route.about ? "about" : route.view, route.build);
 }
@@ -499,6 +527,10 @@ function sectionCount(section, extra) {
   if (section === "crafting") {
     const n = (extra.items || []).length;
     return `${n} ${n === 1 ? "recipe" : "recipes"}`;
+  }
+  if (section === "bosses") {
+    const n = Array.isArray(extra) ? extra.length : 0;
+    return n ? `${n} bosses` : "Bosses";
   }
   if (extraSectionById(state.game && state.game.id, section) || Array.isArray(extra.sections)) {
     const n = (extra.sections || []).length;
@@ -538,7 +570,8 @@ function leaveSheet() {
   else if (route.section === "equipment") {
     const view = route.view === "armor" ? "armor" : route.view === "talismans" ? "talismans" : "weapons";
     next = hashFor(route.gameId, view);
-  } else if (extraSectionById(route.gameId, route.section)) next = hashFor(route.gameId, route.section);
+  } else if (route.section === "bosses") next = hashFor(route.gameId, "bosses");
+  else if (extraSectionById(route.gameId, route.section)) next = hashFor(route.gameId, route.section);
   else next = hashFor(route.gameId, route.view === "guides" ? "guides" : "tiers");
   history.replaceState({ bb: true }, "", `${location.pathname}${location.search}#${next}`);
   render();
@@ -616,6 +649,7 @@ function renderSectionNav(route) {
     ["map", "Map", Boolean(game.map)],
     ["crafting", "Crafting", Boolean(game.crafting)],
     ["equipment", "Equipment", Boolean(game.equipment)],
+    ["bosses", "Bosses", Boolean(game.bosses)],
     ...activeExtraSections().filter((section) => section && section.id).map((section) => [section.id, section.label || section.id, true])
   ].filter((item) => item[2]);
   nav.replaceChildren(
@@ -629,6 +663,15 @@ function renderSectionNav(route) {
       })
     )
   );
+  const selected = nav.querySelector("[aria-pressed='true']");
+  if (!selected) return;
+  const pad = 2;
+  const leftEdge = selected.offsetLeft;
+  const rightEdge = leftEdge + selected.offsetWidth;
+  if (leftEdge < nav.scrollLeft) nav.scrollTo({ left: Math.max(0, leftEdge - pad) });
+  else if (rightEdge > nav.scrollLeft + nav.clientWidth) {
+    nav.scrollTo({ left: rightEdge - nav.clientWidth + pad });
+  }
 }
 
 function renderGameTabs() {
@@ -885,18 +928,36 @@ function sourceList(sources) {
   return wrap;
 }
 
+const GEAR_ALIASES = {
+  "blade of mercy": ["Blades of Mercy"],
+  "monk's head wrappings": ["Monk's Head Collar"],
+  "jar": ["Jar helm"]
+};
+
 function equipmentCatalog(data) {
   if (!data) return [];
   const rows = [];
-  (data.weapons || []).forEach((item) => {
-    if (item && item.name && item.id) rows.push({ kind: "weapons", name: item.name, id: item.id });
-  });
-  (data.talismans || []).forEach((item) => {
-    if (item && item.name && item.id) rows.push({ kind: "talismans", name: item.name, id: item.id });
-  });
+  const push = (kind, name, id, record, alias) => {
+    if (!name || !id || !record) return;
+    rows.push({ kind, name: String(name), id, record, alias: Boolean(alias) });
+  };
+  (data.weapons || []).forEach((item) => push("weapons", item && item.name, item && item.id, item));
+  (data.talismans || []).forEach((item) => push("talismans", item && item.name, item && item.id, item));
   (data.armorSets || []).forEach((item) => {
-    if (item && item.name && item.id) rows.push({ kind: "armor", name: item.name, id: item.id });
+    if (!item) return;
+    push("armor", item.name, item.id, item);
+    (item.pieces || []).forEach((piece) => {
+      if (!piece || !piece.name || piece.name === item.name) return;
+      push("armor", piece.name, item.id, item);
+    });
   });
+  const aliases = [];
+  rows.forEach((row) => {
+    (GEAR_ALIASES[row.name.toLowerCase()] || []).forEach((alias) => {
+      aliases.push({ kind: row.kind, name: alias, id: row.id, record: row.record, alias: true });
+    });
+  });
+  rows.push(...aliases);
   rows.sort((a, b) => b.name.length - a.name.length);
   return rows;
 }
@@ -932,9 +993,12 @@ function linkedGear(text, catalog) {
   let at = 0;
   kept.forEach((hit) => {
     if (hit.start > at) node.append(document.createTextNode(value.slice(at, hit.start)));
-    const link = document.createElement("a");
+    const link = document.createElement("button");
+    link.type = "button";
     link.className = "equip-link";
-    link.href = `#${hashFor(state.game.id, hit.item.kind, hit.item.id)}`;
+    link.dataset.gearKind = hit.item.kind;
+    link.dataset.gearId = hit.item.id;
+    link.dataset.gearName = hit.item.name;
     link.textContent = value.slice(hit.start, hit.end);
     node.append(link);
     at = hit.end;
@@ -969,7 +1033,7 @@ function renderBuild(build, catalog) {
   const order = statOrder(meta, state.game);
   const prefix = state.game.levelPrefix;
   const level = prefix ? `${prefix} ${build.stats.level}` : `Level ${build.stats.level}`;
-  const gear = catalog && build.mode === "reforged" ? catalog : null;
+  const gear = catalog;
   const root = el("article", {}, [
     el("p", { class: "tier-pill", "data-tier": build.tier, text: `Tier ${build.tier}` }),
     build.tierLabel ? el("p", { class: "muted", text: build.tierLabel }) : null,
@@ -986,7 +1050,7 @@ function renderBuild(build, catalog) {
       el("h3", { text: fieldLabel(meta, "weapons") }),
       el("ul", { class: "clean" }, build.weapons.map((weapon) => el("li", {}, [linkedGear(weapon, gear)]))),
       el("h3", { text: fieldLabel(meta, "firearm") }),
-      el("p", { text: build.firearm })
+      el("p", {}, [linkedGear(build.firearm, gear)])
     ]),
     el("section", { class: "block" }, [
       el("h3", { text: "Stat spread" }),
@@ -1120,11 +1184,113 @@ function renderAbout() {
       el("p", {
         text: "Archetype and best-for filters match wording already stored on each build — the archetype line, best-for tags, and notes. They do not add rankings."
       })
-    ])
+    ]),
+    state.game && state.game.id === "elden-ring"
+      ? el("section", { class: "block" }, [el("h3", { text: "Talismans" }), talismanCreditLine()])
+      : null,
+    el("section", { class: "block" }, [el("h3", { text: "Boss portraits" }), el("p", { text: BOSS_CREDIT })])
   ]);
 }
 
+function gearPopHidden() {
+  const pop = document.getElementById("gear-pop");
+  return !pop || pop.hidden;
+}
+
+function closeGearPop() {
+  const pop = document.getElementById("gear-pop");
+  if (pop) pop.hidden = true;
+}
+
+function findGear(kind, id, name) {
+  const catalog = state.gearCatalog || [];
+  const wanted = String(name || "").toLowerCase();
+  return catalog.find((item) => item.kind === kind && item.id === id && item.name.toLowerCase() === wanted)
+    || catalog.find((item) => item.kind === kind && item.id === id)
+    || null;
+}
+
+function shortText(value) {
+  const text = String(value || "").replace(/\s+/g, " ").trim();
+  if (!text) return "";
+  if (text.length <= 180) return text;
+  return `${text.slice(0, 177).trim()}…`;
+}
+
+function gearSummary(item) {
+  const record = item.record || {};
+  if (item.kind === "talismans") {
+    const got = record.acquisition || {};
+    const how = got.how ? `How to get: ${got.how}` : "";
+    return { effect: shortText(record.effect), extra: how, where: got.where || "" };
+  }
+  if (item.kind === "weapons") {
+    const attack = record.stats && record.stats.attack;
+    const atk = attack && typeof attack === "object"
+      ? Object.entries(attack).filter(([key, value]) => value && value !== "0" && value !== "-" && key !== "Crit").map(([key, value]) => `${key} ${value}`).join(" · ")
+      : "";
+    const req = record.requirements && typeof record.requirements === "object"
+      ? Object.entries(record.requirements).filter(([, value]) => value && value !== "-" && value !== "0").map(([key, value]) => `${key} ${value}`).join(" · ")
+      : "";
+    const type = record.type && record.type !== "-" ? record.type : "";
+    return { effect: [type, atk].filter(Boolean).join(" · "), extra: req ? `Requires ${req}` : "", where: "" };
+  }
+  const passive = record.errSetPassive;
+  let effect = "";
+  if (typeof passive === "string") effect = passive;
+  else if (passive && typeof passive === "object") effect = `${passive.category ? `${passive.category}: ` : ""}${passive.effectPerPiece || passive.effect || ""}`.trim();
+  if (!effect) effect = shortText(record.notes || record.description || "");
+  return { effect: shortText(effect), extra: record.weight ? `Weight ${record.weight}` : "", where: "" };
+}
+
+function openGearPop(kind, id, name) {
+  const item = findGear(kind, id, name);
+  const pop = document.getElementById("gear-pop");
+  const body = document.getElementById("gear-pop-body");
+  if (!item || !pop || !body) return;
+  const summary = gearSummary(item);
+  const title = item.alias && item.record ? item.record.name : item.name;
+  const setName = item.record && item.record.name;
+  const subtitle = setName && setName.toLowerCase() !== String(title).toLowerCase() ? setName : "";
+  const figureKind = item.kind === "weapons" ? "weapon" : item.kind === "talismans" ? "talisman" : "armor";
+  const figure = typeof SoulsSections.itemFigure === "function"
+    ? SoulsSections.itemFigure("equipment", figureKind, item.id, 48)
+    : null;
+  body.replaceChildren(el("article", { class: "gear-card" }, [
+    el("div", { class: "record-head" }, [
+      figure,
+      el("div", { class: "record-copy" }, [
+        el("h2", { id: "gear-pop-title", text: title }),
+        subtitle ? el("p", { class: "muted", text: subtitle }) : null
+      ])
+    ]),
+    summary.effect ? el("p", { text: summary.effect }) : null,
+    summary.extra ? el("p", { class: "how-line", text: summary.extra }) : null,
+    summary.where ? el("p", { class: "muted", text: summary.where }) : null,
+    el("button", {
+      type: "button",
+      class: "text-btn",
+      id: "gear-view",
+      text: "View in Equipment"
+    })
+  ]));
+  const view = document.getElementById("gear-view");
+  if (view) {
+    view.addEventListener("click", () => {
+      closeGearPop();
+      setHash(hashFor(state.game.id, item.kind, item.id));
+    });
+  }
+  pop.hidden = false;
+  const heading = document.getElementById("gear-pop-title");
+  if (heading) {
+    heading.setAttribute("tabindex", "-1");
+    heading.focus();
+  }
+}
+
 function showSheet(node) {
+  closeGearPop();
   sheetBody.replaceChildren(node);
   const opening = !sheet.open;
   if (opening) sheet.showModal();
@@ -1211,6 +1377,8 @@ async function render() {
   document.getElementById("panel-map").hidden = route.section !== "map";
   document.getElementById("panel-crafting").hidden = route.section !== "crafting";
   document.getElementById("panel-equipment").hidden = route.section !== "equipment";
+  const bossesPanel = document.getElementById("panel-bosses");
+  if (bossesPanel) bossesPanel.hidden = route.section !== "bosses";
   const extraPanel = document.getElementById("panel-extra");
   if (extraPanel) extraPanel.hidden = !onExtra;
   document.getElementById("tab-tiers").setAttribute("aria-selected", onGuides ? "false" : "true");
@@ -1252,6 +1420,9 @@ async function render() {
     const panel = document.getElementById(onExtra ? "panel-extra" : `panel-${route.section}`);
     try {
       state.extra = await loadExtra(path);
+      if (route.section === "equipment" && game.id === "elden-ring" && typeof SoulsSections.attachTalismans === "function") {
+        state.extra = await SoulsSections.attachTalismans(state.extra);
+      }
     } catch (error) {
       if (token !== renderToken) return;
       state.extra = null;
@@ -1286,14 +1457,29 @@ async function render() {
   }
 
   let gearCatalog = null;
-  if (route.build && state.variant && state.variant.equipment) {
-    try {
-      gearCatalog = equipmentCatalog(await loadExtra(state.variant.equipment));
-    } catch (error) {
-      gearCatalog = null;
+  if (route.build) {
+    const equipPath = sectionFile(game, "equipment");
+    if (equipPath) {
+      try {
+        let equip = await loadExtra(equipPath);
+        if (game.id === "elden-ring" && typeof SoulsSections.attachTalismans === "function") {
+          equip = await SoulsSections.attachTalismans(equip);
+        }
+        if (typeof SoulsSections.loadItemIndex === "function") {
+          try {
+            await SoulsSections.loadItemIndex();
+          } catch (error) {
+            /* Cards fall back to the placeholder. */
+          }
+        }
+        gearCatalog = equipmentCatalog(equip);
+      } catch (error) {
+        gearCatalog = null;
+      }
     }
     if (token !== renderToken) return;
   }
+  state.gearCatalog = gearCatalog;
 
   if (route.about) showSheet(renderAbout());
   else if (route.build) {
@@ -1357,7 +1543,8 @@ function bind() {
     let view = "tiers";
     if (route.section === "map" && next && next.map) view = "map";
     else if (route.section === "crafting" && next && next.crafting) view = "crafting";
-    else if (route.section === "equipment" && next && next.equipment) view = route.view === "armor" ? "armor" : "weapons";
+    else if (route.section === "equipment" && next && next.equipment) view = route.view === "armor" ? "armor" : route.view === "talismans" && (next.id === "elden-ring") ? "talismans" : "weapons";
+    else if (route.section === "bosses" && next && next.bosses) view = "bosses";
     else if (route.about) view = "about";
     else if (route.view === "guides") view = "guides";
     setHash(hashFor(button.dataset.game, view));
@@ -1370,6 +1557,7 @@ function bind() {
     else if (id === "map") setHash(hashFor(state.game.id, "map"));
     else if (id === "crafting") setHash(hashFor(state.game.id, "crafting"));
     else if (id === "equipment") setHash(hashFor(state.game.id, "weapons"));
+    else if (id === "bosses") setHash(hashFor(state.game.id, "bosses"));
     else setHash(hashFor(state.game.id, "tiers"));
   });
   document.getElementById("tab-tiers").addEventListener("click", () => {
@@ -1381,15 +1569,38 @@ function bind() {
   document.getElementById("tab-about").addEventListener("click", () => {
     if (state.game) setHash(hashFor(state.game.id, "about"));
   });
-  document.querySelector(".sheet-close").addEventListener("click", leaveSheet);
+  document.querySelector(".sheet-close").addEventListener("click", () => {
+    if (!gearPopHidden()) {
+      closeGearPop();
+      return;
+    }
+    leaveSheet();
+  });
+  const gearClose = document.getElementById("gear-pop-close");
+  if (gearClose) gearClose.addEventListener("click", closeGearPop);
   sheet.addEventListener("click", (event) => {
+    const pop = document.getElementById("gear-pop");
+    if (pop && !pop.hidden) {
+      if (event.target === pop || event.target.closest("#gear-pop-close")) closeGearPop();
+      return;
+    }
+    const gear = event.target.closest("[data-gear-id]");
+    if (gear) {
+      openGearPop(gear.dataset.gearKind, gear.dataset.gearId, gear.dataset.gearName);
+      return;
+    }
     const panel = sheet.querySelector(".sheet-panel");
     if (panel && !panel.contains(event.target)) leaveSheet();
   });
   sheet.addEventListener("cancel", (event) => {
     event.preventDefault();
+    if (!gearPopHidden()) {
+      closeGearPop();
+      return;
+    }
     leaveSheet();
   });
+  sheet.addEventListener("close", closeGearPop);
   window.addEventListener("popstate", render);
   window.addEventListener("hashchange", render);
   window.addEventListener("resize", syncHeaderHeight);

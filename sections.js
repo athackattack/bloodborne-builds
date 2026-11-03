@@ -5,7 +5,9 @@ var SoulsSections = {
   render,
   sheet: focusSheet,
   closeEmbed,
-  loadItemIndex
+  loadItemIndex,
+  itemFigure,
+  attachTalismans
 };
 
 function startEmbers() {
@@ -74,12 +76,14 @@ function render(ctx) {
     ctx.section === "map" ? "panel-map"
       : ctx.section === "crafting" ? "panel-crafting"
       : ctx.section === "equipment" ? "panel-equipment"
+      : ctx.section === "bosses" ? "panel-bosses"
       : "panel-extra"
   );
   if (!panel) return;
   if (ctx.section !== "map") closeEmbed();
   if (ctx.section === "crafting") renderCrafting(panel, ctx);
   else if (ctx.section === "equipment") renderEquipment(panel, ctx);
+  else if (ctx.section === "bosses") renderBosses(panel, ctx);
   else if (ctx.section === "map") renderMap(panel, ctx);
   else renderSystems(panel, ctx);
 }
@@ -91,6 +95,7 @@ function focusSheet(route, extra) {
   if (route.focus.kind === "weapon") return weaponSheet(extra, route.focus.id);
   if (route.focus.kind === "armor") return armorSheet(extra, route.focus.id);
   if (route.focus.kind === "talisman") return talismanSheet(extra, route.focus.id);
+  if (route.focus.kind === "boss") return bossSheet(extra, route.focus.id);
   if (route.focus.kind === "section-about") return sectionAboutSheet(extra, route.focus.id);
   return null;
 }
@@ -105,6 +110,12 @@ function bindOnce() {
   document.getElementById("panel-equipment").addEventListener("input", onEquipInput);
   document.getElementById("panel-equipment").addEventListener("change", onEquipChange);
   document.getElementById("panel-map").addEventListener("click", onMapClick);
+  const bosses = document.getElementById("panel-bosses");
+  if (bosses) {
+    bosses.addEventListener("click", onBossClick);
+    bosses.addEventListener("input", onBossInput);
+    bosses.addEventListener("toggle", onBossToggle, true);
+  }
   const extra = document.getElementById("panel-extra");
   if (extra) {
     extra.addEventListener("click", onSystemsClick);
@@ -772,7 +783,8 @@ function renderEquipment(panel, ctx) {
   if (q) {
     rows = rows.filter((row) => {
       const renamed = (row.renamedFrom || []).map((item) => item && item.name);
-      const hay = [row.name, row.description, row.location, row.upgradePath, row.notes, row.errChanges, row.effect, passiveText(row), ...renamed, ...(row.pieces || []).map((piece) => piece && (piece.name || piece.slot))]
+      const got = row.acquisition || {};
+      const hay = [row.name, row.description, row.location, row.upgradePath, row.notes, row.errChanges, row.effect, got.how, got.where, got.type, got.note, passiveText(row), ...renamed, ...(row.pieces || []).map((piece) => piece && (piece.name || piece.slot))]
         .filter(Boolean).join("\n").toLowerCase();
       return hay.includes(q);
     });
@@ -781,6 +793,13 @@ function renderEquipment(panel, ctx) {
   if (sort === "name") rows.sort((a, b) => String(a.name || "").localeCompare(String(b.name || "")));
   else if (sort === "type" && !armorTab && !talismanTab) rows.sort((a, b) => String(a.type || "").localeCompare(String(b.type || "")) || String(a.name || "").localeCompare(String(b.name || "")));
   const pageKey = talismanTab ? "talismanLimit" : armorTab ? "armorLimit" : "weaponLimit";
+  const focusId = route.focus && route.focus.id && ((talismanTab && route.focus.kind === "talisman") || (armorTab && route.focus.kind === "armor") || (!armorTab && !talismanTab && route.focus.kind === "weapon"))
+    ? route.focus.id
+    : "";
+  if (focusId) {
+    const idx = rows.findIndex((row) => row.id === focusId);
+    if (idx >= 0 && pageOf(rows, pageKey).limit <= idx) ui()[pageKey] = idx + 1;
+  }
   const equipPage = pageOf(rows, pageKey);
   const noun = talismanTab ? "talismans" : armorTab ? "sets" : "weapons";
   const chips = armorTab || talismanTab ? null : el("div", { class: "chip-row" }, [
@@ -842,6 +861,15 @@ function renderEquipment(panel, ctx) {
     equipmentNotes(data),
     guideList(data.guides)
   );
+  if (focusId) {
+    const attr = route.focus.kind === "armor" ? "data-armor" : route.focus.kind === "talisman" ? "data-talisman" : "data-weapon";
+    const node = panel.querySelector(`[${attr}="${CSS.escape(focusId)}"]`);
+    if (node) {
+      const card = node.closest(".record");
+      if (card) card.classList.add("is-target");
+      requestAnimationFrame(() => node.scrollIntoView({ block: "center" }));
+    }
+  }
   settlePage(panel, "#equip-records");
 }
 
@@ -882,10 +910,12 @@ function talismanCard(item) {
       itemFigure("equipment", "talisman", item.id, 48),
       el("div", { class: "record-copy" }, [
         originBadge(item.origin),
-        el("button", { type: "button", class: "record-title", "data-talisman": item.id || "", text: item.name || "Talisman" })
+        el("button", { type: "button", class: "record-title", "data-talisman": item.id || "", text: item.name || "Talisman" }),
+        acqTags(item.acquisition)
       ])
     ]),
-    item.effect ? el("p", { class: "muted", text: item.effect }) : null
+    item.effect ? el("p", { class: "muted", text: item.effect }) : null,
+    ...acqCardLines(item.acquisition)
   ]);
 }
 
@@ -941,15 +971,362 @@ function armorSheet(data, id) {
 function talismanSheet(data, id) {
   const item = (data.talismans || []).find((entry) => entry.id === id);
   if (!item) return null;
+  const got = item.acquisition;
+  const where = got && got.where;
+  const showListed = item.location && (!where || item.location !== where);
   return el("article", {}, [
-    originBadge(item.origin),
-    el("p", { class: "sheet-kicker", text: "Talisman" }),
-    el("h2", { id: "sheet-title", text: item.name || "Talisman" }),
+    el("div", { class: "record-head" }, [
+      itemFigure("equipment", "talisman", item.id, 48),
+      el("div", { class: "record-copy" }, [
+        originBadge(item.origin),
+        el("p", { class: "sheet-kicker", text: "Talisman" }),
+        el("h2", { id: "sheet-title", text: item.name || "Talisman" })
+      ])
+    ]),
     item.effect ? el("section", { class: "block" }, [el("h3", { text: "Effect" }), annotatedBlock(item.effect)]) : null,
+    ...acqDetail(got),
     item.weight != null && item.weight !== "" ? el("section", { class: "block" }, [el("h3", { text: "Weight" }), el("p", { text: String(item.weight) })]) : null,
-    item.location ? el("section", { class: "block" }, [el("h3", { text: "Where to find it" }), el("p", { text: item.location })]) : null,
-    sourceLine(item.source)
+    showListed ? el("section", { class: "block" }, [el("h3", { text: "Where to find it" }), el("p", { text: item.location })]) : null,
+    got && got.source_url ? null : sourceLine(item.source)
   ]);
+}
+
+const VANILLA_LOCATION_NOTE = "Reforged: locations are vanilla-based unless marked";
+
+function unverifiedMark(confidence) {
+  if (confidence === "partial" || confidence === "unknown") return el("span", { class: "flag", text: "unverified" });
+  return null;
+}
+
+function sourceAnchor(url) {
+  if (!url || typeof externalLink !== "function") return null;
+  const link = externalLink(url);
+  link.textContent = "Source";
+  return link;
+}
+
+function acqTags(acq) {
+  if (!acq) return null;
+  const tags = [];
+  if (acq.type) tags.push(el("span", { class: "tag", text: acq.type }));
+  if (acq.dlc === true) tags.push(el("span", { class: "tag", text: "DLC" }));
+  const mark = unverifiedMark(acq.confidence);
+  if (mark) tags.push(mark);
+  if (!tags.length) return null;
+  return el("div", { class: "tag-row" }, tags);
+}
+
+function acqCardLines(acq) {
+  if (!acq) return [];
+  const source = sourceAnchor(acq.source_url);
+  return [
+    acq.how ? el("p", { class: "how-line", text: `How to get: ${acq.how}` }) : null,
+    acq.where ? el("p", { class: "muted", text: acq.where }) : null,
+    acq.note ? el("p", { class: "muted", text: acq.note }) : null,
+    acq.vanilla_based === true ? el("p", { class: "muted acq-note", text: VANILLA_LOCATION_NOTE }) : null,
+    source ? el("p", { class: "acq-source" }, [source]) : null
+  ];
+}
+
+function acqTier(tier) {
+  if (!tier) return null;
+  const source = sourceAnchor(tier.source_url);
+  return el("div", { class: "acq-tier" }, [
+    el("h4", { text: tier.name || "Version" }),
+    tier.how ? el("p", { text: tier.how }) : null,
+    tier.where ? el("p", { class: "muted", text: tier.where }) : null,
+    acqTags(tier),
+    tier.note ? el("p", { class: "muted", text: tier.note }) : null,
+    tier.vanilla_based === true ? el("p", { class: "muted acq-note", text: VANILLA_LOCATION_NOTE }) : null,
+    source ? el("p", { class: "acq-source" }, [source]) : null
+  ]);
+}
+
+function acqDetail(acq) {
+  if (!acq) return [];
+  const tiers = Array.isArray(acq.tiers) ? acq.tiers.filter(Boolean) : [];
+  if (tiers.length) {
+    return [el("section", { class: "block" }, [
+      el("h3", { text: "How to get" }),
+      acq.note ? el("p", { class: "muted", text: acq.note }) : null,
+      ...tiers.map(acqTier)
+    ])];
+  }
+  const source = sourceAnchor(acq.source_url);
+  return [
+    acq.how ? el("section", { class: "block" }, [el("h3", { text: "How to get" }), el("p", { text: acq.how })]) : null,
+    acq.where ? el("section", { class: "block" }, [el("h3", { text: "Where" }), el("p", { text: acq.where })]) : null,
+    acqTags(acq),
+    acq.note ? el("p", { class: "muted", text: acq.note }) : null,
+    acq.vanilla_based === true ? el("p", { class: "muted acq-note", text: VANILLA_LOCATION_NOTE }) : null,
+    source ? el("p", { class: "acq-source" }, [source]) : null
+  ];
+}
+
+let acqData = null;
+let acqPromise = null;
+
+function loadAcquisition() {
+  if (acqData) return Promise.resolve(acqData);
+  if (!acqPromise) {
+    acqPromise = fetch("./data/talisman-acquisition.json")
+      .then((response) => {
+        if (!response.ok) throw new Error(String(response.status));
+        return response.json();
+      })
+      .then((data) => {
+        acqData = data || {};
+        return acqData;
+      })
+      .catch((error) => {
+        acqPromise = null;
+        throw error;
+      });
+  }
+  return acqPromise;
+}
+
+function normName(value) {
+  return String(value || "").toLowerCase().replace(/['’]/g, "").replace(/[^a-z0-9]+/g, " ").trim();
+}
+
+function attachTalismans(extra) {
+  if (!extra || !state.game || state.game.id !== "elden-ring") return Promise.resolve(extra);
+  return loadAcquisition().then((acq) => {
+    const reforged = state.variant && state.variant.id === "reforged";
+    if (reforged) {
+      const map = acq["elden-ring-reforged"] || {};
+      const talismans = (extra.talismans || []).map((item) => {
+        const got = item && map[item.id];
+        if (!got || item.acquisition) return item;
+        return Object.assign({}, item, { acquisition: got });
+      });
+      return Object.assign({}, extra, { talismans });
+    }
+    const map = acq["elden-ring"] || {};
+    const byName = {};
+    Object.entries(map).forEach(([, entry]) => {
+      if (entry && entry.name) byName[normName(entry.name)] = entry;
+    });
+    if ((extra.talismans || []).length) {
+      const talismans = extra.talismans.map((item) => {
+        if (!item || item.acquisition) return item;
+        const got = map[item.id] || map[normName(item.name).replace(/ /g, "-")] || byName[normName(item.name)];
+        return got ? Object.assign({}, item, { acquisition: got }) : item;
+      });
+      return Object.assign({}, extra, { talismans });
+    }
+    const talismans = Object.entries(map).map(([slug, entry]) => ({
+      id: slug,
+      name: (entry && entry.name) || slug,
+      acquisition: entry
+    })).sort((a, b) => a.name.localeCompare(b.name));
+    return Object.assign({}, extra, {
+      talismans,
+      talismanGeneral: "Vanilla list from acquisition notes. Effects are not in this snapshot."
+    });
+  }).catch(() => extra);
+}
+
+function bossList(extra) {
+  return Array.isArray(extra) ? extra : [];
+}
+
+function bossHp(boss) {
+  if (!boss) return "";
+  if (boss.hp_text) return boss.hp_text;
+  if (boss.hp != null && boss.hp !== "") return String(boss.hp);
+  return "";
+}
+
+function bossTags(boss) {
+  const tags = [];
+  if (boss.required === "main-path") tags.push(el("span", { class: "tag", text: "Main path" }));
+  else if (boss.required === "optional") tags.push(el("span", { class: "tag", text: "Optional" }));
+  if (boss.dlc) tags.push(el("span", { class: "tag", text: "DLC" }));
+  return tags;
+}
+
+function bossPhoto(boss, large) {
+  if (!boss || !boss.image) {
+    return el("span", { class: large ? "boss-ph is-large" : "boss-ph", "aria-hidden": "true" });
+  }
+  return el("img", {
+    class: large ? "boss-photo is-large" : "boss-photo",
+    src: `./${boss.image}`,
+    alt: "",
+    width: large ? "320" : "96",
+    height: large ? "180" : "54",
+    loading: "lazy",
+    decoding: "async"
+  });
+}
+
+function bossChipRow(label, values) {
+  if (!Array.isArray(values) || !values.length) return null;
+  return el("div", { class: "boss-stat" }, [
+    el("span", { class: "filter-label", text: label }),
+    el("div", { class: "tag-row" }, values.map((value) => el("span", { class: "tag", text: value })))
+  ]);
+}
+
+function renderBosses(panel, ctx) {
+  const bosses = bossList(ctx.extra);
+  const prefs = ui();
+  const q = (prefs.bossQuery || "").trim().toLowerCase();
+  const filter = prefs.bossFilter || "";
+  const hasDlc = bosses.some((boss) => boss && boss.dlc);
+  const rows = bosses.filter((boss) => {
+    if (!boss) return false;
+    if (filter === "main-path" && boss.required !== "main-path") return false;
+    if (filter === "optional" && boss.required !== "optional") return false;
+    if (filter === "dlc" && !boss.dlc) return false;
+    if (!q) return true;
+    const hay = [boss.name, boss.location, boss.category, ...(boss.rewards || [])].filter(Boolean).join("\n").toLowerCase();
+    return hay.includes(q);
+  });
+  const groups = [];
+  const seen = new Map();
+  rows.forEach((boss) => {
+    const cat = boss.category || "Other";
+    if (!seen.has(cat)) {
+      const group = { name: cat, items: [] };
+      seen.set(cat, group);
+      groups.push(group);
+    }
+    seen.get(cat).items.push(boss);
+  });
+  const filtering = Boolean(q || filter);
+  const saved = prefs.bossOpen || {};
+  const reforgedNote = state.variant && state.variant.id === "reforged"
+    ? el("p", { class: "variant-banner boss-note", text: "Reforged changes some boss stats. This list is based on the unmodded game." })
+    : null;
+  fill(panel,
+    ...reforgedBanners(),
+    reforgedNote,
+    el("p", { class: "image-credit", text: typeof BOSS_CREDIT === "string" ? BOSS_CREDIT : "Fandom wiki, fair use, personal use, © FromSoftware/Bandai Namco/SIE" }),
+    el("div", { class: "controls" }, [
+      el("div", { class: "search" }, [
+        el("label", { class: "visually-hidden", for: "boss-q", text: "Search bosses" }),
+        (() => {
+          const input = el("input", {
+            id: "boss-q",
+            type: "search",
+            placeholder: "Search bosses, locations, rewards",
+            autocomplete: "off"
+          });
+          input.value = prefs.bossQuery || "";
+          return input;
+        })()
+      ]),
+      el("div", { class: "chip-row", role: "group", "aria-label": "Boss filters" }, [
+        chip("data-boss-filter", "", "All", !filter),
+        chip("data-boss-filter", "main-path", "Main path", filter === "main-path"),
+        chip("data-boss-filter", "optional", "Optional", filter === "optional"),
+        hasDlc ? chip("data-boss-filter", "dlc", "DLC", filter === "dlc") : null
+      ]),
+      el("p", { class: "section-count", text: `${rows.length} ${rows.length === 1 ? "boss" : "bosses"}` })
+    ]),
+    groups.length
+      ? el("div", { class: "system-list", id: "boss-groups" }, groups.map((group, index) => {
+          const open = filtering || (Object.prototype.hasOwnProperty.call(saved, group.name) ? saved[group.name] : index === 0);
+          const details = el("details", { class: "system-block boss-group", "data-cat": group.name });
+          details.open = open;
+          details.append(
+            el("summary", {}, [
+              document.createTextNode(group.name),
+              el("span", { class: "muted", text: String(group.items.length) })
+            ]),
+            el("div", { class: "boss-list" }, group.items.map((boss) => el("button", {
+              type: "button",
+              class: "boss-row",
+              "data-boss": boss.id || ""
+            }, [
+              bossPhoto(boss, false),
+              el("span", { class: "boss-copy" }, [
+                el("span", { class: "boss-name", text: boss.name || "Boss" }),
+                boss.location ? el("span", { class: "muted", text: boss.location }) : null,
+                el("span", { class: "tag-row" }, bossTags(boss))
+              ])
+            ])))
+          );
+          return details;
+        }))
+      : el("p", { class: "empty", text: "Nothing matches." })
+  );
+}
+
+function bossSheet(extra, id) {
+  const boss = bossList(extra).find((entry) => entry && entry.id === id);
+  if (!boss) return null;
+  const hp = bossHp(boss);
+  const weak = bossChipRow("Weak to", boss.weak_to);
+  const resists = bossChipRow("Resists", boss.resists);
+  const immune = bossChipRow("Immune", boss.immune);
+  const source = sourceAnchor(boss.source_url);
+  return el("article", {}, [
+    bossPhoto(boss, true),
+    el("p", { class: "sheet-kicker", text: boss.category || "Boss" }),
+    el("h2", { id: "sheet-title", text: boss.name || "Boss" }),
+    el("div", { class: "tag-row" }, bossTags(boss)),
+    boss.location ? el("p", { text: boss.location }) : null,
+    hp ? el("section", { class: "block" }, [el("h3", { text: "HP" }), el("p", { text: hp })]) : null,
+    weak || resists || immune
+      ? el("section", { class: "block" }, [weak, resists, immune])
+      : el("p", { class: "muted", text: "No data" }),
+    Array.isArray(boss.strengths) && boss.strengths.length
+      ? el("section", { class: "block" }, [
+          el("h3", { text: "Dangerous because" }),
+          el("ul", { class: "clean" }, boss.strengths.map((line) => el("li", { text: line })))
+        ])
+      : null,
+    Array.isArray(boss.strategy) && boss.strategy.length
+      ? el("section", { class: "block" }, [
+          el("h3", { text: "Strategy" }),
+          el("ul", { class: "clean" }, boss.strategy.map((line) => el("li", { text: line })))
+        ])
+      : null,
+    Array.isArray(boss.rewards) && boss.rewards.length
+      ? el("section", { class: "block" }, [
+          el("h3", { text: "Rewards" }),
+          el("ul", { class: "clean" }, boss.rewards.map((line) => el("li", { text: line })))
+        ])
+      : null,
+    boss.note ? el("p", { class: "muted", text: boss.note }) : null,
+    source ? el("p", { class: "acq-source" }, [source]) : null
+  ]);
+}
+
+function onBossClick(event) {
+  const filter = event.target.closest("[data-boss-filter]");
+  if (filter) {
+    ui().bossFilter = filter.dataset.bossFilter || "";
+    render({ section: "bosses", extra: state.extra, route: parseHash() });
+    return;
+  }
+  const boss = event.target.closest("[data-boss]");
+  if (boss && boss.dataset.boss) setHash(hashFor(state.game.id, "bosses", boss.dataset.boss));
+}
+
+function onBossInput(event) {
+  if (event.target.id !== "boss-q") return;
+  ui().bossQuery = event.target.value;
+  render({ section: "bosses", extra: state.extra, route: parseHash() });
+  const box = document.getElementById("boss-q");
+  if (box) {
+    box.focus();
+    const end = box.value.length;
+    if (box.setSelectionRange) box.setSelectionRange(end, end);
+  }
+}
+
+function onBossToggle(event) {
+  const details = event.target;
+  if (!details || !details.classList || !details.classList.contains("boss-group")) return;
+  const prefs = ui();
+  if (prefs.bossQuery || prefs.bossFilter) return;
+  if (!prefs.bossOpen) prefs.bossOpen = {};
+  prefs.bossOpen[details.dataset.cat || ""] = details.open;
 }
 
 function equipmentNotes(data) {

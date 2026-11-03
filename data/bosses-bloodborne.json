@@ -1,0 +1,1292 @@
+[
+  {
+    "id": "cleric-beast",
+    "name": "Cleric Beast",
+    "category": "Optional",
+    "required": "optional",
+    "location": "Central Yharnam – Great Bridge",
+    "dlc": false,
+    "hp": 3015,
+    "hp_text": "3,015 (NG) / 24,000 (max NG+)",
+    "weak_to": [
+      "Serrated",
+      "Fire"
+    ],
+    "resists": [
+      "Bolt",
+      "Arcane"
+    ],
+    "immune": [
+      "Poison",
+      "Frenzy"
+    ],
+    "weak_source": "weak/resist from wiki infobox defense values + wiki strategy/notes text",
+    "strengths": [
+      "Long-reach claw swipes and grabs",
+      "Big leaping slams"
+    ],
+    "strategy": [
+      "Stay at its rear legs and hit them",
+      "Hit the arms or head to stagger it",
+      "Fire and serrated weapons work well"
+    ],
+    "rewards": [
+      "Sword Hunter Badge"
+    ],
+    "note": null,
+    "image": "images/bosses/bloodborne/cleric-beast.webp",
+    "image_credit": "Fandom wiki, fair use, personal use, © FromSoftware/Bandai Namco/SIE",
+    "source_url": "https://bloodborne.fandom.com/wiki/Cleric_Beast"
+  },
+  {
+    "id": "father-gascoigne",
+    "name": "Father Gascoigne",
+    "category": "Main story",
+    "required": "main-path",
+    "location": "Central Yharnam – Tomb of Oedon",
+    "dlc": false,
+    "hp": 2031,
+    "hp_text": "2,031 (NG) / 13,219 (max NG+)",
+    "weak_to": [
+      "Fire"
+    ],
+    "resists": [
+      "Bolt",
+      "Arcane"
+    ],
+    "immune": [
+      "Poison",
+      "Frenzy"
+    ],
+    "weak_source": "weak/resist from wiki infobox defense values + wiki strategy/notes text",
+    "strengths": [
+      "Gun and axe pressure",
+      "Turns into a fast beast in phase three"
+    ],
+    "strategy": [
+      "Use the Tiny Music Box to stun him",
+      "Fire and Molotovs are effective",
+      "Use the gravestones to block shots"
+    ],
+    "rewards": [
+      "Oedon Tomb Key"
+    ],
+    "note": "Transforms into a beast at low HP; fire weakness rises in beast form.",
+    "image": "images/bosses/bloodborne/father-gascoigne.webp",
+    "image_credit": "Fandom wiki, fair use, personal use, © FromSoftware/Bandai Namco/SIE",
+    "source_url": "https://bloodborne.fandom.com/wiki/Father_Gascoigne"
+  },
+  {
+    "id": "vicar-amelia",
+    "name": "Vicar Amelia",
+    "category": "Main story",
+    "required": "main-path",
+    "location": "Cathedral Ward – Grand Cathedral",
+    "dlc": false,
+    "hp": 5367,
+    "hp_text": "5,367 (NG) / 25,046 (max NG+)",
+    "weak_to": [
+      "Fire",
+      "Serrated"
+    ],
+    "resists": [
+      "Bolt",
+      "Arcane"
+    ],
+    "immune": [
+      "Poison",
+      "Frenzy"
+    ],
+    "weak_source": "weak/resist from wiki infobox defense values + wiki strategy/notes text",
+    "strengths": [
+      "Big beast with fast swipes",
+      "Heals herself mid-fight"
+    ],
+    "strategy": [
+      "Fire and serrated damage do extra",
+      "Hit her head or arms to stagger",
+      "Interrupt her healing prayer with heavy hits"
+    ],
+    "rewards": [
+      "Gold Pendant"
+    ],
+    "note": null,
+    "image": "images/bosses/bloodborne/vicar-amelia.webp",
+    "image_credit": "Fandom wiki, fair use, personal use, © FromSoftware/Bandai Namco/SIE",
+    "source_url": "https://bloodborne.fandom.com/wiki/Vicar_Amelia"
+  },
+  {
+    "id": "blood-starved-beast",
+    "name": "Blood-starved Beast",
+    "category": "Optional",
+    "required": "optional",
+    "location": "Old Yharnam – Church of the Good Chalice",
+    "dlc": false,
+    "hp": 3470,
+    "hp_text": "3,470 (Old Yharnam)",
+    "weak_to": [
+      "Fire"
+    ],
+    "resists": [
+      "Bolt",
+      "Arcane"
+    ],
+    "immune": [
+      "Poison"
+    ],
+    "weak_source": "weak/resist from wiki infobox defense values + wiki strategy/notes text",
+    "strengths": [
+      "Very aggressive and fast",
+      "Inflicts poison late in the fight"
+    ],
+    "strategy": [
+      "Bring Antidotes",
+      "Stay at its side and punish",
+      "Fire and Molotovs are effective"
+    ],
+    "rewards": [
+      "Bloodtinge Gemstone",
+      "Pthumeru Chalice"
+    ],
+    "note": "Also appears as a Chalice Dungeon boss.",
+    "image": "images/bosses/bloodborne/blood-starved-beast.webp",
+    "image_credit": "Fandom wiki, fair use, personal use, © FromSoftware/Bandai Namco/SIE",
+    "source_url": "https://bloodborne.fandom.com/wiki/Blood-starved_Beast"
+  },
+  {
+    "id": "witch-of-hemwick",
+    "name": "The Witch of Hemwick",
+    "category": "Optional",
+    "required": "optional",
+    "location": "Hemwick Charnel Lane – Witch's Abode",
+    "dlc": false,
+    "hp": 2611,
+    "hp_text": null,
+    "weak_to": [],
+    "resists": [],
+    "immune": [],
+    "weak_source": null,
+    "strengths": [
+      "Two witches that turn invisible",
+      "Summon Mad Ones adds"
+    ],
+    "strategy": [
+      "Kill the visible witch first",
+      "Use AoE attacks on adds",
+      "Corner them to keep them visible"
+    ],
+    "rewards": [
+      "Bloodshot Eyeball×4"
+    ],
+    "note": null,
+    "image": "images/bosses/bloodborne/witch-of-hemwick.webp",
+    "image_credit": "Fandom wiki, fair use, personal use, © FromSoftware/Bandai Namco/SIE",
+    "source_url": "https://bloodborne.fandom.com/wiki/The_Witch_of_Hemwick"
+  },
+  {
+    "id": "shadow-of-yharnam",
+    "name": "Shadow of Yharnam",
+    "category": "Main story",
+    "required": "main-path",
+    "location": "Forbidden Woods – end of the woods",
+    "dlc": false,
+    "hp": null,
+    "hp_text": "3,645 (sword) / 2,302 (sword & candle) / 2,046 (mace & fireball)",
+    "weak_to": [
+      "Bolt",
+      "Arcane"
+    ],
+    "resists": [],
+    "immune": [],
+    "weak_source": "weak/resist from wiki infobox defense values + wiki strategy/notes text",
+    "strengths": [
+      "Three shadows with sword, candle and mace",
+      "Fireballs and summoned snakes"
+    ],
+    "strategy": [
+      "Focus one shadow at a time",
+      "Use pillars to block projectiles",
+      "Bolt and arcane are effective"
+    ],
+    "rewards": [
+      "Blood Rapture",
+      "Madman's Knowledge"
+    ],
+    "note": "Three hooded hunters; per-Shadow HP differs (sword, candle, mace).",
+    "image": "images/bosses/bloodborne/shadow-of-yharnam.webp",
+    "image_credit": "Fandom wiki, fair use, personal use, © FromSoftware/Bandai Namco/SIE",
+    "source_url": "https://bloodborne.fandom.com/wiki/Shadow_of_Yharnam"
+  },
+  {
+    "id": "rom-the-vacuous-spider",
+    "name": "Rom, the Vacuous Spider",
+    "category": "Main story",
+    "required": "main-path",
+    "location": "Byrgenwerth – Moonside Lake",
+    "dlc": false,
+    "hp": 5058,
+    "hp_text": "5,058 (NG) / 10,594 (max NG+)",
+    "weak_to": [
+      "Fire",
+      "Bolt",
+      "Arcane"
+    ],
+    "resists": [],
+    "immune": [
+      "Poison",
+      "Frenzy"
+    ],
+    "weak_source": "weak/resist from wiki infobox defense values + wiki strategy/notes text",
+    "strengths": [
+      "Arcane meteor showers",
+      "Summons spider adds"
+    ],
+    "strategy": [
+      "Hit Rom directly; spiders are a distraction",
+      "Stay close to avoid meteors",
+      "Fire and arcane are effective"
+    ],
+    "rewards": [
+      "Kin Coldblood (12)",
+      "Lower Pthumeru Root Chalice"
+    ],
+    "note": "Also appears in a pre-set Chalice Dungeon.",
+    "image": "images/bosses/bloodborne/rom-the-vacuous-spider.webp",
+    "image_credit": "Fandom wiki, fair use, personal use, © FromSoftware/Bandai Namco/SIE",
+    "source_url": "https://bloodborne.fandom.com/wiki/Rom,_the_Vacuous_Spider"
+  },
+  {
+    "id": "darkbeast-paarl",
+    "name": "Darkbeast Paarl",
+    "category": "Optional",
+    "required": "optional",
+    "location": "Old Yharnam – Graveyard of the Darkbeast",
+    "dlc": false,
+    "hp": 4552,
+    "hp_text": "4,552 (NG) / 18,014 (max NG+)",
+    "weak_to": [
+      "Arcane",
+      "Fire",
+      "Serrated"
+    ],
+    "resists": [
+      "Bolt"
+    ],
+    "immune": [
+      "Poison",
+      "Frenzy"
+    ],
+    "weak_source": "weak/resist from wiki infobox defense values + wiki strategy/notes text",
+    "strengths": [
+      "Fast, agile and aggressive",
+      "Bolt damage on nearly every attack",
+      "Electric aura recharges below two-thirds HP"
+    ],
+    "strategy": [
+      "Bolt-resistant attire (Henryk's set) helps",
+      "Stay under or behind it and hit the legs",
+      "Keep pressure so it can't recharge its aura"
+    ],
+    "rewards": [
+      "Spark Hunter Badge"
+    ],
+    "note": "A Loran Darkbeast variant appears in Chalice Dungeons.",
+    "image": "images/bosses/bloodborne/darkbeast-paarl.webp",
+    "image_credit": "Fandom wiki, fair use, personal use, © FromSoftware/Bandai Namco/SIE",
+    "source_url": "https://bloodborne.fandom.com/wiki/Darkbeast"
+  },
+  {
+    "id": "the-one-reborn",
+    "name": "The One Reborn",
+    "category": "Main story",
+    "required": "main-path",
+    "location": "Yahar'gul, Unseen Village (Blood Moon)",
+    "dlc": false,
+    "hp": 10375,
+    "hp_text": "10,375 (NG) / 19,537 (max NG+)",
+    "weak_to": [
+      "Fire",
+      "Bolt"
+    ],
+    "resists": [
+      "Arcane"
+    ],
+    "immune": [
+      "Poison",
+      "Frenzy"
+    ],
+    "weak_source": "weak/resist from wiki infobox defense values + wiki strategy/notes text",
+    "strengths": [
+      "Huge mass with slow attacks",
+      "Bell maidens cast spells"
+    ],
+    "strategy": [
+      "Kill the bell maidens first",
+      "Hit its legs",
+      "Fire and bolt are effective"
+    ],
+    "rewards": [
+      "Yellow Backbone x3"
+    ],
+    "note": null,
+    "image": "images/bosses/bloodborne/the-one-reborn.webp",
+    "image_credit": "Fandom wiki, fair use, personal use, © FromSoftware/Bandai Namco/SIE",
+    "source_url": "https://bloodborne.fandom.com/wiki/The_One_Reborn"
+  },
+  {
+    "id": "amygdala",
+    "name": "Amygdala",
+    "category": "Optional",
+    "required": "optional",
+    "location": "Nightmare Frontier",
+    "dlc": false,
+    "hp": 6404,
+    "hp_text": "6,404 (Nightmare Frontier)",
+    "weak_to": [
+      "Fire",
+      "Bolt",
+      "Arcane"
+    ],
+    "resists": [],
+    "immune": [
+      "Poison",
+      "Frenzy"
+    ],
+    "weak_source": "weak/resist from wiki infobox defense values",
+    "strengths": [
+      "Long arms with slams",
+      "Laser beams"
+    ],
+    "strategy": [
+      "Hit its arms to break them",
+      "Stay behind it",
+      "Fire, bolt and arcane are effective"
+    ],
+    "rewards": [
+      "Ailing Loran Chalice"
+    ],
+    "note": "Other Amygdalae appear in Chalice Dungeons.",
+    "image": "images/bosses/bloodborne/amygdala.webp",
+    "image_credit": "Fandom wiki, fair use, personal use, © FromSoftware/Bandai Namco/SIE",
+    "source_url": "https://bloodborne.fandom.com/wiki/Amygdala"
+  },
+  {
+    "id": "micolash-host-of-the-nightmare",
+    "name": "Micolash, Host of the Nightmare",
+    "category": "Main story",
+    "required": "main-path",
+    "location": "Nightmare of Mensis – Mergo's Loft",
+    "dlc": false,
+    "hp": 5250,
+    "hp_text": null,
+    "weak_to": [
+      "Fire",
+      "Bolt",
+      "Blunt",
+      "Thrust"
+    ],
+    "resists": [
+      "Arcane"
+    ],
+    "immune": [],
+    "weak_source": "weak/resist from wiki infobox defense values + wiki strategy/notes text",
+    "strengths": [
+      "Runs through a maze",
+      "Casts arcane spells"
+    ],
+    "strategy": [
+      "Chase him without losing sight",
+      "Hit him when cornered",
+      "Physical damage works well"
+    ],
+    "rewards": [
+      "Mensis Cage"
+    ],
+    "note": null,
+    "image": "images/bosses/bloodborne/micolash-host-of-the-nightmare.webp",
+    "image_credit": "Fandom wiki, fair use, personal use, © FromSoftware/Bandai Namco/SIE",
+    "source_url": "https://bloodborne.fandom.com/wiki/Micolash,_Host_of_the_Nightmare"
+  },
+  {
+    "id": "mergos-wet-nurse",
+    "name": "Mergo's Wet Nurse",
+    "category": "Main story",
+    "required": "main-path",
+    "location": "Nightmare of Mensis – Mergo's Loft top",
+    "dlc": false,
+    "hp": 14081,
+    "hp_text": null,
+    "weak_to": [
+      "Bolt",
+      "Arcane",
+      "Poison",
+      "Fire"
+    ],
+    "resists": [],
+    "immune": [],
+    "weak_source": "weak/resist from wiki infobox defense values + wiki strategy/notes text",
+    "strengths": [
+      "Fast swords",
+      "Clone in phase two"
+    ],
+    "strategy": [
+      "Stay close and attack after combos",
+      "Watch for the clone's attacks",
+      "Bolt and arcane are effective"
+    ],
+    "rewards": [
+      "Third Umbilical Cord"
+    ],
+    "note": null,
+    "image": "images/bosses/bloodborne/mergos-wet-nurse.webp",
+    "image_credit": "Fandom wiki, fair use, personal use, © FromSoftware/Bandai Namco/SIE",
+    "source_url": "https://bloodborne.fandom.com/wiki/Mergo's_Wet_Nurse"
+  },
+  {
+    "id": "celestial-emissary",
+    "name": "Celestial Emissary",
+    "category": "Optional",
+    "required": "optional",
+    "location": "Upper Cathedral Ward – Lumenflower Gardens",
+    "dlc": false,
+    "hp": 2764,
+    "hp_text": "2,764 (Upper Cathedral Ward)",
+    "weak_to": [
+      "Bolt",
+      "Thrust",
+      "Fire",
+      "Arcane",
+      "Blood"
+    ],
+    "resists": [],
+    "immune": [],
+    "weak_source": "weak/resist from wiki infobox defense values + wiki strategy/notes text",
+    "strengths": [
+      "Many small Celestial Children adds",
+      "Big emissary grows tall later"
+    ],
+    "strategy": [
+      "Find the large glowing one",
+      "Ignore the small ones",
+      "Bolt and fire are effective"
+    ],
+    "rewards": [
+      "Communion rune (+4)"
+    ],
+    "note": "Also appears in the Isz Gravestone chalice.",
+    "image": "images/bosses/bloodborne/celestial-emissary.webp",
+    "image_credit": "Fandom wiki, fair use, personal use, © FromSoftware/Bandai Namco/SIE",
+    "source_url": "https://bloodborne.fandom.com/wiki/Celestial_Emissary"
+  },
+  {
+    "id": "ebrietas-daughter-of-the-cosmos",
+    "name": "Ebrietas, Daughter of the Cosmos",
+    "category": "Optional",
+    "required": "optional",
+    "location": "Upper Cathedral Ward – Altar of Despair",
+    "dlc": false,
+    "hp": 12493,
+    "hp_text": "12,493 (Altar of Despair)",
+    "weak_to": [
+      "Bolt",
+      "Thrust",
+      "Fire",
+      "Arcane",
+      "Blood"
+    ],
+    "resists": [
+      "Blunt"
+    ],
+    "immune": [
+      "Poison",
+      "Frenzy"
+    ],
+    "weak_source": "weak/resist from wiki infobox defense values + wiki strategy/notes text",
+    "strengths": [
+      "Arcane blasts and charges",
+      "Large tentacles"
+    ],
+    "strategy": [
+      "Stay at her side",
+      "Avoid arcane blasts",
+      "Bolt, thrust and fire are effective"
+    ],
+    "rewards": [
+      "Great Isz Chalice"
+    ],
+    "note": "Also appears in the Isz Gravestone chalice.",
+    "image": "images/bosses/bloodborne/ebrietas-daughter-of-the-cosmos.webp",
+    "image_credit": "Fandom wiki, fair use, personal use, © FromSoftware/Bandai Namco/SIE",
+    "source_url": "https://bloodborne.fandom.com/wiki/Ebrietas,_Daughter_of_the_Cosmos"
+  },
+  {
+    "id": "martyr-logarius",
+    "name": "Martyr Logarius",
+    "category": "Optional",
+    "required": "optional",
+    "location": "Cainhurst Castle – rooftop",
+    "dlc": false,
+    "hp": 9081,
+    "hp_text": "9,081 (NG) / 23,883 (max NG+)",
+    "weak_to": [],
+    "resists": [
+      "Bolt",
+      "Arcane"
+    ],
+    "immune": [
+      "Poison",
+      "Frenzy"
+    ],
+    "weak_source": "weak/resist from wiki infobox defense values",
+    "strengths": [
+      "Homing arcane orbs and skull spells",
+      "Large self-buff that starts phase two"
+    ],
+    "strategy": [
+      "Rush him and hit between casts",
+      "Charge-attack his back during the buff to cancel it",
+      "Weave between the rows of skulls"
+    ],
+    "rewards": [
+      "Crown of Illusions (on the ground after the fight)"
+    ],
+    "note": null,
+    "image": "images/bosses/bloodborne/martyr-logarius.webp",
+    "image_credit": "Fandom wiki, fair use, personal use, © FromSoftware/Bandai Namco/SIE",
+    "source_url": "https://bloodborne.fandom.com/wiki/Martyr_Logarius"
+  },
+  {
+    "id": "gehrman-the-first-hunter",
+    "name": "Gehrman, the First Hunter",
+    "category": "Optional",
+    "required": "optional",
+    "location": "Hunter's Dream (ending choice)",
+    "dlc": false,
+    "hp": 14293,
+    "hp_text": null,
+    "weak_to": [
+      "Fire",
+      "Bolt",
+      "Arcane"
+    ],
+    "resists": [],
+    "immune": [
+      "Poison",
+      "Frenzy"
+    ],
+    "weak_source": "weak/resist from wiki infobox defense values",
+    "strengths": [
+      "Very fast Burial Blade scythe and sword",
+      "Blunderbuss shots and quick dashes",
+      "Four phases"
+    ],
+    "strategy": [
+      "Learn his gun-parry openings",
+      "Back off and shoot to interrupt charged slashes",
+      "Fire and bolt are effective"
+    ],
+    "rewards": [
+      "Old Hunter Badge"
+    ],
+    "note": "Only fought if you refuse his offer; required for two of the three endings.",
+    "image": "images/bosses/bloodborne/gehrman-the-first-hunter.webp",
+    "image_credit": "Fandom wiki, fair use, personal use, © FromSoftware/Bandai Namco/SIE",
+    "source_url": "https://bloodborne.fandom.com/wiki/Gehrman,_the_First_Hunter"
+  },
+  {
+    "id": "moon-presence",
+    "name": "Moon Presence",
+    "category": "Optional",
+    "required": "optional",
+    "location": "Hunter's Dream (secret ending)",
+    "dlc": false,
+    "hp": 8909,
+    "hp_text": null,
+    "weak_to": [
+      "Fire",
+      "Bolt",
+      "Arcane"
+    ],
+    "resists": [],
+    "immune": [
+      "Poison",
+      "Frenzy"
+    ],
+    "weak_source": "weak/resist from wiki infobox defense values",
+    "strengths": [
+      "Paleblood drains your HP",
+      "Fast claws"
+    ],
+    "strategy": [
+      "Heal immediately after the drain",
+      "Stay at its side",
+      "Fire and arcane are effective"
+    ],
+    "rewards": [],
+    "note": "Needs three One Third of Umbilical Cord consumed.",
+    "image": "images/bosses/bloodborne/moon-presence.webp",
+    "image_credit": "Fandom wiki, fair use, personal use, © FromSoftware/Bandai Namco/SIE",
+    "source_url": "https://bloodborne.fandom.com/wiki/Moon_Presence"
+  },
+  {
+    "id": "ludwig",
+    "name": "Ludwig, the Accursed / Holy Blade",
+    "category": "The Old Hunters (DLC)",
+    "required": "optional",
+    "location": "Hunter's Nightmare – Underground Corpse Pile",
+    "dlc": true,
+    "hp": 16658,
+    "hp_text": "16,658 (NG) / 26,737 (max NG+)",
+    "weak_to": [
+      "Bolt",
+      "Fire",
+      "Arcane",
+      "Serrated"
+    ],
+    "resists": [],
+    "immune": [
+      "Poison",
+      "Frenzy"
+    ],
+    "weak_source": "weak/resist from wiki infobox defense values + wiki strategy/notes text",
+    "strengths": [
+      "Huge beast with charges",
+      "Holy moonlight sword in phase two"
+    ],
+    "strategy": [
+      "Stay at its side",
+      "Hit the legs",
+      "Bolt and fire are effective"
+    ],
+    "rewards": [
+      "Guidance rune",
+      "Holy Moonlight Sword"
+    ],
+    "note": "Weaknesses listed are for the beast phase; phase 2 is a human swordsman.",
+    "image": "images/bosses/bloodborne/ludwig.webp",
+    "image_credit": "Fandom wiki, fair use, personal use, © FromSoftware/Bandai Namco/SIE",
+    "source_url": "https://bloodborne.fandom.com/wiki/Ludwig"
+  },
+  {
+    "id": "laurence-the-first-vicar",
+    "name": "Laurence, the First Vicar",
+    "category": "The Old Hunters (DLC)",
+    "required": "optional",
+    "location": "Hunter's Nightmare – Grand Cathedral",
+    "dlc": true,
+    "hp": 21243,
+    "hp_text": "21,243 (NG) / 33,805 (max NG+)",
+    "weak_to": [
+      "Serrated"
+    ],
+    "resists": [
+      "Fire",
+      "Bolt",
+      "Arcane"
+    ],
+    "immune": [
+      "Poison",
+      "Frenzy"
+    ],
+    "weak_source": "weak/resist from wiki infobox defense values + wiki strategy/notes text",
+    "strengths": [
+      "Fire attacks and lava",
+      "Heavy slams"
+    ],
+    "strategy": [
+      "Use fire resistance gear",
+      "Hit the legs",
+      "Serrated weapons work well"
+    ],
+    "rewards": [
+      "Beast's Embrace"
+    ],
+    "note": null,
+    "image": "images/bosses/bloodborne/laurence-the-first-vicar.webp",
+    "image_credit": "Fandom wiki, fair use, personal use, © FromSoftware/Bandai Namco/SIE",
+    "source_url": "https://bloodborne.fandom.com/wiki/Laurence,_the_First_Vicar"
+  },
+  {
+    "id": "living-failures",
+    "name": "Living Failures",
+    "category": "The Old Hunters (DLC)",
+    "required": "optional",
+    "location": "Research Hall – Lumenwood Garden",
+    "dlc": true,
+    "hp": 20646,
+    "hp_text": "20,646 (NG) / 30,072 (max NG+)",
+    "weak_to": [
+      "Thrust",
+      "Fire",
+      "Bolt",
+      "Blood"
+    ],
+    "resists": [],
+    "immune": [],
+    "weak_source": "weak/resist from wiki infobox defense values",
+    "strengths": [
+      "Meteor storms",
+      "Multiple enemies"
+    ],
+    "strategy": [
+      "Focus one at a time",
+      "Avoid meteors",
+      "Thrust and fire are effective"
+    ],
+    "rewards": [
+      "Astral Clocktower Key"
+    ],
+    "note": null,
+    "image": "images/bosses/bloodborne/living-failures.webp",
+    "image_credit": "Fandom wiki, fair use, personal use, © FromSoftware/Bandai Namco/SIE",
+    "source_url": "https://bloodborne.fandom.com/wiki/Living_Failures"
+  },
+  {
+    "id": "lady-maria",
+    "name": "Lady Maria of the Astral Clocktower",
+    "category": "The Old Hunters (DLC)",
+    "required": "optional",
+    "location": "Research Hall – Astral Clocktower",
+    "dlc": true,
+    "hp": 14081,
+    "hp_text": "14,081 (NG) / 20,514 (max NG+)",
+    "weak_to": [
+      "Arcane",
+      "Bolt"
+    ],
+    "resists": [],
+    "immune": [
+      "Poison",
+      "Frenzy"
+    ],
+    "weak_source": "weak/resist from wiki infobox defense values + wiki strategy/notes text",
+    "strengths": [
+      "Fast dual swords",
+      "Blood fire in phase three"
+    ],
+    "strategy": [
+      "Learn parry timing",
+      "Punish after combos",
+      "Arcane and bolt are effective"
+    ],
+    "rewards": [
+      "Celestial Dial"
+    ],
+    "note": null,
+    "image": "images/bosses/bloodborne/lady-maria.webp",
+    "image_credit": "Fandom wiki, fair use, personal use, © FromSoftware/Bandai Namco/SIE",
+    "source_url": "https://bloodborne.fandom.com/wiki/Lady_Maria_of_the_Astral_Clocktower"
+  },
+  {
+    "id": "orphan-of-kos",
+    "name": "Orphan of Kos",
+    "category": "The Old Hunters (DLC)",
+    "required": "optional",
+    "location": "Fishing Hamlet – Coast",
+    "dlc": true,
+    "hp": 19217,
+    "hp_text": "19,217 (NG) / 25,757 (max NG+)",
+    "weak_to": [
+      "Bolt",
+      "Fire"
+    ],
+    "resists": [
+      "Arcane"
+    ],
+    "immune": [
+      "Poison",
+      "Frenzy"
+    ],
+    "weak_source": "weak/resist from wiki infobox defense values + wiki strategy/notes text",
+    "strengths": [
+      "Fast placenta attacks",
+      "Lightning in phase two"
+    ],
+    "strategy": [
+      "Stay close and punish",
+      "Dodge into attacks",
+      "Bolt and fire are effective"
+    ],
+    "rewards": [
+      "Kos Parasite"
+    ],
+    "note": null,
+    "image": "images/bosses/bloodborne/orphan-of-kos.webp",
+    "image_credit": "Fandom wiki, fair use, personal use, © FromSoftware/Bandai Namco/SIE",
+    "source_url": "https://bloodborne.fandom.com/wiki/Orphan_of_Kos"
+  },
+  {
+    "id": "abhorrent-beast",
+    "name": "Abhorrent Beast",
+    "category": "Chalice Dungeon",
+    "required": "optional",
+    "location": "Chalice Dungeons",
+    "dlc": false,
+    "hp": null,
+    "hp_text": "Varies by Chalice Dungeon depth",
+    "weak_to": [
+      "Fire",
+      "Poison",
+      "Arcane"
+    ],
+    "resists": [
+      "Bolt"
+    ],
+    "immune": [
+      "Frenzy"
+    ],
+    "weak_source": "weak/resist from wiki infobox defense values + wiki strategy/notes text",
+    "strengths": [
+      "Very aggressive, mostly bolt attacks",
+      "Knockdowns followed by slams",
+      "Powers up with electricity"
+    ],
+    "strategy": [
+      "Poison Knives work very well",
+      "Bolt-resistant attire helps",
+      "Punish after its three-hit combo or slam"
+    ],
+    "rewards": [
+      "Lower Loran Chalice"
+    ],
+    "note": "Also a regular enemy in Forbidden Woods/Oedon Chapel.",
+    "image": "images/bosses/bloodborne/abhorrent-beast.webp",
+    "image_credit": "Fandom wiki, fair use, personal use, © FromSoftware/Bandai Namco/SIE",
+    "source_url": "https://bloodborne.fandom.com/wiki/Abhorrent_Beast"
+  },
+  {
+    "id": "beast-possessed-soul",
+    "name": "Beast-possessed Soul",
+    "category": "Chalice Dungeon",
+    "required": "optional",
+    "location": "Chalice Dungeons",
+    "dlc": false,
+    "hp": null,
+    "hp_text": "Varies by Chalice Dungeon depth",
+    "weak_to": [
+      "Serrated",
+      "Fire",
+      "Bolt",
+      "Arcane",
+      "Poison"
+    ],
+    "resists": [],
+    "immune": [],
+    "weak_source": "weak/resist from wiki infobox defense values + wiki strategy/notes text",
+    "strengths": [
+      "Fireballs with long windups",
+      "Rapid slash strings ending in a headbutt",
+      "Grab that buffs it"
+    ],
+    "strategy": [
+      "Move behind it to dodge fireballs",
+      "Use pillars to block its attacks",
+      "Attack while it screams after a grab"
+    ],
+    "rewards": [],
+    "note": null,
+    "image": "images/bosses/bloodborne/beast-possessed-soul.webp",
+    "image_credit": "Fandom wiki, fair use, personal use, © FromSoftware/Bandai Namco/SIE",
+    "source_url": "https://bloodborne.fandom.com/wiki/Beast-possessed_Soul"
+  },
+  {
+    "id": "bloodletting-beast",
+    "name": "Bloodletting Beast",
+    "category": "Chalice Dungeon",
+    "required": "optional",
+    "location": "Chalice Dungeons",
+    "dlc": false,
+    "hp": null,
+    "hp_text": "Varies by Chalice Dungeon depth",
+    "weak_to": [
+      "Serrated",
+      "Fire",
+      "Arcane"
+    ],
+    "resists": [],
+    "immune": [
+      "Poison",
+      "Frenzy"
+    ],
+    "weak_source": "weak/resist from wiki infobox defense values + wiki strategy/notes text",
+    "strengths": [
+      "Very aggressive with long-range punches",
+      "Headless version spits poison parasites"
+    ],
+    "strategy": [
+      "Stay in front and leave room to back off",
+      "Hit the arms to stagger, then go for the head",
+      "Bring Antidotes for the headless version"
+    ],
+    "rewards": [
+      "Pthumeru Ihyll Root Chalice"
+    ],
+    "note": null,
+    "image": "images/bosses/bloodborne/bloodletting-beast.webp",
+    "image_credit": "Fandom wiki, fair use, personal use, © FromSoftware/Bandai Namco/SIE",
+    "source_url": "https://bloodborne.fandom.com/wiki/Bloodletting_Beast"
+  },
+  {
+    "id": "brainsucker",
+    "name": "Brainsucker",
+    "category": "Chalice Dungeon",
+    "required": "optional",
+    "location": "Chalice Dungeons",
+    "dlc": false,
+    "hp": null,
+    "hp_text": "Varies by Chalice Dungeon depth",
+    "weak_to": [
+      "Bolt",
+      "Thrust",
+      "Fire",
+      "Arcane",
+      "Blood"
+    ],
+    "resists": [],
+    "immune": [],
+    "weak_source": "weak/resist from wiki infobox defense values + wiki strategy/notes text",
+    "strengths": [
+      "Grab drains your Insight",
+      "Hooded version paralyzes with energy blasts",
+      "Resists most physical damage"
+    ],
+    "strategy": [
+      "Sidestep the lunge; don't backstep",
+      "Use bolt or fire elemental damage",
+      "Thrust weapons are effective"
+    ],
+    "rewards": [],
+    "note": null,
+    "image": "images/bosses/bloodborne/brainsucker.webp",
+    "image_credit": "Fandom wiki, fair use, personal use, © FromSoftware/Bandai Namco/SIE",
+    "source_url": "https://bloodborne.fandom.com/wiki/Brainsucker"
+  },
+  {
+    "id": "forgotten-madman",
+    "name": "Forgotten Madman",
+    "category": "Chalice Dungeon",
+    "required": "optional",
+    "location": "Chalice Dungeons",
+    "dlc": false,
+    "hp": null,
+    "hp_text": "Varies by Chalice Dungeon depth",
+    "weak_to": [],
+    "resists": [],
+    "immune": [],
+    "weak_source": null,
+    "strengths": [
+      "Rifle and arcane spells (Augur, A Call Beyond)",
+      "Escort joins at low HP"
+    ],
+    "strategy": [
+      "Burn down the Madman before his escort arrives",
+      "Stay close to stop rifle shots",
+      "Use pillars to split the pair"
+    ],
+    "rewards": [
+      "Lower Hintertomb Root Chalice"
+    ],
+    "note": "Fought alongside a Madman partner.",
+    "image": "images/bosses/bloodborne/forgotten-madman.webp",
+    "image_credit": "Fandom wiki, fair use, personal use, © FromSoftware/Bandai Namco/SIE",
+    "source_url": "https://bloodborne.fandom.com/wiki/Forgotten_Madman"
+  },
+  {
+    "id": "keeper-of-the-old-lords",
+    "name": "Keeper of the Old Lords",
+    "category": "Chalice Dungeon",
+    "required": "optional",
+    "location": "Chalice Dungeons",
+    "dlc": false,
+    "hp": null,
+    "hp_text": "Varies by Chalice Dungeon depth",
+    "weak_to": [
+      "Arcane",
+      "Poison"
+    ],
+    "resists": [
+      "Fire",
+      "Bolt"
+    ],
+    "immune": [],
+    "weak_source": "wiki strategy/notes text",
+    "strengths": [
+      "Hunter-like sword combos",
+      "Fire spells; fire-infused sword at 70% HP"
+    ],
+    "strategy": [
+      "Hit and run; she recovers quickly",
+      "Dodge behind her during fire arm attacks",
+      "Gun parries and visceral attacks work well"
+    ],
+    "rewards": [
+      "Sharp Damp Blood Gem (4)"
+    ],
+    "note": null,
+    "image": "images/bosses/bloodborne/keeper-of-the-old-lords.webp",
+    "image_credit": "Fandom wiki, fair use, personal use, © FromSoftware/Bandai Namco/SIE",
+    "source_url": "https://bloodborne.fandom.com/wiki/Keeper_of_the_Old_Lords"
+  },
+  {
+    "id": "loran-silverbeast",
+    "name": "Loran Silverbeast",
+    "category": "Chalice Dungeon",
+    "required": "optional",
+    "location": "Chalice Dungeons",
+    "dlc": false,
+    "hp": null,
+    "hp_text": "Varies by Chalice Dungeon depth",
+    "weak_to": [],
+    "resists": [],
+    "immune": [],
+    "weak_source": null,
+    "strengths": [
+      "Torch fire breath that stunlocks",
+      "Electric blasts below half HP"
+    ],
+    "strategy": [
+      "Gun-parry its jump attack",
+      "Easily interrupted; visceral attacks hit hard",
+      "Stay behind it in the unarmed phase"
+    ],
+    "rewards": [
+      "Fire Damp Blood Gem (6)"
+    ],
+    "note": null,
+    "image": "images/bosses/bloodborne/loran-silverbeast.webp",
+    "image_credit": "Fandom wiki, fair use, personal use, © FromSoftware/Bandai Namco/SIE",
+    "source_url": "https://bloodborne.fandom.com/wiki/Loran_Silverbeast"
+  },
+  {
+    "id": "maneater-boar",
+    "name": "Maneater Boar",
+    "category": "Chalice Dungeon",
+    "required": "optional",
+    "location": "Chalice Dungeons",
+    "dlc": false,
+    "hp": null,
+    "hp_text": "Varies by Chalice Dungeon depth",
+    "weak_to": [
+      "Fire"
+    ],
+    "resists": [],
+    "immune": [],
+    "weak_source": "wiki strategy/notes text",
+    "strengths": [
+      "Powerful charges and bites",
+      "Leaping back kick"
+    ],
+    "strategy": [
+      "Stay behind it",
+      "Fire and Molotovs are very effective",
+      "Pungent Blood Cocktails distract it"
+    ],
+    "rewards": [
+      "Radiant Blood Gemstone (2)"
+    ],
+    "note": null,
+    "image": "images/bosses/bloodborne/maneater-boar.webp",
+    "image_credit": "Fandom wiki, fair use, personal use, © FromSoftware/Bandai Namco/SIE",
+    "source_url": "https://bloodborne.fandom.com/wiki/Maneater_Boar_(boss)"
+  },
+  {
+    "id": "merciless-watcher",
+    "name": "Merciless Watcher",
+    "category": "Chalice Dungeon",
+    "required": "optional",
+    "location": "Chalice Dungeons",
+    "dlc": false,
+    "hp": null,
+    "hp_text": "Varies by Chalice Dungeon depth",
+    "weak_to": [],
+    "resists": [],
+    "immune": [],
+    "weak_source": null,
+    "strengths": [
+      "Mob of watchers with clubs, saws and blunderbusses",
+      "Lantern swings are quick"
+    ],
+    "strategy": [
+      "Parry the slow club swings",
+      "Pull them one at a time",
+      "Stay close to blunderbuss users"
+    ],
+    "rewards": [
+      "Tempering Blood Gemstone (3)"
+    ],
+    "note": null,
+    "image": "images/bosses/bloodborne/merciless-watcher.webp",
+    "image_credit": "Fandom wiki, fair use, personal use, © FromSoftware/Bandai Namco/SIE",
+    "source_url": "https://bloodborne.fandom.com/wiki/Merciless_Watcher"
+  },
+  {
+    "id": "pthumerian-descendant",
+    "name": "Pthumerian Descendant",
+    "category": "Chalice Dungeon",
+    "required": "optional",
+    "location": "Chalice Dungeons",
+    "dlc": false,
+    "hp": null,
+    "hp_text": "Varies by Chalice Dungeon depth",
+    "weak_to": [
+      "Arcane"
+    ],
+    "resists": [],
+    "immune": [],
+    "weak_source": "wiki strategy/notes text",
+    "strengths": [
+      "Rapid shotel slashes",
+      "Boomerang throws; dual shotels at half HP"
+    ],
+    "strategy": [
+      "Roll through long combos",
+      "Dodge both legs of the boomerang",
+      "Very vulnerable to visceral attacks"
+    ],
+    "rewards": [
+      "Tempering Damp Blood Gem (6)"
+    ],
+    "note": null,
+    "image": "images/bosses/bloodborne/pthumerian-descendant.webp",
+    "image_credit": "Fandom wiki, fair use, personal use, © FromSoftware/Bandai Namco/SIE",
+    "source_url": "https://bloodborne.fandom.com/wiki/Pthumerian_Descendant"
+  },
+  {
+    "id": "pthumerian-elder",
+    "name": "Pthumerian Elder",
+    "category": "Chalice Dungeon",
+    "required": "optional",
+    "location": "Chalice Dungeons",
+    "dlc": false,
+    "hp": null,
+    "hp_text": "Varies by Chalice Dungeon depth",
+    "weak_to": [],
+    "resists": [],
+    "immune": [],
+    "weak_source": null,
+    "strengths": [
+      "Fire weapon shifting between lance, crossbow, scythe and mace",
+      "Teleports away from melee"
+    ],
+    "strategy": [
+      "Fire-resistant attire helps",
+      "Chase him down after teleports",
+      "Dodge ground spears and delayed explosions"
+    ],
+    "rewards": [
+      "Cold Blood Gemstone (3)"
+    ],
+    "note": null,
+    "image": "images/bosses/bloodborne/pthumerian-elder.webp",
+    "image_credit": "Fandom wiki, fair use, personal use, © FromSoftware/Bandai Namco/SIE",
+    "source_url": "https://bloodborne.fandom.com/wiki/Pthumerian_Elder"
+  },
+  {
+    "id": "undead-giant",
+    "name": "Undead Giant",
+    "category": "Chalice Dungeon",
+    "required": "optional",
+    "location": "Chalice Dungeons",
+    "dlc": false,
+    "hp": null,
+    "hp_text": "Varies by Chalice Dungeon depth",
+    "weak_to": [
+      "Fire",
+      "Bolt"
+    ],
+    "resists": [],
+    "immune": [],
+    "weak_source": "wiki strategy/notes text",
+    "strengths": [
+      "Huge giant with blade, chain or other weapons",
+      "Never flinches from gunfire"
+    ],
+    "strategy": [
+      "Hit a leg until it kneels for a visceral",
+      "Bait its slow jump attack",
+      "Fire and bolt are effective; burst its tumors"
+    ],
+    "rewards": [
+      "Adept Blood Gemstone (2)",
+      "Hintertomb Root Chalice"
+    ],
+    "note": "Variants: club, hook/cannon, chain (chain variant weak to fire and thrust).",
+    "image": "images/bosses/bloodborne/undead-giant.webp",
+    "image_credit": "Fandom wiki, fair use, personal use, © FromSoftware/Bandai Namco/SIE",
+    "source_url": "https://bloodborne.fandom.com/wiki/Undead_Giant"
+  },
+  {
+    "id": "watchdog-of-the-old-lords",
+    "name": "Watchdog of the Old Lords",
+    "category": "Chalice Dungeon",
+    "required": "optional",
+    "location": "Chalice Dungeons",
+    "dlc": false,
+    "hp": null,
+    "hp_text": "Varies by Chalice Dungeon depth",
+    "weak_to": [
+      "Serrated"
+    ],
+    "resists": [
+      "Fire",
+      "Bolt",
+      "Arcane"
+    ],
+    "immune": [
+      "Poison",
+      "Frenzy"
+    ],
+    "weak_source": "weak/resist from wiki infobox defense values + wiki strategy/notes text",
+    "strengths": [
+      "Huge flaming dog",
+      "Charge attack and fire bursts",
+      "Lava spew"
+    ],
+    "strategy": [
+      "Serrated weapons are recommended",
+      "Dodge the charge right as it flares",
+      "Get behind it while it spews lava"
+    ],
+    "rewards": [
+      "Cursed Sharp Damp Blood Gem"
+    ],
+    "note": "Fire-covered; not weak to fire despite being a beast.",
+    "image": "images/bosses/bloodborne/watchdog-of-the-old-lords.webp",
+    "image_credit": "Fandom wiki, fair use, personal use, © FromSoftware/Bandai Namco/SIE",
+    "source_url": "https://bloodborne.fandom.com/wiki/Watchdog_of_the_Old_Lords"
+  },
+  {
+    "id": "yharnam-pthumerian-queen",
+    "name": "Yharnam, Pthumerian Queen",
+    "category": "Chalice Dungeon",
+    "required": "optional",
+    "location": "Chalice Dungeons",
+    "dlc": false,
+    "hp": null,
+    "hp_text": "Varies by Chalice Dungeon depth",
+    "weak_to": [],
+    "resists": [
+      "Bolt",
+      "Arcane"
+    ],
+    "immune": [],
+    "weak_source": "weak/resist from wiki infobox defense values",
+    "strengths": [
+      "Blood attacks and a blade from phase two",
+      "Mergo's cries stun you after repeated hits",
+      "Splits into blood copies"
+    ],
+    "strategy": [
+      "Hit only two or three times, then reset",
+      "Parry her sword attacks in phase two",
+      "Pop at least one copy before attacking"
+    ],
+    "rewards": [
+      "Yharnam Stone"
+    ],
+    "note": null,
+    "image": "images/bosses/bloodborne/yharnam-pthumerian-queen.webp",
+    "image_credit": "Fandom wiki, fair use, personal use, © FromSoftware/Bandai Namco/SIE",
+    "source_url": "https://bloodborne.fandom.com/wiki/Yharnam,_Pthumerian_Queen"
+  }
+]
