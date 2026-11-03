@@ -4,7 +4,8 @@ var SoulsSections = {
   startEmbers,
   render,
   sheet: focusSheet,
-  closeEmbed
+  closeEmbed,
+  loadItemIndex
 };
 
 function startEmbers() {
@@ -526,6 +527,63 @@ function creditNote() {
   return typeof reforgedCreditNode === "function" ? reforgedCreditNode() : null;
 }
 
+let itemIndex = null;
+let itemIndexPromise = null;
+
+function loadItemIndex() {
+  if (itemIndex) return Promise.resolve(itemIndex);
+  if (!itemIndexPromise) {
+    itemIndexPromise = fetch("./images/items/index.json")
+      .then((response) => {
+        if (!response.ok) throw new Error(String(response.status));
+        return response.json();
+      })
+      .then((data) => {
+        itemIndex = {};
+        Object.entries(data || {}).forEach(([key, list]) => {
+          itemIndex[key] = new Set(list);
+        });
+        return itemIndex;
+      })
+      .catch((error) => {
+        itemIndexPromise = null;
+        throw error;
+      });
+  }
+  return itemIndexPromise;
+}
+
+function imagePack() {
+  const game = state.game;
+  if (!game) return "";
+  if (game.id === "elden-ring") return state.variant && !state.variant.default ? "err" : "er-vanilla";
+  if (game.id === "bloodborne") return "bloodborne";
+  if (game.id === "demons-souls") return "demons";
+  return "";
+}
+
+function itemSrc(section, kind, id) {
+  const pack = imagePack();
+  const set = itemIndex && itemIndex[`${pack}/${section}`];
+  if (!pack || !set || !id || !set.has(`${kind}:${id}`)) return "";
+  return `./images/items/${pack}/${section}/${kind}-${id}.webp`;
+}
+
+function itemFigure(section, kind, id, px) {
+  const src = itemSrc(section, kind, id);
+  const thumb = px < 40;
+  if (!src) return el("span", { class: thumb ? "item-ph is-thumb" : "item-ph", "aria-hidden": "true" });
+  return el("img", {
+    class: thumb ? "item-icon is-thumb" : "item-icon",
+    src,
+    alt: "",
+    width: String(px),
+    height: String(px),
+    loading: "lazy",
+    decoding: "async"
+  });
+}
+
 function passiveText(set) {
   const passive = set && set.errSetPassive;
   if (!passive) return "";
@@ -585,6 +643,7 @@ function renderCrafting(panel, ctx) {
     moreButton("matLimit", matPage.limit, matPage.total),
     craftingRules(data.system),
     creditNote(),
+    typeof imageCreditNode === "function" ? imageCreditNode() : null,
     guideList(data.guides)
   );
   settlePage(panel, pendingPage === "matLimit" ? "#craft-materials" : "#craft-recipes");
@@ -594,14 +653,23 @@ function recipeCard(item) {
   const mats = (item.materials || []).filter(Boolean).map((mat) => {
     const known = materialByName(state.extra, mat.name);
     const label = `${mat.name || "Material"}${mat.qty != null && mat.qty !== "" ? ` × ${mat.qty}` : ""}`;
-    if (!known) return el("li", { text: label + (mat.note ? ` — ${mat.note}` : "") });
-    return el("li", {}, [
-      el("button", { type: "button", class: "inline-link", "data-material": known.id, text: label }),
-      mat.note ? el("span", { class: "muted", text: ` — ${mat.note}` }) : null
+    const thumb = itemFigure("crafting", "material", known && known.id, 28);
+    const text = known
+      ? el("button", { type: "button", class: "inline-link", "data-material": known.id, text: label })
+      : el("span", { text: label });
+    return el("li", { class: "mat-row" }, [
+      thumb,
+      el("span", { class: "mat-copy" }, [
+        text,
+        mat.note ? el("span", { class: "muted", text: ` — ${mat.note}` }) : null
+      ])
     ]);
   });
   return el("article", { class: "record" }, [
-    el("button", { type: "button", class: "record-title", "data-item": item.id || "", text: item.name || "Recipe" }),
+    el("div", { class: "record-head" }, [
+      itemFigure("crafting", "item", item.id, 48),
+      el("button", { type: "button", class: "record-title", "data-item": item.id || "", text: item.name || "Recipe" })
+    ]),
     item.effect ? el("p", { text: item.effect }) : null,
     item.yield != null && item.yield !== "" ? el("p", { class: "muted", text: `Yields ${item.yield}` }) : null,
     mats.length ? el("ul", { class: "clean" }, mats) : null,
@@ -728,6 +796,7 @@ function renderEquipment(panel, ctx) {
     sampleBanner(data.meta),
     aboutNote("equipment") || noteBlock(data.meta),
     creditNote(),
+    typeof imageCreditNode === "function" ? imageCreditNode() : null,
     armorTab && data.meta && data.meta.armorNote ? el("p", { class: "variant-banner", text: data.meta.armorNote }) : null,
     el("div", { class: "chip-row", role: "tablist", "aria-label": "Equipment" }, [
       chip("data-equip-tab", "weapons", "Weapons", !armorTab && !talismanTab),
@@ -779,9 +848,14 @@ function renderEquipment(panel, ctx) {
 function weaponCard(weapon, types) {
   const type = typeEntry(types, weapon.type);
   return el("article", { class: "record" }, [
-    originBadge(weapon.origin),
-    type && type.name !== "-" ? el("p", { class: "card-kicker", text: type.name || weapon.type }) : null,
-    el("button", { type: "button", class: "record-title", "data-weapon": weapon.id || "", text: weapon.name || "Weapon" }),
+    el("div", { class: "record-head" }, [
+      itemFigure("equipment", "weapon", weapon.id, 48),
+      el("div", { class: "record-copy" }, [
+        originBadge(weapon.origin),
+        type && type.name !== "-" ? el("p", { class: "card-kicker", text: type.name || weapon.type }) : null,
+        el("button", { type: "button", class: "record-title", "data-weapon": weapon.id || "", text: weapon.name || "Weapon" })
+      ])
+    ]),
     weapon.errChanges ? el("p", { class: "muted", text: weapon.errChanges }) : null,
     weapon.location ? el("p", { class: "muted", text: weapon.location }) : null
   ]);
@@ -790,7 +864,10 @@ function weaponCard(weapon, types) {
 function armorCard(set) {
   const passive = passiveText(set);
   return el("article", { class: "record" }, [
-    el("button", { type: "button", class: "record-title", "data-armor": set.id || "", text: set.name || "Armor" }),
+    el("div", { class: "record-head" }, [
+      itemFigure("equipment", "armor", set.id, 48),
+      el("button", { type: "button", class: "record-title", "data-armor": set.id || "", text: set.name || "Armor" })
+    ]),
     passive ? el("p", { class: "muted", text: passive }) : (set.errSetPassive === null || (set && "errSetPassive" in set && !passive) ? el("p", { class: "muted", text: "No ERR set passive listed." }) : null),
     set.location ? el("p", { class: "muted", text: set.location }) : null,
     Array.isArray(set.pieces) && set.pieces.length
@@ -801,8 +878,13 @@ function armorCard(set) {
 
 function talismanCard(item) {
   return el("article", { class: "record" }, [
-    originBadge(item.origin),
-    el("button", { type: "button", class: "record-title", "data-talisman": item.id || "", text: item.name || "Talisman" }),
+    el("div", { class: "record-head" }, [
+      itemFigure("equipment", "talisman", item.id, 48),
+      el("div", { class: "record-copy" }, [
+        originBadge(item.origin),
+        el("button", { type: "button", class: "record-title", "data-talisman": item.id || "", text: item.name || "Talisman" })
+      ])
+    ]),
     item.effect ? el("p", { class: "muted", text: item.effect }) : null
   ]);
 }

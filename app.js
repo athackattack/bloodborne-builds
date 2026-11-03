@@ -186,6 +186,13 @@ function reforgedCreditNode() {
   return el("div", { class: "about-note" }, [line]);
 }
 
+function imageCreditNode() {
+  return el("p", {
+    class: "image-credit",
+    text: "Item images are game art from the Elden Ring, Bloodborne and Demon's Souls wikis on Fandom, used under fair use, personal use. Game art © FromSoftware/Bandai Namco. No Reforged mod assets."
+  });
+}
+
 function variantBuildsNote() {
   const variant = state.variant;
   if (!variant || variant.default || !variant.buildsNote) return null;
@@ -1090,6 +1097,7 @@ function renderAbout() {
   return el("article", {}, [
     variantBannerNode(),
     reforgedCreditNode(),
+    imageCreditNode(),
     el("p", { class: "sheet-kicker", text: kicker }),
     el("h2", { id: "sheet-title", text: meta.title || state.game.name }),
     el("p", {
@@ -1265,6 +1273,14 @@ async function render() {
       if (location.hash !== back) history.replaceState(history.state || { bb: true }, "", `${location.pathname}${location.search}${back}`);
     }
     if (state.extra && typeof SoulsSections !== "undefined") {
+      if ((route.section === "crafting" || route.section === "equipment") && typeof SoulsSections.loadItemIndex === "function") {
+        try {
+          await SoulsSections.loadItemIndex();
+        } catch (error) {
+          /* Cards fall back to the placeholder. */
+        }
+        if (token !== renderToken) return;
+      }
       SoulsSections.render({ section: route.section, extra: state.extra, route });
     }
   }
