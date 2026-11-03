@@ -2,8 +2,8 @@
 
 body {
   background:
-    radial-gradient(ellipse at 50% -8%, color-mix(in srgb, var(--accent) 22%, transparent), transparent 46%),
-    linear-gradient(180deg, #16130f 0%, var(--bg) 32%, #080706 100%);
+    radial-gradient(ellipse at 50% -10%, color-mix(in srgb, var(--accent) 10%, transparent), transparent 42%),
+    linear-gradient(180deg, #0c0a09 0%, var(--bg) 28%, #040303 100%);
 }
 
 #embers {
@@ -17,16 +17,14 @@ body {
 
 header {
   background:
-    linear-gradient(180deg, color-mix(in srgb, var(--accent) 18%, rgba(12, 11, 10, 0.94)), rgba(12, 11, 10, 0.92));
+    linear-gradient(180deg, color-mix(in srgb, var(--accent) 8%, rgba(7, 6, 5, 0.94)), rgba(7, 6, 5, 0.92));
 }
 
 .mark {
   width: auto;
   height: 58px;
   border-radius: 0;
-  filter:
-    drop-shadow(0 0 6px rgba(214, 132, 54, 0.65))
-    drop-shadow(0 0 16px rgba(176, 72, 28, 0.4));
+  filter: drop-shadow(0 0 8px color-mix(in srgb, var(--accent) 35%, transparent));
 }
 
 .lede {
@@ -64,33 +62,15 @@ header {
 }
 .section-tab[aria-pressed="true"] {
   color: var(--bone);
-  border-color: var(--accent);
-  background: color-mix(in srgb, var(--accent) 20%, transparent);
-}
-
-.tier-letter span {
-  width: 2.75rem;
-  height: 2.75rem;
-  margin: 0 auto;
-  display: grid;
-  place-items: center;
-  border-radius: 50%;
-  font-size: 1.65rem;
-  border: 1px solid color-mix(in srgb, var(--tier, var(--bone)) 75%, transparent);
-  background:
-    radial-gradient(circle at 40% 32%, color-mix(in srgb, var(--tier, var(--accent)) 34%, transparent), rgba(0, 0, 0, 0.45));
-  box-shadow:
-    0 0 12px color-mix(in srgb, var(--tier, var(--accent)) 50%, transparent),
-    inset 0 0 8px rgba(0, 0, 0, 0.35);
+  border-color: transparent;
+  border-bottom: 1px solid var(--accent);
+  background: transparent;
+  border-radius: 0;
 }
 
 @media (hover: hover) {
-  .card:hover {
-    border-color: color-mix(in srgb, var(--tier, var(--accent)) 55%, var(--line-strong));
-    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.35);
-  }
+  .card:hover { background: rgba(240, 230, 212, 0.04); }
 }
-.card:active { transform: scale(0.985); }
 
 .about-note {
   margin: 0 0 0.75rem;
@@ -128,27 +108,18 @@ header {
   font-size: 1.55rem;
   letter-spacing: 0.02em;
 }
-.section-title::before {
-  content: "";
-  display: inline-block;
-  width: 0.45rem;
-  height: 0.45rem;
-  margin-right: 0.45rem;
-  border: 1px solid var(--accent);
-  transform: rotate(45deg);
-  vertical-align: 0.12em;
-}
+.section-title::before { content: none; }
 .section-count {
   margin: 0;
   color: var(--bone-faint);
   font-size: 0.88rem;
 }
-.record-list { display: grid; gap: 0.55rem; }
+.record-list { display: grid; gap: 0.1rem; }
 .record {
-  background: var(--card);
-  border: 1px solid var(--line);
-  border-left: 2px solid var(--accent);
-  padding: 0.7rem 0.85rem 0.75rem;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid rgba(196, 176, 148, 0.12);
+  padding: 0.8rem 0.1rem 0.9rem;
   min-width: 0;
 }
 .record-title {
@@ -198,7 +169,20 @@ header {
 .map-credit, .map-hint, .map-license, .map-desc { margin: 0; overflow-wrap: anywhere; }
 .map-credit { color: var(--bone-dim); }
 .map-hint, .map-license { color: var(--bone-faint); font-size: 0.85rem; }
-.map-open, .map-credit a, .map-source { color: var(--bone); }
+.map-open {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 2.75rem;
+  padding: 0.35rem 0.95rem;
+  background: color-mix(in srgb, var(--accent) 70%, #1a0c0b);
+  color: var(--bone);
+  text-decoration: none;
+  font-family: var(--display);
+  font-size: 1.2rem;
+  letter-spacing: 0.02em;
+}
+.map-credit a, .map-source { color: var(--bone); }
 .map-release { display: none; }
 .map-shell:has(.map-frame-wrap.is-gated.is-live) .map-release { display: inline-flex; }
 .map-placeholder {
@@ -316,7 +300,7 @@ header {
 @media (max-width: 520px) {
   .mark { height: 46px; }
   .lede { -webkit-line-clamp: 2; }
-  .tier-letter span { width: 2.45rem; height: 2.45rem; font-size: 1.45rem; }
+  .tier-letter span { font-size: 1.45rem; }
 }
 
 #panel-map[hidden],

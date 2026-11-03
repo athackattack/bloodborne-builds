@@ -4,7 +4,8 @@ var SoulsSections = {
   startEmbers,
   render,
   sheet: focusSheet,
-  closeEmbed
+  closeEmbed,
+  loadItemIndex
 };
 
 function startEmbers() {
@@ -12,7 +13,7 @@ function startEmbers() {
   if (!canvas) return;
   if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
   const ctx = canvas.getContext("2d", { alpha: true });
-  const specks = Array.from({ length: 28 }, () => speck(true));
+  const specks = Array.from({ length: 14 }, () => speck(true));
   let frame = 0;
   let running = true;
 
@@ -22,7 +23,7 @@ function startEmbers() {
       y: anyY ? Math.random() : 1.05,
       r: 0.6 + Math.random() * 1.6,
       v: 0.08 + Math.random() * 0.22,
-      a: 0.15 + Math.random() * 0.45,
+      a: 0.08 + Math.random() * 0.2,
       w: (Math.random() - 0.5) * 0.06
     };
   }
@@ -526,6 +527,63 @@ function creditNote() {
   return typeof reforgedCreditNode === "function" ? reforgedCreditNode() : null;
 }
 
+let itemIndex = null;
+let itemIndexPromise = null;
+
+function loadItemIndex() {
+  if (itemIndex) return Promise.resolve(itemIndex);
+  if (!itemIndexPromise) {
+    itemIndexPromise = fetch("./images/items/index.json")
+      .then((response) => {
+        if (!response.ok) throw new Error(String(response.status));
+        return response.json();
+      })
+      .then((data) => {
+        itemIndex = {};
+        Object.entries(data || {}).forEach(([key, list]) => {
+          itemIndex[key] = new Set(list);
+        });
+        return itemIndex;
+      })
+      .catch((error) => {
+        itemIndexPromise = null;
+        throw error;
+      });
+  }
+  return itemIndexPromise;
+}
+
+function imagePack() {
+  const game = state.game;
+  if (!game) return "";
+  if (game.id === "elden-ring") return state.variant && !state.variant.default ? "err" : "er-vanilla";
+  if (game.id === "bloodborne") return "bloodborne";
+  if (game.id === "demons-souls") return "demons";
+  return "";
+}
+
+function itemSrc(section, kind, id) {
+  const pack = imagePack();
+  const set = itemIndex && itemIndex[`${pack}/${section}`];
+  if (!pack || !set || !id || !set.has(`${kind}:${id}`)) return "";
+  return `./images/items/${pack}/${section}/${kind}-${id}.webp`;
+}
+
+function itemFigure(section, kind, id, px) {
+  const src = itemSrc(section, kind, id);
+  const thumb = px < 40;
+  if (!src) return el("span", { class: thumb ? "item-ph is-thumb" : "item-ph", "aria-hidden": "true" });
+  return el("img", {
+    class: thumb ? "item-icon is-thumb" : "item-icon",
+    src,
+    alt: "",
+    width: String(px),
+    height: String(px),
+    loading: "lazy",
+    decoding: "async"
+  });
+}
+
 function passiveText(set) {
   const passive = set && set.errSetPassive;
   if (!passive) return "";
@@ -585,6 +643,7 @@ function renderCrafting(panel, ctx) {
     moreButton("matLimit", matPage.limit, matPage.total),
     craftingRules(data.system),
     creditNote(),
+    typeof imageCreditNode === "function" ? imageCreditNode() : null,
     guideList(data.guides)
   );
   settlePage(panel, pendingPage === "matLimit" ? "#craft-materials" : "#craft-recipes");
@@ -594,14 +653,23 @@ function recipeCard(item) {
   const mats = (item.materials || []).filter(Boolean).map((mat) => {
     const known = materialByName(state.extra, mat.name);
     const label = `${mat.name || "Material"}${mat.qty != null && mat.qty !== "" ? ` × ${mat.qty}` : ""}`;
-    if (!known) return el("li", { text: label + (mat.note ? ` — ${mat.note}` : "") });
-    return el("li", {}, [
-      el("button", { type: "button", class: "inline-link", "data-material": known.id, text: label }),
-      mat.note ? el("span", { class: "muted", text: ` — ${mat.note}` }) : null
+    const thumb = itemFigure("crafting", "material", known && known.id, 28);
+    const text = known
+      ? el("button", { type: "button", class: "inline-link", "data-material": known.id, text: label })
+      : el("span", { text: label });
+    return el("li", { class: "mat-row" }, [
+      thumb,
+      el("span", { class: "mat-copy" }, [
+        text,
+        mat.note ? el("span", { class: "muted", text: ` — ${mat.note}` }) : null
+      ])
     ]);
   });
   return el("article", { class: "record" }, [
-    el("button", { type: "button", class: "record-title", "data-item": item.id || "", text: item.name || "Recipe" }),
+    el("div", { class: "record-head" }, [
+      itemFigure("crafting", "item", item.id, 48),
+      el("button", { type: "button", class: "record-title", "data-item": item.id || "", text: item.name || "Recipe" })
+    ]),
     item.effect ? el("p", { text: item.effect }) : null,
     item.yield != null && item.yield !== "" ? el("p", { class: "muted", text: `Yields ${item.yield}` }) : null,
     mats.length ? el("ul", { class: "clean" }, mats) : null,
@@ -728,6 +796,7 @@ function renderEquipment(panel, ctx) {
     sampleBanner(data.meta),
     aboutNote("equipment") || noteBlock(data.meta),
     creditNote(),
+    typeof imageCreditNode === "function" ? imageCreditNode() : null,
     armorTab && data.meta && data.meta.armorNote ? el("p", { class: "variant-banner", text: data.meta.armorNote }) : null,
     el("div", { class: "chip-row", role: "tablist", "aria-label": "Equipment" }, [
       chip("data-equip-tab", "weapons", "Weapons", !armorTab && !talismanTab),
@@ -779,9 +848,14 @@ function renderEquipment(panel, ctx) {
 function weaponCard(weapon, types) {
   const type = typeEntry(types, weapon.type);
   return el("article", { class: "record" }, [
-    originBadge(weapon.origin),
-    type && type.name !== "-" ? el("p", { class: "card-kicker", text: type.name || weapon.type }) : null,
-    el("button", { type: "button", class: "record-title", "data-weapon": weapon.id || "", text: weapon.name || "Weapon" }),
+    el("div", { class: "record-head" }, [
+      itemFigure("equipment", "weapon", weapon.id, 48),
+      el("div", { class: "record-copy" }, [
+        originBadge(weapon.origin),
+        type && type.name !== "-" ? el("p", { class: "card-kicker", text: type.name || weapon.type }) : null,
+        el("button", { type: "button", class: "record-title", "data-weapon": weapon.id || "", text: weapon.name || "Weapon" })
+      ])
+    ]),
     weapon.errChanges ? el("p", { class: "muted", text: weapon.errChanges }) : null,
     weapon.location ? el("p", { class: "muted", text: weapon.location }) : null
   ]);
@@ -790,7 +864,10 @@ function weaponCard(weapon, types) {
 function armorCard(set) {
   const passive = passiveText(set);
   return el("article", { class: "record" }, [
-    el("button", { type: "button", class: "record-title", "data-armor": set.id || "", text: set.name || "Armor" }),
+    el("div", { class: "record-head" }, [
+      itemFigure("equipment", "armor", set.id, 48),
+      el("button", { type: "button", class: "record-title", "data-armor": set.id || "", text: set.name || "Armor" })
+    ]),
     passive ? el("p", { class: "muted", text: passive }) : (set.errSetPassive === null || (set && "errSetPassive" in set && !passive) ? el("p", { class: "muted", text: "No ERR set passive listed." }) : null),
     set.location ? el("p", { class: "muted", text: set.location }) : null,
     Array.isArray(set.pieces) && set.pieces.length
@@ -801,8 +878,13 @@ function armorCard(set) {
 
 function talismanCard(item) {
   return el("article", { class: "record" }, [
-    originBadge(item.origin),
-    el("button", { type: "button", class: "record-title", "data-talisman": item.id || "", text: item.name || "Talisman" }),
+    el("div", { class: "record-head" }, [
+      itemFigure("equipment", "talisman", item.id, 48),
+      el("div", { class: "record-copy" }, [
+        originBadge(item.origin),
+        el("button", { type: "button", class: "record-title", "data-talisman": item.id || "", text: item.name || "Talisman" })
+      ])
+    ]),
     item.effect ? el("p", { class: "muted", text: item.effect }) : null
   ]);
 }
@@ -933,6 +1015,7 @@ function renderSystems(panel, ctx) {
   );
   const itemId = route.focus && route.focus.kind === "system-section" ? route.focus.item : "";
   const target = itemId ? panel.querySelector(`#sys-${itemId}`) : null;
+  if (target && target.tagName === "DETAILS") target.open = true;
   const open = target || panel.querySelector("details[open]");
   if (open && route.focus && route.focus.kind === "system-section") {
     const header = document.querySelector("header");
@@ -947,20 +1030,82 @@ function systemBlock(section, open, query) {
   const items = Array.isArray(section.items) ? section.items : [];
   const fortunes = items.filter((item) => item && item.tier);
   const rules = items.filter((item) => item && !item.tier);
-  const shownFortunes = section.id === "fortunes" && String(query || "").trim() ? fortunes.filter((item) => fortuneMatch(item, query)) : fortunes;
-  const shownRules = section.id === "fortunes" && String(query || "").trim() ? rules.filter((item) => fortuneMatch(item, query)) : rules;
-  const shown = section.id === "fortunes" ? shownRules.concat(shownFortunes) : items;
+  const filtering = section.id === "fortunes" && String(query || "").trim();
+  const shownFortunes = filtering ? fortunes.filter((item) => fortuneMatch(item, query)) : fortunes;
+  const shownRules = filtering ? rules.filter((item) => fortuneMatch(item, query)) : rules;
   const summary = el("summary", {}, [
     el("span", { class: "system-title", text: section.title || section.id || "Section" }),
     el("span", { class: "muted", text: section.id === "fortunes" ? `${fortuneCount(items)} fortunes` : `${items.length} entries` })
   ]);
-  details.append(...[
+  const highlights = sectionHighlights(section);
+  const nodes = [
     summary,
-    section.summary ? annotatedBlock(section.summary) : null,
+    highlights.length ? el("ul", { class: "highlights" }, highlights.map((line) => el("li", { text: line }))) : null,
     section.id === "fortunes" ? fortuneSearch(query, shownFortunes.length, fortunes.length) : null,
-    el("div", { class: "record-list" }, shown.length ? shown.map(systemItem) : [el("p", { class: "empty", text: "Nothing matches." })])
-  ].filter(Boolean));
+    section.summary ? el("details", { class: "detail-fold" }, [
+      el("summary", { text: "Full notes" }),
+      organizedText(section.summary)
+    ]) : null
+  ];
+  if (section.id === "fortunes") {
+    nodes.push(shownRules.length ? el("div", { class: "record-list" }, shownRules.map((item) => systemFold(item))) : null);
+    nodes.push(el("div", { class: "fortune-list" }, shownFortunes.length
+      ? shownFortunes.map((item) => fortuneRow(item))
+      : [el("p", { class: "empty", text: "Nothing matches." })]));
+  } else {
+    nodes.push(el("div", { class: "record-list" }, items.length
+      ? items.map((item) => systemFold(item))
+      : [el("p", { class: "empty", text: "Nothing matches." })]));
+  }
+  details.append(...nodes.filter(Boolean));
   return details;
+}
+
+function sectionHighlights(section) {
+  const bits = substantiveBits(section.summary);
+  const picked = bits.slice(0, 5);
+  if (picked.length >= 3) return picked.slice(0, 5);
+  for (const item of section.items || []) {
+    if (!item) continue;
+    const line = oneLine(item.effects || item.description || "");
+    const label = item.name ? (line ? `${item.name} — ${line}` : item.name) : line;
+    if (!label || picked.includes(label)) continue;
+    picked.push(label);
+    if (picked.length === 5) break;
+  }
+  return picked.slice(0, 5);
+}
+
+function substantiveBits(text) {
+  const bits = [];
+  String(text || "").replace(/\r/g, "").split("\n").forEach((raw) => {
+    const line = raw.trim();
+    if (!line || isTableLine(line) || /^[=#-]{3,}/.test(line)) return;
+    const clean = line.replace(/^[\s•*▲▼\-–—]+/, "").trim();
+    if (clean.length < 18) return;
+    if (clean.length > 150) {
+      clean.split(/(?<=\.)\s+/).forEach((sentence) => {
+        const bit = sentence.trim();
+        if (bit.length >= 18) bits.push(clipSentence(bit, 108));
+      });
+      return;
+    }
+    bits.push(clipSentence(clean, 108));
+  });
+  return bits;
+}
+
+function clipSentence(text, max) {
+  const value = String(text || "").replace(/\s+/g, " ").trim();
+  if (value.length <= max) return value;
+  const cut = value.slice(0, max);
+  const space = cut.lastIndexOf(" ");
+  return `${(space > 24 ? cut.slice(0, space) : cut).trim()}…`;
+}
+
+function oneLine(text) {
+  const line = String(text || "").replace(/\r/g, "").split("\n").map((part) => part.trim()).find(Boolean) || "";
+  return clipSentence(line.replace(/^[\s•*▲▼\-–—:]+/, ""), 96);
 }
 
 function fortuneCount(items) {
@@ -992,35 +1137,144 @@ function fortuneSearch(query, shown, total) {
   ]);
 }
 
-function systemItem(item) {
-  const bits = [];
-  if (item.kind) bits.push(item.kind);
-  if (item.tier) bits.push(item.tier);
-  const hay = [item.name, item.tier, item.description, item.effects, item.minorEffects, item.acquisition, item.effectsNote, item.note]
+function systemSlug(name) {
+  return String(name || "").toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "");
+}
+
+function systemHay(item) {
+  return [item.name, item.tier, item.kind, item.description, item.effects, item.minorEffects, item.acquisition, item.effectsNote, item.note, item.location, item.hp, item.drops]
     .filter(Boolean).join("\n").toLowerCase();
-  const slug = String(item.name || "").toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "");
-  return el("article", {
-    class: "record",
+}
+
+function fortuneRow(item) {
+  const slug = systemSlug(item.name);
+  const details = el("details", {
+    class: "record fortune-row",
+    id: slug ? `sys-${slug}` : "",
+    "data-fortune": "1",
+    "data-hay": systemHay(item)
+  });
+  details.append(
+    el("summary", { class: "fortune-sum" }, [
+      el("span", { class: "fortune-name" }, [
+        el("span", { class: "system-name", text: item.name || "Fortune" }),
+        item.tier ? el("span", { class: "point", text: item.tier }) : null
+      ]),
+      el("span", { class: "fortune-line", text: oneLine(item.effects || item.description || "") })
+    ]),
+    systemBody(item)
+  );
+  return details;
+}
+
+function systemFold(item) {
+  const slug = systemSlug(item.name);
+  const bits = [item.kind, item.tier].filter(Boolean);
+  const details = el("details", {
+    class: "record detail-fold",
     id: slug ? `sys-${slug}` : "",
     "data-fortune": item.tier ? "1" : "0",
-    "data-hay": hay
-  }, [
-    bits.length ? el("p", { class: "card-kicker", text: bits.join(" · ") }) : null,
-    el("h3", { class: "system-name", text: item.name || "Entry" }),
+    "data-hay": systemHay(item)
+  });
+  details.append(
+    el("summary", {}, [
+      bits.length ? el("span", { class: "card-kicker", text: bits.join(" · ") }) : null,
+      el("span", { class: "system-name", text: item.name || "Entry" }),
+      el("span", { class: "fortune-line", text: oneLine(item.description || item.effects || item.note || "") })
+    ]),
+    systemBody(item)
+  );
+  return details;
+}
+
+function systemBody(item) {
+  const facts = [
+    ["Found", item.acquisition],
+    ["Location", item.location],
+    ["HP", item.hp],
+    ["Drops", item.drops]
+  ].filter(([, value]) => value);
+  return el("div", { class: "fold-body" }, [
     item.effectsNote ? el("p", { class: "incomplete-note" }, [
       el("span", { class: "flag", text: "source incomplete" }),
       document.createTextNode(` ${item.effectsNote}`)
     ]) : null,
-    item.description ? annotatedBlock(item.description) : null,
-    item.effects ? el("section", { class: "block" }, [el("h3", { text: "Effects" }), annotatedBlock(item.effects)]) : null,
-    item.minorEffects ? el("section", { class: "block" }, [el("h3", { text: "Minor fortune" }), annotatedBlock(item.minorEffects)]) : null,
-    item.acquisition ? el("p", { class: "muted", text: `Found: ${item.acquisition}` }) : null,
-    item.location ? el("p", { class: "muted", text: item.location }) : null,
-    item.hp ? el("p", { text: `HP: ${item.hp}` }) : null,
-    item.drops ? el("p", { text: `Drops: ${item.drops}` }) : null,
-    item.note ? annotatedBlock(item.note) : null,
+    item.description ? organizedText(item.description) : null,
+    item.effects ? el("section", { class: "block" }, [el("h3", { text: "Effects" }), organizedText(item.effects)]) : null,
+    item.minorEffects ? el("section", { class: "block" }, [el("h3", { text: "Minor fortune" }), organizedText(item.minorEffects)]) : null,
+    facts.length ? el("dl", { class: "kv" }, facts.map(([label, value]) => el("div", {}, [
+      el("dt", { text: label }),
+      el("dd", { text: String(value) })
+    ]))) : null,
+    item.note ? organizedText(item.note) : null,
     sourceLine(item.source)
   ]);
+}
+
+function isTableLine(line) {
+  return String(line).split("|").length >= 3;
+}
+
+function isBulletLine(line) {
+  return /^(?:[•▲▼*]|\d+\.)\s+\S/.test(line) || /^(?:-|–|—)\s+\S/.test(line);
+}
+
+function organizedText(text) {
+  const lines = String(text == null ? "" : text).replace(/\r/g, "").split("\n");
+  const nodes = [];
+  let index = 0;
+  while (index < lines.length) {
+    const line = lines[index];
+    if (!String(line).trim()) {
+      index += 1;
+      continue;
+    }
+    if (isTableLine(line)) {
+      const block = [];
+      while (index < lines.length && isTableLine(lines[index])) {
+        block.push(lines[index]);
+        index += 1;
+      }
+      nodes.push(tableFromLines(block));
+      continue;
+    }
+    if (isBulletLine(line.trim())) {
+      const items = [];
+      while (index < lines.length && isBulletLine(String(lines[index]).trim())) {
+        items.push(String(lines[index]).trim());
+        index += 1;
+      }
+      nodes.push(el("ul", { class: "clean" }, items.map((item) => {
+        const body = item.replace(/^(?:[•▲▼*]|\d+\.|-|–|—)\s+/, "");
+        const li = el("li", { text: body });
+        if (lineIncomplete(item) || lineIncomplete(body)) li.append(el("span", { class: "flag", text: "source incomplete" }));
+        return li;
+      })));
+      continue;
+    }
+    const row = el("p", { class: "prose-line", text: line });
+    if (lineIncomplete(line)) row.append(el("span", { class: "flag", text: "source incomplete" }));
+    nodes.push(row);
+    index += 1;
+  }
+  return nodes.length ? el("div", { class: "prose-lines" }, nodes) : null;
+}
+
+function tableFromLines(block) {
+  const rows = block.map((line) => line.split("|").map((cell) => cell.trim()));
+  const width = rows.reduce((max, row) => Math.max(max, row.length), 0);
+  const table = el("table", { class: "data-table" });
+  rows.forEach((cells, rowIndex) => {
+    const tr = el("tr");
+    for (let cell = 0; cell < width; cell += 1) {
+      const value = cells[cell] || "";
+      const node = el(rowIndex === 0 ? "th" : "td", { text: value });
+      if (lineIncomplete(value)) node.append(el("span", { class: "flag", text: "source incomplete" }));
+      tr.append(node);
+    }
+    table.append(tr);
+  });
+  return el("div", { class: "table-scroll" }, [table]);
 }
 
 function onSystemsClick() {
@@ -1193,7 +1447,7 @@ function renderEmbedMap(panel, data, route) {
       ))
     : null;
   const open = externalLink(current.url || current.embedUrl, "map-open");
-  open.textContent = "Open full map";
+  open.textContent = "Open full map with legend";
   const frame = el("iframe", {
     class: "map-frame",
     title: `${current.label || "Map"} by MapGenie`,
@@ -1210,7 +1464,7 @@ function renderEmbedMap(panel, data, route) {
       el("p", { text: "The map did not load in the page." }),
       (() => {
         const link = externalLink(current.url || current.embedUrl);
-        link.textContent = "Open full map";
+        link.textContent = "Open full map with legend";
         return link;
       })()
     ])
@@ -1226,7 +1480,7 @@ function renderEmbedMap(panel, data, route) {
         open,
         release
       ]),
-      el("p", { class: "map-hint", text: "If the map stays blank, use Open full map." }),
+      el("p", { class: "map-hint", text: "The legend and category toggles are on the full page." }),
       wrap
     ]),
     mapLinkBlock(data.mapLinks)
