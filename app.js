@@ -18,7 +18,6 @@ const FIELD_DEFAULTS = {
   runesGear: "Runes and gear"
 };
 const STORAGE_KEY = "souls-builds-game";
-const DENSITY_KEY = "souls-builds-density";
 const VARIANT_KEY = "souls-builds-variant";
 
 const sheet = document.getElementById("sheet");
@@ -197,24 +196,6 @@ function variantMapNote() {
   const variant = state.variant;
   if (!variant || variant.default || !variant.mapNote) return null;
   return el("p", { class: "variant-banner", text: variant.mapNote });
-}
-
-function cardsExpanded() {
-  try {
-    return localStorage.getItem(DENSITY_KEY) === "full";
-  } catch (error) {
-    return false;
-  }
-}
-
-function applyDensity() {
-  const expanded = cardsExpanded();
-  const list = document.getElementById("tier-list");
-  if (list) list.classList.toggle("is-compact", !expanded);
-  const button = document.getElementById("density");
-  if (!button) return;
-  button.setAttribute("aria-pressed", expanded ? "true" : "false");
-  button.setAttribute("aria-label", expanded ? "Hide playstyles on cards" : "Show playstyles on cards");
 }
 
 function fieldLabel(meta, key) {
@@ -692,27 +673,66 @@ function renderVariantSwitch() {
   );
 }
 
+function cardTitle(build) {
+  const name = String(build.name || "Build");
+  if (build.fortune && build.fortune.major && /\bfortune\b/i.test(name)) {
+    const trimmed = name.replace(/\s*\([^)]*\)\s*$/, "").trim();
+    if (trimmed) return trimmed;
+  }
+  return name;
+}
+
+function clipPoint(value, max) {
+  const text = String(value || "").replace(/\s+/g, " ").trim();
+  if (text.length <= max) return text;
+  return `${text.slice(0, max - 1).trim()}…`;
+}
+
+function weaponPoint(build) {
+  const raw = String((build.weapons && build.weapons[0]) || "");
+  const head = raw.split(/[,(/]/)[0].replace(/\s*[×x]\s*\d.*$/, "").trim();
+  return clipPoint(head, 32);
+}
+
+function statPoint(build) {
+  const arch = String(build.archetype || "");
+  const inner = arch.match(/\(([^)]+)\)/);
+  const focus = inner && /strength|skill|blood|arcane|dex|faith|magic|int|str|fth/i.test(inner[1])
+    ? inner[1]
+    : arch.replace(/\s*\([^)]*\)/g, "");
+  return clipPoint(focus, 28);
+}
+
+function playPoint(build) {
+  const best = (build.bestFor || []).map((item) => String(item || "").trim()).find(Boolean);
+  if (best) return clipPoint(best, 28);
+  const clause = String(build.playstyle || "").split(/[.;]/)[0];
+  return clipPoint(clause.split(/\s+/).slice(0, 4).join(" "), 28);
+}
+
+function fortunePoint(name) {
+  return String(name || "").replace(/^Fortune of the\s+/i, "").replace(/^Fortune of\s+/i, "").trim() || name;
+}
+
 function renderCard(build) {
-  const extra = build.weapons.length > 1 ? build.weapons.length - 1 : 0;
-  const body = [
-    el("span", { class: "card-kicker" }, [
-      build.archetype,
-      platformBadge(build),
-      build.tierLabel ? el("span", { class: "platform", text: build.tierLabel }) : null
-    ]),
-    el("span", { class: "card-name", text: build.name }),
-    el("span", { class: "card-weapon" }, [
-      build.weapons[0] || "",
-      extra ? el("em", { text: `+${extra} more` }) : null
-    ]),
-    el("span", { class: "card-play", text: build.playstyle })
-  ];
-  if (!build.fortune) {
-    return el("button", { type: "button", class: "card", "data-tier": build.tier, "data-id": build.id }, body);
+  const title = cardTitle(build);
+  const points = [weaponPoint(build), statPoint(build), playPoint(build)].filter(Boolean).map((text) =>
+    el("span", { class: "point", text })
+  );
+  if (build.fortune && build.fortune.major) {
+    const link = fortuneAnchor(build.fortune.major);
+    link.classList.add("point");
+    link.textContent = fortunePoint(build.fortune.major);
+    link.setAttribute("aria-label", build.fortune.major);
+    points.push(link);
   }
   return el("article", { class: "card", "data-tier": build.tier }, [
-    el("button", { type: "button", class: "card-hit", "data-id": build.id }, body),
-    fortuneLine(build.fortune)
+    el("button", { type: "button", class: "card-hit", "data-id": build.id, "aria-label": `Open ${title}` }),
+    el("span", { class: "card-seal", "aria-hidden": "true", text: build.tier }),
+    el("span", { class: "card-copy" }, [
+      el("span", { class: "card-name", text: title }),
+      el("span", { class: "card-points" }, points)
+    ])
   ]);
 }
 
@@ -726,17 +746,6 @@ function fortuneAnchor(name) {
   link.href = `#${hashFor(state.game.id, "systems", `fortunes/${slugify(name)}`)}`;
   link.textContent = name;
   return link;
-}
-
-function fortuneLine(fortune) {
-  const line = el("p", { class: "card-fortune" });
-  line.append(fortuneAnchor(fortune.major));
-  if (fortune.majorTier) line.append(el("span", { class: "platform", text: fortune.majorTier }));
-  if (fortune.minor) {
-    line.append(document.createTextNode(" · "));
-    line.append(fortuneAnchor(fortune.minor));
-  }
-  return line;
 }
 
 function renderList() {
@@ -1183,7 +1192,6 @@ async function render() {
   state.data = data;
   rememberGame(game.id);
   applyAccent(game);
-  applyDensity();
 
   const onBuilds = route.section === "builds";
   const onGuides = onBuilds && route.view === "guides";
@@ -1285,14 +1293,6 @@ async function render() {
 }
 
 function bind() {
-  document.getElementById("density").addEventListener("click", () => {
-    try {
-      localStorage.setItem(DENSITY_KEY, cardsExpanded() ? "compact" : "full");
-    } catch (error) {
-      /* private mode */
-    }
-    applyDensity();
-  });
   document.getElementById("q").addEventListener("input", (event) => {
     currentUi().query = event.target.value;
     renderList();

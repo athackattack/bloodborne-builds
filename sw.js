@@ -1,5 +1,5 @@
 // Network-first shell. CACHE is the version string: bump it when shipped assets change.
-const CACHE = "souls-builds-v13-20261102151000";
+const CACHE = "souls-builds-v14-20261103060000";
 const SHELL = [
   "./",
   "./index.html",
