@@ -1,39 +1,6 @@
 {
   "games": [
     {
-      "id": "bloodborne",
-      "name": "Bloodborne",
-      "file": "data/bloodborne.json",
-      "map": "data/bloodborne-map.json",
-      "crafting": "data/bloodborne-crafting.json",
-      "equipment": "data/bloodborne-equipment.json",
-      "accent": "#b05c54",
-      "accentDeep": "#8c3a36",
-      "levelPrefix": "BL",
-      "statLabels": ["VIT", "END", "STR", "SKL", "BLT", "ARC"],
-      "archetypeFilters": [
-        { "id": "Strength", "label": "Strength", "includes": ["strength"] },
-        { "id": "Skill", "label": "Skill", "includes": ["skill"] },
-        { "id": "Bloodtinge", "label": "Bloodtinge", "includes": ["bloodtinge"] },
-        { "id": "Arcane", "label": "Arcane", "includes": ["arcane"] },
-        { "id": "Quality", "label": "Quality", "includes": ["quality"], "alsoAll": ["strength", "skill"], "alsoNone": ["bloodtinge", "arcane"] },
-        {
-          "id": "Hybrid",
-          "label": "Hybrid",
-          "kind": "hybrid",
-          "groups": [["strength"], ["skill"], ["bloodtinge"], ["arcane"], ["quality"]],
-          "pure": ["quality", "strength", "skill"]
-        }
-      ],
-      "bestForFilters": [
-        { "id": "PvE", "label": "PvE", "kind": "pve" },
-        { "id": "PvP", "label": "PvP", "kind": "pvp" },
-        { "id": "beginner", "label": "Beginner", "kind": "pattern", "pattern": "beginner|first playthrough|brand-new|starter|first run", "fields": ["bestFor", "archetype", "name"] },
-        { "id": "chalice", "label": "Chalice", "kind": "pattern", "pattern": "chalice", "fields": ["all"] },
-        { "id": "NG+", "label": "NG+", "kind": "ngplus" }
-      ]
-    },
-    {
       "id": "elden-ring",
       "name": "Elden Ring",
       "file": "data/elden-ring.json",
@@ -41,7 +8,11 @@
       "crafting": "data/elden-ring-crafting.json",
       "equipment": "data/elden-ring-equipment.json",
       "variants": [
-        { "id": "vanilla", "label": "Vanilla", "default": true },
+        {
+          "id": "vanilla",
+          "label": "Vanilla",
+          "default": true
+        },
         {
           "id": "reforged",
           "label": "Reforged",
@@ -52,41 +23,290 @@
           "buildsNote": "Reforged builds are community-derived and unofficial. Tiers are labelled as such, since Reforged is designed so no single build dominates. Data from ERR 2.3.5.3 to 2.3.7.1, you're on 2.3.8.1.",
           "mapNote": "MapGenie does not show ERR's new areas, Rune Pieces or camps.",
           "sources": [
-            { "label": "ERR community wiki (CC BY-SA 3.0)", "url": "https://err.fandom.com/wiki/ELDEN_RING_Reforged_Wiki" },
-            { "label": "mandude calculator (MIT)", "url": "https://mandude.github.io/elden-ring-weapon-calculator/" },
-            { "label": "tclark calculator (MIT)", "url": "https://eldenring.tclark.io/reforged" }
+            {
+              "label": "ERR community wiki (CC BY-SA 3.0)",
+              "url": "https://err.fandom.com/wiki/ELDEN_RING_Reforged_Wiki"
+            },
+            {
+              "label": "mandude calculator (MIT)",
+              "url": "https://mandude.github.io/elden-ring-weapon-calculator/"
+            },
+            {
+              "label": "tclark calculator (MIT)",
+              "url": "https://eldenring.tclark.io/reforged"
+            }
           ],
           "sections": [
-            { "id": "systems", "label": "Systems", "file": "data/elden-ring-reforged-systems.json" }
+            {
+              "id": "systems",
+              "label": "Systems",
+              "file": "data/elden-ring-reforged-systems.json"
+            }
           ]
         }
       ],
       "accent": "#c6a15a",
       "accentDeep": "#a86b3c",
       "levelPrefix": "RL",
-      "statLabels": ["VIG", "MND", "END", "STR", "DEX", "INT", "FTH", "ARC"],
+      "statLabels": [
+        "VIG",
+        "MND",
+        "END",
+        "STR",
+        "DEX",
+        "INT",
+        "FTH",
+        "ARC"
+      ],
       "archetypeFilters": [
-        { "id": "Strength", "label": "Strength", "includes": ["strength"] },
-        { "id": "Dexterity", "label": "Dexterity", "includes": ["dexterity"], "words": ["dex"] },
-        { "id": "Intelligence", "label": "Intelligence", "includes": ["intelligence"], "words": ["int"] },
-        { "id": "Faith", "label": "Faith", "includes": ["faith"] },
-        { "id": "Arcane", "label": "Arcane", "includes": ["arcane"] },
-        { "id": "Quality", "label": "Quality", "includes": ["quality"] },
+        {
+          "id": "Strength",
+          "label": "Strength",
+          "includes": [
+            "strength"
+          ]
+        },
+        {
+          "id": "Dexterity",
+          "label": "Dexterity",
+          "includes": [
+            "dexterity"
+          ],
+          "words": [
+            "dex"
+          ]
+        },
+        {
+          "id": "Intelligence",
+          "label": "Intelligence",
+          "includes": [
+            "intelligence"
+          ],
+          "words": [
+            "int"
+          ]
+        },
+        {
+          "id": "Faith",
+          "label": "Faith",
+          "includes": [
+            "faith"
+          ]
+        },
+        {
+          "id": "Arcane",
+          "label": "Arcane",
+          "includes": [
+            "arcane"
+          ]
+        },
+        {
+          "id": "Quality",
+          "label": "Quality",
+          "includes": [
+            "quality"
+          ]
+        },
         {
           "id": "Hybrid",
           "label": "Hybrid",
           "kind": "hybrid",
-          "groups": [["strength"], ["dexterity", "dex"], ["intelligence", "int"], ["faith"], ["arcane"]],
-          "pure": ["quality", "strength", "dexterity", "dex"]
+          "groups": [
+            [
+              "strength"
+            ],
+            [
+              "dexterity",
+              "dex"
+            ],
+            [
+              "intelligence",
+              "int"
+            ],
+            [
+              "faith"
+            ],
+            [
+              "arcane"
+            ]
+          ],
+          "pure": [
+            "quality",
+            "strength",
+            "dexterity",
+            "dex"
+          ]
         }
       ],
       "bestForFilters": [
-        { "id": "PvE", "label": "PvE", "kind": "pve" },
-        { "id": "PvP", "label": "PvP", "kind": "pvp" },
-        { "id": "beginner", "label": "Beginner", "kind": "pattern", "pattern": "beginner|first playthrough|brand-new|starter|first run", "fields": ["bestFor", "archetype", "name"] },
-        { "id": "NG+", "label": "NG+", "kind": "ngplus" },
-        { "id": "dlc", "label": "DLC", "kind": "pattern", "pattern": "shadow of the erdtree|\\bdlc\\b", "fields": ["bestFor", "name", "ngNotes"] }
-      ]
+        {
+          "id": "PvE",
+          "label": "PvE",
+          "kind": "pve"
+        },
+        {
+          "id": "PvP",
+          "label": "PvP",
+          "kind": "pvp"
+        },
+        {
+          "id": "beginner",
+          "label": "Beginner",
+          "kind": "pattern",
+          "pattern": "beginner|first playthrough|brand-new|starter|first run",
+          "fields": [
+            "bestFor",
+            "archetype",
+            "name"
+          ]
+        },
+        {
+          "id": "NG+",
+          "label": "NG+",
+          "kind": "ngplus"
+        },
+        {
+          "id": "dlc",
+          "label": "DLC",
+          "kind": "pattern",
+          "pattern": "shadow of the erdtree|\\bdlc\\b",
+          "fields": [
+            "bestFor",
+            "name",
+            "ngNotes"
+          ]
+        }
+      ],
+      "bosses": "data/bosses-elden-ring.json"
+    },
+    {
+      "id": "bloodborne",
+      "name": "Bloodborne",
+      "file": "data/bloodborne.json",
+      "map": "data/bloodborne-map.json",
+      "crafting": "data/bloodborne-crafting.json",
+      "equipment": "data/bloodborne-equipment.json",
+      "accent": "#b05c54",
+      "accentDeep": "#8c3a36",
+      "levelPrefix": "BL",
+      "statLabels": [
+        "VIT",
+        "END",
+        "STR",
+        "SKL",
+        "BLT",
+        "ARC"
+      ],
+      "archetypeFilters": [
+        {
+          "id": "Strength",
+          "label": "Strength",
+          "includes": [
+            "strength"
+          ]
+        },
+        {
+          "id": "Skill",
+          "label": "Skill",
+          "includes": [
+            "skill"
+          ]
+        },
+        {
+          "id": "Bloodtinge",
+          "label": "Bloodtinge",
+          "includes": [
+            "bloodtinge"
+          ]
+        },
+        {
+          "id": "Arcane",
+          "label": "Arcane",
+          "includes": [
+            "arcane"
+          ]
+        },
+        {
+          "id": "Quality",
+          "label": "Quality",
+          "includes": [
+            "quality"
+          ],
+          "alsoAll": [
+            "strength",
+            "skill"
+          ],
+          "alsoNone": [
+            "bloodtinge",
+            "arcane"
+          ]
+        },
+        {
+          "id": "Hybrid",
+          "label": "Hybrid",
+          "kind": "hybrid",
+          "groups": [
+            [
+              "strength"
+            ],
+            [
+              "skill"
+            ],
+            [
+              "bloodtinge"
+            ],
+            [
+              "arcane"
+            ],
+            [
+              "quality"
+            ]
+          ],
+          "pure": [
+            "quality",
+            "strength",
+            "skill"
+          ]
+        }
+      ],
+      "bestForFilters": [
+        {
+          "id": "PvE",
+          "label": "PvE",
+          "kind": "pve"
+        },
+        {
+          "id": "PvP",
+          "label": "PvP",
+          "kind": "pvp"
+        },
+        {
+          "id": "beginner",
+          "label": "Beginner",
+          "kind": "pattern",
+          "pattern": "beginner|first playthrough|brand-new|starter|first run",
+          "fields": [
+            "bestFor",
+            "archetype",
+            "name"
+          ]
+        },
+        {
+          "id": "chalice",
+          "label": "Chalice",
+          "kind": "pattern",
+          "pattern": "chalice",
+          "fields": [
+            "all"
+          ]
+        },
+        {
+          "id": "NG+",
+          "label": "NG+",
+          "kind": "ngplus"
+        }
+      ],
+      "bosses": "data/bosses-bloodborne.json"
     },
     {
       "id": "demons-souls",
@@ -98,29 +318,135 @@
       "accent": "#8ea4b8",
       "accentDeep": "#5c7388",
       "levelPrefix": "SL",
-      "statLabels": ["VIT", "INT", "END", "STR", "DEX", "MAG", "FTH", "LCK"],
+      "statLabels": [
+        "VIT",
+        "INT",
+        "END",
+        "STR",
+        "DEX",
+        "MAG",
+        "FTH",
+        "LCK"
+      ],
       "archetypeFilters": [
-        { "id": "Strength", "label": "Strength", "includes": ["strength"] },
-        { "id": "Dexterity", "label": "Dexterity", "includes": ["dexterity"], "words": ["dex"] },
-        { "id": "Magic", "label": "Magic", "includes": ["magic"] },
-        { "id": "Faith", "label": "Faith", "includes": ["faith"] },
-        { "id": "Luck", "label": "Luck", "includes": ["luck"] },
-        { "id": "Quality", "label": "Quality", "includes": ["quality"] },
+        {
+          "id": "Strength",
+          "label": "Strength",
+          "includes": [
+            "strength"
+          ]
+        },
+        {
+          "id": "Dexterity",
+          "label": "Dexterity",
+          "includes": [
+            "dexterity"
+          ],
+          "words": [
+            "dex"
+          ]
+        },
+        {
+          "id": "Magic",
+          "label": "Magic",
+          "includes": [
+            "magic"
+          ]
+        },
+        {
+          "id": "Faith",
+          "label": "Faith",
+          "includes": [
+            "faith"
+          ]
+        },
+        {
+          "id": "Luck",
+          "label": "Luck",
+          "includes": [
+            "luck"
+          ]
+        },
+        {
+          "id": "Quality",
+          "label": "Quality",
+          "includes": [
+            "quality"
+          ]
+        },
         {
           "id": "Hybrid",
           "label": "Hybrid",
           "kind": "hybrid",
-          "groups": [["strength"], ["dexterity", "dex"], ["magic"], ["faith"], ["luck"], ["quality"]],
-          "pure": ["quality", "strength", "dexterity", "dex"]
+          "groups": [
+            [
+              "strength"
+            ],
+            [
+              "dexterity",
+              "dex"
+            ],
+            [
+              "magic"
+            ],
+            [
+              "faith"
+            ],
+            [
+              "luck"
+            ],
+            [
+              "quality"
+            ]
+          ],
+          "pure": [
+            "quality",
+            "strength",
+            "dexterity",
+            "dex"
+          ]
         }
       ],
       "bestForFilters": [
-        { "id": "PvE", "label": "PvE", "kind": "pve" },
-        { "id": "PvP", "label": "PvP", "kind": "pvp" },
-        { "id": "beginner", "label": "Beginner", "kind": "pattern", "pattern": "beginner|first playthrough|brand-new|starter|first run", "fields": ["bestFor", "archetype", "name"] },
-        { "id": "NG+", "label": "NG+", "kind": "ngplus" },
-        { "id": "challenge", "label": "Challenge", "kind": "pattern", "pattern": "challenge", "fields": ["bestFor", "archetype", "name"] }
-      ]
+        {
+          "id": "PvE",
+          "label": "PvE",
+          "kind": "pve"
+        },
+        {
+          "id": "PvP",
+          "label": "PvP",
+          "kind": "pvp"
+        },
+        {
+          "id": "beginner",
+          "label": "Beginner",
+          "kind": "pattern",
+          "pattern": "beginner|first playthrough|brand-new|starter|first run",
+          "fields": [
+            "bestFor",
+            "archetype",
+            "name"
+          ]
+        },
+        {
+          "id": "NG+",
+          "label": "NG+",
+          "kind": "ngplus"
+        },
+        {
+          "id": "challenge",
+          "label": "Challenge",
+          "kind": "pattern",
+          "pattern": "challenge",
+          "fields": [
+            "bestFor",
+            "archetype",
+            "name"
+          ]
+        }
+      ],
+      "bosses": "data/bosses-demons-souls.json"
     }
   ]
 }
